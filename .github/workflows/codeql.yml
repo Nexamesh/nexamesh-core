@@ -1,24 +1,8 @@
 name: "CodeQL Security Analysis"
 
 on:
-  push:
-    branches: ["main"]
-    paths:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-      - "**/*.jsx"
-      - "**/*.rs"
-      - ".github/workflows/codeql.yml"
-  pull_request:
-    branches: ["main"]
-    paths:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-      - "**/*.jsx"
-      - "**/*.rs"
-      - ".github/workflows/codeql.yml"
+  # Reduced to weekly + manual to cut GitHub Actions costs
+  # Was running on every push/PR including Renovate bot
   schedule:
     - cron: "30 2 * * 1" # Weekly on Monday at 2:30 AM UTC
   workflow_dispatch:
