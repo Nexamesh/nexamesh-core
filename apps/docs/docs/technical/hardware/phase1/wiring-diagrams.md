@@ -27,7 +27,227 @@ peripherals) and a **separate 5V supply** for servos.
 
 ---
 
-## System Overview
+## System Topology
+
+```mermaid
+graph TB
+    subgraph HUB["🟦 ESP32-S3 — SkyWatch Hub"]
+        direction TB
+        AP["WiFi Access Point<br/><i>SkyWatch-Hub</i>"]
+        BROKER["MQTT Broker<br/><i>TinyMqtt :1883</i>"]
+        I2C["I2C Bus<br/><i>SDA=GPIO8, SCL=GPIO9</i>"]
+        PCA["PCA9685<br/>Servo Driver"]
+        PAN["SG90 Pan<br/><i>Ch0 · 0°–180°</i>"]
+        TILT["SG90 Tilt<br/><i>Ch1 · 0°–180°</i>"]
+        HLED1["Status LED<br/><i>GPIO2 (blue)</i>"]
+        HLED2["MQTT LED<br/><i>GPIO3 (green)</i>"]
+    end
+
+    subgraph CAM["🟩 ESP32-CAM — SkyWatch Nano"]
+        direction TB
+        OV2640["OV2640 Camera"]
+        MJPEG["MJPEG Stream<br/><i>:81/stream</i>"]
+        DETECT["Motion Detect<br/><i>Frame differencing</i>"]
+        BUZZ1["Buzzer<br/><i>GPIO12 → BC547</i>"]
+        BEACON["LED Beacon<br/><i>GPIO13 (red)</i>"]
+        BTN1["Arm Button<br/><i>GPIO14</i>"]
+        CLED["Status LED<br/><i>GPIO15 (green)</i>"]
+    end
+
+    subgraph RELAY["🟥 ESP32-C3 — Response Relay"]
+        direction TB
+        RLY["5V Relay Module<br/><i>GPIO4 (active LOW)</i>"]
+        LOAD["Dummy Load<br/><i>LED strip / lamp</i>"]
+        ARMED_LED["Armed LED<br/><i>GPIO5 (red)</i>"]
+        BTN2["Arm Button<br/><i>GPIO6</i>"]
+        RLED["Status LED<br/><i>GPIO7 (green)</i>"]
+        BUZZ2["Buzzer<br/><i>GPIO10 → BC547</i>"]
+    end
+
+    CAM -- "WiFi STA" --> AP
+    RELAY -- "WiFi STA" --> AP
+    AP --> BROKER
+    BROKER -- "skywatch/+/detection" --> DETECT
+    BROKER -- "command/relay-001/trigger" --> RLY
+    I2C --> PCA
+    PCA --> PAN
+    PCA --> TILT
+    OV2640 --> DETECT
+    OV2640 --> MJPEG
+    RLY --> LOAD
+
+    style HUB fill:#1e3a5f,stroke:#4a90d9,color:#fff
+    style CAM fill:#1a3d1a,stroke:#4caf50,color:#fff
+    style RELAY fill:#5f1e1e,stroke:#d94a4a,color:#fff
+```
+
+## Data Flow (MQTT Messages)
+
+```mermaid
+sequenceDiagram
+    participant CAM as ESP32-CAM<br/>SkyWatch Nano
+    participant HUB as ESP32-S3<br/>Hub + Broker
+    participant RLY as ESP32-C3<br/>Response Relay
+
+    Note over HUB: Boot first — creates WiFi AP + MQTT broker
+    CAM->>HUB: WiFi connect (STA → AP)
+    RLY->>HUB: WiFi connect (STA → AP)
+    CAM->>HUB: MQTT connect (nano-001)
+    RLY->>HUB: MQTT connect (relay-001)
+
+    loop Every 30s
+        CAM-->>HUB: skywatch/nano-001/status (heartbeat)
+        RLY-->>HUB: skywatch/relay-001/status (heartbeat)
+        HUB-->>HUB: skywatch/hub-001/status (heartbeat)
+    end
+
+    Note over CAM: Motion detected!
+    CAM->>HUB: skywatch/nano-001/detection {event, pixels, ...}
+    HUB->>HUB: Log detection, aim turret
+    HUB->>RLY: command/relay-001/trigger {command: "trigger"}
+    RLY->>RLY: Activate relay (2s pulse)
+    RLY->>HUB: alarm/relay-001/activated {event}
+
+    Note over CAM,RLY: Arm/Disarm (button or remote)
+    HUB->>CAM: command/nano-001/arm {armed: false}
+    HUB->>RLY: command/relay-001/arm {armed: false}
+    CAM-->>HUB: skywatch/nano-001/armed {armed: false}
+    RLY-->>HUB: skywatch/relay-001/armed {armed: false}
+```
+
+## Power Distribution
+
+```mermaid
+graph LR
+    subgraph PSU["Power Supplies"]
+        USB1["USB-C 5V/2A<br/><i>ESP32-S3 + Servos</i>"]
+        USB2["USB 5V/1A<br/><i>ESP32-CAM</i>"]
+        USB3["USB-C 5V/1A<br/><i>ESP32-C3</i>"]
+    end
+
+    subgraph HUB_PWR["Hub Power Rails"]
+        S3_5V["ESP32-S3<br/>5V pin"]
+        PCA_V["PCA9685<br/>V+ screw terminal"]
+        CAP["470µF Cap<br/><i>across V+ / GND</i>"]
+        PCA_V --- CAP
+    end
+
+    subgraph CAM_PWR["Nano Power Rails"]
+        CAM_5V["ESP32-CAM<br/>5V pin"]
+        BUZZ_5V["Buzzer 5V<br/><i>via BC547</i>"]
+    end
+
+    subgraph RELAY_PWR["Relay Power Rails"]
+        C3_5V["ESP32-C3<br/>5V pin"]
+        RLY_5V["Relay VCC<br/>5V"]
+    end
+
+    USB1 --> S3_5V
+    USB1 --> PCA_V
+    USB2 --> CAM_5V
+    USB2 --> BUZZ_5V
+    USB3 --> C3_5V
+    USB3 --> RLY_5V
+
+    GND["⏚ Common GND<br/><i>ALL boards + peripherals</i>"]
+    S3_5V -.- GND
+    PCA_V -.- GND
+    CAM_5V -.- GND
+    C3_5V -.- GND
+
+    style GND fill:#333,stroke:#ff0,color:#ff0,stroke-width:3px
+    style PSU fill:#2a2a2a,stroke:#888,color:#fff
+```
+
+## GPIO Pin Maps
+
+### ESP32-CAM (SkyWatch Nano)
+
+```mermaid
+graph LR
+    subgraph ESP32_CAM["ESP32-CAM GPIO Allocation"]
+        direction TB
+        G0["GPIO0 — Boot mode<br/><i>GND=flash, float=run</i>"]
+        G1["GPIO1 — UART TX<br/><i>→ FTDI RX (programming)</i>"]
+        G3["GPIO3 — UART RX<br/><i>→ FTDI TX (programming)</i>"]
+        G4["GPIO4 — Flash LED<br/><i>Built-in (reserved)</i>"]
+        G12["GPIO12 — Buzzer<br/><i>→ 1kΩ → BC547 → buzzer</i>"]
+        G13["GPIO13 — LED Beacon<br/><i>→ 220Ω → red LED</i>"]
+        G14["GPIO14 — Arm Button<br/><i>← pushbutton (10kΩ pull-up)</i>"]
+        G15["GPIO15 — Status LED<br/><i>→ 220Ω → green LED</i>"]
+    end
+
+    style G0 fill:#555,stroke:#aaa,color:#fff
+    style G1 fill:#555,stroke:#aaa,color:#fff
+    style G3 fill:#555,stroke:#aaa,color:#fff
+    style G4 fill:#8b0000,stroke:#f44,color:#fff
+    style G12 fill:#b8860b,stroke:#ffa500,color:#fff
+    style G13 fill:#b8860b,stroke:#ffa500,color:#fff
+    style G14 fill:#006400,stroke:#4caf50,color:#fff
+    style G15 fill:#006400,stroke:#4caf50,color:#fff
+```
+
+### ESP32-S3 (Hub + Turret)
+
+```mermaid
+graph LR
+    subgraph ESP32_S3["ESP32-S3 GPIO Allocation"]
+        direction TB
+        S2["GPIO2 — Status LED<br/><i>→ 220Ω → blue LED</i>"]
+        S3["GPIO3 — MQTT LED<br/><i>→ 220Ω → green LED</i>"]
+        S8["GPIO8 — I2C SDA<br/><i>→ PCA9685 SDA (4.7kΩ pull-up)</i>"]
+        S9["GPIO9 — I2C SCL<br/><i>→ PCA9685 SCL (4.7kΩ pull-up)</i>"]
+    end
+
+    subgraph PCA9685["PCA9685 Channels"]
+        direction TB
+        CH0["Ch0 — SG90 Pan<br/><i>0°–180° yaw</i>"]
+        CH1["Ch1 — SG90 Tilt<br/><i>30°–150° pitch</i>"]
+        CH2["Ch2 — (spare)"]
+        CH3["Ch3 — (spare)"]
+    end
+
+    S8 --> PCA9685
+    S9 --> PCA9685
+
+    style S2 fill:#006400,stroke:#4caf50,color:#fff
+    style S3 fill:#006400,stroke:#4caf50,color:#fff
+    style S8 fill:#1e3a5f,stroke:#4a90d9,color:#fff
+    style S9 fill:#1e3a5f,stroke:#4a90d9,color:#fff
+    style CH0 fill:#b8860b,stroke:#ffa500,color:#fff
+    style CH1 fill:#b8860b,stroke:#ffa500,color:#fff
+    style CH2 fill:#333,stroke:#666,color:#999
+    style CH3 fill:#333,stroke:#666,color:#999
+```
+
+### ESP32-C3 (Response Relay)
+
+```mermaid
+graph LR
+    subgraph ESP32_C3["ESP32-C3 GPIO Allocation"]
+        direction TB
+        C4["GPIO4 — Relay<br/><i>→ relay IN (active LOW)</i>"]
+        C5["GPIO5 — Armed LED<br/><i>→ 220Ω → red LED</i>"]
+        C6["GPIO6 — Arm Button<br/><i>← pushbutton (10kΩ pull-up)</i>"]
+        C7["GPIO7 — Status LED<br/><i>→ 220Ω → green LED</i>"]
+        C10["GPIO10 — Buzzer<br/><i>→ 1kΩ → BC547 → buzzer</i>"]
+    end
+
+    subgraph RELAY_OUT["Relay Output"]
+        COM["COM → load (+)"]
+        NO["NO → load return"]
+    end
+
+    C4 --> RELAY_OUT
+
+    style C4 fill:#8b0000,stroke:#f44,color:#fff
+    style C5 fill:#8b0000,stroke:#f44,color:#fff
+    style C6 fill:#006400,stroke:#4caf50,color:#fff
+    style C7 fill:#006400,stroke:#4caf50,color:#fff
+    style C10 fill:#b8860b,stroke:#ffa500,color:#fff
+```
+
+## System Overview (Text Reference)
 
 ```text
 ┌────────────────────┐       WiFi (MQTT)       ┌─────────────────────┐
