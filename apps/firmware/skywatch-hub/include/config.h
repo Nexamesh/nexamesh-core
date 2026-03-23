@@ -52,7 +52,34 @@
 #define PIN_LED_STATUS    2     // Blue LED — hub active
 #define PIN_LED_MQTT      3     // Green LED — blinks on MQTT message
 
+// ── SPI — SX1276 LoRa module ──────────────────────────────────────
+#define LORA_ENABLED      true  // Set false if no LoRa module attached
+#define PIN_LORA_SCK      12    // SPI clock
+#define PIN_LORA_MISO     13    // SPI data out (from SX1276)
+#define PIN_LORA_MOSI     11    // SPI data in (to SX1276)
+#define PIN_LORA_CS       10    // Chip select (NSS)
+#define PIN_LORA_RST      14    // Reset
+#define PIN_LORA_DIO0     15    // Interrupt — RX done / TX done
+
+// LoRa radio parameters (868 MHz ISM band — South Africa / EU)
+#define LORA_FREQUENCY    868E6       // 868 MHz (use 915E6 for US/AU)
+#define LORA_BANDWIDTH    125E3       // 125 kHz (standard)
+#define LORA_SPREAD_FACTOR 9          // SF9: ~5km range, ~1.7kbps
+#define LORA_TX_POWER     17          // dBm (max 20 for SX1276)
+#define LORA_CODING_RATE  5           // 4/5 coding rate
+#define LORA_SYNC_WORD    0x34        // Private network sync word
+#define LORA_PREAMBLE_LEN 8           // Standard preamble
+
+// LoRa message types (single-byte header)
+#define LORA_MSG_ALERT    0x01  // Detection alert (hub → remote)
+#define LORA_MSG_ARM      0x02  // Arm/disarm command (hub → remote)
+#define LORA_MSG_HEARTBEAT 0x03 // Heartbeat (bidirectional)
+#define LORA_MSG_ACK      0x04  // Acknowledgment (remote → hub)
+#define LORA_MSG_STATUS   0x05  // Status request/response
+
 // ── Timing ─────────────────────────────────────────────────────────
 #define HEARTBEAT_INTERVAL_MS  30000
 #define LED_BLINK_MS           100    // MQTT activity LED flash duration
 #define SERVO_MOVE_STEP_MS     20     // Smooth servo movement interval
+#define LORA_HEARTBEAT_MS      60000  // LoRa heartbeat every 60s (airtime budget)
+#define LORA_TX_TIMEOUT_MS     2000   // Max time to wait for TX complete

@@ -39,6 +39,7 @@ graph TB
         PCA["PCA9685<br/>Servo Driver"]
         PAN["SG90 Pan<br/><i>Ch0 · 0°–180°</i>"]
         TILT["SG90 Tilt<br/><i>Ch1 · 0°–180°</i>"]
+        LORA["SX1276 LoRa<br/><i>868MHz · SPI bus</i>"]
         HLED1["Status LED<br/><i>GPIO2 (blue)</i>"]
         HLED2["MQTT LED<br/><i>GPIO3 (green)</i>"]
     end
@@ -187,7 +188,7 @@ graph LR
     style G15 fill:#006400,stroke:#4caf50,color:#fff
 ```
 
-### ESP32-S3 (Hub + Turret)
+### ESP32-S3 (Hub + Turret + LoRa Gateway)
 
 ```mermaid
 graph LR
@@ -195,8 +196,14 @@ graph LR
         direction TB
         S2["GPIO2 — Status LED<br/><i>→ 220Ω → blue LED</i>"]
         S3["GPIO3 — MQTT LED<br/><i>→ 220Ω → green LED</i>"]
-        S8["GPIO8 — I2C SDA<br/><i>→ PCA9685 SDA (4.7kΩ pull-up)</i>"]
-        S9["GPIO9 — I2C SCL<br/><i>→ PCA9685 SCL (4.7kΩ pull-up)</i>"]
+        S8["GPIO8 — I2C SDA<br/><i>→ PCA9685 (4.7kΩ pull-up)</i>"]
+        S9["GPIO9 — I2C SCL<br/><i>→ PCA9685 (4.7kΩ pull-up)</i>"]
+        S10["GPIO10 — LoRa CS<br/><i>→ SX1276 NSS</i>"]
+        S11["GPIO11 — LoRa MOSI<br/><i>→ SX1276 MOSI</i>"]
+        S12["GPIO12 — LoRa SCK<br/><i>→ SX1276 SCK</i>"]
+        S13["GPIO13 — LoRa MISO<br/><i>→ SX1276 MISO</i>"]
+        S14["GPIO14 — LoRa RST<br/><i>→ SX1276 RST</i>"]
+        S15["GPIO15 — LoRa DIO0<br/><i>→ SX1276 IRQ</i>"]
     end
 
     subgraph PCA9685["PCA9685 Channels"]
@@ -207,17 +214,34 @@ graph LR
         CH3["Ch3 — (spare)"]
     end
 
+    subgraph SX1276["SX1276 LoRa 868MHz"]
+        direction TB
+        LORA_SPI["SPI Bus"]
+        LORA_ANT["Spring Antenna<br/><i>1–10km range</i>"]
+    end
+
     S8 --> PCA9685
     S9 --> PCA9685
+    S10 --> SX1276
+    S11 --> SX1276
+    S12 --> SX1276
+    S13 --> SX1276
 
     style S2 fill:#006400,stroke:#4caf50,color:#fff
     style S3 fill:#006400,stroke:#4caf50,color:#fff
     style S8 fill:#1e3a5f,stroke:#4a90d9,color:#fff
     style S9 fill:#1e3a5f,stroke:#4a90d9,color:#fff
+    style S10 fill:#5f1e5f,stroke:#d94ad9,color:#fff
+    style S11 fill:#5f1e5f,stroke:#d94ad9,color:#fff
+    style S12 fill:#5f1e5f,stroke:#d94ad9,color:#fff
+    style S13 fill:#5f1e5f,stroke:#d94ad9,color:#fff
+    style S14 fill:#5f1e5f,stroke:#d94ad9,color:#fff
+    style S15 fill:#5f1e5f,stroke:#d94ad9,color:#fff
     style CH0 fill:#b8860b,stroke:#ffa500,color:#fff
     style CH1 fill:#b8860b,stroke:#ffa500,color:#fff
     style CH2 fill:#333,stroke:#666,color:#999
     style CH3 fill:#333,stroke:#666,color:#999
+    style SX1276 fill:#4a0e4a,stroke:#d94ad9,color:#fff
 ```
 
 ### ESP32-C3 (Response Relay)
@@ -425,6 +449,38 @@ Each servo connector (3-pin):
     on the PCA9685 screw terminals to absorb servo current spikes.
 ```
 
+### SX1276 LoRa Module → ESP32-S3 Wiring (SPI)
+
+Long-range radio for bridging alerts beyond WiFi range (1–10km). Uses the bare
+SX1276 module (1.27mm castellated pads — solder to breakout or direct wire).
+
+```text
+SX1276 Pin       ESP32-S3 Pin     Notes
+──────────       ────────────     ─────
+VCC            → 3.3V             3.3V ONLY — 5V will destroy the module!
+GND            → GND              Common ground
+SCK            → GPIO12           SPI clock
+MISO           → GPIO13           SPI data out (from SX1276)
+MOSI           → GPIO11           SPI data in (to SX1276)
+NSS (CS)       → GPIO10           Chip select
+RST            → GPIO14           Reset
+DIO0           → GPIO15           Interrupt (RX done / TX done)
+DIO1           — (not connected)  Optional — CAD detection
+DIO2           — (not connected)  Optional — frequency hop
+ANT            → spring antenna   Solder spring antenna to ANT pad
+```
+
+**LoRa Radio Configuration (firmware defaults):**
+
+| Parameter | Value | Notes |
+| --------- | ----- | ----- |
+| Frequency | 868 MHz | SA/EU ISM band (change to 915 for US/AU) |
+| Spreading Factor | SF9 | ~5km range, ~1.7kbps |
+| Bandwidth | 125 kHz | Standard LoRa |
+| TX Power | 17 dBm | Max 20 for SX1276 |
+| Coding Rate | 4/5 | Error correction |
+| Sync Word | 0x34 | Private network |
+
 ### ESP32-S3 Additional Peripherals
 
 ```text
@@ -432,6 +488,12 @@ ESP32-S3 Pin     Connection              Component         Notes
 ────────────     ──────────              ─────────         ─────
 GPIO8          → PCA9685 SDA            I2C data          4.7kΩ pull-up to 3.3V
 GPIO9          → PCA9685 SCL            I2C clock         4.7kΩ pull-up to 3.3V
+GPIO10         → SX1276 NSS            LoRa chip select  SPI
+GPIO11         → SX1276 MOSI           LoRa data in      SPI
+GPIO12         → SX1276 SCK            LoRa clock        SPI
+GPIO13         → SX1276 MISO           LoRa data out     SPI
+GPIO14         → SX1276 RST            LoRa reset
+GPIO15         → SX1276 DIO0           LoRa interrupt    RX/TX done
 GPIO2          → 220Ω → LED anode      Status LED        Blue = hub active
                          cathode → GND
 GPIO3          → 220Ω → LED anode      MQTT LED          Blink on message rx
@@ -512,6 +574,13 @@ GND            ← common GND            Ground              Shared ground
 | SG90 micro servo | 2 (+2 spare) | Pan + tilt | **R60–120** |
 | Pan/tilt bracket (FPV nylon) | 1 | Gimbal mount | **R30–80** |
 
+### LoRa Radio
+
+| Item | Qty | Role | Est. Cost |
+| ---- | --- | ---- | --------- |
+| SX1276/SX1278 LoRa module (868MHz) | 2 | Long-range radio (hub + remote) | **R56–112** |
+| Spring antenna (868MHz) | 2 | Included with module | (included) |
+
 ### Common Components
 
 | Item | Qty | Role | Est. Cost |
@@ -536,8 +605,9 @@ GND            ← common GND            Ground              Shared ground
 | -------- | ---------- |
 | ESP32-CAM | R150–250 |
 | Turret kit (PCA9685 + servos + bracket) | R150–300 |
+| LoRa modules (2x SX1276) | R56–112 |
 | Common components | R140–240 |
-| **Total** | **R440–790** |
+| **Total** | **R496–902** |
 
 ---
 
