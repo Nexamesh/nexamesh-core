@@ -242,11 +242,16 @@ for single servo + arm switch + status LEDs).
 | USB-TTL adapter                  | 1      | $2–3       | AliExpress / Amazon |
 | Heatshrink + zip ties            | 1 each | $2–3       | AliExpress / Amazon |
 | LED strip (30cm, 12V)            | 1      | $2–4       | AliExpress / Amazon |
-| SG90 micro servo (trigger)       | 1      | $2         | AliExpress / Amazon |
+| IRLZ44N MOSFET module            | 1      | $2         | AliExpress / Amazon |
+| Nichrome wire / e-match igniter  | 2      | $2–3       | AliExpress / Amazon |
+| Gas container + burst disc       | 2      | $5–10      | AliExpress / Amazon |
+| PVC / aluminium launch tube      | 1      | $2–5       | Hardware store      |
+| SG90 micro servo (trigger, alt.) | 1      | $2         | AliExpress / Amazon |
+| Compression spring (alt.)        | 1      | $2–3       | AliExpress / Amazon |
 | Net mesh (1m² nylon) + weights   | 1      | $7         | AliExpress / Amazon |
-| Compression spring + canister    | 1      | $3–5       | AliExpress / Amazon |
 | Silicone wire (26AWG)            | 1m     | $1–2       | AliExpress / Amazon |
 | 12V DC power supply (2A)         | 1      | $5–8       | Amazon              |
-| **Total estimate**               |        | **$75–110**|                     |
+| **Total estimate**               |        | **$80–120**|                     |
 
-This covers all five Phase 1 products with spares (including drone net launcher).
+This covers all five Phase 1 products with spares, including both drone net
+launcher options (gas ignition + spring-loaded).

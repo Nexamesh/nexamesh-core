@@ -90,10 +90,11 @@ acceptance criteria.
 | 2–3 | Active buzzer + high-bright LED + resistors   | All builds                                |
 | 1   | Relay module (opto-isolated) or MOSFET driver | Trigger Node                              |
 | 1   | ESP32-C3 SuperMini                            | Drone Net Launcher                        |
-| 1   | SG90 micro servo (trigger)                    | Drone Net Launcher (pin release)          |
+| 1   | IRLZ44N MOSFET + igniter                      | Drone Net Launcher (gas ignition option)  |
+| 1   | SG90 micro servo (trigger)                    | Drone Net Launcher (spring option)        |
 | 1   | Mini buck converter (AMS1117 3.3V)            | Drone Net Launcher (power from LiPo)      |
 | 1   | Lightweight mesh net + corner weights         | Drone Net Launcher (capture net)          |
-| 1   | Compression spring + canister                 | Drone Net Launcher (deployment mech)      |
+| 1   | Gas container + launch tube OR spring canister| Drone Net Launcher (deployment mech)      |
 | —   | Dupont wires, screw terminals, project box    | All builds                                |
 
 ### Buy Later
