@@ -57,6 +57,24 @@ builds. One order covers the entire demo stack.
 
 **Use for:** Turret Tracker and Trigger Node (more GPIO, easier programming).
 
+### ESP32-C3 SuperMini
+
+| Spec      | Value                                    |
+| --------- | ---------------------------------------- |
+| MCU       | RISC-V single-core (160MHz, 400KB SRAM)  |
+| WiFi      | 802.11 b/g/n                             |
+| Bluetooth | BLE 5.0                                  |
+| GPIO      | 15 pins (11 usable after defaults)       |
+| USB       | USB-C (onboard programmer)               |
+| Flash     | 4MB                                      |
+| Power     | 3.3V via USB or pin                      |
+| Weight    | ~5g (bare module)                        |
+
+**Sourcing:** AliExpress, Amazon. ~$3–4 per unit.
+
+**Use for:** Drone Net Launcher (lightest option, low power draw, sufficient GPIO
+for single servo + arm switch + status LEDs).
+
 ---
 
 ## MP1584EN Buck Converter
@@ -205,7 +223,9 @@ builds. One order covers the entire demo stack.
 | -------------------------------- | ------ | ---------- | ------------------- |
 | ESP32-CAM (OV2640)               | 2      | $12–16     | AliExpress / Amazon |
 | ESP32-DevKitC                    | 1      | $5–8       | AliExpress / Amazon |
+| ESP32-C3 SuperMini               | 1      | $3–4       | AliExpress / Amazon |
 | MP1584EN buck converter          | 3      | $3–6       | AliExpress / Amazon |
+| AMS1117 3.3V mini buck           | 1      | $1–2       | AliExpress / Amazon |
 | PCA9685 servo driver             | 1      | $2–4       | AliExpress / Amazon |
 | MG90S servo                      | 2      | $4–6       | AliExpress / Amazon |
 | Pan/tilt bracket kit             | 1      | $2–4       | AliExpress / Amazon |
@@ -222,7 +242,11 @@ builds. One order covers the entire demo stack.
 | USB-TTL adapter                  | 1      | $2–3       | AliExpress / Amazon |
 | Heatshrink + zip ties            | 1 each | $2–3       | AliExpress / Amazon |
 | LED strip (30cm, 12V)            | 1      | $2–4       | AliExpress / Amazon |
+| SG90 micro servo (trigger)       | 1      | $2         | AliExpress / Amazon |
+| Net mesh (1m² nylon) + weights   | 1      | $7         | AliExpress / Amazon |
+| Compression spring + canister    | 1      | $3–5       | AliExpress / Amazon |
+| Silicone wire (26AWG)            | 1m     | $1–2       | AliExpress / Amazon |
 | 12V DC power supply (2A)         | 1      | $5–8       | Amazon              |
-| **Total estimate**               |        | **$55–85** |                     |
+| **Total estimate**               |        | **$75–110**|                     |
 
-This covers all four Phase 1 products with spares.
+This covers all five Phase 1 products with spares (including drone net launcher).
