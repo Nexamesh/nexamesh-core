@@ -38,12 +38,13 @@ decision follows one principle: _minimal now, refactor later._
 
 ## Phase 1 Product Set
 
-| #   | Product                                       | Purpose                           | Complexity |
-| --- | --------------------------------------------- | --------------------------------- | ---------- |
-| 1   | [SkyWatch Nano](phase1-skywatch-nano)         | Detection + local alarm           | Low        |
-| 2   | [SkyWatch Standard](phase1-skywatch-standard) | Detection + local & remote alerts | Medium     |
-| 3   | [Turret Tracker](phase1-turret-tracker)       | Pan/tilt camera tracking rig      | Medium     |
-| 4   | [Trigger Node](phase1-trigger-node)           | Safe countermeasure placeholder   | Low        |
+| #   | Product                                           | Purpose                            | Complexity   |
+| --- | ------------------------------------------------- | ---------------------------------- | ------------ |
+| 1   | [SkyWatch Nano](phase1-skywatch-nano)             | Detection + local alarm            | Low          |
+| 2   | [SkyWatch Standard](phase1-skywatch-standard)     | Detection + local & remote alerts  | Medium       |
+| 3   | [Turret Tracker](phase1-turret-tracker)           | Pan/tilt camera tracking rig       | Medium       |
+| 4   | [Trigger Node](phase1-trigger-node)               | Safe countermeasure placeholder    | Low          |
+| 5   | [Drone Net Launcher](phase1-drone-net-launcher)   | Air-to-air net intercept node      | Intermediate |
 
 Each product has its own page with buy-now/buy-later tables, wiring steps, and
 acceptance criteria.
@@ -88,6 +89,12 @@ acceptance criteria.
 | 1   | PIR sensor (HC-SR501)                         | Standard (wake-up trigger)                |
 | 2–3 | Active buzzer + high-bright LED + resistors   | All builds                                |
 | 1   | Relay module (opto-isolated) or MOSFET driver | Trigger Node                              |
+| 1   | ESP32-C3 SuperMini                            | Drone Net Launcher                        |
+| 1   | IRLZ44N MOSFET + igniter                      | Drone Net Launcher (gas ignition option)  |
+| 1   | SG90 micro servo (trigger)                    | Drone Net Launcher (spring option)        |
+| 1   | Mini buck converter (AMS1117 3.3V)            | Drone Net Launcher (power from LiPo)      |
+| 1   | Lightweight mesh net + corner weights         | Drone Net Launcher (capture net)          |
+| 1   | Gas container + launch tube OR spring canister| Drone Net Launcher (deployment mech)      |
 | —   | Dupont wires, screw terminals, project box    | All builds                                |
 
 ### Buy Later
