@@ -72,7 +72,7 @@ Some analysis tasks require multiple coordinated steps:
 
 ## Decision
 
-**Defer workflows to Cognitive Mesh**. Keep the Phoenix Rooivalk docs site
+**Defer workflows to Cognitive Mesh**. Keep the NexaMesh docs site
 focused on simple single-step AI features. Complex multi-step workflows should
 be implemented in Cognitive Mesh's Business Applications Layer, which provides
 superior workflow orchestration with governance and compliance built-in.
@@ -195,7 +195,7 @@ Provide:
 2. Technology trends
 3. Regulatory environment
 4. Entry barriers
-5. Opportunities for Phoenix Rooivalk
+5. Opportunities for NexaMesh
 `);
 
 // Step 3: Competitive analysis
@@ -207,7 +207,7 @@ Based on the market segment research:
 Analyze the competitive landscape:
 1. Who are the top 5 competitors?
 2. What are their strengths and weaknesses?
-3. Where does Phoenix Rooivalk fit?
+3. Where does NexaMesh fit?
 4. What's our competitive advantage?
 `);
 
@@ -219,7 +219,7 @@ Based on the research:
 
 Calculate market sizing:
 1. Total Addressable Market (TAM)
-2. Serviceable Addressable Market (SAM) for Phoenix Rooivalk
+2. Serviceable Addressable Market (SAM) for NexaMesh
 3. Serviceable Obtainable Market (SOM) - realistic 3-year target
 4. Key assumptions
 
@@ -324,7 +324,7 @@ export const competitiveLandscapeWorkflow = RunnableSequence.from([
   {
     phoenixCapabilities: async (input: { competitors: string[] }) => {
       const result = await docSearchTool.invoke({
-        query: "Phoenix Rooivalk capabilities specifications features",
+        query: "NexaMesh capabilities specifications features",
         maxResults: 10,
       });
       return result;
@@ -400,7 +400,7 @@ Based on the competitive comparison:
 
 {comparison}
 
-Generate a SWOT analysis for Phoenix Rooivalk:
+Generate a SWOT analysis for NexaMesh:
 
 STRENGTHS: Internal advantages over competitors
 WEAKNESSES: Areas where competitors are stronger
@@ -966,4 +966,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

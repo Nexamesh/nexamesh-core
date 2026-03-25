@@ -189,7 +189,7 @@ export const competitors = {
   },
 };
 
-/** Phoenix Rooivalk Competitive Advantages */
+/** NexaMesh Competitive Advantages */
 export const phoenixAdvantages = {
   speed: {
     metric: performance.responseTime.formatted,
@@ -237,7 +237,7 @@ export const phoenixAdvantages = {
 export const comparisonTable = {
   headers: [
     "Feature",
-    "Phoenix Rooivalk",
+    "NexaMesh",
     "DroneShield",
     "Dedrone",
     "Anduril",

@@ -38,7 +38,7 @@ export const LEARNING_PATHS: JourneyPath[] = [
   {
     id: "executive-overview",
     name: "Executive Overview",
-    description: "Get the high-level picture of Phoenix Rooivalk",
+    description: "Get the high-level picture of NexaMesh",
     icon: "📊",
     color: "#f97316",
     docs: [
@@ -391,7 +391,7 @@ export default function DocJourney(): React.ReactElement {
       <div className="doc-journey-header">
         <h2 className="doc-journey-title">Documentation Journey</h2>
         <p className="doc-journey-subtitle">
-          Follow these learning paths to master Phoenix Rooivalk
+          Follow these learning paths to master NexaMesh
         </p>
         <div className="doc-journey-stats">
           <div className="doc-journey-stat">

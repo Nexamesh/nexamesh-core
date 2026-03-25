@@ -130,7 +130,7 @@ export const langsmithClient = new Client({
 // Create tracer for LangChain operations
 export function createTracer(metadata?: Record<string, any>) {
   return new LangChainTracer({
-    projectName: config.langsmith?.project || "phoenix-rooivalk-ai",
+    projectName: config.langsmith?.project || "nexamesh-ai",
     client: langsmithClient,
     exampleId: metadata?.exampleId,
     tags: metadata?.tags,
@@ -914,4 +914,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

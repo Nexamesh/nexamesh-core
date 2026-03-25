@@ -211,7 +211,7 @@ expect 3-5 minute flights instead of 5-8.
 
 ## Why Path C for Counter-UAS Research
 
-Path C is the most directly useful for Phoenix Rooivalk threat modeling:
+Path C is the most directly useful for NexaMesh threat modeling:
 
 1. **Fastest to fly** — No frame redesign, no motor mount CAD, no new props.
    Swap the brain, wire it up, configure, fly.
@@ -220,7 +220,7 @@ Path C is the most directly useful for Phoenix Rooivalk threat modeling:
    This models the real-world scenario of a modified toy drone.
 3. **Forensic research value** — The blackbox logs, GPS tracks, and (with
    Phase 3) AI inference logs create the exact evidence chain that
-   Phoenix Rooivalk's evidence system needs to process.
+   NexaMesh's evidence system needs to process.
 4. **Cheapest path to data** — You get flight logs and GPS data for under
    R1,500 total (Phase 1 only).
 

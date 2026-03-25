@@ -34,7 +34,7 @@ const DEFAULT_BOOKING_TYPES: BookingType[] = [
     id: "demo",
     name: "Product Demo",
     duration: 30,
-    description: "See Phoenix Rooivalk in action",
+    description: "See NexaMesh in action",
     slug: "demo",
   },
   {

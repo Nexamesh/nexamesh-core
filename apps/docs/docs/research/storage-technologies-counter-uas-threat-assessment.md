@@ -142,7 +142,7 @@ physically intact.
 | JTAG/ISP access     | Medium | eMMC without desoldering | Damaged airframe     |
 | Chip-off            | Slow   | Raw NAND recovery        | Damaged controller   |
 
-### Chain of Custody (Relevant to Phoenix Rooivalk)
+### Chain of Custody (Relevant to NexaMesh)
 
 Digital evidence requires:
 - Write-blocking during acquisition
@@ -203,7 +203,7 @@ To preserve evidence from captured drones:
 
 AI detects object of interest, then saves preceding N seconds from a circular
 RAM buffer to persistent storage. Requires fast random write performance.
-This is the pattern used in the Phoenix Rooivalk detector app.
+This is the pattern used in the NexaMesh detector app.
 
 ### Counter-UAS Implication
 
@@ -285,7 +285,7 @@ as drones operate without continuous RF links. Alternative detection modalities
 
 ---
 
-## 9. Recommendations for Phoenix Rooivalk System
+## 9. Recommendations for NexaMesh System
 
 1. **Evidence pipeline** should assume diverse storage sources: microSD images,
    eMMC chip-off dumps, flight log binaries (DJI DAT, ArduPilot BIN, PX4 ULG).

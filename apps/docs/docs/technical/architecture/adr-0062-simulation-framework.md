@@ -412,7 +412,7 @@ def generate_launch_description():
             }],
         ),
 
-        # Phoenix Rooivalk nodes
+        # NexaMesh nodes
         Node(
             package='phoenix_rooivalk',
             executable='sensor_fusion_node',
@@ -493,4 +493,4 @@ pub fn create_investor_demo_scenario() -> ScenarioConfig {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

@@ -1,6 +1,6 @@
 # Azure Functions Troubleshooting Guide
 
-This guide helps diagnose and fix common issues with the Phoenix Rooivalk Azure
+This guide helps diagnose and fix common issues with the NexaMesh Azure
 Functions deployment.
 
 ## Common Issues
@@ -148,7 +148,7 @@ variables.
 
 ```text
 Access to fetch at 'https://...' from origin
-'https://docs.phoenixrooivalk.com' has been blocked by CORS policy
+'https://docs.nexamesh.com' has been blocked by CORS policy
 ```
 
 **Solution:**
@@ -166,8 +166,8 @@ Access to fetch at 'https://...' from origin
      --name YOUR-FUNCTION-APP \
      --resource-group YOUR-RESOURCE-GROUP \
      --allowed-origins \
-       "https://docs.phoenixrooivalk.com" \
-       "https://phoenixrooivalk.com" \
+       "https://docs.nexamesh.com" \
+       "https://nexamesh.com" \
        "http://localhost:3000" \
        "http://localhost:3001"
 
@@ -253,7 +253,7 @@ Error: Container 'userProgress' does not exist
 
    ```bash
    # Use the automated setup script
-   cd /home/runner/work/PhoenixRooivalk/PhoenixRooivalk
+   cd /home/runner/work/Nexamesh/Nexamesh
    ./scripts/setup-cosmos-containers.sh YOUR-RESOURCE-GROUP YOUR-COSMOS-ACCOUNT
    ```
 
@@ -376,7 +376,7 @@ If issues persist:
    ```
 
 4. **Contact support:**
-   - Check GitHub Issues: <https://github.com/JustAGhosT/PhoenixRooivalk/issues>
+   - Check GitHub Issues: <https://github.com/JustAGhosT/Nexamesh/issues>
    - Review documentation: `apps/docs/azure-functions/INFRASTRUCTURE.md`
 
 ## Related Documentation

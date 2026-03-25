@@ -2,7 +2,7 @@
 id: documentation-guide
 title: Documentation Guide
 sidebar_label: Documentation Guide
-description: How to write and format documentation for Phoenix Rooivalk
+description: How to write and format documentation for NexaMesh
 difficulty: intermediate
 estimated_reading_time: 4
 points: 15
@@ -12,7 +12,7 @@ tags:
 
 # Documentation Guide
 
-This guide covers how to write effective documentation for Phoenix Rooivalk,
+This guide covers how to write effective documentation for NexaMesh,
 including formatting, diagrams, and best practices.
 
 ---
@@ -204,7 +204,7 @@ experience:
 id: technical-architecture
 title: Technical Architecture
 sidebar_label: Architecture
-description: Deep dive into Phoenix Rooivalk's system architecture
+description: Deep dive into NexaMesh's system architecture
 difficulty: advanced
 estimated_reading_time: 15
 points: 25
@@ -236,7 +236,7 @@ Use relative paths without `.md` extension:
 ### External Links
 
 ```markdown
-[GitHub Repository](https://github.com/JustAGhosT/PhoenixRooivalk)
+[GitHub Repository](https://github.com/JustAGhosT/Nexamesh)
 ```
 
 ---

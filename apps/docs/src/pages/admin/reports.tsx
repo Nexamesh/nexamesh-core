@@ -50,7 +50,7 @@ export default function ReportsAdminPage(): React.ReactElement {
 
   // Generate form state
   const [repositories, setRepositories] = useState<string[]>([
-    "JustAGhosT/PhoenixRooivalk",
+    "JustAGhosT/Nexamesh",
   ]);
   const [newRepo, setNewRepo] = useState("");
   const [customPrompt, setCustomPrompt] = useState("");

@@ -1,7 +1,7 @@
 ---
 id: mechanical-design-adrs
-title: Phoenix Rooivalk Mechanical Design - Architecture Decision Records
-sidebar_label: Phoenix Rooivalk Mechanical
+title: NexaMesh Mechanical Design - Architecture Decision Records
+sidebar_label: NexaMesh Mechanical
 difficulty: advanced
 estimated_reading_time: 6
 points: 25
@@ -10,7 +10,7 @@ tags:
   - hardware
 ---
 
-# Phoenix Rooivalk Mechanical Design - Architecture Decision Records
+# NexaMesh Mechanical Design - Architecture Decision Records
 
 ## Executive Summary
 
@@ -328,7 +328,7 @@ mission requirements and operational environments.
 
 ## Conclusion
 
-The Phoenix Rooivalk mechanical design ADRs establish a comprehensive foundation
+The NexaMesh mechanical design ADRs establish a comprehensive foundation
 for the RKV-M tilt-quad system. The modular, mission-adaptable architecture
 provides the flexibility to meet diverse operational requirements while
 maintaining commonality and cost-effectiveness.

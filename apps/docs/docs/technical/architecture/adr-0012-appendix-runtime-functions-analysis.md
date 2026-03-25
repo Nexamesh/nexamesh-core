@@ -427,4 +427,4 @@ const azureHandler: RAGHandler = async (query, context) => {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

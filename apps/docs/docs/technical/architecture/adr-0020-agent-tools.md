@@ -128,7 +128,7 @@ functions/src/langchain/tools/
 
 ### 1. Document Search Tool
 
-Search Phoenix Rooivalk internal documentation.
+Search NexaMesh internal documentation.
 
 ```typescript
 // langchain/tools/core/doc-search.ts
@@ -154,7 +154,7 @@ const docSearchSchema = z.object({
 export const docSearchTool = wrapTool(
   new DynamicStructuredTool({
     name: "search_phoenix_docs",
-    description: `Search Phoenix Rooivalk internal documentation for technical specifications,
+    description: `Search NexaMesh internal documentation for technical specifications,
 product information, company details, and internal knowledge. Use this FIRST before web search
 for any Phoenix-related questions.`,
     schema: docSearchSchema,
@@ -815,4 +815,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

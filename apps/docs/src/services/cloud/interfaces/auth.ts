@@ -75,9 +75,9 @@ export interface IAuthService {
 }
 
 /**
- * Default admin domains for Phoenix Rooivalk
+ * Default admin domains for NexaMesh
  */
-export const DEFAULT_ADMIN_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+export const DEFAULT_ADMIN_DOMAINS = ["nexamesh.ai", "justaghost.dev"];
 
 /**
  * Helper to check if a user is an admin

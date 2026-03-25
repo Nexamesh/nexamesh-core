@@ -2,7 +2,7 @@
 
 **Last updated**: 2026-03-25
 **Status**: Pre-seed. Software platform complete. Hardware prototype R&D underway.
-**Brand**: Nexamesh (formerly Phoenix Rooivalk — rebranded for fresh startup program applications)
+**Brand**: Nexamesh (formerly NexaMesh — rebranded for fresh startup program applications)
 
 ---
 

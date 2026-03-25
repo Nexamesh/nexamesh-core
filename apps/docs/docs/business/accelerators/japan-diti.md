@@ -66,7 +66,7 @@ Technology Initiative for Security Program**:
 
 ## Technology Priorities
 
-Japan's defense technology priorities relevant to Phoenix Rooivalk:
+Japan's defense technology priorities relevant to NexaMesh:
 
 | Area                        | Priority | PR Alignment |
 | --------------------------- | -------- | ------------ |
@@ -88,7 +88,7 @@ By 2026, Japan plans to deploy:
 
 ## Eligibility
 
-| Requirement           | Phoenix Rooivalk Status          |
+| Requirement           | NexaMesh Status          |
 | --------------------- | -------------------------------- |
 | Innovative technology | Meets requirement                |
 | Defense-relevant      | Meets requirement                |
@@ -140,7 +140,7 @@ Japan faces:
 
 ---
 
-## Phoenix Rooivalk Strategy
+## NexaMesh Strategy
 
 ### Engagement Approach
 
@@ -184,7 +184,7 @@ Japan's premier defense exhibition:
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score           | Notes                        |
 | --------------- | --------------- | ---------------------------- |

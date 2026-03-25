@@ -1,7 +1,7 @@
 ---
 id: deployment-guide
-title: Phoenix Rooivalk Deployment Guide
-sidebar_label: Phoenix Rooivalk Deployment
+title: NexaMesh Deployment Guide
+sidebar_label: NexaMesh Deployment
 difficulty: intermediate
 estimated_reading_time: 8
 points: 15
@@ -10,11 +10,11 @@ tags:
   - deployment
 ---
 
-# Phoenix Rooivalk Deployment Guide
+# NexaMesh Deployment Guide
 
 ## Executive Summary
 
-This guide provides comprehensive deployment procedures for the Phoenix Rooivalk
+This guide provides comprehensive deployment procedures for the NexaMesh
 Counter-Drone Defense System. The system supports multiple deployment patterns
 from laboratory testing to production field operations, with emphasis on
 security, compliance, and operational resilience.
@@ -154,7 +154,7 @@ security, compliance, and operational resilience.
 
 **Header Normalization**
 
-The Phoenix Rooivalk API uses `X-Forwarded-For` and `X-Real-IP` headers for
+The NexaMesh API uses `X-Forwarded-For` and `X-Real-IP` headers for
 client IP identification (used in rate limiting). These headers can be spoofed
 by untrusted clients, so proper infrastructure configuration is **required**:
 
@@ -187,7 +187,7 @@ proxy_set_header X-Forwarded-For $remote_addr;
 
 ### Database Backend Support
 
-The Phoenix Rooivalk API supports multiple database backends for flexibility
+The NexaMesh API supports multiple database backends for flexibility
 across different deployment environments.
 
 **Supported Database Error Codes for Duplicate Key Detection**:
@@ -541,7 +541,7 @@ export API_DB_URL="mysql://user:password@host:3306/phoenix_db"
 
 ## Conclusion
 
-The Phoenix Rooivalk deployment guide provides comprehensive procedures for
+The NexaMesh deployment guide provides comprehensive procedures for
 deploying the counter-drone defense system across multiple environments. The
 guide emphasizes security, compliance, and operational resilience while
 maintaining the highest standards of performance and reliability.
@@ -563,5 +563,5 @@ security, compliance, and performance.
 ---
 
 _This document contains confidential deployment information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

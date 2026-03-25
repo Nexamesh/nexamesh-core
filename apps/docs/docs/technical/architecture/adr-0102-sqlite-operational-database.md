@@ -35,7 +35,7 @@ prerequisites: []
 
 ## Context
 
-Phoenix Rooivalk deploys to diverse environments:
+NexaMesh deploys to diverse environments:
 
 - **Edge devices**: Raspberry Pi 4/5, NVIDIA Jetson Nano/Xavier
 - **Cloud VMs**: Azure Virtual Machines

@@ -36,7 +36,7 @@ prerequisites:
 
 ## Context
 
-The Phoenix Rooivalk documentation platform currently uses hardcoded
+The NexaMesh documentation platform currently uses hardcoded
 configuration for:
 
 - **News categories** (counter-uas, defense-tech, etc.)
@@ -311,4 +311,4 @@ GET    /api/admin/config/optimize           # AI suggestions
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

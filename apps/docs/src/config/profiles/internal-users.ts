@@ -14,7 +14,7 @@ import { UserProfile } from "./types";
  */
 export const INTERNAL_DOMAINS = [
   "nexamesh.ai",
-  "phoenixrooivalk.com", // Legacy domain — keep for backward compatibility
+  "nexamesh.ai", // Legacy domain — keep for backward compatibility
   "justaghost.dev", // Development/admin domain
 ];
 
@@ -164,7 +164,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Key metrics for business cases",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Pitch Deck",
         priority: 5,
         reason: "Essential for marketing and investor presentations",
@@ -380,7 +380,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Customer application scenarios",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Pitch Deck",
         priority: 5,
         reason: "Sales presentation materials",
@@ -416,7 +416,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Industry contacts and networking",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Presentation Materials",
         priority: 4,
         reason: "Additional presentation resources",
@@ -498,7 +498,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Strategic roadmap and milestones",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Pitch Deck",
         priority: 4,
         reason: "Investor presentation materials",

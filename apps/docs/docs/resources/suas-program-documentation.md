@@ -23,9 +23,9 @@ Science and Technology Directorate
 
 :::info Recommendation
 
-This document is highly recommended for Phoenix Rooivalk operators and public
+This document is highly recommended for NexaMesh operators and public
 safety agencies developing or enhancing their sUAS programs. The comprehensive
-framework aligns with Phoenix Rooivalk's operational standards and provides
+framework aligns with NexaMesh's operational standards and provides
 valuable templates for policy development, safety procedures, and regulatory
 compliance.
 
@@ -220,24 +220,24 @@ The document emphasizes that agencies should:
 
 ---
 
-## Relevance to Phoenix Rooivalk Operations
+## Relevance to NexaMesh Operations
 
 ### Alignment with Counter-UAS Operations
 
 The DHS sUAS Program Documentation provides foundational framework elements that
-complement Phoenix Rooivalk operations:
+complement NexaMesh operations:
 
-| Framework Element           | Phoenix Rooivalk Application                                         |
+| Framework Element           | NexaMesh Application                                         |
 | --------------------------- | -------------------------------------------------------------------- |
 | **Safety Protocols**        | Adapt ADM, PAVE, and IMSAFE checklists for counter-drone operations  |
-| **Role Definitions**        | Map RPIC and VO responsibilities to Phoenix Rooivalk operator roles  |
+| **Role Definitions**        | Map RPIC and VO responsibilities to NexaMesh operator roles  |
 | **Documentation Standards** | Integrate flight log templates with blockchain evidence anchoring    |
-| **Training Requirements**   | Align Part 107 certification with Phoenix Rooivalk operator training |
+| **Training Requirements**   | Align Part 107 certification with NexaMesh operator training |
 | **Emergency Procedures**    | Extend emergency checklists to include counter-UAS scenarios         |
 
 ### Recommended Integration Points
 
-1. **Training Programs**: Incorporate DHS framework into Phoenix Rooivalk
+1. **Training Programs**: Incorporate DHS framework into NexaMesh
    operator certification requirements
 2. **Compliance Framework**: Reference FAA regulations and reporting
    requirements in compliance documentation
@@ -250,7 +250,7 @@ complement Phoenix Rooivalk operations:
 
 ## Additional Resources
 
-### Related Phoenix Rooivalk Documentation
+### Related NexaMesh Documentation
 
 - [Compliance Framework](../legal/compliance-framework) - ITAR, DoD, and
   regulatory compliance
@@ -272,16 +272,16 @@ complement Phoenix Rooivalk operations:
 
 This comprehensive framework from DHS provides public safety agencies with
 structured guidance for establishing legally compliant, operationally effective,
-and safety-focused sUAS programs. Phoenix Rooivalk operators should familiarize
+and safety-focused sUAS programs. NexaMesh operators should familiarize
 themselves with these standards to ensure alignment with industry best practices
 and regulatory requirements.
 
 The document's emphasis on safety protocols, training requirements, and
-documentation standards directly supports Phoenix Rooivalk's commitment to
+documentation standards directly supports NexaMesh's commitment to
 operational excellence and legal compliance in counter-UAS operations.
 
 ---
 
 _Reference document summary. For the complete DHS publication, contact your
-Phoenix Rooivalk representative or access through official DHS channels. © 2025
-Phoenix Rooivalk. All rights reserved._
+NexaMesh representative or access through official DHS channels. © 2025
+NexaMesh. All rights reserved._

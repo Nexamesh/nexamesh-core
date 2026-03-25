@@ -18,7 +18,7 @@ keywords:
   ]
 ---
 
-# PhoenixRooivalk Product Catalog
+# Nexamesh Product Catalog
 
 Complete specifications, bill of materials, and build guides for all drone
 detection and countermeasure products.
@@ -181,7 +181,7 @@ alert:
 
    ```bash
    ssh pi@skywatch-nano.local
-   curl -sSL https://phoenixrooivalk.io/install.sh | bash
+   curl -sSL https://nexamesh.ai/install.sh | bash
    cd ~/detector
    python -m detector --config configs/nano-minimal.yaml
    ```
@@ -402,7 +402,7 @@ alert:
      python3-pip python3-venv libcamera-apps
 
    # Clone and install
-   git clone https://github.com/PhoenixRooivalk/detector.git
+   git clone https://github.com/Nexamesh/detector.git
    cd detector
    python3 -m venv venv
    source venv/bin/activate
@@ -2571,4 +2571,4 @@ tools._
 
 ---
 
-_Document Version: 1.0_ _Last Updated: 2026-01-09_ _PhoenixRooivalk Project_
+_Document Version: 1.0_ _Last Updated: 2026-01-09_ _Nexamesh Project_

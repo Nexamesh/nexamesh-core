@@ -1,5 +1,5 @@
 /**
- * Centralized Data Store for Phoenix Rooivalk Documentation
+ * Centralized Data Store for NexaMesh Documentation
  *
  * All key figures, metrics, and data points used across documentation.
  * Edit values here to update them across all docs that import this data.

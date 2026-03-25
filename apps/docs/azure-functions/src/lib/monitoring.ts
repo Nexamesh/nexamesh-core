@@ -1,5 +1,5 @@
 /**
- * AI Monitoring for Phoenix Rooivalk Documentation
+ * AI Monitoring for NexaMesh Documentation
  *
  * Tracks:
  * - Query latency

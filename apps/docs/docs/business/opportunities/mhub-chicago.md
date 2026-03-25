@@ -178,9 +178,9 @@ mHUB provides access to 10 specialized labs:
 
 ---
 
-## Phoenix Rooivalk Alignment
+## NexaMesh Alignment
 
-| mHUB Criteria       | Phoenix Rooivalk Fit     |
+| mHUB Criteria       | NexaMesh Fit     |
 | ------------------- | ------------------------ |
 | Hardware focus      | Drone systems            |
 | Manufacturing ready | Modular design           |

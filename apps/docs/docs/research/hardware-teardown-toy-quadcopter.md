@@ -124,7 +124,7 @@ to most capable, each building on skills from the previous).
 1. **Path C first** — Fly with GPS + logging in hours, not weeks. Learn
    INAV configuration, ELRS binding, and PID tuning on a platform where
    crashes cost R20 (brushed motor), not R600 (brushless set). Immediately
-   generates flight log data for Phoenix Rooivalk research.
+   generates flight log data for NexaMesh research.
 
 2. **Path A second** — Reuse the FC, GPS, receiver, and wiring from Path C.
    Only buy motors, ESC, and filament. The 3D CAD/print skills transfer
@@ -172,7 +172,7 @@ buy list.
 Note: costs are cumulative because the FC, GPS, receiver, and accessories
 carry forward. You don't rebuy those at each stage.
 
-## Relevance to Phoenix Rooivalk
+## Relevance to NexaMesh
 
 This teardown and upgrade path establishes the full spectrum for drone threat
 classification. The threat simulator should model these tiers:
@@ -186,6 +186,6 @@ classification. The threat simulator should model these tiers:
   (model weights, inference logs, detection history)
 
 Each path maps to progressively more complex detection and countermeasure
-requirements in the Phoenix Rooivalk system. See
+requirements in the NexaMesh system. See
 `storage-technologies-counter-uas-threat-assessment.md` for the storage
 forensics perspective.

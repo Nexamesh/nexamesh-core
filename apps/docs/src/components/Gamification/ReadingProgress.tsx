@@ -109,7 +109,7 @@ export function ReadingProgressCard(): React.ReactElement {
             📚 Reading Progress
           </h2>
           <p className="reading-progress-overview-subtitle">
-            Track your journey through Phoenix Rooivalk documentation
+            Track your journey through NexaMesh documentation
           </p>
         </div>
       </div>

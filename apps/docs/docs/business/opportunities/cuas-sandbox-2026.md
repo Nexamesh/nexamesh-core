@@ -204,7 +204,7 @@ For detailed readiness level definitions, roadmaps, and gap analysis, see the
 comprehensive
 **[CUAS Readiness Levels (CRL) Framework](./cuas-readiness-levels)**.
 
-**Phoenix Rooivalk Current Status:**
+**NexaMesh Current Status:**
 
 | Capability        | Current | Minimum Required | Status |
 | ----------------- | ------- | ---------------- | ------ |
@@ -339,12 +339,12 @@ coordination across:
 
 ---
 
-## Phoenix Rooivalk Alignment
+## NexaMesh Alignment
 
-Phoenix Rooivalk's counter-UAS capabilities align strongly with CUAS Sandbox
+NexaMesh's counter-UAS capabilities align strongly with CUAS Sandbox
 2026 requirements:
 
-| Sandbox Requirement   | Phoenix Rooivalk Capability                        |
+| Sandbox Requirement   | NexaMesh Capability                        |
 | --------------------- | -------------------------------------------------- |
 | Detect Micro/Mini UAS | Multi-sensor fusion (radar, RF, optical, acoustic) |
 | Defeat capability     | Kinetic interceptor drones                         |
@@ -357,7 +357,7 @@ Phoenix Rooivalk's counter-UAS capabilities align strongly with CUAS Sandbox
 
 See
 [CUAS Sandbox 2026 Application](../applications/cuas-sandbox-2026-application)
-for the draft Phoenix Rooivalk application.
+for the draft NexaMesh application.
 
 :::
 
@@ -374,4 +374,4 @@ for the draft Phoenix Rooivalk application.
 
 _This document summarizes publicly available information about the CUAS Sandbox
 2026 opportunity. For official requirements, refer to the DND/IDEaS program
-documentation. © 2025 Phoenix Rooivalk. All rights reserved._
+documentation. © 2026 NexaMesh. All rights reserved._

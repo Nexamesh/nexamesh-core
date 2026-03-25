@@ -53,7 +53,7 @@ function getEmailProvider(): "sendgrid" | "azure" | "none" {
 async function sendViaSendGrid(message: EmailMessage): Promise<EmailResult> {
   const apiKey = process.env.SENDGRID_API_KEY;
   const fromEmail =
-    process.env.SENDGRID_FROM_EMAIL || "noreply@phoenixrooivalk.com";
+    process.env.SENDGRID_FROM_EMAIL || "noreply@nexamesh.com";
 
   if (!apiKey) {
     return { success: false, error: "SENDGRID_API_KEY not configured" };
@@ -129,7 +129,7 @@ async function sendViaAzure(message: EmailMessage): Promise<EmailResult> {
   const connectionString = process.env.AZURE_COMMUNICATION_CONNECTION_STRING;
   const fromEmail =
     process.env.AZURE_COMMUNICATION_FROM_EMAIL ||
-    "DoNotReply@phoenixrooivalk.com";
+    "DoNotReply@nexamesh.com";
 
   if (!connectionString) {
     return {
@@ -307,7 +307,7 @@ export const EmailTemplates = {
         </a>
         <hr style="margin: 24px 0; border: none; border-top: 1px solid #eee;" />
         <p style="color: #666; font-size: 12px;">
-          You received this email because you subscribed to breaking news alerts from Phoenix Rooivalk.
+          You received this email because you subscribed to breaking news alerts from NexaMesh.
           <a href="${process.env.BASE_URL || process.env.DOCS_URL || ""}/unsubscribe">Unsubscribe</a>
         </p>
       </div>

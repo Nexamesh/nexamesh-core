@@ -27,7 +27,7 @@ prerequisites:
 
 ## Executive Summary
 
-1. **Problem**: Phoenix Rooivalk's counter-UAS technology may be subject to US
+1. **Problem**: NexaMesh's counter-UAS technology may be subject to US
    ITAR (International Traffic in Arms Regulations), requiring compliance
    architecture before US accelerator participation (SOSV) or defense contracts
 2. **Decision**: Implement ITAR-compliant architecture with data segregation,
@@ -167,19 +167,19 @@ activation when:
 ### Repository Segregation
 
 ```
-phoenix-rooivalk/                    # PUBLIC + INTERNAL (Level 0-1)
+nexamesh/                    # PUBLIC + INTERNAL (Level 0-1)
 ├── apps/
 │   ├── docs/                        # Public documentation
 │   └── marketing/                   # Public website
 ├── packages/                        # Shared utilities (Level 1)
 └── README.md                        # Public
 
-phoenix-rooivalk-controlled/         # EXPORT-CONTROLLED (Level 2)
+nexamesh-controlled/         # EXPORT-CONTROLLED (Level 2)
 ├── sensors/                         # Sensor integration code
 ├── fusion/                          # Sensor fusion algorithms
 └── targeting/                       # Target tracking (non-engagement)
 
-phoenix-rooivalk-itar/               # ITAR (Level 3) - FUTURE
+nexamesh-itar/               # ITAR (Level 3) - FUTURE
 ├── engagement/                      # ROE enforcement
 ├── effector-control/                # Weapon system integration
 └── autonomous-decision/             # Lethal autonomy logic
@@ -407,4 +407,4 @@ pub enum AccessAction {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record. CONFIDENTIAL._
+_© 2026 NexaMesh. Architecture Decision Record. CONFIDENTIAL._

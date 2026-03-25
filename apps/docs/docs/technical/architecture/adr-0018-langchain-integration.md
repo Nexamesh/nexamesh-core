@@ -38,7 +38,7 @@ Workflows)
 
 ## Context
 
-Phoenix Rooivalk currently has a custom AI implementation:
+NexaMesh currently has a custom AI implementation:
 
 ```
 Current Architecture
@@ -93,7 +93,7 @@ Current Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                 Phoenix Rooivalk AI Layer                        │
+│                 NexaMesh AI Layer                        │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  ┌─────────────────────────────────────────────────────────┐    │
@@ -223,7 +223,7 @@ import { docRetriever } from "../retrievers/azure-search";
 import { PHOENIX_CORE_CONTEXT } from "../../prompts/context";
 
 const ragPrompt = ChatPromptTemplate.fromTemplate(`
-You are Phoenix Rooivalk's documentation assistant.
+You are NexaMesh's documentation assistant.
 
 ${PHOENIX_CORE_CONTEXT}
 
@@ -330,7 +330,7 @@ import { docRetriever } from "../retrievers/azure-search";
 const docSearchTool = new DynamicStructuredTool({
   name: "search_phoenix_docs",
   description:
-    "Search Phoenix Rooivalk documentation for technical information",
+    "Search NexaMesh documentation for technical information",
   schema: z.object({
     query: z.string().describe("The search query"),
   }),
@@ -367,7 +367,7 @@ const webSearchTool = new DynamicStructuredTool({
 const agentPrompt = ChatPromptTemplate.fromMessages([
   [
     "system",
-    `You are a competitive intelligence researcher for Phoenix Rooivalk.
+    `You are a competitive intelligence researcher for NexaMesh.
 Your goal is to gather comprehensive information about defense industry competitors.
 Use the available tools to search documentation and the web.
 Always cite your sources.`,
@@ -394,7 +394,7 @@ export const researchAgent = new AgentExecutor({
 // Usage
 export async function researchCompetitor(competitor: string) {
   const result = await researchAgent.invoke({
-    input: `Research ${competitor} and compare their counter-drone capabilities to Phoenix Rooivalk`,
+    input: `Research ${competitor} and compare their counter-drone capabilities to NexaMesh`,
   });
   return result.output;
 }
@@ -760,4 +760,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

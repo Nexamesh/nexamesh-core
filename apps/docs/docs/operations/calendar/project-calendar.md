@@ -12,7 +12,7 @@ tags:
 
 ## Overview
 
-The Phoenix Rooivalk Project Calendar provides centralized tracking of
+The NexaMesh Project Calendar provides centralized tracking of
 deadlines, milestones, opportunities, and team activities. Team members can
 subscribe to the calendar for automatic sync with their personal calendars.
 
@@ -22,7 +22,7 @@ subscribe to the calendar for automatic sync with their personal calendars.
 
 ### Subscribe to Calendar
 
-Add the Phoenix Rooivalk calendar to your personal calendar application:
+Add the NexaMesh calendar to your personal calendar application:
 
 #### Google Calendar
 
@@ -199,7 +199,7 @@ milestones & releases **Team Calendar**: Meetings & reviews
 ```
 1. Go to calendar.google.com
 2. Click "+" next to "Other calendars"
-3. Create new calendar: "Phoenix Rooivalk - Opportunities"
+3. Create new calendar: "NexaMesh - Opportunities"
 4. Set sharing permissions for team members
 ```
 
@@ -229,7 +229,7 @@ function addOpportunityDeadline() {
 1. Open Outlook Calendar
 2. Right-click "My Calendars"
 3. Add Calendar → Create new blank calendar
-4. Name: "Phoenix Rooivalk - Opportunities"
+4. Name: "NexaMesh - Opportunities"
 5. Share with team members
 ```
 
@@ -327,4 +327,4 @@ When adding new opportunities or deadlines:
 ---
 
 _Calendar last updated: November 2025. Contact project administrator for
-calendar subscription access. © 2025 Phoenix Rooivalk. All rights reserved._
+calendar subscription access. © 2026 NexaMesh. All rights reserved._

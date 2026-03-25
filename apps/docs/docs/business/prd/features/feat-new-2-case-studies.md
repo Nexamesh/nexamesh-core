@@ -38,7 +38,7 @@ AeroNet™.
 - Each case study will include:
   - A clear title and summary.
   - A description of the problem or challenge.
-  - A description of the solution provided by PhoenixRooivalk.
+  - A description of the solution provided by Nexamesh.
   - A summary of the results or benefits.
 - Use of images or illustrations to make the case studies more engaging.
 

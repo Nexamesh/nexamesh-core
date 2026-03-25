@@ -21,7 +21,7 @@ import TechnicalSpecs from "@site/src/components/mdx/TechnicalSpecs";
 ## Executive Summary
 
 <TechnicalHighlight title="Critical Finding" type="warning" icon="⚠️">
-The "Phoenix Rooivalk counter-drone system" appears to be a misidentification, a new system, or conflation of two separate entities. The Rooivalk is South Africa's Denel AH-2 attack helicopter—a formidable combat rotorcraft, not a counter-UAS system. Despite extensive searches across defense publications and industry sources, no evidence exists of a counter-drone system bearing this name.
+The "NexaMesh counter-drone system" appears to be a misidentification, a new system, or conflation of two separate entities. The Rooivalk is South Africa's Denel AH-2 attack helicopter—a formidable combat rotorcraft, not a counter-UAS system. Despite extensive searches across defense publications and industry sources, no evidence exists of a counter-drone system bearing this name.
 </TechnicalHighlight>
 
 This comprehensive analysis examines the current state of counter-drone

@@ -40,7 +40,7 @@ interface CommentSectionProps {
 }
 
 // Admin email domains (same as in analytics.tsx)
-const ADMIN_EMAIL_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+const ADMIN_EMAIL_DOMAINS = ["nexamesh.ai", "justaghost.dev"];
 
 export function CommentSection({
   pageId,

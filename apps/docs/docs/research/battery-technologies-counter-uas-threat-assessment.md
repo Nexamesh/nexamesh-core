@@ -214,7 +214,7 @@ planning.
 
 ---
 
-## 6. Recommendations for Phoenix Rooivalk System
+## 6. Recommendations for NexaMesh System
 
 1. **Detection algorithms** should incorporate power-source classification as a
    feature in the threat identification pipeline. Thermal signature differences

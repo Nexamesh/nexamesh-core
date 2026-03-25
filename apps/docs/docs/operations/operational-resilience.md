@@ -1,7 +1,7 @@
 ---
 id: operational-resilience
-title: Phoenix Rooivalk Operational Resilience
-sidebar_label: Phoenix Rooivalk Operational
+title: NexaMesh Operational Resilience
+sidebar_label: NexaMesh Operational
 difficulty: intermediate
 estimated_reading_time: 7
 points: 15
@@ -9,11 +9,11 @@ tags:
   - operations
 ---
 
-# Phoenix Rooivalk Operational Resilience
+# NexaMesh Operational Resilience
 
 ## Executive Summary
 
-Phoenix Rooivalk is designed for operational resilience in GPS-denied and
+NexaMesh is designed for operational resilience in GPS-denied and
 electronic warfare (EW) contested environments. The system implements
 multi-modal navigation, electronic warfare resilience techniques, and graceful
 degradation strategies to maintain operational effectiveness under adverse
@@ -330,7 +330,7 @@ Response**: Electromagnetic spectrum maneuvering without operator intervention
 
 ## Conclusion
 
-Phoenix Rooivalk's operational resilience framework ensures continued
+NexaMesh's operational resilience framework ensures continued
 effectiveness under the most challenging conditions. The system's multi-modal
 navigation, electronic warfare resilience, and graceful degradation capabilities
 provide robust operation in GPS-denied and EW-contested environments.
@@ -350,5 +350,5 @@ reliability.
 ---
 
 _This document contains confidential operational information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

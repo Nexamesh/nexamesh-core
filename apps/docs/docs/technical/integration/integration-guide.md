@@ -26,7 +26,7 @@ patterns, and best practices for seamless system integration.
 
 ### Architecture Overview
 
-Phoenix Rooivalk integrates Morpheus Network for enhanced threat analysis using
+NexaMesh integrates Morpheus Network for enhanced threat analysis using
 decentralized AI inference. This hybrid approach maintains sub-200ms response
 times while adding advanced pattern recognition and threat intelligence
 capabilities through distributed AI processing.
@@ -75,7 +75,7 @@ capabilities through distributed AI processing.
 
 **Morpheus Network Setup**
 
-1. **Agent Registration**: Register Phoenix Rooivalk agents with Morpheus
+1. **Agent Registration**: Register NexaMesh agents with Morpheus
    network
 2. **Token Management**: Configure MOR token payments for inference services
 3. **Network Configuration**: Set up secure communication channels
@@ -501,7 +501,7 @@ pub struct SensorManager {
 
 ## Conclusion
 
-The Phoenix Rooivalk Integration Guide provides comprehensive procedures for
+The NexaMesh Integration Guide provides comprehensive procedures for
 integrating the counter-drone defense system with third-party systems, cloud
 platforms, and external services. The guide emphasizes security, performance,
 and compliance while maintaining the highest standards of integration quality.
@@ -523,5 +523,5 @@ compliance.
 ---
 
 _This document contains confidential integration information. Distribution is
-restricted to authorized personnel only. ©2005 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. ©2005 NexaMesh. All rights
 reserved._

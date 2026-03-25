@@ -3,19 +3,19 @@ import React from "react";
 
 export default function Whitepaper(): React.ReactElement {
   return (
-    <Layout title="Whitepaper" description="Phoenix Rooivalk Whitepaper">
+    <Layout title="Whitepaper" description="NexaMesh Whitepaper">
       <main className="whitepaperMain">
         <section className="whitepaperSection">
           <header className="whitepaperHeader">
-            <h1>Phoenix Rooivalk Whitepaper</h1>
+            <h1>NexaMesh Whitepaper</h1>
           </header>
           <p className="whitepaperMeta">
-            Version 1.0 · © 2025 Phoenix Rooivalk · Public summary
+            Version 1.0 · © 2025 NexaMesh · Public summary
             (non-restricted)
           </p>
 
           <p>
-            Phoenix Rooivalk combines multi-sensor drone detection, layered
+            NexaMesh combines multi-sensor drone detection, layered
             effectors, and blockchain-backed evidence anchoring to deliver
             secure, auditable counter‑UAS operations. The system architecture
             focuses on modularity, cost efficiency, and resilience across mobile

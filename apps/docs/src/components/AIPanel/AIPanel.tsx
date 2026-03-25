@@ -397,7 +397,7 @@ export function AIPanel(): React.ReactElement | null {
             {activeTab === "ask" && (
               <div className="ai-tab-content">
                 <p className="ai-tab-description">
-                  Ask questions about Phoenix Rooivalk documentation. AI will
+                  Ask questions about NexaMesh documentation. AI will
                   search relevant sources and provide answers with citations.
                 </p>
 

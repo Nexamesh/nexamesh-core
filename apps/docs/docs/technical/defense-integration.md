@@ -1,7 +1,7 @@
 ---
 id: defense-integration
-title: Phoenix Rooivalk Defense Integration
-sidebar_label: Phoenix Rooivalk Defense
+title: NexaMesh Defense Integration
+sidebar_label: NexaMesh Defense
 difficulty: advanced
 estimated_reading_time: 7
 points: 25
@@ -10,7 +10,7 @@ tags:
   - integration
 ---
 
-# Phoenix Rooivalk Defense Integration
+# NexaMesh Defense Integration
 
 ## Lockheed Martin Partnerships and Azure Cloud
 
@@ -335,7 +335,7 @@ focus on software-defined systems with AI-driven threat detection.
 ## Conclusion
 
 Defense integration through Lockheed Martin partnerships and Azure Government
-Cloud provides Phoenix Rooivalk with exceptional opportunities for DoD market
+Cloud provides NexaMesh with exceptional opportunities for DoD market
 access, technology development, and strategic positioning. The combination of
 prime contractor relationships, cloud infrastructure, and compliance
 capabilities creates a strong foundation for defense market success.
@@ -348,7 +348,7 @@ differentiation.
 ---
 
 _This document contains confidential defense information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._
 
 _Context improved by Giga AI_

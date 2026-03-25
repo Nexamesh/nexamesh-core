@@ -25,7 +25,7 @@ prerequisites:
 
 ## Executive Summary
 
-1. **Problem**: Phoenix Rooivalk needs a non-kinetic effector system to
+1. **Problem**: NexaMesh needs a non-kinetic effector system to
    neutralize drone threats without collateral damage
 2. **Decision**: Develop in-house pneumatic net launcher with local material
    sourcing and modular design
@@ -340,4 +340,4 @@ vs. COTS: $50,000+ = **99% cost reduction**
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

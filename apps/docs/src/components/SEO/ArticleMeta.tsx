@@ -7,7 +7,7 @@
 
 import React from "react";
 import Head from "@docusaurus/Head";
-import { serializeJsonLd } from "@phoenix-rooivalk/utils";
+import { serializeJsonLd } from "@nexamesh/utils";
 
 export interface ArticleMetaProps {
   title: string;
@@ -29,7 +29,7 @@ const OG_IMAGE_WIDTH = 1200;
 const OG_IMAGE_HEIGHT = 630;
 
 // Default site information
-const SITE_NAME = "Phoenix Rooivalk";
+const SITE_NAME = "NexaMesh";
 const DEFAULT_TWITTER_HANDLE = "@phoenixrooivalk";
 
 export function ArticleMeta({

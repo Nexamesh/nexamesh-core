@@ -23,9 +23,9 @@ export const COMPETITOR_PROMPT: PromptTemplate = {
   },
   system: {
     base: `You are a defense industry analyst specializing in counter-UAS systems.
-Analyze the specified competitors against Phoenix Rooivalk.
+Analyze the specified competitors against NexaMesh.
 
-Phoenix Rooivalk key advantages:
+NexaMesh key advantages:
 - SAE Level 4 autonomous operation (edge AI, no network dependency)
 - 120-195ms response time (10-40x faster than competitors)
 - Multi-sensor fusion: RF, radar, optical, acoustic, infrared
@@ -41,10 +41,10 @@ Brief description of each competitor
 Feature-by-feature comparison table
 
 ## Market Positioning
-How each competitor positions vs Phoenix Rooivalk
+How each competitor positions vs NexaMesh
 
 ## Competitive Advantages
-Where Phoenix Rooivalk excels
+Where NexaMesh excels
 
 ## Areas for Improvement
 Where competitors have advantages
@@ -70,7 +70,7 @@ export const SWOT_PROMPT: PromptTemplate = {
   metadata: {
     id: "swot-analysis",
     name: "SWOT Analysis",
-    description: "Generate SWOT analysis for Phoenix Rooivalk",
+    description: "Generate SWOT analysis for NexaMesh",
     category: "analysis",
     version: "1.0.0",
     recommendedModel: "chat",
@@ -80,7 +80,7 @@ export const SWOT_PROMPT: PromptTemplate = {
   },
   system: {
     base: `You are a strategic business analyst specializing in defense technology.
-Generate a comprehensive SWOT analysis for Phoenix Rooivalk.
+Generate a comprehensive SWOT analysis for NexaMesh.
 
 Consider these key aspects:
 - Autonomous kinetic interceptor technology
@@ -92,7 +92,7 @@ Consider these key aspects:
 Provide analysis in structured format with specific, actionable insights.`,
   },
   user: {
-    template: `Generate a SWOT analysis for Phoenix Rooivalk.
+    template: `Generate a SWOT analysis for NexaMesh.
 {{#context}}
 Additional context: {{context}}
 {{/context}}
@@ -175,7 +175,7 @@ Emerging technologies and strategies
 ## Competitive Landscape
 Major players and market share
 
-## Opportunities for Phoenix Rooivalk
+## Opportunities for NexaMesh
 Strategic entry points and positioning`,
     requiredVariables: [],
     optionalVariables: { region: "", segment: "", timeframe: "" },
@@ -336,7 +336,7 @@ export const RAG_QUERY_PROMPT: PromptTemplate = {
     tags: ["rag", "query", "documentation"],
   },
   system: {
-    base: `You are Phoenix Rooivalk's documentation assistant.
+    base: `You are NexaMesh's documentation assistant.
 Answer questions based on the provided documentation context.
 
 Guidelines:

@@ -14,7 +14,7 @@ tags:
 ## Overview
 
 This document outlines the enhanced reusable system architecture implemented for
-the Phoenix Rooivalk ThreatSimulator, designed for seamless porting to Rust in
+the NexaMesh ThreatSimulator, designed for seamless porting to Rust in
 the main counter-drone defense application.
 
 ## 🎯 Architecture Goals
@@ -401,6 +401,6 @@ pooling and resource management ✅ **Deterministic Behavior**: State
 machine-based logic ✅ **Real-time Monitoring**: Performance tracking and
 optimization
 
-This architecture serves as a solid foundation for the main Phoenix Rooivalk
+This architecture serves as a solid foundation for the main NexaMesh
 counter-drone defense system, ensuring seamless transition from TypeScript to
 Rust while maintaining high performance and reliability.

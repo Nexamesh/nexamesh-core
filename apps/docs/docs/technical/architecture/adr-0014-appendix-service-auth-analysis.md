@@ -223,7 +223,7 @@ async function getSecret(secretName: string): Promise<string> {
   // Fetch from Secret Manager
   const client = new SecretManagerServiceClient();
   const [version] = await client.accessSecretVersion({
-    name: `projects/phoenix-rooivalk/secrets/${secretName}/versions/latest`,
+    name: `projects/nexamesh/secrets/${secretName}/versions/latest`,
   });
 
   const value = version.payload?.data?.toString() || "";
@@ -560,4 +560,4 @@ const ALERT_RULES = [
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

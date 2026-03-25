@@ -7,12 +7,12 @@ import type {
   ProductCard,
 } from "../components/Downloads/SlideDeckDownload";
 
-/** Branded text for slide decks - Phoenix Rooivalk */
-const SLIDE_DECK_BRAND_NAME = "PhoenixRooivalk";
-const SLIDE_DECK_BRAND_TEXT = "PR"; // Phoenix Rooivalk initials for small areas
+/** Branded text for slide decks - NexaMesh */
+const SLIDE_DECK_BRAND_NAME = "Nexamesh";
+const SLIDE_DECK_BRAND_TEXT = "PR"; // NexaMesh initials for small areas
 const SLIDE_DECK_TAGLINE =
   "Advanced counter drone defence systems\nfor military and civilian";
-const SLIDE_DECK_URL = "https://docs.phoenixrooivalk.com/";
+const SLIDE_DECK_URL = "https://docs.nexamesh.ai/";
 
 /**
  * Convert relative image path to full URL
@@ -337,8 +337,8 @@ export async function generatePptx(
   const pptx = new (PptxGenJS as any)();
 
   // Set presentation properties
-  pptx.author = "PhoenixRooivalk";
-  pptx.company = "PhoenixRooivalk";
+  pptx.author = "Nexamesh";
+  pptx.company = "Nexamesh";
   pptx.title = metadata.title;
   pptx.subject = `${metadata.duration}-minute presentation for ${metadata.audience || "Investors/Advisors"}`;
 
@@ -1553,8 +1553,8 @@ export async function generatePptx(
       // Not displayed visually on the slide to keep slides clean
     }
 
-    // Add footer with PhoenixRooivalk branding
-    contentSlide.addText("PhoenixRooivalk", {
+    // Add footer with Nexamesh branding
+    contentSlide.addText("Nexamesh", {
       x: 0.5,
       y: 7.2,
       w: 4.5,
@@ -1720,7 +1720,7 @@ export async function generatePptx(
     }
   } else {
     // No contact info - add company name footer
-    summarySlide.addText("Phoenix Rooivalk", {
+    summarySlide.addText("NexaMesh", {
       x: 0.5,
       y: 5.5,
       w: 9.0,

@@ -1,9 +1,9 @@
 ---
 id: master-prd
-title: "Master PRD: PhoenixRooivalk"
+title: "Master PRD: Nexamesh"
 sidebar_label: Master PRD
 description:
-  Master Product Requirements Document for PhoenixRooivalk covering vision,
+  Master Product Requirements Document for Nexamesh covering vision,
   personas, value propositions, and success metrics for SkySnare™ and AeroNet™.
 difficulty: intermediate
 estimated_reading_time: 8
@@ -26,7 +26,7 @@ solutions, transforming proven pneumatic platform technology into two
 world-leading brands: SkySnare™ for consumer sports and training, and AeroNet™
 for regulated enterprise security.
 
-**Positioning:** PhoenixRooivalk is a technology platform that proves
+**Positioning:** Nexamesh is a technology platform that proves
 reliability and safety at consumer scale, then applies that track record to
 high-value enterprise markets that demand compliance, automation, and
 accountability.

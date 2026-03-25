@@ -36,7 +36,7 @@ prerequisites: []
 
 ## Context
 
-Phoenix Rooivalk's Rust codebase consists of 15 workspace members:
+NexaMesh's Rust codebase consists of 15 workspace members:
 
 - **Applications**: `api`, `keeper`, `evidence-cli`, `threat-simulator-desktop`
   (lib + src-tauri)

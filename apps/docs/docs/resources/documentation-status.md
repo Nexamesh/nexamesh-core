@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
 title: Documentation Status
-description: Current status and overview of all Phoenix Rooivalk documentation
+description: Current status and overview of all NexaMesh documentation
 keywords:
   - documentation
   - status
@@ -20,7 +20,7 @@ tags:
 
 # Documentation Status
 
-This page provides an overview of the Phoenix Rooivalk documentation
+This page provides an overview of the NexaMesh documentation
 completeness, standardized figures reference, and recent updates.
 
 ## Overview
@@ -247,8 +247,8 @@ High-level overviews for leadership decision-making.
 | [Investor Executive Summary](../executive/investor-executive-summary)      | Complete | Investment opportunity analysis         |
 | [Global Strategy](../executive/global-strategy)                            | Complete | Strategic direction and expansion plans |
 | [System Overview](../executive/system-overview)                            | Complete | High-level system overview              |
-| [Technical Whitepaper](../executive/phoenix-rooivalk-technical-whitepaper) | Complete | In-depth technical documentation        |
-| [Pitch Deck](../executive/phoenix-rooivalk-pitch-deck)                     | Complete | Investor presentation materials         |
+| [Technical Whitepaper](../executive/nexamesh-technical-whitepaper) | Complete | In-depth technical documentation        |
+| [Pitch Deck](../executive/nexamesh-pitch-deck)                     | Complete | Investor presentation materials         |
 
 ### Technical Documentation
 
@@ -347,7 +347,7 @@ import { MarketOverviewCard, PerformanceCard, InvestmentCard } from '@site/src/c
 
 To contribute to the documentation:
 
-1. Visit the [GitHub Repository](https://github.com/phoenixvc/PhoenixRooivalk)
+1. Visit the [GitHub Repository](https://github.com/phoenixvc/Nexamesh)
 2. Navigate to `apps/docs/docs/`
 3. Reference this page for standard figures
 4. Edit or create markdown files following the established patterns
@@ -362,8 +362,8 @@ For documentation guidelines, see the
 
 If you find issues or have suggestions for improving the documentation, please:
 
-- Open an issue on [GitHub](https://github.com/phoenixvc/PhoenixRooivalk/issues)
-- Contact the team at [jurie@phoenixvc.tech](mailto:jurie@phoenixvc.tech)
+- Open an issue on [GitHub](https://github.com/phoenixvc/Nexamesh/issues)
+- Contact the team at [jurie@nexamesh.ai](mailto:jurie@nexamesh.ai)
 
 ---
 

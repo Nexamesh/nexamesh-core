@@ -1,5 +1,5 @@
 /**
- * AI Service for Phoenix Rooivalk Documentation
+ * AI Service for NexaMesh Documentation
  *
  * Provides client-side interface to Azure Functions AI endpoints:
  * - Competitor analysis
@@ -707,7 +707,7 @@ export const KNOWN_COMPETITORS = {
 
 // Predefined SWOT topics
 export const SWOT_TOPICS = {
-  product: "Phoenix Rooivalk Autonomous Kinetic Interceptor",
+  product: "NexaMesh Autonomous Kinetic Interceptor",
   market: "Counter-UAS Defense Market Entry Strategy",
   technology: "Reusable Kinetic Vehicle Technology",
   blockchain: "Blockchain-Verified Chain of Custody in Defense",

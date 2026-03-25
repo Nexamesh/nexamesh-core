@@ -1,7 +1,7 @@
 import type { Slide } from "../SlideDeckDownload";
 
 /**
- * Phoenix Rooivalk Lightning Pitch (150 seconds / 2.5 minutes)
+ * NexaMesh Lightning Pitch (150 seconds / 2.5 minutes)
  * Optimized for quick investor meetings and pitch competitions
  *
  * Structure:
@@ -64,7 +64,7 @@ export const lightningPitchSlides: Slide[] = [
     speakerNotes:
       "Play demo video while talking. Quick pivot from fear to hope. Emphasize: safe, legal, affordable.",
     script:
-      "[PLAY DEMO] Phoenix Rooivalk. We capture drones safely with no damage. CO₂ net launchers - safe propellant, no permits needed. Legal and non-destructive. Starting at just $349.",
+      "[PLAY DEMO] NexaMesh. We capture drones safely with no damage. CO₂ net launchers - safe propellant, no permits needed. Legal and non-destructive. Starting at just $349.",
   },
 
   // ==========================================
@@ -282,11 +282,11 @@ export const lightningPitchSlides: Slide[] = [
     icon: "❓",
     layout: "title-only",
     keyPoints: [
-      "**Phoenix Rooivalk**",
+      "**NexaMesh**",
       "*Capture Drones Safely. No Damage.*",
       "",
-      "jurie@phoenixrooivalk.com",
-      "phoenixrooivalk.com",
+      "jurie@nexamesh.ai",
+      "nexamesh.ai",
     ],
     speakerNotes:
       "Open for questions. Have backup slides ready for common investor questions.",
@@ -411,7 +411,7 @@ export const lightningPitchSlides: Slide[] = [
       "**Data moat** — proprietary drone signatures",
       "**Integration** — blockchain + detection + capture",
       "**First mover** — consumer C-UAS category",
-      "**Brand** — Phoenix Rooivalk recognition",
+      "**Brand** — NexaMesh recognition",
     ],
     keyPoints: [
       "**Multiple moats:** patents, data, integration, and first-mover advantage",
@@ -478,12 +478,12 @@ export const lightningPitchSlides: Slide[] = [
       "**Revenue diversification** option",
     ],
     keyPoints: [
-      "**Dogfooding:** We use our own AI tools to grow Phoenix Rooivalk",
+      "**Dogfooding:** We use our own AI tools to grow NexaMesh",
     ],
     speakerNotes:
       "BACKUP SLIDE. Use if asked about team capabilities or revenue diversification. Shows AI/ML chops beyond C-UAS.",
     script:
-      "OmniPost is our internal content distribution tool. Write once, publish everywhere - AI optimizes for each platform. We built it to market Phoenix Rooivalk. It proves our AI capability and could become a SaaS product for revenue diversification. We dogfood our own tools.",
+      "OmniPost is our internal content distribution tool. Write once, publish everywhere - AI optimizes for each platform. We built it to market NexaMesh. It proves our AI capability and could become a SaaS product for revenue diversification. We dogfood our own tools.",
   },
 
   // ==========================================
@@ -582,7 +582,7 @@ export const lightningPitchSlides: Slide[] = [
 ];
 
 export const lightningPitchMeta = {
-  title: "Phoenix Rooivalk: Lightning Pitch",
+  title: "NexaMesh: Lightning Pitch",
   duration: 2.6,
   audience: "Investors",
   date: "January 14, 2026",

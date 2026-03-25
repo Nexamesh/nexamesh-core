@@ -1,7 +1,7 @@
 # `src/data/products` — Product Catalog Data
 
 This folder contains all product-related TypeScript data modules used throughout
-the Phoenix Rooivalk documentation site. Data here drives product pages, pricing
+the NexaMesh documentation site. Data here drives product pages, pricing
 tables, the pre-order configurator, and any MDX docs that import product
 figures.
 

@@ -16,9 +16,9 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: "What is Phoenix Rooivalk?",
+    question: "What is NexaMesh?",
     answer:
-      "Phoenix Rooivalk is an autonomous kinetic interceptor system designed to detect, track, and neutralize unauthorized drones. It provides comprehensive counter-UAS solutions for both commercial and defense applications.",
+      "NexaMesh is an autonomous kinetic interceptor system designed to detect, track, and neutralize unauthorized drones. It provides comprehensive counter-UAS solutions for both commercial and defense applications.",
     category: "general",
   },
   {
@@ -28,15 +28,15 @@ const FAQ_ITEMS: FAQItem[] = [
     category: "platform",
   },
   {
-    question: "What compliance certifications does Phoenix Rooivalk have?",
+    question: "What compliance certifications does NexaMesh have?",
     answer:
-      "Phoenix Rooivalk is designed with ITAR compliance in mind for defense applications. For specific certification details, please refer to our Legal & Compliance documentation section or contact our compliance team.",
+      "NexaMesh is designed with ITAR compliance in mind for defense applications. For specific certification details, please refer to our Legal & Compliance documentation section or contact our compliance team.",
     category: "compliance",
   },
   {
     question: "How can I request a demo or trial?",
     answer:
-      "You can request a demo by contacting our sales team through the contact form below or by emailing sales@phoenixrooivalk.com. We offer tailored demonstrations based on your specific use case.",
+      "You can request a demo by contacting our sales team through the contact form below or by emailing sales@nexamesh.ai. We offer tailored demonstrations based on your specific use case.",
     category: "sales",
   },
   {
@@ -48,7 +48,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: "How do I report a security vulnerability?",
     answer:
-      "Security vulnerabilities should be reported confidentially to security@phoenixrooivalk.com. We have a responsible disclosure policy and appreciate reports from the security community.",
+      "Security vulnerabilities should be reported confidentially to security@nexamesh.ai. We have a responsible disclosure policy and appreciate reports from the security community.",
     category: "security",
   },
 ];
@@ -75,7 +75,7 @@ const SUPPORT_LINKS = [
   {
     title: "Community Forum",
     description: "Connect with other users and experts",
-    href: "https://community.phoenixrooivalk.com",
+    href: "https://community.nexamesh.ai",
     icon: "💬",
     external: true,
   },
@@ -347,24 +347,24 @@ export function SupportPanel({
             <span className="support-contact-icon">📧</span>
             <h3>Email Support</h3>
             <p>For general inquiries and technical support</p>
-            <a href="mailto:support@phoenixrooivalk.com">
-              support@phoenixrooivalk.com
+            <a href="mailto:support@nexamesh.ai">
+              support@nexamesh.ai
             </a>
           </div>
           <div className="support-contact-card">
             <span className="support-contact-icon">💼</span>
             <h3>Enterprise Sales</h3>
             <p>For enterprise licensing and custom solutions</p>
-            <a href="mailto:sales@phoenixrooivalk.com">
-              sales@phoenixrooivalk.com
+            <a href="mailto:sales@nexamesh.ai">
+              sales@nexamesh.ai
             </a>
           </div>
           <div className="support-contact-card">
             <span className="support-contact-icon">🔒</span>
             <h3>Security</h3>
             <p>Report security vulnerabilities confidentially</p>
-            <a href="mailto:security@phoenixrooivalk.com">
-              security@phoenixrooivalk.com
+            <a href="mailto:security@nexamesh.ai">
+              security@nexamesh.ai
             </a>
           </div>
         </div>

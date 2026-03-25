@@ -15,7 +15,7 @@ export default function YourProgress(): React.ReactElement {
   return (
     <Layout
       title="Your Progress"
-      description="Track your learning progress through Phoenix Rooivalk documentation"
+      description="Track your learning progress through NexaMesh documentation"
     >
       <main
         className="container margin-vert--xl"

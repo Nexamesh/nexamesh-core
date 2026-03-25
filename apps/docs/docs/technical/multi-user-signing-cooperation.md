@@ -369,9 +369,9 @@ Architecture should support:
 
 ---
 
-## Integration with Phoenix Rooivalk
+## Integration with NexaMesh
 
-This multi-user signing and cooperation system aligns with Phoenix Rooivalk's
+This multi-user signing and cooperation system aligns with NexaMesh's
 broader capabilities:
 
 ### Evidence Chain of Custody
@@ -389,12 +389,12 @@ ensuring appropriate oversight while maintaining operational agility.
 ### Compliance and Audit Requirements
 
 The immutable audit trail and blockchain anchoring capabilities directly support
-Phoenix Rooivalk's compliance requirements for defense applications, providing
+NexaMesh's compliance requirements for defense applications, providing
 cryptographic proof of all approval activities.
 
 ### Cross-Organization Collaboration
 
-When Phoenix Rooivalk systems are deployed across multiple agencies or allied
+When NexaMesh systems are deployed across multiple agencies or allied
 forces, the cooperation features enable secure cross-organization collaboration
 on shared operational documents and protocols.
 
@@ -418,5 +418,5 @@ document.
 ---
 
 _This document contains confidential technical information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

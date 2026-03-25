@@ -38,7 +38,7 @@ prerequisites:
 
 ### Operational Environment
 
-Phoenix Rooivalk edge nodes operate in challenging conditions:
+NexaMesh edge nodes operate in challenging conditions:
 
 - **Contested RF spectrum**: Jamming may disrupt communications
 - **Remote locations**: Limited or no cellular/satellite coverage
@@ -388,4 +388,4 @@ headroom.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

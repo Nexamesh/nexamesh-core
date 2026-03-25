@@ -1,7 +1,7 @@
 ---
 id: troubleshooting-guide
-title: Phoenix Rooivalk Troubleshooting Guide
-sidebar_label: Phoenix Rooivalk Troubleshooting
+title: NexaMesh Troubleshooting Guide
+sidebar_label: NexaMesh Troubleshooting
 difficulty: intermediate
 estimated_reading_time: 10
 points: 15
@@ -9,7 +9,7 @@ tags:
   - operations
 ---
 
-# Phoenix Rooivalk Troubleshooting Guide
+# NexaMesh Troubleshooting Guide
 
 ## Executive Summary
 
@@ -506,7 +506,7 @@ optimal system performance and reliability.
 
 ## Conclusion
 
-The Phoenix Rooivalk Troubleshooting Guide provides comprehensive procedures for
+The NexaMesh Troubleshooting Guide provides comprehensive procedures for
 diagnosing and resolving system issues. The guide emphasizes proactive
 maintenance, systematic troubleshooting, and continuous improvement while
 maintaining the highest standards of system reliability and performance.
@@ -529,5 +529,5 @@ availability.
 ---
 
 _This document contains confidential troubleshooting information. Distribution
-is restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+is restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

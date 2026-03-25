@@ -1,7 +1,7 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 /**
- * Phoenix Rooivalk Documentation Sidebar
+ * NexaMesh Documentation Sidebar
  *
  * Navigation Structure:
  * 1. Getting Started - Entry point for all users
@@ -27,7 +27,7 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "phoenix-rooivalk-documentation",
+          id: "nexamesh-documentation",
           label: "Documentation Home",
         },
         {
@@ -72,9 +72,9 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             "executive/investor-executive-summary",
-            "executive/phoenix-rooivalk-pitch-deck",
-            "executive/phoenix-rooivalk-litepaper",
-            "executive/phoenix-rooivalk-technical-whitepaper",
+            "executive/nexamesh-pitch-deck",
+            "executive/nexamesh-litepaper",
+            "executive/nexamesh-technical-whitepaper",
           ],
         },
         {
@@ -93,7 +93,7 @@ const sidebars: SidebarsConfig = {
           label: "Presentations",
           collapsed: true,
           items: [
-            "executive/phoenix-rooivalk-pitch-deck",
+            "executive/nexamesh-pitch-deck",
             "executive/key-questions-cheatsheet",
             "executive/team-status",
           ],

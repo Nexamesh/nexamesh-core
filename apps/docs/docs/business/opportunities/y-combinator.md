@@ -181,9 +181,9 @@ must:
 
 ---
 
-## Phoenix Rooivalk Fit
+## NexaMesh Fit
 
-| YC Criteria        | Phoenix Rooivalk     |
+| YC Criteria        | NexaMesh     |
 | ------------------ | -------------------- |
 | Technical founders | Engineering-led team |
 | Large market       | $6B+ counter-UAS     |

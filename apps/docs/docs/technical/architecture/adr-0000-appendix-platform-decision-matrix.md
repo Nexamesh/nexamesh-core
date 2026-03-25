@@ -42,7 +42,7 @@ Cognitive Mesh platform for AI features.
 
 ### The Decision Landscape
 
-Phoenix Rooivalk has three main paths for implementing AI functionality:
+NexaMesh has three main paths for implementing AI functionality:
 
 | Path                    | Description                                      | Stack                 |
 | ----------------------- | ------------------------------------------------ | --------------------- |
@@ -401,7 +401,7 @@ Phoenix Rooivalk has three main paths for implementing AI functionality:
 
 ### Same Developer Pool Reality
 
-⚠️ **Critical Context**: Development resources for Phoenix Rooivalk docs and
+⚠️ **Critical Context**: Development resources for NexaMesh docs and
 Cognitive Mesh are the **same pool** (single developer). Every hour spent here
 is an hour not spent maturing CM.
 
@@ -422,7 +422,7 @@ is an hour not spent maturing CM.
    production-ready status
 2. **LangChain features** provide good value for current needs without blocking
    CM development
-3. **Avoid feature creep** in Phoenix Rooivalk that duplicates CM capabilities
+3. **Avoid feature creep** in NexaMesh that duplicates CM capabilities
 4. **Track CM trigger points** rather than documenting detailed migration plans
 
 ### When to Invest in Docs Site
@@ -463,5 +463,5 @@ to 6-9 months if development focus shifts to CM PRDs.
 ---
 
 _This document contains confidential architectural information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

@@ -25,7 +25,7 @@ interface InlineCommentsProps {
   children: React.ReactNode;
 }
 
-const ADMIN_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+const ADMIN_DOMAINS = ["nexamesh.ai", "justaghost.dev"];
 
 export function InlineComments({
   pageId,

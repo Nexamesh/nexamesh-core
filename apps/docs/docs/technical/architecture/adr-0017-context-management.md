@@ -36,7 +36,7 @@ Injection)
 
 ## Context
 
-Phoenix Rooivalk's AI features require different types of context:
+NexaMesh's AI features require different types of context:
 
 | Feature             | Company Context | RAG Context    | Feature Context |
 | ------------------- | --------------- | -------------- | --------------- |
@@ -120,7 +120,7 @@ Phoenix Rooivalk's AI features require different types of context:
 ```typescript
 // Layer 1: Core context (always included)
 export const PHOENIX_CORE_CONTEXT = `
-Phoenix Rooivalk is a South African company developing autonomous
+NexaMesh is a South African company developing autonomous
 counter-drone defense systems. The Phoenix interceptor is an AI-guided
 drone designed to detect, track, and neutralize hostile UAVs.
 
@@ -139,7 +139,7 @@ Target Markets:
 
 // Layer 2a: Technical context (for technical queries)
 export const PHOENIX_TECHNICAL_CONTEXT = `
-Phoenix Rooivalk Technical Specifications:
+NexaMesh Technical Specifications:
 
 Propulsion System:
 - Electric quad-rotor configuration
@@ -164,7 +164,7 @@ Integration:
 
 // Layer 2b: Market context (for business queries)
 export const PHOENIX_MARKET_CONTEXT = `
-Phoenix Rooivalk Market Position:
+NexaMesh Market Position:
 
 Competitive Landscape:
 - Direct competitors: Anduril (USA), DroneShield (AUS), Dedrone (USA)
@@ -466,7 +466,7 @@ async function buildCompetitorPrompt(
 
   // 2. Retrieve RAG context
   const ragResults = await searchDocuments(
-    `Phoenix Rooivalk vs ${competitors.join(" ")} ${focusAreas?.join(" ")}`,
+    `NexaMesh vs ${competitors.join(" ")} ${focusAreas?.join(" ")}`,
     { topK: 5 },
   );
   const ragContext = buildRAGContextSection(
@@ -685,4 +685,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

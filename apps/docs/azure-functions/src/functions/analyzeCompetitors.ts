@@ -59,9 +59,9 @@ async function handler(
       : [];
 
     const systemPrompt = `You are a defense industry analyst specializing in counter-UAS systems.
-Analyze the specified competitors against Phoenix Rooivalk.
+Analyze the specified competitors against NexaMesh.
 
-Phoenix Rooivalk key advantages:
+NexaMesh key advantages:
 - SAE Level 4 autonomous operation (edge AI, no network dependency)
 - 120-195ms response time (10-40x faster than competitors)
 - Multi-sensor fusion: RF, radar, optical, acoustic, infrared
@@ -77,10 +77,10 @@ Brief description of each competitor
 Feature-by-feature comparison table
 
 ## Market Positioning
-How each competitor positions vs Phoenix Rooivalk
+How each competitor positions vs NexaMesh
 
 ## Competitive Advantages
-Where Phoenix Rooivalk excels
+Where NexaMesh excels
 
 ## Areas for Improvement
 Where competitors have advantages

@@ -118,7 +118,7 @@ function formatDeadline(deadline: string): {
 export default function ApplicationDocument({
   title,
   subtitle,
-  applicant = "Phoenix Rooivalk Inc.",
+  applicant = "NexaMesh Inc.",
   deadline,
   status = "draft",
   version = "1.0",

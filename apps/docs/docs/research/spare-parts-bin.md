@@ -1,7 +1,7 @@
 # Spare Parts Bin — Identified Components Inventory
 
 Catalogue of salvaged components identified from around the workshop. Assessed
-for usefulness across **all projects** — not just Phoenix Rooivalk drone builds.
+for usefulness across **all projects** — not just NexaMesh drone builds.
 
 > **Note:** The Parrot Minikit+ was associated with a Parrot drone that has been
 > stolen. The toy quadcopter (X8-class, 320mm diagonal) for upgrade paths A/B/C

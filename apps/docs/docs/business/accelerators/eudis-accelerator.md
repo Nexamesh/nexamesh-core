@@ -69,7 +69,7 @@ Companies must not be controlled by non-associated third country entities.
 
 :::
 
-| Requirement            | Phoenix Rooivalk Status |
+| Requirement            | NexaMesh Status |
 | ---------------------- | ----------------------- |
 | EU/Norway based        | May need EU subsidiary  |
 | Defense focus          | Meets requirement       |
@@ -80,7 +80,7 @@ Companies must not be controlled by non-associated third country entities.
 
 ## Application Strategy
 
-### For Phoenix Rooivalk
+### For NexaMesh
 
 **Challenge:** South African company, not EU-based
 
@@ -102,7 +102,7 @@ Companies must not be controlled by non-associated third country entities.
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score      | Notes                    |
 | --------------- | ---------- | ------------------------ |

@@ -248,7 +248,7 @@ pub struct RulesOfEngagement {
 
 ## Effector Inventory
 
-### Phoenix Rooivalk Effector Roadmap
+### NexaMesh Effector Roadmap
 
 | Effector                     | Tier | Status    | Target Date |
 | ---------------------------- | ---- | --------- | ----------- |
@@ -310,4 +310,4 @@ pub struct EffectorSpec {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

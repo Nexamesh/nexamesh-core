@@ -1,5 +1,5 @@
 /**
- * Phase Filter Context for Phoenix Rooivalk Documentation
+ * Phase Filter Context for NexaMesh Documentation
  * Provides phase filtering state across the documentation site
  *
  * Phases aligned with funding rounds and product evolution:

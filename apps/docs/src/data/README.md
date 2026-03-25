@@ -1,7 +1,7 @@
 # `src/data` — Centralised Documentation Data
 
 This folder is the **single source of truth** for all key figures, metrics, and
-structured data used across the Phoenix Rooivalk documentation site. Edit values
+structured data used across the NexaMesh documentation site. Edit values
 here once and every doc or MDX page that imports them will reflect the change
 automatically.
 

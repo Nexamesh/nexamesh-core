@@ -1,4 +1,4 @@
-# Phoenix Rooivalk Documentation Requirements Checklist
+# NexaMesh Documentation Requirements Checklist
 
 ## Core Technical Documents Needed
 
@@ -143,7 +143,7 @@
 
 - [x] **One-Page Solution Overview** (`docs/01-Executive_Summary.md`)
   - [x] Problem statement and market gap
-  - [x] Phoenix Rooivalk unique value proposition
+  - [x] NexaMesh unique value proposition
   - [x] Key differentiators and competitive advantages
   - [ ] Implementation timeline and support structure
 

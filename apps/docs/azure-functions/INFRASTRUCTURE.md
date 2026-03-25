@@ -1,7 +1,7 @@
 # Azure Functions Infrastructure Setup
 
 This document describes the required Azure infrastructure for deploying the
-Phoenix Rooivalk Azure Functions.
+NexaMesh Azure Functions.
 
 ## Quick Start
 
@@ -30,8 +30,8 @@ This will create the database and all required containers automatically.
 
 ## Important: Resource Naming
 
-**Note:** The examples below use placeholder names like `rg-phoenix-rooivalk`
-and `cosmos-phoenix-rooivalk`. **Replace these with your actual Azure resource
+**Note:** The examples below use placeholder names like `rg-nexamesh`
+and `cosmos-nexamesh`. **Replace these with your actual Azure resource
 names** when running commands.
 
 To find your existing resources:
@@ -53,20 +53,20 @@ az functionapp list --resource-group YOUR_RESOURCE_GROUP_NAME --output table
 
 ```bash
 # Create resource group
-az group create --name rg-phoenix-rooivalk --location eastus
+az group create --name rg-nexamesh --location eastus
 
 # Create storage account (required for Functions)
 az storage account create \
-  --name stphoenixrooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name stnexamesh \
+  --resource-group rg-nexamesh \
   --location eastus \
   --sku Standard_LRS
 
 # Create Function App
 az functionapp create \
-  --name func-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
-  --storage-account stphoenixrooivalk \
+  --name func-nexamesh \
+  --resource-group rg-nexamesh \
+  --storage-account stnexamesh \
   --consumption-plan-location eastus \
   --runtime node \
   --runtime-version 20 \
@@ -84,14 +84,14 @@ containers:
 
 ```powershell
 # From repository root
-.\scripts\Setup-CosmosContainers.ps1 -ResourceGroup "rg-phoenix-rooivalk" -CosmosAccountName "cosmos-phoenix-rooivalk"
+.\scripts\Setup-CosmosContainers.ps1 -ResourceGroup "rg-nexamesh" -CosmosAccountName "cosmos-nexamesh"
 ```
 
 **Bash:**
 
 ```bash
 # From repository root
-./scripts/setup-cosmos-containers.sh rg-phoenix-rooivalk cosmos-phoenix-rooivalk
+./scripts/setup-cosmos-containers.sh rg-nexamesh cosmos-nexamesh
 ```
 
 The scripts will:
@@ -106,28 +106,28 @@ The scripts will:
 ```bash
 # Create Cosmos DB account
 az cosmosdb create \
-  --name cosmos-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name cosmos-nexamesh \
+  --resource-group rg-nexamesh \
   --kind GlobalDocumentDB \
   --default-consistency-level Session
 
 # Create database
 az cosmosdb sql database create \
-  --account-name cosmos-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --account-name cosmos-nexamesh \
+  --resource-group rg-nexamesh \
   --name phoenix-docs
 
 # Create containers (note: user_news_preferences uses /userId)
 az cosmosdb sql container create \
-  --account-name cosmos-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --account-name cosmos-nexamesh \
+  --resource-group rg-nexamesh \
   --database-name phoenix-docs \
   --name news_articles \
   --partition-key-path "/id"
 
 az cosmosdb sql container create \
-  --account-name cosmos-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --account-name cosmos-nexamesh \
+  --resource-group rg-nexamesh \
   --database-name phoenix-docs \
   --name user_news_preferences \
   --partition-key-path "/userId"
@@ -141,16 +141,16 @@ az cosmosdb sql container create \
 ```bash
 # Create Azure OpenAI resource
 az cognitiveservices account create \
-  --name aoai-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name aoai-nexamesh \
+  --resource-group rg-nexamesh \
   --kind OpenAI \
   --sku S0 \
   --location eastus
 
 # Deploy GPT-4 model
 az cognitiveservices account deployment create \
-  --name aoai-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name aoai-nexamesh \
+  --resource-group rg-nexamesh \
   --deployment-name gpt-4 \
   --model-name gpt-4 \
   --model-version "0613" \
@@ -160,8 +160,8 @@ az cognitiveservices account deployment create \
 
 # Deploy embedding model
 az cognitiveservices account deployment create \
-  --name aoai-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name aoai-nexamesh \
+  --resource-group rg-nexamesh \
   --deployment-name text-embedding-3-small \
   --model-name text-embedding-3-small \
   --model-version "1" \
@@ -175,8 +175,8 @@ az cognitiveservices account deployment create \
 ```bash
 # Create Application Insights
 az monitor app-insights component create \
-  --app appi-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --app appi-nexamesh \
+  --resource-group rg-nexamesh \
   --location eastus \
   --kind web
 ```
@@ -186,16 +186,16 @@ az monitor app-insights component create \
 ```bash
 # Create Notification Hub namespace
 az notification-hub namespace create \
-  --name nh-phoenix-rooivalk-ns \
-  --resource-group rg-phoenix-rooivalk \
+  --name nh-nexamesh-ns \
+  --resource-group rg-nexamesh \
   --location eastus \
   --sku Free
 
 # Create Notification Hub
 az notification-hub create \
-  --name nh-phoenix-rooivalk \
-  --namespace-name nh-phoenix-rooivalk-ns \
-  --resource-group rg-phoenix-rooivalk
+  --name nh-nexamesh \
+  --namespace-name nh-nexamesh-ns \
+  --resource-group rg-nexamesh
 ```
 
 ## GitHub Secrets Configuration
@@ -224,7 +224,7 @@ Add these secrets to your GitHub repository:
 
 | Variable Name              | Description            | Example                 |
 | -------------------------- | ---------------------- | ----------------------- |
-| `AZURE_FUNCTIONAPP_NAME`   | Function App name      | `func-phoenix-rooivalk` |
+| `AZURE_FUNCTIONAPP_NAME`   | Function App name      | `func-nexamesh` |
 | `AZURE_AI_DEPLOYMENT_NAME` | OpenAI chat deployment | `gpt-4`                 |
 
 ## Get Connection Strings
@@ -232,36 +232,36 @@ Add these secrets to your GitHub repository:
 ```bash
 # Cosmos DB connection string
 az cosmosdb keys list \
-  --name cosmos-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name cosmos-nexamesh \
+  --resource-group rg-nexamesh \
   --type connection-strings \
   --query "connectionStrings[0].connectionString" \
   --output tsv
 
 # Azure OpenAI endpoint and key
 az cognitiveservices account show \
-  --name aoai-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name aoai-nexamesh \
+  --resource-group rg-nexamesh \
   --query "properties.endpoint" \
   --output tsv
 
 az cognitiveservices account keys list \
-  --name aoai-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name aoai-nexamesh \
+  --resource-group rg-nexamesh \
   --query "key1" \
   --output tsv
 
 # Application Insights connection string
 az monitor app-insights component show \
-  --app appi-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --app appi-nexamesh \
+  --resource-group rg-nexamesh \
   --query "connectionString" \
   --output tsv
 
 # Function App publish profile
 az functionapp deployment list-publishing-profiles \
-  --name func-phoenix-rooivalk \
-  --resource-group rg-phoenix-rooivalk \
+  --name func-nexamesh \
+  --resource-group rg-nexamesh \
   --xml
 ```
 
@@ -324,7 +324,7 @@ The CI/CD pipeline validates infrastructure before deployment. If it fails:
 1. Check Application Insights for errors
 2. Verify environment variables are set correctly
 3. Check the Function App logs:
-   `az functionapp log tail --name func-phoenix-rooivalk --resource-group rg-phoenix-rooivalk`
+   `az functionapp log tail --name func-nexamesh --resource-group rg-nexamesh`
 
 ### Cosmos DB Connection Issues
 

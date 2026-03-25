@@ -203,7 +203,7 @@ const ONBOARDING_STEPS: OnboardingStep[] = [
     id: "apply-for-access",
     title: "Apply for Access",
     description:
-      "We'd love to have you! Please fill out the form below to request access to the Phoenix Rooivalk documentation portal.",
+      "We'd love to have you! Please fill out the form below to request access to the NexaMesh documentation portal.",
     icon: "📋",
     stepType: "apply-for-access",
   },
@@ -217,7 +217,7 @@ const ONBOARDING_STEPS: OnboardingStep[] = [
   },
   {
     id: "welcome",
-    title: "Welcome to Phoenix Rooivalk",
+    title: "Welcome to NexaMesh",
     description:
       "This documentation hub contains everything you need to know about our counter-drone technology. Let's take a quick tour of the key features.",
     icon: "🚀",

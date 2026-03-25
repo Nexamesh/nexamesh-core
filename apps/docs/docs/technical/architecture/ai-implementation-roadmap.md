@@ -26,7 +26,7 @@ prerequisites:
 
 ## Overview
 
-This document provides a phased implementation plan for Phoenix Rooivalk's AI
+This document provides a phased implementation plan for NexaMesh's AI
 architecture, consolidating the decisions from:
 
 - [ADR-0015: Prompt Management](./adr-0015-prompt-management.md)
@@ -313,7 +313,7 @@ export const deepResearch = functions.https.onCall(async (data, context) => {
 
   const { topic, depth = "standard" } = data;
   const result = await researchAgent.invoke({
-    input: `Research ${topic} for Phoenix Rooivalk competitive analysis`,
+    input: `Research ${topic} for NexaMesh competitive analysis`,
   });
 
   return {
@@ -420,7 +420,7 @@ const langsmithClient = new Client({
 });
 
 export const tracer = new LangChainTracer({
-  projectName: "phoenix-rooivalk-ai",
+  projectName: "nexamesh-ai",
   client: langsmithClient,
 });
 
@@ -612,4 +612,4 @@ const result = await ragChain.invoke(
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

@@ -58,7 +58,7 @@ async function handler(
       all: "Review for clarity, completeness, and technical accuracy.",
     };
 
-    const systemPrompt = `You are a technical documentation editor for Phoenix Rooivalk.
+    const systemPrompt = `You are a technical documentation editor for NexaMesh.
 Review the document and suggest specific improvements.
 ${focusInstructions[focusArea]}
 

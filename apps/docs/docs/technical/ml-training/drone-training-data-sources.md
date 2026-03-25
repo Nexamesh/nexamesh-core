@@ -429,4 +429,4 @@ scarcity, supporting both binary classification and multi-class identification.
 ---
 
 _This document provides guidance for acquiring training data for the Phoenix
-Rooivalk ML pipeline. © 2025 Phoenix Rooivalk. All rights reserved._
+Rooivalk ML pipeline. © 2026 NexaMesh. All rights reserved._

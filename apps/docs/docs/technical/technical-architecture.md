@@ -1,7 +1,7 @@
 ---
 id: technical-architecture
-title: Phoenix Rooivalk Technical Architecture
-sidebar_label: Phoenix Rooivalk Technical
+title: NexaMesh Technical Architecture
+sidebar_label: NexaMesh Technical
 difficulty: expert
 estimated_reading_time: 2
 points: 50
@@ -10,11 +10,11 @@ tags:
   - architecture
 ---
 
-# Phoenix Rooivalk Technical Architecture
+# NexaMesh Technical Architecture
 
 ## System Architecture Overview
 
-Phoenix Rooivalk implements a **Comms-Independent Edge Autonomy (CIEA)**
+NexaMesh implements a **Comms-Independent Edge Autonomy (CIEA)**
 architecture that achieves sub-2ms authentication and 120–195ms end-to-end
 decision latency through edge-first processing. The system combines AI-driven
 threat detection with cryptographically anchored evidence trails to ensure both
@@ -67,10 +67,10 @@ rapid response and verifiable accountability in all conditions.
 ## Contact
 
 For questions or support, please contact our team or visit our
-[GitHub repository](https://github.com/JustAGhosT/PhoenixRooivalk).
+[GitHub repository](https://github.com/JustAGhosT/Nexamesh).
 
 ---
 
 _This document contains confidential technical specifications. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

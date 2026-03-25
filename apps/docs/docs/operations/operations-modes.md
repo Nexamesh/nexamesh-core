@@ -1,7 +1,7 @@
 ---
 id: operations-modes
-title: Phoenix Rooivalk Operations Modes
-sidebar_label: Phoenix Rooivalk Operations
+title: NexaMesh Operations Modes
+sidebar_label: NexaMesh Operations
 difficulty: intermediate
 estimated_reading_time: 7
 points: 15
@@ -10,11 +10,11 @@ tags:
   - deployment
 ---
 
-# Phoenix Rooivalk Operations Modes
+# NexaMesh Operations Modes
 
 ## Executive Summary
 
-This document provides comprehensive operational modes for the Phoenix Rooivalk
+This document provides comprehensive operational modes for the NexaMesh
 Counter-Drone Defense System. The operational modes cover deployment
 configurations, operational procedures, and mission-specific requirements across
 various operational scenarios.
@@ -444,7 +444,7 @@ various operational scenarios.
 
 ## Conclusion
 
-The Phoenix Rooivalk Operations Modes provide comprehensive operational
+The NexaMesh Operations Modes provide comprehensive operational
 configurations for various mission requirements and operational scenarios. The
 operational modes ensure optimal performance while maintaining the highest
 standards of safety, security, and operational effectiveness.
@@ -465,5 +465,5 @@ all mission requirements and operational scenarios.
 ---
 
 _This document contains confidential operational information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

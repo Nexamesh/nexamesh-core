@@ -1,7 +1,7 @@
 ---
 id: system-architecture-diagrams
-title: PhoenixRooivalk System Architecture Diagrams
-sidebar_label: PhoenixRooivalk System Architecture
+title: Nexamesh System Architecture Diagrams
+sidebar_label: Nexamesh System Architecture
 difficulty: expert
 estimated_reading_time: 3
 points: 50
@@ -10,11 +10,11 @@ tags:
   - architecture
 ---
 
-# PhoenixRooivalk System Architecture Diagrams
+# Nexamesh System Architecture Diagrams
 
 ## Overview
 
-This document contains visual representations of the PhoenixRooivalk system
+This document contains visual representations of the Nexamesh system
 architecture, including system components, data flow, deployment scenarios, and
 performance metrics. These diagrams are designed for use in presentations,
 documentation, and technical discussions.
@@ -27,7 +27,7 @@ documentation, and technical discussions.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    PhoenixRooivalk System                      │
+│                    Nexamesh System                      │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
@@ -80,7 +80,7 @@ documentation, and technical discussions.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    PhoenixRooivalk Technology Stack            │
+│                    Nexamesh Technology Stack            │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌─────────────────────────────────────────────────────────┐   │
@@ -359,7 +359,7 @@ Response Time (milliseconds)
 3000 ┤                    ■ Fortem (2000-5000ms)
 2000 ┤                    ■ DroneShield (2000-5000ms)
 1000 ┤
- 200 ┤    ■ Phoenix Rooivalk (120-195ms)
+ 200 ┤    ■ NexaMesh (120-195ms)
    0 └─────────────────────────────────────────────
       Phoenix    Anduril    Fortem   DroneShield
       Rooivalk
@@ -370,7 +370,7 @@ Response Time (milliseconds)
 ```
 Market Share (%)
 20 ┤
-15 ┤           ████████████████ Phoenix Rooivalk
+15 ┤           ████████████████ NexaMesh
 10 ┤        ████████████
  5 ┤     ████████
  0 └─────────────────────────────────────────────
@@ -516,4 +516,4 @@ Revenue ($M)
 ---
 
 _This document contains confidential visual elements. Distribution is restricted
-to authorized personnel only. © 2025 Phoenix Rooivalk. All rights reserved._
+to authorized personnel only. © 2026 NexaMesh. All rights reserved._

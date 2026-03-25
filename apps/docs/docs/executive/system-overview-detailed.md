@@ -215,7 +215,7 @@ launch operations
 
 ## Conclusion
 
-The Phoenix Rooivalk system represents a comprehensive approach to counter-drone
+The NexaMesh system represents a comprehensive approach to counter-drone
 defense, combining advanced technology with responsible use principles. The
 modular architecture, multiple operating modes, and comprehensive integration
 capabilities make it suitable for a wide range of defense and security
@@ -228,5 +228,5 @@ highest standards of operational integrity and legal compliance.
 ---
 
 _This document contains confidential system specifications. Distribution is
-restricted to authorized personnel only. ©2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. ©2025 NexaMesh. All rights
 reserved._

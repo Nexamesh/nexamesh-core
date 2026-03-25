@@ -15,14 +15,14 @@ prerequisites:
 ## Purpose
 
 These templates help structure budget discussions and timeline planning for
-Phoenix Rooivalk deployments. Use these during customer qualification to
+NexaMesh deployments. Use these during customer qualification to
 establish realistic expectations and project parameters.
 
 ---
 
 ## Budget Template
 
-### Phoenix Rooivalk Investment Overview
+### NexaMesh Investment Overview
 
 **Customer**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 **Date**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** **Sales
@@ -92,7 +92,7 @@ Rep**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
 ### Cost Savings vs. Current Solutions
 
-| Metric                   | Current Solution | Phoenix Rooivalk | Annual Savings |
+| Metric                   | Current Solution | NexaMesh | Annual Savings |
 | ------------------------ | ---------------- | ---------------- | -------------- |
 | **Response Time**        | 3-10 seconds     | 120-195ms        | $50,000        |
 | **False Positives**      | 15-20%           | <5%              | $30,000        |
@@ -111,7 +111,7 @@ Rep**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
 ## Timeline Template
 
-### Phoenix Rooivalk Implementation Timeline
+### NexaMesh Implementation Timeline
 
 **Project Start Date**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** **Target
 Go-Live Date**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** **Project Duration**:
@@ -313,7 +313,7 @@ Go-Live Date**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\*** **Project Duration**:
 
 ## Project Team
 
-### Phoenix Rooivalk Team
+### NexaMesh Team
 
 - **Project Manager**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 - **Technical Lead**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***

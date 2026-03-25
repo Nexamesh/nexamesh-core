@@ -1,6 +1,6 @@
-# Phoenix Rooivalk Documentation Site
+# NexaMesh Documentation Site
 
-A comprehensive Docusaurus-based documentation site for the Phoenix Rooivalk
+A comprehensive Docusaurus-based documentation site for the NexaMesh
 autonomous counter-UAS defense platform.
 
 ## Current Structure
@@ -199,7 +199,7 @@ workflow.
 **GitHub Variables:**
 
 - `AZURE_FUNCTIONAPP_NAME` - Function app name (e.g.,
-  `phoenix-rooivalk-functions`)
+  `nexamesh-functions`)
 - `AZURE_FUNCTIONS_BASE_URL` - Azure Functions base URL (can also be a Secret)
 - `AZURE_AI_DEPLOYMENT_NAME` - AI model deployment name (e.g., `gpt-5.1`)
 - `CONFIGURE_APP_SETTINGS` - Set to `true` to auto-configure Function App

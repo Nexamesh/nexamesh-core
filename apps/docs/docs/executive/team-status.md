@@ -92,7 +92,7 @@ tags:
 - **US Incorporation**: 🟡 In progress — **NexaMesh Technologies Inc.** (Delaware C-Corp via Firstbase). Pending USPS Form 1583 notarization to activate mailroom address. Complete notarization to unblock incorporation.
 - **SA Incorporation**: SA Pty Ltd not yet registered. Required for TIA Seed Fund and CSD registration.
 - **CSD Registration**: Not done. Requires SA entity first. Gate for all SA government funding.
-- **Brand**: Nexamesh. GitHub: `Nexamesh/nexamesh-core`. Old name: Phoenix Rooivalk.
+- **Brand**: Nexamesh. GitHub: `Nexamesh/nexamesh-core`. Old name: NexaMesh.
 - **Domain**: nexamesh.ai (registered)
 
 ---

@@ -70,7 +70,7 @@ export default function HomepageFeatures(): React.ReactElement {
               <h2 className="features__title">Comprehensive Documentation</h2>
               <p className="features__subtitle">
                 Everything you need to understand, evaluate, and implement
-                Phoenix Rooivalk
+                NexaMesh
               </p>
             </div>
           </div>

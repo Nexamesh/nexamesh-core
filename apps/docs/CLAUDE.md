@@ -107,7 +107,7 @@ default. Progress reports use auto-generated sidebars.
 
 Hardware phase and Hugging Face/MCP documentation work is tracked in GitHub
 issues
-[#674–#685](https://github.com/phoenixvc/PhoenixRooivalk/issues?q=is%3Aissue+674+675+676+677+678+679+680+681+682+683+684+685).
+[#674–#685](https://github.com/Nexamesh/nexamesh-core/issues?q=is%3Aissue+674+675+676+677+678+679+680+681+682+683+684+685).
 
 ## Testing
 

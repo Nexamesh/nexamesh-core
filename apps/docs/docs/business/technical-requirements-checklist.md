@@ -15,7 +15,7 @@ prerequisites:
 ## Purpose
 
 This checklist ensures system compatibility and validates technical requirements
-for Phoenix Rooivalk deployment. Use this during technical validation to assess
+for NexaMesh deployment. Use this during technical validation to assess
 infrastructure, integration, and operational requirements.
 
 ---
@@ -49,7 +49,7 @@ infrastructure, integration, and operational requirements.
   - [ ] UPS system for critical operations
 
 - [ ] **Power Distribution**
-  - [ ] Dedicated circuits for Phoenix Rooivalk systems
+  - [ ] Dedicated circuits for NexaMesh systems
   - [ ] Ground fault protection
   - [ ] Emergency power backup
   - [ ] Power monitoring and alerting
@@ -413,6 +413,6 @@ Steps**: \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\_\***\*\*\*\*\***\*\*\*\*\***\
 
 ---
 
-_This checklist ensures comprehensive technical validation for Phoenix Rooivalk
+_This checklist ensures comprehensive technical validation for NexaMesh
 deployment. All critical requirements must be met before proceeding with
 implementation._

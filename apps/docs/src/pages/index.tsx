@@ -73,7 +73,7 @@ export default function Home(): React.ReactElement {
 
   return (
     <Layout
-      title="Phoenix Rooivalk"
+      title="NexaMesh"
       description="Blockchain-powered counter‑drone defense marketing overview"
     >
       <style>{`
@@ -446,14 +446,14 @@ export default function Home(): React.ReactElement {
         <section className="section comparison-section" id="comparison">
           <div className="section-header reveal">
             <h2>Industry-Leading Performance</h2>
-            <p>See how Phoenix Rooivalk outperforms the competition</p>
+            <p>See how NexaMesh outperforms the competition</p>
           </div>
           <div className="comparison-table reveal">
             <table>
               <thead>
                 <tr>
                   <th>Feature</th>
-                  <th>Phoenix Rooivalk</th>
+                  <th>NexaMesh</th>
                   <th>DroneGuard Pro</th>
                   <th>AeroDefender</th>
                   <th>FortiDrone</th>

@@ -26,7 +26,7 @@ prerequisites:
 
 ## Executive Summary
 
-1. **Problem**: Phoenix Rooivalk's counter-UAS technology is subject to South
+1. **Problem**: NexaMesh's counter-UAS technology is subject to South
    African export controls under the National Conventional Arms Control Act
    (NCAC Act)
 2. **Decision**: Implement dual-compliance architecture that satisfies both SA
@@ -218,17 +218,17 @@ Adopt **dual-compliance architecture** with:
 ### Data Segregation (Enhanced for Dual Compliance)
 
 ```
-phoenix-rooivalk/                    # PUBLIC (No controls)
+nexamesh/                    # PUBLIC (No controls)
 ├── apps/docs/                       # Public documentation
 ├── apps/marketing/                  # Marketing materials
 └── packages/                        # OSS utilities
 
-phoenix-rooivalk-controlled/         # SA ML11/ML21 + US EAR
+nexamesh-controlled/         # SA ML11/ML21 + US EAR
 ├── sensors/                         # Radar, camera integration
 ├── fusion/                          # Sensor fusion
 └── tracking/                        # Target tracking
 
-phoenix-rooivalk-defense/            # SA ML4/ML5 + US ITAR
+nexamesh-defense/            # SA ML4/ML5 + US ITAR
 ├── targeting/                       # Fire control
 ├── effector/                        # Net launcher
 └── engagement/                      # ROE enforcement
@@ -417,4 +417,4 @@ pub enum ExportControlEvent {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record. CONFIDENTIAL._
+_© 2026 NexaMesh. Architecture Decision Record. CONFIDENTIAL._

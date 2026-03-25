@@ -21,7 +21,7 @@ prerequisites:
 
 **Feature:** Technology Deep Dive Page **Problem:** Potential investors and
 partners lack a centralized, detailed resource to understand the core technology
-behind PhoenixRooivalk. The current marketing site provides a high-level
+behind Nexamesh. The current marketing site provides a high-level
 overview, but a more technical audience requires more depth to build confidence
 and assess the project's viability. **Solution:** Create a dedicated "Technology
 Deep Dive" page that explains the key technical components of the platform in a

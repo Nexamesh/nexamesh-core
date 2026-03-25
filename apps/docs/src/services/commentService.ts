@@ -1,5 +1,5 @@
 /**
- * Comment Service for Phoenix Rooivalk Documentation
+ * Comment Service for NexaMesh Documentation
  *
  * Uses Azure Cosmos DB via the cloud service abstraction.
  *

@@ -47,7 +47,7 @@ verification.
 
 ## Context
 
-Phoenix Rooivalk's evidence pipeline must provide tamper-proof audit trails for
+NexaMesh's evidence pipeline must provide tamper-proof audit trails for
 counter-drone operations. Customers in different sectors have different
 blockchain preferences:
 

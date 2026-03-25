@@ -205,7 +205,7 @@ prerequisites:
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._
 ```
 
 ---
@@ -312,7 +312,7 @@ layers in progress. See
 [ADR 0000 Appendix](./adr-0000-appendix-platform-decision-matrix.md#cognitive-mesh-completion-status)
 for detailed PRD completion status.
 
-**Resource Trade-off Note**: Development resources for Phoenix Rooivalk and
+**Resource Trade-off Note**: Development resources for NexaMesh and
 Cognitive Mesh are shared. Time invested in advanced docs site features delays
 CM maturation. Prioritize CM development unless docs site work is blocking demos
 or core functionality.
@@ -525,4 +525,4 @@ Create an appendix (ADR-{NNNN}-appendix-{topic}.md) when:
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

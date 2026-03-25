@@ -38,7 +38,7 @@ _This ADR follows the canonical template described in
 
 ## Context
 
-Phoenix Rooivalk's documentation site uses multiple AI-powered features:
+NexaMesh's documentation site uses multiple AI-powered features:
 
 ```
 AI Features
@@ -325,7 +325,7 @@ developer experience, and optimization capability.
 ```typescript
 // Core company context (always included)
 export const PHOENIX_CORE_CONTEXT = `
-Phoenix Rooivalk is a South African company developing autonomous
+NexaMesh is a South African company developing autonomous
 counter-drone defense systems. The Phoenix interceptor is an AI-guided
 drone designed to detect, track, and neutralize hostile UAVs.
 
@@ -574,4 +574,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

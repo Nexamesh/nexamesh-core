@@ -12,7 +12,7 @@ tags:
 ## Overview
 
 This page provides access to downloadable resources, templates, and reference
-materials for Phoenix Rooivalk stakeholders.
+materials for NexaMesh stakeholders.
 
 :::info Access Levels
 
@@ -161,7 +161,7 @@ instructions.
 
 | Resource                  | Format  | Description           | Access      |
 | ------------------------- | ------- | --------------------- | ----------- |
-| **Phoenix Rooivalk Logo** | SVG/PNG | Primary logo files    | Coming Soon |
+| **NexaMesh Logo** | SVG/PNG | Primary logo files    | Coming Soon |
 | **SkySnare Logo**         | SVG/PNG | Consumer brand logo   | Coming Soon |
 | **AeroNet Logo**          | SVG/PNG | Enterprise brand logo | Coming Soon |
 | **Brand Guidelines**      | PDF     | Usage and style guide | Coming Soon |
@@ -264,9 +264,9 @@ For questions about resources or access:
 
 | Type                    | Contact                         |
 | ----------------------- | ------------------------------- |
-| **General Inquiries**   | info@phoenixrooivalk.com        |
-| **Technical Documents** | engineering@phoenixrooivalk.com |
-| **Investor Materials**  | investors@phoenixrooivalk.com   |
+| **General Inquiries**   | info@nexamesh.ai        |
+| **Technical Documents** | engineering@nexamesh.ai |
+| **Investor Materials**  | investors@nexamesh.ai   |
 
 ---
 

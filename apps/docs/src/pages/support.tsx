@@ -23,8 +23,8 @@ function SupportFallback(): React.ReactElement {
       </p>
       <p>
         For urgent inquiries, email us at{" "}
-        <a href="mailto:support@phoenixrooivalk.com">
-          support@phoenixrooivalk.com
+        <a href="mailto:support@nexamesh.ai">
+          support@nexamesh.ai
         </a>
       </p>
       <button
@@ -41,7 +41,7 @@ export default function SupportPage(): React.ReactElement {
   return (
     <Layout
       title="Support"
-      description="Get help with Phoenix Rooivalk - FAQs, documentation, and contact our support team"
+      description="Get help with NexaMesh - FAQs, documentation, and contact our support team"
     >
       <main className="container margin-vert--lg">
         <ErrorBoundary

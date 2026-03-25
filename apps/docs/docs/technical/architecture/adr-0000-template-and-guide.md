@@ -23,7 +23,7 @@ prerequisites: []
 ## Purpose
 
 This document serves as the canonical template and guide for all Architecture
-Decision Records (ADRs) in the Phoenix Rooivalk project. All AI assistants
+Decision Records (ADRs) in the NexaMesh project. All AI assistants
 (Claude, Copilot, Cursor, Continue, Windsurf) and human contributors MUST
 reference this document when creating or restructuring ADRs.
 
@@ -190,7 +190,7 @@ by ADR-YYYY
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._
 ```
 
 ---
@@ -352,4 +352,4 @@ Naming: adr-XXXX-short-title.md
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

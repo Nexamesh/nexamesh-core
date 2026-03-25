@@ -80,7 +80,7 @@ Under AUKUS partnership:
 
 ## Eligibility
 
-| Requirement           | Phoenix Rooivalk Status         |
+| Requirement           | NexaMesh Status         |
 | --------------------- | ------------------------------- |
 | Innovative technology | Meets requirement               |
 | Defense-relevant      | Meets requirement               |
@@ -130,7 +130,7 @@ Australia is a key counter-UAS market:
 
 ---
 
-## Phoenix Rooivalk Strategy
+## NexaMesh Strategy
 
 ### Approach
 
@@ -165,7 +165,7 @@ Australia is a key counter-UAS market:
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score    | Notes                  |
 | --------------- | -------- | ---------------------- |

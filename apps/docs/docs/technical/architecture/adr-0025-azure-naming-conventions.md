@@ -37,7 +37,7 @@ prerequisites:
 
 ### Current Situation
 
-Phoenix Rooivalk infrastructure spans multiple Azure subscriptions shared
+NexaMesh infrastructure spans multiple Azure subscriptions shared
 between organizations:
 
 - **NeuralLiquid (nl)**: Core AI, defence, Rooivalk platform
@@ -273,4 +273,4 @@ When asked to create or reference Azure resources:
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

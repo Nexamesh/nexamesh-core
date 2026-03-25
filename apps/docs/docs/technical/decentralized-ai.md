@@ -1,7 +1,7 @@
 ---
 id: decentralized-ai
-title: Phoenix Rooivalk Decentralized AI Integration
-sidebar_label: Phoenix Rooivalk Decentralized
+title: NexaMesh Decentralized AI Integration
+sidebar_label: NexaMesh Decentralized
 difficulty: advanced
 estimated_reading_time: 6
 points: 25
@@ -10,7 +10,7 @@ tags:
   - ai
 ---
 
-# Phoenix Rooivalk Decentralized AI Integration
+# NexaMesh Decentralized AI Integration
 
 ## Morpheus Network Integration Potential
 
@@ -303,7 +303,7 @@ response privacy.
 
 ## Conclusion
 
-Morpheus Network integration provides Phoenix Rooivalk with advanced
+Morpheus Network integration provides NexaMesh with advanced
 decentralized AI capabilities for non-critical applications, decision support,
 and audit logging. The hybrid approach balances the benefits of decentralized AI
 with the requirements for defense-grade security and performance.
@@ -316,7 +316,7 @@ requirements of defense applications.
 ---
 
 _This document contains confidential technical information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._
 
 _Context improved by Giga AI_

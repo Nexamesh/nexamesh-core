@@ -27,13 +27,13 @@ prerequisites:
 This plan outlines a **minimal viable drone detection system** that can
 distinguish drones from common objects (like coke cans) on a Raspberry Pi within
 one week. This is a scaled-down proof-of-concept aligned with the broader
-PhoenixRooivalk platform.
+Nexamesh platform.
 
 ---
 
 ## Constraints & Realities
 
-| Factor        | Full PhoenixRooivalk       | This Project                    |
+| Factor        | Full Nexamesh       | This Project                    |
 | ------------- | -------------------------- | ------------------------------- |
 | **Hardware**  | Jetson AGX Orin (275 TOPS) | Raspberry Pi 4/5 (~13 TOPS max) |
 | **Timeline**  | Production system          | 1 week MVP                      |
@@ -589,7 +589,7 @@ heuristics.
 
 ```bash
 # Clone repo and navigate to detection module
-cd /home/user/PhoenixRooivalk
+cd /home/user/Nexamesh
 mkdir -p apps/pi-drone-detector
 cd apps/pi-drone-detector
 
@@ -626,19 +626,19 @@ python main.py
 1. **Add acoustic detection** - USB microphone + FFT for rotor harmonics
 2. **Multi-frame tracking** - DeepSORT for trajectory analysis
 3. **Edge TPU optimization** - Google Coral for 10x speedup
-4. **Integration with PhoenixRooivalk** - Feed detections to main platform
+4. **Integration with Nexamesh** - Feed detections to main platform
 5. **Alert system** - MQTT/webhook on drone detection
 6. **Distance estimation** - Known drone size + camera calibration
 
 ---
 
-## Integration with PhoenixRooivalk
+## Integration with Nexamesh
 
 This MVP can serve as a **low-cost edge sensor node** feeding into the larger
 system:
 
 ```text
-Pi Detector ──► MQTT/HTTP ──► PhoenixRooivalk API ──► Evidence System
+Pi Detector ──► MQTT/HTTP ──► Nexamesh API ──► Evidence System
                               │
                               ├── Sensor Fusion
                               ├── Threat Classification

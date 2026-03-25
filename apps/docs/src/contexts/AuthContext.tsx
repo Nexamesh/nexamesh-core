@@ -1,5 +1,5 @@
 /**
- * Authentication Context for Phoenix Rooivalk Documentation
+ * Authentication Context for NexaMesh Documentation
  * Provides user authentication state and sync functionality across the app
  */
 

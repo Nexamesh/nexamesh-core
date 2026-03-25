@@ -1,5 +1,5 @@
 /**
- * News Service for Phoenix Rooivalk Documentation
+ * News Service for NexaMesh Documentation
  *
  * Provides client-side interface to Azure Functions for news:
  * - News feed retrieval (general + personalized)

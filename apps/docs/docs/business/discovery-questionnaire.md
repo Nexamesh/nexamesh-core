@@ -15,7 +15,7 @@ prerequisites:
 ## Purpose
 
 This questionnaire helps qualify prospects and gather essential information for
-customizing Phoenix Rooivalk solutions. Use this during initial customer
+customizing NexaMesh solutions. Use this during initial customer
 discovery calls to assess needs, technical requirements, and budget parameters.
 
 ---
@@ -142,7 +142,7 @@ discovery calls to assess needs, technical requirements, and budget parameters.
 ### Response Time
 
 1. **What is your target response time for threat neutralization?**
-   - [ ] <200ms (Phoenix Rooivalk capability)
+   - [ ] <200ms (NexaMesh capability)
    - [ ] <1 second
    - [ ] <5 seconds
    - [ ] <30 seconds
@@ -151,7 +151,7 @@ discovery calls to assess needs, technical requirements, and budget parameters.
 ### Detection Accuracy
 
 1. **What detection accuracy do you require?**
-   - [ ] 95%+ (Phoenix Rooivalk capability)
+   - [ ] 95%+ (NexaMesh capability)
    - [ ] 90%+
    - [ ] 85%+
    - [ ] 80%+
@@ -357,5 +357,5 @@ discovery calls to assess needs, technical requirements, and budget parameters.
 ---
 
 _This questionnaire is designed to qualify prospects and gather essential
-information for customizing Phoenix Rooivalk solutions. Use the scoring system
+information for customizing NexaMesh solutions. Use the scoring system
 to prioritize leads and determine appropriate follow-up actions._

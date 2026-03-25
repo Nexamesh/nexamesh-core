@@ -36,7 +36,7 @@ Each opportunity is scored on a 1-5 scale across multiple weighted factors:
 
 | Factor                  | Weight | Description                                              |
 | ----------------------- | ------ | -------------------------------------------------------- |
-| **Strategic Fit**       | 25%    | Alignment with Phoenix Rooivalk's technology and mission |
+| **Strategic Fit**       | 25%    | Alignment with NexaMesh's technology and mission |
 | **Funding Amount**      | 20%    | Total funding available                                  |
 | **Timeline Fit**        | 15%    | Alignment with development roadmap                       |
 | **Success Probability** | 15%    | Likelihood of selection based on competition             |
@@ -125,7 +125,7 @@ Each opportunity is scored on a 1-5 scale across multiple weighted factors:
 
 :::tip Status: ACTIVE PARTICIPANT
 
-Phoenix Rooivalk is currently participating in Soonami Cohort 8.
+NexaMesh is currently participating in Soonami Cohort 8.
 
 :::
 
@@ -627,7 +627,7 @@ Free to join, no equity, significant cloud credits and hardware discounts.
 
 :::tip Status: ACTIVE - Phase 3
 
-Phoenix Rooivalk is currently enrolled in Microsoft for Startups.
+NexaMesh is currently enrolled in Microsoft for Startups.
 
 :::
 
@@ -689,7 +689,7 @@ Phoenix Rooivalk is currently enrolled in Microsoft for Startups.
 | **Members**      | 250+ global institutions (IBM, Intel, Cisco)  |
 | **Type**         | Community membership, technical collaboration |
 
-**Relevance to Phoenix Rooivalk:**
+**Relevance to NexaMesh:**
 
 - Hyperledger Fabric is the blockchain platform for evidence anchoring
 - Access to technical resources and best practices
@@ -727,7 +727,7 @@ Phoenix Rooivalk is currently enrolled in Microsoft for Startups.
 | **Focus**   | Blockchain for product pedigree/provenance       |
 | **Type**    | Research partnership opportunity                 |
 
-**Relevance to Phoenix Rooivalk:**
+**Relevance to NexaMesh:**
 
 - Defense supply chain traceability requirements
 - Non-repudiable claims for product provenance
@@ -901,7 +901,7 @@ x402 is a payment protocol built on HTTP 402 "Payment Required":
 | Effort Required     | 3       | 36-hour intensive events         |
 | **Weighted Score**  | **4.0** |                                  |
 
-**Relevance to Phoenix Rooivalk:**
+**Relevance to NexaMesh:**
 
 - Blockchain-based evidence anchoring demos
 - Supply chain traceability use cases
@@ -1188,7 +1188,7 @@ feedback.
 | Effort Required     | 3       | CRADA + workshops + 2-week event   |
 | **Weighted Score**  | **4.4** |                                    |
 
-**Focus Areas (Relevant to Phoenix Rooivalk):**
+**Focus Areas (Relevant to NexaMesh):**
 
 - Distributed Electromagnetic Attack (EA)
 - Deception and Concealment (RF)

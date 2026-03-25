@@ -35,7 +35,7 @@ prerequisites: []
 
 ## Context
 
-Phoenix Rooivalk needs two distinct web experiences:
+NexaMesh needs two distinct web experiences:
 
 | Requirement    | Marketing Site          | Docs Portal              |
 | -------------- | ----------------------- | ------------------------ |
@@ -73,9 +73,9 @@ Phoenix Rooivalk needs two distinct web experiences:
 
 Both apps consume from the monorepo workspace:
 
-- `@phoenix-rooivalk/types` — shared TypeScript types
-- `@phoenix-rooivalk/ui` — shared React components and design tokens
-- `@phoenix-rooivalk/utils` — shared utility functions
+- `@nexamesh/types` — shared TypeScript types
+- `@nexamesh/ui` — shared React components and design tokens
+- `@nexamesh/utils` — shared utility functions
 
 ---
 

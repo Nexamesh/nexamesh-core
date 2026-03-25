@@ -36,7 +36,7 @@ prerequisites:
 
 ## Context
 
-The Phoenix Rooivalk documentation site uses RAG for AI-powered assistance.
+The NexaMesh documentation site uses RAG for AI-powered assistance.
 Current in-memory cosine similarity over Firestore embeddings has O(n)
 complexity—unsustainable beyond a few hundred documents.
 
@@ -196,4 +196,4 @@ rework.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

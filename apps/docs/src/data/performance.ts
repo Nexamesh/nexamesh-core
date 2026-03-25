@@ -225,7 +225,7 @@ export function getPerformanceSummary(): string {
 
 /** Comparison table data */
 export const performanceComparison = {
-  headers: ["Metric", "Phoenix Rooivalk", "Typical Competitor"],
+  headers: ["Metric", "NexaMesh", "Typical Competitor"],
   rows: [
     ["Response Time", performance.responseTime.formatted, "5-30 seconds"],
     [

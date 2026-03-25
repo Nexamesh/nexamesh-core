@@ -31,7 +31,7 @@ export interface TokenClaims {
 /**
  * Admin email domains
  */
-const ADMIN_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+const ADMIN_DOMAINS = ["nexamesh.com", "justaghost.dev"];
 
 /**
  * JWKS cache for Azure Entra ID

@@ -34,7 +34,7 @@ prerequisites: []
 
 ## Context
 
-PhoenixRooivalk's 5-year strategic roadmap (2025-2030) contains critical
+Nexamesh's 5-year strategic roadmap (2025-2030) contains critical
 milestones and deadlines spanning multiple years. Currently, this information is
 only accessible through the marketing website's timeline page. Stakeholders,
 investors, and team members need the ability to:
@@ -149,7 +149,7 @@ containing all roadmap milestones. The implementation will:
    - VEVENT blocks for each milestone
    - DTSTART/DTEND with appropriate date formats
    - SUMMARY, DESCRIPTION, and LOCATION fields
-   - CATEGORIES for filtering (e.g., "PhoenixRooivalk Milestone")
+   - CATEGORIES for filtering (e.g., "Nexamesh Milestone")
    - UID for event uniqueness
 
 2. **Provide download functionality** via:

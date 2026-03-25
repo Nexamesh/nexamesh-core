@@ -22,12 +22,12 @@ prerequisites:
 [ADR 0000: ADR Management & Organization](./adr-0000-adr-management.md)**
 
 This appendix provides a feature-by-feature analysis of ADRs 0015-0023,
-comparing Phoenix Rooivalk docs site implementation (LangChain/Firebase) with
+comparing NexaMesh docs site implementation (LangChain/Firebase) with
 Cognitive Mesh equivalents, and recommending where each feature should be
 developed.
 
 **Date**: 2025-11-27  
-**Context**: Shared developer pool between Phoenix Rooivalk docs and Cognitive
+**Context**: Shared developer pool between NexaMesh docs and Cognitive
 Mesh
 
 ---
@@ -384,4 +384,4 @@ prioritizing CM development provides better long-term value.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

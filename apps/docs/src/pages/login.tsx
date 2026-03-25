@@ -97,7 +97,7 @@ export default function LoginPage(): React.ReactElement {
   return (
     <Layout
       title="Login"
-      description="Sign in to access Phoenix Rooivalk documentation"
+      description="Sign in to access NexaMesh documentation"
     >
       <main className={styles.loginMain}>
         <section className={styles.loginSection}>

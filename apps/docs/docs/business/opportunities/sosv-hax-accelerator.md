@@ -34,10 +34,10 @@ devices, and industrial automation.
 
 ---
 
-## Why HAX for Phoenix Rooivalk
+## Why HAX for NexaMesh
 
 Per Alistair's strategic recommendation (December 2025), HAX is the **primary
-target accelerator** for Phoenix Rooivalk due to:
+target accelerator** for NexaMesh due to:
 
 | Factor                | HAX Advantage                                         |
 | --------------------- | ----------------------------------------------------- |
@@ -191,9 +191,9 @@ target accelerator** for Phoenix Rooivalk due to:
 
 ---
 
-## Phoenix Rooivalk Alignment
+## NexaMesh Alignment
 
-| HAX Criteria       | Phoenix Rooivalk Fit           |
+| HAX Criteria       | NexaMesh Fit           |
 | ------------------ | ------------------------------ |
 | Hardware product   | Kinetic interceptor drones     |
 | Technical team     | Engineering-led founding team  |
@@ -223,4 +223,4 @@ target accelerator** for Phoenix Rooivalk due to:
 ---
 
 _Per Alistair's December 2025 recommendation, HAX should be the primary
-accelerator target for Phoenix Rooivalk's hardware development phase._
+accelerator target for NexaMesh's hardware development phase._

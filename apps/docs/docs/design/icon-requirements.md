@@ -3,7 +3,7 @@ id: icon-requirements
 title: Icon Requirements & Design System
 sidebar_label: Icon Requirements
 description:
-  Comprehensive icon requirements for the Phoenix Rooivalk Threat Simulator UI
+  Comprehensive icon requirements for the NexaMesh Threat Simulator UI
   components
 difficulty: intermediate
 estimated_reading_time: 8
@@ -14,7 +14,7 @@ tags:
 
 # Icon Requirements & Design System
 
-This document outlines the complete icon requirements for the Phoenix Rooivalk
+This document outlines the complete icon requirements for the NexaMesh
 Threat Simulator, including design specifications, color palettes, and AI
 generation prompts.
 
@@ -555,5 +555,5 @@ export { Effector } from "./drones/Effector";
 ---
 
 _This document serves as the definitive guide for icon design and implementation
-in the Phoenix Rooivalk Threat Simulator. All icons should follow these
+in the NexaMesh Threat Simulator. All icons should follow these
 specifications for consistency and professional appearance._

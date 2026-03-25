@@ -16,7 +16,7 @@ prerequisites:
 ## Overview
 
 **Techstars** operates 40+ accelerator programs globally with various industry
-focuses. Several programs are directly relevant to Phoenix Rooivalk, including
+focuses. Several programs are directly relevant to NexaMesh, including
 Air Force, Anywhere (remote), and industry-specific tracks.
 
 :::info Key Details
@@ -227,7 +227,7 @@ Air Force, Anywhere (remote), and industry-specific tracks.
 
 ---
 
-## Phoenix Rooivalk Fit
+## NexaMesh Fit
 
 | Criteria      | Air Force | Anywhere |
 | ------------- | --------- | -------- |

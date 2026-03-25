@@ -2,7 +2,7 @@ import { checkIsAdmin, DEFAULT_ADMIN_DOMAINS } from "../auth";
 import { CloudUser } from "../types";
 
 describe("checkIsAdmin", () => {
-  const adminEmail = "admin@phoenixrooivalk.com";
+  const adminEmail = "admin@nexamesh.ai";
   const nonAdminEmail = "user@example.com";
 
   it("should return false when user is null", () => {
@@ -61,10 +61,10 @@ describe("checkIsAdmin", () => {
     // split("@")[1] will take the part after first @
     const user = {
       uid: "123",
-      email: "admin@phoenixrooivalk.com@extra.com",
+      email: "admin@nexamesh.ai@extra.com",
     } as CloudUser;
-    // Current implementation: user.email.split("@")[1] -> "phoenixrooivalk.com"
-    // Then it checks if "phoenixrooivalk.com" is in adminDomains.
+    // Current implementation: user.email.split("@")[1] -> "nexamesh.ai"
+    // Then it checks if "nexamesh.ai" is in adminDomains.
     expect(checkIsAdmin(user)).toBe(true);
   });
 });

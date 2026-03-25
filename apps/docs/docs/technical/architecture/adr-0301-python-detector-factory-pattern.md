@@ -35,7 +35,7 @@ prerequisites: []
 
 ## Context
 
-Phoenix Rooivalk's edge detector runs on diverse hardware:
+NexaMesh's edge detector runs on diverse hardware:
 
 | Platform       | Inference Backend    | Camera API          | Install Extra                 |
 | -------------- | -------------------- | ------------------- | ----------------------------- |

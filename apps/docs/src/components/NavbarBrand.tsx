@@ -9,12 +9,12 @@ export default function NavbarBrand(): React.ReactElement {
     <Link to="/" className="navbar__brand">
       <img
         src={logoUrl}
-        alt="Phoenix Rooivalk"
+        alt="NexaMesh"
         className="phoenix-logo"
         width="40"
         height="40"
       />
-      <span className="navbar__brand-text">Phoenix Rooivalk</span>
+      <span className="navbar__brand-text">NexaMesh</span>
     </Link>
   );
 }

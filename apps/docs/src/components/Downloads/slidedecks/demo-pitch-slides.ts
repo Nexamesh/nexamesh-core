@@ -1,7 +1,7 @@
 import type { Slide, KeyPoint } from "../SlideDeckDownload";
 
 /**
- * Phoenix Rooivalk Demo Pitch Deck
+ * NexaMesh Demo Pitch Deck
  * First demo presentation - focused on problem, solution, and immediate value
  *
  * Enhanced with:
@@ -16,7 +16,7 @@ export const demoPitchSlides: Slide[] = [
   // ==========================================
   {
     number: 1,
-    title: "Phoenix Rooivalk",
+    title: "NexaMesh",
     duration: 30,
     icon: "🛡️",
     layout: "title-only",
@@ -32,7 +32,7 @@ export const demoPitchSlides: Slide[] = [
     speakerNotes:
       "Open with the new value prop - safe capture, no damage. Emphasize legal and non-destructive. The 6 product lines shows breadth.",
     script:
-      "Welcome to Phoenix Rooivalk. We capture drones safely with no damage. Pneumatic net launchers for training, events, and facility security. Legal, non-destructive, and deployable today. We offer 6 product lines from $349 consumer devices to $150K enterprise platforms. First deliveries Q3 2026. Preorders are open now.",
+      "Welcome to NexaMesh. We capture drones safely with no damage. Pneumatic net launchers for training, events, and facility security. Legal, non-destructive, and deployable today. We offer 6 product lines from $349 consumer devices to $150K enterprise platforms. First deliveries Q3 2026. Preorders are open now.",
   },
 
   // ==========================================
@@ -154,7 +154,7 @@ export const demoPitchSlides: Slide[] = [
     speakerNotes:
       "Three clear differentiators, numbered for memory. Speed is #1 because it's the most dramatic. Evidence is #3 because it's unique and memorable. Don't mention weapons here - save for Q&A.",
     script:
-      "Phoenix Rooivalk has three unfair advantages. Number one: Speed. We respond in under 200 milliseconds - that's 10 to 150 times faster than any competitor. While they're still processing in the cloud, we've already neutralized the threat with edge AI. Number two: Autonomy. We work where others fail. True offline operation, no internet required. RF-denied, GPS-denied environments - exactly where you need counter-drone most. SAE Level 4 autonomous decision-making. Number three: Evidence. For the first time, you can actually catch the perpetrators. Blockchain-anchored chain of custody. Court-admissible documentation. No more 'never caught' headlines.",
+      "NexaMesh has three unfair advantages. Number one: Speed. We respond in under 200 milliseconds - that's 10 to 150 times faster than any competitor. While they're still processing in the cloud, we've already neutralized the threat with edge AI. Number two: Autonomy. We work where others fail. True offline operation, no internet required. RF-denied, GPS-denied environments - exactly where you need counter-drone most. SAE Level 4 autonomous decision-making. Number three: Evidence. For the first time, you can actually catch the perpetrators. Blockchain-anchored chain of custody. Court-admissible documentation. No more 'never caught' headlines.",
   },
 
   // ==========================================
@@ -179,7 +179,7 @@ export const demoPitchSlides: Slide[] = [
         subPoints: [
           "**MITLA**: Pyrotechnic (7.62mm) - *may detonate drone warhead*",
           "**SkyWall**: Compressed air - $30-50K+, 10kg weight",
-          "**Phoenix Rooivalk**: CO2/Pneumatic - $349-$2K, safe, reusable",
+          "**NexaMesh**: CO2/Pneumatic - $349-$2K, safe, reusable",
         ],
       },
       {
@@ -463,7 +463,7 @@ export const demoPitchSlides: Slide[] = [
 ];
 
 export const demoPitchMeta = {
-  title: "Phoenix Rooivalk: Demo Pitch Deck",
+  title: "NexaMesh: Demo Pitch Deck",
   duration: 10,
   audience: "Investors, Strategic Partners, Demo Attendees",
   date: "January 2026",

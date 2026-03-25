@@ -10,7 +10,7 @@ tags:
   - counter-uas
 ---
 
-# Phoenix Rooivalk Customer Onboarding Guide
+# NexaMesh Customer Onboarding Guide
 
 ## Purpose
 
@@ -59,7 +59,7 @@ exceptional customer experience.
 
 #### Welcome Package Contents
 
-- [ ] **Welcome Letter**: Personalized welcome from Phoenix Rooivalk team
+- [ ] **Welcome Letter**: Personalized welcome from NexaMesh team
 - [ ] **System Overview**: High-level system capabilities and benefits
 - [ ] **Project Timeline**: Detailed implementation timeline and milestones
 - [ ] **Contact Information**: Key team members and contact details
@@ -73,10 +73,10 @@ exceptional customer experience.
 ```
 Dear [Customer Name],
 
-Welcome to Phoenix Rooivalk! We're excited to partner with you to deliver
+Welcome to NexaMesh! We're excited to partner with you to deliver
 superior counter-drone defense capabilities for your organization.
 
-Your Phoenix Rooivalk system will provide:
+Your NexaMesh system will provide:
 - Sub-200ms response times (25-40x faster than competitors)
 - SAE Level 4 edge autonomy without network dependency
 - Blockchain evidence management for legal compliance
@@ -86,7 +86,7 @@ Our team is committed to your success and will work closely with you
 throughout the implementation process.
 
 Best regards,
-Phoenix Rooivalk Team
+NexaMesh Team
 ```
 
 ### 1.2 Stakeholder Introduction and Alignment
@@ -455,10 +455,10 @@ Phoenix Rooivalk Team
 
 ## Conclusion
 
-The Phoenix Rooivalk customer onboarding process is designed to ensure
+The NexaMesh customer onboarding process is designed to ensure
 successful implementation and long-term customer success. Through comprehensive
 training, support, and ongoing relationship management, we ensure that customers
-achieve maximum value from their Phoenix Rooivalk investment.
+achieve maximum value from their NexaMesh investment.
 
 ### Key Success Factors
 

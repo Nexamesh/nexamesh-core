@@ -57,7 +57,7 @@ access without requiring:
 | **Fees**       | 0% protocol fees                              |
 | **Use Case**   | AI agents, API monetization, content paywalls |
 
-### Why x402 Matters for Phoenix Rooivalk
+### Why x402 Matters for NexaMesh
 
 Our evidence verification system has natural monetization potential:
 
@@ -97,7 +97,7 @@ Our evidence verification system has natural monetization potential:
 
 ### Strategic Alignment
 
-| Phoenix Rooivalk Capability   | x402 Opportunity                             |
+| NexaMesh Capability   | x402 Opportunity                             |
 | ----------------------------- | -------------------------------------------- |
 | **Evidence Verification API** | Pay-per-verification monetization            |
 | **Solana Integration**        | Native settlement layer (already integrated) |
@@ -371,7 +371,7 @@ X-PAYMENT: <base64-encoded-payment-proof>
     "hex": "a1b2c3d4..."
   },
   "attestation": {
-    "signed_by": "PhoenixRooivalk Evidence Authority",
+    "signed_by": "Nexamesh Evidence Authority",
     "signature": "...",
     "valid_until": "2026-11-28T10:30:00Z"
   }
@@ -408,7 +408,7 @@ this):
 
 - 500K+ weekly transactions already
 - 10,000% monthly growth in adoption
-- Phoenix Rooivalk positioned as evidence infrastructure provider
+- NexaMesh positioned as evidence infrastructure provider
 
 ---
 
@@ -465,4 +465,4 @@ this):
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

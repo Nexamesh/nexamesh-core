@@ -10,7 +10,7 @@ sidebar_label: TODO
 
 ### MDX Conversions & Centralized Data
 
-- [x] Convert phoenix-rooivalk-technical-whitepaper.md → .mdx
+- [x] Convert nexamesh-technical-whitepaper.md → .mdx
 - [x] Convert early-spec-qa.md → .mdx
 - [x] Convert strategic-recommendations.md → .mdx
 - [x] Update investor-executive-summary.mdx with CAPITAL constants

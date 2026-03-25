@@ -27,7 +27,7 @@ import { COMMENT_CATEGORIES, COMMENT_STATUSES } from "../../types/comments";
 import styles from "./comments.module.css";
 
 // Admin email domains (same as in analytics.tsx)
-const ADMIN_EMAIL_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+const ADMIN_EMAIL_DOMAINS = ["nexamesh.ai", "justaghost.dev"];
 
 type TabType = "pending" | "all" | "stats";
 

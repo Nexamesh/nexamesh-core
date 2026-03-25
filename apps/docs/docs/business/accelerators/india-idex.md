@@ -56,7 +56,7 @@ technologies including UAS and autonomous systems.
 
 iDEX covers 50+ technology categories including:
 
-| Category                    | Relevance to Phoenix Rooivalk |
+| Category                    | Relevance to NexaMesh |
 | --------------------------- | ----------------------------- |
 | **Unmanned Aerial Systems** | Direct fit                    |
 | **Autonomous Systems**      | Direct fit                    |
@@ -81,7 +81,7 @@ problem statements. Typical CUAS-relevant challenges include:
 
 ## Eligibility
 
-| Requirement          | Phoenix Rooivalk Status |
+| Requirement          | NexaMesh Status |
 | -------------------- | ----------------------- |
 | Startup/MSME         | Meets requirement       |
 | Innovative solution  | Meets requirement       |
@@ -120,7 +120,7 @@ partnerships. Contact iDEX directly for foreign company participation options.
 
 ---
 
-## Phoenix Rooivalk Strategy
+## NexaMesh Strategy
 
 ### Recommended Approach
 
@@ -146,7 +146,7 @@ partnerships. Contact iDEX directly for foreign company participation options.
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score    | Notes                           |
 | --------------- | -------- | ------------------------------- |

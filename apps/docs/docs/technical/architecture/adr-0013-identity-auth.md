@@ -35,7 +35,7 @@ prerequisites:
 
 ## Context
 
-The Phoenix Rooivalk documentation site requires:
+The NexaMesh documentation site requires:
 
 - **User authentication** for protected documentation areas
 - **Role-based access** for AI features (viewer, editor, admin)
@@ -441,4 +441,4 @@ For detailed weighted analysis, RBAC matrices, and federation flows, see:
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

@@ -425,7 +425,7 @@ Implement high-performance architecture with scalable performance capabilities.
 ## Conclusion
 
 The Architecture Decision Records provide a comprehensive record of key
-architectural decisions for the Phoenix Rooivalk system. These decisions ensure
+architectural decisions for the NexaMesh system. These decisions ensure
 consistent architecture, knowledge preservation, and informed decision-making
 throughout the system development and deployment.
 
@@ -741,5 +741,5 @@ For detailed analysis and implementation plan, see
 ---
 
 _This document contains confidential architectural information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

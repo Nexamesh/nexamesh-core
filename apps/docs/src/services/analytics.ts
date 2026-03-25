@@ -1,5 +1,5 @@
 /**
- * Analytics Service for Phoenix Rooivalk Documentation
+ * Analytics Service for NexaMesh Documentation
  *
  * Uses Azure Application Insights via the cloud service abstraction.
  *

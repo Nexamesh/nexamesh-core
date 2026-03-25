@@ -58,7 +58,7 @@ export const executiveFinancialTemplate: ProfileTemplate = {
       reason: "Strategic roadmap and milestones",
     },
     {
-      docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+      docId: "/docs/executive/nexamesh-pitch-deck",
       title: "Pitch Deck",
       priority: 4,
       reason: "Investor presentation materials",

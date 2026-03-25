@@ -1418,7 +1418,7 @@ export default function CalendarPage(): React.ReactElement {
     const filename =
       selectedAssignee !== "all"
         ? `phoenix-calendar-${selectedAssignee}.ics`
-        : "phoenix-rooivalk-calendar.ics";
+        : "nexamesh-calendar.ics";
 
     downloadICS(events, filename);
   };
@@ -1462,7 +1462,7 @@ export default function CalendarPage(): React.ReactElement {
       allDay: true,
       category: item.category,
     }));
-    downloadICS(events, "phoenix-rooivalk-calendar.ics");
+    downloadICS(events, "nexamesh-calendar.ics");
   };
 
   const upcomingCritical = filteredEvents.filter(
@@ -1488,14 +1488,14 @@ export default function CalendarPage(): React.ReactElement {
       alert("Calendar data copied! Paste into a .ics file to import.");
     } catch {
       // Fallback - download instead
-      downloadICS(allEventsForExport, "phoenix-rooivalk-calendar.ics");
+      downloadICS(allEventsForExport, "nexamesh-calendar.ics");
     }
   };
 
   const handleSubscribeGoogle = () => {
     // Google Calendar subscribe URL (would need hosted ICS file in production)
     window.open(
-      "https://calendar.google.com/calendar/r?cid=webcal://docs.phoenixrooivalk.com/calendar.ics",
+      "https://calendar.google.com/calendar/r?cid=webcal://docs.nexamesh.ai/calendar.ics",
       "_blank",
     );
   };
@@ -1503,7 +1503,7 @@ export default function CalendarPage(): React.ReactElement {
   const handleSubscribeOutlook = () => {
     // Outlook subscribe URL
     window.open(
-      "https://outlook.live.com/calendar/0/addfromweb?url=webcal://docs.phoenixrooivalk.com/calendar.ics",
+      "https://outlook.live.com/calendar/0/addfromweb?url=webcal://docs.nexamesh.ai/calendar.ics",
       "_blank",
     );
   };
@@ -1511,7 +1511,7 @@ export default function CalendarPage(): React.ReactElement {
   return (
     <Layout
       title="Project Calendar"
-      description="Phoenix Rooivalk project deadlines, milestones, and events"
+      description="NexaMesh project deadlines, milestones, and events"
     >
       <main className={styles.calendarPage}>
         <div className={styles.header}>
@@ -1578,7 +1578,7 @@ export default function CalendarPage(): React.ReactElement {
               <h2>Sync to Your Calendar</h2>
             </div>
             <p className={styles.actionCardDescription}>
-              Stay updated with all Phoenix Rooivalk deadlines and milestones by
+              Stay updated with all NexaMesh deadlines and milestones by
               adding our calendar to your favorite app.
             </p>
             <div className={styles.integrationOptions}>

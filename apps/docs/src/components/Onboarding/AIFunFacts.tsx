@@ -112,7 +112,7 @@ export function AIFunFacts({
           setFacts([
             {
               id: "fallback-1",
-              fact: `${userProfile.firstName} is joining the Phoenix Rooivalk documentation team.`,
+              fact: `${userProfile.firstName} is joining the NexaMesh documentation team.`,
               category: "professional",
             },
             {

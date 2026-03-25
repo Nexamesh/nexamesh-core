@@ -38,7 +38,7 @@ prerequisites:
 
 ### Current State
 
-Phoenix Rooivalk uses a Turborepo monorepo with:
+NexaMesh uses a Turborepo monorepo with:
 
 - **apps/docs**: Docusaurus documentation site → Azure SWA
 - **apps/marketing**: Next.js marketing site → Azure SWA
@@ -408,4 +408,4 @@ production/
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

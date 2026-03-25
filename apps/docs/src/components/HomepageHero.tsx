@@ -12,12 +12,12 @@ export default function HomepageHero(): React.ReactElement {
           <div className="hero__brand">
             <img
               src={logoUrl}
-              alt="Phoenix Rooivalk"
+              alt="NexaMesh"
               className="hero__logo"
               width="80"
               height="80"
             />
-            <h1 className="hero__title">Phoenix Rooivalk</h1>
+            <h1 className="hero__title">NexaMesh</h1>
             <p className="hero__subtitle">
               SAE Level 4 Autonomous Counter-UAS Defense Platform
             </p>

@@ -1,7 +1,7 @@
 import type { Slide } from "../SlideDeckDownload";
 
 /**
- * Phoenix Rooivalk Q&A Appendix Slides
+ * NexaMesh Q&A Appendix Slides
  * Backup slides for common investor questions
  *
  * Use after the main pitch to address specific questions
@@ -542,7 +542,7 @@ export const qaAppendixSlides: Slide[] = [
 ];
 
 export const qaAppendixMeta = {
-  title: "Phoenix Rooivalk: Q&A Appendix",
+  title: "NexaMesh: Q&A Appendix",
   duration: 0, // Not a timed presentation
   audience: "Investors (Q&A backup)",
   date: "January 2026",
