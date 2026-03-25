@@ -244,14 +244,14 @@ export const partnerships = {
 /** Company Structure */
 export const companyStructure = {
   primary: {
-    type: "South African Entity",
-    status: "Planned — registration pending",
+    type: "South African Entity (Pty Ltd)",
+    status: "Planned — registration pending (required for TIA Seed Fund + CSD)",
     purpose: "Local operations, ARMSCOR/IDC eligibility, non-ITAR market access",
   },
   secondary: {
-    type: "Delaware C-Corp",
-    status: "Planned — post-seed funding",
-    purpose: "US market access, SBIR/STTR eligibility",
+    type: "Delaware C-Corp — NexaMesh Technologies Inc.",
+    status: "In progress — Firstbase incorporation pending USPS Form 1583 notarization",
+    purpose: "US market access, SBIR/STTR eligibility, international fundraising",
   },
   advantage: "Non-ITAR SA jurisdiction enables access to markets US competitors cannot easily reach",
   itarStatus: {
