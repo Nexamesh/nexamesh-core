@@ -238,32 +238,48 @@ export const HARDWARE = {
 
 /** Team Values */
 export const TEAM = {
-  // Core Team
+  // Core Team — Active Founders
   CTO_NAME: "Jurie Smit",
   CTO_FULL_NAME: "Hans Jurgens (Jurie) Smit",
   CTO_TITLE: "Co-Founder & CTO",
   CTO_LINKEDIN: "https://www.linkedin.com/in/juriesmit/",
   CTO_BACKGROUND:
-    "Systems Engineer & AI Architect, 15+ years fintech, citizen platforms, multi-tenant SaaS",
+    "Systems Engineer & AI Architect, 15+ years fintech, citizen platforms, multi-tenant SaaS. Built entire NexaMesh software platform.",
   CTO_EDUCATION:
     "B.Eng Industrial-Electronic (Stellenbosch), B.Com Quantitative Management (UNISA)",
   CTO_EXPERTISE: [
     "Edge AI/ML",
     "System Architecture",
     "Full-Stack Development",
-    "Agile Methodologies",
+    "Blockchain",
   ],
 
+  HARDWARE_LEAD_NAME: "Charl Chapman",
+  HARDWARE_LEAD_FULL_NAME: "Charl Chapman",
+  HARDWARE_LEAD_TITLE: "Co-Founder & Hardware Lead",
+  HARDWARE_LEAD_LINKEDIN: "", // TODO: Create LinkedIn profile
+  HARDWARE_LEAD_BACKGROUND:
+    "Mechanical & electrical diagnostics specialist. Hands-on fabrication, vehicle systems, component integration. Building hardware prototypes from low-cost and salvaged components.",
+  HARDWARE_LEAD_EDUCATION: "Vehicle Systems & Electrical Repair (Practical/Trade)",
+  HARDWARE_LEAD_EXPERTISE: [
+    "Hardware Prototyping",
+    "Mechanical Systems",
+    "Electrical Diagnostics",
+    "Component Integration",
+  ],
+
+  // Advisors (not full-time — engaged as needed)
+  // Note: CEO_* fields kept for MDX backward compatibility; Martyn is now Advisor
   CEO_NAME: "Martyn Redelinghuys",
   CEO_FULL_NAME: "Martyn Redelinghuys",
-  CEO_TITLE: "Co-Founder & CEO",
+  CEO_TITLE: "Advisor — Business Strategy & Manufacturing",
   CEO_LINKEDIN: "https://www.linkedin.com/in/martynrede/",
   CEO_BACKGROUND:
-    "20+ years energy, mining, defense. R500M+ portfolio management. Executive Project Manager.",
+    "20+ years energy, mining, defense. R500M+ portfolio management. Has manufacturing facility. Will engage actively when funding secured.",
   CEO_EDUCATION: "MBA (GIBS), B.Eng Electrical & Electronic (Stellenbosch)",
   CEO_EXPERTISE: [
     "Project Management",
-    "Energy Strategy",
+    "Manufacturing",
     "Business Development",
     "Capital Projects",
   ],
@@ -272,12 +288,12 @@ export const TEAM = {
     "Certified Measurement & Verification Professional (CMVP)",
   ],
 
-  // Additional Team Members
+  // MEMBER_3 — Pieter moved to advisor role
   MEMBER_3_NAME: "Pieter La Grange",
-  MEMBER_3_TITLE: "Co-Founder & Hardware Lead",
+  MEMBER_3_TITLE: "Advisor — Embedded Systems & Industry Connections",
   MEMBER_3_LINKEDIN: "https://www.linkedin.com/in/pieterlagrange/",
   MEMBER_3_BACKGROUND:
-    "Electronics Design Engineer at Snuza, 15+ years embedded systems & medical devices",
+    "Electronics Design Engineer at Snuza, 15+ years embedded systems & medical devices. Advisory capacity for embedded guidance and industry introductions.",
   MEMBER_3_EDUCATION: "B.Eng Electrical & Electronics (Stellenbosch)",
   MEMBER_3_EXPERTISE: [
     "Embedded Firmware",
@@ -287,11 +303,12 @@ export const TEAM = {
     "RTOS",
   ],
 
+  // MEMBER_4 — Eben moved to advisor role
   MEMBER_4_NAME: "Eben Maré",
-  MEMBER_4_TITLE: "Co-Founder & CFO",
+  MEMBER_4_TITLE: "Advisor — Financial Strategy",
   MEMBER_4_LINKEDIN: "https://www.linkedin.com/in/ebenmare/",
   MEMBER_4_BACKGROUND:
-    "15+ years investment banking, private equity, quantitative finance. Former Head Quant at Deloitte, CIO experience.",
+    "15+ years investment banking, private equity, quantitative finance. Former Head Quant at Deloitte. Available for financial modeling and investor discussions.",
   MEMBER_4_EDUCATION:
     "BSc (Hons) Operations Research (UNISA), BSc Applied Mathematics (University of Pretoria)",
   MEMBER_4_EXPERTISE: [
@@ -303,18 +320,19 @@ export const TEAM = {
   ],
 
   // Team Stats
-  COMBINED_EXPERIENCE: "60+ years",
-  TEAM_SIZE: 4,
+  COMBINED_EXPERIENCE: "25+ years",
+  TEAM_SIZE: 2, // Active founders
+  ADVISOR_COUNT: 3,
 
   // Company Structure
-  COMPANY_STRUCTURE: "Delaware C-Corp (in progress)",
-  SECONDARY_ENTITY: "South African Entity (Q2 2026)",
+  COMPANY_STRUCTURE: "South African Entity (planned — registration pending)",
+  SECONDARY_ENTITY: "Delaware C-Corp (planned — post-seed funding)",
 
   // Contact (role-based, not personal PII)
-  CONTACT_EMAIL: "contact@phoenixrooivalk.com",
-  CONTACT_PHONE: "+27 (0) 10 880 0000", // Company switchboard
-  INVESTOR_EMAIL: "investors@phoenixrooivalk.com",
-  SUPPORT_EMAIL: "support@phoenixrooivalk.com",
+  CONTACT_EMAIL: "contact@nexamesh.com",
+  CONTACT_PHONE: "+27 (069) 140-6835",
+  INVESTOR_EMAIL: "investors@nexamesh.com",
+  SUPPORT_EMAIL: "support@nexamesh.com",
   ENTERPRISE_EMAIL: "enterprise@aeronet-security.com",
   CONSUMER_EMAIL: "hello@skysnare.com",
 };
