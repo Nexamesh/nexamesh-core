@@ -1,36 +1,51 @@
 # Upgrade Purchasing and Inventory Tracker
 
-## Current Temu Cart (Pre-Purchase)
+## Budget
 
-Items selected for purchase from Temu. Shared across all upgrade paths.
+**Available:** R500 for first purchase (Temu).
 
-### In Cart — Ready to Buy
+---
 
-| # | Item | Est. Price (ZAR) | Used In | Status |
-|---|------|-----------------|---------|--------|
-| 1 | ZHUHE F405 V3 Flight Controller (20x20) | R522 | All paths (Phase 1) | In cart |
-| 2 | GY-NEO6MV2 GPS Module | R101 | All paths (Phase 1) | In cart |
-| 3 | 915MHz T-Type Antenna (IPEX) | R48 | All paths (Phase 1) | In cart |
-| 4 | YSIDO FPV Camera 1800TVL | R251 | All paths (Phase 2/3) | In cart |
-| 5 | M2/M3 Rubber Shock Absorber Balls (20pcs) | R40 | All paths (Phase 1) | In cart |
-| 6 | XT30 Connectors (3 pairs, 16AWG) | R72 | Path A, C (Phase 1) | In cart |
-| 7 | LiPo Safety Bag (silvery, 23x30cm) | R89 | All paths (Phase 1) | In cart |
-| 8 | PH2.0 Connector Kit (390pcs) | R103 | All paths (Phase 1) | In cart |
-| 9 | M5 Quick-Release Nut Wrench | R35 | Path A, B (Phase 1) | In cart |
-| 10 | Nylon Spacers (100pcs, M2) | R22 | All paths (Phase 1) | In cart |
-| 11 | YSIDO 1104 8600KV Motors (4pcs) | R738 | **REMOVE** — wrong size for frame | In cart |
-| 12 | 350pcs Nylon Standoff Kit (M2) | R139 | **REMOVE** — duplicate of #10 | In cart |
-| | **Cart subtotal (after removing #11, #12)** | **~R1,283** | | |
+## Current Temu Cart — R478 (5 items selected)
 
-### Recommended Cart Changes Before Checkout
+Trimmed to essentials for Path C Phase 1 within R500 budget. Free shipping.
 
-- [ ] **Remove** YSIDO 1104 motors (R738) — too small for 320mm frame
-- [ ] **Remove** 350pcs nylon standoff kit (R139) — duplicate of spacers #10
-- [ ] **Remove** any 5" Mark4 frame if still in cart — only for Path B
-- [ ] **Remove** duplicate XT30 10-pack if still in cart
-- [ ] **Verify** F405 FC is the ZHUHE at R522, not the R1,077 YSIDO (same board, different price)
+| # | Item | List Price | After Promos | Used In | Status |
+|---|------|-----------|-------------|---------|--------|
+| 1 | ZHUHE F405 V3 Flight Controller (20x20) | R590 | R522 | All paths (Phase 1) | **Selected** |
+| 2 | M2/M3 Rubber Shock Absorber Balls (20pcs) | R40 | R40 | All paths (Phase 1) | **Selected** |
+| 3 | GY-NEO6MV2 GPS Module | R101 | R101 | All paths (Phase 1) | **Selected** |
+| 4 | XT30 Connectors (3 pairs, 16AWG) | R77 | R72 | Path A, C (Phase 1) | **Selected** |
+| 5 | XT30 Bullet Connectors (10pcs female) | R77 | R47 | All paths — battery leads | **Selected** |
+| | **Total (after promos/coupons)** | | **R478** | | Free shipping |
 
-**Revised cart after cleanup: ~R1,283**
+**Budget remaining:** R22
+
+### Items Removed from Cart
+
+| Item | Price | Reason |
+|------|-------|--------|
+| YSIDO 1104 8600KV Motors (4pcs) | R738 | Wrong size for 320mm frame |
+| 350pcs Nylon Standoff Kit (M2) | R139 | Duplicate of absorber balls |
+| PH2.0 Connector Kit (390pcs) | R103 | Budget cut — buy later |
+| LiPo Safety Bag (23x30cm) | R89 | Budget cut — buy later |
+| M5 Quick-Release Nut Wrench | R35 | Budget cut — Path A/B only |
+| 915MHz T-Type Antenna (IPEX) | R48 | Budget cut — needed with ELRS RX (AliExpress order) |
+| YSIDO FPV Camera 1800TVL | R251 | Budget cut — Phase 2/3, not needed yet |
+| Wall Plug CAT5 Keystone Jack (5-pack) | R372 | Not drone-related |
+| Mark4 5" Frame | ~R400 | Path B only, not needed yet |
+
+### Items to Add Back (Next Purchase)
+
+Priority order when more budget is available:
+
+| Priority | Item | Est. Price | Why |
+|----------|------|-----------|-----|
+| 1 | 915MHz T-Type Antenna (IPEX) | R48 | Needed when ELRS receiver arrives |
+| 2 | LiPo Safety Bag | R89 | Safety — needed before first LiPo |
+| 3 | PH2.0 Connector Kit (390pcs) | R103 | Wiring harness for FC |
+| 4 | YSIDO FPV Camera 1800TVL | R251 | Phase 2 FPV |
+| 5 | M5 Quick-Release Nut Wrench | R35 | Path A/B prop changes |
 
 ---
 
@@ -126,34 +141,37 @@ Check these before ordering duplicates.
 
 | Category | ZAR |
 |----------|-----|
-| Temu cart (cleaned up) | ~R1,283 |
+| Temu Order 1 (current cart) | R478 |
+| Temu Order 2 (deferred items) | ~R526 |
 | AliExpress shared (A1-A4) | ~R760-1,960 |
 | AliExpress Path A specific (A5-A10) | ~R1,120-1,950 |
 | AliExpress FPV (F1-F3) | ~R940-1,930 |
 | AliExpress AI (I1-I5) | ~R710-1,460 |
-| **Grand total** | **~R4,813-8,583** |
+| **Grand total** | **~R4,534-8,304** |
 
 ### Path B — Total Budget
 
 | Category | ZAR |
 |----------|-----|
-| Temu cart (cleaned up) | ~R1,283 |
+| Temu Order 1 (current cart) | R478 |
+| Temu Order 2 (deferred items) | ~R526 |
 | AliExpress shared (A1-A4) | ~R760-1,960 |
 | AliExpress Path B specific (B5-B12) | ~R1,560-2,850 |
 | AliExpress FPV (F1-F3) | ~R940-1,930 |
 | AliExpress AI (I1-I5) | ~R710-1,460 |
-| **Grand total** | **~R5,253-9,483** |
+| **Grand total** | **~R4,974-9,204** |
 
 ### Path C — Total Budget
 
 | Category | ZAR |
 |----------|-----|
-| Temu cart (cleaned up) | ~R1,283 |
+| Temu Order 1 (current cart) | R478 |
+| Temu Order 2 (deferred items) | ~R526 |
 | AliExpress shared (A1-A4) | ~R760-1,960 |
 | AliExpress Path C specific (C5-C7) | ~R290-560 |
 | AliExpress FPV (F1-F3) | ~R940-1,930 |
 | AliExpress AI (I1-I5) | ~R710-1,460 |
-| **Grand total** | **~R3,983-7,193** |
+| **Grand total** | **~R3,704-6,914** |
 
 ---
 
@@ -167,7 +185,7 @@ and validate each stage before committing to the next.
 
 ### Stage 1: Path C — Brain Upgrade (Buy Now)
 
-1. Temu cart (cleaned up, ~R1,283) — shared across all paths
+1. Temu cart (R478) — FC, GPS, XT30 connectors, absorber balls
 2. ELRS 915MHz receiver (AliExpress)
 3. ELRS TX module or RadioMaster Pocket (AliExpress)
 4. Brushed ESC modules x4 (AliExpress) — Path C specific
