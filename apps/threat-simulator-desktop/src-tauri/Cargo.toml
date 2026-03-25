@@ -1,8 +1,8 @@
 [package]
 name = "threat-simulator-tauri"
 version = "0.1.0"
-description = "Phoenix Rooivalk Threat Simulator - Tauri Backend"
-authors = ["Phoenix Rooivalk Team"]
+description = "NexaMesh Threat Simulator — Desktop Application"
+authors = ["NexaMesh"]
 edition = "2021"
 
 [build-dependencies]

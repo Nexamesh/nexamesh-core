@@ -90,8 +90,8 @@ For best results when printing multiple pages:
 
 | Resource               | Format | Description                      | Access      |
 | ---------------------- | ------ | -------------------------------- | ----------- |
-| **SkySnare Consumer**  | PDF    | Consumer product datasheet       | Coming Soon |
-| **AeroNet Enterprise** | PDF    | Enterprise solution datasheet    | Coming Soon |
+| **Kestrel Mesh Consumer**  | PDF    | Consumer product datasheet       | Coming Soon |
+| **Sentinel Ring Enterprise** | PDF    | Enterprise solution datasheet    | Coming Soon |
 | **Edge Node Specs**    | PDF    | NVIDIA Jetson Orin configuration | Coming Soon |
 | **Sensor Suite**       | PDF    | Detection system specifications  | Coming Soon |
 
@@ -162,8 +162,8 @@ instructions.
 | Resource                  | Format  | Description           | Access      |
 | ------------------------- | ------- | --------------------- | ----------- |
 | **NexaMesh Logo** | SVG/PNG | Primary logo files    | Coming Soon |
-| **SkySnare Logo**         | SVG/PNG | Consumer brand logo   | Coming Soon |
-| **AeroNet Logo**          | SVG/PNG | Enterprise brand logo | Coming Soon |
+| **Kestrel Mesh Logo**         | SVG/PNG | Consumer brand logo   | Coming Soon |
+| **Sentinel Ring Logo**          | SVG/PNG | Enterprise brand logo | Coming Soon |
 | **Brand Guidelines**      | PDF     | Usage and style guide | Coming Soon |
 
 ### Images & Diagrams

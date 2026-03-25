@@ -106,7 +106,7 @@ export const WEAPON_CONFIGS: Record<
       boss: 0.7,
     },
     visualEffect: {
-      color: "#f97316",
+      color: "#C77A1B",
       size: 2,
       trail: false,
     },
@@ -216,7 +216,7 @@ export const WEAPON_CONFIGS: Record<
       boss: 0.4,
     },
     visualEffect: {
-      color: "#f97316",
+      color: "#C77A1B",
       size: 4,
       trail: true,
     },

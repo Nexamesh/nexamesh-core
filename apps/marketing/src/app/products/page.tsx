@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ProductsPageClient from "./ProductsPageClient";
 
 export const metadata: Metadata = {
-  title: "Product Catalog - Phoenix Rooivalk",
+  title: "Product Catalog - NexaMesh",
   description:
-    "Browse the full Phoenix Rooivalk product lineup: SkySnare consumer defense, AeroNet enterprise security, NetSnare, SkyWatch, and RKV systems across five development phases.",
+    "Browse the full NexaMesh product lineup: Kestrel Mesh consumer defense, Sentinel Ring enterprise security, NetSnare, SkyWatch, and RKV systems across five development phases.",
   openGraph: {
-    title: "Product Catalog - Phoenix Rooivalk",
+    title: "Product Catalog - NexaMesh",
     description:
-      "SkySnare consumer defense, AeroNet enterprise security, NetSnare, SkyWatch, and RKV systems across five development phases.",
+      "Kestrel Mesh consumer defense, Sentinel Ring enterprise security, NetSnare, SkyWatch, and RKV systems across five development phases.",
   },
 };
 

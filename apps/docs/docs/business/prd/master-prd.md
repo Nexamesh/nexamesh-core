@@ -4,7 +4,7 @@ title: "Master PRD: Nexamesh"
 sidebar_label: Master PRD
 description:
   Master Product Requirements Document for Nexamesh covering vision,
-  personas, value propositions, and success metrics for SkySnare™ and AeroNet™.
+  personas, value propositions, and success metrics for Kestrel Mesh and Sentinel Ring.
 difficulty: intermediate
 estimated_reading_time: 8
 points: 15
@@ -23,7 +23,7 @@ prerequisites:
 
 **Product Vision:** To become the leading provider of dual-brand counter-drone
 solutions, transforming proven pneumatic platform technology into two
-world-leading brands: SkySnare™ for consumer sports and training, and AeroNet™
+world-leading brands: Kestrel Mesh for consumer sports and training, and Sentinel Ring
 for regulated enterprise security.
 
 **Positioning:** Nexamesh is a technology platform that proves
@@ -37,9 +37,9 @@ accountability.
   path to profitability.
 - **Potential Partners:** (e.g., defense contractors, security firms) interested
   in the technical capabilities and integration opportunities.
-- **Early-Adopter Consumers:** (for the SkySnare™ brand) interested in the
+- **Early-Adopter Consumers:** (for the Kestrel Mesh brand) interested in the
   sports/training aspects.
-- **Enterprise Customers:** (for the AeroNet™ brand) seeking a reliable,
+- **Enterprise Customers:** (for the Sentinel Ring brand) seeking a reliable,
   compliant, and automated counter-drone solution for infrastructure security.
 
 ## 3. Core Value Propositions
@@ -54,11 +54,11 @@ accountability.
 
 ## 4. High-Level Feature Map / Epics
 
-- **SkySnare™ Consumer Product:**
+- **Kestrel Mesh Consumer Product:**
   - Pneumatic Net Launcher
   - Training & Simulation App
   - Community & Leaderboards
-- **AeroNet™ Enterprise Platform:**
+- **Sentinel Ring Enterprise Platform:**
   - AI-Powered Threat Detection
   - Autonomous Interception
   - Multi-Site Coordination
@@ -70,25 +70,25 @@ accountability.
 
 ## 5. Non-Functional Requirements
 
-- **Performance:** Sub-200ms response times for the AeroNet™ system.
-- **Reliability:** 99.9% uptime for the AeroNet™ system.
+- **Performance:** Sub-200ms response times for the Sentinel Ring system.
+- **Reliability:** 99.9% uptime for the Sentinel Ring system.
 - **Security:** Adherence to OWASP Top 10 and other security best practices.
-- **Compliance:** CPSC certification for SkySnare™ and FAA waivers for AeroNet™.
+- **Compliance:** CPSC certification for Kestrel Mesh and FAA waivers for Sentinel Ring.
 
 ## 6. Constraints & Assumptions
 
 - **Assumption:** The consumer market for drone-based sports and training will
   continue to grow.
-- **Constraint:** The development of the AeroNet™ platform is dependent on the
-  successful launch and adoption of the SkySnare™ product.
+- **Constraint:** The development of the Sentinel Ring platform is dependent on the
+  successful launch and adoption of the Kestrel Mesh product.
 
 ## 7. Success Metrics / KPIs
 
-- **SkySnare™:**
+- **Kestrel Mesh:**
   - Number of units sold
   - User engagement with the training app
   - Community growth
-- **AeroNet™:**
+- **Sentinel Ring:**
   - Number of enterprise customers
   - Number of sites protected
   - Customer satisfaction

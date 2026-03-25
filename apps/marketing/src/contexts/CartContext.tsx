@@ -11,7 +11,7 @@ import type { CartContextType, CartItem } from "../types/cart";
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-const CART_STORAGE_KEY = "phoenix-rooivalk-cart";
+const CART_STORAGE_KEY = "nexamesh-cart";
 
 /**
  * Calculate the total price of items in the cart

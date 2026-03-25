@@ -33,7 +33,7 @@ export const TOUR_CONFIG: TourConfig = {
   steps: [
     {
       id: "welcome",
-      title: "Welcome to Phoenix Rooivalk",
+      title: "Welcome to NexaMesh",
       content:
         "Autonomous counter-UAS defense with sub-200ms response times. Let's take a quick tour of our key capabilities.",
       placement: "bottom",

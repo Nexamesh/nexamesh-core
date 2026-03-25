@@ -102,11 +102,11 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
     funding: "$1.5M",
     color: "#22c55e", // green
     description:
-      "Consumer product launch with SkySnare, NetSnare, and NetSentry Lite",
+      "Consumer product launch with Kestrel Mesh, NetSnare, and NetSentry Lite",
   },
   "series-a": {
     id: "series-a",
-    name: "Series A: AeroNet & DoD",
+    name: "Series A: Sentinel Ring & DoD",
     shortName: "Series A",
     timeline: "Q4 2026 - Q3 2027 • Delivery Apr-Aug 2027",
     funding: "$8-12M",
@@ -153,7 +153,7 @@ export const products: Product[] = [
   {
     id: "skysnare",
     sku: "SS-001",
-    name: "SkySnare",
+    name: "Kestrel Mesh",
     line: "skysnare",
     tagline: "Protect Your Airspace",
     description:
@@ -914,7 +914,7 @@ export const products: Product[] = [
   {
     id: "aeronet-enterprise",
     sku: "AN-ENT-001",
-    name: "AeroNet Enterprise",
+    name: "Sentinel Ring Enterprise",
     line: "aeronet",
     tagline: "Complete C-UAS Platform",
     description:
@@ -974,7 +974,7 @@ export const products: Product[] = [
   {
     id: "aeronet-command",
     sku: "AN-CMD-001",
-    name: "AeroNet Command",
+    name: "Sentinel Ring Command",
     line: "aeronet",
     tagline: "Command & Control Software",
     description:
@@ -1000,7 +1000,7 @@ export const products: Product[] = [
       "Multi-site operators",
       "SOC teams",
     ],
-    marketSegment: "C2/Software for AeroNet deployments",
+    marketSegment: "C2/Software for Sentinel Ring deployments",
 
     specs: {
       deployment: "Cloud or on-premise",
@@ -1192,7 +1192,7 @@ export const products: Product[] = [
   {
     id: "aeronet-patrol",
     sku: "AN-PATROL-001",
-    name: "AeroNet Patrol",
+    name: "Sentinel Ring Patrol",
     line: "aeronet" as ProductLine,
     tagline: "Mid-market perimeter defense for facilities and campuses",
     description:
@@ -1249,7 +1249,7 @@ export const products: Product[] = [
   {
     id: "aeronet-leo",
     sku: "AN-LEO-001",
-    name: "AeroNet LEO",
+    name: "Sentinel Ring LEO",
     line: "aeronet" as ProductLine,
     tagline: "Law enforcement C-UAS with blockchain evidence chain",
     description:
@@ -1306,7 +1306,7 @@ export const products: Product[] = [
   {
     id: "aeronet-allied",
     sku: "AN-ALLIED-001",
-    name: "AeroNet Allied",
+    name: "Sentinel Ring Allied",
     line: "aeronet" as ProductLine,
     tagline: "NATO-compatible C-UAS for allied defense forces",
     description:
@@ -1362,7 +1362,7 @@ export const products: Product[] = [
   {
     id: "aeronet-corrections",
     sku: "AN-CORR-001",
-    name: "AeroNet Corrections",
+    name: "Sentinel Ring Corrections",
     line: "aeronet" as ProductLine,
     tagline: "Prison and correctional facility drone interdiction",
     description:
@@ -1474,7 +1474,7 @@ export const products: Product[] = [
   {
     id: "aeronet-events",
     sku: "AN-EVENT-001",
-    name: "AeroNet Events",
+    name: "Sentinel Ring Events",
     line: "aeronet" as ProductLine,
     tagline: "Temporary C-UAS deployment for concerts, sports, and festivals",
     description:
@@ -1526,11 +1526,11 @@ export const products: Product[] = [
     catalogUrl: "/products#aeronet-events",
   },
 
-  // MKT-008: Maritime AeroNet bundle
+  // MKT-008: Maritime Sentinel Ring bundle
   {
     id: "aeronet-maritime",
     sku: "AN-MARINE-001",
-    name: "AeroNet Maritime",
+    name: "Sentinel Ring Maritime",
     line: "aeronet" as ProductLine,
     tagline: "Maritime C-UAS for ports, offshore platforms, and vessels",
     description:
@@ -1652,7 +1652,7 @@ export const productLines: Record<
   { name: string; tagline: string; description: string; icon: string }
 > = {
   skysnare: {
-    name: "SkySnare",
+    name: "Kestrel Mesh",
     tagline: "Consumer Drone Defense",
     description:
       "Direct-to-consumer drone capture for personal property protection",
@@ -1678,7 +1678,7 @@ export const productLines: Record<
     icon: "🕸️",
   },
   aeronet: {
-    name: "AeroNet",
+    name: "Sentinel Ring",
     tagline: "Enterprise Platform",
     description: "Full-scale C-UAS solution for critical infrastructure",
     icon: "🏢",

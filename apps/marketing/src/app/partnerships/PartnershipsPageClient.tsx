@@ -187,18 +187,18 @@ export function PartnershipsPage(): React.ReactElement {
                 </h3>
                 <p className={styles.contactDescription}>
                   Contact us to explore collaboration opportunities and learn
-                  more about how Phoenix Rooivalk technology can be adapted for
+                  more about how NexaMesh technology can be adapted for
                   your specific needs.
                 </p>
                 <div className={styles.contactButtons}>
                   <a
-                    href="mailto:partnerships@phoenixrooivalk.com"
+                    href="mailto:partnerships@nexamesh.ai"
                     className="btn btn--primary"
                   >
                     Partnership Inquiries
                   </a>
                   <a
-                    href="mailto:demo@phoenixrooivalk.com"
+                    href="mailto:demo@nexamesh.ai"
                     className="btn btn--secondary"
                   >
                     Schedule Technical Demo

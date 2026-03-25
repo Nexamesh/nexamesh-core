@@ -352,7 +352,7 @@ Create a product preorder.
   "items": [
     {
       "sku": "AERONET-ENT-001",
-      "name": "AeroNet Enterprise",
+      "name": "Sentinel Ring Enterprise",
       "quantity": 2,
       "unit_price": 149999.99
     }

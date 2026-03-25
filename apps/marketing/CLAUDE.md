@@ -54,7 +54,7 @@ localStorage key `phoenix-theme`. Sets CSS custom properties on
 
 ## Shopping Cart (`src/contexts/CartContext.tsx`)
 
-localStorage key: `phoenix-rooivalk-cart`. Silent failure on storage errors.
+localStorage key: `nexamesh-cart`. Silent failure on storage errors.
 
 ## Component Organization
 
@@ -78,8 +78,8 @@ localStorage key: `phoenix-rooivalk-cart`. Silent failure on storage errors.
 ## Path Aliases
 
 - `@/*` → `./src/*`
-- `@phoenix-rooivalk/types` → `../../packages/types/src/index.ts`
-- `@phoenix-rooivalk/utils` → `../../packages/utils/src/index.ts`
+- `@nexamesh/types` → `../../packages/types/src/index.ts`
+- `@nexamesh/utils` → `../../packages/utils/src/index.ts`
 
 Configured in both tsconfig.json AND vitest.config.ts (must stay in sync).
 

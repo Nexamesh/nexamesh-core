@@ -1,50 +1,51 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sentinel Ring symbol">
-  <!-- Sentinel Ring — circular perimeter symbol -->
-  <!-- Open ring with gap at upper-right, inner sweep arc, 3 perimeter nodes -->
-  <!-- Reading: persistent perimeter awareness. Sentinel field, not a weapon sight. -->
-  <!-- Accent: Burnt Copper #A95F1D -->
+  <!-- Sentinel Ring — dashed open arc, 3 perimeter nodes, scanning quality -->
+  <!-- Burnt Copper #A95F1D — persistent, perimeter, coverage -->
+  <!--
+    Arc: centre (50,50), r=38
+    Start: 90° CW from top (right)  → (88, 50)
+    End:   0° (top)                 → (50, 12)
+    Sweep: 270° clockwise (large arc, so flag=1)
+    Gap at upper-right (12 o'clock to 3 o'clock)
+  -->
 
   <rect width="100" height="100" fill="#182231" rx="12"/>
 
-  <!-- Outer broken ring -->
-  <!-- Gap from 0° to 55° (clockwise from 12 o'clock / top) -->
-  <!-- Arc starts at 55° and sweeps 305° clockwise back to 0° (top) -->
-  <!--
-    55° CW from top: x = 50 + 40*sin(55°) = 50 + 32.77 = 82.77, y = 50 - 40*cos(55°) = 50 - 22.94 = 27.06
-    0° (top):        x = 50,                                       y = 50 - 40 = 10
-  -->
+  <!-- Outer dashed scanning arc — 270° sweep, gap at upper-right -->
   <path
-    d="M 82.8 27.1 A 40 40 0 1 1 50 10"
-    stroke="#F1F0EA"
+    d="M88 50 A38 38 0 1 1 50 12"
+    stroke="#A95F1D"
     stroke-width="4"
     stroke-linecap="round"
+    stroke-dasharray="5 3"
     fill="none"
   />
 
-  <!-- Inner sweep arc — scanning motion, tighter radius -->
-  <!-- Spans from 120° to 320° (200° arc), radius 26 -->
-  <!--
-    120° CW from top: x = 50 + 26*sin(120°) = 50 + 22.52 = 72.52, y = 50 - 26*cos(120°) = 50 + 13 = 63
-    320° CW from top: x = 50 + 26*sin(320°) = 50 - 16.71 = 33.29, y = 50 - 26*cos(320°) = 50 - 19.92 = 30.08
-  -->
+  <!-- Inner sweep arc — Steel Grey, scanning motion feel -->
   <path
-    d="M 72.5 63 A 26 26 0 1 1 33.3 30.1"
+    d="M74 74 A34 34 0 1 1 26 50"
     stroke="#6B7480"
-    stroke-width="2.5"
+    stroke-width="2"
     stroke-linecap="round"
+    stroke-dasharray="3 4"
     fill="none"
   />
 
-  <!-- Three perimeter nodes at equal 120° spacing along the outer ring -->
-  <!-- Positioned at 55° (start of arc), 175°, 295° -->
-  <!--
-    55°:  (82.8, 27.1)  — upper right, arc start
-    175°: x = 50 + 40*sin(175°) = 50 + 3.49 = 53.49, y = 50 - 40*cos(175°) = 50 + 39.85 = 89.85
-    295°: x = 50 + 40*sin(295°) = 50 - 36.25 = 13.75, y = 50 - 40*cos(295°) = 50 - 16.91 = 33.09
-  -->
-  <circle cx="82.8" cy="27.1" r="5.5" fill="#A95F1D"/>
-  <circle cx="53.5" cy="89.9" r="5.5" fill="#A95F1D"/>
-  <circle cx="13.8" cy="33.1" r="5.5" fill="#A95F1D"/>
-
-  <!-- Quiet centre void — calm open core, no element here -->
+  <!-- Three perimeter nodes at 90°, 210°, 330° (compass east, lower-left, lower-right) -->
+  <!-- 90° (3 o'clock): (88, 50) -->
+  <circle cx="88" cy="50" r="5.5" fill="#A95F1D"/>
+  <!-- 210° CW from top: x=50+38*sin(210°)=50-19=31, y=50-38*cos(210°)=50+32.9=83 -->
+  <circle cx="31" cy="83" r="5.5" fill="#A95F1D"/>
+  <!-- 330° CW from top: x=50+38*sin(330°)=50-19=31... wait let me recalc -->
+  <!-- 330° CW from top = 330° clockwise = -30° from top = same as 30° CCW from top -->
+  <!-- x=50+38*sin(330°)=50+38*(-0.5)=50-19=31, y=50-38*cos(330°)=50-38*(0.866)=50-32.9=17.1 -->
+  <!-- That puts it at upper-left, inside the gap. Let me use even 120° spacing from 90°: 90°, 210°, 330° -->
+  <!-- 90°: (88,50) ✓ -->
+  <!-- 210°: x=50+38*sin(210°)=50-19=31, y=50-38*cos(210°)=50+32.9=82.9 → (31,83) ✓ -->
+  <!-- 330°: x=50+38*sin(330°)=50-19=31, y=50-38*cos(330°)=50-32.9=17.1 — inside gap, use 270° instead -->
+  <!-- Let's use 90°, 180°, 270° for clean compass placement -->
+  <!-- 180° (6 o'clock bottom): (50, 88) -->
+  <circle cx="50" cy="88" r="5.5" fill="#A95F1D"/>
+  <!-- 270° (9 o'clock left): (12, 50) -->
+  <circle cx="12" cy="50" r="5.5" fill="#A95F1D"/>
 </svg>

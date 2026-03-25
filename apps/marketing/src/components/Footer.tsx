@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
           <div className={styles.grid}>
             {/* Company Info */}
             <div className={styles.companyInfo}>
-              <h3 className={styles.companyTitle}>Phoenix Rooivalk</h3>
+              <h3 className={styles.companyTitle}>NexaMesh</h3>
               <p className={styles.companyDescription}>
                 Advanced counter-UAS defense systems for military and civilian
                 protection.
@@ -96,7 +96,7 @@ export const Footer: React.FC = () => {
             <div className={styles.bottomContent}>
               <div className={styles.copyright}>
                 <p className={styles.copyrightText}>
-                  © 2025 Phoenix Rooivalk. All rights reserved.
+                  © 2025 NexaMesh. All rights reserved.
                 </p>
                 <p className={styles.copyrightSubtext}>
                   ITAR Compliance Planned • ISO 27001 Certification Planned •
@@ -117,7 +117,7 @@ export const Footer: React.FC = () => {
             <div className={styles.disclaimer}>
               <p className={styles.disclaimerText}>
                 <strong className={styles.disclaimerStrong}>Disclaimer:</strong>{" "}
-                Phoenix Rooivalk is an R&D concept in planning. No
+                NexaMesh is an R&D concept in planning. No
                 certifications, pilots, or endorsements are claimed. All
                 simulations and metrics are illustrative and subject to change.
                 This platform demonstrates potential capabilities for

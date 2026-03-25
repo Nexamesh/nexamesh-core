@@ -52,7 +52,7 @@ function generateUID(event: CalendarEvent): string {
   const titleHash = event.title
     .split("")
     .reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  return `${timestamp}-${titleHash}@phoenixrooivalk.com`;
+  return `${timestamp}-${titleHash}@nexamesh.ai`;
 }
 
 /**
@@ -115,12 +115,12 @@ export function generateICS(events: CalendarEvent[]): string {
   // iCalendar header
   lines.push("BEGIN:VCALENDAR");
   lines.push("VERSION:2.0");
-  lines.push("PRODID:-//Phoenix Rooivalk//Timeline Events//EN");
+  lines.push("PRODID:-//NexaMesh//Timeline Events//EN");
   lines.push("CALSCALE:GREGORIAN");
   lines.push("METHOD:PUBLISH");
-  lines.push("X-WR-CALNAME:Phoenix Rooivalk Timeline");
+  lines.push("X-WR-CALNAME:NexaMesh Timeline");
   lines.push(
-    "X-WR-CALDESC:Strategic roadmap and milestones for Phoenix Rooivalk c-UAS Defense System",
+    "X-WR-CALDESC:Strategic roadmap and milestones for NexaMesh c-UAS Defense System",
   );
   lines.push("X-WR-TIMEZONE:UTC");
 

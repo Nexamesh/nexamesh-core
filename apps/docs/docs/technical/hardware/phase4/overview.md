@@ -158,7 +158,7 @@ power management, and communication modules from Phase 3.
 
 ## Certification Plan
 
-### Consumer Product (SkySnare)
+### Consumer Product (Kestrel Mesh)
 
 | Certification | Standard                                  | Status      | Est. Cost      |
 | ------------- | ----------------------------------------- | ----------- | -------------- |
@@ -168,7 +168,7 @@ power management, and communication modules from Phase 3.
 | UL/ETL        | UL 62368-1 (power supply safety)          | Recommended | $12,000–18,000 |
 | RoHS/REACH    | Material compliance                       | Required    | $3,000–5,000   |
 
-### Enterprise Product (AeroNet)
+### Enterprise Product (Sentinel Ring)
 
 | Certification                 | Standard                            | Status      | Est. Cost      |
 | ----------------------------- | ----------------------------------- | ----------- | -------------- |

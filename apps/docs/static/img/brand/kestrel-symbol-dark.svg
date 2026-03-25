@@ -1,26 +1,20 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kestrel Mesh symbol">
-  <!-- Kestrel Mesh — angular mesh-wing symbol -->
-  <!-- 3 nodes: A (upper shoulder), B (lower tail), C (forward beak/tip) -->
-  <!-- Reading: fast, directional, intercept geometry. Kestrel in dive translated to network. -->
-  <!-- Accent: Signal Amber #C77A1B -->
+  <!-- Kestrel Mesh — simplified icon mark, upward triangle with amber nodes -->
+  <!-- Use kestrel-handoff.png for full bird illustration -->
+  <!-- Signal Amber #C77A1B — fast, directional, deployable -->
 
   <rect width="100" height="100" fill="#182231" rx="12"/>
 
-  <!-- Wing edges: sand strokes, round caps -->
-  <g stroke="#F1F0EA" stroke-width="8" stroke-linecap="round" fill="none">
-    <!-- Upper wing: A → C (long forward diagonal, top of wedge) -->
-    <line x1="16" y1="22" x2="84" y2="44"/>
-    <!-- Lower wing: B → C (lower diagonal, base of wedge) -->
-    <line x1="22" y1="76" x2="84" y2="44"/>
-    <!-- Back: A → B (short back connector, closes wing geometry) -->
-    <line x1="16" y1="22" x2="22" y2="76"/>
-  </g>
+  <path
+    d="M50 14 L84 74 L16 74 Z"
+    stroke="#C77A1B"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    fill="none"
+  />
 
-  <!-- Nodes: amber, all three prominent — this is an active, energised mark -->
-  <!-- Node A: upper shoulder — wing root -->
-  <circle cx="16" cy="22" r="6" fill="#C77A1B"/>
-  <!-- Node B: lower tail -->
-  <circle cx="22" cy="76" r="6" fill="#C77A1B"/>
-  <!-- Node C: forward beak — the primary point, slightly larger -->
-  <circle cx="84" cy="44" r="7" fill="#C77A1B"/>
+  <circle cx="50" cy="14" r="5.5" fill="#C77A1B"/>
+  <circle cx="84" cy="74" r="5.5" fill="#C77A1B"/>
+  <circle cx="16" cy="74" r="5.5" fill="#C77A1B"/>
 </svg>

@@ -31,7 +31,7 @@ export default function SecurityClearancePage(): React.ReactElement {
                 Personnel Security Framework
               </h2>
               <p className={styles.sectionText}>
-                Phoenix Rooivalk maintains comprehensive security clearance
+                NexaMesh maintains comprehensive security clearance
                 protocols for all personnel involved in classified operations.
                 Our security framework ensures:
               </p>

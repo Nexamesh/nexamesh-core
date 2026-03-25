@@ -28,7 +28,7 @@ export const ThreatSimulatorSection: React.FC = () => {
       <div className={styles.demoHeader}>
         <h3 className={styles.demoTitle}>Experience the System</h3>
         <p className={styles.demoSubtitle}>
-          Try our interactive defense simulator to see Phoenix Rooivalk
+          Try our interactive defense simulator to see NexaMesh
           technology in action. Experience real-time threat detection,
           autonomous response, and tactical coordination.
         </p>

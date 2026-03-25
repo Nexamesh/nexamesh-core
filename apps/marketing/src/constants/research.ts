@@ -13,7 +13,7 @@ export const EFFECTOR_FILTER_CHIPS: FilterChip[] = [
   { id: "deception", label: "Deception", color: "#70A1FF" },
   { id: "denial", label: "Denial", color: "#ECCC68" },
   { id: "capture", label: "Capture", color: "#10b981" },
-  { id: "directed", label: "Directed", color: "#f97316" },
+  { id: "directed", label: "Directed", color: "#C77A1B" },
   { id: "ecm", label: "ECM", color: "#8b5cf6" },
   { id: "nonkinetic", label: "Non-Kinetic", color: "#84cc16" },
   { id: "countermeasure", label: "Countermeasure", color: "#6b7280" },

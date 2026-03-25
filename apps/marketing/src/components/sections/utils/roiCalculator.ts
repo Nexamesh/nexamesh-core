@@ -20,7 +20,7 @@ export interface ROICalculation {
 }
 
 /**
- * Calculates the return on investment (ROI) for the Phoenix Rooivalk system
+ * Calculates the return on investment (ROI) for the NexaMesh system
  * compared to traditional systems.
  *
  * @param inputs - The user-provided inputs for the ROI calculation.

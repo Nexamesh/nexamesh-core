@@ -58,7 +58,7 @@ export const TeamSection: React.FC = () => {
         <RevealSection className={styles.header}>
           <h2 className={styles.title}>Leadership Team</h2>
           <p className={styles.subtitle}>
-            Experienced team driving PhoenixRooivalk&apos;s dual-brand strategy
+            Experienced team driving NexaMesh&apos;s dual-brand strategy
             from consumer validation to enterprise leadership.
           </p>
         </RevealSection>

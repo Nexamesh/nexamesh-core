@@ -20,7 +20,7 @@ const HUDBar: React.FC<HUDBarProps> = ({
   return (
     <header className={styles.hud} role="group" aria-label="Simulator status">
       <h3 id="sim-title" className={styles.srOnly}>
-        Phoenix Rooivalk Defense Simulator
+        NexaMesh Defense Simulator
       </h3>
       <div className={styles.stat} role="status" aria-label="Current score">
         <span className={styles.label}>Score</span>

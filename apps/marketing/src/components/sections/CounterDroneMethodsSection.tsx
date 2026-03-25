@@ -76,7 +76,7 @@ export const CounterDroneMethodsSection: React.FC = () => {
             <div className={styles.header}>
               <h2 className={styles.title}>Counter-Drone Defense Methods</h2>
               <p className={styles.subtitle}>
-                Phoenix Rooivalk integrates multiple defense strategies for
+                NexaMesh integrates multiple defense strategies for
                 comprehensive drone threat protection.
               </p>
             </div>

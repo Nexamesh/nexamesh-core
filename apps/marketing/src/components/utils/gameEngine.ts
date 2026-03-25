@@ -1,4 +1,4 @@
-// Game Engine Core - Language-Agnostic System for Phoenix Rooivalk
+// Game Engine Core - Language-Agnostic System for NexaMesh
 // This system will be ported to Rust in the main application
 
 export interface GameConfig {

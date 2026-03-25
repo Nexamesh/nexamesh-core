@@ -1,5 +1,5 @@
 // Dynamic Response Protocols - Automated vs Manual Deployment Strategies
-// Reusable core logic for Phoenix Rooivalk main application
+// Reusable core logic for NexaMesh main application
 
 export interface ResponseProtocol {
   id: string;

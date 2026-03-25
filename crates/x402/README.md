@@ -1,12 +1,12 @@
 # phoenix-x402
 
-x402 Payment Protocol integration for Phoenix Rooivalk evidence verification
+x402 Payment Protocol integration for NexaMesh evidence verification
 API.
 
 ## Overview
 
 This crate implements HTTP 402 "Payment Required" protocol support for
-monetizing the Phoenix Rooivalk evidence verification API. It enables instant
+monetizing the NexaMesh evidence verification API. It enables instant
 micropayments via Solana without requiring account creation, OAuth flows, or
 subscription management.
 

@@ -1,7 +1,7 @@
 {
-  "name": "phoenix-rooivalk-functions",
+  "name": "nexamesh-functions",
   "version": "1.0.0",
-  "description": "Azure Functions for Phoenix Rooivalk - replaces Firebase Cloud Functions",
+  "description": "Azure Functions for NexaMesh docs portal",
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc",

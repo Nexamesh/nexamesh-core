@@ -3,7 +3,7 @@
 ## Overview
 
 This directory contains icon specifications for all status indicators and UI
-feedback elements used in the Phoenix Rooivalk Threat Simulator.
+feedback elements used in the NexaMesh Threat Simulator.
 
 ## Icon Categories
 

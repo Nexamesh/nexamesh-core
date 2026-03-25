@@ -110,8 +110,8 @@ describe("Calendar Export Utilities", () => {
       expect(ics).toContain("BEGIN:VCALENDAR");
       expect(ics).toContain("END:VCALENDAR");
       expect(ics).toContain("VERSION:2.0");
-      expect(ics).toContain("PRODID:-//Phoenix Rooivalk//Timeline Events//EN");
-      expect(ics).toContain("X-WR-CALNAME:Phoenix Rooivalk Timeline");
+      expect(ics).toContain("PRODID:-//NexaMesh//Timeline Events//EN");
+      expect(ics).toContain("X-WR-CALNAME:NexaMesh Timeline");
 
       // Should contain both events
       expect(ics).toContain("SUMMARY:Test Event");

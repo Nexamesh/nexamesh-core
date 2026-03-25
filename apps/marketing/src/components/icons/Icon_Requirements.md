@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document defines the complete icon requirements for the Phoenix Rooivalk
+This document defines the complete icon requirements for the NexaMesh
 Threat Simulator, including design specifications, color palettes, and AI
 generation prompts for all effector and drone icons.
 
@@ -660,5 +660,5 @@ export { Effector } from "./drones/Effector";
 ---
 
 _This document serves as the definitive guide for icon design and implementation
-in the Phoenix Rooivalk Threat Simulator. All icons should follow these
+in the NexaMesh Threat Simulator. All icons should follow these
 specifications for consistency and professional appearance._

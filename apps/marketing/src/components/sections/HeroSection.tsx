@@ -8,19 +8,19 @@ export const HeroSection: React.FC = () => {
       <div className={styles.container}>
         {/* Single status indicator - buyer-focused */}
         <p className={styles.statusLine}>
-          Preorders open · First deliveries Q3 2026
+          Early access open · Kestrel Mesh ships Q3 2026
         </p>
 
         {/* Clear headline - what you get */}
         <h1 className={styles.headline}>
-          Capture drones safely.
-          <span className={styles.headlineAccent}> No damage.</span>
+          Detect threats.
+          <span className={styles.headlineAccent}> Before they arrive.</span>
         </h1>
 
         {/* One line - why it matters */}
         <p className={styles.description}>
-          Pneumatic net launchers for training, events, and facility security.
-          Legal. Non-destructive. Deployable today.
+          Edge AI counter-UAS intelligence. Sub-200ms detection, RF-denied
+          autonomy, blockchain-anchored evidence. Deploy anywhere.
         </p>
 
         {/* Single primary CTA */}
@@ -50,23 +50,23 @@ export const HeroSection: React.FC = () => {
         {/* Simple proof points - not a card, just text */}
         <div className={styles.proofPoints}>
           <span className={styles.proofPoint}>
-            <strong>3 product lines</strong> — Training to Enterprise
+            <strong>&lt;200ms</strong> — Detection latency
           </span>
           <span className={styles.proofDivider}>·</span>
           <span className={styles.proofPoint}>
-            <strong>100% safe</strong> — Non-destructive capture
+            <strong>RF-denied</strong> — Works without comms
           </span>
           <span className={styles.proofDivider}>·</span>
           <span className={styles.proofPoint}>
-            <strong>Legal</strong> — No RF, no jamming
+            <strong>Blockchain</strong> — Evidence anchoring
           </span>
         </div>
 
         {/* Trust signals - subtle credibility indicators */}
         <div className={styles.trustSignals}>
           <span className={styles.trustSignal}>Patent Pending</span>
-          <span className={styles.trustSignal}>No deposit required</span>
-          <span className={styles.trustSignal}>FCC Compliant</span>
+          <span className={styles.trustSignal}>Edge AI Processing</span>
+          <span className={styles.trustSignal}>Mesh-Deployable</span>
         </div>
       </div>
     </section>

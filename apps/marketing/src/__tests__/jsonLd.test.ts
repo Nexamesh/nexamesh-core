@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { serializeJsonLd } from "@phoenix-rooivalk/utils";
+import { serializeJsonLd } from "@nexamesh/utils";
 
 describe("serializeJsonLd", () => {
   it("should stringify a simple object", () => {

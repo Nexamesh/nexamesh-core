@@ -30,7 +30,7 @@ export const threatTypes: Record<string, ThreatType> = {
     health: 2,
     points: 150,
     weakness: "electronic",
-    color: "#f97316",
+    color: "#C77A1B",
   },
   stealth: {
     emoji: "🛸",

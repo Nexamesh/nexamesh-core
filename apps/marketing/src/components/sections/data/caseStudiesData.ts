@@ -13,9 +13,9 @@ export interface CaseStudy {
 
 export const caseStudiesData: CaseStudy[] = [
   {
-    title: "SkySnare™ at the Drone Racing League",
+    title: "Kestrel Mesh at the Drone Racing League",
     summary:
-      "The Drone Racing League (DRL) partnered with SkySnare™ to enhance pilot training and safety at their events, deploying detection across 3 venues over a 6-month trial.",
+      "The Drone Racing League (DRL) partnered with Kestrel Mesh to enhance pilot training and safety at their events, deploying detection across 3 venues over a 6-month trial.",
     metrics: [
       { value: "+25%", label: "Flight Time Improvement" },
       { value: "0", label: "Safety Incidents" },
@@ -30,9 +30,9 @@ export const caseStudiesData: CaseStudy[] = [
     imageUrl: "/assets/case-study-1.png",
   },
   {
-    title: "AeroNet™ Secures a Major International Airport",
+    title: "Sentinel Ring Secures a Major International Airport",
     summary:
-      "A major international airport implemented AeroNet™ to protect its airspace from unauthorized drone activity, covering 12 sq km of controlled airspace.",
+      "A major international airport implemented Sentinel Ring to protect its airspace from unauthorized drone activity, covering 12 sq km of controlled airspace.",
     metrics: [
       { value: "24/7", label: "Monitoring" },
       { value: "<5s", label: "Response Time" },

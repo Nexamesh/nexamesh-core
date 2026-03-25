@@ -31,7 +31,7 @@ export default function ITARCompliancePage(): React.ReactElement {
                 ITAR Compliance Framework
               </h2>
               <p className={styles.description}>
-                Phoenix Rooivalk operates under strict ITAR compliance protocols
+                NexaMesh operates under strict ITAR compliance protocols
                 to ensure all defense technology exports meet U.S. Department of
                 State requirements. Our comprehensive framework includes:
               </p>

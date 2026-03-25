@@ -32,7 +32,7 @@ export default function ISO27001Page(): React.ReactElement {
                 Information Security Management
               </h2>
               <p className={styles.description}>
-                Phoenix Rooivalk maintains ISO 27001 certification ensuring
+                NexaMesh maintains ISO 27001 certification ensuring
                 comprehensive information security management across all
                 operations. Our ISMS framework provides:
               </p>

@@ -77,8 +77,8 @@ Review these for remaining hardcoded values:
 
 Documents use funding-round-based phases:
 
-- `seed` - SkySnare Launch (Nov 2025 - Oct 2026)
-- `series-a` - AeroNet & DoD (Nov 2026 - 2027)
+- `seed` - Kestrel Mesh Launch (Nov 2025 - Oct 2026)
+- `series-a` - Sentinel Ring & DoD (Nov 2026 - 2027)
 - `series-b` - Ground Systems (2028)
 - `series-c` - Aerial Platform (2029)
 - `scale` - Global Deployment (2030+)

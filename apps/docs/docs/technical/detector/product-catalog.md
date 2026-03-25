@@ -40,15 +40,15 @@ detection and countermeasure products.
    - [NetSentry Lite](#netsentry-lite)
    - [NetSentry Standard](#netsentry-standard)
    - [NetSentry Pro](#netsentry-pro)
-3. [Consumer Products (SkySnare Line)](#consumer-products-skysnare-line)
-   - [SkySnare](#skysnare)
+3. [Consumer Products (Kestrel Mesh Line)](#consumer-products-skysnare-line)
+   - [Kestrel Mesh](#skysnare)
 4. [Ground Launchers (NetSnare Line)](#ground-launchers-netsnare-line)
    - [NetSnare Lite](#netsnare-lite)
    - [NetSnare Standard](#netsnare-standard)
    - [NetSnare Pro](#netsnare-pro)
-5. [Enterprise Platforms (AeroNet)](#enterprise-platforms-aeronet)
-   - [AeroNet Enterprise](#aeronet-enterprise)
-   - [AeroNet Command](#aeronet-command)
+5. [Enterprise Platforms (Sentinel Ring)](#enterprise-platforms-aeronet)
+   - [Sentinel Ring Enterprise](#aeronet-enterprise)
+   - [Sentinel Ring Command](#aeronet-command)
 6. [Aerial Intercept Systems (RKV Line)](#aerial-intercept-systems-rkv-line)
    - [RKV-M Mothership](#rkv-m-mothership)
    - [RKV-I Interceptor](#rkv-i-interceptor)
@@ -1894,9 +1894,9 @@ alert:
 
 ---
 
-# Consumer Products (SkySnare Line)
+# Consumer Products (Kestrel Mesh Line)
 
-## SkySnare
+## Kestrel Mesh
 
 **SKU:** SS-001 **Target Market:** Consumer/D2C, outdoor enthusiasts, property
 owners **Price:** $349 MSRP **Phase:** Seed (Q2 2026 • Delivery Jul 2026)
@@ -1960,7 +1960,7 @@ knowledge required.
 
 ### Included Accessories
 
-- SkySnare launcher unit
+- Kestrel Mesh launcher unit
 - 3× CO2 cartridges
 - 2× capture nets
 - Quick-start guide
@@ -2143,9 +2143,9 @@ capability with air tank.
 
 ---
 
-# Enterprise Platforms (AeroNet)
+# Enterprise Platforms (Sentinel Ring)
 
-## AeroNet Enterprise
+## Sentinel Ring Enterprise
 
 **SKU:** AN-ENT-001 **Target Market:** Critical infrastructure, airports,
 prisons, military bases **Price:** $150K setup + $25K/month **Phase:** Series A
@@ -2223,7 +2223,7 @@ with SOC integration.
 
 ---
 
-## AeroNet Command
+## Sentinel Ring Command
 
 **SKU:** AN-CMD-001 **Target Market:** Enterprise security teams, SOC operators
 **Price:** $25K-50K license + $2.5K/month **Phase:** Series A (Q1 2027 •
@@ -2249,7 +2249,7 @@ playbooks, and operator training simulator.
 
 ### Features
 
-- **Multi-Site Dashboard**: Real-time monitoring of all AeroNet deployments
+- **Multi-Site Dashboard**: Real-time monitoring of all Sentinel Ring deployments
 - **Threat Visualization**: 3D map with live drone tracks and threat corridors
 - **Operator Training Simulator**: Built-in threat simulation for training
 - **Incident Response Playbooks**: Automated response workflows
@@ -2462,8 +2462,8 @@ support.
 | NetSentry Lite       | NS-LITE-001 | 1.5h     | 0.5h    | 0.5h        | 2.62h       | $24        |
 | NetSentry Standard   | NS-STD-001  | 3.0h     | 1.0h    | 1.0h        | 5.27h       | $59        |
 | NetSentry Pro        | NS-PRO-001  | 6.0h     | 2.0h    | 2.0h        | 11h         | $183       |
-| SkySnare             | SS-001      | 0.75h    | 0.25h   | 0h          | 1.04h       | $10        |
-| AeroNet Enterprise   | AN-ENT-001  | 80h      | 40h     | 80h         | 216h        | $7,200     |
+| Kestrel Mesh             | SS-001      | 0.75h    | 0.25h   | 0h          | 1.04h       | $10        |
+| Sentinel Ring Enterprise   | AN-ENT-001  | 80h      | 40h     | 80h         | 216h        | $7,200     |
 | RKV-M Mothership     | RKV-M-001   | 40h      | 20h     | 20h         | 83.2h       | $3,236     |
 | RKV-I Interceptor    | RKV-I-001   | 8h       | 4h      | 4h          | 16.4h       | $638       |
 | RKV-G Ground Station | RKV-G-001   | 60h      | 20h     | 40h         | 128h        | $4,978     |
@@ -2472,11 +2472,11 @@ support.
 
 | Category   | BOM Markup | Target Margin | Products                                        |
 | ---------- | ---------- | ------------- | ----------------------------------------------- |
-| Consumer   | 158%       | 59%           | SkySnare                                        |
+| Consumer   | 158%       | 59%           | Kestrel Mesh                                        |
 | DIY/Maker  | 140%       | 35%           | SkyWatch Nano, NetSentry Lite                   |
 | Prosumer   | 160%       | 45%           | SkyWatch Standard/Mobile, NetSentry Std         |
 | Commercial | 180%       | 55%           | SkyWatch Pro/Thermal/Marine/Mesh, NetSentry Pro |
-| Enterprise | 200%       | 60%           | SkyWatch Enterprise, AeroNet                    |
+| Enterprise | 200%       | 60%           | SkyWatch Enterprise, Sentinel Ring                    |
 | Military   | 220%       | 65%           | RKV-M, RKV-I, RKV-G                             |
 | Services   | 250%       | 70%           | Training, custom dev, support                   |
 

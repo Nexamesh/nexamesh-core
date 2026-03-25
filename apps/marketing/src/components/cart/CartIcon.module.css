@@ -14,11 +14,11 @@
 
 .cartIcon:hover {
   background: rgba(var(--primary), 0.1);
-  color: var(--primary, #f97316);
+  color: var(--primary, #C77A1B);
 }
 
 .cartIcon:focus-visible {
-  outline: 2px solid var(--primary, #f97316);
+  outline: 2px solid var(--primary, #C77A1B);
   outline-offset: 2px;
 }
 

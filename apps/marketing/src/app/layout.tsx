@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Manrope, Inter } from "next/font/google";
 import * as React from "react";
 import { Analytics } from "../components/Analytics";
 import { SkipNav } from "../components/SkipNav";
@@ -6,37 +7,51 @@ import { ThemeProvider } from "../contexts/ThemeContext";
 import { CartProvider } from "../contexts/CartContext";
 import "./globals.css";
 
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Phoenix Rooivalk - SAE Level 4 Autonomous Counter-Drone Defense",
+  title: "NexaMesh — Connected Intelligence Infrastructure",
   description:
-    "Edge autonomy in RF-denied environments. Sub-200ms response time. SAE Level 4 autonomous counter-drone defense system for military and critical infrastructure protection.",
+    "Counter-UAS edge intelligence platform. Sub-200ms detection, RF-denied autonomy, blockchain-anchored evidence. Kestrel Mesh deployable sensing + Sentinel Ring perimeter awareness.",
   keywords: [
     "counter-drone",
-    "autonomous defense",
-    "RF-denied",
-    "edge computing",
-    "SAE Level 4",
-    "drone defense",
     "counter-UAS",
     "C-UAS",
-    "military technology",
-    "defense systems",
+    "drone detection",
+    "edge AI",
+    "RF-denied",
+    "autonomous defense",
+    "mesh networking",
+    "perimeter security",
+    "NexaMesh",
   ],
-  authors: [{ name: "Phoenix Rooivalk" }],
-  creator: "Phoenix Rooivalk",
-  publisher: "Phoenix Rooivalk",
+  authors: [{ name: "NexaMesh" }],
+  creator: "NexaMesh",
+  publisher: "NexaMesh",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000",
+    process.env.NEXT_PUBLIC_SITE_URL || "https://nexamesh.ai",
   ),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Phoenix Rooivalk - SAE Level 4 Autonomous Counter-Drone Defense",
+    title: "NexaMesh — Connected Intelligence Infrastructure",
     description:
-      "Edge autonomy in RF-denied environments. Sub-200ms response time. SAE Level 4 autonomous counter-drone defense.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "",
-    siteName: "Phoenix Rooivalk",
+      "Counter-UAS edge intelligence. Sub-200ms detection, RF-denied autonomy, blockchain evidence anchoring.",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://nexamesh.ai",
+    siteName: "NexaMesh",
     locale: "en_US",
     type: "website",
     images: [
@@ -44,17 +59,17 @@ export const metadata: Metadata = {
         url: "/logo.svg",
         width: 800,
         height: 600,
-        alt: "Phoenix Rooivalk - Autonomous Counter-Drone Defense System",
+        alt: "NexaMesh — Connected Intelligence Infrastructure",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Phoenix Rooivalk - SAE Level 4 Counter-Drone Defense",
+    title: "NexaMesh — Connected Intelligence Infrastructure",
     description:
-      "Edge autonomy in RF-denied environments with sub-200ms response time.",
+      "Counter-UAS edge intelligence. Sub-200ms detection in RF-denied environments.",
     images: ["/logo.svg"],
-    creator: "@phoenixrooivalk",
+    creator: "@nexamesh_ai",
   },
   robots: {
     index: true,
@@ -81,7 +96,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${manrope.variable} ${inter.variable}`}>
       <body>
         <Analytics />
         <SkipNav />

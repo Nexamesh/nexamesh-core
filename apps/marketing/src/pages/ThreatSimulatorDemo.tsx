@@ -351,7 +351,7 @@ const ThreatSimulatorDemo: React.FC = () => {
   return (
     <div className="threat-simulator-demo">
       <div className="demo-controls">
-        <h1>Phoenix Rooivalk - Threat Simulator Demo</h1>
+        <h1>NexaMesh - Threat Simulator Demo</h1>
         <div className="demo-mode-selector">
           <button
             className={`mode-btn ${demoMode === "full" ? "active" : ""}`}

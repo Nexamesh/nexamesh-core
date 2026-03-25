@@ -97,7 +97,7 @@ export default function ROICalculatorPage(): React.ReactElement {
   const [roiInputs] = React.useState<ROIInputs>({
     threatFrequency: 5,
     averageResponseTime: 3000,
-    deploymentCost: 150000, // AeroNet Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
+    deploymentCost: 150000, // Sentinel Ring Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
     personnelCost: 150000,
   });
 
@@ -127,7 +127,7 @@ export default function ROICalculatorPage(): React.ReactElement {
           </div>
           <h1 className={styles.pageTitle}>ROI Calculator</h1>
           <p className={styles.pageSubtitle}>
-            Evaluate the financial return of deploying Phoenix Rooivalk
+            Evaluate the financial return of deploying NexaMesh
             counter-UAS technology at your facility. Adjust threat frequency,
             response time, and deployment cost below to model your scenario.
           </p>
@@ -171,7 +171,7 @@ export default function ROICalculatorPage(): React.ReactElement {
                 0,
               );
 
-              // Collect monthly fees (e.g. AeroNet Enterprise $25K/mo, Command $2.5K/mo)
+              // Collect monthly fees (e.g. Sentinel Ring Enterprise $25K/mo, Command $2.5K/mo)
               const totalMonthly = resolvedProducts.reduce(
                 (sum, rp) => sum + (rp.product?.monthlyFee ?? 0),
                 0,

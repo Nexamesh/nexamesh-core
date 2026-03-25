@@ -64,14 +64,14 @@ export const Navigation: React.FC = () => {
           description: "Browse our product catalog",
         },
         {
-          href: "/products#skysnare",
-          label: "SkySnare™",
-          description: "Training & consumer",
+          href: "/products#kestrel",
+          label: "Kestrel Mesh",
+          description: "Fast directional sensing",
         },
         {
-          href: "/products#aeronet",
-          label: "AeroNet™",
-          description: "Enterprise security",
+          href: "/products#sentinel",
+          label: "Sentinel Ring",
+          description: "Persistent perimeter coverage",
         },
         {
           href: "/preorder",
@@ -147,7 +147,7 @@ export const Navigation: React.FC = () => {
           <div className={styles.logoWrapper}>
             <Image
               src="/logo.svg"
-              alt="Phoenix Rooivalk Logo"
+              alt="NexaMesh"
               width={56}
               height={56}
               className={styles.logoImage}
@@ -155,7 +155,7 @@ export const Navigation: React.FC = () => {
             <div className={styles.logoGlow}></div>
             <div className={styles.logoGlowOuter}></div>
           </div>
-          <div className={styles.logoText}>Phoenix Rooivalk</div>
+          <div className={styles.logoText}>NexaMesh</div>
         </Link>
 
         {/* Enhanced Navigation with Dropdowns */}
@@ -363,7 +363,7 @@ export const Navigation: React.FC = () => {
               <div className={styles.githubDropdownMenu}>
                 <div className={styles.githubDropdownInner}>
                   <a
-                    href="https://github.com/JustAGhosT/PhoenixRooivalk"
+                    href="https://github.com/Nexamesh/nexamesh-core"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.githubDropdownLink}
@@ -377,7 +377,7 @@ export const Navigation: React.FC = () => {
                     </svg>
                     <div className={styles.githubDropdownContent}>
                       <div className={styles.githubDropdownTitle}>
-                        Phoenix Rooivalk
+                        NexaMesh
                       </div>
                       <div className={styles.githubDropdownDesc}>
                         Main repository
@@ -445,15 +445,15 @@ export const Navigation: React.FC = () => {
             onClick={toggleTheme}
             className={styles.themeToggle}
             aria-label={`Switch to ${
-              theme === "phoenix"
+              theme === "nexamesh"
                 ? "blue"
                 : theme === "blue"
                   ? "green"
-                  : "phoenix"
+                  : "nexamesh"
             } theme`}
           >
             <div className={styles.themeIcon}>
-              {theme === "phoenix" ? (
+              {theme === "nexamesh" ? (
                 <div className={styles.themeIconPhoenix}></div>
               ) : theme === "blue" ? (
                 <div className={styles.themeIconBlue}></div>

@@ -2,7 +2,7 @@
 import * as React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "phoenix" | "blue" | "green";
+type Theme = "nexamesh" | "blue" | "green";
 
 interface ThemeContextType {
   theme: Theme;
@@ -26,17 +26,17 @@ interface ThemeProviderProps {
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
-      const savedTheme = localStorage.getItem("phoenix-theme") as Theme | null;
+      const savedTheme = localStorage.getItem("nexamesh-theme") as Theme | null;
       if (
         savedTheme &&
-        (savedTheme === "phoenix" ||
+        (savedTheme === "nexamesh" ||
           savedTheme === "blue" ||
           savedTheme === "green")
       ) {
         return savedTheme;
       }
     }
-    return "phoenix";
+    return "nexamesh";
   });
   const [mounted, setMounted] = useState(false);
 
@@ -50,20 +50,21 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     if (!mounted) return;
 
     // Save theme to localStorage
-    localStorage.setItem("phoenix-theme", theme);
+    localStorage.setItem("nexamesh-theme", theme);
 
     // Apply theme to CSS custom properties
     const root = document.documentElement;
 
     // Theme color definitions: legacy RGB triplets + shared --pr-* design tokens
     const themes = {
-      phoenix: {
-        primary: "249, 115, 22",
-        accent: "251, 146, 60",
-        accentBase: "#f97316",
-        accentHover: "#fb923c",
-        accentActive: "#ea580c",
-        accentSubtle: "rgba(249, 115, 22, 0.15)",
+      nexamesh: {
+        // Signal Amber #C77A1B — NexaMesh brand primary
+        primary: "199, 122, 27",
+        accent: "169, 95, 29",
+        accentBase: "#C77A1B",
+        accentHover: "#d4882e",
+        accentActive: "#A95F1D",
+        accentSubtle: "rgba(199, 122, 27, 0.15)",
       },
       blue: {
         primary: "59, 130, 246",
@@ -106,9 +107,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   const toggleTheme = () => {
     setTheme((prev) => {
-      if (prev === "phoenix") return "blue";
+      if (prev === "nexamesh") return "blue";
       if (prev === "blue") return "green";
-      return "phoenix";
+      return "nexamesh";
     });
   };
 

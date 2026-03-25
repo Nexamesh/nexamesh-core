@@ -1,23 +1,26 @@
 <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kestrel Mesh">
   <!-- Kestrel Mesh — product lockup, dark variant -->
+  <!-- Icon mark only. For full bird illustration use kestrel-handoff.png -->
 
   <rect width="300" height="100" fill="#182231" rx="10"/>
 
-  <!-- Kestrel symbol (scaled 64×64) -->
+  <!-- Triangle icon, scaled to fit -->
   <g transform="translate(18,18) scale(0.64)">
-    <g stroke="#F1F0EA" stroke-width="8" stroke-linecap="round" fill="none">
-      <line x1="16" y1="22" x2="84" y2="44"/>
-      <line x1="22" y1="76" x2="84" y2="44"/>
-      <line x1="16" y1="22" x2="22" y2="76"/>
-    </g>
-    <circle cx="16" cy="22" r="6" fill="#C77A1B"/>
-    <circle cx="22" cy="76" r="6" fill="#C77A1B"/>
-    <circle cx="84" cy="44" r="7" fill="#C77A1B"/>
+    <path
+      d="M50 14 L84 74 L16 74 Z"
+      stroke="#C77A1B"
+      stroke-width="3.5"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <circle cx="50" cy="14" r="5.5" fill="#C77A1B"/>
+    <circle cx="84" cy="74" r="5.5" fill="#C77A1B"/>
+    <circle cx="16" cy="74" r="5.5" fill="#C77A1B"/>
   </g>
 
   <line x1="92" y1="28" x2="92" y2="72" stroke="#2B3440" stroke-width="1.5"/>
 
-  <!-- "Kestrel Mesh" — slightly lighter weight than NexaMesh master wordmark -->
   <text
     x="108"
     y="55"

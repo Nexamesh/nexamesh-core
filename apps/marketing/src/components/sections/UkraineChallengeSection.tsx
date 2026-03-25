@@ -45,7 +45,7 @@ export const UkraineChallengeSection: React.FC = () => {
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Phoenix Rooivalk Solutions</h3>
+            <h3 className={styles.columnTitle}>NexaMesh Solutions</h3>
             <div className={styles.cards}>
               <FeatureCard
                 icon="✅"

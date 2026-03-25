@@ -90,7 +90,7 @@
   color: white;
 }
 
-.phoenixHeader {
+.nexameshHeader {
   color: rgb(var(--primary)) !important;
   font-weight: 700;
 }
@@ -110,7 +110,7 @@
   color: white;
 }
 
-.phoenixCell {
+.nexameshCell {
   color: rgb(var(--status-active));
   font-weight: 600;
 }
@@ -242,7 +242,7 @@
   font-weight: 700;
 }
 
-/* Phoenix Advantages */
+/* NexaMesh Advantages */
 .advantagesSection {
   margin-bottom: 3rem;
 }

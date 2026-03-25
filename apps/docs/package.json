@@ -1,5 +1,5 @@
 {
-  "name": "phoenixrooivalk-docs",
+  "name": "nexamesh-docs",
   "version": "0.2.0",
   "private": true,
   "scripts": {
@@ -19,7 +19,7 @@
     "validate-catalog": "tsx scripts/validate-catalog.ts"
   },
   "dependencies": {
-    "@phoenix-rooivalk/utils": "workspace:*",
+    "@nexamesh/utils": "workspace:*",
     "@azure/cosmos": "^4.9.0",
     "@azure/msal-browser": "^5.6.1",
     "@docusaurus/core": "^3.9.2",

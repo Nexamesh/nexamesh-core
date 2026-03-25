@@ -22,7 +22,7 @@ export default function ContactPage(): React.ReactElement {
   // Obfuscate email at render time to prevent scraping
   const [email] = useState(() => {
     const user = "contact";
-    const domain = "phoenixrooivalk.com";
+    const domain = "nexamesh.ai";
     return `${user}@${domain}`;
   });
 
@@ -149,9 +149,9 @@ export default function ContactPage(): React.ReactElement {
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.headerContainer}>
-            <h1 className={styles.pageTitle}>Contact Phoenix Rooivalk</h1>
+            <h1 className={styles.pageTitle}>Contact NexaMesh</h1>
             <p className={styles.pageSubtitle}>
-              Interested in the Phoenix Rooivalk concept? Get in touch for
+              Interested in the NexaMesh concept? Get in touch for
               partnership opportunities, investment discussions, and design
               collaboration.
             </p>
@@ -181,15 +181,15 @@ export default function ContactPage(): React.ReactElement {
                 <div>
                   <h3 className={styles.subsectionTitle}>Concept Discussion</h3>
                   <p className={styles.subsectionText}>
-                    Discuss the Phoenix Rooivalk concept, technical
+                    Discuss the NexaMesh concept, technical
                     architecture, and potential applications in your operational
                     environment.
                   </p>
                   <button
                     onClick={() =>
                       handleEmailClick(
-                        "Phoenix Rooivalk Concept Discussion",
-                        "I would like to discuss the Phoenix Rooivalk concept and explore potential collaboration opportunities.",
+                        "NexaMesh Concept Discussion",
+                        "I would like to discuss the NexaMesh concept and explore potential collaboration opportunities.",
                       )
                     }
                     className={styles.primaryButton}
@@ -209,7 +209,7 @@ export default function ContactPage(): React.ReactElement {
                   </p>
                   <button
                     onClick={() =>
-                      handleEmailClick("Phoenix Rooivalk Investment Inquiry")
+                      handleEmailClick("NexaMesh Investment Inquiry")
                     }
                     className={styles.secondaryButton}
                     disabled={!email}
@@ -339,7 +339,7 @@ export default function ContactPage(): React.ReactElement {
       {/* Quick Links */}
       <section className={styles.quickLinksSection}>
         <div className={styles.container}>
-          <h2 className={styles.quickLinksTitle}>Explore Phoenix Rooivalk</h2>
+          <h2 className={styles.quickLinksTitle}>Explore NexaMesh</h2>
           <div className={styles.quickLinksGrid}>
             <Link href="/technical" className={styles.quickLinkCard}>
               <h3 className={styles.quickLinkTitle}>

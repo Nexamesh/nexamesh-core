@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import PreorderPageClient from "./PreorderPageClient";
 
 export const metadata: Metadata = {
-  title: "Preorder Counter-Drone Systems - Phoenix Rooivalk",
+  title: "Preorder Counter-Drone Systems - NexaMesh",
   description:
-    "Reserve your SkySnare or AeroNet counter-drone defense system. No deposit required. Preorder now and be first to receive Phoenix Rooivalk's revolutionary technology.",
+    "Reserve your Kestrel Mesh or Sentinel Ring counter-drone defense system. No deposit required. Preorder now and be first to receive NexaMesh's revolutionary technology.",
   openGraph: {
-    title: "Preorder Counter-Drone Systems - Phoenix Rooivalk",
+    title: "Preorder Counter-Drone Systems - NexaMesh",
     description:
-      "Reserve your SkySnare or AeroNet counter-drone defense system. No deposit required. Be first to receive Phoenix Rooivalk technology.",
+      "Reserve your Kestrel Mesh or Sentinel Ring counter-drone defense system. No deposit required. Be first to receive NexaMesh technology.",
   },
 };
 

@@ -12,12 +12,12 @@ export const TimelineSection: React.FC = () => {
       duration: "Nov 2025 - Oct 2026",
       status: "Active" as const,
       description:
-        "Complete mechanical prototype, achieve certification, launch SkySnare™ D2C",
+        "Complete mechanical prototype, achieve certification, launch Kestrel Mesh D2C",
       milestones: [
         "Complete mechanical prototype (May 2026)",
         "Achieve CPSC certification",
-        "Launch SkySnare™ D2C, target 4,500+ units",
-        "Integrate initial AI detection into AeroNet™ prototype",
+        "Launch Kestrel Mesh D2C, target 4,500+ units",
+        "Integrate initial AI detection into Sentinel Ring prototype",
         "FY26 Revenue Target: $1.825M / R29M",
       ],
     },
@@ -27,12 +27,12 @@ export const TimelineSection: React.FC = () => {
       duration: "Nov 2026 - Oct 2027",
       status: "Planned" as const,
       description:
-        "FAA waiver approved, first AeroNet™ pilot, AI detection deployment",
+        "FAA waiver approved, first Sentinel Ring pilot, AI detection deployment",
       milestones: [
         "FAA waiver approved (June 2026)",
-        "First AeroNet™ pilot live (Q2 2027)",
+        "First Sentinel Ring pilot live (Q2 2027)",
         "Deploy AI-based detection and tracking",
-        "SkySnare™ expands to 15,000 units",
+        "Kestrel Mesh expands to 15,000 units",
         "FY27 Revenue Target: $5M / R83M",
       ],
     },
@@ -42,10 +42,10 @@ export const TimelineSection: React.FC = () => {
       duration: "Nov 2027 - Oct 2028",
       status: "Planned" as const,
       description:
-        "Introduce SkySnare™ Pro, expand AeroNet™ pilots with predictive AI",
+        "Introduce Kestrel Mesh Pro, expand Sentinel Ring pilots with predictive AI",
       milestones: [
-        "Launch SkySnare™ Pro (advanced training)",
-        "AeroNet™: 6-8 operational pilots",
+        "Launch Kestrel Mesh Pro (advanced training)",
+        "Sentinel Ring: 6-8 operational pilots",
         "Implement AI compliance logging",
         "Predictive AI tracking deployed",
         "FY28 Revenue Target: $18M / R300M",
@@ -57,11 +57,11 @@ export const TimelineSection: React.FC = () => {
       duration: "Nov 2028 - Oct 2029",
       status: "Future" as const,
       description:
-        "60K SkySnare™ units, 15 AeroNet™ sites with cloud coordination",
+        "60K Kestrel Mesh units, 15 Sentinel Ring sites with cloud coordination",
       milestones: [
-        "60,000 SkySnare™ units sold globally",
-        "15 AeroNet™ sites operating",
-        "Deploy AeroNet AI 2.0 (predictive risk models)",
+        "60,000 Kestrel Mesh units sold globally",
+        "15 Sentinel Ring sites operating",
+        "Deploy Sentinel Ring AI 2.0 (predictive risk models)",
         "Edge self-calibration enabled",
         "FY29 Revenue Target: $32M / R533M",
       ],
@@ -72,10 +72,10 @@ export const TimelineSection: React.FC = () => {
       duration: "Nov 2029 - Oct 2030",
       status: "Future" as const,
       description:
-        "75K SkySnare™ units, 35 AeroNet™ deployments, exit readiness",
+        "75K Kestrel Mesh units, 35 Sentinel Ring deployments, exit readiness",
       milestones: [
-        "75,000 SkySnare™ units delivered",
-        "35 AeroNet™ deployments active",
+        "75,000 Kestrel Mesh units delivered",
+        "35 Sentinel Ring deployments active",
         "EBITDA margin: 30%",
         "FY30 Revenue Target: $50M / R833M",
         "Position for Series C or strategic acquisition",
@@ -117,8 +117,8 @@ export const TimelineSection: React.FC = () => {
         description: `${item.title} - ${item.description}\n\nPhase: ${item.phase}\nStatus: ${item.status}`,
         startDate: eventDate,
         allDay: true,
-        category: "PhoenixRooivalk Milestone",
-        url: "https://phoenixrooivalk.com/timeline",
+        category: "NexaMesh Milestone",
+        url: "https://nexamesh.ai/timeline",
       };
     });
   });
@@ -147,8 +147,8 @@ export const TimelineSection: React.FC = () => {
               5-Year Strategic Roadmap (2025-2030)
             </h2>
             <p className={styles.description}>
-              From foundation to market leadership: SkySnare™ consumer
-              validation to AeroNet™ enterprise dominance, targeting $50M
+              From foundation to market leadership: Kestrel Mesh consumer
+              validation to Sentinel Ring enterprise dominance, targeting $50M
               revenue by FY30.
             </p>
             <div

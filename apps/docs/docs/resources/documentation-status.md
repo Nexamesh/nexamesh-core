@@ -224,12 +224,12 @@ section below.
 
 ---
 
-## Product Figures (SkySnare/AeroNet)
+## Product Figures (Kestrel Mesh/Sentinel Ring)
 
 | Product              | TAM     |
 | -------------------- | ------- |
-| SkySnare (Consumer)  | $1.68B  |
-| AeroNet (Enterprise) | $4.2B   |
+| Kestrel Mesh (Consumer)  | $1.68B  |
+| Sentinel Ring (Enterprise) | $4.2B   |
 | Combined TAM         | ~$5.88B |
 | Invested to Date     | $150K   |
 

@@ -53,7 +53,7 @@ export default function LoginPage() {
         <div className={styles.header}>
           <h1 className={styles.title}>Welcome Back</h1>
           <p className={styles.subtitle}>
-            Sign in to access career opportunities at Phoenix Rooivalk
+            Sign in to access career opportunities at NexaMesh
           </p>
         </div>
 

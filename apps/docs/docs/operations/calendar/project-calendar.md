@@ -148,7 +148,7 @@ milestones & releases **Team Calendar**: Meetings & reviews
 | Prototype Assembly    | Jan 2026    | ⬜ Planned     |
 | Field Evaluation      | Apr 2026    | ⬜ Planned     |
 
-### Phase 1b: SkySnare™ Consumer
+### Phase 1b: Kestrel Mesh Consumer
 
 | Milestone               | Target Date | Status     |
 | ----------------------- | ----------- | ---------- |
@@ -157,7 +157,7 @@ milestones & releases **Team Calendar**: Meetings & reviews
 | First Units Shipped     | May 2026    | ⬜ Planned |
 | 5,000 Units Sold        | Dec 2026    | ⬜ Target  |
 
-### Phase 1c: AeroNet™ Enterprise
+### Phase 1c: Sentinel Ring Enterprise
 
 | Milestone              | Target Date | Status     |
 | ---------------------- | ----------- | ---------- |

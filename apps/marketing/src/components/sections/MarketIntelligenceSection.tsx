@@ -9,7 +9,7 @@ export const MarketIntelligenceSection: React.FC = () => {
       metric: "$5.9B",
       label: "Combined TAM",
       description:
-        "SkySnare™ ($1.68B @ 8.2% CAGR) + AeroNet™ ($4.2B @ 47% CAGR)",
+        "Kestrel Mesh ($1.68B @ 8.2% CAGR) + Sentinel Ring ($4.2B @ 47% CAGR)",
     },
     {
       metric: "$50M",
@@ -61,8 +61,8 @@ export const MarketIntelligenceSection: React.FC = () => {
         <RevealSection className={styles.header}>
           <h2 className={styles.title}>Dual-Brand Market Strategy</h2>
           <p className={styles.description}>
-            PhoenixRooivalk targets $5.9B combined opportunity through parallel
-            consumer validation (SkySnare™) and enterprise scaling (AeroNet™)
+            NexaMesh targets $5.9B combined opportunity through parallel
+            consumer validation (Kestrel Mesh) and enterprise scaling (Sentinel Ring)
           </p>
         </RevealSection>
 
@@ -134,7 +134,7 @@ export const MarketIntelligenceSection: React.FC = () => {
             <Card
               icon="📊"
               title="Data Asset Creation"
-              description="Proprietary training data from AeroNet™ deployments"
+              description="Proprietary training data from Sentinel Ring deployments"
               colorVariant="yellow"
             />
           </div>
