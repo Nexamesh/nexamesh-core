@@ -1,11 +1,32 @@
 # Upgrade Path B — New 5" Frame with Full Brushless Build
 
+**Recommended progression: [C](upgrade-path-c-brain-upgrade-brushed.md) → [A](upgrade-path-a-brushless-3d-printed-mounts.md) → B (this)**
+| [Purchasing tracker](upgrade-purchasing-tracker.md)
+
 ## Overview
+
+**Do this last.** By now you've completed Path C (brain upgrade, INAV config,
+GPS, ELRS) and Path A (brushless conversion, 3D printing, DSHOT, ESC tuning).
+This build is pure assembly — you already know every skill required.
 
 Abandons the original X8-class toy frame entirely. Builds a standard 5"
 FPV racing/freestyle quad using a carbon fiber frame with proper brushless
 motor mounts. Most online tutorials and community support available for
 this path. Best flight performance.
+
+**Prerequisites from Path C + A:**
+- INAV/Betaflight configuration (from C)
+- ELRS binding and GPS rescue setup (from C)
+- Brushless motor wiring and DSHOT protocol (from A)
+- ESC configuration and motor direction setup (from A)
+- PID tuning on both brushed and brushless (from C + A)
+- Battery management for multi-cell LiPo (from A)
+
+**What makes this path easy after C + A:**
+- No new software skills to learn — you already know INAV/Betaflight
+- No new soldering techniques — same FC pads, same UART wiring
+- Standard 5" frame = massive YouTube/forum community for troubleshooting
+- Off-shelf parts only — no custom 3D mounts, no adapter design
 
 ## Threat Classification After Upgrade
 

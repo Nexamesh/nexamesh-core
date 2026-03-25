@@ -109,14 +109,43 @@ no mission planning, no network logs, no firmware worth analyzing.
 
 ## Internal Upgrade Paths
 
-Three upgrade approaches are documented, each with its own detailed
-roadmap, component list, and build checklist:
+Three upgrade approaches documented, each with detailed roadmaps, component
+lists, and build checklists. **Recommended progression: C → A → B** (cheapest
+to most capable, each building on skills from the previous).
 
-| Path | Approach | Frame | Cost | Complexity |
-|------|----------|-------|------|------------|
-| [Path A](upgrade-path-a-brushless-3d-printed-mounts.md) | 3D-print motor adapters for brushless on existing frame | Keep X8 frame | Medium | High (CAD + print + iterate) |
-| [Path B](upgrade-path-b-new-frame-brushless.md) | New 5" carbon frame with full brushless build | New frame | Higher | Medium (standard FPV build) |
-| [Path C](upgrade-path-c-brain-upgrade-brushed.md) | Keep brushed geared motors, upgrade brain only | Keep X8 frame | Lowest | Low (FC swap + wiring) |
+| Order | Path | Approach | Frame | Cost | Complexity |
+|-------|------|----------|-------|------|------------|
+| 1st | [Path C](upgrade-path-c-brain-upgrade-brushed.md) | Keep brushed geared motors, upgrade brain only | Keep X8 frame | Lowest | Low (FC swap + wiring) |
+| 2nd | [Path A](upgrade-path-a-brushless-3d-printed-mounts.md) | 3D-print motor adapters for brushless on existing frame | Keep X8 frame | Medium | High (CAD + print + iterate) |
+| 3rd | [Path B](upgrade-path-b-new-frame-brushless.md) | New 5" carbon frame with full brushless build | New frame | Higher | Medium (standard FPV build) |
+
+### Why C → A → B
+
+1. **Path C first** — Fly with GPS + logging in hours, not weeks. Learn
+   INAV configuration, ELRS binding, and PID tuning on a platform where
+   crashes cost R20 (brushed motor), not R600 (brushless set). Immediately
+   generates flight log data for Phoenix Rooivalk research.
+
+2. **Path A second** — Reuse the FC, GPS, receiver, and wiring from Path C.
+   Only buy motors, ESC, and filament. The 3D CAD/print skills transfer
+   directly to Phase 1 hardware builds (sensor housings, turret mounts).
+   If 3D mounts fail, Path C brushed setup remains as fallback.
+
+3. **Path B last** — By now you know INAV, PID tuning, soldering, and ELRS
+   from experience on C and A. The 5" build becomes pure assembly with
+   zero beginner mistakes. Most expensive path, but you spend confidently.
+
+**Bonus for research:** Path C becomes the "modified toy drone" threat
+specimen, Path A becomes the "DIY intermediate threat," and Path B becomes
+the "consumer+ threat" — three distinct tiers, all documented and flyable.
+
+### Shared Components Across Paths
+
+The FC, GPS, receiver, antenna, connectors, LiPo bag, and mounting hardware
+carry forward from C → A → B. You only buy motors, ESC, frame, props, and
+battery new at each stage. See the
+[purchasing tracker](upgrade-purchasing-tracker.md) for the consolidated
+buy list.
 
 ### Frame Measurements (Actual)
 
@@ -131,20 +160,17 @@ roadmap, component list, and build checklist:
 | Motor mounting | Clip-in cylindrical housing (no bolt pattern) |
 | Battery | 1S 3.7V LiPo (original) |
 
-### Decision Guide
+### Cumulative Cost (Following C → A → B)
 
-- **Path A** if: You have a 3D printer and want the engineering challenge of
-  fitting brushless motors into the existing frame. Most educational, most
-  iteration required.
-- **Path B** if: You want the best flight performance and don't care about
-  preserving the original frame. Standard FPV build path, most online
-  tutorials available.
-- **Path C** if: You want the fastest, cheapest route to GPS + logging +
-  digital control. Keeps the geared brushed motors working. Best for
-  immediate counter-UAS research needs.
+| After completing | Total spent (ZAR) | What you have |
+|------------------|--------------------|---------------|
+| Path C Phase 1 | ~R1,200-1,800 | GPS drone with flight logging |
+| Path C + FPV | ~R2,400-3,800 | + live video and recording |
+| Path C + A | ~R3,000-4,500 | + brushless on original frame |
+| Path C + A + B | ~R4,500-7,000 | + dedicated 5" performance quad |
 
-All three paths share common electronics (FC, GPS, receiver, battery
-connector). The difference is motors, ESC type, frame, and props.
+Note: costs are cumulative because the FC, GPS, receiver, and accessories
+carry forward. You don't rebuy those at each stage.
 
 ## Relevance to Phoenix Rooivalk
 

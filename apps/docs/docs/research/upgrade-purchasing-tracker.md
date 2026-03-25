@@ -162,25 +162,53 @@ Check these before ordering duplicates.
 Buy in this order to spread cost and validate each phase before committing
 to the next.
 
-### Buy Now (Phase 1 — All Paths)
+**Recommended progression: C → A → B.** Buy in this order to spread cost
+and validate each stage before committing to the next.
 
-1. Temu cart (cleaned up, ~R1,283)
-2. ELRS receiver + TX module (AliExpress)
-3. microSD card (local)
-4. Silicone wire (AliExpress)
-5. Path-specific: motors + ESC (A/B) or brushed ESC modules (C)
-6. Battery + charger
+### Stage 1: Path C — Brain Upgrade (Buy Now)
 
-### Buy After Phase 1 Flies Successfully
+1. Temu cart (cleaned up, ~R1,283) — shared across all paths
+2. ELRS 915MHz receiver (AliExpress)
+3. ELRS TX module or RadioMaster Pocket (AliExpress)
+4. Brushed ESC modules x4 (AliExpress) — Path C specific
+5. 2S LiPo 1000-1500mAh XT30 (AliExpress)
+6. 2S LiPo charger (AliExpress/local)
+7. microSD card 32GB (local)
+8. 26AWG silicone wire assortment (AliExpress)
 
-7. VTX + antenna (AliExpress)
-8. FPV goggles (AliExpress or local)
+### Stage 2: Path C FPV (Buy After Path C Flies)
 
-### Buy After FPV Works
+9. VTX 5.8GHz 25-200mW (AliExpress)
+10. RHCP antenna (AliExpress)
+11. FPV goggles (AliExpress/local)
 
-9. Raspberry Pi Zero 2W + camera
-10. BEC module
-11. Optical flow sensor
+### Stage 3: Path A — Brushless Conversion (Buy After Path C + FPV Works)
+
+12. 1806 2400KV brushless motors x4 (AliExpress)
+13. 4-in-1 ESC 25-35A 20x20mm (AliExpress)
+14. 9x4.5" propellers x8+ (AliExpress)
+15. 2S-3S LiPo 1300-2200mAh XT30 (AliExpress)
+16. PETG filament 1kg (local) — for 3D-printed motor mounts
+17. (Optional) 2S-3S balance charger upgrade if needed
+
+### Stage 4: Path B — New Frame Build (Buy After Path A Flies)
+
+18. 5" carbon fiber frame (AliExpress)
+19. 2205 2300KV brushless motors x4 (AliExpress)
+20. 4-in-1 ESC 30-35A (AliExpress) — or reuse Path A ESC if compatible
+21. 5x4.5" tri-blade propellers x8+ (AliExpress)
+22. 4S LiPo 1300-1500mAh XT60 (AliExpress)
+23. XT60 connectors x5 pairs (AliExpress)
+24. 4S balance charger (AliExpress/local)
+25. Battery straps x2 (AliExpress)
+
+### Stage 5: AI Tier (Buy After Any Path Has Stable Flight)
+
+26. Raspberry Pi Zero 2W (local/AliExpress)
+27. Pi Camera Module 3 or OV2640 (local/AliExpress)
+28. 5V 2-3A BEC module (AliExpress)
+29. microSD 32GB for RPi (local)
+30. PMW3901 optical flow + VL53L1X (AliExpress)
 
 ---
 

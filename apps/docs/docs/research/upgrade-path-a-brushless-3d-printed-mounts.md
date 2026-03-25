@@ -1,11 +1,29 @@
 # Upgrade Path A — Brushless Conversion with 3D-Printed Motor Mounts
 
+**Recommended progression: [C](upgrade-path-c-brain-upgrade-brushed.md) → A (this) → [B](upgrade-path-b-new-frame-brushless.md)**
+| [Purchasing tracker](upgrade-purchasing-tracker.md)
+
 ## Overview
 
-Reuses the existing X8-class plastic frame (320mm diagonal). Replaces geared
-brushed motors with brushless motors using custom 3D-printed adapter mounts.
-Most engineering-intensive path but preserves the original airframe for
-counter-UAS threat research continuity.
+**Do this after Path C is flying.** Reuses the existing X8-class plastic frame
+(320mm diagonal) and the FC, GPS, receiver, and wiring from Path C. Replaces
+geared brushed motors with brushless motors using custom 3D-printed adapter
+mounts. Most engineering-intensive path but preserves the original airframe
+for counter-UAS threat research continuity.
+
+**Prerequisites from Path C:**
+- INAV/Betaflight configured and tested
+- ELRS receiver bound and working
+- GPS lock verified
+- Soldering skills proven on FC pads
+- PID tuning experience on brushed setup
+
+**What you learn here (needed for Path B):**
+- 3D CAD design for functional drone parts
+- Brushless motor wiring (3-phase) and ESC configuration
+- DSHOT protocol setup
+- Higher-current battery management (2S-3S)
+- Vibration analysis and motor balancing
 
 ## Threat Classification After Upgrade
 

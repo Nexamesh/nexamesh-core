@@ -1,15 +1,26 @@
 # Upgrade Path C — Brain Upgrade Only (Keep Brushed Motors)
 
+**Recommended progression: C (this) → [A](upgrade-path-a-brushless-3d-printed-mounts.md) → [B](upgrade-path-b-new-frame-brushless.md)**
+| [Purchasing tracker](upgrade-purchasing-tracker.md)
+
 ## Overview
 
-Cheapest and fastest path. Keeps the existing X8-class frame, geared FK130
-brushed motors, and original props. Only replaces the all-in-one flight
-controller board with a proper FC, adds GPS, digital receiver, and
+**Start here.** Cheapest and fastest path. Keeps the existing X8-class frame,
+geared FK130 brushed motors, and original props. Only replaces the all-in-one
+flight controller board with a proper FC, adds GPS, digital receiver, and
 blackbox logging. Immediately useful for counter-UAS threat research.
 
 **Key advantage:** No motor mount redesign, no frame change, no prop change.
 The geared brushed motors keep working exactly as they did — they just get
 smarter control electronics.
+
+**What you learn here (needed for Path A and B):**
+- INAV/Betaflight Configurator setup
+- ELRS receiver binding and configuration
+- PID tuning fundamentals
+- GPS rescue and failsafe configuration
+- Soldering FC pads and UART wiring
+- Blackbox log analysis
 
 ## Threat Classification After Upgrade
 
