@@ -6,418 +6,248 @@ difficulty: intermediate
 timeEstimate: 9
 xpReward: 15
 dataSource: centralized
-dataVersion: "1.0"
+dataVersion: "2.0"
 tags:
   - business
   - counter-uas
 prerequisites:
   - executive-summary
-phase: ["seed", "series-a"]
+phase: ["seed"]
 ---
 
 import {
   MARKET,
   PERFORMANCE,
-  PRICING,
   COMPETITORS,
-  TEAM,
-  HARDWARE,
   BLOCKCHAIN,
-  ROADMAP,
-  FUNDING,
 } from "@site/src/data/values";
 
 ## Purpose
 
-This document tracks key performance indicators, business metrics, and traction
-data for Phoenix Rooivalk. Use this to monitor progress, identify opportunities,
-and demonstrate growth to investors and stakeholders.
+This document tracks the actual state of Nexamesh across technology, market
+position, and funding progress. Numbers here are honest. Projections are clearly
+labelled as projections.
 
 ---
 
-## Executive Summary
+## Current Status — March 2026
 
-### Current Status (Q4 2025)
-
-- **Company Stage**: Pre-revenue, development phase
-- **Funding Status**: Seeking {FUNDING.SERIES_A_TARGET} Series A
-- **Market Position**: Technology leader in {PERFORMANCE.AUTONOMY_LEVEL}
-  autonomous counter-drone defense
-- **Key Milestones**: Technical validation, partnership development, market
-  entry preparation
-
-### Key Metrics Overview
-
-- **Technology Readiness**: 85% complete
-- **Market Validation**: 70% complete
-- **Partnership Pipeline**: $50M+ potential contracts
-- **Customer Interest**: 25+ qualified prospects
-- **Team Growth**: 12 team members, 3 open positions
+| Dimension | Reality |
+|-----------|---------|
+| **Stage** | Pre-seed / TRL 1–2 (hardware), TRL 4–5 (software) |
+| **Revenue** | R0 — pre-revenue |
+| **Customers** | 0 — no product shipped |
+| **Team** | 2 active founders, 3 advisors |
+| **Funding received** | None (Azure credits lost due to org mixup) |
+| **Funding seeking** | R500K–R2M pre-seed (TIA, accelerators, cloud credits) |
+| **Incorporation** | Pending — SA Pty Ltd registration in progress |
 
 ---
 
-## 1. Technology Development Metrics
+## 1. Technology Development
 
-### 1.1 System Development Progress
+### 1.1 Software Platform — Complete ✅
 
-#### Hardware Development
+The software platform is real, functional, and deployed. This is the strongest
+fundable asset.
 
-| Component                     | Status         | Completion | Notes                                                            |
-| ----------------------------- | -------------- | ---------- | ---------------------------------------------------------------- |
-| **NVIDIA Jetson Integration** | ✅ Complete    | 100%       | {HARDWARE.COMPUTE_PLATFORM}, {HARDWARE.COMPUTE_TOPS} performance |
-| **Sensor Fusion System**      | 🔄 In Progress | 85%        | RF, radar, EO/IR, acoustic, LiDAR integration                    |
-| **VTOL Mothership Platform**  | 🔄 In Progress | 70%        | Autonomous takeoff/landing capability                            |
-| **Interceptor Drones**        | 🔄 In Progress | 60%        | High-speed threat neutralization                                 |
-| **Ground Control Station**    | 🔄 In Progress | 80%        | Command and control interface                                    |
+| Component | Status | Notes |
+|-----------|--------|-------|
+| **Rust/Axum REST API** | ✅ Complete | Evidence, countermeasures, auth, x402 payment protocol |
+| **Blockchain anchoring** | ✅ Complete | Solana + EtherLink dual-chain, SHA-256 evidence hash |
+| **Edge AI detector (YOLOv8)** | ✅ Complete | Runs on Jetson Nano / Raspberry Pi offline |
+| **Threat simulator** | ✅ Complete | Leptos/WASM + Tauri 2 desktop app |
+| **Documentation portal** | ✅ Complete | Docusaurus 3 + Azure Functions + Cosmos DB |
+| **Evidence CLI** | ✅ Complete | Hash payload + submit to API |
+| **Monorepo CI/CD** | ✅ Complete | GitHub Actions, Azure Static Web Apps |
 
-#### Software Development
+**440+ commits across 9 months. All software runs and is in this repository.**
 
-| Component                        | Status         | Completion | Notes                                             |
-| -------------------------------- | -------------- | ---------- | ------------------------------------------------- |
-| **AI/ML Engine (YOLOv9)**        | ✅ Complete    | 100%       | {PERFORMANCE.YOLOV9_MAP} mAP detection accuracy   |
-| **Morpheus Network Integration** | 🔄 In Progress | 75%        | Decentralized AI decision engine                  |
-| **Cognitive Mesh Framework**     | 🔄 In Progress | 65%        | Multi-agent orchestration                         |
-| **Blockchain Evidence System**   | 🔄 In Progress | 80%        | {BLOCKCHAIN.PRIMARY_CHAIN} + EtherLink dual-chain |
-| **User Interface**               | 🔄 In Progress | 70%        | Control and monitoring interface                  |
+### 1.2 Hardware — R&D Phase ⬜
 
-### 1.2 Performance Validation
+| Component | Status |
+|-----------|--------|
+| Physical drone frame | Toy quadcopter (test platform) |
+| Flight controller | F405 + GPS ordered (Temu, R478) |
+| Motors | Salvaged hoverboard BLDC controllers (being assessed) |
+| Net capture system | Concept only |
+| Field detection node | Detector runs on laptop — not yet field-deployed |
 
-#### Technical Benchmarks
+**Honest TRL: 1–2 on hardware. The first hardware milestone is getting the F405 running INAV on the toy quadcopter.**
 
-| Metric                   | Target    | Current | Status      |
-| ------------------------ | --------- | ------- | ----------- |
-| **Response Time**        | &lt;200ms | 195ms   | ✅ Achieved |
-| **Detection Accuracy**   | >95%      | 96.2%   | ✅ Exceeded |
-| **False Positive Rate**  | &lt;5%    | 3.8%    | ✅ Exceeded |
-| **System Uptime**        | >99%      | 99.2%   | ✅ Exceeded |
-| **GPS-Denied Operation** | Yes       | Yes     | ✅ Achieved |
+### 1.3 Performance — Software Benchmarks (Real)
 
-#### AI Performance Metrics
+These metrics reflect the software platform running in development/lab conditions:
 
-| Metric                 | Target                  | Current                 | Status       |
-| ---------------------- | ----------------------- | ----------------------- | ------------ |
-| **AI Inference Speed** | &lt;50ms                | 42ms                    | ✅ Exceeded  |
-| **Model Accuracy**     | >95%                    | 96.8%                   | ✅ Exceeded  |
-| **Edge Processing**    | {HARDWARE.COMPUTE_TOPS} | {HARDWARE.COMPUTE_TOPS} | ✅ Achieved  |
-| **Memory Usage**       | &lt;32GB                | 28GB                    | ✅ Optimized |
-| **Power Consumption**  | &lt;100W                | 85W                     | ✅ Optimized |
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **AI inference (YOLOv8)** | &lt;50ms | On Jetson Nano, controlled test |
+| **Blockchain anchoring** | {BLOCKCHAIN.PRIMARY_CHAIN} | Solana + EtherLink, working |
+| **API response time** | &lt;200ms | Rust/Axum, local dev |
+| **Evidence hash** | SHA-256 | Deterministic, auditable |
+
+**Field validation not yet performed. Hardware prototype required for real-world benchmarks.**
 
 ---
 
-## 2. Market Validation Metrics
+## 2. Market Position
 
-### 2.1 Customer Discovery
+### 2.1 Market Opportunity (Real Data)
 
-#### Prospect Pipeline
+| Metric | Value | Source |
+|--------|-------|--------|
+| **Counter-UAS market (2025)** | {MARKET.CURRENT} | Industry reports |
+| **Market (2030 projected)** | {MARKET.PROJECTED} | Industry reports |
+| **CAGR** | {MARKET.CAGR} | Industry reports |
+| **SA market (2030)** | $120M | SA-specific estimate |
 
-| Stage                   | Count | Value | Conversion Rate |
-| ----------------------- | ----- | ----- | --------------- |
-| **Initial Contact**     | 150   | $75M  | -               |
-| **Qualified Leads**     | 45    | $45M  | 30%             |
-| **Proposals Submitted** | 12    | $25M  | 27%             |
-| **Pilot Programs**      | 3     | $5M   | 25%             |
-| **Contracts Signed**    | 0     | $0    | 0%              |
+**Market demand is real. Brussels airport closure (Nov 2025), Gatwick 2018,
+Pentagon Replicator ($500M) — the urgency is documented.**
 
-#### Customer Segments
+### 2.2 Competitor Context
 
-| Segment                     | Prospects | Pipeline Value | Avg. Deal Size |
-| --------------------------- | --------- | -------------- | -------------- |
-| **Military/Defense**        | 15        | $30M           | $2M            |
-| **Critical Infrastructure** | 20        | $15M           | $750K          |
-| **Commercial Security**     | 10        | $5M            | $500K          |
-| **Total**                   | 45        | $50M           | $1.1M          |
+| Competitor | Valuation | What They Have | Our Position |
+|------------|-----------|----------------|--------------|
+| **Anduril** | {COMPETITORS.ANDURIL_VALUATION} | $2.5B Series G, 2,500 staff | We are not competing with Anduril. We serve markets they don't. |
+| **Fortem** | {COMPETITORS.FORTEM_VALUATION} | 500+ staff, established radar tech | Higher cost, no blockchain evidence chain |
+| **DroneShield** | $200M market cap | 4,000+ deployments globally | Portable but limited AI, no evidence anchoring |
+| **Nexamesh** | Pre-seed | Software complete, hardware R&D | Non-ITAR SA jurisdiction. Blockchain evidence unique. R1,500 edge hardware. |
 
-### 2.2 Market Research
+**We are not displacing Anduril. We serve African critical infrastructure,
+wildlife reserves, mines, and event venues where R15M Israeli systems are
+not an option.**
 
-#### Industry Analysis
+### 2.3 Differentiation (What Exists Today)
 
-| Metric                             | Value              | Source            | Date    |
-| ---------------------------------- | ------------------ | ----------------- | ------- |
-| **Total Addressable Market**       | {MARKET.CURRENT}   | Industry Reports  | Q4 2025 |
-| **Serviceable Addressable Market** | $800M              | Internal Analysis | Q4 2025 |
-| **Serviceable Obtainable Market**  | $50M               | Market Research   | Q4 2025 |
-| **Market Growth Rate**             | {MARKET.CAGR} CAGR | Industry Reports  | Q4 2025 |
-
-#### Competitive Analysis
-
-| Competitor              | Market Share                           | Strengths                            | Weaknesses                        |
-| ----------------------- | -------------------------------------- | ------------------------------------ | --------------------------------- |
-| **Anduril Industries**  | {COMPETITORS.ANDURIL_MARKET_SHARE}     | AI capabilities, funding             | High cost, network dependency     |
-| **Fortem Technologies** | {COMPETITORS.FORTEM_MARKET_SHARE}      | Radar technology                     | Limited autonomy, high cost       |
-| **DroneShield**         | {COMPETITORS.DRONESHIELD_MARKET_SHARE} | Portable systems                     | Basic AI, limited performance     |
-| **Raytheon**            | 20%                                    | Military contracts                   | Legacy systems, high cost         |
-| **Phoenix Rooivalk**    | 0%                                     | Superior performance, cost advantage | New company, limited track record |
+| Advantage | Status |
+|-----------|--------|
+| Blockchain evidence anchoring for legal chain of custody | ✅ Built and working |
+| Edge AI — runs fully offline on R1,500 hardware | ✅ Built and working |
+| Non-ITAR SA jurisdiction — access to restricted markets | ✅ Structural advantage |
+| x402 M2M payment protocol | ✅ Built (disabled by default) |
+| Open architecture | ✅ Full source in repo |
 
 ---
 
-## 3. Business Development Metrics
+## 3. Business Development
 
-### 3.1 Partnership Development
+### 3.1 Funding Pipeline — Honest Status
 
-#### Strategic Partnerships
+| Program | Status | Amount | Owner |
+|---------|--------|--------|-------|
+| NVIDIA Inception | 🟡 Ready to apply | GPU discounts + credits | Charl (Nexamesh brand) |
+| AWS Activate Founders | 🟡 Ready to apply | $1K–$25K | Charl (Nexamesh brand) |
+| MS Founders Hub | 🟡 Ready (needs Charl LinkedIn) | Up to $150K Azure | Charl (Nexamesh brand) |
+| Google for Startups Africa | 🟡 Ready to apply | $200K cloud credits | Jurie or Charl |
+| TIA Seed Fund | 🔴 Needs CSD + Pty Ltd | R500K–R2M | Jurie |
+| Soonami accelerator | 🟡 Ready to apply | ~$125K | Jurie |
 
-| Partner              | Type                | Status           | Value | Timeline |
-| -------------------- | ------------------- | ---------------- | ----- | -------- |
-| **Lockheed Martin**  | Prime Contractor    | 🔄 In Discussion | $20M+ | Q1 2026  |
-| **Raytheon**         | Technology Partner  | 📋 Planned       | $15M+ | Q2 2026  |
-| **Northrop Grumman** | Integration Partner | 📋 Planned       | $10M+ | Q2 2026  |
-| **NVIDIA**           | Technology Partner  | 📋 Planned       | $5M+  | Q4 2025  |
-| **Morpheus Network** | AI Partner          | 📋 Planned       | $2M+  | Q4 2025  |
+**Nothing applied yet. Nothing received. These are the immediate next actions.**
 
-#### Government Contracts
+### 3.2 Partnerships — Honest Status
 
-| Contract                   | Type        | Value | Status     | Timeline |
-| -------------------------- | ----------- | ----- | ---------- | -------- |
-| **Air Force SBIR Phase I** | R&D         | $150K | 📋 Planned | Q1 2026  |
-| **Army SBIR Phase I**      | R&D         | $150K | 📋 Planned | Q1 2026  |
-| **Navy SBIR Phase I**      | R&D         | $150K | 📋 Planned | Q1 2026  |
-| **DoD OTA Agreement**      | Development | $2M+  | 📋 Planned | Q2 2026  |
-| **Pentagon Replicator**    | Production  | $5M+  | 📋 Planned | Q3 2026  |
-
-### 3.2 Sales Pipeline
-
-#### Active Opportunities
-
-| Customer                  | Segment        | Value | Stage         | Probability | Close Date |
-| ------------------------- | -------------- | ----- | ------------- | ----------- | ---------- |
-| **US Air Force**          | Military       | $5M   | Proposal      | 60%         | Q2 2026    |
-| **International Airport** | Infrastructure | $2M   | Pilot         | 70%         | Q1 2026    |
-| **TechCorp**              | Commercial     | $1M   | Negotiation   | 80%         | Q1 2026    |
-| **Power Plant**           | Infrastructure | $1.5M | Qualification | 40%         | Q2 2026    |
-| **Defense Contractor**    | Military       | $3M   | Discussion    | 30%         | Q3 2026    |
-
-#### Pipeline Summary
-
-- **Total Pipeline Value**: $12.5M
-- **Weighted Pipeline Value**: $6.7M
-- **Average Deal Size**: $1.25M
-- **Sales Cycle**: 6-12 months
-- **Win Rate Target**: 40%
+| Partner | Status |
+|---------|--------|
+| CSIR DPSS | Planned — no contact made yet |
+| ARMSCOR | Planned — no contact made yet |
+| Stellenbosch / UCT | Planned — no agreement in place |
+| Lockheed, Boeing, Raytheon | **Not in discussion. Not planned. Remove from any pitch materials.** |
 
 ---
 
-## 4. Financial Metrics
+## 4. Financial Reality
 
-### 4.1 Revenue Projections
+### 4.1 Current State
 
-#### 5-Year Revenue Forecast
+- **Revenue**: R0
+- **External funding**: R0 received
+- **Hardware budget**: R478 (Temu order, founder-funded)
+- **Infrastructure**: Azure credits (some remaining from previous allocation)
 
-| Year     | Revenue                | Growth | Key Drivers                      |
-| -------- | ---------------------- | ------ | -------------------------------- |
-| **2026** | {FUNDING.REVENUE_2026} | -      | SBIR contracts, pilot programs   |
-| **2027** | {FUNDING.REVENUE_2027} | 650%   | DoD contracts, commercial pilots |
-| **2028** | {FUNDING.REVENUE_2028} | 233%   | Production scale, international  |
-| **2029** | {FUNDING.REVENUE_2029} | 100%   | Market expansion, partnerships   |
-| **2030** | {FUNDING.REVENUE_2030} | 50%    | Market leadership, new products  |
+### 4.2 Revenue Projections (Targets, Not Commitments)
 
-#### Revenue by Segment
+These are targets contingent on successful funding and prototype completion:
 
-| Segment                     | 2026  | 2027 | 2028 | 2029  | 2030  |
-| --------------------------- | ----- | ---- | ---- | ----- | ----- |
-| **Military/Defense**        | $1M   | $10M | $35M | $60M  | $90M  |
-| **Critical Infrastructure** | $0.5M | $3M  | $10M | $25M  | $40M  |
-| **Commercial Security**     | $0.5M | $2M  | $5M  | $15M  | $20M  |
-| **Total**                   | $2M   | $15M | $50M | $100M | $150M |
-
-### 4.2 Unit Economics
-
-#### Hardware Unit Economics
-
-| Metric                        | Value     | Notes                       |
-| ----------------------------- | --------- | --------------------------- |
-| **Average Selling Price**     | $75K      | Base system configuration   |
-| **Cost of Goods Sold**        | $45K      | Manufacturing and materials |
-| **Gross Margin**              | 40%       | Hardware margin             |
-| **Customer Acquisition Cost** | $25K      | Sales and marketing         |
-| **Customer Lifetime Value**   | $200K     | 5-year LTV                  |
-| **Payback Period**            | 18 months | Time to recover CAC         |
-
-#### Software Unit Economics
-
-| Metric                       | Value | Notes                 |
-| ---------------------------- | ----- | --------------------- |
-| **Annual Recurring Revenue** | $15K  | Per customer per year |
-| **Gross Margin**             | 85%   | Software margin       |
-| **Churn Rate**               | 5%    | Annual customer churn |
-| **Customer Lifetime Value**  | $300K | 20-year LTV           |
-| **Net Revenue Retention**    | 110%  | Expansion revenue     |
+| Year | Revenue Target | Prerequisite |
+|------|---------------|--------------|
+| 2026 | R0 (realistic) | Focus: prototype + funding applications |
+| 2027 | R500K–R2M | Requires: working detection prototype + first customer |
+| 2028 | R5M–R20M | Requires: ARMSCOR/enterprise pilot + manufacturing |
+| 2029+ | Scale | Requires: Series A + manufacturing ramp |
 
 ---
 
-## 5. Team and Operations Metrics
+## 5. Team
 
-### 5.1 Team Growth
+### 5.1 Active Team
 
-#### Current Team (12 members)
+| Person | Role | Time on project |
+|--------|------|----------------|
+| Jurie Smit | CTO — software, AI, architecture | Part-time (day job: Sygnia) |
+| Charl Chapman | Hardware Lead — prototyping, assembly | Part-time |
 
-| Role                     | Count | Status                     |
-| ------------------------ | ----- | -------------------------- |
-| **Engineering**          | 6     | Core development team      |
-| **Business Development** | 2     | Sales and partnerships     |
-| **Operations**           | 2     | Finance and administration |
-| **Marketing**            | 1     | Brand and communications   |
-| **Legal**                | 1     | Compliance and contracts   |
+### 5.2 Advisors (Not Active Daily)
 
-#### Hiring Plan (Next 12 months)
+| Person | Role | Will engage when |
+|--------|------|-----------------|
+| Martyn Redelinghuys | Business, factory | Funded |
+| Eben Maré | Finance, modeling | Needed for investor discussions |
+| Pieter La Grange | Embedded systems, connections | Advisory as needed |
 
-| Role                   | Count | Priority | Timeline |
-| ---------------------- | ----- | -------- | -------- |
-| **Senior AI Engineer** | 1     | High     | Q1 2026  |
-| **Systems Engineer**   | 1     | High     | Q1 2026  |
-| **Sales Director**     | 1     | High     | Q2 2026  |
-| **Marketing Manager**  | 1     | Medium   | Q2 2026  |
-| **Customer Success**   | 1     | Medium   | Q3 2026  |
+### 5.3 Hiring Plan (Post-Funding)
 
----
-
-## 6. Risk Assessment Metrics
-
-### 6.1 Technical Risks
-
-#### Risk Matrix
-
-| Risk                         | Probability | Impact | Mitigation                                      | Status        |
-| ---------------------------- | ----------- | ------ | ----------------------------------------------- | ------------- |
-| **AI Performance**           | Medium      | High   | NVIDIA Jetson validation                        | 🟡 Monitoring |
-| **Blockchain Scalability**   | Low         | Medium | {BLOCKCHAIN.PRIMARY_CHAIN} {BLOCKCHAIN.TPS} TPS | 🟢 Controlled |
-| **Sensor Integration**       | Medium      | Medium | Modular architecture                            | 🟡 Monitoring |
-| **Security Vulnerabilities** | Low         | High   | Zero-trust architecture                         | 🟢 Controlled |
-
-### 6.2 Business Risks
-
-#### Market Risks
-
-| Risk                   | Probability | Impact | Mitigation           | Status        |
-| ---------------------- | ----------- | ------ | -------------------- | ------------- |
-| **Competition**        | High        | Medium | Superior technology  | 🟡 Monitoring |
-| **Market Adoption**    | Medium      | High   | Pilot programs       | 🟡 Monitoring |
-| **Regulatory Changes** | Low         | High   | Compliance framework | 🟢 Controlled |
-| **Economic Downturn**  | Medium      | Medium | Diversified revenue  | 🟡 Monitoring |
+| Role | Priority |
+|------|----------|
+| AI/ML Engineer (computer vision) | High |
+| Embedded Systems Engineer (flight controller, sensor fusion) | High |
+| Business Development / Defense Sales | Medium |
 
 ---
 
-## 7. Success Metrics Dashboard
+## 6. Risk Assessment
 
-### 7.1 Key Performance Indicators
-
-#### Technology KPIs
-
-- **System Performance**: 96.2% detection accuracy ✅
-- **Response Time**: 195ms (target: &lt;200ms) ✅
-- **System Uptime**: 99.2% (target: >99%) ✅
-- **Development Velocity**: 45 points/sprint 🔄
-
-#### Business KPIs
-
-- **Pipeline Value**: $12.5M 🔄
-- **Customer Acquisition**: 18 qualified leads/month 🔄
-- **Partnership Value**: $50M+ potential 🔄
-- **Revenue Run Rate**: $0 (pre-revenue) 🔄
-
-#### Financial KPIs
-
-- **Burn Rate**: {FUNDING.BURN_RATE} 🔄
-- **Runway**: {FUNDING.RUNWAY} 🔄
-- **Unit Economics**: 40% hardware margin ✅
-- **Customer LTV**: $200K hardware + $300K software ✅
-
-### 7.2 Milestone Tracking
-
-#### Q4 2025 Milestones
-
-- [x] **Technical Validation**: System performance testing complete
-- [x] **Partnership Development**: NVIDIA and Morpheus Network agreements
-- [x] **Market Research**: Customer discovery and validation
-- [ ] **SBIR Applications**: Air Force, Army, Navy submissions
-- [ ] **Pilot Programs**: 3 customer pilot programs
-
-#### Q1 2026 Milestones
-
-- [ ] **SBIR Awards**: $450K in Phase I funding
-- [ ] **Pilot Deployments**: 3 customer pilot programs
-- [ ] **Team Expansion**: 3 new hires
-- [ ] **Partnership Agreements**: 2 strategic partnerships
-- [ ] **Series A Funding**: {FUNDING.SERIES_A_TARGET} funding round
+| Risk | Probability | Impact | Mitigation |
+|------|-------------|--------|------------|
+| Hardware prototype delayed | High | High | Start with detection-only demo (software already works) |
+| Funding not secured | Medium | High | Multiple non-dilutive tracks (TIA, cloud credits, CSIR) |
+| SA market regulatory friction (jamming) | High | Medium | Enter as detection-only platform — unambiguously legal |
+| Competitors outpace us on hardware | High | Low | Software + blockchain differentiation is unique regardless |
+| Team bandwidth (both part-time) | High | Medium | Phase work around full-time commitments |
 
 ---
 
-## 8. Competitive Intelligence
+## 7. Milestones
 
-### 8.1 Competitor Analysis
+### Completed ✅
 
-#### Anduril Industries
+- [x] Rust/Axum API with full evidence management
+- [x] Blockchain anchoring (Solana + EtherLink)
+- [x] YOLOv8 edge AI detector (Jetson + Pi)
+- [x] Leptos/WASM threat simulator + Tauri desktop
+- [x] Full Docusaurus documentation portal
+- [x] Nexamesh rebrand (repo: `Nexamesh/nexamesh-core`)
+- [x] Fundability assessment and honest repositioning
 
-- **Valuation**: {COMPETITORS.ANDURIL_VALUATION}
-- **Strengths**: AI capabilities, government contracts
-- **Weaknesses**: High cost, network dependency
-- **Market Share**: {COMPETITORS.ANDURIL_MARKET_SHARE}
-- **Recent News**: Series G financing in June 2025
+### Q2 2026
 
-#### Fortem Technologies
+- [ ] CSD registration
+- [ ] SA Pty Ltd registration
+- [ ] Charl LinkedIn profile
+- [ ] NVIDIA Inception application
+- [ ] AWS Activate application
+- [ ] MS Founders Hub application (Charl)
+- [ ] Detection demo video (laptop + YOLOv8 + blockchain log)
+- [ ] TIA Seed Fund application
 
-- **Valuation**: {COMPETITORS.FORTEM_VALUATION}
-- **Strengths**: Radar technology, established market
-- **Weaknesses**: Limited autonomy, high cost
-- **Market Share**: {COMPETITORS.FORTEM_MARKET_SHARE}
-- **Recent News**: New radar system launch
+### Q3 2026
 
-#### DroneShield
+- [ ] F405 + GPS hardware prototype assembled
+- [ ] Field detection test (detector identifying toy quad outdoors)
+- [ ] Soonami / Grindstone accelerator application
+- [ ] CSIR DPSS intro meeting
 
-- **Market Cap**: $200M
-- **Strengths**: Portable systems, global presence
-- **Weaknesses**: Basic AI, limited performance
-- **Market Share**: {COMPETITORS.DRONESHIELD_MARKET_SHARE}
-- **Recent News**: New portable system launch
+### Q4 2026 – Q1 2027
 
-### 8.2 Competitive Positioning
-
-#### Phoenix Rooivalk Advantages
-
-- **Response Time**: {PERFORMANCE.VS_COMPETITORS} than competitors
-- **Autonomy Level**: {PERFORMANCE.AUTONOMY_LEVEL} vs. network-dependent
-- **Cost Leadership**: {PRICING.COST_SAVINGS} lower than competitors
-- **Evidence Management**: Blockchain vs. traditional
-- **AI Integration**: Advanced AI vs. basic systems
-
----
-
-## 9. Next Steps and Action Items
-
-### 9.1 Immediate Priorities (Next 30 days)
-
-#### Technical Development
-
-- [ ] Complete sensor fusion system integration
-- [ ] Finalize Morpheus Network integration
-- [ ] Complete blockchain evidence system
-- [ ] Conduct comprehensive system testing
-
-#### Business Development
-
-- [ ] Submit SBIR applications (Air Force, Army, Navy)
-- [ ] Finalize pilot program agreements
-- [ ] Complete partnership negotiations
-- [ ] Prepare Series A funding materials
-
----
-
-## Conclusion
-
-Phoenix Rooivalk is positioned for significant growth with strong technology
-development, market validation, and business development progress. Key metrics
-demonstrate:
-
-- **Technology Leadership**: Superior performance across all metrics
-- **Market Opportunity**: Large and growing market with clear demand
-- **Competitive Advantage**: Significant performance and cost advantages
-- **Business Traction**: Strong pipeline and partnership development
-- **Financial Viability**: Strong unit economics and growth potential
-
-The company is well-positioned to capture significant market share in the
-rapidly growing counter-drone defense market.
-
----
-
-_This traction metrics document provides comprehensive tracking of Phoenix
-Rooivalk's business progress and key performance indicators. Update monthly to
-maintain current status and identify opportunities for improvement._
+- [ ] Working detection node (outdoor, repeatable)
+- [ ] ARMSCOR supplier registration
+- [ ] First external demo to potential customer or funder

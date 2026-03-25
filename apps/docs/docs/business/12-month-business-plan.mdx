@@ -17,33 +17,42 @@ phase: ["seed"]
 
 import { SKYSNARE, AERONET, CAPITAL, MARKET } from "@site/src/data/values";
 
-## Phoenix Rooivalk: Dual-Brand Launch Strategy
+## Nexamesh: 12-Month Plan from Q2 2026
 
-**SkySnare™ & AeroNet™**
+**NexaMesh Kestrel (consumer) & NexaMesh Sentinel (enterprise)**
 
-| Investment                        | Timeline                     |
+| Funding Target                    | Timeline                     |
 | --------------------------------- | ---------------------------- |
-| {CAPITAL.SEED_ROUND} Seed Funding | November 2025 - October 2026 |
+| {CAPITAL.SEED_ROUND} Pre-seed     | Q2 2026 – Q2 2027            |
+
+:::caution Reality Baseline — March 2026
+
+As of March 2026: software platform complete, hardware in R&D, revenue R0.
+The plan below starts from this honest baseline. Prior timelines (Nov 2025 –
+Oct 2026) have been superseded. CPSC certification by March 2026 was not
+achieved — hardware prototype does not yet exist.
+
+:::
 
 ---
 
 ## Executive Summary
 
-Phoenix Rooivalk operates two distinct brands sharing core technology:
-**SkySnare™** for consumer sports training and **AeroNet™** for enterprise
-security. The company is currently in mechanical prototype development,
-targeting a first integrated test in Q1 2026.
+Nexamesh (formerly Phoenix Rooivalk) operates two product lines sharing a core
+AI + blockchain detection platform: **NexaMesh Kestrel** for consumer sports
+training and **NexaMesh Sentinel** for enterprise infrastructure security.
 
-Year 1 focuses on completing prototype development, launching SkySnare™ D2C, and
-preparing AeroNet™ for enterprise pilots.
+The software platform is complete and functional. Hardware is in early R&D —
+toy quadcopter test platform, flight controller on order, salvaged motors being
+assessed. This plan is built from today's real position.
 
-### Year 1 Objectives
+### 12-Month Objectives (Q2 2026 – Q2 2027)
 
-- Complete mechanical prototype development (Phase 1a)
-- Launch SkySnare™ D2C channel (Phase 1b)
-- Achieve {SKYSNARE.YEAR_1_UNITS} consumer sales by Dec 2026
-- Prepare AeroNet™ for pilot deployment (Phase 1c)
-- Generate $2.15M total revenue
+- Secure pre-seed funding (TIA Seed Fund, cloud credits, accelerator)
+- Build basic hardware detection prototype (F405 + GPS + detector on Jetson)
+- Record field detection demo video
+- First external customer conversation (ARMSCOR or CSIR DPSS)
+- SA Pty Ltd incorporation and CSD registration
 
 ---
 
@@ -85,95 +94,99 @@ driven by security and insurance requirements.
 
 ## Product Development Timeline
 
-### Phase 1a: Core Platform – Mechanical Prototype (Nov 2025 → Apr 2026)
+### Phase 1a: Hardware Prototype (Q2 2026 → Q3 2026)
 
-- Mechanical prototype under development
-- Subsystem integration in progress
-- Reliability and endurance testing (Q1 2026)
-- **Target**: Full prototype validation by Apr 2026
+- Assemble F405 + GPS on toy quadcopter frame
+- Get INAV running, basic stable flight
+- Record outdoor detection: detector identifies quad in flight
+- Blockchain evidence log produced from detection event
+- **Target**: Repeatable outdoor detection demo by Q3 2026
 
-### Phase 1b: SkySnare™ Consumer (Mar 2026 → Sep 2026)
+### Phase 1b: NexaMesh Kestrel Consumer (Q4 2026 → Q2 2027)
 
-| Attribute     | Specification                                         |
-| ------------- | ----------------------------------------------------- |
-| Product       | Lightweight pneumatic launcher for sports training    |
-| Certification | CPSC/ASTM/EN-71 by Mar 2026                           |
-| Price         | {SKYSNARE.MSRP} MSRP / {SKYSNARE.COGS} COGS (Batch 2) |
-| Focus         | D2C launch, brand building, influencer engagement     |
+| Attribute     | Specification                                           |
+| ------------- | ------------------------------------------------------- |
+| Product       | Lightweight net-launcher for sports training            |
+| Certification | CPSC/ASTM/EN-71 — target Q2 2027 (post-prototype only) |
+| Price         | {SKYSNARE.MSRP} MSRP target                            |
+| Focus         | Prove concept → certify → D2C launch                   |
 
-### Phase 1c: AeroNet™ Enterprise (Aug 2026 → Apr 2027)
+### Phase 1c: NexaMesh Sentinel Enterprise (Q1 2027 → Q3 2027)
 
-| Attribute   | Specification                                             |
-| ----------- | --------------------------------------------------------- |
-| Product     | Enterprise capture system for authorized security use     |
-| Compliance  | FAA coordination (US) & SORA compliance (EU)              |
-| Preparation | Safety case preparation, insurance partnership validation |
-| Target      | First pilot deployment Q1 2027                            |
+| Attribute   | Specification                                               |
+| ----------- | ----------------------------------------------------------- |
+| Product     | Detection + evidence platform for critical infrastructure   |
+| Compliance  | SA: detection-only (unambiguously legal). EU: SORA review.  |
+| Entry point | Airspace awareness — not "counter-drone weapon"             |
+| Target      | First pilot conversation Q2 2027, deployment Q3 2027        |
 
 ---
 
 ## Quarterly Execution Plan
 
-### Q1 (Nov 2025 – Jan 2026): Foundation
+### Q2 2026 (Apr – Jun 2026): Foundation
 
-| Activity                                  | Status      |
-| ----------------------------------------- | ----------- |
-| Assemble mechanical prototype components  | In progress |
-| Begin subsystem integration & range tests | In progress |
-| Initiate CPSC/ASTM testing                | Planned     |
-| Secure $5M product liability policy       | Planned     |
-| Launch D2C website preorders              | Planned     |
+| Activity | Status |
+| -------- | ------ |
+| CSD registration (csd.gov.za) | 🔴 Not started — do first |
+| SA Pty Ltd registration | 🔴 Not started |
+| Charl LinkedIn profile | 🔴 Not started — gates MS Founders Hub |
+| NVIDIA Inception application | 🟡 Ready |
+| AWS Activate Founders application | 🟡 Ready |
+| MS Founders Hub application (Charl) | 🔴 Needs LinkedIn first |
+| F405 + GPS assembled and flying on toy quad | 🟡 Parts ordered |
+| Detection demo: laptop + YOLOv8 + blockchain log | 🟡 Software ready |
 
-| Metric    | Target |
-| --------- | ------ |
-| Burn      | $375K  |
-| Revenue   | $175K  |
-| Headcount | 6      |
+| Metric | Target |
+| ------ | ------ |
+| Funding received | Cloud credits ($50K–$150K target) |
+| Revenue | R0 |
+| Active team | 2 founders |
 
-### Q2 (Feb – Apr 2026): Prototype Validation & Certification
+### Q3 2026 (Jul – Sep 2026): Hardware Proof
 
-| Activity                                                  | Status   |
-| --------------------------------------------------------- | -------- |
-| Complete full mechanical prototype validation (50m)       | Planned  |
-| CPSC/ASTM/EN-71 certifications completed                  | Mar 2026 |
-| Begin Kickstarter fulfillment and first small batch sales | Planned  |
-| Establish influencer partnerships (5 major, 20 micro)     | Planned  |
+| Activity | Status |
+| -------- | ------ |
+| Field detection test (toy quad outdoors, detector identifies it) | Planned |
+| TIA Seed Fund application | Planned (needs CSD + Pty Ltd) |
+| Soonami / Grindstone accelerator application | Planned |
+| CSIR DPSS intro meeting | Planned |
+| Demo video recorded and distributable | Planned |
 
-| Metric    | Target |
-| --------- | ------ |
-| Burn      | $400K  |
-| Revenue   | $525K  |
-| Headcount | 9      |
+| Metric | Target |
+| ------ | ------ |
+| Funding applied for | TIA Seed Fund (R500K–R2M) |
+| Hardware milestone | Detection working outdoors |
+| Revenue | R0 |
 
-### Q3 (May – Jul 2026): Scale & Enterprise Prep
+### Q4 2026 (Oct – Dec 2026): First External Conversations
 
-| Activity                                                   | Status  |
-| ---------------------------------------------------------- | ------- |
-| 3,500 cumulative SkySnare™ units shipped                   | Target  |
-| Return rate {SKYSNARE.RETURN_RATE}, warranty claims &lt;1% | Target  |
-| Submit enterprise safety case and insurance model          | Planned |
-| FAA meetings and SORA documentation                        | Planned |
+| Activity | Status |
+| -------- | ------ |
+| ARMSCOR supplier registration started | Planned |
+| First investor or funder meeting | Planned |
+| Accelerator intake (Grindstone Q1 2027 prep) | Planned |
+| Detector node v0.1 — camera + compute + alert | Planned |
 
-| Metric    | Target |
-| --------- | ------ |
-| Burn      | $425K  |
-| Revenue   | $875K  |
-| Headcount | 11     |
+| Metric | Target |
+| ------ | ------ |
+| Funding | TIA decision expected |
+| External conversations | 1–3 qualified meetings |
+| Hardware | Repeatable outdoor detection |
 
-### Q4 (Aug – Oct 2026): Dual Progress
+### Q1 2027 (Jan – Mar 2027): Scale Up
 
-| Activity                                                              | Status   |
-| --------------------------------------------------------------------- | -------- |
-| Integrated prototype tested in field conditions                       | Target   |
-| 4,500 total consumer units sold ({SKYSNARE.YEAR_1_UNITS} by Dec 2026) | Target   |
-| Enterprise pilot MOU signed                                           | Sep 2026 |
-| Series A preparation                                                  | Ongoing  |
+| Activity | Status |
+| -------- | ------ |
+| Grindstone (Knife Capital) application | Planned |
+| IDC application (if prototype ready) | Planned |
+| First letter of intent or pilot agreement | Target |
+| NexaMesh Kestrel v1.0 spec locked | Planned |
 
-| Metric    | Target |
-| --------- | ------ |
-| Burn      | $300K  |
-| Revenue   | $575K  |
-| Headcount | 13     |
+| Metric | Target |
+| ------ | ------ |
+| Funding | R2M+ (TIA + accelerator target) |
+| First LOI or pilot | Target |
 
 ---
 
