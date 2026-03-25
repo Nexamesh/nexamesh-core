@@ -41,7 +41,7 @@ jobs:
           echo "Version: $VERSION, Tag: $TAG_NAME"
 
       - name: Create draft release
-        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
         with:
           tag_name: ${{ steps.extract_version.outputs.tag_name }}
           name: Desktop App v${{ steps.extract_version.outputs.version }}
@@ -83,7 +83,7 @@ jobs:
         run: cargo tauri build
 
       - name: Upload Windows assets to release
-        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
         with:
           tag_name: ${{ needs.prepare.outputs.tag_name }}
           files: |
@@ -125,7 +125,7 @@ jobs:
         run: cargo tauri build --target x86_64-apple-darwin
 
       - name: Upload macOS Intel assets to release
-        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
         with:
           tag_name: ${{ needs.prepare.outputs.tag_name }}
           files: |
@@ -167,7 +167,7 @@ jobs:
         run: cargo tauri build --target aarch64-apple-darwin
 
       - name: Upload macOS ARM assets to release
-        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
         with:
           tag_name: ${{ needs.prepare.outputs.tag_name }}
           files: |
@@ -225,7 +225,7 @@ jobs:
         run: cargo tauri build
 
       - name: Upload Linux assets to release
-        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
         with:
           tag_name: ${{ needs.prepare.outputs.tag_name }}
           files: |
@@ -265,7 +265,7 @@ jobs:
           exit 1
 
       - name: Finalize release
-        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
         with:
           tag_name: ${{ needs.prepare.outputs.tag_name }}
           name: Desktop App v${{ needs.prepare.outputs.version }}
