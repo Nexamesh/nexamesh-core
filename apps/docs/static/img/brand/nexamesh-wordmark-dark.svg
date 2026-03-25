@@ -1,0 +1,35 @@
+<svg viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexaMesh">
+  <!-- NexaMesh Wordmark — dark variant -->
+  <!-- Typography: Manrope SemiBold (substitute Inter SemiBold until Manrope embedded) -->
+  <!-- Note for designer: replace text with outlined paths using Manrope SemiBold -->
+
+  <rect width="320" height="100" fill="#182231" rx="10"/>
+
+  <!-- N Monogram (scaled to 64×64, positioned at 18,18) -->
+  <g transform="translate(18,18) scale(0.64)">
+    <g stroke="#F1F0EA" stroke-width="9.5" stroke-linecap="round" fill="none">
+      <line x1="22" y1="17" x2="22" y2="83"/>
+      <line x1="22" y1="17" x2="78" y2="83"/>
+      <line x1="78" y1="17" x2="78" y2="83"/>
+    </g>
+    <circle cx="22" cy="83" r="5" fill="#F1F0EA"/>
+    <circle cx="78" cy="17" r="5" fill="#F1F0EA"/>
+    <circle cx="22" cy="17" r="6.5" fill="#C77A1B"/>
+    <circle cx="78" cy="83" r="6.5" fill="#C77A1B"/>
+  </g>
+
+  <!-- Divider — subtle vertical rule -->
+  <line x1="96" y1="28" x2="96" y2="72" stroke="#2B3440" stroke-width="1.5"/>
+
+  <!-- "NexaMesh" wordmark -->
+  <!-- Mixed case: capital N and M as structural anchors, remaining lowercase -->
+  <text
+    x="112"
+    y="62"
+    font-family="Manrope, Inter, system-ui, sans-serif"
+    font-weight="600"
+    font-size="32"
+    letter-spacing="-0.5"
+    fill="#F1F0EA"
+  >NexaMesh</text>
+</svg>

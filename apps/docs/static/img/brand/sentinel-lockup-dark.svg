@@ -1,0 +1,35 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sentinel Ring">
+  <!-- Sentinel Ring — product lockup, dark variant -->
+
+  <rect width="300" height="100" fill="#182231" rx="10"/>
+
+  <!-- Sentinel symbol (scaled 64×64) -->
+  <g transform="translate(18,18) scale(0.64)">
+    <path d="M 82.8 27.1 A 40 40 0 1 1 50 10" stroke="#F1F0EA" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 72.5 63 A 26 26 0 1 1 33.3 30.1" stroke="#6B7480" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="82.8" cy="27.1" r="5.5" fill="#A95F1D"/>
+    <circle cx="53.5" cy="89.9" r="5.5" fill="#A95F1D"/>
+    <circle cx="13.8" cy="33.1" r="5.5" fill="#A95F1D"/>
+  </g>
+
+  <line x1="92" y1="28" x2="92" y2="72" stroke="#2B3440" stroke-width="1.5"/>
+
+  <text
+    x="108"
+    y="55"
+    font-family="Manrope, Inter, system-ui, sans-serif"
+    font-weight="500"
+    font-size="24"
+    letter-spacing="-0.3"
+    fill="#F1F0EA"
+  >Sentinel</text>
+  <text
+    x="108"
+    y="76"
+    font-family="Manrope, Inter, system-ui, sans-serif"
+    font-weight="400"
+    font-size="14"
+    letter-spacing="2.5"
+    fill="#A95F1D"
+  >RING</text>
+</svg>

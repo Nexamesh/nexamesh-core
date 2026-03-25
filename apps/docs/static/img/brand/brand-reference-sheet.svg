@@ -1,0 +1,134 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexaMesh brand reference sheet">
+  <!--
+    NexaMesh Brand Reference Sheet
+    ================================
+    Master brand + dual product symbols
+    Palette, typography, lockup system
+    Version 1.0 — March 2026
+  -->
+
+  <!-- Background -->
+  <rect width="760" height="520" fill="#101720"/>
+
+  <!-- Section dividers -->
+  <line x1="40" y1="200" x2="720" y2="200" stroke="#2B3440" stroke-width="1"/>
+  <line x1="40" y1="360" x2="720" y2="360" stroke="#2B3440" stroke-width="1"/>
+  <line x1="260" y1="220" x2="260" y2="340" stroke="#2B3440" stroke-width="1"/>
+  <line x1="500" y1="220" x2="500" y2="340" stroke="#2B3440" stroke-width="1"/>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: MASTER BRAND                     -->
+  <!-- ============================================ -->
+
+  <!-- Section label -->
+  <text x="40" y="30" font-family="Inter, system-ui, sans-serif" font-size="9" letter-spacing="2.5" fill="#6B7480" font-weight="500">MASTER BRAND</text>
+
+  <!-- NexaMesh monogram (large) -->
+  <g transform="translate(40, 45) scale(1.1)">
+    <g stroke="#F1F0EA" stroke-width="9.5" stroke-linecap="round" fill="none">
+      <line x1="22" y1="17" x2="22" y2="83"/>
+      <line x1="22" y1="17" x2="78" y2="83"/>
+      <line x1="78" y1="17" x2="78" y2="83"/>
+    </g>
+    <circle cx="22" cy="83" r="5" fill="#F1F0EA"/>
+    <circle cx="78" cy="17" r="5" fill="#F1F0EA"/>
+    <circle cx="22" cy="17" r="6.5" fill="#C77A1B"/>
+    <circle cx="78" cy="83" r="6.5" fill="#C77A1B"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="160" y="106" font-family="Manrope, Inter, system-ui, sans-serif" font-weight="600" font-size="42" letter-spacing="-1" fill="#F1F0EA">NexaMesh</text>
+
+  <!-- Tagline -->
+  <text x="160" y="128" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" letter-spacing="1.8" fill="#6B7480">CONNECTED INTELLIGENCE INFRASTRUCTURE</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: PRODUCT SYMBOLS (middle row)     -->
+  <!-- ============================================ -->
+
+  <!-- Kestrel label -->
+  <text x="40" y="218" font-family="Inter, system-ui, sans-serif" font-size="9" letter-spacing="2.5" fill="#C77A1B" font-weight="500">KESTREL MESH</text>
+
+  <!-- Kestrel symbol -->
+  <g transform="translate(40, 228)">
+    <g stroke="#F1F0EA" stroke-width="8" stroke-linecap="round" fill="none">
+      <line x1="16" y1="22" x2="84" y2="44"/>
+      <line x1="22" y1="76" x2="84" y2="44"/>
+      <line x1="16" y1="22" x2="22" y2="76"/>
+    </g>
+    <circle cx="16" cy="22" r="6" fill="#C77A1B"/>
+    <circle cx="22" cy="76" r="6" fill="#C77A1B"/>
+    <circle cx="84" cy="44" r="7" fill="#C77A1B"/>
+  </g>
+
+  <!-- Kestrel description -->
+  <text x="148" y="252" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="18" letter-spacing="-0.3" fill="#F1F0EA">Kestrel</text>
+  <text x="148" y="270" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" letter-spacing="2" fill="#C77A1B">MESH</text>
+  <text x="148" y="296" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="10" fill="#6B7480">Fast · directional · deployable</text>
+  <text x="148" y="312" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="10" fill="#6B7480">Edge detection · intercept geometry</text>
+
+  <!-- Sentinel label -->
+  <text x="280" y="218" font-family="Inter, system-ui, sans-serif" font-size="9" letter-spacing="2.5" fill="#A95F1D" font-weight="500">SENTINEL RING</text>
+
+  <!-- Sentinel symbol -->
+  <g transform="translate(280, 228)">
+    <path d="M 82.8 27.1 A 40 40 0 1 1 50 10" stroke="#F1F0EA" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 72.5 63 A 26 26 0 1 1 33.3 30.1" stroke="#6B7480" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="82.8" cy="27.1" r="5.5" fill="#A95F1D"/>
+    <circle cx="53.5" cy="89.9" r="5.5" fill="#A95F1D"/>
+    <circle cx="13.8" cy="33.1" r="5.5" fill="#A95F1D"/>
+  </g>
+
+  <!-- Sentinel description -->
+  <text x="388" y="252" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="18" letter-spacing="-0.3" fill="#F1F0EA">Sentinel</text>
+  <text x="388" y="270" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" letter-spacing="2" fill="#A95F1D">RING</text>
+  <text x="388" y="296" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="10" fill="#6B7480">Persistent · perimeter · coverage</text>
+  <text x="388" y="312" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="10" fill="#6B7480">360° surveillance · area awareness</text>
+
+  <!-- Shared DNA note -->
+  <text x="530" y="218" font-family="Inter, system-ui, sans-serif" font-size="9" letter-spacing="2.5" fill="#6B7480" font-weight="500">SHARED DNA</text>
+  <text x="530" y="240" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6B7480">— Identical stroke weight</text>
+  <text x="530" y="258" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6B7480">— Same corner treatment</text>
+  <text x="530" y="276" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6B7480">— Consistent node logic</text>
+  <text x="530" y="294" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6B7480">— Manrope + Inter system</text>
+  <text x="530" y="312" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6B7480">— 24px icon grid · 1.75px stroke</text>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COLOUR PALETTE                   -->
+  <!-- ============================================ -->
+
+  <text x="40" y="378" font-family="Inter, system-ui, sans-serif" font-size="9" letter-spacing="2.5" fill="#6B7480" font-weight="500">COLOUR PALETTE</text>
+
+  <!-- Swatches row 1: core colours -->
+  <rect x="40"  y="390" width="64" height="64" rx="6" fill="#101720"/>
+  <rect x="116" y="390" width="64" height="64" rx="6" fill="#182231"/>
+  <rect x="192" y="390" width="64" height="64" rx="6" fill="#F1F0EA"/>
+  <rect x="268" y="390" width="64" height="64" rx="6" fill="#6B7480"/>
+  <rect x="344" y="390" width="64" height="64" rx="6" fill="#2B3440"/>
+  <rect x="420" y="390" width="64" height="64" rx="6" fill="#D9D7CF"/>
+  <!-- Accent swatches -->
+  <rect x="530" y="390" width="64" height="64" rx="6" fill="#C77A1B"/>
+  <rect x="606" y="390" width="64" height="64" rx="6" fill="#A95F1D"/>
+
+  <!-- Swatch labels -->
+  <text x="40"  y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">Midnight Slate</text>
+  <text x="40"  y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#101720</text>
+  <text x="116" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">Deep Navy</text>
+  <text x="116" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#182231</text>
+  <text x="192" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">Warm Sand</text>
+  <text x="192" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#F1F0EA</text>
+  <text x="268" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">Steel Grey</text>
+  <text x="268" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#6B7480</text>
+  <text x="344" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">Graphite Line</text>
+  <text x="344" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#2B3440</text>
+  <text x="420" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">Soft Fog</text>
+  <text x="420" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#D9D7CF</text>
+  <text x="530" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#C77A1B">Signal Amber</text>
+  <text x="530" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#C77A1B · Kestrel</text>
+  <text x="606" y="466" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#A95F1D">Burnt Copper</text>
+  <text x="606" y="477" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6B7480">#A95F1D · Sentinel</text>
+
+  <!-- Footer -->
+  <text x="40" y="510" font-family="Inter, system-ui, sans-serif" font-size="9" letter-spacing="1" fill="#2B3440">NEXAMESH · nexamesh.ai · Brand Identity v1.0 · March 2026</text>
+  <text x="680" y="510" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#2B3440" text-anchor="end">CONFIDENTIAL</text>
+</svg>
