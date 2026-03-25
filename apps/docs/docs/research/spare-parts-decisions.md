@@ -14,7 +14,14 @@ Each entry follows this structure:
 - **Use for:** Primary intended use case(s)
 - **Scrap for:** Components worth harvesting if the unit itself isn't kept whole
 - **Toss?:** Yes/no and why
+- **Learning value:** What can be learned from stripping/studying this item
 - **Decision:** Final verdict with reasoning
+
+> **Philosophy:** A dedicated person handles all disassembly — labour is free.
+> Nothing is "not worth the effort." If a component is useful once removed,
+> strip it. If the board teaches something about electronics, strip it for
+> learning. Only truly empty items (unmarked, too small, nothing to learn) get
+> tossed outright.
 
 ---
 
@@ -227,19 +234,25 @@ use case. Most likely deployment: smart home sensor or telemetry bridge.
 
 ## SPD-08: Laptop 56K Modem Card
 
-**Status:** Toss
+**Status:** Strip (learning) — low priority
 
 **Use for:**
-- Nothing. Dial-up is extinct. No PSTN line to connect to. No software supports
-  it. Cannot be repurposed as a different interface.
+- Nothing functional. Dial-up is extinct.
 
 **Scrap for:**
-- Nothing worth the effort. The RJ-11 jack is obsolete. The DAA (data access
-  arrangement) IC is application-specific. No useful passives.
+- RJ-11 jack — niche but free
+- Mini-PCIe connector — reference for form factor
+- SMD passives — practice material
 
-**Toss?** **Yes.** Zero use cases across any project category.
+**Learning value:** Mini-PCIe card teardown. Good intro to identifying DAA
+(data access arrangement) circuits, line coupling transformers, and mixed-signal
+PCB layout. Teaches the difference between digital and analog sections on a
+single board.
 
-**Decision:** E-waste recycling bin.
+**Toss?** No — strip for learning practice, then toss the bare board.
+
+**Decision:** Low-priority strip job. Study the PCB layout, practice SMD
+identification, then recycle.
 
 ---
 
@@ -389,31 +402,28 @@ removing its buzzer since it may be damaged.
 
 ## SPD-15: Panasonic Washing Machine Button Panel PCB
 
-**Status:** Toss
+**Status:** Strip (learning) — low priority
 
 > Part number A4274008084. Brown phenolic PCB with three rocker/push switches,
 > ribbon cable, R13x resistors, CN connectors. From a Panasonic washing machine
 > control panel.
 
 **Use for:**
-- Nothing practical. The switches are a proprietary form factor moulded to fit
-  a specific washing machine fascia. They won't mount in any standard enclosure
-  or breadboard setup.
+- Nothing practical. The switches are proprietary form factor.
 
 **Scrap for:**
-- The rocker switches — but they're non-standard shape/mounting, designed for a
-  specific plastic housing that you don't have. Standard panel-mount rockers are
-  R5 each.
-- SMD resistors (R13x series) — generic, not worth desoldering from phenolic
-  board.
-- Ribbon cable — proprietary pitch and length. Useless without the matching
-  connector on the main washer board.
+- Rocker switches — non-standard mounting but could work in a custom 3D-printed
+  panel if someone designs around them
+- SMD resistors (R13x series) — generic, good desoldering practice targets
 
-**Toss?** **Yes.** Proprietary form factor throughout. Even the switches can't
-be reused without their matching housing. No components worth the desoldering
-effort.
+**Learning value:** Basic through-hole and SMD desoldering practice on a simple,
+low-density phenolic board. Good starter board — no fine-pitch ICs, no danger.
+Teaches connector identification and ribbon cable pin-counting.
 
-**Decision:** E-waste recycling bin. Don't strip anything.
+**Toss?** No — use as a beginner desoldering practice board, then toss.
+
+**Decision:** Low-priority learning strip. Good first board for someone
+learning to desolder.
 
 ---
 
@@ -446,11 +456,16 @@ effort.
 - **SMD passives** — dozens of tiny resistors and caps, all generic and not
   worth harvesting.
 
-**Toss?** **Yes.** Every component on this board is either proprietary
-(the ICs, connectors) or too cheap to justify desoldering (passives, caps).
-The board itself is lead-free and RoHS — safe for e-waste recycling.
+**Learning value:** High. Hot-air QFP desoldering practice on real production
+hardware. Teaches LVDS signal routing, FPC connector handling, and how display
+timing controllers work. The serial data/clock (SDAT/SCLK) lines are a good
+example of high-speed digital PCB layout.
 
-**Decision:** E-waste recycling bin. Zero salvage value.
+**Toss?** No — use as an intermediate SMD rework practice board, then toss.
+
+**Decision:** Strip for QFP hot-air desoldering practice. The ICs themselves are
+useless, but the skill of cleanly removing a 128+ pin QFP package is valuable.
+Also good practice for FPC connector removal.
 
 ---
 
@@ -481,24 +496,31 @@ backup AP at the workbench. Not critical, but free and useful.
 
 ## SPD-18: D-Link DSL-2640U
 
-**Status:** Toss
+**Status:** Strip (learning) — low priority
 
 > D-Link ADSL2+ modem/router, model DSL-2640U (RSL2640UEBRU.C2E), FW v2.01,
 > 802.11n only. Black plastic enclosure.
 
 **Use for:**
-- Nothing. ADSL requires a phone line (PSTN/DSL) which you almost certainly
-  don't have. The WiFi is 2.4GHz 802.11n only (slow). Even as an OpenWrt
-  device, the AR7-based chipset has very limited RAM and no meaningful
-  community support.
+- Nothing functional. ADSL-only, ancient hardware.
 
 **Scrap for:**
-- Nothing worth the effort. Internal PCB has a low-end Memory-limited SoC,
-  small RAM, and no reusable components.
+- RJ-45 Ethernet jacks (with built-in magnetics) — reusable in custom
+  Ethernet projects
+- LEDs (front panel indicators) — standard 3mm through-hole
+- PCB antenna (if present) — 2.4GHz antenna trace reference
+- Small heatsink (if present)
 
-**Toss?** **Yes.** Obsolete access technology, weak hardware, no reuse path.
+**Learning value:** Complete router teardown. Learn to identify: SoC, RAM, flash
+storage, Ethernet PHY, ADSL line driver, RF section, voltage regulators. Good
+practice for tracing power rails and signal paths. Could attempt UART serial
+console access (most D-Link routers have UART test points) as a learning
+exercise.
 
-**Decision:** E-waste recycling bin.
+**Toss?** No — strip for learning, recover RJ-45 jacks, then toss board.
+
+**Decision:** Low-priority strip. UART console hunting is a good embedded
+systems learning exercise. Keep the RJ-45 jacks.
 
 ---
 
@@ -559,17 +581,27 @@ but costs nothing to store.
 
 ## SPD-20b: Vodafone H 500-s (Duplicate)
 
-**Status:** Toss
+**Status:** Strip (learning)
 
-**Use for:** Nothing — redundant duplicate of 20a.
+**Use for:** Nothing functional — redundant duplicate of 20a.
 
-**Scrap for:** Nothing worth the effort. ISP router internals are application-
-specific SoCs with no reuse path.
+**Scrap for:**
+- WiFi antennas (internal PCB or wire antennas, 2.4GHz + 5GHz) — reusable
+- Heatsinks (SoC/WiFi chip heatsinks) — always useful
+- RJ-45 jacks (with magnetics) — reusable
+- Flash chip — if SPI NOR, could be interesting to dump/read
+- Shielding cans — useful for RF projects
 
-**Toss?** **Yes.** You don't need two identical ISP routers. One backup is
-enough.
+**Learning value:** High. Full ISP router teardown with a known-good reference
+unit (20a) to compare against. Learn to identify: WiFi chipset, RAM (DDR),
+SPI flash, power management ICs, antenna design (PCB trace vs wire). Try
+reading the SPI flash contents as a data forensics exercise. Compare PCB
+layout to the D-Link (#18) to understand different router architectures.
 
-**Decision:** E-waste recycling bin.
+**Toss?** No — strip for antennas, heatsinks, jacks, and learning.
+
+**Decision:** Strip. More advanced teardown than the D-Link — dual-band WiFi,
+better components. Keep antennas and heatsinks. Good learning exercise.
 
 ---
 
@@ -634,32 +666,242 @@ with known voltages.
 > - FPC ribbon cables
 
 **Use for:**
-- Nothing. VGA and DVI are dead standards — no modern device outputs DVI, and
-  VGA adapters are clunky. CCFL backlights are obsolete (replaced by LED).
-  The resolution and response time will be poor by any modern standard. Not
-  suitable as a ground station display (no HDMI/DP).
+- Nothing as a complete monitor. VGA/DVI are dead, CCFL is obsolete, no HDMI.
 
 **Scrap for:**
-- **LCD panel** — could theoretically be driven with a universal LVDS controller
-  board (R100-150 on AliExpress), but you'd be spending money to create a
-  mediocre display with no backlight. Not worth it.
-- **Scaler board** — proprietary BenQ IC, no reuse.
-- **PSU/inverter board** — CCFL-specific transformers and topology. The large
-  electrolytic caps (100uF/450V, 160uF/450V) are the only "valuable" parts,
-  but they're dangerous and of marginal use.
-- **FPC ribbons** — panel-specific, no reuse.
+- **100uF/450V and 160uF/450V electrolytic caps** — high-voltage caps useful
+  for power supply projects, Tesla coil experiments, or spares for other
+  monitor/PSU repairs
+- **CCFL inverter transformers (T801, T802)** — high-voltage transformers, good
+  for learning about flyback topology and HV generation
+- **Common-mode choke** — mains filter component, reusable in any PSU project
+- **Bridge rectifier** — standard, reusable
+- **Mains fuse holder + fuse** — always useful
+- **VGA/DVI connectors** — can be desoldered for custom cable or breakout
+  projects
+- **FPC ribbons** — panel-specific, no reuse
+- **LCD panel** — could be driven with universal LVDS board (R100-150) but not
+  worth spending money on
 
-**Toss?** **Yes.** But **safely:**
+**Learning value:** Very high. The PSU/inverter board teaches SMPS (switched-mode
+power supply) topology, mains safety, CCFL inverter operation, and high-voltage
+handling. The scaler board teaches display signal processing. This is one of the
+best learning teardowns in the bin — covers mains power, HV, analog video, and
+digital control on a few boards.
 
 > **WARNING:** The PSU board contains 100uF/450V and 160uF/450V capacitors that
-> can hold lethal charge even when unplugged. Before handling or recycling:
+> can hold lethal charge even when unplugged. Before handling:
 > 1. Verify no charge with a multimeter across cap terminals (should read <1V)
 > 2. If any voltage: discharge through a 10kΩ resistor (not a screwdriver — that
 >    can damage the cap and spark)
-> 3. Once confirmed discharged, safe to handle and recycle
+> 3. Once confirmed discharged, safe to handle and strip
 
-**Decision:** Discharge caps, then e-waste recycling bin. All boards and panel.
-Nothing salvageable.
+**Toss?** No — strip for HV caps, transformers, choke, fuse holder, and
+connectors. Excellent learning platform.
+
+**Decision:** **Discharge 450V caps first.** Then strip PSU board for components.
+Study scaler board for learning. Toss LCD panel and FPC ribbons.
+
+---
+
+## SPD-24: DStv Remote Control
+
+**Status:** Keep
+
+**Use for:**
+- IR protocol testing — pair with an IR receiver module on Arduino/ESP32 to
+  decode NEC/RC5 protocols
+- Spare remote if you still have a DStv sub
+- IR learning projects — clone codes to a universal remote or ESP32 IR blaster
+
+**Scrap for:**
+- N/A — more useful intact. IR LEDs and rubber keypad inside but not worth
+  stripping a working remote.
+
+**Learning value:** Moderate. Good intro to IR communication protocols. Point
+at an IR receiver, decode the signals, learn NEC encoding.
+
+**Decision:** Keep. Useful for IR protocol experiments and as a spare.
+
+---
+
+## SPD-25: HDMI Cable
+
+**Status:** Keep
+
+**Use for:**
+- Display connectivity for RPi, dev boards, decoders, any HDMI device
+- Ground station display connection
+- Always need at least one spare
+
+**Scrap for:** N/A — it's a cable. Use it.
+
+**Learning value:** None — it's a cable.
+
+**Decision:** Keep. Label length. Always useful.
+
+---
+
+## SPD-26: ARRIS DStv Decoder (F55525MC)
+
+**Status:** Strip — check for HDD first
+
+> ARRIS F55525MC, DStv Explora decoder, 12V/2.5A, HDMI, made in SA 2020.
+> Locked to MultiChoice — cannot be repurposed as a media player.
+
+**Use for:**
+- Nothing functional without a DStv subscription. Firmware is locked.
+
+**Scrap for:**
+- **2.5" SATA HDD (if present)** — Explora decoders typically have a 500GB-1TB
+  drive for PVR recording. This is the main prize — usable as external storage,
+  in a NAS, or as a Raspberry Pi data drive. Check first!
+- **Heatsinks** — SoC heatsinks, reusable
+- **HDMI connector** — can be desoldered for custom projects
+- **12V power jack** — standard barrel connector
+- **IR receiver module** — reusable for any IR remote project
+- **WiFi module (if present)** — some Exploras have WiFi
+
+**Learning value:** High. Modern ARM-based set-top box teardown. Learn to
+identify: ARM SoC, DDR memory, NAND/eMMC flash, HDMI transmitter IC, IR
+receiver circuit, tuner module, HDD interface. Good embedded Linux device
+to study.
+
+**Decision:** Open first — check for HDD (highest priority salvage). Then full
+teardown for learning. Keep HDD, heatsinks, IR receiver. Toss the locked
+main board after studying.
+
+---
+
+## SPD-27a: Fridge Compressor
+
+**Status:** Strip (low priority) — last in queue
+
+> QD brand sealed refrigeration compressor with Changlong/Seling start relay,
+> copper tubing. From a small fridge/bar fridge.
+
+**Use for:**
+- Scrap copper from the tubing (decent amount of clean copper)
+- Compressor motor could theoretically run as a vacuum pump or air compressor
+  (without refrigerant), but this is a niche project
+- Start relay — standard refrigeration part, reusable if you ever fix a fridge
+
+**Scrap for:**
+- **Copper tubing** — clean copper, reasonable scrap value in bulk
+- **Start relay (PTC/current type)** — reusable fridge repair part
+- **Motor windings** — scrap copper only if motor is cut open
+
+**Learning value:** Moderate. Learn how a hermetic compressor works (motor +
+compressor in sealed housing), refrigerant circuit basics (suction/discharge/
+process tubes), and PTC start relay operation. Good mechanical/thermal
+systems learning.
+
+**Decision:** Last in the strip queue — heavy and messy. Salvage the copper
+tubing and start relay. Leave the sealed compressor intact unless someone wants
+to cut it open for learning (the motor inside is interesting but not reusable).
+
+---
+
+## SPD-27b: Fridge Control Board
+
+**Status:** Strip — useful parts
+
+> PCB with DIP controller IC (LCD(005C)), 3x mains-rated relays, X2 safety
+> capacitor, piezo buzzer, ribbon cable to LCD display, electrolytic caps,
+> small transformer.
+
+**Use for:**
+- Nothing functional as a fridge controller. The DIP IC is application-specific.
+
+**Scrap for:**
+- **3x mains relays** — 240V rated, directly reusable for home automation,
+  irrigation, lighting control. Same function as the Fanhar relay (#9) but
+  you get three more. These are the priority salvage.
+- **Piezo buzzer** — second buzzer for the bin (matches #14)
+- **X2 safety capacitor** — mains-rated interference suppression cap, useful
+  for any mains PSU project
+- **Electrolytic caps** — standard values, spares
+- **Small transformer** — low-voltage step-down, could power small projects
+- **DIP IC socket** (if socketed) — reusable
+
+**Learning value:** Good. Learn relay coil/contact identification, mains safety
+capacitor types (X2 vs Y), and how a fridge control loop works (temperature
+sensor → IC → relay switching compressor/fan/defrost heater). The ribbon cable
+to LCD teaches flat-flex interfacing.
+
+**Decision:** Priority strip. Recover the three relays first (most useful),
+then buzzer, X2 cap, and transformer. The relays alone make this a valuable
+teardown — three free mains-rated relays.
+
+---
+
+## SPD-28: Orion 320 Landline Telephone
+
+**Status:** Strip (learning)
+
+> PSTN desktop telephone with speakerphone, speed-dial buttons, LCD display
+> area, DTMF keypad. Completely obsolete without a landline.
+
+**Use for:**
+- Nothing functional without PSTN service.
+
+**Scrap for:**
+- **Keypad matrix** — 4x3 or 4x4 matrix, can be wired to any microcontroller
+  for input. Interesting DIY input device.
+- **Speaker** — small speaker from handset/speakerphone, 8Ω, usable for audio
+  projects
+- **Electret microphone** — from handset, usable for audio sensing
+- **Handset curly cord (RJ-9)** — 4-conductor cable, reusable
+- **Hookswitch** — mechanical switch, reusable as a limit switch or contact
+- **Ringer/buzzer** — if present, another audio transducer
+
+**Learning value:** High for beginners. Teaches: keypad matrix scanning, DTMF
+tone generation, basic analog audio circuits (hybrid transformer, sidetone),
+and how a telephone line interface works. The keypad matrix is a classic
+microcontroller input exercise — connect rows and columns to GPIO, scan for
+button presses.
+
+**Decision:** Strip. The keypad matrix and microphone are the best parts. Good
+beginner electronics project to connect the keypad to an Arduino and read
+button presses. Keep the speaker for audio projects.
+
+---
+
+## SPD-29: SPI ATX-250GT Power Supply (250W)
+
+**Status:** Keep — high value bench tool
+
+> Sparkle Power International ATX-250GT, 250W ATX switching power supply.
+> AC input 115/230V. DC outputs: +3.3V/14A, +5V/25A, +12V (likely 15A+),
+> -12V/0.5A, +5Vsb/2A.
+
+**Use for:**
+- **Multi-voltage bench power supply** — provides 3.3V, 5V, 12V, and -12V
+  simultaneously from a single unit. High current capability. Just bridge
+  PS_ON (green wire) to ground to turn on without a motherboard.
+- Power supply for all routers (#17, #19, #20a need 12V)
+- High-current 5V source for RPi, ESP32, LED strips, servos
+- 12V source for motors, solenoids, relays, car accessories
+- 3.3V source for direct logic-level work without regulators
+- Combine +12V and -12V for ±12V analog circuits (op-amps)
+
+**Scrap for:**
+- N/A — far more valuable as a working PSU. Replacement cost R300-500.
+
+**Learning value:** If studied (don't strip): teaches complete ATX PSU design —
+PFC stage, main switching topology, multiple output regulation, standby supply,
+protection circuits (OVP, OCP, SCP), and power sequencing.
+
+**Rooivalk relevance:** Direct. This becomes the primary bench supply for
+testing all electronics: flight controllers, ESCs, GPS modules, FPV cameras,
+companion computers. The multi-voltage output eliminates the need for separate
+5V, 12V, and 3.3V supplies.
+
+**Decision:** **Keep intact — test first.** Bridge green wire (PS_ON) to any
+black wire (ground) with a paperclip or switch. If the fan spins and voltages
+are correct on the ATX connector, it's good. Consider building a breakout
+board with binding posts for easy bench access to each voltage rail. This is
+the second most valuable item in the bin after the hoverboard motors.
 
 ---
 
@@ -667,29 +909,36 @@ Nothing salvageable.
 
 | # | Component | Decision | Action Required |
 |---|-----------|----------|-----------------|
-| 01 | Cudy WR3000 | Keep intact | Flash OpenWrt when ready |
-| 02 | MT7615DN Router | Keep (low priority) | Salvage antenna if space needed |
-| 03 | PS4 DualShock 4 | Keep intact | None — ready to use |
-| 04a | Hoverboard Board (intact) | Keep intact | Flash FOC firmware when building rover |
-| 04b | Hoverboard Board (harvest) | Strip for parts | Desolder MOSFETs, shunts, caps, connectors |
-| 04c | Hub Motors x2 | Keep | Store upright |
+| 01 | Cudy WR3000 | **Keep intact** | Flash OpenWrt when ready |
+| 02 | MT7615DN Router | Keep | Backup; salvage antenna if space needed |
+| 03 | PS4 DualShock 4 | **Keep intact** | Ready to use |
+| 04a | Hoverboard Board (intact) | **Keep intact** | Flash FOC firmware for rover build |
+| 04b | Hoverboard Board (harvest) | **Strip (priority 1)** | MOSFETs, shunts, caps, connectors |
+| 04c | Hub Motors x2 | **Keep** | Store upright |
 | 05 | USB Charger PCB | Keep | Mount in enclosure for safety |
 | 06 | Boost Converter | Keep | Label current rating |
 | 07 | WR3E WiFi Module | Keep | Flash LibreTiny when needed |
-| 08 | 56K Modem | **Toss** | E-waste bin |
-| 09 | Relay Module | Keep | Use for home automation |
+| 08 | 56K Modem | Strip (learning) | Practice + SMD identification |
+| 09 | Relay Module | Keep | Home automation |
 | 10 | Button Breakout | Keep | Small parts drawer |
-| 11 | Parrot Minikit+ | Keep intact | Anti-static bag, test acoustic detection |
+| 11 | Parrot Minikit+ | **Keep intact** | Acoustic detection, BT serial bridge |
 | 12 | BT Audio Receiver | Keep | Anti-static bag |
-| 13 | LED Driver | **Toss** | E-waste bin |
+| 13 | LED Driver | **Toss** | Only true toss — too small/unmarked |
 | 14 | Piezo Buzzer | Keep | Desolder from RC board, toss board |
-| 15 | Washing Machine Button Panel | **Toss** | E-waste bin — proprietary form factor |
-| 16 | LG TV T-Con Board | **Toss** | E-waste bin — zero salvage value |
-| 17 | ZyXEL CB71 Gateway | Keep (test first) | Test with 12V PSU, use as switch/AP |
-| 18 | D-Link DSL-2640U | **Toss** | E-waste bin — ADSL obsolete |
-| 19 | Huawei B315s-936 (4G LTE) | **Keep** | Get data SIM, use as field link |
-| 20a | Vodafone H 500-s (keep) | Keep (low priority) | Backup router |
-| 20b | Vodafone H 500-s (dupe) | **Toss** | E-waste bin — redundant |
-| 21 | Wall-Wart Adapters (~6) | Keep (tested ones) | Test, label voltage/current, toss dead |
+| 15 | Washing Machine Panel | Strip (learning) | Beginner desoldering practice |
+| 16 | LG TV T-Con Board | Strip (learning) | QFP hot-air desoldering practice |
+| 17 | ZyXEL CB71 Gateway | Keep (test first) | Test with 12V PSU, use as switch |
+| 18 | D-Link DSL-2640U | Strip (learning) | UART console hunting, RJ-45 jacks |
+| 19 | Huawei B315s-936 (4G) | **Keep intact** | Get data SIM, field link |
+| 20a | Vodafone H 500-s | Keep | Backup router |
+| 20b | Vodafone H 500-s (dupe) | Strip (learning) | Antennas, heatsinks, SPI flash reading |
+| 21 | Wall-Wart Adapters (~6) | Keep (tested) | Test, label voltage/current, toss dead |
 | 22 | NiMH Quick Charger | Keep | Test with cells |
-| 23 | BenQ Monitor (disassembled) | **Toss** | **Discharge 450V caps first**, then e-waste |
+| 23 | BenQ Monitor | **Strip (parts + learning)** | **Discharge 450V caps first!** HV caps, transformers, choke |
+| 24 | DStv Remote | Keep | IR protocol experiments |
+| 25 | HDMI Cable | Keep | Always useful |
+| 26 | ARRIS DStv Decoder | **Strip (check HDD first!)** | HDD is main prize, then full teardown |
+| 27a | Fridge Compressor | Strip (last — heavy) | Copper tubing, start relay |
+| 27b | Fridge Control Board | **Strip (priority 2)** | 3x mains relays, buzzer, X2 cap |
+| 28 | Orion 320 Telephone | Strip (learning) | Keypad matrix, speaker, mic |
+| 29 | ATX-250GT PSU (250W) | **Keep — test first** | Bridge PS_ON to GND, verify voltages |
