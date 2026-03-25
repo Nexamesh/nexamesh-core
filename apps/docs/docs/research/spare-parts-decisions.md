@@ -387,6 +387,73 @@ removing its buzzer since it may be damaged.
 
 ---
 
+## SPD-15: Panasonic Washing Machine Button Panel PCB
+
+**Status:** Toss
+
+> Part number A4274008084. Brown phenolic PCB with three rocker/push switches,
+> ribbon cable, R13x resistors, CN connectors. From a Panasonic washing machine
+> control panel.
+
+**Use for:**
+- Nothing practical. The switches are a proprietary form factor moulded to fit
+  a specific washing machine fascia. They won't mount in any standard enclosure
+  or breadboard setup.
+
+**Scrap for:**
+- The rocker switches — but they're non-standard shape/mounting, designed for a
+  specific plastic housing that you don't have. Standard panel-mount rockers are
+  R5 each.
+- SMD resistors (R13x series) — generic, not worth desoldering from phenolic
+  board.
+- Ribbon cable — proprietary pitch and length. Useless without the matching
+  connector on the main washer board.
+
+**Toss?** **Yes.** Proprietary form factor throughout. Even the switches can't
+be reused without their matching housing. No components worth the desoldering
+effort.
+
+**Decision:** E-waste recycling bin. Don't strip anything.
+
+---
+
+## SPD-16: LG TV T-Con (Timing Controller) Board
+
+**Status:** Toss
+
+> Board number EAX36987601. Green PCB with two large Panasonic MN-series QFP
+> ICs (MN1 804 RT1, made in Japan), FPC connector, LVDS edge connectors,
+> serial data/clock lines (SDAT, SCLK), small electrolytics. Converts main
+> board LVDS signal into LCD panel row/column driver signals.
+
+**Use for:**
+- Nothing. A T-Con board is entirely application-specific — it converts a
+  particular LVDS timing format into signals for a matched LCD panel. Without
+  the exact panel and main board, it does nothing. Cannot be reprogrammed or
+  repurposed.
+
+**Scrap for:**
+- **Panasonic MN-series ICs** — proprietary display timing controllers with no
+  public datasheet. Cannot be reflashed or reused for any other purpose.
+  Desoldering QFP-128+ packages without hot air is destructive, and even with
+  hot air, the chips are worthless.
+- **FPC connector** — panel-specific pin count and pitch. New FPC connectors of
+  any standard size are R3.
+- **Small electrolytic caps (x2)** — likely 10-47uF, low voltage. Worth less
+  than the solder to remove them.
+- **Edge connectors** — moulded for a specific LVDS ribbon. Not a standard
+  pinout.
+- **SMD passives** — dozens of tiny resistors and caps, all generic and not
+  worth harvesting.
+
+**Toss?** **Yes.** Every component on this board is either proprietary
+(the ICs, connectors) or too cheap to justify desoldering (passives, caps).
+The board itself is lead-free and RoHS — safe for e-waste recycling.
+
+**Decision:** E-waste recycling bin. Zero salvage value.
+
+---
+
 ## Summary of Decisions
 
 | # | Component | Decision | Action Required |
@@ -407,3 +474,5 @@ removing its buzzer since it may be damaged.
 | 12 | BT Audio Receiver | Keep | Anti-static bag |
 | 13 | LED Driver | **Toss** | E-waste bin |
 | 14 | Piezo Buzzer | Keep | Desolder from RC board, toss board |
+| 15 | Washing Machine Button Panel | **Toss** | E-waste bin — proprietary form factor |
+| 16 | LG TV T-Con Board | **Toss** | E-waste bin — zero salvage value |
