@@ -454,6 +454,215 @@ The board itself is lead-free and RoHS — safe for e-waste recycling.
 
 ---
 
+## SPD-17: ZyXEL CB71 Gateway (EMG2926-T50C)
+
+**Status:** Keep — test first
+
+> ZyXEL dual-band WiFi 5 gateway, model EMG2926-T50C. 4x Gigabit LAN (yellow)
+> + 1x WAN (blue), on/off switch, 12V/1.5A barrel jack. ISP-provided unit.
+
+**Use for:**
+- 4-port Gigabit managed switch — even without OpenWrt, the LAN ports work as
+  a basic switch for connecting multiple wired devices at a workbench
+- Backup WiFi access point if configured in AP mode
+- VLAN-capable if factory firmware supports it (some ZyXEL units do)
+- Test network isolation — use as a separate subnet for testing IoT devices
+
+**Scrap for:**
+- N/A — more valuable intact as a working network device
+
+**Toss?** No, provided it works. Test with a 12V PSU (check your adapter pile,
+SPD-21). If it doesn't boot or has a locked/bricked firmware, then toss.
+
+**Decision:** Keep. Test with power adapter. Use as a 4-port Gigabit switch or
+backup AP at the workbench. Not critical, but free and useful.
+
+---
+
+## SPD-18: D-Link DSL-2640U
+
+**Status:** Toss
+
+> D-Link ADSL2+ modem/router, model DSL-2640U (RSL2640UEBRU.C2E), FW v2.01,
+> 802.11n only. Black plastic enclosure.
+
+**Use for:**
+- Nothing. ADSL requires a phone line (PSTN/DSL) which you almost certainly
+  don't have. The WiFi is 2.4GHz 802.11n only (slow). Even as an OpenWrt
+  device, the AR7-based chipset has very limited RAM and no meaningful
+  community support.
+
+**Scrap for:**
+- Nothing worth the effort. Internal PCB has a low-end Memory-limited SoC,
+  small RAM, and no reusable components.
+
+**Toss?** **Yes.** Obsolete access technology, weak hardware, no reuse path.
+
+**Decision:** E-waste recycling bin.
+
+---
+
+## SPD-19: Huawei B315s-936 (4G LTE Router)
+
+**Status:** Keep — high value
+
+> Huawei B315s-936, LTE Cat 4 (150Mbps down / 50Mbps up), SIM card slot,
+> WiFi 802.11n, Ethernet LAN, 12V/1A input. Has IMEI for network registration.
+
+**Use for:**
+- **Primary use: 4G field data link.** Insert a SIM card and you have instant
+  internet anywhere with cellular coverage. Perfect for field testing the ground
+  station, uploading telemetry data, or remote access to equipment.
+- Backup WAN for home network (failover if fibre goes down)
+- Portable hotspot for workshops, demos, or site visits
+- Remote monitoring — leave it at a location with power and a SIM, SSH in
+  over 4G to check sensors/cameras
+
+**Scrap for:**
+- N/A — far too valuable as a working 4G router. Replacement cost R500-800.
+
+**Toss?** Absolutely not. A working 4G LTE router with SIM slot is one of the
+most useful networking devices you can have.
+
+**Decision:** Keep intact. Get a data-only SIM (Telkom or Rain) for field use.
+This becomes a core part of the ground station networking stack alongside the
+Cudy WR3000.
+
+**Rooivalk relevance:** Direct. Provides internet connectivity at test sites
+where there's no WiFi. Enables remote telemetry upload, OTA firmware updates,
+and remote SSH access to the ground station.
+
+---
+
+## SPD-20a: Vodafone H 500-s (Keep Unit)
+
+**Status:** Keep one
+
+> Vodafone H 500-s, dual-band WiFi 5, 12V/2.5A, ISP-branded. Two identical
+> units — keep the one in better physical condition.
+
+**Use for:**
+- Backup router for home network
+- Isolated test network for IoT/security experiments
+- WiFi AP for workshop/garage
+
+**Scrap for:**
+- N/A — keep intact
+
+**Toss?** No (this unit). Keep the one with less physical damage and cleaner
+connectors.
+
+**Decision:** Keep the better-condition unit. Label it "backup". Low priority
+but costs nothing to store.
+
+---
+
+## SPD-20b: Vodafone H 500-s (Duplicate)
+
+**Status:** Toss
+
+**Use for:** Nothing — redundant duplicate of 20a.
+
+**Scrap for:** Nothing worth the effort. ISP router internals are application-
+specific SoCs with no reuse path.
+
+**Toss?** **Yes.** You don't need two identical ISP routers. One backup is
+enough.
+
+**Decision:** E-waste recycling bin.
+
+---
+
+## SPD-21: Wall-Wart Power Adapters (Assorted)
+
+**Status:** Keep — test and sort
+
+> ~6 mixed DC power adapters with SA 2-pin plugs, barrel jack outputs.
+> Expected voltages: 5V, 9V, 12V. Various current ratings.
+
+**Use for:**
+- Bench power supplies for routers (#17, #19, #20a all need 12V)
+- Dev board power: 5V for RPi/ESP32, 9V for Arduino Uno, 12V for LED strips
+- Any project needing a quick regulated DC source
+- Match adapters to orphaned devices (routers, chargers, etc.)
+
+**Scrap for:**
+- N/A — keep the working ones, toss the dead ones
+
+**Toss?** Toss any that are dead or have damaged cables. Keep all working ones
+with known voltages.
+
+**Action required:**
+1. Test each with a multimeter (measure output voltage under no load)
+2. Label each with voltage and current (e.g. "12V 1.5A")
+3. Match 12V adapters to the ZyXEL, Huawei, and Vodafone routers
+4. Keep a 5V adapter for bench use
+5. Toss any that are dead, have frayed cables, or have no measurable output
+
+**Decision:** Test, label, and keep working ones. Toss dead ones.
+
+---
+
+## SPD-22: NiMH Quick Charger
+
+**Status:** Keep
+
+> Mains-powered NiMH AA/AAA battery charger.
+
+**Use for:**
+- Maintaining rechargeable AA/AAA batteries for remotes, wireless mice,
+  sensors, flashlights
+- Cycling old NiMH cells to check remaining capacity
+
+**Scrap for:**
+- N/A — it's a charger, use it
+
+**Toss?** No. Rechargeable batteries save money long-term.
+
+**Decision:** Keep. Test with a set of NiMH cells to confirm it still charges.
+
+---
+
+## SPD-23: BenQ Monitor (Disassembled)
+
+**Status:** Toss — with safety precautions
+
+> Old BenQ CCFL-backlit LCD monitor, fully disassembled. Components:
+> - BenQ senseye scaler/controller board (VGA + DVI inputs)
+> - Power supply / CCFL inverter board (4H.L2E02.A34)
+> - LCD panel (unknown condition)
+> - FPC ribbon cables
+
+**Use for:**
+- Nothing. VGA and DVI are dead standards — no modern device outputs DVI, and
+  VGA adapters are clunky. CCFL backlights are obsolete (replaced by LED).
+  The resolution and response time will be poor by any modern standard. Not
+  suitable as a ground station display (no HDMI/DP).
+
+**Scrap for:**
+- **LCD panel** — could theoretically be driven with a universal LVDS controller
+  board (R100-150 on AliExpress), but you'd be spending money to create a
+  mediocre display with no backlight. Not worth it.
+- **Scaler board** — proprietary BenQ IC, no reuse.
+- **PSU/inverter board** — CCFL-specific transformers and topology. The large
+  electrolytic caps (100uF/450V, 160uF/450V) are the only "valuable" parts,
+  but they're dangerous and of marginal use.
+- **FPC ribbons** — panel-specific, no reuse.
+
+**Toss?** **Yes.** But **safely:**
+
+> **WARNING:** The PSU board contains 100uF/450V and 160uF/450V capacitors that
+> can hold lethal charge even when unplugged. Before handling or recycling:
+> 1. Verify no charge with a multimeter across cap terminals (should read <1V)
+> 2. If any voltage: discharge through a 10kΩ resistor (not a screwdriver — that
+>    can damage the cap and spark)
+> 3. Once confirmed discharged, safe to handle and recycle
+
+**Decision:** Discharge caps, then e-waste recycling bin. All boards and panel.
+Nothing salvageable.
+
+---
+
 ## Summary of Decisions
 
 | # | Component | Decision | Action Required |
@@ -476,3 +685,11 @@ The board itself is lead-free and RoHS — safe for e-waste recycling.
 | 14 | Piezo Buzzer | Keep | Desolder from RC board, toss board |
 | 15 | Washing Machine Button Panel | **Toss** | E-waste bin — proprietary form factor |
 | 16 | LG TV T-Con Board | **Toss** | E-waste bin — zero salvage value |
+| 17 | ZyXEL CB71 Gateway | Keep (test first) | Test with 12V PSU, use as switch/AP |
+| 18 | D-Link DSL-2640U | **Toss** | E-waste bin — ADSL obsolete |
+| 19 | Huawei B315s-936 (4G LTE) | **Keep** | Get data SIM, use as field link |
+| 20a | Vodafone H 500-s (keep) | Keep (low priority) | Backup router |
+| 20b | Vodafone H 500-s (dupe) | **Toss** | E-waste bin — redundant |
+| 21 | Wall-Wart Adapters (~6) | Keep (tested ones) | Test, label voltage/current, toss dead |
+| 22 | NiMH Quick Charger | Keep | Test with cells |
+| 23 | BenQ Monitor (disassembled) | **Toss** | **Discharge 450V caps first**, then e-waste |

@@ -44,6 +44,16 @@ detailed keep/scrap/toss reasoning on each component.
 | 12 | Bluetooth Audio Receiver Module | 1 | Small PCB, BT audio sink, 3.5mm or solder pad output | Working | Portable Bluetooth speaker builds, audio streaming to amp | No | **Keep** |
 | 13 | LED Driver / Voltage Doubler Tiny PCB | 1 | Charge-pump circuit, ~10mm PCB, likely white LED backlight driver | Unknown | Very limited — niche LED driving only | No | **Toss** |
 | 14 | Piezo Buzzer (from RC toy board) | 1 | Through-hole piezo disc, salvaged from toy car controller | Working | Lost-model alarm, status beeper, audible alerts | Yes — lost-model buzzer | **Keep** |
+| 15 | Panasonic Washing Machine Button Panel | 1 | Part A4274008084, 3x rocker switches, phenolic PCB, ribbon cable | Unknown | Nothing — proprietary form factor | No | **Toss** |
+| 16 | LG TV T-Con Board | 1 | EAX36987601, Panasonic MN-series QFP ICs, LVDS timing controller | Unknown | Nothing — proprietary display controller | No | **Toss** |
+| 17 | ZyXEL CB71 Gateway | 1 | EMG2926-T50C, dual-band WiFi 5, 4x LAN + 1x WAN, 12V/1.5A | Working | Managed switch (4 LAN ports), backup router, OpenWrt (limited) | Marginal — LAN switch | **Keep (test first)** |
+| 18 | D-Link DSL-2640U | 1 | ADSL2+ modem/router, 802.11n, FW v2.01, very old | Working | Nothing — ADSL-only, ancient, slow | No | **Toss** |
+| 19 | Huawei B315s-936 | 1 | 4G LTE Cat 4 router, SIM slot, WiFi, 12V/1A, IMEI on label | Working | Mobile internet anywhere, field data link, backup WAN, portable hotspot | Yes — 4G field link for ground station | **Keep** |
+| 20a | Vodafone H 500-s | 1 | Dual-band WiFi 5 (2.4+5GHz), 12V/2.5A, ISP-branded gateway | Working | Backup router, test network, OpenWrt (limited) | Marginal | **Keep (better unit)** |
+| 20b | Vodafone H 500-s (duplicate) | 1 | Same as 20a | Working | Nothing — redundant | No | **Toss** |
+| 21 | Wall-Wart Power Adapters (assorted) | ~6 | Mix of 5V/9V/12V barrel-jack DC adapters, SA 2-pin plugs | Test needed | Bench PSUs for routers, dev boards, any 12V/5V device | Indirect — bench power | **Keep (tested ones)** |
+| 22 | NiMH Quick Charger | 1 | AA/AAA NiMH battery charger, mains powered | Working | Rechargeable battery maintenance, AA/AAA for remotes/sensors | No | **Keep** |
+| 23 | BenQ Monitor (disassembled) | 1 | Old CCFL-backlit LCD, VGA+DVI only, BenQ senseye scaler board, 4H.L2E02.A34 PSU/inverter board. **450V caps — dangerous** | Unknown | Nothing — no HDMI, CCFL obsolete, VGA/DVI dead | No | **Toss (safely)** |
 
 ---
 
@@ -191,14 +201,14 @@ amplifier. Pair with a power bank for a camping/workshop speaker.
 
 | Project | Useful Components |
 |---------|-------------------|
-| **Rooivalk Drone (Paths A/B/C)** | #1 (ground station), #3 (controller), #6 (field power), #7 (telemetry), #11 (acoustic detection), #14 (buzzer) |
+| **Rooivalk Drone (Paths A/B/C)** | #1 (ground station), #3 (controller), #6 (field power), #7 (telemetry), #11 (acoustic detection), #14 (buzzer), #19 (4G field link) |
 | **Ground Rover / Robotics** | #4a (motor controller), #4c (hub motors), #3 (PS4 controller), #4d (MOSFETs) |
 | **IoT / Smart Home** | #7 (WiFi nodes), #9 (relay switching), #5 (bench power), #10 (buttons), #11 (BT serial bridge) |
-| **Networking / Lab** | #1 (OpenWrt router), #2 (backup/antenna donor) |
+| **Networking / Lab** | #1 (OpenWrt router), #2 (backup/antenna donor), #17 (ZyXEL switch), #19 (4G LTE), #20a (Vodafone backup) |
 | **Audio / Media** | #11 (Parrot BT kit), #12 (BT audio receiver) |
 | **EV / High-Power Builds** | #4a (BLDC controller), #4c (hub motors), #4d (power MOSFETs), #4e (current shunts) |
-| **General Prototyping** | #14 (piezo buzzer), #5 (5V supply), #6 (boost converter), #10 (button), #4e-g (harvested parts) |
-| **Toss Pile** | #8 (56K modem), #13 (LED driver) |
+| **General Prototyping** | #14 (piezo buzzer), #5 (5V supply), #6 (boost converter), #10 (button), #4e-g (harvested parts), #21 (PSUs), #22 (charger) |
+| **Toss Pile** | #8 (56K modem), #13 (LED driver), #15 (washer panel), #16 (T-Con), #18 (D-Link DSL), #20b (dupe Vodafone), #23 (BenQ monitor) |
 
 ---
 
@@ -206,6 +216,6 @@ amplifier. Pair with a power bank for a camping/workshop speaker.
 
 - **Keep assembled:** #4a (intact hoverboard board — do not strip), #11 (Parrot kit — more valuable intact)
 - **Anti-static bag:** #7 (WiFi module), #12 (BT module), #4d-g (harvested hoverboard parts)
-- **Labelled bin:** #14 (buzzer), #9 (relay), #10 (button), #6 (boost converter)
-- **Shelf/rack:** #1 (Cudy router), #2 (old router), #3 (PS4 controller), #4c (hub motors)
-- **E-waste recycling:** #8 (56K modem), #13 (LED driver), RC toy board (after buzzer removed)
+- **Labelled bin:** #14 (buzzer), #9 (relay), #10 (button), #6 (boost converter), #21 (tested PSUs)
+- **Shelf/rack:** #1 (Cudy router), #2 (old router), #3 (PS4 controller), #4c (hub motors), #17 (ZyXEL), #19 (Huawei 4G), #20a (Vodafone), #22 (NiMH charger)
+- **E-waste recycling:** #8 (56K modem), #13 (LED driver), #15 (washer panel), #16 (T-Con), #18 (D-Link DSL), #20b (dupe Vodafone), #23 (BenQ — **discharge 450V caps first**), RC toy board (after buzzer removed)
