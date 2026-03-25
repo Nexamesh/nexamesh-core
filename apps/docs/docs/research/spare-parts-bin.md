@@ -3,9 +3,12 @@
 Catalogue of salvaged components identified from around the workshop. Assessed
 for usefulness across **all projects** — not just Phoenix Rooivalk drone builds.
 
-> **Note:** The original toy quadcopter (X8-class, 320mm diagonal) documented in
-> the hardware teardown has been stolen. Upgrade paths A/B/C will require a new
-> donor airframe or proceed directly to Path B (new frame build).
+> **Note:** The Parrot Minikit+ was associated with a Parrot drone that has been
+> stolen. The toy quadcopter (X8-class, 320mm diagonal) for upgrade paths A/B/C
+> is still available.
+
+**Decision records:** See [Spare Parts Decisions](./spare-parts-decisions.md) for
+detailed keep/scrap/toss reasoning on each component.
 
 **Legend:**
 - **Rooivalk** = Drone upgrade paths (A/B/C) and counter-UAS platform
