@@ -340,10 +340,10 @@ export const TEAM = {
   SECONDARY_ENTITY: "Delaware C-Corp (planned — post-seed funding)",
 
   // Contact (role-based, not personal PII)
-  CONTACT_EMAIL: "contact@nexamesh.com",
+  CONTACT_EMAIL: "contact@nexamesh.ai",
   CONTACT_PHONE: "+27 (069) 140-6835",
-  INVESTOR_EMAIL: "investors@nexamesh.com",
-  SUPPORT_EMAIL: "support@nexamesh.com",
+  INVESTOR_EMAIL: "investors@nexamesh.ai",
+  SUPPORT_EMAIL: "support@nexamesh.ai",
   ENTERPRISE_EMAIL: "enterprise@aeronet-security.com",
   CONSUMER_EMAIL: "hello@skysnare.com",
 };

@@ -234,7 +234,7 @@ cloud credit programs — fresh applicant, no prior startup program history.
 **Charl's prerequisites before applying:**
 1. LinkedIn profile — name, "Hardware Lead at Nexamesh", vehicle repair + drone prototyping background
 2. Personal email not previously used for startup programs
-3. nexamesh.com domain active (registered)
+3. nexamesh.ai domain active (registered)
 
 ## Assigned To
 

@@ -36,7 +36,7 @@ export const founders = {
       },
     ],
     contact: {
-      email: "jurie@nexamesh.com",
+      email: "jurie@nexamesh.ai",
       phone: "+27 (069) 140-6835",
     },
   },
@@ -63,7 +63,7 @@ export const founders = {
       },
     ],
     contact: {
-      email: "charl@nexamesh.com",
+      email: "charl@nexamesh.ai",
     },
     // TODO: Create LinkedIn profile for Charl
     linkedinStatus: "pending",
@@ -263,14 +263,14 @@ export const companyStructure = {
 /** Contact Information */
 export const contact = {
   general: {
-    email: "contact@nexamesh.com",
+    email: "contact@nexamesh.ai",
     phone: "+27 (069) 140-6835",
     website: process.env.MARKETING_URL || "",
     linkedin: "NexaMesh Defense Systems",
   },
   inquiries: {
-    investment: "investors@nexamesh.com",
-    technical: "technical@nexamesh.com",
-    partnerships: "partnerships@nexamesh.com",
+    investment: "investors@nexamesh.ai",
+    technical: "technical@nexamesh.ai",
+    partnerships: "partnerships@nexamesh.ai",
   },
 };

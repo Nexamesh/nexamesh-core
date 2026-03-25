@@ -24,7 +24,7 @@ tags:
 - **Role on project**: Everything software — Rust API, blockchain evidence anchoring, edge AI detector, threat simulator desktop app, documentation portal, architecture, CI/CD
 - **Education**: B.Eng Industrial-Electronic (Stellenbosch), B.Com Quantitative Management (UNISA)
 - **GitHub**: [JustAGhosT](https://github.com/JustAGhosT)
-- **Contact**: jurie@nexamesh.com
+- **Contact**: jurie@nexamesh.ai
 
 ### Charl Chapman — Co-Founder & Hardware Lead
 
@@ -32,7 +32,7 @@ tags:
 - **Role on project**: Physical hardware prototyping — stripping salvaged components, assembling drone hardware, building and testing flight systems from budget components
 - **Current focus**: Path C hardware build (F405 FC + GPS + brushed motors on toy quadcopter frame)
 - **LinkedIn**: Pending setup
-- **Contact**: charl@nexamesh.com
+- **Contact**: charl@nexamesh.ai
 
 ---
 
@@ -92,7 +92,7 @@ tags:
 - **Incorporation**: Not yet registered. SA Pty Ltd registration pending (required for TIA Seed Fund).
 - **CSD Registration**: Not done. Required gate for all SA government funding.
 - **Brand**: Nexamesh. GitHub: `Nexamesh/nexamesh-core`. Old name: Phoenix Rooivalk.
-- **Domain**: nexamesh.com (registered)
+- **Domain**: nexamesh.ai (registered)
 
 ---
 

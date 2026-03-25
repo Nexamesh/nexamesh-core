@@ -13,7 +13,7 @@ import { UserProfile } from "./types";
  * Users with these email domains are automatically granted access to internal templates.
  */
 export const INTERNAL_DOMAINS = [
-  "nexamesh.com",
+  "nexamesh.ai",
   "phoenixrooivalk.com", // Legacy domain — keep for backward compatibility
   "justaghost.dev", // Development/admin domain
 ];
