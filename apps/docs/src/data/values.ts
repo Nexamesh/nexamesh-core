@@ -150,22 +150,33 @@ export const PRICING = {
   GROSS_MARGIN: "65%",
   EBITDA_TARGET: "25%",
 
-  // Funding
-  SEED_ROUND: "$500K-$1M",
-  SERIES_A: "R120M (~$6.7M)",
-  EXIT_VALUATION: "R2-5B",
+  // Funding (reality-aligned March 2026)
+  SEED_ROUND: "$50K-$150K (grants + accelerators)",
+  SERIES_A: "TBD — requires working prototype + revenue",
+  EXIT_VALUATION: "TBD — long-term vision",
 };
 
-/** Revenue Projections */
+/**
+ * Revenue Projections
+ *
+ * REALITY CHECK (March 2026): Pre-revenue. All figures below are
+ * VISION SCENARIO projections contingent on securing funding and
+ * building a working hardware prototype. Do not present as commitments.
+ */
 export const REVENUE = {
-  YEAR_1: "R25M",
-  YEAR_1_SYSTEMS: 25,
-  YEAR_2: "R75M",
-  YEAR_2_SYSTEMS: 75,
-  YEAR_3: "R150M",
-  YEAR_3_SYSTEMS: 150,
-  YEAR_5: "R500M",
-  YEAR_5_SYSTEMS: 500,
+  // Current reality
+  CURRENT_REVENUE: "$0 (pre-revenue, bootstrapped R&D)",
+  CURRENT_STATUS: "Pre-revenue",
+
+  // Vision scenario (if funded and prototype succeeds)
+  YEAR_1: "R0-R500K (pilot revenue from first deployments)",
+  YEAR_1_SYSTEMS: 1, // Realistic: 1 pilot system
+  YEAR_2: "R5M-R10M",
+  YEAR_2_SYSTEMS: 5,
+  YEAR_3: "R25M-R50M",
+  YEAR_3_SYSTEMS: 20,
+  YEAR_5: "R100M-R200M",
+  YEAR_5_SYSTEMS: 100,
 };
 
 /** Blockchain Values */
@@ -238,32 +249,48 @@ export const HARDWARE = {
 
 /** Team Values */
 export const TEAM = {
-  // Core Team
+  // Core Team — Active Founders
   CTO_NAME: "Jurie Smit",
   CTO_FULL_NAME: "Hans Jurgens (Jurie) Smit",
   CTO_TITLE: "Co-Founder & CTO",
   CTO_LINKEDIN: "https://www.linkedin.com/in/juriesmit/",
   CTO_BACKGROUND:
-    "Systems Engineer & AI Architect, 15+ years fintech, citizen platforms, multi-tenant SaaS",
+    "Systems Engineer & AI Architect, 15+ years fintech, citizen platforms, multi-tenant SaaS. Built entire NexaMesh software platform.",
   CTO_EDUCATION:
     "B.Eng Industrial-Electronic (Stellenbosch), B.Com Quantitative Management (UNISA)",
   CTO_EXPERTISE: [
     "Edge AI/ML",
     "System Architecture",
     "Full-Stack Development",
-    "Agile Methodologies",
+    "Blockchain",
   ],
 
+  HARDWARE_LEAD_NAME: "Charl Chapman",
+  HARDWARE_LEAD_FULL_NAME: "Charl Chapman",
+  HARDWARE_LEAD_TITLE: "Co-Founder & Hardware Lead",
+  HARDWARE_LEAD_LINKEDIN: "", // TODO: Create LinkedIn profile
+  HARDWARE_LEAD_BACKGROUND:
+    "Mechanical & electrical diagnostics specialist. Hands-on fabrication, vehicle systems, component integration. Building hardware prototypes from low-cost and salvaged components.",
+  HARDWARE_LEAD_EDUCATION: "Vehicle Systems & Electrical Repair (Practical/Trade)",
+  HARDWARE_LEAD_EXPERTISE: [
+    "Hardware Prototyping",
+    "Mechanical Systems",
+    "Electrical Diagnostics",
+    "Component Integration",
+  ],
+
+  // Advisors (not full-time — engaged as needed)
+  // Note: CEO_* fields kept for MDX backward compatibility; Martyn is now Advisor
   CEO_NAME: "Martyn Redelinghuys",
   CEO_FULL_NAME: "Martyn Redelinghuys",
-  CEO_TITLE: "Co-Founder & CEO",
+  CEO_TITLE: "Advisor — Business Strategy & Manufacturing",
   CEO_LINKEDIN: "https://www.linkedin.com/in/martynrede/",
   CEO_BACKGROUND:
-    "20+ years energy, mining, defense. R500M+ portfolio management. Executive Project Manager.",
+    "20+ years energy, mining, defense. R500M+ portfolio management. Has manufacturing facility. Will engage actively when funding secured.",
   CEO_EDUCATION: "MBA (GIBS), B.Eng Electrical & Electronic (Stellenbosch)",
   CEO_EXPERTISE: [
     "Project Management",
-    "Energy Strategy",
+    "Manufacturing",
     "Business Development",
     "Capital Projects",
   ],
@@ -272,12 +299,12 @@ export const TEAM = {
     "Certified Measurement & Verification Professional (CMVP)",
   ],
 
-  // Additional Team Members
+  // MEMBER_3 — Pieter moved to advisor role
   MEMBER_3_NAME: "Pieter La Grange",
-  MEMBER_3_TITLE: "Co-Founder & Hardware Lead",
+  MEMBER_3_TITLE: "Advisor — Embedded Systems & Industry Connections",
   MEMBER_3_LINKEDIN: "https://www.linkedin.com/in/pieterlagrange/",
   MEMBER_3_BACKGROUND:
-    "Electronics Design Engineer at Snuza, 15+ years embedded systems & medical devices",
+    "Electronics Design Engineer at Snuza, 15+ years embedded systems & medical devices. Advisory capacity for embedded guidance and industry introductions.",
   MEMBER_3_EDUCATION: "B.Eng Electrical & Electronics (Stellenbosch)",
   MEMBER_3_EXPERTISE: [
     "Embedded Firmware",
@@ -287,11 +314,12 @@ export const TEAM = {
     "RTOS",
   ],
 
+  // MEMBER_4 — Eben moved to advisor role
   MEMBER_4_NAME: "Eben Maré",
-  MEMBER_4_TITLE: "Co-Founder & CFO",
+  MEMBER_4_TITLE: "Advisor — Financial Strategy",
   MEMBER_4_LINKEDIN: "https://www.linkedin.com/in/ebenmare/",
   MEMBER_4_BACKGROUND:
-    "15+ years investment banking, private equity, quantitative finance. Former Head Quant at Deloitte, CIO experience.",
+    "15+ years investment banking, private equity, quantitative finance. Former Head Quant at Deloitte. Available for financial modeling and investor discussions.",
   MEMBER_4_EDUCATION:
     "BSc (Hons) Operations Research (UNISA), BSc Applied Mathematics (University of Pretoria)",
   MEMBER_4_EXPERTISE: [
@@ -303,43 +331,44 @@ export const TEAM = {
   ],
 
   // Team Stats
-  COMBINED_EXPERIENCE: "60+ years",
-  TEAM_SIZE: 4,
+  COMBINED_EXPERIENCE: "25+ years",
+  TEAM_SIZE: 2, // Active founders
+  ADVISOR_COUNT: 3,
 
   // Company Structure
-  COMPANY_STRUCTURE: "Delaware C-Corp (in progress)",
-  SECONDARY_ENTITY: "South African Entity (Q2 2026)",
+  COMPANY_STRUCTURE: "South African Entity (planned — registration pending)",
+  SECONDARY_ENTITY: "Delaware C-Corp (planned — post-seed funding)",
 
   // Contact (role-based, not personal PII)
-  CONTACT_EMAIL: "contact@phoenixrooivalk.com",
-  CONTACT_PHONE: "+27 (0) 10 880 0000", // Company switchboard
-  INVESTOR_EMAIL: "investors@phoenixrooivalk.com",
-  SUPPORT_EMAIL: "support@phoenixrooivalk.com",
+  CONTACT_EMAIL: "contact@nexamesh.com",
+  CONTACT_PHONE: "+27 (069) 140-6835",
+  INVESTOR_EMAIL: "investors@nexamesh.com",
+  SUPPORT_EMAIL: "support@nexamesh.com",
   ENTERPRISE_EMAIL: "enterprise@aeronet-security.com",
   CONSUMER_EMAIL: "hello@skysnare.com",
 };
 
-/** Roadmap Values */
+/** Roadmap Values (Reality-aligned March 2026) */
 export const ROADMAP = {
-  CURRENT_WEEK: "Week 49",
-  CURRENT_YEAR: 2025,
+  CURRENT_WEEK: "Week 13",
+  CURRENT_YEAR: 2026,
 
-  // Q1 2026
-  Q1_2026: "Net launcher prototype, first EU pilot",
+  // Q1 2026 (NOW)
+  Q1_2026: "Detection demo video, NexaMesh brand launch, MS Founders Hub application",
 
   // Q2 2026
-  Q2_2026: "EU certification, 3 installations, x402 contracts",
+  Q2_2026: "Hardware prototype v0.1, TIA/accelerator applications, Europe market research",
 
   // Q3 2026
-  Q3_2026: "Series A with proven revenue, 5 installations",
+  Q3_2026: "Field test with prototype, grant decisions, first EU partner conversations",
 
   // Q4 2026
-  Q4_2026: "Canada expansion, manufacturing partnerships",
+  Q4_2026: "First customer LOI or paid pilot (EU target), seed round close",
 
   // Milestones
-  SEED_RUNWAY: "18 months",
-  PILOT_TARGET: 5,
-  ENTERPRISE_TARGET: 10,
+  SEED_RUNWAY: "12 months (if funded)",
+  PILOT_TARGET: 1, // Honest: 1 pilot is the near-term goal
+  ENTERPRISE_TARGET: 3, // 3 enterprise conversations, not deployments
 };
 
 /** Competitor Values */
@@ -401,22 +430,32 @@ export const CUAS_SANDBOX = {
   MIN_TRL: "TRL 5",
 };
 
-/** SkySnare Consumer Product */
+/**
+ * NexaMesh Kestrel — Consumer Detection & Training (formerly SkySnare)
+ * Status: CONCEPT — no prototype, no production. Pricing is target, not confirmed.
+ */
 export const SKYSNARE = {
-  MSRP: "$349",
+  PRODUCT_NAME: "NexaMesh Kestrel",
+  STATUS: "Concept — design phase",
+  MSRP: "$349 (target)",
   TARGET_MARKET: "$3.22B outdoor sports toy market",
   TAM: "$1.68B",
-  YEAR_1_UNITS: 5000,
-  RETURN_RATE: "8-10%",
-  COGS: "$135",
-  CONTRIBUTION_MARGIN: "59%",
-  CAC: "$80-100",
+  YEAR_1_UNITS: 0, // Reality: no units until prototype exists
+  RETURN_RATE: "TBD",
+  COGS: "$135 (estimated)",
+  CONTRIBUTION_MARGIN: "59% (target)",
+  CAC: "$80-100 (estimated)",
 };
 
-/** AeroNet Enterprise */
+/**
+ * NexaMesh Sentinel — Enterprise Infrastructure Security (formerly AeroNet)
+ * Status: SOFTWARE PLATFORM BUILT — hardware integration pending.
+ */
 export const AERONET = {
-  SETUP_FEE: "$150K",
-  MONTHLY_FEE: "$25K/month",
+  PRODUCT_NAME: "NexaMesh Sentinel",
+  STATUS: "Software platform operational, hardware integration pending",
+  SETUP_FEE: "$150K (target)",
+  MONTHLY_FEE: "$25K/month (target)",
   TAM: "$4.2B",
 };
 
@@ -439,78 +478,91 @@ export const TECH = {
   SENSOR_COUNT: 6,
 };
 
-/** Funding Values */
+/**
+ * Funding Values
+ *
+ * REALITY CHECK (March 2026):
+ * - Current funding: $0 (bootstrapped founder R&D)
+ * - Current burn rate: $0 (no salaries, no office)
+ * - Current TRL: 1-2 (concept + working software platform, no hardware prototype)
+ * - "Fully-funded scenario" values are kept for reference but clearly labeled
+ */
 export const FUNDING = {
-  // Investment rounds
-  SEED_ROUND: "$500K-$1M",
-  SERIES_A_TARGET: "$30-50M",
-  BURN_RATE: "$200K/month",
-  RUNWAY: "18 months",
+  // Current reality
+  CURRENT_FUNDING: "$0 (bootstrapped)",
+  INVESTMENT_TO_DATE: "9+ months founder R&D (sweat equity)",
+  CURRENT_TRL: "TRL 1-2 (software platform built, hardware pre-prototype)",
 
-  // Phased investment (TRL path)
-  PHASE_1_CONCEPT: "$3.5M",
-  PHASE_1_DURATION: "9 months",
-  PHASE_1_TRL: "TRL 3-4",
-  PHASE_2_PROTOTYPE: "$15M",
+  // Immediate funding targets (realistic)
+  SEED_ROUND: "$50K-$150K (grants + accelerators)",
+  SERIES_A_TARGET: "TBD — requires working prototype + EU pilot revenue",
+  BURN_RATE: "$0 (bootstrapped — no salaries, no office)",
+  RUNWAY: "Indefinite at current burn (founder time only)",
+
+  // Phased investment path (fully-funded scenario — aspirational)
+  PHASE_1_CONCEPT: "$50K-$150K",
+  PHASE_1_DURATION: "6-12 months",
+  PHASE_1_TRL: "TRL 2-3",
+  PHASE_2_PROTOTYPE: "$500K-$1M",
   PHASE_2_DURATION: "12 months",
-  PHASE_2_TRL: "TRL 4-6",
-  PHASE_3_INTEGRATION: "$25M",
-  PHASE_3_DURATION: "15 months",
-  PHASE_3_TRL: "TRL 6-7",
-  TOTAL_TO_TRL7: "$43.5M",
-  TOTAL_TIMELINE: "~3 years",
+  PHASE_2_TRL: "TRL 3-5",
+  PHASE_3_INTEGRATION: "$3M-$5M",
+  PHASE_3_DURATION: "12-18 months",
+  PHASE_3_TRL: "TRL 5-7",
+  TOTAL_TO_TRL7: "$4M-$6M (realistic path)",
+  TOTAL_TIMELINE: "~3 years from first funding",
 
-  // Use of funds
-  HARDWARE_PROTOTYPING: "30%",
-  MARKET_ENTRY: "40%",
+  // Use of immediate funds (pre-seed/seed)
+  HARDWARE_PROTOTYPING: "50%",
+  MARKET_ENTRY: "20%",
   TEAM_EXPANSION: "30%",
 
-  // Revenue projections (USD)
-  REVENUE_2026: "$2M",
-  REVENUE_2027: "$15M",
-  REVENUE_2028: "$50M",
-  REVENUE_2029: "$100M",
-  REVENUE_2030: "$150M",
+  // Revenue projections — VISION SCENARIO (contingent on funding + prototype)
+  REVENUE_2026: "$0 (pre-revenue)",
+  REVENUE_2027: "$100K-$500K (first EU pilots)",
+  REVENUE_2028: "$1M-$5M (if prototype proven)",
+  REVENUE_2029: "$5M-$15M (scaling)",
+  REVENUE_2030: "$15M-$50M (established)",
 
-  // Business model projections
-  BM_YEAR_1_REVENUE: "$2.5M",
-  BM_YEAR_2_REVENUE: "$15M",
-  BM_YEAR_3_REVENUE: "$45M",
-  BM_YEAR_4_REVENUE: "$100M",
-  BM_YEAR_5_REVENUE: "$160M",
+  // Business model projections — VISION SCENARIO
+  BM_YEAR_1_REVENUE: "$0 (building prototype)",
+  BM_YEAR_2_REVENUE: "$100K-$500K",
+  BM_YEAR_3_REVENUE: "$1M-$5M",
+  BM_YEAR_4_REVENUE: "$5M-$15M",
+  BM_YEAR_5_REVENUE: "$15M-$50M",
 
-  // Targets
-  YEAR_1_SYSTEMS: 25,
-  YEAR_2_SYSTEMS: 75,
-  YEAR_3_SYSTEMS: 150,
-  YEAR_4_SYSTEMS: 300,
-  YEAR_5_SYSTEMS: 500,
-  PILOT_INSTALLATIONS: 5,
-  X402_CUSTOMERS: 10,
+  // System deployment targets — VISION SCENARIO
+  YEAR_1_SYSTEMS: 0,
+  YEAR_2_SYSTEMS: 1,
+  YEAR_3_SYSTEMS: 5,
+  YEAR_4_SYSTEMS: 15,
+  YEAR_5_SYSTEMS: 50,
+  PILOT_INSTALLATIONS: 1, // Near-term target: 1 EU pilot
+  X402_CUSTOMERS: 0, // Pre-revenue
 
-  // Funding sources (phased)
-  PHASE_1_ANGEL: "$1M-$2M",
-  PHASE_1_VC: "$1.5M-$2.5M",
-  PHASE_1_SBIR: "$500K",
-  PHASE_2_SERIES_A: "$8M-$12M",
-  PHASE_2_DOD: "$2M-$3M",
-  PHASE_2_STRATEGIC: "$2M-$5M",
-  PHASE_3_SERIES_B: "$15M-$20M",
-  PHASE_3_PRODUCTION: "$3M-$5M",
-  PHASE_3_INTERNATIONAL: "$2M-$5M",
+  // Funding sources — realistic path
+  PHASE_1_ANGEL: "$0 (grants + accelerators first)",
+  PHASE_1_VC: "$0 (too early for VC)",
+  PHASE_1_SBIR: "N/A (requires US entity)",
+  PHASE_2_SERIES_A: "$3M-$5M (after prototype + pilot)",
+  PHASE_2_DOD: "N/A (requires certifications)",
+  PHASE_2_STRATEGIC: "$1M-$3M (EU defense partners)",
+  PHASE_3_SERIES_B: "$10M-$15M (after revenue)",
+  PHASE_3_PRODUCTION: "$2M-$3M",
+  PHASE_3_INTERNATIONAL: "$1M-$3M",
 
-  // IOC per site
+  // IOC per site (reference pricing — aspirational)
   IOC_PER_SITE: "$3M",
   IOC_HARDWARE: "$2M",
   IOC_INSTALLATION: "$500K",
   IOC_TRAINING: "$200K",
   IOC_SUPPORT_YEAR1: "$300K",
 
-  // Implementation costs (specific projects)
-  BLOCKCHAIN_IMPLEMENTATION: "$9.95M",
-  BLOCKCHAIN_IMPLEMENTATION_DURATION: "15 months",
-  BLOCKCHAIN_EXPECTED_ROI: "300%",
-  BLOCKCHAIN_ROI_TIMELINE: "24 months",
+  // Blockchain implementation (already built — actual cost was founder time)
+  BLOCKCHAIN_IMPLEMENTATION: "Built (founder sweat equity)",
+  BLOCKCHAIN_IMPLEMENTATION_DURATION: "6 months (completed)",
+  BLOCKCHAIN_EXPECTED_ROI: "TBD — dependent on enterprise adoption",
+  BLOCKCHAIN_ROI_TIMELINE: "24+ months from first enterprise customer",
 };
 
 /** RKV-M Interceptor Specs */
@@ -530,7 +582,7 @@ export const RKV_M = {
   TIP_SPEED: "≤120 m/s",
   ASSEMBLY_TIME: "3.5 hours",
   MOTOR_CONFIG: "16-20S HV outrunner",
-  TRL: 7,
+  TRL: 1, // Concept stage — design specs only, no prototype
 };
 
 /** Manufacturing Values */
@@ -561,44 +613,53 @@ export const MANUFACTURING = {
   PAYBACK_PERIOD: "18 months",
 };
 
-/** Capital Requirements */
+/**
+ * Capital Requirements
+ *
+ * Two tiers: immediate (bootstrapped/grant path) and long-term vision.
+ * Long-term figures retained for reference but clearly labeled.
+ */
 export const CAPITAL = {
-  // Total funding needed
-  TOTAL_FUNDING_ZAR: "R500M",
-  TOTAL_FUNDING_USD: "$33M",
+  // Immediate need (pre-seed / grants)
+  IMMEDIATE_NEED: "$50K-$150K",
+  IMMEDIATE_PURPOSE: "Hardware prototype + first EU pilot",
 
-  // Allocation breakdown (ZAR)
-  PRODUCT_DEVELOPMENT: "R150M",
-  MANUFACTURING_SETUP: "R100M",
-  CERTIFICATION_TESTING: "R50M",
-  SALES_MARKETING: "R50M",
-  WORKING_CAPITAL: "R150M",
+  // Long-term vision (fully-funded scenario — years away)
+  TOTAL_FUNDING_ZAR: "R60M-R90M ($4M-$6M)",
+  TOTAL_FUNDING_USD: "$4M-$6M (to TRL 7)",
 
-  // Funding sources
-  IDC_MANUFACTURING_LOAN: "R100M",
-  DTI_ARMSCOR_GRANTS: "R50M",
-  STRATEGIC_INVESTOR: "R200M",
-  FOUNDERS_ANGELS: "R50M",
-  EXPORT_CREDIT: "R100M",
+  // Allocation breakdown — immediate seed ($50K-$150K)
+  PRODUCT_DEVELOPMENT: "50% — hardware prototype components",
+  MANUFACTURING_SETUP: "N/A — too early",
+  CERTIFICATION_TESTING: "10% — initial EU compliance research",
+  SALES_MARKETING: "20% — EU market entry, conferences",
+  WORKING_CAPITAL: "20% — operations, travel, tools",
 
-  // Seed round
-  SEED_ROUND: "$1.5M",
-  SEED_RUNWAY: "April 30, 2027",
+  // Realistic funding sources (Europe-first strategy)
+  IDC_MANUFACTURING_LOAN: "Future — requires working product",
+  DTI_ARMSCOR_GRANTS: "Exploring — ARMSCOR has acknowledged C-UAS capability gap",
+  STRATEGIC_INVESTOR: "Future — post-prototype",
+  FOUNDERS_ANGELS: "Current — bootstrapped sweat equity",
+  EXPORT_CREDIT: "Future — requires export orders",
 
-  // Use of seed funds (percentages)
-  SEED_PRODUCT_DEV: "40%",
-  SEED_INVENTORY: "20%",
+  // Pre-seed / seed round
+  SEED_ROUND: "$50K-$150K",
+  SEED_RUNWAY: "12 months at minimal burn",
+
+  // Use of pre-seed funds (percentages)
+  SEED_PRODUCT_DEV: "50%",
+  SEED_INVENTORY: "0%",
   SEED_MARKETING: "20%",
-  SEED_INSURANCE: "10%",
-  SEED_COMPLIANCE: "5%",
-  SEED_OPERATIONS: "5%",
+  SEED_INSURANCE: "0%",
+  SEED_COMPLIANCE: "10%",
+  SEED_OPERATIONS: "20%",
 
   // Specific amounts
-  INVESTMENT_TO_DATE: "6 months founder R&D",
-  PO_FACILITY: "$350K",
-  LIABILITY_POLICY: "$5M",
-  CONVERSION_DAYS: "35-day",
-  PRODUCTION_RATE: "750–1,000 units/month",
+  INVESTMENT_TO_DATE: "9+ months founder R&D (sweat equity)",
+  PO_FACILITY: "N/A — no production yet",
+  LIABILITY_POLICY: "N/A — pre-product",
+  CONVERSION_DAYS: "N/A",
+  PRODUCTION_RATE: "N/A — prototype stage",
 };
 
 /** Net Specifications */
@@ -633,58 +694,66 @@ export const NETS = {
   EFFECTIVE_RANGE: "10-30m from target",
 };
 
-/** Development Phases - Unified timeline aligned with funding rounds */
+/**
+ * Development Phases — Reality-aligned March 2026
+ *
+ * NexaMesh product tiers:
+ * - NexaMesh Kestrel: Consumer detection + training (replaces SkySnare)
+ * - NexaMesh Sentinel: Enterprise infrastructure security (replaces AeroNet)
+ * - NexaMesh Horizon: Military/defense tier (future)
+ *
+ * Strategy: Europe-first. SA as R&D cost base.
+ */
 export const PHASES = {
-  // Phase definitions
   SEED: {
     id: "seed",
-    name: "Seed: SkySnare Launch",
-    shortName: "Seed",
-    timeline: "Nov 2025 - Oct 2026",
-    products: ["SkySnare D2C", "Core prototype"],
-    funding: "$1.5M",
-    trl: "TRL 3-5",
-    focus: "Consumer product launch, prototype validation",
+    name: "Pre-Seed: Prototype & Validate",
+    shortName: "Pre-Seed",
+    timeline: "Q1 2026 - Q4 2026",
+    products: ["Detection demo", "Hardware prototype v0.1"],
+    funding: "$50K-$150K (grants + accelerators)",
+    trl: "TRL 1-2 → TRL 3",
+    focus: "Build working detection prototype, secure first grant, EU market validation",
   },
   SERIES_A: {
     id: "series-a",
-    name: "Series A: AeroNet & DoD",
-    shortName: "Series A",
-    timeline: "Nov 2026 - 2027",
-    products: ["AeroNet Enterprise", "SBIR/DoD validation"],
-    funding: "$8-12M",
-    trl: "TRL 5-6",
-    focus: "Enterprise launch, DoD validation, SBIR contracts",
+    name: "Seed: First EU Pilot",
+    shortName: "Seed",
+    timeline: "2027",
+    products: ["NexaMesh Kestrel v1", "NexaMesh Sentinel pilot"],
+    funding: "$500K-$2M",
+    trl: "TRL 3-5",
+    focus: "First paid EU pilot deployment, initial revenue, team expansion",
   },
   SERIES_B: {
     id: "series-b",
-    name: "Series B: Ground Systems",
-    shortName: "Series B",
+    name: "Series A: EU Expansion",
+    shortName: "Series A",
     timeline: "2028",
-    products: ["RKV-G Rover/GCS", "Production scale"],
-    funding: "$15-20M",
-    trl: "TRL 6-7",
-    focus: "Ground control systems, production scaling",
+    products: ["NexaMesh Sentinel production", "Ground control systems"],
+    funding: "$3M-$5M",
+    trl: "TRL 5-7",
+    focus: "EU certification, multiple deployments, production scaling",
   },
   SERIES_C: {
     id: "series-c",
-    name: "Series C: Aerial Platform",
-    shortName: "Series C",
-    timeline: "2029",
-    products: ["RKV-M Mothership", "RKV-I Interceptors"],
-    funding: "$25M+",
+    name: "Series B: Full Platform",
+    shortName: "Series B",
+    timeline: "2029-2030",
+    products: ["NexaMesh Horizon (military)", "Interceptor systems"],
+    funding: "$10M-$15M",
     trl: "TRL 7+",
-    focus: "Full aerial platform, interceptor systems",
+    focus: "Military tier, aerial platform, international expansion",
   },
   SCALE: {
     id: "scale",
     name: "Scale: Global Deployment",
     shortName: "Scale",
     timeline: "2030+",
-    products: ["Full integrated system", "FMS", "NATO"],
+    products: ["Full integrated system", "FMS programs"],
     funding: "Revenue-funded",
     trl: "TRL 8-9",
-    focus: "Global deployment, FMS programs, NATO certification",
+    focus: "Global deployment, defense partnerships, NATO-aligned certification",
   },
 };
 

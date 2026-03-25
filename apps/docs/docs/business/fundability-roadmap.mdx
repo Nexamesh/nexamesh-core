@@ -1,0 +1,257 @@
+---
+id: fundability-roadmap
+title: "NexaMesh Fundability Roadmap"
+sidebar_label: Fundability Roadmap
+difficulty: intermediate
+timeEstimate: 20
+xpReward: 25
+phase: ["seed"]
+tags:
+  - business
+  - funding
+  - strategy
+---
+
+import { MARKET, FUNDING, TEAM, CAPITAL, ROADMAP } from "@site/src/data/values";
+
+# NexaMesh Fundability Roadmap
+
+**Last updated: March 2026 | Status: Pre-Seed / Bootstrapping**
+
+---
+
+## 1. Where We Actually Are
+
+This section is deliberately honest. Every claim here is verifiable.
+
+### What Exists (Built)
+
+| Asset | Status | Evidence |
+|-------|--------|----------|
+| Software platform | **Production-quality** | Rust Axum API, 400+ commits, 40+ PRs |
+| Blockchain evidence chain | **Operational** | Solana + EtherLink anchoring, x402 payment protocol |
+| AI detection engine | **Working** | Python YOLOv8/v9 detector, multi-platform (Jetson, desktop, Coral) |
+| Threat simulator | **Working** | Leptos/WASM browser + Tauri desktop app |
+| Documentation portal | **Comprehensive** | Docusaurus 3 with Azure Functions backend, 100+ pages |
+| Architecture decisions | **Documented** | 10+ ADRs following industry-standard template |
+
+### What Does NOT Exist Yet
+
+| Gap | Reality | Path to Close |
+|-----|---------|---------------|
+| Hardware prototype | Pre-prototype: component sourcing, flight controller experiments (F405/INAV), salvaged motors | 3-6 months with funding |
+| Revenue | $0 — bootstrapped founder R&D for 9+ months | First EU pilot target: Q4 2026 |
+| Incorporated entity | Not yet registered (SA or US) | SA entity planned first |
+| Certifications | None — no CE, no FCC, no MIL-STD | CE marking for detection equipment is first target |
+| Customers | None — no LOIs, no pilots, no contracts | EU market entry planned |
+| External funding | $0 received | Grant/accelerator applications starting Q2 2026 |
+
+### Team
+
+| Role | Person | Status |
+|------|--------|--------|
+| Co-Founder & CTO | {TEAM.CTO_NAME} | **Active daily** — built entire software platform |
+| Co-Founder & Hardware Lead | {TEAM.HARDWARE_LEAD_NAME} | **Active daily** — hardware prototyping |
+| Advisor — Business & Manufacturing | {TEAM.CEO_NAME} | Available — has factory, will engage when funded |
+| Advisor — Financial Strategy | {TEAM.MEMBER_4_NAME} | Available — financial modeling |
+| Advisor — Embedded Systems | {TEAM.MEMBER_3_NAME} | Available — industry connections |
+
+### Technology Readiness
+
+| Component | TRL | Evidence |
+|-----------|-----|---------|
+| Detection software (AI + blockchain) | **TRL 3-4** | Working in lab/dev environment, not field-tested |
+| Hardware detection node | **TRL 1-2** | Concept + component sourcing |
+| Net capture system | **TRL 1** | Design concepts only |
+| NexaMesh Kestrel (consumer) | **TRL 1** | Product concept |
+| NexaMesh Sentinel (enterprise) | **TRL 2** | Software platform operational, no hardware integration |
+| NexaMesh Horizon (military) | **TRL 1** | Pure concept, years away |
+
+---
+
+## 2. Why It's Fundable Despite Being Early
+
+### The Market Is Real and Enormous
+
+- Counter-UAS market: **{MARKET.CURRENT}** (2025) growing to **{MARKET.PROJECTED}** (2030) at **{MARKET.CAGR}** CAGR
+- Europe alone: **{MARKET.EUROPE_2030}** by 2030 at {MARKET.EUROPE_CAGR} CAGR
+- Brussels Airport closed twice in one night (November 2025)
+- Pentagon Replicator program: **{MARKET.PENTAGON_REPLICATOR}** committed
+- **64% of critical facilities remain unprotected** — massive addressable gap
+
+### The Technology Differentiation Is Genuine
+
+1. **Blockchain evidence chain** — no competitor offers this. Critical for prosecution (Gatwick 2018: no arrests because no evidence chain)
+2. **Edge AI on affordable hardware** — detection on R1,500 devices vs. R15M+ competitor systems
+3. **Non-ITAR jurisdiction** — South African base enables export to markets US competitors can't easily reach (Middle East, Asia-Pacific, Africa)
+4. **Open architecture** — modular, pluggable design vs. proprietary black boxes
+
+### The Team Background Fits
+
+- CTO: 15+ years systems engineering, Stellenbosch B.Eng, built the entire platform solo
+- Hardware Lead: Hands-on fabrication, electrical diagnostics, building prototypes from low-cost components
+- Advisors bring defense industry connections, manufacturing facility access, and financial modeling expertise
+
+---
+
+## 3. Funding Roadmap
+
+### Tier 0: Free — Apply This Week
+
+These cost nothing and should be submitted immediately.
+
+| Program | What You Get | Action |
+|---------|-------------|--------|
+| **Microsoft Founders Hub** | Up to $150K Azure credits + mentorship | Charl Chapman applies under NexaMesh brand. We already use Azure (Cosmos DB, Functions, Static Web Apps). |
+| **NVIDIA Inception** | GPU credits, Jetson discounts, DGX cloud, training | Apply — our detector runs on Jetson hardware. Perfect fit. |
+| **AWS Activate** | Up to $100K cloud credits | Apply as backup cloud option |
+| **Google for Startups Africa** | $200K cloud credits + mentorship | Apply — AI focus matches |
+| **CSD Registration** (csd.gov.za) | Required for ALL SA government funding | Register now — gates access to TIA, IDC, ARMSCOR |
+
+### Tier 1: R50K-R500K — 3-6 Months
+
+Grants and accelerators. Non-dilutive or minimal dilution.
+
+| Source | Amount | Fit | Requirements |
+|--------|--------|-----|-------------|
+| **TIA Seed Fund** | R500K-R2M | HIGH — early-stage deep tech, rolling applications | Business plan, tech description, team CVs |
+| **Soonami Accelerator** | Program + investment | HIGH — pitch structure already exists in our docs | Application + pitch |
+| **Grindstone (Knife Capital)** | R500K-R2M + 12mo mentorship | HIGH — Aerobotics (drone+AI) is alumni | Application, 12-month program commitment |
+| **Startupbootcamp AfriTech** | $15K equity-free + mentorship | MEDIUM — more generic but good network | Application |
+
+### Tier 2: R2M-R15M — 6-12 Months (Post-Prototype)
+
+Requires a working hardware prototype and ideally first customer traction.
+
+| Source | Amount | Requirements |
+|--------|--------|-------------|
+| **IDC (Industrial Development Corporation)** | R5M-R50M | Registered company, business plan, working prototype. They explicitly fund "defense & security" manufacturing. Equity + loan combos. |
+| **ARMSCOR Technology Development** | Co-development contracts | SANDF has acknowledged C-UAS as a capability gap (Project Koba/Biro). Denel is in business rescue. SA military has no current C-UAS system. We're positioning into a vacuum. |
+| **CSIR DPSS** | Research partnership + facilities | Co-development, radar ranges, sensor testing capabilities. Academic partnership recommended (Stellenbosch). |
+| **EU Defence Fund programs** | EUR 8B fund (2021-2027) | Requires EU entity or EU partner. Worth pursuing via UK DASA or Netherlands/Belgium partnership. |
+
+### Tier 3: Europe-First Strategy — 6-18 Months
+
+Primary target market. EU has urgent political pressure (airport closures) and funding (EUR 8B defence fund).
+
+| Opportunity | Amount | Notes |
+|-------------|--------|-------|
+| **UK DASA** (Defence and Security Accelerator) | GBP 50K-1M per competition | Requires UK entity, but SA subsidiary can do R&D. Counter-UAS competitions run periodically. |
+| **Canada CUAS Sandbox** | $1.75M CAD prize pool | Open international competition. TRL 5 minimum — stretch goal for 2026. |
+| **EU Horizon Europe** | Varies | Security research calls. Need EU academic/industry partner. |
+| **Direct EU enterprise sales** | EUR 50K-200K per pilot | Airports, power utilities, event venues. Detection-only is legal everywhere. |
+
+### Tier 4: $1M-$10M — 12-24 Months (Post-Revenue)
+
+Only pursue after proving revenue and product-market fit.
+
+| Source | Amount | Prerequisites |
+|--------|--------|--------------|
+| **Delaware C-Corp formation** | Unlocks US SBIR/STTR programs ($150K-$1.5M/phase) | Need US entity + US-based PI |
+| **International defense VC** (Shield Capital, Lux, a]ventures) | $1M-$10M | Need US/EU entity, revenue, proven product |
+| **Abu Dhabi EDGE Group / Saudi GAMI** | Strategic investment | Active investors in non-US defense tech. UAE/Saudi building C-UAS capability aggressively. |
+| **Series A** | $3M-$5M | Multiple EU deployments, proven revenue, team of 5-10 |
+
+---
+
+## 4. Legal Considerations
+
+### Signal Jamming Is Illegal in SA
+
+ICASA regulations prohibit radio frequency jamming. Our safest market entry is **detection-only**. Physical interdiction (net capture) is a legal grey area. This actually helps our funding case — "we're a detection and evidence platform" is easier to fund and regulate than "we're a weapons system."
+
+### ITAR and Export Control
+
+- SA is **not** subject to ITAR — this is a competitive advantage
+- SA is a Wassenaar Arrangement member — some export controls apply to dual-use technology
+- Detection-only equipment has the fewest export restrictions
+- US market requires Delaware C-Corp + potential ITAR registration (future)
+
+### EU Market Entry
+
+- CE marking required for electronic equipment sold in EU
+- Detection equipment (cameras, compute, sensors) has straightforward CE path
+- No specific counter-UAS certification exists in most EU countries — regulatory gap we can move through quickly
+- GDPR compliance required for any data processing (our blockchain evidence chain is privacy-by-design)
+
+---
+
+## 5. Microsoft Founders Hub Reapplication
+
+### Strategy
+
+Previous application went to phoenixvc instead of phoenixrooivalk — funding was lost due to entity mismatch. Clean slate under NexaMesh brand.
+
+### Applicant: Charl Chapman
+
+- **Why Charl:** Fresh account, no association with previous application. Jurie's account is tied to Phoenix Rooivalk on Founders Hub.
+- **LinkedIn:** Needs to be created (Co-Founder & Hardware Lead at NexaMesh)
+- **Email:** New NexaMesh domain email or personal email
+
+### Application Positioning
+
+> "NexaMesh is an AI-powered airspace awareness platform using Azure cloud services. We detect unauthorized drones using edge AI (NVIDIA Jetson) and create blockchain-verified evidence chains for prosecution. Our software platform is built on Azure (Cosmos DB, Functions, Static Web Apps, App Insights) and we need Founders Hub credits to scale our cloud infrastructure as we onboard our first European pilot customers."
+
+### Checklist
+
+- [ ] Create Charl Chapman LinkedIn profile
+- [ ] Register nexamesh.com domain (or chosen domain)
+- [ ] Set up charl@nexamesh.com email
+- [ ] Apply at foundershub.startups.microsoft.com
+- [ ] Do NOT reference phoenixvc, phoenixrooivalk, or Jurie's existing account
+- [ ] Emphasize existing Azure usage (Cosmos DB, Functions, Static Web Apps, App Insights)
+
+---
+
+## 6. The Fundable Narrative
+
+### For Grant Applications (TIA, NVIDIA, Microsoft)
+
+> "We're two South African engineers building affordable AI-powered airspace awareness technology. Our software platform — blockchain evidence chain, edge AI detection, threat simulation — is built and operational. We need grant funding to build our first hardware detection prototype and validate it with a European pilot customer. Our R1,500 detection nodes make counter-drone protection accessible to organizations that can't afford R15M Israeli systems."
+
+### For Accelerators (Soonami, Grindstone)
+
+> "NexaMesh is a counter-drone detection platform with a unique blockchain evidence chain. The $6.64B counter-UAS market is growing 25% annually, driven by incidents like the Brussels Airport closures. We've built a production-quality software platform and need accelerator support to bridge to hardware prototype and first EU revenue."
+
+### For Enterprise Customers (EU Airports, Utilities)
+
+> "NexaMesh Sentinel provides AI-powered drone detection with legally admissible blockchain evidence — addressing the exact gap that let Gatwick 2018 perpetrators escape prosecution. Our detection nodes start at EUR 2,000, compared to EUR 1M+ from DroneShield or Dedrone. We're seeking pilot partners to validate our system at European critical infrastructure sites."
+
+### For Defense (ARMSCOR, UK DASA)
+
+> "South Africa has no indigenous counter-UAS capability despite SANDF acknowledging the requirement (Project Koba/Biro). NexaMesh provides AI-powered detection with blockchain evidence chain, built on open architecture. Our non-ITAR South African base enables export to markets restricted for US/EU competitors. We're seeking co-development partnership to validate detection capability for SANDF and allied forces."
+
+---
+
+## 7. Priority Action Items
+
+| # | Action | Cost | Timeline | Owner |
+|---|--------|------|----------|-------|
+| 1 | Register on CSD (csd.gov.za) | Free | This week | Jurie |
+| 2 | Apply: NVIDIA Inception | Free | This week | Jurie |
+| 3 | Apply: Microsoft Founders Hub (Charl) | Free | After LinkedIn + email setup | Charl |
+| 4 | Apply: AWS Activate | Free | This week | Jurie |
+| 5 | Create detection demo video | R0 (laptop + existing code) | Q1-Q2 2026 | Jurie |
+| 6 | Create Charl Chapman LinkedIn | Free | This week | Charl |
+| 7 | Apply: TIA Seed Fund | Free | Q2 2026 | Jurie |
+| 8 | Apply: Soonami accelerator | Free | Next intake | Jurie |
+| 9 | Contact: ARMSCOR Technology Development | Free (meeting) | Q2 2026 | Via Martyn (advisor) |
+| 10 | Build: Hardware prototype v0.1 | R2K-R5K (components) | Q2-Q3 2026 | Charl |
+| 11 | Register: SA entity (Pty Ltd) | ~R1K-R5K | Q2 2026 | Jurie |
+| 12 | Apply: Grindstone (Knife Capital) | Free | Next cohort | Jurie |
+| 13 | Research: UK DASA competitions | Free | Q2-Q3 2026 | Jurie |
+| 14 | Apply: Canada CUAS Sandbox | Free | Application deadline TBD | Jurie |
+
+---
+
+## 8. What NOT to Do
+
+1. **Don't pitch as Series A when you're pre-seed.** The biggest fundability risk is the gap between claims and reality. Lead with what's real.
+2. **Don't spend money on marketing before you have a product.** Every rand goes to hardware prototype.
+3. **Don't pursue US market first.** ITAR, Delaware C-Corp, SBIR — all require infrastructure you don't have. Europe first.
+4. **Don't apply for funding that requires things you don't have** (TRL 5+, revenue, incorporated entity) — unless the application process itself is valuable.
+5. **Don't ignore the advisors.** Martyn's factory access and defense connections, Eben's financial modeling, Pieter's embedded expertise — all become critical when you're past prototype stage.
+
+---
+
+*This document is living and will be updated as funding applications progress and milestones are achieved.*
