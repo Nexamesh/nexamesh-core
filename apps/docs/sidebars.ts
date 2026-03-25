@@ -555,6 +555,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             "visual-elements/system-architecture-diagrams",
+            "design/brand-identity-direction",
             "design/icon-requirements",
           ],
         },
