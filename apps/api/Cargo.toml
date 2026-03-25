@@ -22,7 +22,7 @@ tower = "0.5"
 tower_governor = "0.8"
 governor = "0.10"
 # Cryptographic hashing for attestation preview
-sha2 = "0.10"
+sha2 = "0.11"
 hex = "0.4"
 # Async trait support for database providers
 async-trait = "0.1"
