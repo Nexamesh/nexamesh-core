@@ -2,7 +2,8 @@
 
 **Date**: 2026-03-25
 **Branch**: `claude/cr2032-rechargeable-research-3mWaD`
-**PR**: #776 (open, targeting `dev`)
+**PR**: #776 (merged into dev)
+**New repo**: `Nexamesh/nexamesh-core` (GitHub redirecting — brand confirmed)
 
 ---
 
@@ -42,9 +43,10 @@ Inception, and other startup program applications.
 - Sentrix Defence — SA spelling, enterprise feel
 - Skygrid Technologies — clean startup feel
 
-**Decision: NOT YET FINALIZED.** Pick the name, register the domain, THEN do
-the doc rewrites. SkySnare (consumer) and AeroNet (enterprise) sub-brands
-remain unchanged under the new parent.
+**Decision: CONFIRMED — Nexamesh.**
+GitHub repo has been moved to `Nexamesh/nexamesh-core`. Domain/org registered.
+SkySnare (consumer) and AeroNet (enterprise) sub-brands remain unchanged under
+the Nexamesh parent.
 
 ---
 
@@ -229,13 +231,13 @@ kills trust the moment any investor does light due diligence.
 | `apps/docs/docs/business/opportunities/cloud-credits-programs.md` | Add rebrand strategy section. Note which programs Charl applies under new brand. |
 | `apps/docs/docs/playbooks/pre-pitch-checklist.mdx` | Update "Quick Reference: Key Numbers" — current numbers don't match reality. |
 
-### Deferred Until Brand Name Confirmed
+### Now Unblocked — Brand is Nexamesh
 
-| File | Why deferred |
-|------|-------------|
-| `pitch-deck/PITCH_DECK_v2.0.md` | Need new brand name first |
-| `apps/docs/src/components/Downloads/slidedecks/*.ts` | Same |
-| `apps/marketing/src/components/sections/TeamSection.tsx` | Same |
+| File | Changes needed |
+|------|---------------|
+| `pitch-deck/PITCH_DECK_v2.0.md` | Rebrand Phoenix Rooivalk → Nexamesh throughout |
+| `apps/docs/src/components/Downloads/slidedecks/*.ts` | Rebrand to Nexamesh |
+| `apps/marketing/src/components/sections/TeamSection.tsx` | Update to Nexamesh team structure |
 
 ### Files That Are Fine — Leave Alone
 
@@ -314,10 +316,11 @@ SKYSNARE.RETURN_RATE: "8-10%"     // → remove (no product to return)
 
 ## Next Steps (In Order)
 
-**Before anything else:** Finalize the brand name. Everything else depends on it.
+**Brand confirmed: Nexamesh.** Repo moved to `Nexamesh/nexamesh-core`.
 
-1. ☐ **Brand name decision** — Altivigil vs TalonGrid vs other
-2. ☐ **Create `fundability-roadmap.md`** — master funding plan
+1. ✅ **Brand name decision** — **Nexamesh** (repo already moved)
+2. ☐ **Repoint local git remote** to `Nexamesh/nexamesh-core`
+3. ☐ **Create `fundability-roadmap.md`** — master funding plan
 3. ☐ **Create `sa-funding-guide.md`** — SA-specific programs deep-dive
 4. ☐ **Create `startup-program-tracker.md`** — application tracker
 5. ☐ **Rewrite `values.ts` TEAM section** — add Charl, remove Pieter, advisors
