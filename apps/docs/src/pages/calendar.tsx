@@ -435,7 +435,7 @@ const calendarEvents: CalendarItem[] = [
   {
     date: "2026-05-01",
     title: "D2C Website Launch",
-    description: "SkySnare consumer direct-to-consumer launch",
+    description: "Kestrel Mesh consumer direct-to-consumer launch",
     category: "development",
     priority: "high",
   },
@@ -467,7 +467,7 @@ const calendarEvents: CalendarItem[] = [
   {
     date: "2026-06-15",
     title: "FAA Part 107 Waiver Submission",
-    description: "US regulatory compliance submission for AeroNet",
+    description: "US regulatory compliance submission for Sentinel Ring",
     category: "compliance",
     priority: "high",
   },
@@ -659,7 +659,7 @@ const calendarEvents: CalendarItem[] = [
   {
     date: "2026-12-31",
     title: "5,000 Consumer Units Target",
-    description: "SkySnare consumer sales milestone",
+    description: "Kestrel Mesh consumer sales milestone",
     category: "development",
     priority: "high",
   },
@@ -676,7 +676,7 @@ const calendarEvents: CalendarItem[] = [
   // ============================================
   {
     date: "2027-01-15",
-    title: "First AeroNet Enterprise Pilot Deployment",
+    title: "First Sentinel Ring Enterprise Pilot Deployment",
     description: "Initial customer deployment target",
     category: "development",
     priority: "critical",

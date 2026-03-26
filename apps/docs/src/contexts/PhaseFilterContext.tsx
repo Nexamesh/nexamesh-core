@@ -3,8 +3,8 @@
  * Provides phase filtering state across the documentation site
  *
  * Phases aligned with funding rounds and product evolution:
- * - seed: SkySnare Launch (Nov 2025 - Oct 2026) - Consumer product, prototype
- * - series-a: AeroNet & DoD (Nov 2026 - 2027) - Enterprise, SBIR validation
+ * - seed: Kestrel Mesh Launch (Nov 2025 - Oct 2026) - Consumer product, prototype
+ * - series-a: Sentinel Ring & DoD (Nov 2026 - 2027) - Enterprise, SBIR validation
  * - series-b: Ground Systems (2028) - RKV-G Rover/GCS, production scale
  * - series-c: Aerial Platform (2029) - RKV-M Mothership, RKV-I Interceptors
  * - scale: Global Deployment (2030+) - Full system, FMS, NATO
@@ -38,20 +38,20 @@ export const PHASE_INFO: Record<
   }
 > = {
   seed: {
-    label: "Seed: SkySnare Launch",
+    label: "Seed: Kestrel Mesh Launch",
     shortLabel: "Seed",
     timeline: "Nov 2025 - Oct 2026",
     trl: "TRL 3-5",
-    products: ["SkySnare D2C", "Core prototype"],
+    products: ["Kestrel Mesh D2C", "Core prototype"],
     funding: "$1.5M",
     description: "Consumer product launch, prototype validation",
   },
   "series-a": {
-    label: "Series A: AeroNet & DoD",
+    label: "Series A: Sentinel Ring & DoD",
     shortLabel: "Series A",
     timeline: "Nov 2026 - 2027",
     trl: "TRL 5-6",
-    products: ["AeroNet Enterprise", "SBIR/DoD validation"],
+    products: ["Sentinel Ring Enterprise", "SBIR/DoD validation"],
     funding: "$8-12M",
     description: "Enterprise launch, DoD validation, SBIR contracts",
   },
@@ -175,12 +175,12 @@ export function PhaseFilterProvider({
       { value: "all" as PhaseFilter, label: "All Phases", shortLabel: "All" },
       {
         value: "seed" as PhaseFilter,
-        label: "Seed: SkySnare Launch",
+        label: "Seed: Kestrel Mesh Launch",
         shortLabel: "Seed",
       },
       {
         value: "series-a" as PhaseFilter,
-        label: "Series A: AeroNet & DoD",
+        label: "Series A: Sentinel Ring & DoD",
         shortLabel: "Series A",
       },
       {

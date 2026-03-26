@@ -11,7 +11,7 @@ stack:
 - **Next.js 16** marketing site (`apps/marketing/`) — static export, React 19
 - **Docusaurus 3** docs portal (`apps/docs/`) — Azure Functions backend
 - **Leptos WASM** threat simulator (`apps/threat-simulator-desktop/`)
-- **Shared packages**: `@phoenix-rooivalk/types`, `ui`, `utils`
+- **Shared packages**: `@nexamesh/types`, `ui`, `utils`
 
 Key constraints:
 

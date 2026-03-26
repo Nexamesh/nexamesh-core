@@ -44,7 +44,7 @@ export const hardwarePricing = {
    *                  Representative range: $2K-$5K.
    *
    *  infrastructure — SkyWatch Enterprise ($5,000-$20,000) per sensor tower
-   *                   + AeroNet Command software license ($25,000-$50,000)
+   *                   + Sentinel Ring Command software license ($25,000-$50,000)
    *                   covering unlimited sites.  A single-facility deployment
    *                   combining one Enterprise sensor cluster with Command
    *                   runs $30,000-$70,000.
@@ -60,8 +60,8 @@ export const hardwarePricing = {
    *   products.ts → SkyWatch Pro:        $250-$600
    *   products.ts → NetSnare Pro:        $1,200-$2,000
    *   products.ts → SkyWatch Enterprise: $5,000-$20,000
-   *   products.ts → AeroNet Enterprise:  $150,000 setup + $25K/month
-   *   products.ts → AeroNet Command:     $25,000-$50,000 license
+   *   products.ts → Sentinel Ring Enterprise:  $150,000 setup + $25K/month
+   *   products.ts → Sentinel Ring Command:     $25,000-$50,000 license
    *   products.ts → RKV-M Mothership:    $65,000-$85,000
    *   products.ts → RKV-G Ground Station:$100,000-$150,000
    */
@@ -82,7 +82,7 @@ export const hardwarePricing = {
 
     /**
      * Infrastructure deployment package: SkyWatch Enterprise sensor cluster
-     * + AeroNet Command software license (unlimited sites).
+     * + Sentinel Ring Command software license (unlimited sites).
      * Individual SKU prices in products.ts: SW-ENT-001 $5K-$20K, AN-CMD-001 $25K-$50K.
      */
     infrastructure: {
@@ -91,7 +91,7 @@ export const hardwarePricing = {
       range: { min: 30_000, max: 70_000 },
       confidence: "projected",
       notes:
-        "Infrastructure deployment package: SkyWatch Enterprise + AeroNet Command license per facility. See products.ts for individual SKU prices.",
+        "Infrastructure deployment package: SkyWatch Enterprise + Sentinel Ring Command license per facility. See products.ts for individual SKU prices.",
     } as CurrencyValue & { range: { min: number; max: number } },
 
     /**
@@ -105,7 +105,7 @@ export const hardwarePricing = {
       range: { min: 2_000, max: 5_000 },
       confidence: "projected",
       notes:
-        "Commercial deployment package: SkyWatch Pro + NetSnare Pro per site node (hardware only, no AeroNet Command license). See products.ts for individual SKU prices.",
+        "Commercial deployment package: SkyWatch Pro + NetSnare Pro per site node (hardware only, no Sentinel Ring Command license). See products.ts for individual SKU prices.",
     } as CurrencyValue & { range: { min: number; max: number } },
 
     /**
@@ -128,7 +128,7 @@ export const hardwarePricing = {
    *
    * The inHouse figure ($56K) is the nearest published COGS proxy for a
    * high-end enterprise-tier unit.  The closest matching SKU in products.ts
-   * is AeroNet Enterprise (AN-ENT-001) with COGS $59,200 — a 5.7% variance
+   * is Sentinel Ring Enterprise (AN-ENT-001) with COGS $59,200 — a 5.7% variance
    * likely reflecting assembly-hour cost assumptions used at different points
    * in time.  Use products.ts as the authoritative per-SKU COGS source.
    */
@@ -138,7 +138,7 @@ export const hardwarePricing = {
       zar: 850_000,
       confidence: "verified",
       notes:
-        "In-house manufacturing cost per enterprise-tier unit (proxy; nearest SKU match: AeroNet Enterprise at $59,200 COGS per products.ts — 5.7% variance).",
+        "In-house manufacturing cost per enterprise-tier unit (proxy; nearest SKU match: Sentinel Ring Enterprise at $59,200 COGS per products.ts — 5.7% variance).",
     } as CurrencyValue,
 
     outsourced: {

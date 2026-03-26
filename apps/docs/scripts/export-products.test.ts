@@ -109,7 +109,7 @@ describe("export-products", () => {
 
     it("should have valid product lines", () => {
       const data = getProductsData();
-      const validLines = ["SkyWatch", "NetSentry", "SkySnare", "NetSnare", "AeroNet", "RKV"];
+      const validLines = ["SkyWatch", "NetSentry", "KestrelMesh", "NetSnare", "SentinelRing", "RKV"];
 
       for (const product of data) {
         expect(validLines).toContain(product.line);

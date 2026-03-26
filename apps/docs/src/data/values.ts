@@ -128,7 +128,7 @@ export const PERFORMANCE = {
  * Segment → deployment package → representative SKU bundles (from products.ts):
  *   commercial      SkyWatch Pro ($250-$600) + NetSnare Pro ($1,200-$2,000)
  *                   per node; 2-node redundant site ≈ $2,900-$5,200 hardware.
- *   infrastructure  SkyWatch Enterprise ($5K-$20K) + AeroNet Command license
+ *   infrastructure  SkyWatch Enterprise ($5K-$20K) + Sentinel Ring Command license
  *                   ($25K-$50K); per-facility total $30K-$70K.
  *   military        RKV-G Ground Station ($100K-$150K) + RKV-M Mothership
  *                   ($65K-$85K); minimum 1-GCS+1-aerial unit $165K-$235K.
@@ -138,13 +138,13 @@ export const PRICING = {
   // (NOT individual SKU prices — see products.ts for per-SKU pricing)
   SYSTEM_RANGE: "$2K-$235K", // Full span: commercial node through military system
   MILITARY_RANGE: "$165K-$235K", // RKV-G + RKV-M minimum deployable unit
-  INFRASTRUCTURE_RANGE: "$30K-$70K", // SkyWatch Enterprise + AeroNet Command per facility
+  INFRASTRUCTURE_RANGE: "$30K-$70K", // SkyWatch Enterprise + Sentinel Ring Command per facility
   COMMERCIAL_RANGE: "$2K-$5K", // SkyWatch Pro + NetSnare Pro per site node
 
   // Cost savings
   COST_SAVINGS: "60%",
   INHOUSE_COST_ZAR: "R850,000",
-  INHOUSE_COST_USD: "$56,000", // Proxy; nearest SKU: AeroNet Enterprise COGS $59,200 (5.7% variance)
+  INHOUSE_COST_USD: "$56,000", // Proxy; nearest SKU: Sentinel Ring Enterprise COGS $59,200 (5.7% variance)
 
   // Margins
   GROSS_MARGIN: "65%",
@@ -678,7 +678,7 @@ export const NETS = {
   LARGE_FORMAT_STRENGTH: "800 kg per strand",
   LARGE_FORMAT_TARGET_SPEED: "Up to 150 km/h",
 
-  // Ground-Launched Net (SkySnare)
+  // Ground-Launched Net (Kestrel Mesh)
   GROUND_SIZE: "2m × 2m (4 m²)",
   GROUND_RANGE: "15-30m effective",
   GROUND_MATERIAL: "HDPE/Nylon blend",

@@ -178,7 +178,7 @@ export const FIGURES = {
   competitorAccuracy: "70-85%",
 
   // ==========================================================================
-  // PRODUCT FIGURES (SkySnare/AeroNet)
+  // PRODUCT FIGURES (KestrelMesh/SentinelRing)
   // ==========================================================================
   skySnareTAM: "$1.68B",
   aeroNetTAM: "$4.2B",

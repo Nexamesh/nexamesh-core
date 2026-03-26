@@ -102,10 +102,10 @@ export const pitchDeckSlides: Slide[] = [
       {
         text: "**6 Product Lines:** Full spectrum coverage",
         subPoints: [
-          "Consumer: **SkySnare** ($349)",
+          "Consumer: **Kestrel Mesh** ($349)",
           "Detection: **SkyWatch** ($50-$20K)",
           "Commercial: **NetSnare/NetSentry** ($150-$2K)",
-          "Enterprise: **AeroNet** ($150K + $25K/mo)",
+          "Enterprise: **Sentinel Ring** ($150K + $25K/mo)",
           "Military: **RKV Systems** ($8K-$150K)",
         ],
       },

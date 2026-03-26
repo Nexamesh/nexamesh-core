@@ -231,7 +231,7 @@ export const demoPitchSlides: Slide[] = [
       {
         text: "**6 Product Lines:** Consumer to Military",
         subPoints: [
-          "**SkySnare** ($349) → **RKV Systems** ($150K)",
+          "**Kestrel Mesh** ($349) → **RKV Systems** ($150K)",
           "Hardware + SaaS recurring revenue model",
         ],
       },
@@ -274,8 +274,8 @@ export const demoPitchSlides: Slide[] = [
       {
         text: "**Phased product delivery:**",
         subPoints: [
-          "**Seed (Q1-Q3 2026)**: SkySnare, SkyWatch, NetSnare, NetSentry",
-          "**Series A (Q4 2026-Q3 2027)**: AeroNet Enterprise platform",
+          "**Seed (Q1-Q3 2026)**: Kestrel Mesh, SkyWatch, NetSnare, NetSentry",
+          "**Series A (Q4 2026-Q3 2027)**: Sentinel Ring Enterprise platform",
           "**Series B+ (2028+)**: RKV military interceptors",
         ],
       },
@@ -283,7 +283,7 @@ export const demoPitchSlides: Slide[] = [
     speakerNotes:
       "Lead with platform maturity - 51 ADRs is exceptional for seed stage. Hardware status shows execution. Phased delivery shows we understand sequencing.",
     script:
-      "We've built significant platform infrastructure with zero capital raised. 215 documentation pages with AI-powered search. 51 architecture decision records published - that's enterprise-grade documentation. A working WASM threat simulator you can try in the browser. And our x402 blockchain payment protocol is live in production. On hardware: CAD designs complete, prototype 40% assembled for Q1 completion, Kevlar nets tested, patent filing in Q1. Our product delivery is phased: SkySnare and detection products in the seed phase, AeroNet enterprise platform in Series A, and RKV military interceptors in Series B and beyond.",
+      "We've built significant platform infrastructure with zero capital raised. 215 documentation pages with AI-powered search. 51 architecture decision records published - that's enterprise-grade documentation. A working WASM threat simulator you can try in the browser. And our x402 blockchain payment protocol is live in production. On hardware: CAD designs complete, prototype 40% assembled for Q1 completion, Kevlar nets tested, patent filing in Q1. Our product delivery is phased: Kestrel Mesh and detection products in the seed phase, Sentinel Ring enterprise platform in Series A, and RKV military interceptors in Series B and beyond.",
   },
 
   // ==========================================

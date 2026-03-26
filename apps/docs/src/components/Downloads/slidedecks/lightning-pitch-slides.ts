@@ -53,7 +53,7 @@ export const lightningPitchSlides: Slide[] = [
     icon: "🛡️",
     layout: "video",
     video: "/videos/netlauncher-poc-short.mp4",
-    videoCaption: "SkySnare prototype - CO₂ pneumatic net launcher",
+    videoCaption: "Kestrel Mesh prototype - CO₂ pneumatic net launcher",
     keyPoints: [
       "**Sub-second response** vs 5-30s military systems",
       "**No training required** - point and shoot",
@@ -98,7 +98,7 @@ export const lightningPitchSlides: Slide[] = [
     keyPoints: [],
     productCards: [
       {
-        name: "SkySnare",
+        name: "Kestrel Mesh",
         tagline: "Point & Shoot Protection",
         description:
           "Handheld drone capture. Aim, fire, catch. No training required.",
@@ -141,9 +141,9 @@ export const lightningPitchSlides: Slide[] = [
       },
     ],
     speakerNotes:
-      "PIETER DELIVERS THIS SLIDE. Show the 3 consumer products. SkySnare handheld, SkyWatch Nano camera, NetSnare auto-launcher. Emphasize staggered release - first product July.",
+      "PIETER DELIVERS THIS SLIDE. Show the 3 consumer products. Kestrel Mesh handheld, SkyWatch Nano camera, NetSnare auto-launcher. Emphasize staggered release - first product July.",
     script:
-      "Three products to protect your home. SkySnare - point and shoot, $349, shipping July. SkyWatch Nano - AI detection camera, $99, September. NetSnare Lite - automated ground launcher, from $200, January 2027. Preorders open now.",
+      "Three products to protect your home. Kestrel Mesh - point and shoot, $349, shipping July. SkyWatch Nano - AI detection camera, $99, September. NetSnare Lite - automated ground launcher, from $200, January 2027. Preorders open now.",
   },
 
   // ==========================================

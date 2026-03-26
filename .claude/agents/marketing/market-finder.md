@@ -36,8 +36,8 @@ Canonical market and competitor data (docs-side):
 
 Market segments:
 
-1. **Consumer sports/training** (SkySnare) — Drone racing, hobby events
-2. **Critical infrastructure** (AeroNet) — Airports, power plants, prisons
+1. **Consumer sports/training** (Kestrel Mesh) — Consumer detection, hobby events
+2. **Critical infrastructure** (Sentinel Ring) — Airports, power plants, prisons
 3. **Government/military** — SBIR, DoD, law enforcement
 4. **Events/venues** — Stadiums, concerts, VIP protection
 5. **Agriculture** — Crop protection, livestock monitoring

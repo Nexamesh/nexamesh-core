@@ -18,7 +18,7 @@ export const qaAppendixSlides: Slide[] = [
     icon: "🎬",
     layout: "video",
     video: "/videos/netlauncher-poc-short.mp4",
-    videoCaption: "SkySnare prototype - CO2 pneumatic net launcher",
+    videoCaption: "Kestrel Mesh prototype - CO2 pneumatic net launcher",
     keyPoints: [
       "**CO2 pneumatic propulsion** - completely safe",
       "**Captures target intact** - no damage",
@@ -28,7 +28,7 @@ export const qaAppendixSlides: Slide[] = [
     speakerNotes:
       "Play the demo. Let it speak for itself. Point out the clean capture and safety.",
     script:
-      "Here's our net launcher in action. CO2 pneumatic propulsion, completely safe. The net captures the target intact. And it's reusable - just reload. This is our SkySnare consumer prototype.",
+      "Here's our net launcher in action. CO2 pneumatic propulsion, completely safe. The net captures the target intact. And it's reusable - just reload. This is our Kestrel Mesh consumer prototype.",
   },
 
   // ==========================================
@@ -199,7 +199,7 @@ export const qaAppendixSlides: Slide[] = [
     duration: 30,
     icon: "💰",
     layout: "two-column",
-    leftColumnTitle: "Consumer (SkySnare)",
+    leftColumnTitle: "Consumer (Kestrel Mesh)",
     leftColumn: [
       "MSRP: **$349**",
       "COGS: **$145**",
@@ -207,7 +207,7 @@ export const qaAppendixSlides: Slide[] = [
       "CAC: **$45** (D2C/influencer)",
       "Return rate: **<3%**",
     ],
-    rightColumnTitle: "Enterprise (AeroNet)",
+    rightColumnTitle: "Enterprise (Sentinel Ring)",
     rightColumn: [
       "Setup: **$150K**",
       "Monthly: **$25K**",
@@ -229,7 +229,7 @@ export const qaAppendixSlides: Slide[] = [
     speakerNotes:
       "Strong margins on both sides. In-house manufacturing is the key advantage.",
     script:
-      "Consumer: SkySnare at $349, COGS of $145, gives us 58% gross margin. CAC is $45 through D2C and influencer channels. Return rate under 3%. Enterprise: AeroNet at $150K setup plus $25K monthly, 44% gross margin, LTV over $450K. Our key cost advantage: in-house Kevlar net manufacturing from domestic stock. 60% cost reduction versus imports, no lead time delays, and we keep full IP protection.",
+      "Consumer: Kestrel Mesh at $349, COGS of $145, gives us 58% gross margin. CAC is $45 through D2C and influencer channels. Return rate under 3%. Enterprise: Sentinel Ring at $150K setup plus $25K monthly, 44% gross margin, LTV over $450K. Our key cost advantage: in-house Kevlar net manufacturing from domestic stock. 60% cost reduction versus imports, no lead time delays, and we keep full IP protection.",
   },
 
   // ==========================================
@@ -243,7 +243,7 @@ export const qaAppendixSlides: Slide[] = [
     layout: "default",
     keyPoints: [
       {
-        text: "**Consumer first (SkySnare) - Q2/Q3 2026:**",
+        text: "**Consumer first (Kestrel Mesh) - Q2/Q3 2026:**",
         subPoints: [
           "D2C website + Amazon",
           "Influencer marketing (outdoor sports)",
@@ -252,7 +252,7 @@ export const qaAppendixSlides: Slide[] = [
         ],
       },
       {
-        text: "**Enterprise second (AeroNet) - Q4 2026:**",
+        text: "**Enterprise second (Sentinel Ring) - Q4 2026:**",
         subPoints: [
           "Regional airports (not hubs - faster sales)",
           "Event venues, stadiums",
@@ -271,7 +271,7 @@ export const qaAppendixSlides: Slide[] = [
     speakerNotes:
       "Consumer funds enterprise. Eastern Europe is hot market due to war fears.",
     script:
-      "Consumer first with SkySnare, Q2/Q3 2026. D2C and Amazon, influencer marketing. Target is active families with higher income. US first, then EU. Enterprise follows Q4 2026 - regional airports, event venues. Our hot markets: Germany, Poland, Baltics where 77% believe war is imminent. Fear creates urgency and faster sales cycles.",
+      "Consumer first with Kestrel Mesh, Q2/Q3 2026. D2C and Amazon, influencer marketing. Target is active families with higher income. US first, then EU. Enterprise follows Q4 2026 - regional airports, event venues. Our hot markets: Germany, Poland, Baltics where 77% believe war is imminent. Fear creates urgency and faster sales cycles.",
   },
 
   // ==========================================
@@ -505,7 +505,7 @@ export const qaAppendixSlides: Slide[] = [
     layout: "default",
     keyPoints: [
       {
-        text: "**SkySnare (Consumer) - $349**",
+        text: "**Kestrel Mesh (Consumer) - $349**",
         subPoints: [
           "Range: 15-30m",
           "Weight: ~1.2kg",
@@ -528,7 +528,7 @@ export const qaAppendixSlides: Slide[] = [
           "Range: 25-75m",
           "Hybrid spring + CO2",
           "Multiple net sizes",
-          "Integrated with AeroNet platform",
+          "Integrated with Sentinel Ring platform",
         ],
       },
       "",
@@ -537,7 +537,7 @@ export const qaAppendixSlides: Slide[] = [
     speakerNotes:
       "For technical investors who want specs. Emphasize configurability.",
     script:
-      "Detailed specs. SkySnare consumer at $349: 15 to 30 meter range, 1.2 kilos, CO2 cartridge, fully reusable at $1-2 per shot. NetSnare commercial: 25 to 50 meter range, ground-mounted, pneumatic. NetSentry Pro for facilities: up to 75 meter range, hybrid propulsion, integrates with our AeroNet platform. All specs are configurable - different nets, ranges, mounting options based on customer needs.",
+      "Detailed specs. Kestrel Mesh consumer at $349: 15 to 30 meter range, 1.2 kilos, CO2 cartridge, fully reusable at $1-2 per shot. NetSnare commercial: 25 to 50 meter range, ground-mounted, pneumatic. NetSentry Pro for facilities: up to 75 meter range, hybrid propulsion, integrates with our Sentinel Ring platform. All specs are configurable - different nets, ranges, mounting options based on customer needs.",
   },
 ];
 
