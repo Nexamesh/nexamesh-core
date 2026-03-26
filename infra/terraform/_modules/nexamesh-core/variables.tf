@@ -19,6 +19,12 @@ variable "location" {
   type        = string
 }
 
+variable "swa_location" {
+  description = "Azure region for Static Web Apps (eastus not supported; use eastus2, westus2, etc.)"
+  type        = string
+  default     = "eastus2"
+}
+
 variable "repository_url" {
   description = "GitHub repository URL for Static Web Apps"
   type        = string

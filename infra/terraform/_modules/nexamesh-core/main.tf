@@ -167,7 +167,7 @@ module "staticwebapp_docs" {
   source = "../staticwebapp"
 
   name                = format("nex-%s-docs-swa", var.environment)
-  location            = azurerm_resource_group.shared.location
+  location            = var.swa_location
   resource_group_name = azurerm_resource_group.shared.name
   tags                = local.tags
 
@@ -186,7 +186,7 @@ module "staticwebapp_marketing" {
   source = "../staticwebapp"
 
   name                = format("nex-%s-marketing-swa", var.environment)
-  location            = azurerm_resource_group.shared.location
+  location            = var.swa_location
   resource_group_name = azurerm_resource_group.shared.name
   tags                = local.tags
 
