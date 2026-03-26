@@ -87,12 +87,24 @@ resource "azurerm_cosmosdb_sql_container" "comments" {
     indexing_mode = "consistent"
     included_path { path = "/*" }
     composite_index {
-      index { path = "/pageId"    order = "ascending"  }
-      index { path = "/createdAt" order = "descending" }
+      index {
+        path  = "/pageId"
+        order = "ascending"
+      }
+      index {
+        path  = "/createdAt"
+        order = "descending"
+      }
     }
     composite_index {
-      index { path = "/status"    order = "ascending" }
-      index { path = "/createdAt" order = "ascending" }
+      index {
+        path  = "/status"
+        order = "ascending"
+      }
+      index {
+        path  = "/createdAt"
+        order = "ascending"
+      }
     }
   }
 }
@@ -138,8 +150,14 @@ resource "azurerm_cosmosdb_sql_container" "news_articles" {
     indexing_mode = "consistent"
     included_path { path = "/*" }
     composite_index {
-      index { path = "/category"    order = "ascending"  }
-      index { path = "/publishedAt" order = "descending" }
+      index {
+        path  = "/category"
+        order = "ascending"
+      }
+      index {
+        path  = "/publishedAt"
+        order = "descending"
+      }
     }
   }
 }
@@ -175,8 +193,14 @@ resource "azurerm_cosmosdb_sql_container" "weekly_reports" {
     indexing_mode = "consistent"
     included_path { path = "/*" }
     composite_index {
-      index { path = "/status"        order = "ascending"  }
-      index { path = "/weekStartDate" order = "descending" }
+      index {
+        path  = "/status"
+        order = "ascending"
+      }
+      index {
+        path  = "/weekStartDate"
+        order = "descending"
+      }
     }
   }
 }
@@ -193,8 +217,14 @@ resource "azurerm_cosmosdb_sql_container" "known_emails" {
     indexing_mode = "consistent"
     included_path { path = "/*" }
     composite_index {
-      index { path = "/profileKey" order = "ascending"  }
-      index { path = "/createdAt"  order = "descending" }
+      index {
+        path  = "/profileKey"
+        order = "ascending"
+      }
+      index {
+        path  = "/createdAt"
+        order = "descending"
+      }
     }
   }
 }
@@ -211,12 +241,24 @@ resource "azurerm_cosmosdb_sql_container" "access_applications" {
     indexing_mode = "consistent"
     included_path { path = "/*" }
     composite_index {
-      index { path = "/status"    order = "ascending"  }
-      index { path = "/createdAt" order = "descending" }
+      index {
+        path  = "/status"
+        order = "ascending"
+      }
+      index {
+        path  = "/createdAt"
+        order = "descending"
+      }
     }
     composite_index {
-      index { path = "/userId"    order = "ascending"  }
-      index { path = "/createdAt" order = "descending" }
+      index {
+        path  = "/userId"
+        order = "ascending"
+      }
+      index {
+        path  = "/createdAt"
+        order = "descending"
+      }
     }
   }
 }
