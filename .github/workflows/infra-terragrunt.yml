@@ -9,14 +9,14 @@ on:
     paths:
       - "infra/terraform/_modules/**"
       - "infra/terraform/live/**"
-      - "infra/terraform/root.terragrunt.hcl"
+      - "infra/terraform/terragrunt.hcl"
       - ".github/workflows/infra-terragrunt.yml"
   push:
     branches: [dev]
     paths:
       - "infra/terraform/_modules/**"
       - "infra/terraform/live/dev/**"
-      - "infra/terraform/root.terragrunt.hcl"
+      - "infra/terraform/terragrunt.hcl"
   workflow_dispatch:
     inputs:
       environment:
@@ -32,11 +32,12 @@ on:
         default: plan
         required: true
 
-# OIDC token for Azure login + write access to post PR comments
+# OIDC token for Azure login + write access to post PR comments + sync SWA tokens
 permissions:
   contents: read
   id-token: write
   pull-requests: write
+  secrets: write
 
 env:
   TF_VERSION: "1.9.8"
@@ -259,6 +260,27 @@ jobs:
           echo "marketing_url=$MKT_URL"  >> $GITHUB_OUTPUT
           echo "functions_url=$FUNC_URL" >> $GITHUB_OUTPUT
           echo "key_vault_uri=$KV_URI"   >> $GITHUB_OUTPUT
+
+          # SWA deployment tokens — captured separately, never logged
+          terragrunt output -raw static_web_app_docs_api_key      2>/dev/null > /tmp/swa_docs_token.txt      || true
+          terragrunt output -raw static_web_app_marketing_api_key 2>/dev/null > /tmp/swa_marketing_token.txt || true
+
+      - name: Sync SWA deployment tokens to GitHub Secrets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ENV: ${{ env.ENVIRONMENT }}
+          REPO: ${{ github.repository }}
+        run: |
+          ENV_UPPER=$(echo "$ENV" | tr '[:lower:]' '[:upper:]')
+          sync_secret() {
+            local name="$1" file="$2"
+            if [ -s "$file" ]; then
+              gh secret set "$name" --repo "$REPO" < "$file"
+              echo "Synced $name"
+            fi
+          }
+          sync_secret "SWA_TOKEN_DOCS_${ENV_UPPER}"      /tmp/swa_docs_token.txt
+          sync_secret "SWA_TOKEN_MARKETING_${ENV_UPPER}" /tmp/swa_marketing_token.txt
 
       - name: Apply step summary
         env:

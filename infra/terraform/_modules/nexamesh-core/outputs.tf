@@ -4,6 +4,18 @@
 # Maps from: infra/azure/main.bicep outputs
 # =============================================================================
 
+output "static_web_app_docs_api_key" {
+  description = "Docs SWA deployment token — written to GitHub Secrets by CI"
+  value       = module.staticwebapp_docs.api_key
+  sensitive   = true
+}
+
+output "static_web_app_marketing_api_key" {
+  description = "Marketing SWA deployment token — written to GitHub Secrets by CI"
+  value       = module.staticwebapp_marketing.api_key
+  sensitive   = true
+}
+
 output "static_web_app_docs_url" {
   description = "Documentation Static Web App URL"
   value       = module.staticwebapp_docs.url
