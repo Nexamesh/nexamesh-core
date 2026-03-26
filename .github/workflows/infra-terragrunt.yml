@@ -197,8 +197,9 @@ jobs:
     if: |
       github.event_name == 'push' ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'apply')
-    # GitHub Environment: add required reviewers here for prd protection
-    environment: ${{ github.event.inputs.environment || 'dev' }}
+    # Uncomment to add required-reviewer gates (also add matching federated
+    # credential subject repo:Nexamesh/nexamesh-core:environment:<env>):
+    # environment: ${{ github.event.inputs.environment || 'dev' }}
 
     env:
       ENVIRONMENT: ${{ github.event.inputs.environment || 'dev' }}
