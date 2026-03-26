@@ -18,7 +18,7 @@ include "root" {
 }
 
 terraform {
-  source = "${local.common.locals.module_base_path}/nexamesh-core"
+  source = "${local.common.locals.module_base_path}//nexamesh-core"
 }
 
 inputs = {
