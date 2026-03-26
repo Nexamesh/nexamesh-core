@@ -15,9 +15,6 @@ resource "azurerm_container_app_environment" "this" {
 
   log_analytics_workspace_id = var.log_analytics_workspace_id
 
-  # Zone redundancy -- enable for prd, false for dev/stg to save cost
-  zone_redundancy_enabled = var.zone_redundancy_enabled
-
   # Peer-to-peer encryption within the environment
   mutual_tls_enabled = true
 

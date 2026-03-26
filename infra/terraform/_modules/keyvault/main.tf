@@ -36,11 +36,12 @@ resource "azurerm_key_vault" "this" {
 }
 
 # Secrets passed as a map: { SecretName = "value" }
+# Keys are not sensitive (just names), so nonsensitive(keys(...)) is safe for for_each
 resource "azurerm_key_vault_secret" "secrets" {
-  for_each = var.secrets
+  for_each = toset(nonsensitive(keys(var.secrets)))
 
   name         = each.key
-  value        = each.value
+  value        = var.secrets[each.key]
   key_vault_id = azurerm_key_vault.this.id
   content_type = "text/plain"
 

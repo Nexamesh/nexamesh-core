@@ -13,9 +13,6 @@ resource "azurerm_static_web_app" "this" {
   sku_tier            = var.sku
   sku_size            = var.sku
 
-  repository_url    = var.repository_url
-  branch            = var.branch
-
   app_settings = {}
 
   tags = var.tags
