@@ -189,6 +189,14 @@ export const FeaturesSection: React.FC = () => {
             ))}
           </div>
         </div>
+        <div className={styles.ctaSection}>
+          <a href="/products" className="btn btn--primary">
+            Explore All Products
+          </a>
+          <a href="/preorder" className="btn btn--secondary">
+            Preorder Now
+          </a>
+        </div>
       </div>
     </section>
   );

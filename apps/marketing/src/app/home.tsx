@@ -22,7 +22,7 @@ export default function HomePage(): React.ReactElement {
       {/* Background mesh effect - subtle with mouse interaction */}
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.07)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={25}
         bendRadius={120}
       />
