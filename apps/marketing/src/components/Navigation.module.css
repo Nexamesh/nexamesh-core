@@ -168,16 +168,7 @@
   position: relative;
 }
 
-.navButton:hover,
-.navButton:focus {
-  color: rgb(var(--text-primary));
-}
-
-.navButtonActive {
-  color: rgb(var(--primary));
-}
-
-.navButtonActive::after {
+.navButton::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -186,6 +177,27 @@
   height: 2px;
   background: rgb(var(--primary));
   border-radius: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navButton:hover,
+.navButton:focus {
+  color: rgb(var(--primary));
+}
+
+.navButton:hover::after,
+.navButton:focus-within::after {
+  transform: scaleX(1);
+}
+
+.navButtonActive {
+  color: rgb(var(--primary));
+}
+
+.navButtonActive::after {
+  transform: scaleX(1);
 }
 
 .navLink {
@@ -197,15 +209,8 @@
   position: relative;
 }
 
-.navLink:hover {
-  color: rgb(var(--text-primary));
-}
-
-.navLinkActive {
-  color: rgb(var(--primary));
-}
-
-.navLinkActive::after {
+/* Animated underline — slides in from left on hover */
+.navLink::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -214,6 +219,25 @@
   height: 2px;
   background: rgb(var(--primary));
   border-radius: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navLink:hover {
+  color: rgb(var(--primary));
+}
+
+.navLink:hover::after {
+  transform: scaleX(1);
+}
+
+.navLinkActive {
+  color: rgb(var(--primary));
+}
+
+.navLinkActive::after {
+  transform: scaleX(1);
 }
 
 .chevron {

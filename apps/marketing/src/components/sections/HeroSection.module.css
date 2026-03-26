@@ -40,12 +40,50 @@
   }
 }
 
+/* Decorative radar — positioned behind content */
+.radarDecoration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Entrance animation for each hero element */
+.container > * {
+  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.statusLine     { animation-delay: 0.05s; }
+.headline       { animation-delay: 0.15s; }
+.description    { animation-delay: 0.25s; }
+.ctaSection     { animation-delay: 0.35s; }
+.proofPoints    { animation-delay: 0.45s; }
+.trustSignals   { animation-delay: 0.55s; }
+
 /* Status line - simple, not flashy */
 .statusLine {
   font-size: var(--text-sm);
   color: rgb(var(--text-muted));
   margin-bottom: var(--space-6);
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Live status dot */
+.statusDot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(var(--status-active, 52 211 153));
+  animation: glowPulse 2s ease-in-out infinite, statusBlink 2.5s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
 /* Main headline - one focal point */

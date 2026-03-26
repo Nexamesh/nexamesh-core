@@ -194,3 +194,24 @@
   left: 0;
   color: rgb(var(--primary));
 }
+
+/* Closing CTA */
+.timelineCta {
+  text-align: center;
+  padding: var(--space-12) var(--space-4) var(--space-8);
+  border-top: 1px solid rgba(var(--primary), 0.15);
+  margin-top: var(--space-8);
+}
+
+.timelineCtaText {
+  font-size: 1.1rem;
+  color: rgb(var(--text-secondary));
+  margin-bottom: var(--space-6);
+}
+
+.timelineCtaButtons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -55,6 +55,16 @@
   border: 1px solid rgba(var(--border), 0.5);
   border-radius: 0.75rem;
   padding: var(--space-8);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--primary), 0.35);
+  box-shadow: 0 12px 36px rgba(var(--primary), 0.12);
 }
 
 .cardTitle {

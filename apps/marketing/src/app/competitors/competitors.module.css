@@ -363,3 +363,24 @@
   color: rgb(var(--gray));
   line-height: 1.6;
 }
+
+/* Closing CTA */
+.ctaSection {
+  text-align: center;
+  padding: var(--space-12) var(--space-4) var(--space-6);
+  border-top: 1px solid rgba(var(--primary), 0.15);
+  margin-top: var(--space-8);
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  color: rgb(var(--text-secondary));
+  margin-bottom: var(--space-6);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}

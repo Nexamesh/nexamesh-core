@@ -189,6 +189,23 @@ export const TimelineSection: React.FC = () => {
               </RevealSection>
             ))}
           </div>
+
+          <RevealSection>
+            <div className={styles.timelineCta}>
+              <p className={styles.timelineCtaText}>
+                First deliveries Q3 2026. Reserve your place in the queue —
+                no deposit required.
+              </p>
+              <div className={styles.timelineCtaButtons}>
+                <a href="/preorder" className="btn btn--primary">
+                  Preorder Now
+                </a>
+                <a href="#contact" className="btn btn--secondary">
+                  Contact Sales
+                </a>
+              </div>
+            </div>
+          </RevealSection>
         </div>
       </div>
     </section>

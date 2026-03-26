@@ -379,6 +379,22 @@ export default function CompetitorsPageClient(): React.ReactElement {
             </div>
           </section>
 
+          {/* CTA */}
+          <div className={styles.ctaSection}>
+            <p className={styles.ctaText}>
+              See how NexaMesh stacks up in your environment — no deposit, no
+              commitment.
+            </p>
+            <div className={styles.ctaButtons}>
+              <a href="/preorder" className="btn btn--primary">
+                Preorder Now
+              </a>
+              <a href="/roi-calculator" className="btn btn--secondary">
+                Calculate Your ROI
+              </a>
+            </div>
+          </div>
+
           {/* Disclaimer */}
           <div className={styles.disclaimer}>
             Competitor information is based on publicly available data as of

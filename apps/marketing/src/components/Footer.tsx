@@ -29,6 +29,14 @@ export const Footer: React.FC = () => {
         { href: "/about", label: "About Us" },
       ],
     },
+    {
+      title: "Legal",
+      links: [
+        { href: "/legal/privacy", label: "Privacy Policy" },
+        { href: "/legal/terms", label: "Terms of Service" },
+        { href: "/compliance", label: "Compliance" },
+      ],
+    },
   ];
 
   return (
@@ -96,11 +104,11 @@ export const Footer: React.FC = () => {
             <div className={styles.bottomContent}>
               <div className={styles.copyright}>
                 <p className={styles.copyrightText}>
-                  © 2025 NexaMesh. All rights reserved.
+                  © 2026 NexaMesh. All rights reserved.
                 </p>
                 <p className={styles.copyrightSubtext}>
-                  ITAR Compliance Planned • ISO 27001 Certification Planned •
-                  Classified Operations Planned Ready
+                  ITAR Compliance Roadmap • ISO 27001 Certification Roadmap •
+                  SOC 2 Type II Planned
                 </p>
               </div>
 

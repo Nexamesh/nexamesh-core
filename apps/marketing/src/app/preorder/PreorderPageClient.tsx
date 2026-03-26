@@ -640,6 +640,52 @@ export default function PreorderPage(): React.ReactElement {
         )}
       </div>
 
+      {/* What Happens After You Reserve */}
+      <div className={styles.container}>
+        <div className={styles.faqSection}>
+          <h2 className={styles.sectionTitle}>What Happens After You Reserve</h2>
+          <div className={styles.faqGrid}>
+            <div className={styles.faqItem}>
+              <h3 className={styles.faqQuestion}>Is there a deposit?</h3>
+              <p className={styles.faqAnswer}>
+                No deposit required. You reserve your place in the delivery
+                queue at no cost. Payment is collected closer to your delivery
+                date.
+              </p>
+            </div>
+            <div className={styles.faqItem}>
+              <h3 className={styles.faqQuestion}>When will I receive it?</h3>
+              <p className={styles.faqAnswer}>
+                Each product card shows its delivery phase. Kestrel Mesh first
+                deliveries are planned for Q3 2026. Sentinel Ring enterprise
+                deployments begin Q4 2026. We&apos;ll email you as your date
+                approaches.
+              </p>
+            </div>
+            <div className={styles.faqItem}>
+              <h3 className={styles.faqQuestion}>Can I cancel?</h3>
+              <p className={styles.faqAnswer}>
+                Yes — cancel any time before payment is requested. Email{" "}
+                <a href="mailto:orders@nexamesh.ai">orders@nexamesh.ai</a> with
+                your order reference and we&apos;ll remove your reservation
+                immediately.
+              </p>
+            </div>
+            <div className={styles.faqItem}>
+              <h3 className={styles.faqQuestion}>
+                I need more than 5 units — what then?
+              </h3>
+              <p className={styles.faqAnswer}>
+                Add details in the notes field at checkout or email{" "}
+                <a href="mailto:sales@nexamesh.ai">sales@nexamesh.ai</a>{" "}
+                directly. Volume pricing and custom deployment packages are
+                available for 5+ units.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <Footer />
     </main>

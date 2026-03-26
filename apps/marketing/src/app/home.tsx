@@ -7,7 +7,9 @@ import { ContactSection } from "../components/sections/ContactSection";
 import { FeaturesSection } from "../components/sections/FeaturesSection";
 import { HeroSection } from "../components/sections/HeroSection";
 import { ProductHighlightsSection } from "../components/sections/ProductHighlightsSection";
+import { ThreatRealitySection } from "../components/sections/ThreatRealitySection";
 import { InteractiveMesh } from "../components/ui/InteractiveMesh";
+import { MeshDivider } from "../components/ui/MeshDivider";
 import { serializeJsonLd } from "@nexamesh/utils";
 
 import { usePerformanceOptimizations } from "../hooks/usePerformanceOptimizations";
@@ -34,8 +36,13 @@ export default function HomePage(): React.ReactElement {
 
       {/* Main Content Sections */}
       <HeroSection />
+      <MeshDivider />
+      <ThreatRealitySection />
+      <MeshDivider />
       <FeaturesSection />
+      <MeshDivider />
       <ProductHighlightsSection />
+      <MeshDivider />
       <ContactSection />
 
       {/* Footer */}

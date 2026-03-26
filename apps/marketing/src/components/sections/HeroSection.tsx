@@ -1,13 +1,17 @@
 import * as React from "react";
 import { Button } from "../ui/button";
+import { RadarRings } from "../ui/RadarRings";
 import styles from "./HeroSection.module.css";
 
 export const HeroSection: React.FC = () => {
   return (
     <section className={styles.section} id="hero">
+      <RadarRings size={520} className={styles.radarDecoration} />
+
       <div className={styles.container}>
-        {/* Single status indicator - buyer-focused */}
+        {/* Status indicator with live dot */}
         <p className={styles.statusLine}>
+          <span className={styles.statusDot} aria-hidden="true" />
           Early access open · Kestrel Mesh ships Q3 2026
         </p>
 

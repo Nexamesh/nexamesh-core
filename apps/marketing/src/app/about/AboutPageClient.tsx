@@ -27,7 +27,7 @@ export function AboutPage(): React.ReactElement {
       {/* Background mesh effect */}
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />

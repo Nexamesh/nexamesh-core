@@ -47,7 +47,7 @@ export const MarketIntelligenceSection: React.FC = () => {
     },
     {
       name: "Dual-Market Gap",
-      description: "Phoenix opportunity: consumer + enterprise",
+      description: "NexaMesh opportunity: consumer + enterprise",
       metrics: [
         { value: "Minimal", label: "Competition" },
         { value: "High", label: "Opportunity" },

@@ -22,7 +22,7 @@ export function PartnershipsPage(): React.ReactElement {
     <main className={styles.main}>
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />
@@ -38,8 +38,8 @@ export function PartnershipsPage(): React.ReactElement {
               <div className={styles.headerSection}>
                 <h1 className={styles.title}>Partnership Opportunities</h1>
                 <p className={styles.subtitle}>
-                  Explore collaboration opportunities with Phoenix
-                  Rooivalk&apos;s innovative counter-drone defense technology.
+                  Explore collaboration opportunities with NexaMesh&apos;s
+                  edge AI mesh sensor platform for counter-drone detection.
                 </p>
               </div>
 

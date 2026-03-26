@@ -1,0 +1,44 @@
+.root {
+  color: rgb(var(--primary));
+  display: block;
+}
+
+/* Full rotation — radar sweep */
+.sweepGroup {
+  transform-origin: center;
+  animation: radarSweep 4s linear infinite;
+}
+
+/* Center pulse ring */
+.centerPulse {
+  animation: centerPing 2.4s ease-out infinite;
+}
+
+/* Threat blips fade in and out */
+.blip {
+  animation: blipFade 2s ease-in-out infinite;
+}
+
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes centerPing {
+  0%   { r: 6; opacity: 0.35; }
+  60%  { r: 14; opacity: 0; }
+  100% { r: 6; opacity: 0; }
+}
+
+@keyframes blipFade {
+  0%, 100% { opacity: 0.15; }
+  50%       { opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sweepGroup,
+  .centerPulse,
+  .blip {
+    animation: none;
+  }
+}
