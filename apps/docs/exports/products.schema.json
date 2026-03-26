@@ -21,7 +21,7 @@
       },
       "line": {
         "type": "string",
-        "enum": ["SkyWatch", "NetSentry", "Kestrel Mesh", "NetSnare", "Sentinel Ring", "RKV"],
+        "enum": ["skywatch", "netsentry", "kestrel", "netsnare", "sentinel-ring", "rkv"],
         "description": "Product line"
       },
       "category": {

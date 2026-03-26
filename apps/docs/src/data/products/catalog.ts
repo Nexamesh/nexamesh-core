@@ -14,7 +14,7 @@ import type { Product } from "./types";
 export const skyWatchNano: Product = {
   sku: "SW-NANO-001",
   name: "SkyWatch Nano",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Hobbyists, makers, educational",
   priceRange: "$50-100",
@@ -123,7 +123,7 @@ export const skyWatchNano: Product = {
 export const skyWatchStandard: Product = {
   sku: "SW-STD-001",
   name: "SkyWatch Standard",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Homeowners, small property",
   priceRange: "$100-250",
@@ -256,7 +256,7 @@ export const skyWatchStandard: Product = {
 export const skyWatchPro: Product = {
   sku: "SW-PRO-001",
   name: "SkyWatch Pro",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Farms, estates, commercial property",
   priceRange: "$250-600",
@@ -429,7 +429,7 @@ export const skyWatchPro: Product = {
 export const skyWatchMobile: Product = {
   sku: "SW-MOB-001",
   name: "SkyWatch Mobile",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Security patrols, event staff",
   priceRange: "$200-500",
@@ -586,7 +586,7 @@ export const skyWatchMobile: Product = {
 export const skyWatchThermalBudget: Product = {
   sku: "SW-THM-001-B",
   name: "SkyWatch Thermal (Budget)",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "24/7 operations, night security",
   priceRange: "$400-800",
@@ -667,7 +667,7 @@ export const skyWatchThermalBudget: Product = {
 export const skyWatchThermalPro: Product = {
   sku: "SW-THM-001-P",
   name: "SkyWatch Thermal (Pro)",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "24/7 operations, night security",
   priceRange: "$1,000-1,500",
@@ -764,7 +764,7 @@ export const skyWatchThermalPro: Product = {
 export const skyWatchMarine: Product = {
   sku: "SW-MAR-001",
   name: "SkyWatch Marine",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Vessels, marinas, coastal facilities",
   priceRange: "$600-2,000",
@@ -877,7 +877,7 @@ export const skyWatchMarine: Product = {
 export const skyWatchMeshNode: Product = {
   sku: "SW-MESH-001-N",
   name: "SkyWatch Mesh (Node)",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Large perimeters, farms, industrial sites",
   priceRange: "$150-200/node",
@@ -948,7 +948,7 @@ export const skyWatchMeshNode: Product = {
 export const skyWatchMeshCentral: Product = {
   sku: "SW-MESH-001-C",
   name: "SkyWatch Mesh (Central)",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Large perimeters, farms, industrial sites",
   priceRange: "$350-400",
@@ -1012,7 +1012,7 @@ export const skyWatchMeshCentral: Product = {
 export const skyWatchEnterprise: Product = {
   sku: "SW-ENT-001",
   name: "SkyWatch Enterprise",
-  line: "SkyWatch",
+  line: "skywatch",
   category: "detection",
   targetMarket: "Corporate campuses, critical infrastructure",
   priceRange: "$5,000-20,000",
@@ -1113,7 +1113,7 @@ export const skyWatchEnterprise: Product = {
 export const netSentryLite: Product = {
   sku: "NS-LITE-001",
   name: "NetSentry Lite",
-  line: "NetSentry",
+  line: "netsentry",
   category: "countermeasure",
   targetMarket: "Makers, hobbyists, testing",
   priceRange: "$150-400",
@@ -1225,7 +1225,7 @@ export const netSentryLite: Product = {
 export const netSentryStandard: Product = {
   sku: "NS-STD-001",
   name: "NetSentry Standard",
-  line: "NetSentry",
+  line: "netsentry",
   category: "countermeasure",
   targetMarket: "Property protection",
   priceRange: "$400-800",
@@ -1346,7 +1346,7 @@ export const netSentryStandard: Product = {
 export const netSentryPro: Product = {
   sku: "NS-PRO-001",
   name: "NetSentry Pro",
-  line: "NetSentry",
+  line: "netsentry",
   category: "countermeasure",
   targetMarket: "Security professionals",
   priceRange: "$800-2,000",
@@ -1494,7 +1494,7 @@ export const netSentryPro: Product = {
 export const skySnare: Product = {
   sku: "SS-001",
   name: "Kestrel Mesh",
-  line: "KestrelMesh",
+  line: "kestrel",
   category: "countermeasure",
   targetMarket: "Property owners, outdoor enthusiasts, privacy advocates",
   priceRange: "$349",
@@ -1569,7 +1569,7 @@ export const skySnare: Product = {
 export const netSnareLite: Product = {
   sku: "NSN-LITE-001",
   name: "NetSnare Lite",
-  line: "NetSnare",
+  line: "netsnare",
   category: "countermeasure",
   targetMarket: "DIY enthusiasts, Makers, Property owners",
   priceRange: "$200-400",
@@ -1640,7 +1640,7 @@ export const netSnareLite: Product = {
 export const netSnareLiteTurret: Product = {
   sku: "NSN-LITE-001-TURRET",
   name: "NetSnare Lite (Turret)",
-  line: "NetSnare",
+  line: "netsnare",
   category: "countermeasure",
   targetMarket: "Demos, Makers, Phase-1 safe actuation",
   priceRange: "$150-350",
@@ -1710,7 +1710,7 @@ export const netSnareLiteTurret: Product = {
 export const responseRelayDemo: Product = {
   sku: "RR-DEMO-001",
   name: "Response Relay (Demo)",
-  line: "NetSnare",
+  line: "netsnare",
   category: "countermeasure",
   targetMarket: "Phase-1 demos, Lab validation",
   priceRange: "$40-80",
@@ -1763,7 +1763,7 @@ export const responseRelayDemo: Product = {
 export const netSnareStandard: Product = {
   sku: "NSN-STD-001",
   name: "NetSnare Standard",
-  line: "NetSnare",
+  line: "netsnare",
   category: "countermeasure",
   targetMarket: "Property owners, Small businesses, Farms",
   priceRange: "$500-800",
@@ -1850,7 +1850,7 @@ export const netSnareStandard: Product = {
 export const netSnarePro: Product = {
   sku: "NSN-PRO-001",
   name: "NetSnare Pro",
-  line: "NetSnare",
+  line: "netsnare",
   category: "countermeasure",
   targetMarket:
     "Commercial facilities, Critical infrastructure, Security firms",
@@ -1942,7 +1942,7 @@ export const netSnarePro: Product = {
 export const aeroNetEnterprise: Product = {
   sku: "AN-ENT-001",
   name: "Sentinel Ring Enterprise",
-  line: "SentinelRing",
+  line: "sentinel-ring",
   category: "detection",
   targetMarket: "Critical infrastructure, Airports, Prisons, Military bases",
   priceRange: "$150,000 setup + $25,000/month",
@@ -2021,7 +2021,7 @@ export const aeroNetEnterprise: Product = {
 export const aeroNetCommand: Product = {
   sku: "AN-CMD-001",
   name: "Sentinel Ring Command",
-  line: "SentinelRing",
+  line: "sentinel-ring",
   category: "detection",
   targetMarket: "Enterprise security teams, Multi-site operators, SOC teams",
   priceRange: "$25,000-50,000 license + $2,500/month",
@@ -2054,7 +2054,7 @@ export const aeroNetCommand: Product = {
 export const rkvMothership: Product = {
   sku: "RKV-M-001",
   name: "RKV-M Mothership",
-  line: "RKV",
+  line: "rkv",
   category: "countermeasure",
   targetMarket: "Military, Critical infrastructure",
   priceRange: "$65,000-85,000",
@@ -2149,7 +2149,7 @@ export const rkvMothership: Product = {
 export const rkvInterceptor: Product = {
   sku: "RKV-I-001",
   name: "RKV-I Interceptor",
-  line: "RKV",
+  line: "rkv",
   category: "countermeasure",
   targetMarket: "Military, Paired with RKV-M",
   priceRange: "$8,000-12,000",
@@ -2251,7 +2251,7 @@ export const rkvInterceptor: Product = {
 export const rkvGroundStation: Product = {
   sku: "RKV-G-001",
   name: "RKV-G Ground Station",
-  line: "RKV",
+  line: "rkv",
   category: "detection",
   targetMarket: "Military, Mobile operations",
   priceRange: "$100,000-150,000",
@@ -2479,7 +2479,7 @@ export function formatProductPriceRange(product: Product): string {
 
 /** Get products by line */
 export function getProductsByLine(
-  line: "SkyWatch" | "NetSentry" | "KestrelMesh" | "NetSnare" | "SentinelRing" | "RKV",
+  line: "skywatch" | "NetSentry" | "KestrelMesh" | "NetSnare" | "SentinelRing" | "RKV",
 ): Product[] {
   return allProducts.filter((p) => p.line === line);
 }
@@ -2542,23 +2542,24 @@ export function validateCatalogInvariants(): CatalogValidationResult {
 
 /** Line keys used for product list summary (order for display). */
 const PRODUCT_LINES = [
-  "SkyWatch",
-  "NetSentry",
-  "KestrelMesh",
-  "NetSnare",
-  "SentinelRing",
-  "RKV",
+  "skywatch",
+  "netsentry",
+  "kestrel",
+  "netsnare",
+  "sentinel-ring",
+  "rkv",
 ] as const;
 
+/** Alias for {@link ProductLine} — derived from the catalog's own PRODUCT_LINES tuple. */
 export type ProductLineId = (typeof PRODUCT_LINES)[number];
 
 /** Optional subtitle for product list section headings (definitive source for MDX). */
 const LINE_SUBTITLES: Partial<Record<ProductLineId, string>> = {
-  SkyWatch: "Detection",
-  NetSentry: "Countermeasure",
-  KestrelMesh: "Countermeasure",
-  NetSnare: "Countermeasure",
-  SentinelRing: "Detection / platform",
+  skywatch: "Detection",
+  netsentry: "Countermeasure",
+  kestrel: "Countermeasure",
+  netsnare: "Countermeasure",
+  "sentinel-ring": "Detection / platform",
 };
 
 /**
@@ -2581,12 +2582,12 @@ export function getProductListSummary(): {
   lastUpdated: string;
 } {
   const countsByLine = {
-    SkyWatch: skyWatchProducts.length,
-    NetSentry: netSentryProducts.length,
-    KestrelMesh: kestrelMeshProducts.length,
-    NetSnare: netSnareProducts.length,
-    SentinelRing: sentinelRingProducts.length,
-    RKV: rkvProducts.length,
+    skywatch: skyWatchProducts.length,
+    netsentry: netSentryProducts.length,
+    kestrel: kestrelMeshProducts.length,
+    netsnare: netSnareProducts.length,
+    "sentinel-ring": sentinelRingProducts.length,
+    rkv: rkvProducts.length,
   };
   const lastUpdated =
     allProducts.length > 0

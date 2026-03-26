@@ -16,7 +16,9 @@
     "types": ["node", "jest"],
     "baseUrl": ".",
     "paths": {
-      "@site/*": ["./*"]
+      "@site/*": ["./*"],
+      "@nexamesh/types": ["../../packages/types/src/index.ts"],
+      "@nexamesh/utils": ["../../packages/utils/src/index.ts"]
     }
   },
   "include": ["src/**/*", "docusaurus.config.ts", "sidebars.ts"],

@@ -1,4 +1,5 @@
 // Core types for NexaMesh system
+export * from "./products";
 
 // JSON-safe value type for serialization
 export type JSONValue =
