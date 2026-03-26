@@ -1,8 +1,14 @@
-"use client";
+import type { Metadata } from "next";
 import * as React from "react";
 import { Footer } from "../../../components/Footer";
 import { Navigation } from "../../../components/Navigation";
 import styles from "../compliance-subpage.module.css";
+
+export const metadata: Metadata = {
+  title: "ITAR Compliance | NexaMesh",
+  description:
+    "NexaMesh ITAR compliance framework — export license management, end-user verification, and technical data protection for defense technology.",
+};
 
 export default function ITARCompliancePage(): React.ReactElement {
   return (

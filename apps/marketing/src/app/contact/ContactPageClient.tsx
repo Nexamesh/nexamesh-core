@@ -137,7 +137,7 @@ export default function ContactPage(): React.ReactElement {
       {/* Background mesh effect */}
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />
@@ -170,22 +170,25 @@ export default function ContactPage(): React.ReactElement {
                   <h3 className={styles.subsectionTitle}>Email Us</h3>
                   <p className={styles.subsectionText}>
                     <button
+                      type="button"
                       onClick={() => handleEmailClick()}
                       className={styles.emailButton}
                       disabled={!email}
+                      aria-label="Send email to NexaMesh contact address"
                     >
                       {email || "Loading..."}
                     </button>
                   </p>
                 </div>
                 <div>
-                  <h3 className={styles.subsectionTitle}>Concept Discussion</h3>
+                  <h3 className={styles.subsectionTitle}>Deployment Discussion</h3>
                   <p className={styles.subsectionText}>
-                    Discuss the NexaMesh concept, technical
-                    architecture, and potential applications in your operational
-                    environment.
+                    Discuss deployment scenarios — airport perimeter coverage,
+                    critical infrastructure protection, event security — and how
+                    NexaMesh fits your operational environment.
                   </p>
                   <button
+                    type="button"
                     onClick={() =>
                       handleEmailClick(
                         "NexaMesh Concept Discussion",
@@ -194,6 +197,7 @@ export default function ContactPage(): React.ReactElement {
                     }
                     className={styles.primaryButton}
                     disabled={!email}
+                    aria-label="Request an intro call — opens email client"
                   >
                     Request Intro Call
                   </button>
@@ -208,11 +212,13 @@ export default function ContactPage(): React.ReactElement {
                     and funding opportunities.
                   </p>
                   <button
+                    type="button"
                     onClick={() =>
                       handleEmailClick("NexaMesh Investment Inquiry")
                     }
                     className={styles.secondaryButton}
                     disabled={!email}
+                    aria-label="Send investment inquiry — opens email client"
                   >
                     Investment Inquiry
                   </button>
@@ -412,15 +418,16 @@ export default function ContactPage(): React.ReactElement {
                   </div>
                 </div>
                 <div>
-                  <h4 className={styles.jobTitle}>Defense Systems Engineer</h4>
+                  <h4 className={styles.jobTitle}>Sensor Systems Engineer</h4>
                   <p className={styles.jobDescription}>
-                    Design and implement RF jamming and GPS spoofing
-                    countermeasures.
+                    Design and integrate multi-sensor detection pipelines — RF
+                    signature analysis, acoustic detection, and optical AI
+                    classification on edge hardware.
                   </p>
                   <div className={styles.tagContainer}>
                     <span className={styles.tag}>RF Engineering</span>
                     <span className={styles.tag}>Signal Processing</span>
-                    <span className={styles.tag}>Military Systems</span>
+                    <span className={styles.tag}>Edge AI</span>
                   </div>
                 </div>
               </div>
@@ -466,8 +473,8 @@ export default function ContactPage(): React.ReactElement {
                           <option value="Senior Software Engineer">
                             Senior Software Engineer
                           </option>
-                          <option value="Defense Systems Engineer">
-                            Defense Systems Engineer
+                          <option value="Sensor Systems Engineer">
+                            Sensor Systems Engineer
                           </option>
                         </select>
                       </div>

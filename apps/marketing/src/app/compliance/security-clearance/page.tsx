@@ -1,5 +1,11 @@
-"use client";
+import type { Metadata } from "next";
 import * as React from "react";
+
+export const metadata: Metadata = {
+  title: "Security Clearance | NexaMesh",
+  description:
+    "NexaMesh personnel security clearance framework for classified operations and sensitive defense technology access.",
+};
 import { Footer } from "../../../components/Footer";
 import { Navigation } from "../../../components/Navigation";
 import styles from "../compliance-subpage.module.css";
