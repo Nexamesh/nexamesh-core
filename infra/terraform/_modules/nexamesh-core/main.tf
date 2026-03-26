@@ -110,6 +110,7 @@ module "notificationhub" {
 #             keyvault (name + id for KV references and RBAC)
 # ---------------------------------------------------------------------------
 module "functions" {
+  count  = var.create_functions ? 1 : 0
   source = "../functions"
 
   name                = format("nex-%s-docs-func", var.environment)

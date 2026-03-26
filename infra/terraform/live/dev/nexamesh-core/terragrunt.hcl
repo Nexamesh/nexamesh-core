@@ -30,6 +30,7 @@ inputs = {
   use_serverless_cosmos_db = true
   enable_free_tier_cosmos  = false
 
+  create_functions          = false
   create_notification_hub   = false
   create_container_apps_env = false
 

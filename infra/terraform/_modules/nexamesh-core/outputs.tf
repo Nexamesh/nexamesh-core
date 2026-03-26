@@ -25,13 +25,13 @@ output "static_web_app_marketing_hostname" {
 }
 
 output "functions_url" {
-  description = "Functions App URL"
-  value       = module.functions.url
+  description = "Functions App URL (null when create_functions = false)"
+  value       = var.create_functions ? module.functions[0].url : null
 }
 
 output "functions_hostname" {
-  description = "Functions App hostname"
-  value       = module.functions.default_hostname
+  description = "Functions App hostname (null when create_functions = false)"
+  value       = var.create_functions ? module.functions[0].default_hostname : null
 }
 
 output "app_insights_connection_string" {

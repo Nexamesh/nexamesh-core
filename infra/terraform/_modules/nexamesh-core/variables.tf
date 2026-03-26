@@ -108,6 +108,12 @@ variable "enable_free_tier_cosmos" {
   default     = false
 }
 
+variable "create_functions" {
+  description = "Create Azure Functions app and service plan. Disable when Y1 Consumption quota is zero or Functions are not yet needed."
+  type        = bool
+  default     = true
+}
+
 variable "create_notification_hub" {
   description = "Create the Notification Hub namespace and hub. Disable in dev/stg to avoid unnecessary resources."
   type        = bool
