@@ -18,17 +18,17 @@ export const qaAppendixSlides: Slide[] = [
     icon: "🎬",
     layout: "video",
     video: "/videos/netlauncher-poc-short.mp4",
-    videoCaption: "Kestrel Mesh prototype - CO2 pneumatic net launcher",
+    videoCaption: "Kestrel Mesh prototype — edge AI-guided drone capture",
     keyPoints: [
-      "**CO2 pneumatic propulsion** - completely safe",
-      "**Captures target intact** - no damage",
-      "**Reusable** - just reload the net",
-      "**No permits required** - civilian-legal",
+      "**Edge AI detection** - sub-200ms response",
+      "**Captures target intact** - no damage, no debris",
+      "**Reusable** - field-reload in seconds",
+      "**No permits required** - civilian-legal (pneumatic category)",
     ],
     speakerNotes:
       "Play the demo. Let it speak for itself. Point out the clean capture and safety.",
     script:
-      "Here's our net launcher in action. CO2 pneumatic propulsion, completely safe. The net captures the target intact. And it's reusable - just reload. This is our Kestrel Mesh consumer prototype.",
+      "Here's Kestrel Mesh in action. Edge AI detects in under 200 milliseconds, autonomous response captures the target intact. Completely safe — pneumatic actuation, no pyrotechnic, no debris. And it's field-reloadable. This is our consumer prototype.",
   },
 
   // ==========================================

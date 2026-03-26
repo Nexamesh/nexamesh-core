@@ -79,7 +79,7 @@ export const quarterlyRoadmap: TimelinePoint[] = [
     year: 2026,
     description:
       "NexaMesh brand launch. Detection demo video (AI + blockchain on laptop). MS Founders Hub application under new brand.",
-    status: "in-progress",
+    status: "in_progress",
   },
   {
     quarter: "Q2",

@@ -175,10 +175,10 @@ export const products: Product[] = [
 
     targetMarket: [
       "Property owners",
-      "Outdoor enthusiasts",
+      "Security-conscious homeowners",
       "Privacy advocates",
     ],
-    marketSegment: "$3.22B outdoor sports market",
+    marketSegment: "$6.6B consumer counter-drone market",
 
     specs: {
       detectionRange: "30–80m",
@@ -233,8 +233,8 @@ export const products: Product[] = [
     assemblyHours: 1.5,
     laborCost: 14,
 
-    targetMarket: ["DIY enthusiasts", "Makers", "Property owners"],
-    marketSegment: "Ground-mounted launcher for SkyWatch users",
+    targetMarket: ["Property owners", "Small businesses", "First responders"],
+    marketSegment: "Entry-level automated perimeter defense",
 
     specs: {
       range: "10-20m launch",
@@ -391,8 +391,8 @@ export const products: Product[] = [
     assemblyHours: 1.04,
     laborCost: 10,
 
-    targetMarket: ["Hobbyists", "Makers", "Educational"],
-    marketSegment: "DIY/Maker community",
+    targetMarket: ["Security researchers", "System integrators", "Educational"],
+    marketSegment: "Entry-level edge AI detection",
 
     specs: {
       range: "30-50m",
@@ -783,8 +783,8 @@ export const products: Product[] = [
     assemblyHours: 2.62,
     laborCost: 24,
 
-    targetMarket: ["Makers", "Hobbyists", "Testers"],
-    marketSegment: "DIY/Testing (validates full detect+intercept stack)",
+    targetMarket: ["System integrators", "Security teams", "Proof-of-concept buyers"],
+    marketSegment: "Detect-to-intercept proof-of-concept stack",
 
     specs: {
       range: "5-15m launch",

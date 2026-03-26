@@ -24,7 +24,7 @@ export const demoPitchSlides: Slide[] = [
       "**Capture Drones Safely. No Damage.**",
       "*Seed Round 2026*",
       "",
-      "Pneumatic net launchers for training, events, and facility security",
+      "Edge AI detection. Autonomous net capture. Blockchain evidence.",
       "**Legal. Non-destructive. Deployable today.**",
       "",
       "**6 product lines** | **$349 - $150K** | **Q3 2026 delivery**",

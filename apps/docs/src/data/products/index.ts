@@ -98,9 +98,9 @@ export {
 export {
   skyWatchProducts,
   netSentryProducts,
-  skySnareProducts,
+  kestrelMeshProducts,
   netSnareProducts,
-  aeroNetProducts,
+  sentinelRingProducts,
   rkvProducts,
   allProducts,
   productBySku,

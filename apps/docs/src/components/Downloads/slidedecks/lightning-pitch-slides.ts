@@ -53,10 +53,10 @@ export const lightningPitchSlides: Slide[] = [
     icon: "🛡️",
     layout: "video",
     video: "/videos/netlauncher-poc-short.mp4",
-    videoCaption: "Kestrel Mesh prototype - CO₂ pneumatic net launcher",
+    videoCaption: "Kestrel Mesh prototype — edge AI-guided drone capture",
     keyPoints: [
       "**Sub-second response** vs 5-30s military systems",
-      "**No training required** - point and shoot",
+      "**Zero operator skill required** — AI handles detection and targeting",
       "**Works day or night** - no radar, no jamming",
       "**Portable** - single operator, reusable nets",
       "**Affordable** - Starting at **$349**",
@@ -64,7 +64,7 @@ export const lightningPitchSlides: Slide[] = [
     speakerNotes:
       "Play demo video while talking. Quick pivot from fear to hope. Emphasize: safe, legal, affordable.",
     script:
-      "[PLAY DEMO] NexaMesh. We capture drones safely with no damage. CO₂ net launchers - safe propellant, no permits needed. Legal and non-destructive. Starting at just $349.",
+      "[PLAY DEMO] NexaMesh — sub-200ms edge AI detection, autonomous net capture, blockchain-logged evidence. Legal anywhere, no permits required. Starting at $349.",
   },
 
   // ==========================================
@@ -143,7 +143,7 @@ export const lightningPitchSlides: Slide[] = [
     speakerNotes:
       "PIETER DELIVERS THIS SLIDE. Show the 3 consumer products. Kestrel Mesh handheld, SkyWatch Nano camera, NetSnare auto-launcher. Emphasize staggered release - first product July.",
     script:
-      "Three products to protect your home. Kestrel Mesh - point and shoot, $349, shipping July. SkyWatch Nano - AI detection camera, $99, September. NetSnare Lite - automated ground launcher, from $200, January 2027. Preorders open now.",
+      "Three products to protect your property. Kestrel Mesh — edge AI detection, one-button neutralise, $349, shipping July. SkyWatch Nano — AI detection sensor, $99, September. NetSnare Lite — automated ground response node, from $200, January 2027. Preorders open now.",
   },
 
   // ==========================================
