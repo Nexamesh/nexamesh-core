@@ -160,7 +160,7 @@ export const TimelineSection: React.FC = () => {
             >
               <CalendarExport
                 events={calendarEvents}
-                filename="phoenix-rooivalk-timeline"
+                filename="nexamesh-timeline"
               />
             </div>
           </RevealSection>

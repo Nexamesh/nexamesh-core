@@ -48,8 +48,8 @@ Email-only (no passwords):
 
 ## Theme System (`src/contexts/ThemeContext.tsx`)
 
-Three themes: "phoenix" (default orange), "blue", "green". Stored in
-localStorage key `phoenix-theme`. Sets CSS custom properties on
+Three themes: "nexamesh" (default Signal Amber), "blue", "green". Stored in
+localStorage key `nexamesh-theme`. Sets CSS custom properties on
 `document.documentElement`.
 
 ## Shopping Cart (`src/contexts/CartContext.tsx`)

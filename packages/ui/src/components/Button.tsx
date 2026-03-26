@@ -16,7 +16,7 @@ export interface ButtonProps {
 }
 
 /**
- * Button component using Phoenix Rooivalk design tokens.
+ * Button component using NexaMesh design tokens.
  *
  * Renders either a <button> or <a> element depending on whether `href` is
  * provided.  All interactive states honour WCAG AA+ contrast and 44×44 px

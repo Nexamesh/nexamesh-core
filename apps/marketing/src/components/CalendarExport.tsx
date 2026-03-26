@@ -24,14 +24,14 @@ interface CalendarExportProps {
  * <CalendarExport
  *   events={calendarEvents}
  *   buttonText="Add to Calendar"
- *   filename="phoenix-rooivalk-timeline"
+ *   filename="nexamesh-timeline"
  * />
  * ```
  */
 export const CalendarExport: React.FC<CalendarExportProps> = ({
   events,
   buttonText = "Add to My Calendar",
-  filename = "phoenix-rooivalk-timeline",
+  filename = "nexamesh-timeline",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);

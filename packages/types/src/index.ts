@@ -1,4 +1,4 @@
-// Core types for Phoenix Rooivalk system
+// Core types for NexaMesh system
 
 // JSON-safe value type for serialization
 export type JSONValue =

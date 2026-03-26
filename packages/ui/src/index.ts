@@ -1,4 +1,4 @@
-// Shared UI components for Phoenix Rooivalk
+// Shared UI components for NexaMesh
 
 export { Button } from "./components/Button";
 export { Card, CardHeader, CardBody, CardFooter } from "./components/Card";

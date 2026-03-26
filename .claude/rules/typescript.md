@@ -15,7 +15,7 @@ paths:
 - WCAG AA+ accessibility: ARIA labels, keyboard navigation, 4.5:1 contrast
 - ESLint security plugin enabled — no `dangerouslySetInnerHTML`, no `eval`
 - Cross-package imports use workspace protocol:
-  `"@phoenix-rooivalk/types": "workspace:*"`
+  `"@nexamesh/types": "workspace:*"`
 - Path aliases: `@/*` maps to `./src/*` in marketing app
 - Next.js marketing is static export (`output: "export"`) — no SSR, no API
   routes, no server components

@@ -44,7 +44,7 @@ export interface ProductSpecs {
 export interface Product {
   sku: string;
   name: string;
-  line: "SkyWatch" | "NetSentry" | "SkySnare" | "NetSnare" | "AeroNet" | "RKV";
+  line: "SkyWatch" | "NetSentry" | "KestrelMesh" | "NetSnare" | "SentinelRing" | "RKV";
   category: "detection" | "countermeasure";
   targetMarket: string;
   priceRange: string;

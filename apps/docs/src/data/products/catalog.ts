@@ -1490,11 +1490,11 @@ export const netSentryPro: Product = {
 // SKYSNARE LINE - CONSUMER (1 Product)
 // =============================================================================
 
-/** SkySnare - Consumer handheld launcher */
+/** Kestrel Mesh - Consumer edge AI sensor */
 export const skySnare: Product = {
   sku: "SS-001",
-  name: "SkySnare",
-  line: "SkySnare",
+  name: "Kestrel Mesh",
+  line: "KestrelMesh",
   category: "countermeasure",
   targetMarket: "Property owners, outdoor enthusiasts, privacy advocates",
   priceRange: "$349",
@@ -1938,11 +1938,11 @@ export const netSnarePro: Product = {
 // AERONET LINE - ENTERPRISE PLATFORM (2 Products)
 // =============================================================================
 
-/** AeroNet Enterprise - Full C-UAS platform */
+/** Sentinel Ring Enterprise - Full C-UAS platform */
 export const aeroNetEnterprise: Product = {
   sku: "AN-ENT-001",
-  name: "AeroNet Enterprise",
-  line: "AeroNet",
+  name: "Sentinel Ring Enterprise",
+  line: "SentinelRing",
   category: "detection",
   targetMarket: "Critical infrastructure, Airports, Prisons, Military bases",
   priceRange: "$150,000 setup + $25,000/month",
@@ -2017,11 +2017,11 @@ export const aeroNetEnterprise: Product = {
   lastUpdated: "2026-01-11",
 };
 
-/** AeroNet Command - C2 Software Platform */
+/** Sentinel Ring Command - C2 Software Platform */
 export const aeroNetCommand: Product = {
   sku: "AN-CMD-001",
-  name: "AeroNet Command",
-  line: "AeroNet",
+  name: "Sentinel Ring Command",
+  line: "SentinelRing",
   category: "detection",
   targetMarket: "Enterprise security teams, Multi-site operators, SOC teams",
   priceRange: "$25,000-50,000 license + $2,500/month",
@@ -2383,8 +2383,8 @@ export const netSentryProducts: Product[] = [
   netSentryPro,
 ];
 
-/** All SkySnare products */
-export const skySnareProducts: Product[] = [skySnare];
+/** All Kestrel Mesh products */
+export const kestrelMeshProducts: Product[] = [skySnare];
 
 /** All NetSnare products (includes Phase-1 turret and Response Relay demo) */
 export const netSnareProducts: Product[] = [
@@ -2395,8 +2395,8 @@ export const netSnareProducts: Product[] = [
   responseRelayDemo,
 ];
 
-/** All AeroNet products */
-export const aeroNetProducts: Product[] = [aeroNetEnterprise, aeroNetCommand];
+/** All Sentinel Ring products */
+export const sentinelRingProducts: Product[] = [aeroNetEnterprise, aeroNetCommand];
 
 /** All RKV products */
 export const rkvProducts: Product[] = [
@@ -2409,9 +2409,9 @@ export const rkvProducts: Product[] = [
 export const allProducts: Product[] = [
   ...skyWatchProducts,
   ...netSentryProducts,
-  ...skySnareProducts,
+  ...kestrelMeshProducts,
   ...netSnareProducts,
-  ...aeroNetProducts,
+  ...sentinelRingProducts,
   ...rkvProducts,
 ];
 
@@ -2436,7 +2436,7 @@ export const productBySku: Record<string, Product> = {
   "NS-LITE-001": netSentryLite,
   "NS-STD-001": netSentryStandard,
   "NS-PRO-001": netSentryPro,
-  // SkySnare
+  // Kestrel Mesh
   "SS-001": skySnare,
   // NetSnare
   "NSN-LITE-001": netSnareLite,
@@ -2444,7 +2444,7 @@ export const productBySku: Record<string, Product> = {
   "NSN-STD-001": netSnareStandard,
   "NSN-PRO-001": netSnarePro,
   "RR-DEMO-001": responseRelayDemo,
-  // AeroNet
+  // Sentinel Ring
   "AN-ENT-001": aeroNetEnterprise,
   "AN-CMD-001": aeroNetCommand,
   // RKV
@@ -2479,7 +2479,7 @@ export function formatProductPriceRange(product: Product): string {
 
 /** Get products by line */
 export function getProductsByLine(
-  line: "SkyWatch" | "NetSentry" | "SkySnare" | "NetSnare" | "AeroNet" | "RKV",
+  line: "SkyWatch" | "NetSentry" | "KestrelMesh" | "NetSnare" | "SentinelRing" | "RKV",
 ): Product[] {
   return allProducts.filter((p) => p.line === line);
 }
@@ -2544,9 +2544,9 @@ export function validateCatalogInvariants(): CatalogValidationResult {
 const PRODUCT_LINES = [
   "SkyWatch",
   "NetSentry",
-  "SkySnare",
+  "KestrelMesh",
   "NetSnare",
-  "AeroNet",
+  "SentinelRing",
   "RKV",
 ] as const;
 
@@ -2556,9 +2556,9 @@ export type ProductLineId = (typeof PRODUCT_LINES)[number];
 const LINE_SUBTITLES: Partial<Record<ProductLineId, string>> = {
   SkyWatch: "Detection",
   NetSentry: "Countermeasure",
-  SkySnare: "Countermeasure",
+  KestrelMesh: "Countermeasure",
   NetSnare: "Countermeasure",
-  AeroNet: "Detection / platform",
+  SentinelRing: "Detection / platform",
 };
 
 /**
@@ -2583,9 +2583,9 @@ export function getProductListSummary(): {
   const countsByLine = {
     SkyWatch: skyWatchProducts.length,
     NetSentry: netSentryProducts.length,
-    SkySnare: skySnareProducts.length,
+    KestrelMesh: kestrelMeshProducts.length,
     NetSnare: netSnareProducts.length,
-    AeroNet: aeroNetProducts.length,
+    SentinelRing: sentinelRingProducts.length,
     RKV: rkvProducts.length,
   };
   const lastUpdated =
@@ -2608,9 +2608,9 @@ export const productCatalogSummary = {
   totalProducts: allProducts.length,
   skyWatchCount: skyWatchProducts.length,
   netSentryCount: netSentryProducts.length,
-  skySnareCount: skySnareProducts.length,
+  kestrelMeshCount: kestrelMeshProducts.length,
   netSnareCount: netSnareProducts.length,
-  aeroNetCount: aeroNetProducts.length,
+  sentinelRingCount: sentinelRingProducts.length,
   rkvCount: rkvProducts.length,
   lineCount: PRODUCT_LINES.length,
   priceRangeMin: Math.min(...allProducts.map((p) => p.priceMin)),
