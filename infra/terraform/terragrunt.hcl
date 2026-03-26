@@ -23,7 +23,7 @@ remote_state {
 
   generate = {
     path      = "backend.tf"
-    if_exists = "overwrite_terraformignore"
+    if_exists = "overwrite"
   }
 
   config = {
@@ -40,7 +40,7 @@ remote_state {
 # ---------------------------------------------------------------------------
 generate "provider" {
   path      = "provider.tf"
-  if_exists = "overwrite_terraformignore"
+  if_exists = "overwrite"
   contents  = <<-EOF
     terraform {
       required_version = ">= 1.5.0"
