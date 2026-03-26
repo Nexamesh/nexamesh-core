@@ -140,6 +140,9 @@ importers:
       '@microsoft/applicationinsights-web':
         specifier: ^3.3.11
         version: 3.3.11(tslib@2.8.1)
+      '@nexamesh/types':
+        specifier: workspace:*
+        version: link:../../packages/types
       '@nexamesh/utils':
         specifier: workspace:*
         version: link:../../packages/utils
@@ -301,12 +304,15 @@ importers:
       '@nexamesh/types':
         specifier: workspace:*
         version: link:../../packages/types
+      '@nexamesh/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@nexamesh/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       next:
         specifier: 16.1.7
-        version: 16.1.7(@babel/core@7.28.5)(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 16.1.7(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react:
         specifier: 19.2.4
         version: 19.2.4
@@ -21159,7 +21165,7 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next@16.1.7(@babel/core@7.28.5)(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  next@16.1.7(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       '@next/env': 16.1.7
       '@swc/helpers': 0.5.15
@@ -21168,7 +21174,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
-      styled-jsx: 5.1.6(@babel/core@7.28.5)(react@19.2.4)
+      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.4)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.1.7
       '@next/swc-darwin-x64': 16.1.7
@@ -23145,12 +23151,12 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.7
 
-  styled-jsx@5.1.6(@babel/core@7.28.5)(react@19.2.4):
+  styled-jsx@5.1.6(@babel/core@7.29.0)(react@19.2.4):
     dependencies:
       client-only: 0.0.1
       react: 19.2.4
     optionalDependencies:
-      '@babel/core': 7.28.5
+      '@babel/core': 7.29.0
 
   stylehacks@6.1.1(postcss@8.5.8):
     dependencies:

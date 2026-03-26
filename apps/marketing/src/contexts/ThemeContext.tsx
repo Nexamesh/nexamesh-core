@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
+import { safeGet, safeSet } from "@nexamesh/utils";
 
 type Theme = "nexamesh" | "blue" | "green";
 
@@ -25,16 +26,13 @@ interface ThemeProviderProps {
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== "undefined") {
-      const savedTheme = localStorage.getItem("nexamesh-theme") as Theme | null;
-      if (
-        savedTheme &&
-        (savedTheme === "nexamesh" ||
-          savedTheme === "blue" ||
-          savedTheme === "green")
-      ) {
-        return savedTheme;
-      }
+    const savedTheme = safeGet("nexamesh-theme") as Theme | null;
+    if (
+      savedTheme === "nexamesh" ||
+      savedTheme === "blue" ||
+      savedTheme === "green"
+    ) {
+      return savedTheme;
     }
     return "nexamesh";
   });
@@ -49,8 +47,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   useEffect(() => {
     if (!mounted) return;
 
-    // Save theme to localStorage
-    localStorage.setItem("nexamesh-theme", theme);
+    safeSet("nexamesh-theme", theme);
 
     // Apply theme to CSS custom properties
     const root = document.documentElement;

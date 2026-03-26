@@ -32,6 +32,7 @@ export default defineConfig({
         __dirname,
         "../../packages/types/src/index.ts",
       ),
+      "@nexamesh/ui": path.resolve(__dirname, "../../packages/ui/src/index.ts"),
       "@nexamesh/utils": path.resolve(
         __dirname,
         "../../packages/utils/src/index.ts",

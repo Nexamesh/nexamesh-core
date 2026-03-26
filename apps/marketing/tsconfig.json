@@ -5,6 +5,7 @@
     "types": ["vitest/globals"],
     "paths": {
       "@nexamesh/types": ["../../packages/types/src/index.ts"],
+      "@nexamesh/ui": ["../../packages/ui/src/index.ts"],
       "@nexamesh/utils": ["../../packages/utils/src/index.ts"],
       "@/*": ["./src/*"]
     },

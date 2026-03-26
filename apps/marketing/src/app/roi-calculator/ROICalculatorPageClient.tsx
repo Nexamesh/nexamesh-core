@@ -6,7 +6,7 @@ import { InteractiveElementsSection } from "../../components/sections/Interactiv
 import { InteractiveMesh } from "../../components/ui/InteractiveMesh";
 import { usePerformanceOptimizations } from "../../hooks/usePerformanceOptimizations";
 import { getProductById } from "../../data/products";
-import { formatCurrency } from "@/utils/formatter";
+import { formatCurrency } from "@nexamesh/utils";
 import {
   calculateROI,
   type ROIInputs,
@@ -110,7 +110,7 @@ export default function ROICalculatorPage(): React.ReactElement {
     <main className={styles.main}>
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />

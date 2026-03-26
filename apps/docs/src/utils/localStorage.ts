@@ -2,7 +2,10 @@
  * LocalStorage Utilities
  *
  * Utilities for managing localStorage with a focus on onboarding and profile data.
+ * Base safe-access helpers (SSR guard + silent fail) come from @nexamesh/utils.
  */
+
+import { safeRemove, safeClear, safeGet } from "@nexamesh/utils";
 
 // All known localStorage keys used by the application
 const ONBOARDING_KEYS = [
@@ -21,16 +24,7 @@ const ONBOARDING_KEYS = [
  * This is useful when debugging or when there's corrupted state.
  */
 export function clearOnboardingData(): void {
-  if (typeof window === "undefined") return;
-
-  ONBOARDING_KEYS.forEach((key) => {
-    try {
-      localStorage.removeItem(key);
-    } catch (error) {
-      console.warn(`Failed to remove localStorage key: ${key}`, error);
-    }
-  });
-
+  ONBOARDING_KEYS.forEach((key) => safeRemove(key));
   console.debug(
     "[localStorage] Onboarding data cleared. User will see onboarding flow on next page load.",
   );
@@ -42,16 +36,10 @@ export function clearOnboardingData(): void {
  * Use with caution - typically only for debugging or at user request.
  */
 export function clearAllLocalStorage(): void {
-  if (typeof window === "undefined") return;
-
-  try {
-    localStorage.clear();
-    console.debug(
-      "[localStorage] All data cleared. Page will reload to reset state.",
-    );
-  } catch (error) {
-    console.error("Failed to clear localStorage:", error);
-  }
+  safeClear();
+  console.debug(
+    "[localStorage] All data cleared. Page will reload to reset state.",
+  );
 }
 
 /**
@@ -62,13 +50,9 @@ export function getOnboardingDiagnostics(): {
   keys: Array<{ key: string; value: string | null; parsed?: unknown }>;
   totalSize: number;
 } {
-  if (typeof window === "undefined") {
-    return { keys: [], totalSize: 0 };
-  }
-
   let totalSize = 0;
   const keys = ONBOARDING_KEYS.map((key) => {
-    const value = localStorage.getItem(key);
+    const value = safeGet(key);
     // More efficient size calculation: use byte length of UTF-8 encoding
     // Fallback to simple length * 2 for environments without TextEncoder (like tests)
     const size = value
@@ -98,12 +82,10 @@ export function getOnboardingDiagnostics(): {
  * Returns true if there are signs of corruption.
  */
 export function isOnboardingDataCorrupted(): boolean {
-  if (typeof window === "undefined") return false;
-
   try {
     // Check if profile confirmed but no profile data
-    const confirmed = localStorage.getItem("phoenix-docs-profile-confirmed");
-    const profileData = localStorage.getItem("phoenix-docs-user-profile");
+    const confirmed = safeGet("phoenix-docs-profile-confirmed");
+    const profileData = safeGet("phoenix-docs-user-profile");
 
     if (confirmed) {
       try {
@@ -118,7 +100,7 @@ export function isOnboardingDataCorrupted(): boolean {
     }
 
     // Check if onboarding completed but no profile
-    const completed = localStorage.getItem("phoenix-docs-onboarding-completed");
+    const completed = safeGet("phoenix-docs-onboarding-completed");
     if (completed) {
       try {
         const completedData = JSON.parse(completed);

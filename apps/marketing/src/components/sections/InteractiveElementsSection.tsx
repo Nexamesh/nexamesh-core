@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 import { Card } from "../ui/Card";
 import styles from "./InteractiveElementsSection.module.css";
-import { formatCurrency } from "@/utils/formatter";
+import { formatCurrency } from "@nexamesh/utils";
 import { adaptationCardsData } from "./data/adaptationData";
 import {
   calculateROI,

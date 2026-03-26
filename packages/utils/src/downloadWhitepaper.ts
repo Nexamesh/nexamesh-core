@@ -5,7 +5,7 @@ export const downloadWhitepaper = (customUrl?: string): void => {
   const link = document.createElement("a");
 
   link.href = url;
-  link.download = "Phoenix-Rooivalk-Technical-Whitepaper.md";
+  link.download = "NexaMesh_Technical_Whitepaper.md";
 
   document.body.appendChild(link);
   link.click();
