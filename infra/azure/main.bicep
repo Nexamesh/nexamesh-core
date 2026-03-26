@@ -1,8 +1,8 @@
 /**
- * Phoenix Rooivalk - Azure Infrastructure
+ * NexaMesh - Azure Infrastructure
  *
- * This Bicep template deploys all Azure resources needed for the Phoenix Rooivalk
- * documentation and marketing sites, replacing Firebase/Netlify services.
+ * This Bicep template deploys all Azure resources needed for the NexaMesh
+ * documentation and marketing sites.
  *
  * Resources deployed:
  * - Azure Static Web Apps (hosting for docs and marketing)
@@ -26,11 +26,8 @@ param environment string = 'dev'
 @description('Azure region for resources')
 param location string = resourceGroup().location
 
-@description('Project name used for resource naming')
-param projectName string = 'phoenixrooivalk'
-
 @description('GitHub repository URL for Static Web App')
-param repositoryUrl string = 'https://github.com/JustAGhosT/PhoenixRooivalk'
+param repositoryUrl string = 'https://github.com/nexamesh/nexamesh-core'
 
 @description('GitHub branch to deploy from')
 param branch string = 'main'
@@ -70,51 +67,18 @@ param entraIdClientId string = ''
 // Variables
 // ============================================================================
 
-// Naming Convention v2.1: [org]-[env]-[project]-[type]-[region]
+// Naming Convention v3.0: nex-{env}-{product}-{resourcetype}
+// - No region suffix
+// - Prefix: nex (NexaMesh)
+// - Products: docs, marketing, api, detector, shared
 // See: docs/azure-naming-conventions.md
-// Org codes: nl (NeuralLiquid), pvc (Phoenix VC), tws (Twines & Straps), mys (Mystira)
-var org = 'nl'  // NeuralLiquid owns Rooivalk
-var project = 'rooivalk'
-
-// Environment mapping (internal to standard)
-var envMap = {
-  dev: 'dev'
-  stg: 'staging'
-  prd: 'prod'
-  prv: 'dev'  // preview maps to dev
-}
-var envStandard = contains(envMap, environment) ? envMap[environment] : environment
-
-// Region short codes per naming convention v2.1
-var locationShortMap = {
-  eastus: 'eus'
-  eastus2: 'eus2'
-  westus: 'wus'
-  westus2: 'wus2'
-  centralus: 'cus'
-  westeurope: 'euw'
-  northeurope: 'eun'
-  uksouth: 'uks'
-  ukwest: 'ukw'
-  eastasia: 'eas'
-  southeastasia: 'seas'
-  southafricanorth: 'san'
-  southafricawest: 'saf'
-  swedencentral: 'swe'
-  australiaeast: 'aue'
-}
-var locationShort = contains(locationShortMap, location) ? locationShortMap[location] : take(location, 4)
-
-// Base naming prefix: [org]-[env]-[project]
-var baseName = '${org}-${envStandard}-${project}'
 
 // Tags for cost management and organization
 var tags = {
-  org: org
-  project: project
-  environment: envStandard
+  project: 'nexamesh'
+  environment: environment
   managedBy: 'bicep'
-  costCenter: 'phoenix-${envStandard}'
+  costCenter: 'nex-${environment}'
   owner: 'JustAGhosT'
 }
 
@@ -123,40 +87,37 @@ var tags = {
 module keyVault 'modules/keyvault.bicep' = {
   name: 'keyVault'
   params: {
-    name: '${baseName}-kv-${locationShort}'
+    name: 'nex-${environment}-shared-kv'
     location: location
     tags: tags
   }
 }
 
-// Storage Account for Functions and assets
-// Pattern: [org][env][project]st[region] (no hyphens, max 24 chars)
+// Storage Account for Functions and assets (no hyphens, max 24 chars)
 module storage 'modules/storage.bicep' = {
   name: 'storage'
   params: {
-    name: '${org}${envStandard}${project}st${locationShort}'
+    name: 'nex${environment}sharedst'
     location: location
     tags: tags
   }
 }
 
 // Application Insights for monitoring and analytics
-// Pattern: [org]-[env]-[project]-[type]-[region]
 module appInsights 'modules/appinsights.bicep' = {
   name: 'appInsights'
   params: {
-    name: '${baseName}-appi-${locationShort}'
+    name: 'nex-${environment}-shared-appi'
     location: location
     tags: tags
   }
 }
 
-// Cosmos DB for database (replaces Firestore)
-// Pattern: [org]-[env]-[project]-[type]-[region]
+// Cosmos DB for docs database
 module cosmosDb 'modules/cosmosdb.bicep' = {
   name: 'cosmosDb'
   params: {
-    name: '${baseName}-cosmos-${locationShort}'
+    name: 'nex-${environment}-docs-cosmos'
     location: location
     tags: tags
     throughput: cosmosDbThroughput
@@ -164,24 +125,22 @@ module cosmosDb 'modules/cosmosdb.bicep' = {
   }
 }
 
-// Notification Hub for push notifications (replaces FCM)
-// Pattern: [org]-[env]-[project]-[type]-[region]
+// Notification Hub for push notifications
 module notificationHub 'modules/notificationhub.bicep' = {
   name: 'notificationHub'
   params: {
-    namespaceName: '${baseName}-nhns-${locationShort}'
-    hubName: '${baseName}-nh-${locationShort}'
+    namespaceName: 'nex-${environment}-docs-nhns'
+    hubName: 'nex-${environment}-docs-nh'
     location: location
     tags: tags
   }
 }
 
-// Azure Functions for serverless compute (replaces Cloud Functions)
-// Pattern: [org]-[env]-[project]-[type]-[region]
+// Azure Functions for docs serverless backend
 module functions 'modules/functions.bicep' = {
   name: 'functions'
   params: {
-    name: '${baseName}-func-${locationShort}'
+    name: 'nex-${environment}-docs-func'
     location: location
     tags: tags
     storageAccountName: storage.outputs.name
@@ -197,12 +156,11 @@ module functions 'modules/functions.bicep' = {
   }
 }
 
-// Static Web App for documentation site (replaces Netlify)
-// Pattern: [org]-[env]-[project]-[type]-[region]
+// Static Web App for documentation site
 module staticWebAppDocs 'modules/staticwebapp.bicep' = {
   name: 'staticWebAppDocs'
   params: {
-    name: '${baseName}-swa-${locationShort}'
+    name: 'nex-${environment}-docs-swa'
     location: location
     tags: tags
     sku: staticWebAppSku
@@ -210,16 +168,15 @@ module staticWebAppDocs 'modules/staticwebapp.bicep' = {
     branch: branch
     appLocation: 'apps/docs'
     outputLocation: 'build'
-    apiLocation: ''  // Using separate Azure Functions
+    apiLocation: ''
   }
 }
 
-// Static Web App for marketing site (replaces Netlify)
-// Pattern: [org]-[env]-[project]-marketing-[type]-[region]
+// Static Web App for marketing site
 module staticWebAppMarketing 'modules/staticwebapp.bicep' = {
   name: 'staticWebAppMarketing'
   params: {
-    name: '${baseName}-marketing-swa-${locationShort}'
+    name: 'nex-${environment}-marketing-swa'
     location: location
     tags: tags
     sku: staticWebAppSku
@@ -227,7 +184,7 @@ module staticWebAppMarketing 'modules/staticwebapp.bicep' = {
     branch: branch
     appLocation: 'apps/marketing'
     outputLocation: 'out'
-    apiLocation: ''  // Marketing site doesn't use Functions
+    apiLocation: ''
   }
 }
 

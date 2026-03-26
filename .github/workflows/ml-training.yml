@@ -5,13 +5,14 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: "Environment (dev/prod)"
+        description: "Environment (dev/stg/prd)"
         required: true
         default: "dev"
         type: choice
         options:
           - dev
-          - prod
+          - stg
+          - prd
       model:
         description: "Base model"
         required: true
@@ -50,11 +51,11 @@ on:
 
 env:
   AZURE_RESOURCE_GROUP:
-    rg-nl-${{ github.event.inputs.environment || 'dev' }}-rooivalk-ml-eus
+    nex-${{ github.event.inputs.environment || 'dev' }}-detector-rg
   AZURE_ML_WORKSPACE:
-    mlw-nl-${{ github.event.inputs.environment || 'dev' }}-rooivalk
+    nex-${{ github.event.inputs.environment || 'dev' }}-detector-mlw
   AZURE_LOCATION: eastus
-  TERRAFORM_DIR: infra/terraform/ml-training
+  TG_DIR: infra/terraform/live/${{ github.event.inputs.environment || 'dev' }}/detector
   DETECTOR_DIR: apps/detector
 
 jobs:
@@ -162,35 +163,41 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@5e8dbf3c6d9deaf4193ca7a8fb23f2ac83bb6c85 # v4.0.0
         with:
-          terraform_version: "1.6.0"
+          terraform_version: "1.9.0"
+          terraform_wrapper: false  # required for terragrunt output parsing
+
+      - name: Setup Terragrunt
+        run: |
+          TGVER="0.67.16"
+          curl -sLo /usr/local/bin/terragrunt \
+            "https://github.com/gruntwork-io/terragrunt/releases/download/v${TGVER}/terragrunt_linux_amd64"
+          chmod +x /usr/local/bin/terragrunt
+          terragrunt --version
 
       - name: Azure Login
         uses: azure/login@532459ea530d8321f2fb9bb10d1e0bcf23869a43 # v3.0.0
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Terraform Init
-        working-directory: ${{ env.TERRAFORM_DIR }}
-        run: terraform init
+      - name: Terragrunt Init
+        working-directory: ${{ env.TG_DIR }}
+        run: terragrunt init --terragrunt-non-interactive
 
-      - name: Terraform Plan
-        working-directory: ${{ env.TERRAFORM_DIR }}
-        run: |
-          terraform plan \
-            -var-file="environments/${{ github.event.inputs.environment || 'dev' }}.tfvars" \
-            -out=tfplan
+      - name: Terragrunt Plan
+        working-directory: ${{ env.TG_DIR }}
+        run: terragrunt plan --terragrunt-non-interactive -out=tfplan
 
-      - name: Terraform Apply
-        working-directory: ${{ env.TERRAFORM_DIR }}
-        run: terraform apply -auto-approve tfplan
+      - name: Terragrunt Apply
+        working-directory: ${{ env.TG_DIR }}
+        run: terragrunt apply --terragrunt-non-interactive -auto-approve tfplan
 
-      - name: Get Terraform Outputs
+      - name: Get Outputs
         id: tf-outputs
-        working-directory: ${{ env.TERRAFORM_DIR }}
+        working-directory: ${{ env.TG_DIR }}
         run: |
-          echo "resource_group=$(terraform output -raw resource_group_name)" >> $GITHUB_OUTPUT
-          echo "workspace=$(terraform output -raw ml_workspace_name)" >> $GITHUB_OUTPUT
-          echo "storage=$(terraform output -raw storage_account_name)" >> $GITHUB_OUTPUT
+          echo "resource_group=$(terragrunt output -raw resource_group_name)" >> $GITHUB_OUTPUT
+          echo "workspace=$(terragrunt output -raw ml_workspace_name)" >> $GITHUB_OUTPUT
+          echo "storage=$(terragrunt output -raw storage_account_name)" >> $GITHUB_OUTPUT
 
   # ==========================================================================
   # Upload Dataset
@@ -465,6 +472,6 @@ jobs:
             --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
             --workspace-name ${{ env.AZURE_ML_WORKSPACE }} \
             --description "Drone detection model trained on $(date)" \
-            --tags project=phoenix-rooivalk model=${{ github.event.inputs.model }} epochs=${{ github.event.inputs.epochs }}
+            --tags project=nexamesh model=${{ github.event.inputs.model }} epochs=${{ github.event.inputs.epochs }}
 
           echo "Model registered: drone-detector v$VERSION"

@@ -21,7 +21,7 @@ param throughput int = 400
 param useServerless bool = true
 
 @description('Database name')
-param databaseName string = 'phoenix-docs'
+param databaseName string = 'nexamesh-docs'
 
 // Cosmos DB Account
 resource cosmosAccount 'Microsoft.DocumentDB/databaseAccounts@2023-11-15' = {

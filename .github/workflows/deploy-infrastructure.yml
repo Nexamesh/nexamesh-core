@@ -267,25 +267,17 @@ jobs:
             *) LOCATION_SHORT="${LOCATION:0:4}" ;;
           esac
 
-          # Resource naming - use existing resource group, Bicep handles internal resource naming
-          # org=nl (NeuralLiquid), project=rooivalk
-          ORG="nl"
-          PROJECT="rooivalk"
-
-          # Resource group uses existing pattern to avoid conflicts with existing resources
-          RESOURCE_GROUP="${ENV_SHORT}-${LOCATION_SHORT}-rg-rooivalk"
-
-          # Bicep naming convention: [org]-[env]-[project]-[type]-[region]
-          BASE_NAME="${ORG}-${ENV_SHORT}-${PROJECT}"
+          # Naming convention v3.0: nex-{env}-{product}-{resourcetype} (no region)
+          RESOURCE_GROUP="nex-${ENV_SHORT}-rg"
 
           # Resource names (matching Bicep naming convention in main.bicep)
-          KEY_VAULT_NAME="${BASE_NAME}-kv-${LOCATION_SHORT}"
-          STORAGE_NAME="${ORG}${ENV_SHORT}${PROJECT}st${LOCATION_SHORT}"
-          APPI_NAME="${BASE_NAME}-appi-${LOCATION_SHORT}"
-          COSMOS_NAME="${BASE_NAME}-cosmos-${LOCATION_SHORT}"
-          FUNC_NAME="${BASE_NAME}-func-${LOCATION_SHORT}"
-          SWA_DOCS_NAME="${BASE_NAME}-swa-${LOCATION_SHORT}"
-          SWA_MARKETING_NAME="${BASE_NAME}-marketing-swa-${LOCATION_SHORT}"
+          KEY_VAULT_NAME="nex-${ENV_SHORT}-shared-kv"
+          STORAGE_NAME="nex${ENV_SHORT}sharedst"
+          APPI_NAME="nex-${ENV_SHORT}-shared-appi"
+          COSMOS_NAME="nex-${ENV_SHORT}-docs-cosmos"
+          FUNC_NAME="nex-${ENV_SHORT}-docs-func"
+          SWA_DOCS_NAME="nex-${ENV_SHORT}-docs-swa"
+          SWA_MARKETING_NAME="nex-${ENV_SHORT}-marketing-swa"
 
           # Export for later steps
           echo "environment=$ENV" >> $GITHUB_OUTPUT
