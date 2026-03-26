@@ -18,7 +18,7 @@ export const downloadWhitepaper = (
   // Create a link to download the whitepaper
   const link = document.createElement("a");
   link.href = url;
-  link.download = "Phoenix_Rooivalk_Technical_Whitepaper.md";
+  link.download = "NexaMesh_Technical_Whitepaper.md";
 
   // Append to body, click, and remove
   document.body.appendChild(link);

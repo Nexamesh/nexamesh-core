@@ -83,7 +83,7 @@ export const UkraineChallengeSection: React.FC = () => {
                 Schedule Urgent Demo
               </Button>
               <Button
-                href="mailto:smit.jurie@gmail.com?subject=Phoenix%20Rooivalk%20-%20Ukraine%20Defense%20Inquiry"
+                href="mailto:smit.jurie@gmail.com?subject=NexaMesh%20-%20Ukraine%20Defense%20Inquiry"
                 variant="ghost"
                 size="lg"
               >

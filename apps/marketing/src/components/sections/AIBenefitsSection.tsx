@@ -122,7 +122,7 @@ export const AIBenefitsSection: React.FC = () => {
                 Request AI + Blockchain Demo
               </Button>
               <Button
-                href="mailto:smit.jurie@gmail.com?subject=Phoenix%20Rooivalk%20-%20AI%20%2B%20Blockchain%20Capabilities%20Inquiry"
+                href="mailto:smit.jurie@gmail.com?subject=NexaMesh%20-%20AI%20%2B%20Blockchain%20Capabilities%20Inquiry"
                 variant="ghost"
                 size="lg"
               >

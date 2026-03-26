@@ -376,7 +376,7 @@ export const products: Product[] = [
     line: "skywatch",
     tagline: "Entry-Level Detection",
     description:
-      "Entry-level drone detection for backyard awareness and learning. Perfect for makers and hobbyists.",
+      "Entry-level edge AI detection node. Rapid-deploy awareness for small facilities, training sites, and proof-of-concept evaluations.",
     category: "diy-maker",
     phase: "seed",
     phaseTimeline: "Q1 2026 • Delivery Apr 2026",
@@ -1475,7 +1475,7 @@ export const products: Product[] = [
     sku: "AN-EVENT-001",
     name: "Sentinel Ring Events",
     line: "aeronet" as ProductLine,
-    tagline: "Temporary C-UAS deployment for concerts, sports, and festivals",
+    tagline: "Rapid-deploy C-UAS for high-profile events and critical gatherings",
     description:
       "Rapid-deploy C-UAS rental package for live events. Pre-configured " +
       "detection and countermeasure kit ships in ruggedized cases, deploys in " +

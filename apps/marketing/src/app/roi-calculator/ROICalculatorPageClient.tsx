@@ -33,8 +33,8 @@ interface DeploymentTier {
 const DEPLOYMENT_TIERS: DeploymentTier[] = [
   {
     id: "basic-home",
-    tier: "Basic Home",
-    audience: "Homeowners & hobbyists",
+    tier: "Entry Deployment",
+    audience: "Property owners & training facilities",
     products: [
       { id: "skywatch-nano", role: "Detection" },
       { id: "skysnare", role: "Countermeasure" },

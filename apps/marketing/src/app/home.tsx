@@ -62,7 +62,7 @@ export default function HomePage(): React.ReactElement {
                 name: "Who uses these systems?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Training facilities, drone racing leagues, event security teams, and facility managers. Kestrel Mesh for consumer/training, Sentinel Ring for enterprise security.",
+                  text: "Government agencies, airports, critical infrastructure operators, event security teams, and property managers. Kestrel Mesh for rapid mesh-deployable detection; Sentinel Ring for persistent enterprise coverage with 24/7 SOC integration.",
                 },
               },
               {
