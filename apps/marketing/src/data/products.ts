@@ -155,9 +155,9 @@ export const products: Product[] = [
     sku: "SS-001",
     name: "Kestrel Mesh",
     line: "skysnare",
-    tagline: "Protect Your Airspace",
+    tagline: "Detect. Alert. Respond.",
     description:
-      "Direct-to-consumer drone capture device. Simple point-and-shoot operation for personal property protection.",
+      "Consumer-grade edge AI sensor node. Sub-200ms detection, instant mobile alerts, and blockchain-logged evidence — with an optional net-response module for active neutralisation.",
     category: "consumer",
     phase: "seed",
     phaseTimeline: "Q2 2026 Launch • Delivery Jul 2026",
@@ -181,18 +181,18 @@ export const products: Product[] = [
     marketSegment: "$3.22B outdoor sports market",
 
     specs: {
-      range: "15-30m",
-      netSize: "2m × 2m",
-      reloadTime: "30 seconds",
+      detectionRange: "30–80m",
+      latency: "<200ms",
       weight: "~1.2kg",
-      power: "CO2 cartridge",
+      power: "USB-C rechargeable, 8h standby",
+      connectivity: "WiFi + BLE",
     },
 
     features: [
-      "Point-and-shoot operation",
-      "No technical knowledge required",
-      "Dual safety mechanism",
-      "Instant reload system",
+      "Edge AI inference on-device",
+      "Blockchain evidence anchoring",
+      "Instant push alerts",
+      "Optional net-response module",
       "Weatherproof design",
     ],
 
@@ -200,7 +200,7 @@ export const products: Product[] = [
       "Backyard privacy protection",
       "Event security",
       "Property surveillance defense",
-      "Recreational drone tag",
+      "First-responder detection kit",
     ],
 
     catalogUrl: "/docs/technical/detector/product-catalog#skysnare",
@@ -216,9 +216,9 @@ export const products: Product[] = [
     sku: "NSN-LITE-001",
     name: "NetSnare Lite",
     line: "netsnare",
-    tagline: "Ground-Mounted Net Launcher",
+    tagline: "Mesh Sensor + Response Node",
     description:
-      "Spring-powered ground-mounted net launcher. Pairs with any SkyWatch detector for automated drone capture.",
+      "Maker-friendly mesh sensor node with integrated response module. Pairs with any SkyWatch detector for AI-triggered, automated drone neutralisation.",
     category: "diy-maker",
     phase: "seed",
     phaseTimeline: "Q2 2026 • Delivery Jul 2026",
@@ -245,10 +245,10 @@ export const products: Product[] = [
     },
 
     features: [
-      "Spring-powered launcher",
+      "Edge AI sensor node",
       "SkyWatch API integration",
       "Mobile app trigger",
-      "Manual reload",
+      "Open trigger API (Arduino compatible)",
       "Weather resistant",
     ],
 
@@ -266,9 +266,9 @@ export const products: Product[] = [
     sku: "NSN-STD-001",
     name: "NetSnare Standard",
     line: "netsnare",
-    tagline: "CO2 Ground Launcher",
+    tagline: "AI-Triggered Ground Sensor",
     description:
-      "CO2-powered ground-mounted launcher with faster response and longer range. Integrates with SkyWatch for automated targeting.",
+      "Smart ground sensor with AI-triggered response module. Faster intercept and extended detection range — integrates with SkyWatch for fully automated targeting.",
     category: "prosumer",
     phase: "series-a",
     phaseTimeline: "Q4 2026 • Delivery Jan 2027",
@@ -287,18 +287,18 @@ export const products: Product[] = [
     marketSegment: "Automated ground defense for properties",
 
     specs: {
-      range: "20-35m launch",
+      detectionRange: "100–200m",
+      responseRange: "20–35m",
       trigger: "Auto from SkyWatch",
       response: "100ms",
-      reload: "CO2 cartridge swap",
-      costPerShot: "$1-2",
+      costPerIntercept: "$1-2",
     },
 
     features: [
-      "CO2 powered launcher",
+      "AI-triggered response",
       "Auto-trigger from SkyWatch",
       "Multiple mount options",
-      "Quick CO2 reload",
+      "Fast intercept module",
       "IP65 weatherproof",
     ],
 
@@ -316,9 +316,9 @@ export const products: Product[] = [
     sku: "NSN-PRO-001",
     name: "NetSnare Pro",
     line: "netsnare",
-    tagline: "Tracking Ground Platform",
+    tagline: "Precision AI Tracking Platform",
     description:
-      "Pneumatic ground launcher with pan-tilt tracking. Full autonomous operation when paired with SkyWatch Pro or Enterprise.",
+      "Precision sensor platform with pan-tilt tracking and AI-guided response. Fully autonomous operation when paired with SkyWatch Pro or Enterprise.",
     category: "commercial",
     phase: "series-a",
     phaseTimeline: "Q2 2027 • Delivery Jul 2027",
@@ -341,20 +341,19 @@ export const products: Product[] = [
     marketSegment: "Automated perimeter defense",
 
     specs: {
-      range: "30-50m launch",
+      detectionRange: "200–500m",
+      responseRange: "30–50m",
       tracking: "Pan-tilt motorized",
       response: "50ms",
-      reload: "Air tank refillable",
       coverage: "180° arc",
     },
 
     features: [
-      "Pneumatic launcher",
+      "Edge AI predictive targeting",
       "Pan-tilt tracking",
-      "Predictive targeting",
-      "Multi-shot capability",
+      "Multi-intercept capability",
       "Remote monitoring",
-      "Air tank refillable",
+      "Autonomous operation mode",
     ],
 
     useCases: [
@@ -767,9 +766,9 @@ export const products: Product[] = [
     sku: "NS-LITE-001",
     name: "NetSentry Lite",
     line: "netsentry",
-    tagline: "Entry-Level Countermeasure",
+    tagline: "Entry-Level Detect & Respond",
     description:
-      "Entry-level countermeasure system with spring-loaded net launcher for testing and proof-of-concept.",
+      "Entry-level detect-and-respond system for testing and proof-of-concept. Validates the full AI detect-to-intercept stack at maker cost.",
     category: "diy-maker",
     phase: "seed",
     phaseTimeline: "Q3 2026 • Delivery Oct 2026",
@@ -795,7 +794,7 @@ export const products: Product[] = [
     },
 
     features: [
-      "Spring-loaded launcher",
+      "Edge AI detection module",
       "DIY assembly",
       "Arduino compatible",
       "Open trigger API",
@@ -815,9 +814,9 @@ export const products: Product[] = [
     sku: "NS-STD-001",
     name: "NetSentry Standard",
     line: "netsentry",
-    tagline: "CO2-Powered Response",
+    tagline: "AI-Triggered Response System",
     description:
-      "CO2-powered net launcher with faster response and longer range. Includes Coral TPU for detection.",
+      "AI-triggered detect-and-respond system with Coral TPU acceleration. Faster intercept, longer detection range, fully integrated in one unit.",
     category: "prosumer",
     phase: "series-a",
     phaseTimeline: "Q1 2027 • Delivery Apr 2027",
@@ -836,16 +835,16 @@ export const products: Product[] = [
     marketSegment: "Property security",
 
     specs: {
-      range: "15-30m launch",
-      detection: "100-200m",
+      detectionRange: "100–200m",
+      responseRange: "15–30m",
       response: "50ms",
-      costPerShot: "$1-2",
+      costPerIntercept: "$1-2",
     },
 
     features: [
-      "CO2 powered",
-      "Coral TPU detection",
-      "Fast 50ms response",
+      "Coral TPU edge inference",
+      "AI-triggered response",
+      "Fast 50ms intercept",
       "Weatherproof",
     ],
 
@@ -863,9 +862,9 @@ export const products: Product[] = [
     sku: "NS-PRO-001",
     name: "NetSentry Pro",
     line: "netsentry",
-    tagline: "Professional Intercept",
+    tagline: "Professional AI Intercept",
     description:
-      "Professional pneumatic net launcher with pan-tilt tracking and global shutter camera.",
+      "Professional AI detect-and-respond platform with pan-tilt tracking, global shutter camera, and predictive targeting for high-value facilities.",
     category: "commercial",
     phase: "series-a",
     phaseTimeline: "Q2 2027 • Delivery Jul 2027",
@@ -891,11 +890,11 @@ export const products: Product[] = [
     },
 
     features: [
-      "Pneumatic launcher",
+      "Edge AI predictive targeting",
       "Pan-tilt tracking",
-      "Global shutter camera",
-      "Predictive targeting",
-      "Air tank refillable",
+      "Global shutter camera 60fps",
+      "Autonomous intercept mode",
+      "Multi-shot capability",
     ],
 
     useCases: [

@@ -156,6 +156,19 @@ module functions 'modules/functions.bicep' = {
   }
 }
 
+// Container Apps Environment — single global instance shared across all envs
+module containerAppsEnv 'modules/containerapps-env.bicep' = {
+  name: 'containerAppsEnv'
+  params: {
+    name: 'nex-global-shared-cae'
+    location: location
+    tags: tags
+    logAnalyticsWorkspaceId: appInsights.outputs.workspaceId
+    logAnalyticsWorkspaceCustomerId: appInsights.outputs.workspaceCustomerId
+    logAnalyticsWorkspaceKey: appInsights.outputs.workspaceKey
+  }
+}
+
 // Static Web App for documentation site
 module staticWebAppDocs 'modules/staticwebapp.bicep' = {
   name: 'staticWebAppDocs'
@@ -258,6 +271,15 @@ output storageAccountName string = storage.outputs.name
 
 @description('Notification Hub name')
 output notificationHubName string = notificationHub.outputs.hubName
+
+@description('Container Apps Environment resource ID')
+output containerAppsEnvId string = containerAppsEnv.outputs.id
+
+@description('Container Apps Environment name')
+output containerAppsEnvName string = containerAppsEnv.outputs.name
+
+@description('Container Apps Environment default domain')
+output containerAppsEnvDefaultDomain string = containerAppsEnv.outputs.defaultDomain
 
 @description('Configuration for client-side app')
 output clientConfig object = {
