@@ -85,7 +85,7 @@ export const PHASE_INFO: Record<
 };
 
 // Local storage key
-const PHASE_FILTER_KEY = "phoenix-docs-phase-filter";
+const PHASE_FILTER_KEY = "nexamesh-docs-phase-filter";
 
 // Valid phase values for validation
 const VALID_PHASES: Phase[] = [

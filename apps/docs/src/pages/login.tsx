@@ -7,8 +7,8 @@ import { isInternalDomain } from "../config/userProfiles";
 import styles from "./login.module.css";
 
 // Local storage keys to check onboarding status
-const ONBOARDING_COMPLETED_KEY = "phoenix-docs-onboarding-completed";
-const USER_DETAILS_KEY = "phoenix-docs-user-details";
+const ONBOARDING_COMPLETED_KEY = "nexamesh-docs-onboarding-completed";
+const USER_DETAILS_KEY = "nexamesh-docs-user-details";
 
 interface SetupStatus {
   profileComplete: boolean;

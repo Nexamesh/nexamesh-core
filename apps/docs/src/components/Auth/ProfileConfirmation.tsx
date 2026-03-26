@@ -18,9 +18,9 @@ import {
 } from "../../config/userProfiles";
 import "./ProfileConfirmation.css";
 
-const PROFILE_CONFIRMED_KEY = "phoenix-docs-profile-confirmed";
-const PROFILE_DATA_KEY = "phoenix-docs-user-profile";
-const PROFILE_CONFIRMATION_PENDING_KEY = "phoenix-docs-profile-pending";
+const PROFILE_CONFIRMED_KEY = "nexamesh-docs-profile-confirmed";
+const PROFILE_DATA_KEY = "nexamesh-docs-user-profile";
+const PROFILE_CONFIRMATION_PENDING_KEY = "nexamesh-docs-profile-pending";
 
 interface ProfileConfirmationProps {
   children: React.ReactNode;

@@ -51,10 +51,10 @@ const DEBUG_AUTH =
   process.env.NEXT_PUBLIC_DEBUG_AUTH === "true";
 
 // Local storage keys
-const LOCAL_PROGRESS_KEY = "phoenix-docs-progress";
-const LOCAL_ACHIEVEMENTS_KEY = "phoenix-docs-achievements";
-const LOCAL_STATS_KEY = "phoenix-docs-stats";
-const PROFILE_DATA_KEY = "phoenix-docs-user-profile";
+const LOCAL_PROGRESS_KEY = "nexamesh-docs-progress";
+const LOCAL_ACHIEVEMENTS_KEY = "nexamesh-docs-achievements";
+const LOCAL_STATS_KEY = "nexamesh-docs-stats";
+const PROFILE_DATA_KEY = "nexamesh-docs-user-profile";
 
 /**
  * Access application status for pending verification

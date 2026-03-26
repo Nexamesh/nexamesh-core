@@ -26,12 +26,12 @@ import {
 import { submitAccessApplication } from "../../services/access-applications";
 import "./OnboardingWalkthrough.css";
 
-const ONBOARDING_COMPLETED_KEY = "phoenix-docs-onboarding-completed";
-const ONBOARDING_STEP_KEY = "phoenix-docs-onboarding-step";
-const PROFILE_CONFIRMED_KEY = "phoenix-docs-profile-confirmed";
-const PROFILE_DATA_KEY = "phoenix-docs-user-profile";
-const USER_DETAILS_KEY = "phoenix-docs-user-details";
-const USER_FUN_FACTS_KEY = "phoenix-docs-user-fun-facts";
+const ONBOARDING_COMPLETED_KEY = "nexamesh-docs-onboarding-completed";
+const ONBOARDING_STEP_KEY = "nexamesh-docs-onboarding-step";
+const PROFILE_CONFIRMED_KEY = "nexamesh-docs-profile-confirmed";
+const PROFILE_DATA_KEY = "nexamesh-docs-user-profile";
+const USER_DETAILS_KEY = "nexamesh-docs-user-details";
+const USER_FUN_FACTS_KEY = "nexamesh-docs-user-fun-facts";
 
 type StepType =
   | "profile-completion"

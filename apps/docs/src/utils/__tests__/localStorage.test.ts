@@ -44,18 +44,18 @@ describe("clearOnboardingData", () => {
 
   it("should clear all onboarding-related keys", () => {
     // Set up some onboarding data
-    localStorage.setItem("phoenix-docs-onboarding-completed", "true");
-    localStorage.setItem("phoenix-docs-profile-confirmed", "true");
-    localStorage.setItem("phoenix-docs-user-details", "{}");
+    localStorage.setItem("nexamesh-docs-onboarding-completed", "true");
+    localStorage.setItem("nexamesh-docs-profile-confirmed", "true");
+    localStorage.setItem("nexamesh-docs-user-details", "{}");
     localStorage.setItem("unrelated-key", "should-remain");
 
     clearOnboardingData();
 
     expect(
-      localStorage.getItem("phoenix-docs-onboarding-completed"),
+      localStorage.getItem("nexamesh-docs-onboarding-completed"),
     ).toBeNull();
-    expect(localStorage.getItem("phoenix-docs-profile-confirmed")).toBeNull();
-    expect(localStorage.getItem("phoenix-docs-user-details")).toBeNull();
+    expect(localStorage.getItem("nexamesh-docs-profile-confirmed")).toBeNull();
+    expect(localStorage.getItem("nexamesh-docs-user-details")).toBeNull();
     expect(localStorage.getItem("unrelated-key")).toBe("should-remain");
   });
 
@@ -87,11 +87,11 @@ describe("getOnboardingDiagnostics", () => {
 
   it("should return diagnostics for onboarding keys", () => {
     localStorage.setItem(
-      "phoenix-docs-profile-confirmed",
+      "nexamesh-docs-profile-confirmed",
       JSON.stringify({ userId: "123", confirmed: true }),
     );
     localStorage.setItem(
-      "phoenix-docs-user-profile",
+      "nexamesh-docs-user-profile",
       JSON.stringify({ profileKey: "developer" }),
     );
 
@@ -101,7 +101,7 @@ describe("getOnboardingDiagnostics", () => {
     expect(diagnostics.totalSize).toBeGreaterThan(0);
 
     const profileConfirmed = diagnostics.keys.find(
-      (k) => k.key === "phoenix-docs-profile-confirmed",
+      (k) => k.key === "nexamesh-docs-profile-confirmed",
     );
     expect(profileConfirmed?.parsed).toEqual({
       userId: "123",
@@ -110,11 +110,11 @@ describe("getOnboardingDiagnostics", () => {
   });
 
   it("should handle non-JSON values", () => {
-    localStorage.setItem("phoenix-docs-onboarding-step", "invalid-json");
+    localStorage.setItem("nexamesh-docs-onboarding-step", "invalid-json");
 
     const diagnostics = getOnboardingDiagnostics();
     const stepKey = diagnostics.keys.find(
-      (k) => k.key === "phoenix-docs-onboarding-step",
+      (k) => k.key === "nexamesh-docs-onboarding-step",
     );
 
     expect(stepKey?.value).toBe("invalid-json");
@@ -136,11 +136,11 @@ describe("isOnboardingDataCorrupted", () => {
 
   it("should return false for valid data", () => {
     localStorage.setItem(
-      "phoenix-docs-profile-confirmed",
+      "nexamesh-docs-profile-confirmed",
       JSON.stringify({ userId: "123", confirmed: true }),
     );
     localStorage.setItem(
-      "phoenix-docs-user-profile",
+      "nexamesh-docs-user-profile",
       JSON.stringify({ profileKey: "developer" }),
     );
 
@@ -149,7 +149,7 @@ describe("isOnboardingDataCorrupted", () => {
 
   it("should detect when profile is confirmed but data is missing", () => {
     localStorage.setItem(
-      "phoenix-docs-profile-confirmed",
+      "nexamesh-docs-profile-confirmed",
       JSON.stringify({ userId: "123", confirmed: true }),
     );
     // No profile data
@@ -159,7 +159,7 @@ describe("isOnboardingDataCorrupted", () => {
 
   it("should return false when profile was skipped", () => {
     localStorage.setItem(
-      "phoenix-docs-profile-confirmed",
+      "nexamesh-docs-profile-confirmed",
       JSON.stringify({ userId: "123", confirmed: true, skipped: true }),
     );
     // No profile data, but that's OK because it was skipped
@@ -169,7 +169,7 @@ describe("isOnboardingDataCorrupted", () => {
 
   it("should detect when onboarding is completed but no profile confirmation", () => {
     localStorage.setItem(
-      "phoenix-docs-onboarding-completed",
+      "nexamesh-docs-onboarding-completed",
       JSON.stringify({ userId: "123", completed: true }),
     );
     // No profile confirmation
@@ -178,7 +178,7 @@ describe("isOnboardingDataCorrupted", () => {
   });
 
   it("should return true for malformed JSON", () => {
-    localStorage.setItem("phoenix-docs-profile-confirmed", "invalid-json");
+    localStorage.setItem("nexamesh-docs-profile-confirmed", "invalid-json");
 
     expect(isOnboardingDataCorrupted()).toBe(true);
   });
@@ -195,7 +195,7 @@ describe("autoFixOnboardingData", () => {
 
   it("should clear data when corruption is detected", () => {
     localStorage.setItem(
-      "phoenix-docs-profile-confirmed",
+      "nexamesh-docs-profile-confirmed",
       JSON.stringify({ userId: "123", confirmed: true }),
     );
     // No profile data - this is corrupted
@@ -203,16 +203,16 @@ describe("autoFixOnboardingData", () => {
     const result = autoFixOnboardingData();
 
     expect(result).toBe(true);
-    expect(localStorage.getItem("phoenix-docs-profile-confirmed")).toBeNull();
+    expect(localStorage.getItem("nexamesh-docs-profile-confirmed")).toBeNull();
   });
 
   it("should not clear data when no corruption is detected", () => {
     localStorage.setItem(
-      "phoenix-docs-profile-confirmed",
+      "nexamesh-docs-profile-confirmed",
       JSON.stringify({ userId: "123", confirmed: true }),
     );
     localStorage.setItem(
-      "phoenix-docs-user-profile",
+      "nexamesh-docs-user-profile",
       JSON.stringify({ profileKey: "developer" }),
     );
 
@@ -220,7 +220,7 @@ describe("autoFixOnboardingData", () => {
 
     expect(result).toBe(false);
     expect(
-      localStorage.getItem("phoenix-docs-profile-confirmed"),
+      localStorage.getItem("nexamesh-docs-profile-confirmed"),
     ).not.toBeNull();
   });
 

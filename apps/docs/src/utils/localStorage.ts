@@ -9,13 +9,13 @@ import { safeRemove, safeClear, safeGet } from "@nexamesh/utils";
 
 // All known localStorage keys used by the application
 const ONBOARDING_KEYS = [
-  "phoenix-docs-onboarding-completed",
-  "phoenix-docs-onboarding-step",
-  "phoenix-docs-profile-confirmed",
-  "phoenix-docs-user-profile",
-  "phoenix-docs-profile-pending",
-  "phoenix-docs-user-details",
-  "phoenix-docs-user-fun-facts",
+  "nexamesh-docs-onboarding-completed",
+  "nexamesh-docs-onboarding-step",
+  "nexamesh-docs-profile-confirmed",
+  "nexamesh-docs-user-profile",
+  "nexamesh-docs-profile-pending",
+  "nexamesh-docs-user-details",
+  "nexamesh-docs-user-fun-facts",
 ];
 
 /**
@@ -84,8 +84,8 @@ export function getOnboardingDiagnostics(): {
 export function isOnboardingDataCorrupted(): boolean {
   try {
     // Check if profile confirmed but no profile data
-    const confirmed = safeGet("phoenix-docs-profile-confirmed");
-    const profileData = safeGet("phoenix-docs-user-profile");
+    const confirmed = safeGet("nexamesh-docs-profile-confirmed");
+    const profileData = safeGet("nexamesh-docs-user-profile");
 
     if (confirmed) {
       try {
@@ -100,7 +100,7 @@ export function isOnboardingDataCorrupted(): boolean {
     }
 
     // Check if onboarding completed but no profile
-    const completed = safeGet("phoenix-docs-onboarding-completed");
+    const completed = safeGet("nexamesh-docs-onboarding-completed");
     if (completed) {
       try {
         const completedData = JSON.parse(completed);

@@ -8,7 +8,7 @@ interface FeedbackData {
   timestamp: string;
 }
 
-const FEEDBACK_STORAGE_KEY = "phoenix-docs-feedback";
+const FEEDBACK_STORAGE_KEY = "nexamesh-docs-feedback";
 
 export function useFeedback(docId: string) {
   const [feedback, setFeedback] = useState<FeedbackData | null>(null);

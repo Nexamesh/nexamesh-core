@@ -5,7 +5,7 @@
  * Uses localStorage to persist the queue across sessions.
  */
 
-const OFFLINE_QUEUE_KEY = "phoenix-docs-offline-queue";
+const OFFLINE_QUEUE_KEY = "nexamesh-docs-offline-queue";
 
 export interface QueuedUpdate {
   id: string;
