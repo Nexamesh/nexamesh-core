@@ -96,6 +96,24 @@ variable "entra_id_client_id" {
   default     = ""
 }
 
+variable "enable_free_tier_cosmos" {
+  description = "Enable Cosmos DB free tier (1000 RU/s + 25 GB free). One account per subscription only. Incompatible with serverless — setting this forces use_serverless_cosmos_db = false."
+  type        = bool
+  default     = false
+}
+
+variable "create_notification_hub" {
+  description = "Create the Notification Hub namespace and hub. Disable in dev/stg to avoid unnecessary resources."
+  type        = bool
+  default     = true
+}
+
+variable "create_container_apps_env" {
+  description = "Create the Container Apps Environment. Disable when no containers are being deployed (Rust API, keeper, detector). Re-enable when ready to deploy container workloads."
+  type        = bool
+  default     = true
+}
+
 variable "tags" {
   description = "Resource tags applied to all resources"
   type        = map(string)

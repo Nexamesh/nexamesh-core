@@ -56,21 +56,21 @@ output "storage_account_name" {
 }
 
 output "notification_hub_name" {
-  description = "Notification Hub name"
-  value       = module.notificationhub.hub_name
+  description = "Notification Hub name (null when create_notification_hub = false)"
+  value       = var.create_notification_hub ? module.notificationhub[0].hub_name : null
 }
 
 output "container_apps_env_id" {
-  description = "Container Apps Environment resource ID"
-  value       = module.containerapps_env.id
+  description = "Container Apps Environment resource ID (null when create_container_apps_env = false)"
+  value       = var.create_container_apps_env ? module.containerapps_env[0].id : null
 }
 
 output "container_apps_env_name" {
-  description = "Container Apps Environment name"
-  value       = module.containerapps_env.name
+  description = "Container Apps Environment name (null when create_container_apps_env = false)"
+  value       = var.create_container_apps_env ? module.containerapps_env[0].name : null
 }
 
 output "container_apps_env_default_domain" {
-  description = "Container Apps Environment default domain"
-  value       = module.containerapps_env.default_domain
+  description = "Container Apps Environment default domain (null when create_container_apps_env = false)"
+  value       = var.create_container_apps_env ? module.containerapps_env[0].default_domain : null
 }

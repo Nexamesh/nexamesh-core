@@ -1,5 +1,12 @@
 # =============================================================================
 # NexaMesh Core -- prd environment
+#
+# Cost profile: free-tier where possible, pay-per-use otherwise
+#   - Cosmos DB serverless (scales with real traffic, no idle cost)
+#   - Functions Y1 Consumption (free up to 1M executions/month)
+#   - Static Web Apps Free SKU (upgrade to Standard when custom domains/SLA needed)
+#   - Notification Hub enabled (Free SKU: 1M pushes/month free)
+#   - Container Apps Env enabled (Consumption, scales to zero)
 # =============================================================================
 
 locals {
@@ -17,19 +24,26 @@ terraform {
 inputs = {
   environment              = "prd"
   location                 = local.common.locals.location
-  repository_url           = "https://github.com/Nexamesh/nexamesh-core"
   branch                   = "main"
-  static_web_app_sku       = "Standard"
-  cosmos_db_throughput     = 400
-  use_serverless_cosmos_db = true
+  static_web_app_sku       = "Free"  # upgrade to Standard when SLA or staging envs are required
+  use_serverless_cosmos_db = true    # serverless is cheapest at low-to-moderate traffic
+
+  create_notification_hub   = true
+  create_container_apps_env = true  # needed for Rust API + keeper
 
   azure_openai_chat_deployment      = "gpt-4"
   azure_openai_embedding_deployment = "text-embedding-3-small"
 
+  # Sensitive: supply via TF_VAR_* or a pipeline secret manager
+  # azure_openai_api_key  = ""
+  # azure_openai_endpoint = ""
+  # entra_id_tenant_id    = ""
+  # entra_id_client_id    = ""
+
   tags = {
-    environment  = "prd"
-    cost_center  = "nex-prd"
-    criticality  = "high"
-    managed_by   = "terragrunt"
+    environment = "prd"
+    cost_center = "nex-prd"
+    criticality = "high"
+    managed_by  = "terragrunt"
   }
 }

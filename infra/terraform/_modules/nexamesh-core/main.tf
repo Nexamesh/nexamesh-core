@@ -39,12 +39,10 @@ module "keyvault" {
   resource_group_name = azurerm_resource_group.shared.name
   tags                = local.tags
 
-  # Secrets injected after cosmosdb + notificationhub are resolved
+  # Secrets injected after dependent resources are resolved
   secrets = merge(
-    {
-      "CosmosDbConnectionString"        = module.cosmosdb.connection_string
-      "NotificationHubConnectionString" = module.notificationhub.connection_string
-    },
+    { "CosmosDbConnectionString" = module.cosmosdb.connection_string },
+    var.create_notification_hub ? { "NotificationHubConnectionString" = module.notificationhub[0].connection_string } : {},
     var.azure_openai_api_key != "" ? { "AzureOpenAiApiKey" = var.azure_openai_api_key } : {}
   )
 
@@ -85,8 +83,10 @@ module "cosmosdb" {
   name                = format("nex-%s-docs-cosmos", var.environment)
   location            = azurerm_resource_group.shared.location
   resource_group_name = azurerm_resource_group.shared.name
+  # Free tier forces provisioned mode (serverless is incompatible with free tier)
+  use_serverless      = var.enable_free_tier_cosmos ? false : var.use_serverless_cosmos_db
   throughput          = var.cosmos_db_throughput
-  use_serverless      = var.use_serverless_cosmos_db
+  enable_free_tier    = var.enable_free_tier_cosmos
   tags                = local.tags
 }
 
@@ -94,6 +94,7 @@ module "cosmosdb" {
 # Notification Hub
 # ---------------------------------------------------------------------------
 module "notificationhub" {
+  count  = var.create_notification_hub ? 1 : 0
   source = "../notificationhub"
 
   namespace_name      = format("nex-%s-docs-nhns", var.environment)
@@ -145,6 +146,7 @@ module "functions" {
 # Depends on: appinsights (workspace id)
 # ---------------------------------------------------------------------------
 module "containerapps_env" {
+  count  = var.create_container_apps_env ? 1 : 0
   source = "../containerapps-env"
 
   name                = "nex-global-shared-cae"
