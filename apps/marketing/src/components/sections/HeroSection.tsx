@@ -1,13 +1,12 @@
 import * as React from "react";
 import { Button } from "../ui/button";
-import { RadarRings } from "../ui/RadarRings";
+import { NexaMeshOrb } from "../ui/NexaMeshOrb";
 import styles from "./HeroSection.module.css";
 
 export const HeroSection: React.FC = () => {
   return (
     <section className={styles.section} id="hero">
-      <RadarRings size={520} className={styles.radarDecoration} />
-
+      <div className={styles.layout}>
       <div className={styles.container}>
         {/* Status indicator with live dot */}
         <p className={styles.statusLine}>
@@ -71,6 +70,12 @@ export const HeroSection: React.FC = () => {
           <span className={styles.trustSignal}>Patent Pending</span>
           <span className={styles.trustSignal}>Edge AI Processing</span>
           <span className={styles.trustSignal}>Mesh-Deployable</span>
+        </div>
+      </div>
+
+        {/* Orb — right column on desktop, hidden on small screens */}
+        <div className={styles.orbColumn} aria-hidden="true">
+          <NexaMeshOrb size={480} className={styles.orb} />
         </div>
       </div>
     </section>
