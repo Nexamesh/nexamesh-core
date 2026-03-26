@@ -5,7 +5,7 @@ the Next.js marketing site.
 
 ## Overview
 
-The Phoenix Rooivalk Threat Simulator is built using:
+The NexaMesh Threat Simulator is built using:
 
 - **Leptos**: A Rust web framework
 - **WebAssembly (WASM)**: For high-performance execution

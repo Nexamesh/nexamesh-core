@@ -3,7 +3,7 @@
 Modular, platform-agnostic detection system for edge devices. Supports Raspberry
 Pi, NVIDIA Jetson, and desktop development.
 
-Part of the [PhoenixRooivalk](../../README.md) counter-UAS platform.
+Part of the [NexaMesh](../../README.md) counter-UAS platform.
 
 ## Features
 
@@ -33,8 +33,8 @@ platforms or configurations, see [Advanced Setup](docs/ADVANCED_SETUP.md).
 ### 1. Install
 
 ```bash
-git clone https://github.com/JustAGhosT/PhoenixRooivalk.git
-cd PhoenixRooivalk/apps/detector
+git clone https://github.com/JustAGhosT/NexaMesh.git
+cd NexaMesh/apps/detector
 
 python3 -m venv venv && source venv/bin/activate
 pip install -e ".[pi]"
@@ -461,8 +461,8 @@ For simpler use cases, use `configs/dataset-binary.yaml`:
 
    ```bash
    cd ~
-   git clone https://github.com/JustAGhosT/PhoenixRooivalk.git
-   cd PhoenixRooivalk/apps/detector
+   git clone https://github.com/JustAGhosT/NexaMesh.git
+   cd NexaMesh/apps/detector
 
    # Create virtual environment
    python3 -m venv venv
@@ -484,7 +484,7 @@ For simpler use cases, use `configs/dataset-binary.yaml`:
 
    # Transfer model from development machine
    # On your dev machine:
-   scp models/drone-detector_int8.tflite pi@raspberrypi.local:~/PhoenixRooivalk/apps/detector/models/
+   scp models/drone-detector_int8.tflite pi@raspberrypi.local:~/NexaMesh/apps/detector/models/
    ```
 
 4. **Create config file (optional but recommended):**
@@ -519,16 +519,16 @@ Add the following (adjust paths as needed):
 
 ```ini
 [Unit]
-Description=PhoenixRooivalk Drone Detector
+Description=NexaMesh Drone Detector
 After=network.target
 
 [Service]
 Type=simple
 User=pi
-WorkingDirectory=/home/pi/PhoenixRooivalk/apps/detector
-Environment="PATH=/home/pi/PhoenixRooivalk/apps/detector/venv/bin"
-ExecStart=/home/pi/PhoenixRooivalk/apps/detector/venv/bin/python src/main.py \
-  --config /home/pi/PhoenixRooivalk/apps/detector/config.yaml \
+WorkingDirectory=/home/pi/NexaMesh/apps/detector
+Environment="PATH=/home/pi/NexaMesh/apps/detector/venv/bin"
+ExecStart=/home/pi/NexaMesh/apps/detector/venv/bin/python src/main.py \
+  --config /home/pi/NexaMesh/apps/detector/config.yaml \
   --headless
 Restart=always
 RestartSec=10
@@ -551,7 +551,7 @@ sudo systemctl status drone-detector.service
 journalctl -u drone-detector.service -f
 ```
 
-## Integration with PhoenixRooivalk
+## Integration with NexaMesh
 
 Send detections to the main platform:
 
@@ -886,4 +886,4 @@ See [docs/](docs/) for detailed API documentation.
 
 ## License
 
-MIT - Part of PhoenixRooivalk project
+MIT - Part of NexaMesh project

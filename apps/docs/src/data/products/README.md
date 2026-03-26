@@ -10,7 +10,7 @@ figures.
 | File                                         | Description                                                                                                                                                                                                                                                 |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`types.ts`](./types.ts)                     | TypeScript interfaces for all product data structures (`Product`, `BOMItem`, `ProductSpecs`, tier configs, etc.). Import types from here to keep other modules type-safe.                                                                                   |
-| [`catalog.ts`](./catalog.ts)                 | Individual product definitions for every SKU across all six product lines (SkyWatch, NetSentry, SkySnare, NetSnare, AeroNet, RKV). Also exports helper functions (`getProductBySku`, `getProductsByLine`, etc.) and summary data (`productCatalogSummary`). |
+| [`catalog.ts`](./catalog.ts)                 | Individual product definitions for every SKU across all six product lines (SkyWatch, NetSentry, Kestrel Mesh, NetSnare, Sentinel Ring, RKV). Also exports helper functions (`getProductBySku`, `getProductsByLine`, etc.) and summary data (`productCatalogSummary`). |
 | [`platforms.ts`](./platforms.ts)             | Compute platform specs (`raspberryPiPlatforms`, `jetsonPlatforms`), AI accelerator specs (`aiAccelerators`), and detection FPS benchmarks (`fpsBenchmarks`). Used in hardware comparison tables and the configurator.                                       |
 | [`storage-options.ts`](./storage-options.ts) | Local and network storage option definitions (`localStorageOptions`, `networkStorageOptions`) with use-case recommendations (`storageRecommendations`).                                                                                                     |
 | [`tiers.ts`](./tiers.ts)                     | Tier definitions and per-product tier configurations for compute, camera, connectivity, and storage. Includes helper functions (`getAvailableTiers`, `getTierPriceDelta`, `generateProductConfiguration`) used by the pre-order configurator UI.            |
@@ -22,9 +22,9 @@ figures.
 | ------------- | -------------- | ---------- | ---------------------------------------------------------------- |
 | **SkyWatch**  | Detection      | `SW-`      | 10 detection-only units from entry-level Nano to Enterprise mesh |
 | **NetSentry** | Detection      | `NS-`      | 3 lightweight detection platforms                                |
-| **SkySnare**  | Countermeasure | `SKS-`     | Net-launcher countermeasure for consumer/sports market           |
+| **Kestrel Mesh**  | Countermeasure | `SKS-`     | Net-launcher countermeasure for consumer/sports market           |
 | **NetSnare**  | Countermeasure | `NSN-`     | Net-launcher line (Lite / Standard / Pro)                        |
-| **AeroNet**   | Countermeasure | `AN-`      | Enterprise AI-enabled countermeasure systems                     |
+| **Sentinel Ring**   | Countermeasure | `AN-`      | Enterprise AI-enabled countermeasure systems                     |
 | **RKV**       | Mixed          | `RKV-`     | Mothership, Interceptor, and Ground Station                      |
 
 ## Usage

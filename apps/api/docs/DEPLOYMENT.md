@@ -1,4 +1,4 @@
-# Phoenix Rooivalk Deployment Guide
+# NexaMesh Deployment Guide
 
 ## Architecture Overview
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Phoenix Rooivalk timeline now includes comprehensive calendar export
+The NexaMesh timeline now includes comprehensive calendar export
 functionality, allowing users to import project milestones and events into their
 personal calendars. This feature provides multiple integration options to ensure
 maximum compatibility and ease of use.
@@ -111,7 +111,7 @@ Each calendar event includes:
 - **Title**: Phase and milestone name
 - **Description**: Detailed phase description and status
 - **Date**: Specific milestone date or quarter
-- **Category**: "PhoenixRooivalk Milestone"
+- **Category**: "NexaMesh Milestone"
 - **URL**: Link back to timeline page
 
 ## Technical Implementation
@@ -148,10 +148,10 @@ ICS files generated follow RFC 5545 specifications:
 ```ics
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Phoenix Rooivalk//Timeline Events//EN
+PRODID:-//NexaMesh//Timeline Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Phoenix Rooivalk Timeline
+X-WR-CALNAME:NexaMesh Timeline
 
 BEGIN:VEVENT
 UID:unique-event-id@phoenixrooivalk.com
@@ -159,7 +159,7 @@ DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260502
 SUMMARY:Year 1 (FY26): Complete mechanical prototype (May 2026)
 DESCRIPTION:Foundation & Validation - Complete mechanical prototype...
-CATEGORIES:PhoenixRooivalk Milestone
+CATEGORIES:NexaMesh Milestone
 URL:https://phoenixrooivalk.com/timeline
 END:VEVENT
 
@@ -240,4 +240,4 @@ For issues or questions:
 
 ## License
 
-© 2025 Phoenix Rooivalk. All rights reserved.
+© 2025 NexaMesh. All rights reserved.

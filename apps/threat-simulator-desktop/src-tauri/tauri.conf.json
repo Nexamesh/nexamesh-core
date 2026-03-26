@@ -1,5 +1,5 @@
 {
-  "productName": "Phoenix Rooivalk Threat Simulator",
+  "productName": "NexaMesh Threat Simulator",
   "version": "0.1.0",
   "identifier": "com.phoenixrooivalk.threatsimulator",
   "build": {
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "Phoenix Rooivalk Threat Simulator",
+        "title": "NexaMesh Threat Simulator",
         "width": 1920,
         "height": 1080,
         "resizable": true,
@@ -33,7 +33,7 @@
     "icon": ["icons/icon.png"],
     "resources": [],
     "externalBin": [],
-    "copyright": "Copyright © 2025 Phoenix Rooivalk",
+    "copyright": "Copyright © 2025 NexaMesh",
     "category": "Simulation",
     "shortDescription": "Counter-drone defense simulation and training platform",
     "longDescription": "Advanced counter-drone defense simulation platform with blockchain-based evidence recording for military training and evaluation.",

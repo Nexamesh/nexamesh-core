@@ -1,6 +1,6 @@
 # 🎉 FINAL MIGRATION SUMMARY
 
-## Phoenix Rooivalk ThreatSimulator - React → Leptos/Tauri
+## NexaMesh ThreatSimulator - React → Leptos/Tauri
 
 **Date Completed**: October 7, 2025  
 **Final Status**: ✅ **100% COMPLETE - FULLY FUNCTIONAL**  
@@ -10,7 +10,7 @@
 
 ## 🏆 Mission Accomplished
 
-The Phoenix Rooivalk ThreatSimulator has been **completely migrated** from
+The NexaMesh ThreatSimulator has been **completely migrated** from
 React/Next.js to Leptos/Tauri with **full feature parity** and **significant
 enhancements**.
 
@@ -547,7 +547,7 @@ pnpm sim:build:tauri      # ✅ Works! (builds .msi/.dmg/.deb)
 
 ## 🎉 Final Status
 
-### The Phoenix Rooivalk ThreatSimulator is:
+### The NexaMesh ThreatSimulator is:
 
 ✅ **100% MIGRATED** - All components ported  
 ✅ **FULLY FUNCTIONAL** - Both Tauri and Leptos  

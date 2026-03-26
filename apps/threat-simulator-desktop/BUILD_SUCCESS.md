@@ -8,7 +8,7 @@
 
 ## 🎉 Achievement Unlocked
 
-The **Phoenix Rooivalk Threat Simulator** has been successfully migrated from
+The **NexaMesh Threat Simulator** has been successfully migrated from
 **React/Next.js** to **Leptos/Tauri** and **compiles without errors**!
 
 ### Build Statistics

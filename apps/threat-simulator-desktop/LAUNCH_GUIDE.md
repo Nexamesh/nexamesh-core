@@ -133,7 +133,7 @@ trunk --version
 
 ```bash
 curl http://127.0.0.1:8080
-# Expected: HTML response with "Phoenix Rooivalk"
+# Expected: HTML response with "NexaMesh"
 ```
 
 ### 3. Check Browser Opened

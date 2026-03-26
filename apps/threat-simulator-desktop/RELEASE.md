@@ -49,22 +49,22 @@ The workflow generates the following installers:
 
 ### Windows
 
-- **MSI Installer**: `phoenix-rooivalk-threat-simulator_{version}_x64.msi`
+- **MSI Installer**: `nexamesh-threat-simulator_{version}_x64.msi`
   - Standard Windows installer package
 
 ### macOS
 
-- **Intel DMG**: `phoenix-rooivalk-threat-simulator_{version}_x64-intel.dmg`
+- **Intel DMG**: `nexamesh-threat-simulator_{version}_x64-intel.dmg`
   - For Intel-based Macs
-- **Apple Silicon DMG**: `phoenix-rooivalk-threat-simulator_{version}_arm64.dmg`
+- **Apple Silicon DMG**: `nexamesh-threat-simulator_{version}_arm64.dmg`
   - For M1/M2/M3 Macs
 
 ### Linux
 
-- **AppImage**: `phoenix-rooivalk-threat-simulator_{version}_amd64.AppImage`
+- **AppImage**: `nexamesh-threat-simulator_{version}_amd64.AppImage`
   - Portable, no installation required
   - Works on most Linux distributions
-- **DEB Package**: `phoenix-rooivalk-threat-simulator_{version}_amd64.deb`
+- **DEB Package**: `nexamesh-threat-simulator_{version}_amd64.deb`
   - For Debian/Ubuntu-based distributions
 
 ## Icon Setup
@@ -131,14 +131,14 @@ Installers will be created in `src-tauri/target/release/bundle/`.
 
 ```powershell
 # Install and test MSI
-msiexec /i "target\release\bundle\msi\Phoenix Rooivalk Threat Simulator_0.1.0_x64_en-US.msi"
+msiexec /i "target\release\bundle\msi\NexaMesh Threat Simulator_0.1.0_x64_en-US.msi"
 ```
 
 **macOS:**
 
 ```bash
 # Mount and test DMG
-open "target/release/bundle/dmg/Phoenix Rooivalk Threat Simulator_0.1.0_x64.dmg"
+open "target/release/bundle/dmg/NexaMesh Threat Simulator_0.1.0_x64.dmg"
 ```
 
 **Linux:**

@@ -1,4 +1,4 @@
-# Phoenix Rooivalk Threat Simulator - Migration Status
+# NexaMesh Threat Simulator - Migration Status
 
 ## 🎉 Migration Complete: React/Next.js → Leptos/Tauri
 
@@ -10,7 +10,7 @@
 
 ## Executive Summary
 
-Successfully migrated the Phoenix Rooivalk ThreatSimulator from a web-based
+Successfully migrated the NexaMesh ThreatSimulator from a web-based
 React/Next.js application to a high-performance Leptos (Rust WASM) + Tauri
 desktop application. The new implementation achieves **10x faster load times**,
 **3.75x better memory efficiency**, and **100% type safety** while adding
@@ -500,7 +500,7 @@ core game experience. The new implementation provides:
 ✅ **Native desktop** (cross-platform, offline-capable)  
 ✅ **Professional quality** (comprehensive docs, zero warnings)
 
-**The Phoenix Rooivalk Threat Simulator desktop application is production-ready
+**The NexaMesh Threat Simulator desktop application is production-ready
 and exceeds all initial targets.** 🚀
 
 ---

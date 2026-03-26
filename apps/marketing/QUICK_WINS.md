@@ -6,7 +6,7 @@
 # ⚡ Quick Wins - Immediate Action Items
 
 This document contains the **highest-impact, lowest-effort improvements** you
-can implement right now to boost the Phoenix Rooivalk marketing site.
+can implement right now to boost the NexaMesh marketing site.
 
 ---
 
@@ -84,7 +84,7 @@ image.
 1. Go to [Canva.com](https://canva.com) (free account)
 2. Create design → Custom size → 1200 x 630 px
 3. Add your logo (upload `/public/logo.svg`)
-4. Add text: "Phoenix Rooivalk - SAE Level 4 Autonomous Defense"
+4. Add text: "NexaMesh - SAE Level 4 Autonomous Defense"
 5. Use brand colors (orange #F97316, slate #0F172A)
 6. Export as PNG
 7. Save as `apps/marketing/public/og-image.png`
@@ -93,7 +93,7 @@ image.
 **Template Text**:
 
 ```
-Phoenix Rooivalk
+NexaMesh
 ━━━━━━━━━━━━━━━━━━━━
 SAE Level 4 Autonomous
 Counter-Drone Defense
@@ -111,7 +111,7 @@ openGraph: {
       url: '/og-image.png',  // Changed from /logo.svg
       width: 1200,
       height: 630,
-      alt: 'Phoenix Rooivalk - Autonomous Counter-Drone Defense System',
+      alt: 'NexaMesh - Autonomous Counter-Drone Defense System',
     },
   ],
 },
@@ -271,10 +271,10 @@ marketing.
   mainEntity: [
     {
       "@type": "Question",
-      name: "How does Phoenix Rooivalk work in RF-denied environments?",
+      name: "How does NexaMesh work in RF-denied environments?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Phoenix Rooivalk uses edge autonomy with optical and acoustic communication between defense nodes. Like a flock of birds coordinating without radios, nodes make decisions in 120-195ms even under complete jamming. SAE Level 4 autonomy enables operation without network connectivity."
+        text: "NexaMesh uses edge autonomy with optical and acoustic communication between defense nodes. Like a flock of birds coordinating without radios, nodes make decisions in 120-195ms even under complete jamming. SAE Level 4 autonomy enables operation without network connectivity."
       }
     },
     {
@@ -282,31 +282,31 @@ marketing.
       name: "What is SAE Level 4 autonomy in defense systems?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SAE Level 4 means the system can perform all defense functions autonomously in defined conditions without human intervention. Phoenix Rooivalk makes local decisions at the edge with sub-200ms response times, operating independently even when all communications are jammed."
+        text: "SAE Level 4 means the system can perform all defense functions autonomously in defined conditions without human intervention. NexaMesh makes local decisions at the edge with sub-200ms response times, operating independently even when all communications are jammed."
       }
     },
     {
       "@type": "Question",
-      name: "Is Phoenix Rooivalk ITAR compliant?",
+      name: "Is NexaMesh ITAR compliant?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Phoenix Rooivalk is designed with ITAR compliance in mind. We follow export control regulations for defense technology. Access to technical specifications requires NDA and verification of authorized user status."
+        text: "Yes, NexaMesh is designed with ITAR compliance in mind. We follow export control regulations for defense technology. Access to technical specifications requires NDA and verification of authorized user status."
       }
     },
     {
       "@type": "Question",
-      name: "What is the response time for Phoenix Rooivalk?",
+      name: "What is the response time for NexaMesh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Phoenix Rooivalk achieves sub-200ms response times from threat detection to defensive action. Edge computing and local decisioning eliminate network latency that traditional cloud-based systems experience."
+        text: "NexaMesh achieves sub-200ms response times from threat detection to defensive action. Edge computing and local decisioning eliminate network latency that traditional cloud-based systems experience."
       }
     },
     {
       "@type": "Question",
-      name: "Can Phoenix Rooivalk defend against drone swarms?",
+      name: "Can NexaMesh defend against drone swarms?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Phoenix Rooivalk is designed for swarm defense. The distributed architecture with mesh communication enables coordinated defense against multiple simultaneous threats. Each node contributes to collective situational awareness."
+        text: "Yes, NexaMesh is designed for swarm defense. The distributed architecture with mesh communication enables coordinated defense against multiple simultaneous threats. Each node contributes to collective situational awareness."
       }
     }
   ]
@@ -346,7 +346,7 @@ leadership.
 
 [Bullet points of limitations]
 
-## The Phoenix Rooivalk Approach
+## The NexaMesh Approach
 
 [How your solution addresses each limitation]
 
@@ -384,7 +384,7 @@ leadership.
 
 0:15-0:45 - Problem
 "Traditional defense systems rely on network connectivity.
-Phoenix Rooivalk uses edge autonomy - like a flock of birds."
+NexaMesh uses edge autonomy - like a flock of birds."
 
 0:45-1:30 - Demo
 [Screen recording of threat simulator]
@@ -569,7 +569,7 @@ Print this checklist and check off items as you complete them:
 ### SEO Mistakes
 
 - ❌ Duplicate meta descriptions across pages
-- ❌ Generic titles ("Home | Phoenix Rooivalk")
+- ❌ Generic titles ("Home | NexaMesh")
 - ❌ Missing alt text on images
 - ❌ Broken internal links
 - ❌ Slow page load times (>3 seconds)

@@ -1,4 +1,4 @@
-# PhoenixRooivalk Product Catalog
+# NexaMesh Product Catalog
 
 Complete specifications, bill of materials, and build guides for all drone
 detection and countermeasure products.
@@ -367,7 +367,7 @@ alert:
      python3-pip python3-venv libcamera-apps
 
    # Clone and install
-   git clone https://github.com/PhoenixRooivalk/detector.git
+   git clone https://github.com/NexaMesh/detector.git
    cd detector
    python3 -m venv venv
    source venv/bin/activate
@@ -1927,4 +1927,4 @@ alert:
 
 ---
 
-_Document Version: 1.0_ _Last Updated: 2026-01-09_ _PhoenixRooivalk Project_
+_Document Version: 1.0_ _Last Updated: 2026-01-09_ _NexaMesh Project_

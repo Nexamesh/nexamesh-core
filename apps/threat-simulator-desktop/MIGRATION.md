@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document tracks the migration of the Phoenix Rooivalk ThreatSimulator from
+This document tracks the migration of the NexaMesh ThreatSimulator from
 a web-based React/Next.js application to a high-performance desktop application
 using Leptos (Rust WASM) and Tauri.
 

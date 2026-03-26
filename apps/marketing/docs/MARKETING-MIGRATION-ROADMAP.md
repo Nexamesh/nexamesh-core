@@ -9,7 +9,7 @@
 This roadmap outlines the migration plan to align the marketing frontend with
 the complete product catalog, making it more consumer-friendly while maintaining
 enterprise appeal. The goal is to create a unified product presentation that
-scales from SkySnare consumer products to AeroNet enterprise solutions and RKV
+scales from Kestrel Mesh consumer products to Sentinel Ring enterprise solutions and RKV
 military systems.
 
 ---
@@ -43,7 +43,7 @@ apps/marketing/
 | Product Data        | Scattered           | Unified `products.ts`         | DONE     |
 | Pricing Display     | ROI calculator only | Product pricing pages         | HIGH     |
 | Phase Timeline      | Hidden              | Visual roadmap                | MEDIUM   |
-| Shop Integration    | None                | E-commerce for SkySnare       | HIGH     |
+| Shop Integration    | None                | E-commerce for Kestrel Mesh       | HIGH     |
 | Product Compare     | None                | Side-by-side comparison       | MEDIUM   |
 | **Preorder System** | **None**            | **All products preorderable** | **HIGH** |
 | **Bulk Orders**     | **None**            | **Volume pricing & quotes**   | **HIGH** |
@@ -59,7 +59,7 @@ apps/marketing/
 - [x] Create unified `products.ts` data file
 - [x] Add phases to all products in catalog
 - [x] Create `tariffs.ts` with pricing/labor data
-- [x] Add missing products (SkySnare, AeroNet, RKV)
+- [x] Add missing products (Kestrel Mesh, Sentinel Ring, RKV)
 
 **Files Created:**
 
@@ -70,13 +70,13 @@ apps/marketing/
 
 ### Phase 2: Consumer Landing Experience (Weeks 2-3)
 
-**Goal:** Create consumer-friendly entry point for SkySnare
+**Goal:** Create consumer-friendly entry point for Kestrel Mesh
 
 #### 2.1 New Routes
 
 ```
 /shop                    # Product catalog overview
-/shop/skysnare           # SkySnare product page
+/shop/skysnare           # Kestrel Mesh product page
 /shop/skywatch           # SkyWatch line overview
 /shop/netsentry          # NetSentry line overview
 /products                # Full product catalog
@@ -93,7 +93,7 @@ apps/marketing/
 // New: Dual-track hero with consumer/enterprise paths
 
 <HeroSection>
-  <ConsumerPath>"Protect Your Privacy" → Shop SkySnare ($349)</ConsumerPath>
+  <ConsumerPath>"Protect Your Privacy" → Shop Kestrel Mesh ($349)</ConsumerPath>
 
   <EnterprisePath>"Defend Your Infrastructure" → Schedule Demo</EnterprisePath>
 </HeroSection>
@@ -114,10 +114,10 @@ apps/marketing/
 ```tsx
 // Updated Navigation Structure
 Products (Dropdown)
-├── SkySnare - Consumer           [NEW]
+├── Kestrel Mesh - Consumer           [NEW]
 ├── SkyWatch - Detection          [NEW]
 ├── NetSentry - Countermeasures   [NEW]
-├── AeroNet - Enterprise          [NEW]
+├── Sentinel Ring - Enterprise          [NEW]
 ├── Compare Products              [NEW]
 └── Full Catalog                  [NEW]
 
@@ -165,7 +165,7 @@ export async function generateStaticParams() {
 
 #### 3.3 Consumer vs Enterprise Styling
 
-| Element | Consumer (SkySnare)      | Enterprise (AeroNet)             |
+| Element | Consumer (Kestrel Mesh)      | Enterprise (Sentinel Ring)             |
 | ------- | ------------------------ | -------------------------------- |
 | Tone    | Friendly, casual         | Professional, formal             |
 | CTA     | "Buy Now", "Add to Cart" | "Schedule Demo", "Contact Sales" |
@@ -183,7 +183,7 @@ export async function generateStaticParams() {
 
 ```
 /shop
-├── /shop/skysnare          # Main SkySnare page
+├── /shop/skysnare          # Main Kestrel Mesh page
 ├── /shop/skysnare/buy      # Checkout flow
 ├── /shop/cart              # Shopping cart
 └── /shop/checkout          # Checkout page
@@ -200,7 +200,7 @@ export async function generateStaticParams() {
 #### 4.3 Implementation Steps
 
 1. **Week 5:**
-   - Set up Shopify store for SkySnare
+   - Set up Shopify store for Kestrel Mesh
    - Integrate Buy Button SDK
    - Create cart component
 
@@ -268,19 +268,19 @@ Example: SkyWatch Marine (Series A Q2 2027)
 
 | Product              | Phase    | Phase Completion | Est. Delivery |
 | -------------------- | -------- | ---------------- | ------------- |
-| SkySnare             | Seed     | Q2 2026          | Jul 2026      |
+| Kestrel Mesh             | Seed     | Q2 2026          | Jul 2026      |
 | NetSnare Lite        | Seed     | Q2 2026          | Jul 2026      |
 | NetSentry Lite       | Seed     | Q3 2026          | Oct 2026      |
 | SkyWatch Mobile      | Series A | Q4 2026          | Jan 2027      |
 | NetSnare Standard    | Series A | Q4 2026          | Jan 2027      |
 | SkyWatch Thermal     | Series A | Q1 2027          | Apr 2027      |
 | NetSentry Standard   | Series A | Q1 2027          | Apr 2027      |
-| AeroNet Command      | Series A | Q1 2027          | Apr 2027      |
+| Sentinel Ring Command      | Series A | Q1 2027          | Apr 2027      |
 | SkyWatch Marine      | Series A | Q2 2027          | Jul 2027      |
 | SkyWatch Mesh        | Series A | Q2 2027          | Jul 2027      |
 | NetSentry Pro        | Series A | Q2 2027          | Jul 2027      |
 | NetSnare Pro         | Series A | Q2 2027          | Jul 2027      |
-| AeroNet Enterprise   | Series A | Q2 2027          | Jul 2027      |
+| Sentinel Ring Enterprise   | Series A | Q2 2027          | Jul 2027      |
 | SkyWatch Enterprise  | Series A | Q3 2027          | Aug 2027      |
 | RKV-G Ground Station | Series B | Q2 2028          | Aug 2028      |
 | RKV-M Mothership     | Series C | Q2 2029          | Aug 2029      |
@@ -449,11 +449,11 @@ type PreorderStatus =
 
 **Goal:** Professional enterprise journey with demo scheduling
 
-#### 5.1 AeroNet Dedicated Section
+#### 5.1 Sentinel Ring Dedicated Section
 
 ```
 /enterprise
-├── /enterprise/aeronet     # AeroNet platform page
+├── /enterprise/aeronet     # Sentinel Ring platform page
 ├── /enterprise/demo        # Interactive demo
 ├── /enterprise/roi         # ROI calculator
 ├── /enterprise/case-studies # Customer success
@@ -488,7 +488,7 @@ const productColors = {
 
 #### 6.2 Asset Requirements
 
-| Asset Type     | SkySnare  | SkyWatch  | NetSentry | AeroNet   | RKV       |
+| Asset Type     | Kestrel Mesh  | SkyWatch  | NetSentry | Sentinel Ring   | RKV       |
 | -------------- | --------- | --------- | --------- | --------- | --------- |
 | Hero Image     | ✅ Needed | ✅ Needed | ✅ Needed | ✅ Needed | ✅ Needed |
 | Product Photos | 5+        | 3+ per    | 3+ per    | 5+        | Renders   |
@@ -505,7 +505,7 @@ const productColors = {
 - [x] Create `products.ts`
 - [x] Add phases to catalog
 - [x] Create `tariffs.ts`
-- [x] Add SkySnare, AeroNet, RKV products
+- [x] Add Kestrel Mesh, Sentinel Ring, RKV products
 
 ### Phase 2: Consumer Landing
 
@@ -550,7 +550,7 @@ const productColors = {
 ### Phase 5: Enterprise
 
 - [ ] Create `/enterprise` section
-- [ ] Build AeroNet dedicated page
+- [ ] Build Sentinel Ring dedicated page
 - [ ] Enhance demo scheduling
 - [ ] Add case studies section
 - [ ] Implement lead scoring
@@ -576,7 +576,7 @@ apps/marketing/
 │   ├── shop/
 │   │   ├── page.tsx                    # Shop landing
 │   │   ├── skysnare/
-│   │   │   └── page.tsx               # SkySnare product
+│   │   │   └── page.tsx               # Kestrel Mesh product
 │   │   ├── cart/
 │   │   │   └── page.tsx               # Shopping cart
 │   │   └── checkout/
@@ -603,7 +603,7 @@ apps/marketing/
 │   └── enterprise/
 │       ├── page.tsx                   # Enterprise landing
 │       └── aeronet/
-│           └── page.tsx               # AeroNet detail
+│           └── page.tsx               # Sentinel Ring detail
 ├── src/components/
 │   ├── products/
 │   │   ├── ProductCard.tsx
@@ -712,7 +712,7 @@ Week 9-10:  Visual Polish & Launch
 1. **Immediate (This Week):**
    - [ ] Review and approve this roadmap
    - [ ] Begin Phase 2 component development
-   - [ ] Source/create SkySnare hero images
+   - [ ] Source/create Kestrel Mesh hero images
    - [ ] Define preorder email templates
 
 2. **Short-term (Next 2 Weeks):**
@@ -722,7 +722,7 @@ Week 9-10:  Visual Polish & Launch
    - [ ] Build PreorderButton component
 
 3. **Medium-term (Month 2):**
-   - [ ] Launch SkySnare shop with preorders
+   - [ ] Launch Kestrel Mesh shop with preorders
    - [ ] Complete preorder system
    - [ ] Launch bulk order inquiry system
    - [ ] Complete enterprise section

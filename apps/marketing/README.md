@@ -1,6 +1,6 @@
-# Phoenix Rooivalk Marketing Site
+# NexaMesh Marketing Site
 
-This is the marketing website for Phoenix Rooivalk, built with Next.js 14.
+This is the marketing website for NexaMesh, built with Next.js 14.
 
 ## Authentication and Career Applications
 

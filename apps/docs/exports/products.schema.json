@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://phoenixrooivalk.com/schemas/products.json",
-  "title": "Phoenix Rooivalk Product Catalog",
+  "title": "NexaMesh Product Catalog",
   "description": "Schema for validating the exported product catalog",
   "type": "array",
   "items": {
@@ -21,7 +21,7 @@
       },
       "line": {
         "type": "string",
-        "enum": ["SkyWatch", "NetSentry", "SkySnare", "NetSnare", "AeroNet", "RKV"],
+        "enum": ["SkyWatch", "NetSentry", "Kestrel Mesh", "NetSnare", "Sentinel Ring", "RKV"],
         "description": "Product line"
       },
       "category": {
