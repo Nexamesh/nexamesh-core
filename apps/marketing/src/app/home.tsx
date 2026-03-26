@@ -1,12 +1,15 @@
 "use client";
 import * as React from "react";
 
+import { AnnouncementBar } from "../components/AnnouncementBar";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 import { ContactSection } from "../components/sections/ContactSection";
 import { FeaturesSection } from "../components/sections/FeaturesSection";
 import { HeroSection } from "../components/sections/HeroSection";
 import { ProductHighlightsSection } from "../components/sections/ProductHighlightsSection";
+import { SimulatorShowcase } from "../components/sections/SimulatorShowcase";
+import { TechStackSection } from "../components/sections/TechStackSection";
 import { ThreatRealitySection } from "../components/sections/ThreatRealitySection";
 import { InteractiveMesh } from "../components/ui/InteractiveMesh";
 import { MeshDivider } from "../components/ui/MeshDivider";
@@ -29,13 +32,17 @@ export default function HomePage(): React.ReactElement {
         bendRadius={120}
       />
 
-      {/* Global Components */}
+      {/* Announcement bar — above nav so it slides down first */}
+      <AnnouncementBar />
 
       {/* Navigation */}
       <Navigation />
 
       {/* Main Content Sections */}
       <HeroSection />
+      <TechStackSection />
+      <MeshDivider />
+      <SimulatorShowcase />
       <MeshDivider />
       <ThreatRealitySection />
       <MeshDivider />

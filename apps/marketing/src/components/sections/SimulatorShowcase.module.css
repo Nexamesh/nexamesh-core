@@ -1,0 +1,150 @@
+/* SimulatorShowcase — angled product screenshot section */
+
+.section {
+  padding: var(--space-16, 6rem) var(--space-4, 1rem);
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-10, 2.5rem);
+}
+
+/* ── Header copy ── */
+.header {
+  text-align: center;
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(var(--primary, 199 122 27));
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: rgb(var(--text-primary, 226 232 240));
+  margin: 0 0 1rem;
+}
+
+.sub {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgb(var(--text-muted, 100 116 139));
+  margin: 0;
+}
+
+/* ── Screenshot frame ── */
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* Perspective tilt — Graphite-style angled product shot */
+.tilt {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(199, 122, 27, 0.2);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 32px 80px rgba(0, 0, 0, 0.6),
+    0 8px 24px rgba(0, 0, 0, 0.4);
+  transform: perspective(1200px) rotateX(6deg) rotateY(-2deg) scale(0.97);
+  transform-origin: center top;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tilt:hover {
+  transform: perspective(1200px) rotateX(2deg) rotateY(-1deg) scale(0.99);
+}
+
+.screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Fade reflection at bottom */
+.reflection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(8, 12, 16, 0.55), transparent);
+  pointer-events: none;
+}
+
+/* Ambient glow blob behind the frame */
+.glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(
+    ellipse 70% 40% at 50% 60%,
+    rgba(199, 122, 27, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ── Feature pills row ── */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.featureLabel {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: rgb(var(--primary, 199 122 27));
+  letter-spacing: 0.02em;
+}
+
+.featureDesc {
+  font-size: 0.75rem;
+  color: rgb(var(--text-muted, 100 116 139));
+  letter-spacing: 0.03em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .tilt {
+    transform: perspective(800px) rotateX(4deg) scale(0.98);
+  }
+
+  .tilt:hover {
+    transform: perspective(800px) rotateX(1deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt,
+  .tilt:hover {
+    transform: none;
+    transition: none;
+  }
+}
