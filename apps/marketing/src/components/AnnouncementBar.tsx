@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { safeGet, safeSet } from "@nexamesh/utils";
 import styles from "./AnnouncementBar.module.css";
 
@@ -13,11 +13,10 @@ const DISMISSED_KEY = "nexamesh-announcement-dismissed-2026-q3";
  * suffix to re-show after a new announcement goes live.
  */
 export const AnnouncementBar: React.FC = () => {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    if (!safeGet(DISMISSED_KEY)) setVisible(true);
-  }, []);
+  const [visible, setVisible] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return !safeGet(DISMISSED_KEY);
+  });
 
   const dismiss = () => {
     safeSet(DISMISSED_KEY, "1");
