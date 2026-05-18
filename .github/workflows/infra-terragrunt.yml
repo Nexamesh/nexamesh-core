@@ -96,7 +96,7 @@ jobs:
         run: bash infra/terraform/scripts/bootstrap-tfstate.sh "$ENVIRONMENT"
 
       - name: Cache Terraform providers
-        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: ~/.terraform.d/plugin-cache
           key: tf-providers-${{ env.ENVIRONMENT }}-${{ hashFiles('infra/terraform/_modules/**/*.tf', 'infra/terraform/root.terragrunt.hcl') }}
@@ -233,7 +233,7 @@ jobs:
         run: bash infra/terraform/scripts/bootstrap-tfstate.sh "$ENVIRONMENT"
 
       - name: Cache Terraform providers
-        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: ~/.terraform.d/plugin-cache
           key: tf-providers-${{ env.ENVIRONMENT }}-${{ hashFiles('infra/terraform/_modules/**/*.tf', 'infra/terraform/root.terragrunt.hcl') }}
