@@ -13,7 +13,8 @@ import { UserProfile } from "./types";
  * Users with these email domains are automatically granted access to internal templates.
  */
 export const INTERNAL_DOMAINS = [
-  "phoenixrooivalk.com",
+  "nexamesh.ai",
+  "nexamesh.ai", // Legacy domain — keep for backward compatibility
   "justaghost.dev", // Development/admin domain
 ];
 
@@ -25,8 +26,10 @@ export const INTERNAL_DOMAINS = [
 export const KNOWN_INTERNAL_EMAILS: Record<string, string> = {
   "martynrede@gmail.com": "martyn",
   "smit.jurie@gmail.com": "jurie",
-  "megatesla@gmail.com": "pieter", // Pieter's personal email
+  "megatesla@gmail.com": "pieter", // Pieter La Grange — advisor (industry connections)
   "eben.mare@gmail.com": "eben",
+  // Charl Chapman — add personal email here once confirmed
+  // "charl.chapman@gmail.com": "charl",
 };
 
 /**
@@ -161,7 +164,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Key metrics for business cases",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Pitch Deck",
         priority: 5,
         reason: "Essential for marketing and investor presentations",
@@ -232,6 +235,49 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         title: "Manufacturing Strategy",
         priority: 3,
         reason: "Manufacturing considerations for hardware",
+      },
+    ],
+  },
+
+  // Charl - Hardware Lead (Co-Founder)
+  charl: {
+    name: "Charl",
+    roles: ["Technical - Mechanical"],
+    focusAreas: ["technical", "research"],
+    interests: ["hardware", "manufacturing", "counter-uas", "prototyping"],
+    experienceLevel: "intermediate",
+    profileDescription:
+      "Hardware Lead focused on physical prototype development and component integration",
+    recommendedPaths: [
+      {
+        docId: "/docs/research/upgrade-path-c-brain-upgrade-brushed",
+        title: "Upgrade Path C",
+        priority: 5,
+        reason: "Current active hardware build path",
+      },
+      {
+        docId: "/docs/research/spare-parts-bin",
+        title: "Spare Parts Bin",
+        priority: 5,
+        reason: "Available salvage components",
+      },
+      {
+        docId: "/docs/research/spare-parts-decisions",
+        title: "Spare Parts Decisions",
+        priority: 5,
+        reason: "Strip/keep decisions for salvaged components",
+      },
+      {
+        docId: "/docs/research/upgrade-purchasing-tracker",
+        title: "Purchasing Tracker",
+        priority: 4,
+        reason: "Active hardware orders",
+      },
+      {
+        docId: "/docs/technical/hardware-foundation",
+        title: "Hardware Foundation",
+        priority: 4,
+        reason: "Overall hardware architecture",
       },
     ],
   },
@@ -334,7 +380,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Customer application scenarios",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Pitch Deck",
         priority: 5,
         reason: "Sales presentation materials",
@@ -370,7 +416,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Industry contacts and networking",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Presentation Materials",
         priority: 4,
         reason: "Additional presentation resources",
@@ -452,7 +498,7 @@ export const INTERNAL_USER_PROFILES: Record<string, UserProfile> = {
         reason: "Strategic roadmap and milestones",
       },
       {
-        docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+        docId: "/docs/executive/nexamesh-pitch-deck",
         title: "Pitch Deck",
         priority: 4,
         reason: "Investor presentation materials",

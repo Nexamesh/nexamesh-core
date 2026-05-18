@@ -7,7 +7,7 @@ description: Step-by-step guide to implementing RAG for documentation
 # RAG Implementation Guide
 
 This guide walks through implementing Retrieval-Augmented Generation (RAG) for
-the Phoenix Rooivalk documentation site using Firebase and OpenAI.
+the NexaMesh documentation site using Firebase and OpenAI.
 
 ## Prerequisites
 
@@ -506,7 +506,7 @@ export async function queryWithRAG(
     .join("\n\n---\n\n");
 
   // Build system prompt
-  const systemPrompt = `You are Phoenix Rooivalk's documentation assistant, an expert on autonomous counter-drone defense systems.
+  const systemPrompt = `You are NexaMesh's documentation assistant, an expert on autonomous counter-drone defense systems.
 
 IMPORTANT RULES:
 1. Answer ONLY using information from the provided documentation context
@@ -515,7 +515,7 @@ IMPORTANT RULES:
 4. Be accurate and technical, but explain complex concepts clearly
 5. If asked about competitors or sensitive topics, refer to the appropriate documentation sections
 
-Context about Phoenix Rooivalk:
+Context about NexaMesh:
 - Autonomous reusable kinetic interceptor for counter-UAS defense
 - Uses blockchain-verified chain of custody
 - AI-powered targeting with human-in-the-loop options
@@ -841,7 +841,7 @@ ${response.sources.map((s, i) =>
 {activeTab === "ask" && (
   <div className="ai-tab-content">
     <p className="ai-tab-description">
-      Ask questions about Phoenix Rooivalk documentation. AI will search
+      Ask questions about NexaMesh documentation. AI will search
       and cite relevant sources.
     </p>
 

@@ -165,7 +165,7 @@ ${issueSummary || "None"}
       })
       .join("\n---\n");
 
-    const systemPrompt = `You are a technical writer creating a weekly development progress report for Phoenix Rooivalk, a defense technology startup.
+    const systemPrompt = `You are a technical writer creating a weekly development progress report for NexaMesh, a defense technology startup.
 
 Your task is to analyze the GitHub activity data and create a professional, comprehensive report matching the style of existing progress reports.
 
@@ -641,7 +641,7 @@ import {
 
 # Week ${weekNumber}: ${this.formatDate(report.weekStartDate, "long")} - ${this.formatDate(report.weekEndDate, "long")}
 
-<DocumentDownload title="Week ${weekNumber} Progress Report - Phoenix Rooivalk" />
+<DocumentDownload title="Week ${weekNumber} Progress Report - NexaMesh" />
 
 `;
 

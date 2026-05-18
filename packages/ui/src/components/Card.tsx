@@ -28,7 +28,7 @@ export interface CardFooterProps {
 }
 
 /**
- * Card component using Phoenix Rooivalk design tokens
+ * Card component using NexaMesh design tokens
  *
  * Uses CSS custom properties for consistent theming:
  * - Background: var(--pr-bg-muted), var(--pr-bg-subtle)
@@ -97,7 +97,7 @@ export const Card: React.FC<CardProps> = ({
 /**
  * Card Header component for displaying title and optional actions.
  *
- * Renders a header section with bottom border separator using Phoenix Rooivalk design tokens.
+ * Renders a header section with bottom border separator using NexaMesh design tokens.
  *
  * @param props - The component props
  * @param props.children - Content to render inside the header (typically title, subtitle, or actions)
@@ -131,7 +131,7 @@ export const CardHeader: React.FC<CardHeaderProps> = ({
 /**
  * Card Body component for the main content area of a card.
  *
- * Renders the primary content section with muted text color using Phoenix Rooivalk design tokens.
+ * Renders the primary content section with muted text color using NexaMesh design tokens.
  *
  * @param props - The component props
  * @param props.children - The main content to render inside the card body
@@ -163,7 +163,7 @@ export const CardBody: React.FC<CardBodyProps> = ({
 /**
  * Card Footer component for actions or metadata at the bottom of a card.
  *
- * Renders a footer section with top border separator using Phoenix Rooivalk design tokens.
+ * Renders a footer section with top border separator using NexaMesh design tokens.
  * Typically used for action buttons, links, or supplementary information.
  *
  * @param props - The component props

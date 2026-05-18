@@ -3,28 +3,22 @@
  *
  * Single source of truth for all products displayed on the marketing frontend.
  * Aligned with product-catalog.md and tariffs.ts
+ *
+ * Shared base types (ProductLine, MarketTier, SystemType, ProductPhase) are
+ * defined in @nexamesh/types and re-exported here for local use.
  */
 
-export type ProductPhase =
-  | "seed"
-  | "series-a"
-  | "series-b"
-  | "series-c"
-  | "scale";
-export type ProductCategory =
-  | "consumer"
-  | "diy-maker"
-  | "prosumer"
-  | "commercial"
-  | "enterprise"
-  | "military";
-export type ProductLine =
-  | "skysnare"
-  | "netsnare"
-  | "skywatch"
-  | "netsentry"
-  | "aeronet"
-  | "rkv";
+import type {
+  ProductLine,
+  MarketTier,
+  ProductPhase,
+  BaseProduct,
+} from "@nexamesh/types";
+
+export type { ProductLine, MarketTier, ProductPhase, BaseProduct };
+
+/** @deprecated Use {@link MarketTier} */
+export type ProductCategory = MarketTier;
 
 export interface ProductPhaseInfo {
   id: ProductPhase;
@@ -43,7 +37,7 @@ export interface Product {
   line: ProductLine;
   tagline: string;
   description: string;
-  category: ProductCategory;
+  category: MarketTier;
   phase: ProductPhase;
   phaseTimeline: string;
   available: boolean;
@@ -102,11 +96,11 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
     funding: "$1.5M",
     color: "#22c55e", // green
     description:
-      "Consumer product launch with SkySnare, NetSnare, and NetSentry Lite",
+      "Consumer product launch with Kestrel Mesh, NetSnare, and NetSentry Lite",
   },
   "series-a": {
     id: "series-a",
-    name: "Series A: AeroNet & DoD",
+    name: "Series A: Sentinel Ring & DoD",
     shortName: "Series A",
     timeline: "Q4 2026 - Q3 2027 • Delivery Apr-Aug 2027",
     funding: "$8-12M",
@@ -148,16 +142,16 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
 
 export const products: Product[] = [
   // -------------------------------------------------------------------------
-  // SKYSNARE - Consumer Line
+  // KESTREL MESH - Consumer Line
   // -------------------------------------------------------------------------
   {
-    id: "skysnare",
+    id: "kestrel-mesh",
     sku: "SS-001",
-    name: "SkySnare",
-    line: "skysnare",
-    tagline: "Protect Your Airspace",
+    name: "Kestrel Mesh",
+    line: "kestrel",
+    tagline: "Detect. Alert. Respond.",
     description:
-      "Direct-to-consumer drone capture device. Simple point-and-shoot operation for personal property protection.",
+      "Consumer-grade edge AI sensor node. Sub-200ms detection, instant mobile alerts, and blockchain-logged evidence — with an optional net-response module for active neutralisation.",
     category: "consumer",
     phase: "seed",
     phaseTimeline: "Q2 2026 Launch • Delivery Jul 2026",
@@ -175,24 +169,24 @@ export const products: Product[] = [
 
     targetMarket: [
       "Property owners",
-      "Outdoor enthusiasts",
+      "Security-conscious homeowners",
       "Privacy advocates",
     ],
-    marketSegment: "$3.22B outdoor sports market",
+    marketSegment: "$6.6B consumer counter-drone market",
 
     specs: {
-      range: "15-30m",
-      netSize: "2m × 2m",
-      reloadTime: "30 seconds",
+      detectionRange: "30–80m",
+      latency: "<200ms",
       weight: "~1.2kg",
-      power: "CO2 cartridge",
+      power: "USB-C rechargeable, 8h standby",
+      connectivity: "WiFi + BLE",
     },
 
     features: [
-      "Point-and-shoot operation",
-      "No technical knowledge required",
-      "Dual safety mechanism",
-      "Instant reload system",
+      "Edge AI inference on-device",
+      "Blockchain evidence anchoring",
+      "Instant push alerts",
+      "Optional net-response module",
       "Weatherproof design",
     ],
 
@@ -200,11 +194,11 @@ export const products: Product[] = [
       "Backyard privacy protection",
       "Event security",
       "Property surveillance defense",
-      "Recreational drone tag",
+      "First-responder detection kit",
     ],
 
-    catalogUrl: "/docs/technical/detector/product-catalog#skysnare",
-    buyUrl: "/shop/skysnare",
+    catalogUrl: "/docs/technical/detector/product-catalog#kestrel-mesh",
+    buyUrl: "/shop/kestrel-mesh",
     demoUrl: "/interactive-demo",
   },
 
@@ -216,9 +210,9 @@ export const products: Product[] = [
     sku: "NSN-LITE-001",
     name: "NetSnare Lite",
     line: "netsnare",
-    tagline: "Ground-Mounted Net Launcher",
+    tagline: "Mesh Sensor + Response Node",
     description:
-      "Spring-powered ground-mounted net launcher. Pairs with any SkyWatch detector for automated drone capture.",
+      "Maker-friendly mesh sensor node with integrated response module. Pairs with any SkyWatch detector for AI-triggered, automated drone neutralisation.",
     category: "diy-maker",
     phase: "seed",
     phaseTimeline: "Q2 2026 • Delivery Jul 2026",
@@ -233,8 +227,8 @@ export const products: Product[] = [
     assemblyHours: 1.5,
     laborCost: 14,
 
-    targetMarket: ["DIY enthusiasts", "Makers", "Property owners"],
-    marketSegment: "Ground-mounted launcher for SkyWatch users",
+    targetMarket: ["Property owners", "Small businesses", "First responders"],
+    marketSegment: "Entry-level automated perimeter defense",
 
     specs: {
       range: "10-20m launch",
@@ -245,10 +239,10 @@ export const products: Product[] = [
     },
 
     features: [
-      "Spring-powered launcher",
+      "Edge AI sensor node",
       "SkyWatch API integration",
       "Mobile app trigger",
-      "Manual reload",
+      "Open trigger API (Arduino compatible)",
       "Weather resistant",
     ],
 
@@ -266,9 +260,9 @@ export const products: Product[] = [
     sku: "NSN-STD-001",
     name: "NetSnare Standard",
     line: "netsnare",
-    tagline: "CO2 Ground Launcher",
+    tagline: "AI-Triggered Ground Sensor",
     description:
-      "CO2-powered ground-mounted launcher with faster response and longer range. Integrates with SkyWatch for automated targeting.",
+      "Smart ground sensor with AI-triggered response module. Faster intercept and extended detection range — integrates with SkyWatch for fully automated targeting.",
     category: "prosumer",
     phase: "series-a",
     phaseTimeline: "Q4 2026 • Delivery Jan 2027",
@@ -287,18 +281,18 @@ export const products: Product[] = [
     marketSegment: "Automated ground defense for properties",
 
     specs: {
-      range: "20-35m launch",
+      detectionRange: "100–200m",
+      responseRange: "20–35m",
       trigger: "Auto from SkyWatch",
       response: "100ms",
-      reload: "CO2 cartridge swap",
-      costPerShot: "$1-2",
+      costPerIntercept: "$1-2",
     },
 
     features: [
-      "CO2 powered launcher",
+      "AI-triggered response",
       "Auto-trigger from SkyWatch",
       "Multiple mount options",
-      "Quick CO2 reload",
+      "Fast intercept module",
       "IP65 weatherproof",
     ],
 
@@ -316,9 +310,9 @@ export const products: Product[] = [
     sku: "NSN-PRO-001",
     name: "NetSnare Pro",
     line: "netsnare",
-    tagline: "Tracking Ground Platform",
+    tagline: "Precision AI Tracking Platform",
     description:
-      "Pneumatic ground launcher with pan-tilt tracking. Full autonomous operation when paired with SkyWatch Pro or Enterprise.",
+      "Precision sensor platform with pan-tilt tracking and AI-guided response. Fully autonomous operation when paired with SkyWatch Pro or Enterprise.",
     category: "commercial",
     phase: "series-a",
     phaseTimeline: "Q2 2027 • Delivery Jul 2027",
@@ -341,20 +335,19 @@ export const products: Product[] = [
     marketSegment: "Automated perimeter defense",
 
     specs: {
-      range: "30-50m launch",
+      detectionRange: "200–500m",
+      responseRange: "30–50m",
       tracking: "Pan-tilt motorized",
       response: "50ms",
-      reload: "Air tank refillable",
       coverage: "180° arc",
     },
 
     features: [
-      "Pneumatic launcher",
+      "Edge AI predictive targeting",
       "Pan-tilt tracking",
-      "Predictive targeting",
-      "Multi-shot capability",
+      "Multi-intercept capability",
       "Remote monitoring",
-      "Air tank refillable",
+      "Autonomous operation mode",
     ],
 
     useCases: [
@@ -377,7 +370,7 @@ export const products: Product[] = [
     line: "skywatch",
     tagline: "Entry-Level Detection",
     description:
-      "Entry-level drone detection for backyard awareness and learning. Perfect for makers and hobbyists.",
+      "Entry-level edge AI detection node. Rapid-deploy awareness for small facilities, training sites, and proof-of-concept evaluations.",
     category: "diy-maker",
     phase: "seed",
     phaseTimeline: "Q1 2026 • Delivery Apr 2026",
@@ -392,8 +385,8 @@ export const products: Product[] = [
     assemblyHours: 1.04,
     laborCost: 10,
 
-    targetMarket: ["Hobbyists", "Makers", "Educational"],
-    marketSegment: "DIY/Maker community",
+    targetMarket: ["Security researchers", "System integrators", "Educational"],
+    marketSegment: "Entry-level edge AI detection",
 
     specs: {
       range: "30-50m",
@@ -567,40 +560,90 @@ export const products: Product[] = [
     catalogUrl: "/docs/technical/detector/product-catalog#skywatch-mobile",
   },
   {
-    id: "skywatch-thermal",
-    sku: "SW-THM-001",
-    name: "SkyWatch Thermal",
+    id: "skywatch-thermal-budget",
+    sku: "SW-THM-001-B",
+    name: "SkyWatch Thermal (Budget)",
     line: "skywatch",
-    tagline: "24/7 All-Weather Detection",
+    tagline: "24/7 Detection — FLIR Lepton",
     description:
-      "Thermal imaging drone detector for all-light conditions. Day/night detection with sensor fusion.",
+      "Entry-level thermal imaging detector. FLIR Lepton 3.5 (160×120) fused with visible camera for cost-effective all-light drone detection.",
     category: "commercial",
     phase: "series-a",
     phaseTimeline: "Q1 2027 • Delivery Apr 2027",
     available: false,
     comingSoon: true,
 
-    priceRange: { min: 400, max: 1500 },
-    priceFormatted: "$400-1,500",
+    priceRange: { min: 400, max: 800 },
+    priceFormatted: "$400-800",
 
-    cogs: 631,
-    margin: 0.44,
-    assemblyHours: 8.0,
-    laborCost: 133,
+    cogs: 468,
+    margin: 0.41,
+    assemblyHours: 6.0,
+    laborCost: 100,
 
-    targetMarket: ["24/7 operations", "Night security", "Critical sites"],
-    marketSegment: "Professional security",
+    targetMarket: ["24/7 operations", "Night security", "SMB sites"],
+    marketSegment: "Professional security — budget tier",
 
     specs: {
       range: "100-500m thermal, 50-300m visible",
-      thermalRes: "160×120 to 320×256",
+      thermalRes: "160×120",
       sensitivity: "<50mK NETD",
+      sensor: "FLIR Lepton 3.5",
     },
 
     features: [
       "Thermal + visible fusion",
       "True 24/7 operation",
       "Temperature anomaly detection",
+      "FLIR Lepton 3.5 sensor",
+    ],
+
+    useCases: [
+      "Night operations",
+      "All-weather security",
+      "Critical infrastructure",
+      "Border monitoring",
+    ],
+
+    catalogUrl: "/docs/technical/detector/product-catalog#skywatch-thermal-budget",
+  },
+  {
+    id: "skywatch-thermal-pro",
+    sku: "SW-THM-001-P",
+    name: "SkyWatch Thermal (Pro)",
+    line: "skywatch",
+    tagline: "24/7 Detection — FLIR Boson 320",
+    description:
+      "Professional thermal detector. FLIR Boson 320 (320×256, 60Hz) for demanding all-light surveillance at extended range.",
+    category: "commercial",
+    phase: "series-a",
+    phaseTimeline: "Q1 2027 • Delivery Apr 2027",
+    available: false,
+    comingSoon: true,
+
+    priceRange: { min: 1000, max: 1500 },
+    priceFormatted: "$1,000-1,500",
+
+    cogs: 1080,
+    margin: 0.42,
+    assemblyHours: 10.0,
+    laborCost: 167,
+
+    targetMarket: ["24/7 operations", "Critical sites", "Government facilities"],
+    marketSegment: "Professional security — pro tier",
+
+    specs: {
+      range: "100-500m thermal, 50-300m visible",
+      thermalRes: "320×256",
+      sensitivity: "<50mK NETD",
+      sensor: "FLIR Boson 320, 60Hz",
+    },
+
+    features: [
+      "Thermal + visible fusion",
+      "True 24/7 operation",
+      "320×256 high-resolution Boson",
+      "60Hz frame rate",
       "Auto flat-field correction",
     ],
 
@@ -611,7 +654,7 @@ export const products: Product[] = [
       "Border monitoring",
     ],
 
-    catalogUrl: "/docs/technical/detector/product-catalog#skywatch-thermal",
+    catalogUrl: "/docs/technical/detector/product-catalog#skywatch-thermal-pro",
   },
   {
     id: "skywatch-marine",
@@ -662,42 +705,43 @@ export const products: Product[] = [
     catalogUrl: "/docs/technical/detector/product-catalog#skywatch-marine",
   },
   {
-    id: "skywatch-mesh",
-    sku: "SW-MESH-001",
-    name: "SkyWatch Mesh",
+    id: "skywatch-mesh-node",
+    sku: "SW-MESH-001-N",
+    name: "SkyWatch Mesh (Node)",
     line: "skywatch",
-    tagline: "Distributed Network Detection",
+    tagline: "Distributed Detection Node",
     description:
-      "Distributed detection network with multiple nodes and central aggregation for wide-area coverage.",
+      "PoE-powered mesh sensor node. Deploy multiple nodes across a wide perimeter; each node reports to the central aggregator.",
     category: "commercial",
     phase: "series-a",
     phaseTimeline: "Q2 2027 • Delivery Jul 2027",
     available: false,
     comingSoon: true,
 
-    priceRange: { min: 500, max: 2000 },
-    priceFormatted: "$500-2,000/node",
+    priceRange: { min: 150, max: 200 },
+    priceFormatted: "$150-200/node",
 
-    cogs: 187,
-    margin: 0.44,
-    assemblyHours: 2.12,
-    laborCost: 24,
+    cogs: 158,
+    margin: 0.19,
+    assemblyHours: 1.5,
+    laborCost: 25,
 
     targetMarket: ["Large perimeters", "Farms", "Industrial sites"],
-    marketSegment: "Wide-area security",
+    marketSegment: "Wide-area security — per-node",
 
     specs: {
       range: "100-200m per node",
-      latency: "<100ms node-to-central",
-      coverage: "1-100+ acres",
+      power: "PoE 802.3af",
+      connectivity: "Ethernet, WiFi mesh",
+      coverage: "up to 100+ acres (multi-node)",
     },
 
     features: [
-      "Multi-node fusion",
-      "Triangulation",
-      "Auto node discovery",
-      "Centralized dashboard",
       "PoE powered",
+      "Auto node discovery",
+      "Mesh networking",
+      "IP65 weatherproof",
+      "Pole mountable",
     ],
 
     useCases: [
@@ -707,7 +751,56 @@ export const products: Product[] = [
       "Event grounds",
     ],
 
-    catalogUrl: "/docs/technical/detector/product-catalog#skywatch-mesh",
+    catalogUrl: "/docs/technical/detector/product-catalog#skywatch-mesh-node",
+  },
+  {
+    id: "skywatch-mesh-central",
+    sku: "SW-MESH-001-C",
+    name: "SkyWatch Mesh (Central)",
+    line: "skywatch",
+    tagline: "Mesh Aggregation Server",
+    description:
+      "Central aggregation server for SkyWatch Mesh deployments. Fuses detections from all nodes, runs the dashboard, and connects to SOC/VMS.",
+    category: "commercial",
+    phase: "series-a",
+    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    available: false,
+    comingSoon: true,
+
+    priceRange: { min: 350, max: 400 },
+    priceFormatted: "$350-400",
+
+    cogs: 228,
+    margin: 0.38,
+    assemblyHours: 3.0,
+    laborCost: 50,
+
+    targetMarket: ["Large perimeters", "Farms", "Industrial sites"],
+    marketSegment: "Wide-area security — aggregator",
+
+    specs: {
+      storage: "256GB NVMe",
+      power: "15-30W",
+      connectivity: "Ethernet, WiFi",
+      nodes: "Supports unlimited nodes",
+    },
+
+    features: [
+      "Multi-node fusion",
+      "Centralized dashboard",
+      "SOC/VMS integration",
+      "256GB NVMe storage",
+      "Triangulation",
+    ],
+
+    useCases: [
+      "Farm perimeters",
+      "Industrial complexes",
+      "Campus security",
+      "Event grounds",
+    ],
+
+    catalogUrl: "/docs/technical/detector/product-catalog#skywatch-mesh-central",
   },
   {
     id: "skywatch-enterprise",
@@ -767,9 +860,9 @@ export const products: Product[] = [
     sku: "NS-LITE-001",
     name: "NetSentry Lite",
     line: "netsentry",
-    tagline: "Entry-Level Countermeasure",
+    tagline: "Entry-Level Detect & Respond",
     description:
-      "Entry-level countermeasure system with spring-loaded net launcher for testing and proof-of-concept.",
+      "Entry-level detect-and-respond system for testing and proof-of-concept. Validates the full AI detect-to-intercept stack at maker cost.",
     category: "diy-maker",
     phase: "seed",
     phaseTimeline: "Q3 2026 • Delivery Oct 2026",
@@ -784,8 +877,8 @@ export const products: Product[] = [
     assemblyHours: 2.62,
     laborCost: 24,
 
-    targetMarket: ["Makers", "Hobbyists", "Testers"],
-    marketSegment: "DIY/Testing (validates full detect+intercept stack)",
+    targetMarket: ["System integrators", "Security teams", "Proof-of-concept buyers"],
+    marketSegment: "Detect-to-intercept proof-of-concept stack",
 
     specs: {
       range: "5-15m launch",
@@ -795,7 +888,7 @@ export const products: Product[] = [
     },
 
     features: [
-      "Spring-loaded launcher",
+      "Edge AI detection module",
       "DIY assembly",
       "Arduino compatible",
       "Open trigger API",
@@ -815,9 +908,9 @@ export const products: Product[] = [
     sku: "NS-STD-001",
     name: "NetSentry Standard",
     line: "netsentry",
-    tagline: "CO2-Powered Response",
+    tagline: "AI-Triggered Response System",
     description:
-      "CO2-powered net launcher with faster response and longer range. Includes Coral TPU for detection.",
+      "AI-triggered detect-and-respond system with Coral TPU acceleration. Faster intercept, longer detection range, fully integrated in one unit.",
     category: "prosumer",
     phase: "series-a",
     phaseTimeline: "Q1 2027 • Delivery Apr 2027",
@@ -836,16 +929,16 @@ export const products: Product[] = [
     marketSegment: "Property security",
 
     specs: {
-      range: "15-30m launch",
-      detection: "100-200m",
+      detectionRange: "100–200m",
+      responseRange: "15–30m",
       response: "50ms",
-      costPerShot: "$1-2",
+      costPerIntercept: "$1-2",
     },
 
     features: [
-      "CO2 powered",
-      "Coral TPU detection",
-      "Fast 50ms response",
+      "Coral TPU edge inference",
+      "AI-triggered response",
+      "Fast 50ms intercept",
       "Weatherproof",
     ],
 
@@ -863,9 +956,9 @@ export const products: Product[] = [
     sku: "NS-PRO-001",
     name: "NetSentry Pro",
     line: "netsentry",
-    tagline: "Professional Intercept",
+    tagline: "Professional AI Intercept",
     description:
-      "Professional pneumatic net launcher with pan-tilt tracking and global shutter camera.",
+      "Professional AI detect-and-respond platform with pan-tilt tracking, global shutter camera, and predictive targeting for high-value facilities.",
     category: "commercial",
     phase: "series-a",
     phaseTimeline: "Q2 2027 • Delivery Jul 2027",
@@ -891,11 +984,11 @@ export const products: Product[] = [
     },
 
     features: [
-      "Pneumatic launcher",
+      "Edge AI predictive targeting",
       "Pan-tilt tracking",
-      "Global shutter camera",
-      "Predictive targeting",
-      "Air tank refillable",
+      "Global shutter camera 60fps",
+      "Autonomous intercept mode",
+      "Multi-shot capability",
     ],
 
     useCases: [
@@ -909,13 +1002,13 @@ export const products: Product[] = [
   },
 
   // -------------------------------------------------------------------------
-  // AERONET - Enterprise Platform
+  // SENTINEL RING - Enterprise Platform
   // -------------------------------------------------------------------------
   {
-    id: "aeronet-enterprise",
+    id: "sentinel-ring-enterprise",
     sku: "AN-ENT-001",
-    name: "AeroNet Enterprise",
-    line: "aeronet",
+    name: "Sentinel Ring Enterprise",
+    line: "sentinel-ring",
     tagline: "Complete C-UAS Platform",
     description:
       "Full-scale enterprise drone detection and response platform with multi-sensor integration and 24/7 operations.",
@@ -968,14 +1061,14 @@ export const products: Product[] = [
       "Government facilities",
     ],
 
-    catalogUrl: "/docs/technical/detector/product-catalog#aeronet-enterprise",
+    catalogUrl: "/docs/technical/detector/product-catalog#sentinel-ring-enterprise",
     demoUrl: "/schedule",
   },
   {
-    id: "aeronet-command",
+    id: "sentinel-ring-command",
     sku: "AN-CMD-001",
-    name: "AeroNet Command",
-    line: "aeronet",
+    name: "Sentinel Ring Command",
+    line: "sentinel-ring",
     tagline: "Command & Control Software",
     description:
       "Centralized command and control software for multi-site drone defense coordination. Includes threat simulator for operator training.",
@@ -1000,7 +1093,7 @@ export const products: Product[] = [
       "Multi-site operators",
       "SOC teams",
     ],
-    marketSegment: "C2/Software for AeroNet deployments",
+    marketSegment: "C2/Software for Sentinel Ring deployments",
 
     specs: {
       deployment: "Cloud or on-premise",
@@ -1028,7 +1121,7 @@ export const products: Product[] = [
       "Compliance auditing",
     ],
 
-    catalogUrl: "/docs/technical/detector/product-catalog#aeronet-command",
+    catalogUrl: "/docs/technical/detector/product-catalog#sentinel-ring-command",
     demoUrl: "/interactive-demo",
   },
 
@@ -1190,10 +1283,10 @@ export const products: Product[] = [
 
   // MKT-002: Mid-market bundle ($5K-$30K) — fills gap between prosumer/enterprise
   {
-    id: "aeronet-patrol",
+    id: "sentinel-ring-patrol",
     sku: "AN-PATROL-001",
-    name: "AeroNet Patrol",
-    line: "aeronet" as ProductLine,
+    name: "Sentinel Ring Patrol",
+    line: "sentinel-ring" as ProductLine,
     tagline: "Mid-market perimeter defense for facilities and campuses",
     description:
       "Complete perimeter monitoring bundle combining SkyWatch detection with " +
@@ -1201,7 +1294,7 @@ export const products: Product[] = [
       "C-UAS capability without enterprise-scale infrastructure. Includes 4x " +
       "SkyWatch Pro sensors, 2x NetSentry Standard, central monitoring dashboard, " +
       "and 12 months of firmware updates.",
-    category: "commercial" as ProductCategory,
+    category: "commercial" as MarketTier,
     phase: "series-a" as ProductPhase,
     phaseTimeline: "Q1 2027",
     available: false,
@@ -1242,15 +1335,15 @@ export const products: Product[] = [
       "School safety",
       "Private estate defense",
     ],
-    catalogUrl: "/products#aeronet-patrol",
+    catalogUrl: "/products#sentinel-ring-patrol",
   },
 
   // MKT-003: Law enforcement vertical — blockchain evidence is key differentiator
   {
-    id: "aeronet-leo",
+    id: "sentinel-ring-leo",
     sku: "AN-LEO-001",
-    name: "AeroNet LEO",
-    line: "aeronet" as ProductLine,
+    name: "Sentinel Ring LEO",
+    line: "sentinel-ring" as ProductLine,
     tagline: "Law enforcement C-UAS with blockchain evidence chain",
     description:
       "Purpose-built for law enforcement agencies requiring court-admissible " +
@@ -1258,7 +1351,7 @@ export const products: Product[] = [
       "tamper-proof audit trail from detection through countermeasure deployment. " +
       "Includes SkyWatch detection array, NetSentry countermeasures, evidence " +
       "CLI for forensic export, and integration with common RMS platforms.",
-    category: "enterprise" as ProductCategory,
+    category: "enterprise" as MarketTier,
     phase: "series-a" as ProductPhase,
     phaseTimeline: "Q2 2027",
     available: false,
@@ -1299,15 +1392,15 @@ export const products: Product[] = [
       "Correctional facility airspace",
       "VIP protection details",
     ],
-    catalogUrl: "/products#aeronet-leo",
+    catalogUrl: "/products#sentinel-ring-leo",
   },
 
   // MKT-004: NATO/non-US military positioning (non-ITAR advantage)
   {
-    id: "aeronet-allied",
+    id: "sentinel-ring-allied",
     sku: "AN-ALLIED-001",
-    name: "AeroNet Allied",
-    line: "aeronet" as ProductLine,
+    name: "Sentinel Ring Allied",
+    line: "sentinel-ring" as ProductLine,
     tagline: "NATO-compatible C-UAS for allied defense forces",
     description:
       "Export-friendly C-UAS platform for NATO and allied defense forces. " +
@@ -1315,7 +1408,7 @@ export const products: Product[] = [
       "streamlined procurement for non-US military customers. Dual-chain " +
       "blockchain anchoring provides interoperable evidence sharing across " +
       "coalition operations. STANAG-compatible data formats.",
-    category: "military" as ProductCategory,
+    category: "military" as MarketTier,
     phase: "series-b" as ProductPhase,
     phaseTimeline: "Q1 2028",
     available: false,
@@ -1355,15 +1448,15 @@ export const products: Product[] = [
       "Coalition airspace deconfliction",
       "Border surveillance operations",
     ],
-    catalogUrl: "/products#aeronet-allied",
+    catalogUrl: "/products#sentinel-ring-allied",
   },
 
   // MKT-005: Correctional facilities bundle
   {
-    id: "aeronet-corrections",
+    id: "sentinel-ring-corrections",
     sku: "AN-CORR-001",
-    name: "AeroNet Corrections",
-    line: "aeronet" as ProductLine,
+    name: "Sentinel Ring Corrections",
+    line: "sentinel-ring" as ProductLine,
     tagline: "Prison and correctional facility drone interdiction",
     description:
       "Specialized C-UAS package for correctional facilities addressing the " +
@@ -1371,7 +1464,7 @@ export const products: Product[] = [
       "with automated alerts, evidence capture for prosecution, and integration " +
       "with existing facility security systems. Proven to reduce contraband " +
       "delivery attempts by 90%+ in pilot deployments.",
-    category: "enterprise" as ProductCategory,
+    category: "enterprise" as MarketTier,
     phase: "series-a" as ProductPhase,
     phaseTimeline: "Q3 2027",
     available: false,
@@ -1411,7 +1504,7 @@ export const products: Product[] = [
       "Evidence collection for prosecution",
       "Staff safety enhancement",
     ],
-    catalogUrl: "/products#aeronet-corrections",
+    catalogUrl: "/products#sentinel-ring-corrections",
   },
 
   // MKT-006: Agriculture farm pack bundle
@@ -1427,7 +1520,7 @@ export const products: Product[] = [
       "surveillance and pesticide theft. Solar-powered SkyWatch sensors with " +
       "long-range detection optimized for open terrain. Includes automated " +
       "alerts via SMS and email.",
-    category: "commercial" as ProductCategory,
+    category: "commercial" as MarketTier,
     phase: "series-a" as ProductPhase,
     phaseTimeline: "Q2 2027",
     available: false,
@@ -1472,18 +1565,18 @@ export const products: Product[] = [
 
   // MKT-007: Live events rental pricing model
   {
-    id: "aeronet-events",
+    id: "sentinel-ring-events",
     sku: "AN-EVENT-001",
-    name: "AeroNet Events",
-    line: "aeronet" as ProductLine,
-    tagline: "Temporary C-UAS deployment for concerts, sports, and festivals",
+    name: "Sentinel Ring Events",
+    line: "sentinel-ring" as ProductLine,
+    tagline: "Rapid-deploy C-UAS for high-profile events and critical gatherings",
     description:
       "Rapid-deploy C-UAS rental package for live events. Pre-configured " +
       "detection and countermeasure kit ships in ruggedized cases, deploys in " +
       "under 2 hours, and includes on-site operator support. Per-event pricing " +
       "eliminates capital expenditure. Evidence capture provides post-event " +
       "security reports for venue compliance.",
-    category: "commercial" as ProductCategory,
+    category: "commercial" as MarketTier,
     phase: "series-a" as ProductPhase,
     phaseTimeline: "Q4 2027",
     available: false,
@@ -1523,15 +1616,15 @@ export const products: Product[] = [
       "Political rallies",
       "Sporting events",
     ],
-    catalogUrl: "/products#aeronet-events",
+    catalogUrl: "/products#sentinel-ring-events",
   },
 
-  // MKT-008: Maritime AeroNet bundle
+  // MKT-008: Maritime Sentinel Ring bundle
   {
-    id: "aeronet-maritime",
+    id: "sentinel-ring-maritime",
     sku: "AN-MARINE-001",
-    name: "AeroNet Maritime",
-    line: "aeronet" as ProductLine,
+    name: "Sentinel Ring Maritime",
+    line: "sentinel-ring" as ProductLine,
     tagline: "Maritime C-UAS for ports, offshore platforms, and vessels",
     description:
       "Salt-air hardened C-UAS package for maritime environments. Combines " +
@@ -1539,7 +1632,7 @@ export const products: Product[] = [
       "countermeasures. Marine-grade connectors, corrosion-resistant housings, " +
       "and gyro-stabilized mounts for vessel deployment. Integrates with " +
       "existing bridge radar and AIS systems.",
-    category: "enterprise" as ProductCategory,
+    category: "enterprise" as MarketTier,
     phase: "series-b" as ProductPhase,
     phaseTimeline: "Q2 2028",
     available: false,
@@ -1580,7 +1673,7 @@ export const products: Product[] = [
       "Naval vessel defense",
       "Cruise ship safety",
     ],
-    catalogUrl: "/products#aeronet-maritime",
+    catalogUrl: "/products#sentinel-ring-maritime",
   },
 ];
 
@@ -1651,8 +1744,8 @@ export const productLines: Record<
   ProductLine,
   { name: string; tagline: string; description: string; icon: string }
 > = {
-  skysnare: {
-    name: "SkySnare",
+  kestrel: {
+    name: "Kestrel Mesh",
     tagline: "Consumer Drone Defense",
     description:
       "Direct-to-consumer drone capture for personal property protection",
@@ -1677,8 +1770,8 @@ export const productLines: Record<
     description: "Net-based drone capture with integrated detection",
     icon: "🕸️",
   },
-  aeronet: {
-    name: "AeroNet",
+  "sentinel-ring": {
+    name: "Sentinel Ring",
     tagline: "Enterprise Platform",
     description: "Full-scale C-UAS solution for critical infrastructure",
     icon: "🏢",

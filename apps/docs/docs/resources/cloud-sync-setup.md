@@ -194,4 +194,4 @@ system will automatically use localStorage.
 ---
 
 _For questions about cloud sync setup, please open an issue on
-[GitHub](https://github.com/JustAGhosT/PhoenixRooivalk/issues)._
+[GitHub](https://github.com/JustAGhosT/Nexamesh/issues)._

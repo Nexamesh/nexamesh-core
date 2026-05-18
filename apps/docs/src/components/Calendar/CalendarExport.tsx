@@ -30,7 +30,7 @@ interface CalendarExportProps {
  * <CalendarExport
  *   events={[{
  *     title: "Product Demo",
- *     description: "Phoenix Rooivalk demonstration",
+ *     description: "NexaMesh demonstration",
  *     startDate: new Date("2025-01-15T14:00:00Z"),
  *     allDay: false
  *   }]}
@@ -41,7 +41,7 @@ interface CalendarExportProps {
 export default function CalendarExport({
   events,
   buttonText = "Add to Calendar",
-  filename = "phoenix-rooivalk-event",
+  filename = "nexamesh-event",
   variant = "primary",
   size = "medium",
 }: CalendarExportProps): React.ReactElement | null {

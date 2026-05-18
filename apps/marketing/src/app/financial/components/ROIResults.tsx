@@ -24,11 +24,11 @@ export function ROIResults({
 }: ROIResultsProps): React.ReactElement {
   return (
     <div className={styles.resultsGrid}>
-      {/* Phoenix Rooivalk Results */}
+      {/* NexaMesh Results */}
       <div className={styles.resultsCard}>
         <div className={styles.resultsHeader}>
           <div className={styles.resultsIcon}>P</div>
-          <h3 className={styles.resultsTitle}>Phoenix Rooivalk</h3>
+          <h3 className={styles.resultsTitle}>NexaMesh</h3>
         </div>
 
         <div className={styles.resultsMetrics}>
@@ -141,7 +141,7 @@ export function ROIResults({
           ${(phoenix.savings - traditional.savings).toLocaleString()}
         </div>
         <div className={styles.comparisonSubtext}>
-          Additional savings with Phoenix Rooivalk
+          Additional savings with NexaMesh
         </div>
         <div className={styles.comparisonSubtext}>
           {(

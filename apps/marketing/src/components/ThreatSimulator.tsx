@@ -307,7 +307,7 @@ export const ThreatSimulator: React.FC<ThreatSimulatorProps> = ({
     return (
       <div className={styles.demoContainer}>
         <div className={styles.demoControls}>
-          <h1>Phoenix Rooivalk - Threat Simulator Demo</h1>
+          <h1>NexaMesh - Threat Simulator Demo</h1>
           <div className={styles.demoModeSelector}>
             <button
               className={demoViewMode === "full" ? styles.active : ""}
@@ -382,7 +382,7 @@ export const ThreatSimulator: React.FC<ThreatSimulatorProps> = ({
                   <div className={styles.architectureHeader}>
                     <h1>System Architecture</h1>
                     <p>
-                      Comprehensive overview of the Phoenix Rooivalk system
+                      Comprehensive overview of the NexaMesh system
                       architecture.
                     </p>
                   </div>

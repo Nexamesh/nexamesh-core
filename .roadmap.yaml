@@ -1,0 +1,21 @@
+version: "1.0"
+scope: roadmap
+repo: phoenixvc/phoenix-rooivalk
+updated_at: 2026-03-18
+
+tasks:
+  - id: pre-launch-visibility-lock
+    title: "Confirm all IP is protected before any public-facing activity"
+    description: "Repo is Internal (closed before launch — correct). Architecture: Rust/Axum, Solana, WASM, simulation logic. Defense + commercial intent. 17 forks/30 stars from when it was briefly public — those forks are read-only now."
+    priority: high
+    status: todo
+    quarter: "2026-Q2"
+    tags: [security, ip, visibility]
+
+  - id: dns-zones-review
+    title: "Review dns-rooivalk RG — phoenixrooivalk.com, nexamesh.ai, neuralliquid.ai"
+    description: "3 DNS zones in eastus. nexamesh.ai and neuralliquid.ai may be parked brand names. Confirm intent and whether they need to stay in the rooivalk RG or move to a shared DNS RG."
+    priority: medium
+    status: todo
+    quarter: "2026-Q2"
+    tags: [azure, dns, brand]

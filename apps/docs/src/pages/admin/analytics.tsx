@@ -41,7 +41,7 @@ function getAdminUsers(): string[] {
 const ADMIN_USERS: string[] = getAdminUsers();
 
 // Admin email domains that are allowed (fallback if no specific UIDs configured)
-const ADMIN_EMAIL_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+const ADMIN_EMAIL_DOMAINS = ["nexamesh.ai", "justaghost.dev"];
 
 interface DailyStats {
   date: string;

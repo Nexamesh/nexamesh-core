@@ -1,6 +1,6 @@
 ---
 id: blockchain-security-compliance
-title: Phoenix Rooivalk Blockchain Security and Compliance
+title: NexaMesh Blockchain Security and Compliance
 sidebar_label: Security & Compliance
 difficulty: advanced
 estimated_reading_time: 6
@@ -13,11 +13,11 @@ tags:
   - compliance
 ---
 
-# Phoenix Rooivalk Blockchain Security and Compliance
+# NexaMesh Blockchain Security and Compliance
 
 ## Executive Summary
 
-Phoenix Rooivalk implements comprehensive post-quantum cryptography (PQC) to
+NexaMesh implements comprehensive post-quantum cryptography (PQC) to
 protect against quantum computing threats that could compromise current
 cryptographic systems. Our quantum-resistant architecture uses NIST-standardized
 algorithms including CRYSTALS-Kyber for key encapsulation, CRYSTALS-Dilithium
@@ -321,7 +321,7 @@ resistance.
 
 ## Conclusion
 
-The Phoenix Rooivalk blockchain security and compliance framework provides
+The NexaMesh blockchain security and compliance framework provides
 comprehensive protection against current and future threats while maintaining
 performance and operational efficiency. The hybrid quantum-classical
 cryptography approach ensures long-term security while the comprehensive risk
@@ -335,7 +335,7 @@ do not compromise system performance while providing maximum protection.
 ---
 
 _This document contains confidential security specifications. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._
 
 _Context improved by Giga AI_

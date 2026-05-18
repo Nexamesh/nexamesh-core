@@ -3,7 +3,7 @@
 ## Overview
 
 This directory contains icon specifications for all counter-drone weapon systems
-(effectors) used in the Phoenix Rooivalk Threat Simulator.
+(effectors) used in the NexaMesh Threat Simulator.
 
 ## Icon Categories
 

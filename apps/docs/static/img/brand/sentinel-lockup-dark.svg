@@ -1,0 +1,49 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sentinel Ring">
+  <!-- Sentinel Ring — product lockup, dark variant -->
+
+  <rect width="300" height="100" fill="#182231" rx="10"/>
+
+  <!-- Sentinel symbol (scaled 64×64) — dashed arc, Stitch geometry -->
+  <g transform="translate(18,18) scale(0.64)">
+    <path
+      d="M88 50 A38 38 0 1 1 50 12"
+      stroke="#A95F1D"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-dasharray="5 3"
+      fill="none"
+    />
+    <path
+      d="M74 74 A34 34 0 1 1 26 50"
+      stroke="#6B7480"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-dasharray="3 4"
+      fill="none"
+    />
+    <circle cx="88" cy="50" r="5.5" fill="#A95F1D"/>
+    <circle cx="50" cy="88" r="5.5" fill="#A95F1D"/>
+    <circle cx="12" cy="50" r="5.5" fill="#A95F1D"/>
+  </g>
+
+  <line x1="92" y1="28" x2="92" y2="72" stroke="#2B3440" stroke-width="1.5"/>
+
+  <text
+    x="108"
+    y="55"
+    font-family="Manrope, Inter, system-ui, sans-serif"
+    font-weight="500"
+    font-size="24"
+    letter-spacing="-0.3"
+    fill="#F1F0EA"
+  >Sentinel</text>
+  <text
+    x="108"
+    y="76"
+    font-family="Manrope, Inter, system-ui, sans-serif"
+    font-weight="400"
+    font-size="14"
+    letter-spacing="2.5"
+    fill="#A95F1D"
+  >RING</text>
+</svg>

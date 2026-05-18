@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 import { Card } from "../ui/Card";
 import styles from "./InteractiveElementsSection.module.css";
-import { formatCurrency } from "@/utils/formatter";
+import { formatCurrency } from "@nexamesh/utils";
 import { adaptationCardsData } from "./data/adaptationData";
 import {
   calculateROI,
@@ -16,7 +16,7 @@ export const InteractiveElementsSection: React.FC = () => {
   const [roiInputs, setRoiInputs] = useState<ROIInputs>({
     threatFrequency: 5, // threats per month
     averageResponseTime: 3000, // milliseconds
-    deploymentCost: 150000, // USD — AeroNet Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
+    deploymentCost: 150000, // USD — Sentinel Ring Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
     personnelCost: 150000, // USD per year
   });
 
@@ -220,7 +220,7 @@ export const InteractiveElementsSection: React.FC = () => {
               <div className={styles.inputSection}>
                 <div className={styles.resultCard}>
                   <h4 className={styles.resultCardTitle}>
-                    Phoenix Rooivalk Results
+                    NexaMesh Results
                   </h4>
                   <div className={styles.resultRows}>
                     <div className={styles.resultRow}>
@@ -354,7 +354,7 @@ export const InteractiveElementsSection: React.FC = () => {
                     120ms
                   </div>
                   <div className={styles.performanceLabel}>
-                    Phoenix Rooivalk
+                    NexaMesh
                   </div>
                   <div
                     className={`${styles.performanceBar} ${styles.performanceBarSuccess}`}
@@ -378,7 +378,7 @@ export const InteractiveElementsSection: React.FC = () => {
               Concept Adaptation Explorer
             </h3>
             <p className={styles.adaptationSubtitle}>
-              Explore how Phoenix Rooivalk&apos;s core technology could adapt to
+              Explore how NexaMesh&apos;s core technology could adapt to
               different operational environments and threat scenarios.
             </p>
 

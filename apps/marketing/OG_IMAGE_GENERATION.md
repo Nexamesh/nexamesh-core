@@ -31,7 +31,7 @@ fastest manual approach:
 2. Create custom size: 1200 x 630 px
 3. Use template settings:
    - Background: Gradient from #0F172A to #1E293B
-   - Add text: "Phoenix Rooivalk"
+   - Add text: "NexaMesh"
    - Subtitle: "SAE Level 4 Autonomous Defense"
    - Metrics: "<200ms Response | 100% Offline | $26B Market"
    - Colors: Orange #F97316, White #FFFFFF, Slate #CBD5E1
@@ -65,7 +65,7 @@ https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-im
          url: '/og-image.png',  // Changed from /logo.svg
          width: 1200,
          height: 630,
-         alt: 'Phoenix Rooivalk - Autonomous Counter-Drone Defense System',
+         alt: 'NexaMesh - Autonomous Counter-Drone Defense System',
        },
      ],
    },
@@ -90,7 +90,7 @@ https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-im
 - **Size**: 1200 x 630 pixels (OG standard)
 - **Format**: PNG (better quality than JPG for text)
 - **Background**: Dark gradient (#0F172A → #1E293B)
-- **Primary Color**: Orange #F97316 (Phoenix Rooivalk brand)
+- **Primary Color**: Orange #F97316 (NexaMesh brand)
 - **Text Colors**: White #FFFFFF, Gray #CBD5E1
 - **Font**: System sans-serif (Arial, Helvetica, Segoe UI)
 - **Key Metrics**: <200ms, 100% Offline, $26B Market
@@ -104,7 +104,7 @@ For fully automated approach, you can use Next.js built-in OG image generation:
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Phoenix Rooivalk - Autonomous Counter-Drone Defense'
+export const alt = 'NexaMesh - Autonomous Counter-Drone Defense'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 

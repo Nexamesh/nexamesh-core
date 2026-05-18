@@ -423,7 +423,7 @@ Runtime call chain:
 
 ## Why Hybrid Search Matters
 
-### Phoenix Rooivalk Documentation Characteristics
+### NexaMesh Documentation Characteristics
 
 1. **Technical jargon**: Terms like "RKV", "HNSW", "c-UAS" need exact matching
 2. **Version references**: "v2.3.1", "ADR-0011" require keyword precision
@@ -547,5 +547,5 @@ AI strategy and the export/abstraction mitigations in place.
 ---
 
 _This document contains confidential architectural information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

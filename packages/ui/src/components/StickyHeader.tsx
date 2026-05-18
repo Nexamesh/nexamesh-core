@@ -26,8 +26,8 @@ export const StickyHeader: FC<StickyHeaderProps> = ({ isVisible }) => {
     >
       <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-sm text-[var(--gray,#9ca3af)]">
-          <span className="text-[var(--primary,#f97316)] font-bold text-base">
-            Phoenix Rooivalk
+          <span className="text-[var(--primary,#C77A1B)] font-bold text-base">
+            NexaMesh
           </span>{" "}
           <span className="hidden sm:inline">- Counter-UAS Defense System</span>
         </div>

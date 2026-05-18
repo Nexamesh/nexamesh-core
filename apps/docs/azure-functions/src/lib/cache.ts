@@ -1,5 +1,5 @@
 /**
- * Query Cache for Phoenix Rooivalk Documentation AI
+ * Query Cache for NexaMesh Documentation AI
  *
  * Implements caching for:
  * - Embeddings (hash-based, long TTL)

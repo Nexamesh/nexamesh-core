@@ -225,24 +225,35 @@ To qualify for $350K tier:
 
 ---
 
+## Rebrand Application Strategy
+
+Jurie is registered on MS Founders Hub under the old brand (phoenixvc/rooivalk)
+and cannot reapply. **Charl Chapman applies under the Nexamesh brand** for all
+cloud credit programs — fresh applicant, no prior startup program history.
+
+**Charl's prerequisites before applying:**
+1. LinkedIn profile — name, "Hardware Lead at Nexamesh", vehicle repair + drone prototyping background
+2. Personal email not previously used for startup programs
+3. nexamesh.ai domain active (registered)
+
 ## Assigned To
 
-| Program                | Owner | Priority |
-| ---------------------- | ----- | -------- |
-| AWS Activate           | Jurie | High     |
-| Microsoft Founders Hub | Jurie | High     |
-| Google Cloud           | Jurie | Medium   |
-| NVIDIA Inception       | Peter | High     |
+| Program                | Owner                    | Priority | Status |
+| ---------------------- | ------------------------ | -------- | ------ |
+| AWS Activate           | Charl (Nexamesh brand)   | High     | 🟡 Ready |
+| Microsoft Founders Hub | Charl (Nexamesh brand)   | High     | 🔴 Needs LinkedIn first |
+| Google Cloud           | Jurie or Charl           | Medium   | 🟡 Ready |
+| NVIDIA Inception       | Charl (Nexamesh brand)   | High     | 🟡 Ready |
 
 ---
 
 ## Action Items
 
-- [ ] Apply AWS Activate Founders
-- [ ] Apply Microsoft Founders Hub
-- [ ] Apply NVIDIA Inception
-- [ ] Document AI-first architecture
-- [ ] Apply Google after AI features
+- [ ] Charl: Create LinkedIn profile (Hardware Lead at Nexamesh)
+- [ ] Apply NVIDIA Inception (Charl, nvidia.com/inception)
+- [ ] Apply AWS Activate Founders (Charl, aws.amazon.com/activate)
+- [ ] Apply Microsoft Founders Hub (Charl, after LinkedIn ready)
+- [ ] Apply Google for Startups Africa (after above three done)
 
 ---
 

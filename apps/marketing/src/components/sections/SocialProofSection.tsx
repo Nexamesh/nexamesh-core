@@ -25,12 +25,12 @@ export const SocialProofSection: React.FC = () => {
 
   const partnerships = [
     {
-      name: "SkySnare™ Consumer",
+      name: "Kestrel Mesh Consumer",
       logo: "🎯",
       type: "Sports & Training Market",
     },
     {
-      name: "AeroNet™ Enterprise",
+      name: "Sentinel Ring Enterprise",
       logo: "🛡️",
       type: "Infrastructure Security",
     },
@@ -50,19 +50,19 @@ export const SocialProofSection: React.FC = () => {
     {
       icon: "🔬",
       title: "Year 1: Foundation",
-      description: "Prototype, CPSC certification, SkySnare™ launch",
+      description: "Prototype, CPSC certification, Kestrel Mesh launch",
       proof: "Active - FY26",
     },
     {
       icon: "🚀",
       title: "Year 2: AI Demo",
-      description: "FAA waiver, first AeroNet™ pilot with AI",
+      description: "FAA waiver, first Sentinel Ring pilot with AI",
       proof: "Planned - FY27",
     },
     {
       icon: "🛡️",
       title: "Year 3-4: Scale",
-      description: "SkySnare™ Pro, 6-15 AeroNet™ sites",
+      description: "Kestrel Mesh Pro, 6-15 Sentinel Ring sites",
       proof: "Planned - FY28-29",
     },
     {

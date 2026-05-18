@@ -36,7 +36,7 @@ prerequisites:
 
 ## Context
 
-The Phoenix Rooivalk documentation site requires a runtime layer that:
+The NexaMesh documentation site requires a runtime layer that:
 
 - Receives user queries from the React frontend
 - Orchestrates vector search (Azure AI Search)
@@ -451,4 +451,4 @@ For detailed weighted analysis, benchmarks, and cost projections, see:
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

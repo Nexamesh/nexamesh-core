@@ -14,11 +14,11 @@ import {
 import styles from "./products.module.css";
 
 const productLineOrder: ProductLine[] = [
-  "skysnare",
+  "kestrel",
   "netsnare",
   "skywatch",
   "netsentry",
-  "aeronet",
+  "sentinel-ring",
   "rkv",
 ];
 
@@ -76,10 +76,25 @@ function ProductCard({ product }: { product: Product }) {
 
       <div className={styles.productFooter}>
         <span className={styles.deliveryInfo}>{product.phaseTimeline}</span>
-        <Link href="/preorder" className={styles.preorderLink}>
-          Preorder Now
-        </Link>
+        {product.category === "enterprise" || product.line === "sentinel-ring" ? (
+          <Link
+            href="mailto:sales@nexamesh.ai?subject=Sentinel%20Ring%20Enterprise%20Inquiry"
+            className={styles.preorderLink}
+          >
+            Request Quote
+          </Link>
+        ) : (
+          <Link href="/preorder" className={styles.preorderLink}>
+            Preorder Now
+          </Link>
+        )}
       </div>
+      {(product.category === "enterprise" || product.line === "sentinel-ring") && (
+        <p className={styles.enterpriseNote}>
+          Enterprise deployments include custom installation, SOC integration,
+          and volume licensing. Contact sales for a tailored quote.
+        </p>
+      )}
     </div>
   );
 }

@@ -4,11 +4,11 @@
 
 ### From Project Root (Recommended ✅)
 
-You can now run the ThreatSimulator from the **PhoenixRooivalk root directory**
+You can now run the ThreatSimulator from the **NexaMesh root directory**
 using `pnpm sim:*` commands:
 
 ```bash
-# From: C:\Users\smitj\repos\PhoenixRooivalk
+# From: C:\Users\smitj\repos\NexaMesh
 
 # Start frontend dev server (fastest, hot-reload)
 pnpm sim:dev

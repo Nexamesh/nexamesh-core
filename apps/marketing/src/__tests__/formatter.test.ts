@@ -1,4 +1,4 @@
-import { formatCurrency } from "../utils/formatter";
+import { formatCurrency } from "@nexamesh/utils";
 
 describe("formatCurrency", () => {
   it("should format a whole number as USD", () => {

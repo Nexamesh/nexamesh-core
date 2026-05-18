@@ -5,7 +5,7 @@
 ### Option 1: From Root Directory (Recommended)
 
 ```bash
-# From the project root (PhoenixRooivalk/)
+# From the project root (NexaMesh/)
 
 # Frontend only (fastest, hot-reload)
 pnpm sim:dev
@@ -77,7 +77,7 @@ cargo install tauri-cli --version "^2.0"
 
 ```bash
 # From project root
-cd PhoenixRooivalk
+cd NexaMesh
 
 # Install Node dependencies (if needed)
 pnpm install

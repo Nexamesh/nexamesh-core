@@ -1,12 +1,12 @@
 ---
 sidebar_position: 8
 title: Portal Troubleshooting
-description: Troubleshooting guide for the Phoenix Rooivalk documentation portal
+description: Troubleshooting guide for the NexaMesh documentation portal
 ---
 
 # Documentation Portal Troubleshooting
 
-This guide helps you resolve common issues with the Phoenix Rooivalk
+This guide helps you resolve common issues with the NexaMesh
 documentation portal, particularly around user profiles and onboarding.
 
 ## Common Issues
@@ -130,7 +130,7 @@ If you continue to experience problems:
 2. Check that JavaScript is enabled
 3. Clear your browser cache completely
 4. Contact the team at
-   [support@phoenixrooivalk.com](mailto:support@phoenixrooivalk.com)
+   [support@nexamesh.ai](mailto:support@nexamesh.ai)
 
 ## Technical Details
 

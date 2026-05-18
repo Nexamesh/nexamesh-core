@@ -14,7 +14,7 @@ prerequisites:
 
 ## Executive Summary
 
-This document provides comprehensive use cases for the Phoenix Rooivalk
+This document provides comprehensive use cases for the NexaMesh
 Counter-Drone Defense System across military, civilian, and commercial
 applications. The use cases demonstrate the system's versatility and
 effectiveness in protecting critical assets and infrastructure.
@@ -427,7 +427,7 @@ effectiveness in protecting critical assets and infrastructure.
 
 ## Conclusion
 
-The Phoenix Rooivalk Counter-Drone Defense System provides comprehensive
+The NexaMesh Counter-Drone Defense System provides comprehensive
 protection across a wide range of military, civilian, and commercial
 applications. The system's versatility, effectiveness, and compliance
 capabilities make it an ideal solution for protecting critical assets and
@@ -451,5 +451,5 @@ highest standards of safety, security, and operational effectiveness.
 ---
 
 _This document contains confidential use case information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

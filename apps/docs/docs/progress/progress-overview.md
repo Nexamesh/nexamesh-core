@@ -3,7 +3,7 @@ title: Weekly Progress Reports
 sidebar_label: Progress Overview
 sidebar_position: 1
 description:
-  Weekly progress reports tracking Phoenix Rooivalk development, marketing, and
+  Weekly progress reports tracking NexaMesh development, marketing, and
   business activities
 keywords: [progress, weekly reports, updates, development]
 difficulty: beginner
@@ -17,7 +17,7 @@ prerequisites: []
 
 # Weekly Progress Reports
 
-Welcome to the Phoenix Rooivalk weekly progress tracking. These reports document
+Welcome to the NexaMesh weekly progress tracking. These reports document
 our ongoing development, marketing efforts, and business activities.
 
 ## Purpose

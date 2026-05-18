@@ -473,8 +473,8 @@ const result = await logger.trackOperation("generateEmbeddings", async () => {
 ```bash
 # Azure Function App configuration
 az functionapp config appsettings set \
-  --name phoenix-rooivalk-functions \
-  --resource-group rg-phoenix-rooivalk \
+  --name nexamesh-functions \
+  --resource-group rg-nexamesh \
   --settings APPLICATIONINSIGHTS_CONNECTION_STRING="InstrumentationKey=..."
 ```
 
@@ -561,4 +561,4 @@ az functionapp config appsettings set \
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

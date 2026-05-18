@@ -1,5 +1,5 @@
 /**
- * Analytics tracking utilities for Phoenix Rooivalk marketing site
+ * Analytics tracking utilities for NexaMesh marketing site
  * Privacy-focused event tracking for conversion optimization
  */
 

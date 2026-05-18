@@ -3,7 +3,7 @@
 ## Overview
 
 This directory contains icon specifications for all power-up and enhancement
-systems used in the Phoenix Rooivalk Threat Simulator.
+systems used in the NexaMesh Threat Simulator.
 
 ## Icon Categories
 

@@ -87,7 +87,7 @@ the UK.
 
 ## Eligibility
 
-| Requirement               | Phoenix Rooivalk Status  |
+| Requirement               | NexaMesh Status  |
 | ------------------------- | ------------------------ |
 | Innovative solution       | Meets requirement        |
 | Defence/security relevant | Meets requirement        |
@@ -127,7 +127,7 @@ required, though UK collaboration may strengthen applications.
 
 ## Technology Priorities
 
-UK defence priorities relevant to Phoenix Rooivalk:
+UK defence priorities relevant to NexaMesh:
 
 | Area                   | Priority | PR Alignment |
 | ---------------------- | -------- | ------------ |
@@ -139,7 +139,7 @@ UK defence priorities relevant to Phoenix Rooivalk:
 
 ---
 
-## Phoenix Rooivalk Strategy
+## NexaMesh Strategy
 
 ### January 2026 Opportunity
 
@@ -171,7 +171,7 @@ mechanisms and application processes.
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score    | Notes                        |
 | --------------- | -------- | ---------------------------- |

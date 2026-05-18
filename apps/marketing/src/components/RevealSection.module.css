@@ -1,3 +1,19 @@
 .revealSection {
-  /* Base styles - can be extended */
+  opacity: 0;
+  transition:
+    opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--reveal-delay, 0ms),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+/* Direction variants — initial hidden state */
+.fromUp    { transform: translateY(28px); }
+.fromLeft  { transform: translateX(-32px); }
+.fromRight { transform: translateX(32px); }
+.fromScale { transform: scale(0.94); }
+
+/* Revealed state — all directions resolve to identity */
+.visible {
+  opacity: 1;
+  transform: none;
 }

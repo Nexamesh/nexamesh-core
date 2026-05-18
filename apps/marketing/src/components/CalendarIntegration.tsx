@@ -14,13 +14,13 @@ interface CalendarIntegrationProps {
  * @example
  * ```tsx
  * <CalendarIntegration
- *   calComUser="phoenixrooivalk"
+ *   calComUser="nexamesh"
  *   showEventTypes={true}
  * />
  * ```
  */
 export const CalendarIntegration: React.FC<CalendarIntegrationProps> = ({
-  calComUser = "phoenixrooivalk",
+  calComUser = "nexamesh",
   showEventTypes = true,
 }) => {
   const eventTypes = [
@@ -29,7 +29,7 @@ export const CalendarIntegration: React.FC<CalendarIntegrationProps> = ({
       duration: "30 minutes",
       icon: "presentation",
       description:
-        "Interactive demonstration of Phoenix Rooivalk c-UAS capabilities, including SkySnare™ and AeroNet™ systems.",
+        "Interactive demonstration of NexaMesh c-UAS capabilities, including Kestrel Mesh and Sentinel Ring systems.",
     },
     {
       name: "Investor Meeting",
@@ -107,7 +107,7 @@ export const CalendarIntegration: React.FC<CalendarIntegrationProps> = ({
       <div className={styles.header}>
         <h2 className={styles.title}>Schedule a Meeting</h2>
         <p className={styles.description}>
-          Connect with our team to explore Phoenix Rooivalk capabilities,
+          Connect with our team to explore NexaMesh capabilities,
           discuss partnerships, or get technical support.
         </p>
       </div>

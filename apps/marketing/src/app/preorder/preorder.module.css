@@ -60,7 +60,7 @@
 .paymentTermsIcon {
   width: 32px;
   height: 32px;
-  color: var(--accent, #fbbf24);
+  color: var(--accent, #C77A1B);
   flex-shrink: 0;
 }
 
@@ -83,7 +83,7 @@
   padding: 0.375rem 0.75rem;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--accent, #fbbf24);
+  color: var(--accent, #C77A1B);
   background: rgba(var(--sensor-amber), 0.1);
   border: 1px solid rgba(var(--sensor-amber), 0.3);
   border-radius: 0.375rem;
@@ -98,7 +98,7 @@
 }
 
 .productsSection {
-  background: var(--bg-secondary, #09090f);
+  background: var(--bg-secondary, #182231);
   border: 1px solid rgba(var(--primary), 0.2);
   border-radius: 1rem;
   padding: 2rem;
@@ -117,7 +117,7 @@
 .sectionIcon {
   width: 32px;
   height: 32px;
-  color: var(--primary, #f97316);
+  color: var(--primary, #C77A1B);
 }
 
 .productsGrid {
@@ -165,7 +165,7 @@
 .productPrice {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent, #fbbf24);
+  color: var(--accent, #C77A1B);
   font-family: "Courier New", monospace;
   margin: 0;
 }
@@ -192,7 +192,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--bg-secondary, #09090f);
+  background: var(--bg-secondary, #182231);
   border: 1px solid rgba(var(--primary), 0.2);
   border-radius: 0.5rem;
   padding: 0.375rem;
@@ -214,7 +214,7 @@
 
 .quantityButton:hover:not(:disabled) {
   background: rgba(var(--primary), 0.1);
-  color: var(--primary, #f97316);
+  color: var(--primary, #C77A1B);
 }
 
 .quantityButton:disabled {
@@ -271,7 +271,7 @@
 }
 
 .cartSummary {
-  background: var(--bg-secondary, #09090f);
+  background: var(--bg-secondary, #182231);
   border: 1px solid rgba(var(--primary), 0.2);
   border-radius: 1rem;
   padding: 2rem;
@@ -325,7 +325,7 @@
 .totalValue {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--accent, #fbbf24);
+  color: var(--accent, #C77A1B);
   font-family: "Courier New", monospace;
 }
 
@@ -379,7 +379,7 @@
 }
 
 .checkoutSection {
-  background: var(--bg-secondary, #09090f);
+  background: var(--bg-secondary, #182231);
   border: 1px solid rgba(var(--primary), 0.2);
   border-radius: 1rem;
   padding: 2rem;
@@ -421,12 +421,12 @@
 
 .input:focus {
   outline: none;
-  border-color: var(--primary, #f97316);
+  border-color: var(--primary, #C77A1B);
   box-shadow: 0 0 0 3px rgba(var(--primary), 0.15);
 }
 
 .input:focus-visible {
-  outline: 2px solid var(--primary, #f97316);
+  outline: 2px solid var(--primary, #C77A1B);
   outline-offset: 2px;
 }
 
@@ -575,4 +575,43 @@
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+}
+
+/* FAQ section */
+.faqSection {
+  padding: var(--space-12) 0 var(--space-8);
+  border-top: 1px solid rgba(var(--primary), 0.15);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.faqItem {
+  background: rgba(var(--bg-secondary), 0.4);
+  border: 1px solid rgba(var(--primary), 0.15);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.faqQuestion {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--text-primary));
+  margin-bottom: 0.5rem;
+}
+
+.faqAnswer {
+  font-size: 0.9375rem;
+  color: rgb(var(--text-secondary));
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faqAnswer a {
+  color: rgb(var(--primary));
+  text-decoration: underline;
 }

@@ -193,7 +193,7 @@ export function ProtectedContent({
             Sign in to continue reading
           </h3>
           <p className="protected-content-cta-description">
-            Get full access to Phoenix Rooivalk documentation, track your
+            Get full access to NexaMesh documentation, track your
             progress, and earn achievements as you learn.
           </p>
 

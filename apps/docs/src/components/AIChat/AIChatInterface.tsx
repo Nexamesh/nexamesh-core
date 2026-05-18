@@ -45,7 +45,7 @@ interface AIChatInterfaceProps {
 }
 
 const SUGGESTED_QUESTIONS = [
-  "What is Phoenix Rooivalk?",
+  "What is NexaMesh?",
   "How does the RKV targeting work?",
   "What are the deployment requirements?",
   "Explain the blockchain integration",
@@ -298,7 +298,7 @@ export function AIChatInterface({
             <div className="ai-chat__welcome-icon">💬</div>
             <h4>How can I help you today?</h4>
             <p>
-              Ask me anything about Phoenix Rooivalk documentation. I'll search
+              Ask me anything about NexaMesh documentation. I'll search
               through our docs and provide answers with sources.
             </p>
 

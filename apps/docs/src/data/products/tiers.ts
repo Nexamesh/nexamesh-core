@@ -260,7 +260,7 @@ export const productComputeConfigs: ProductComputeConfig[] = [
       jetson_nx: { delta: 449, newBomTotal: 1464 },
     },
   },
-  // SkySnare - Consumer Line (Handheld, no compute - manual trigger)
+  // Kestrel Mesh - Consumer Line (Handheld, no compute - manual trigger)
   {
     sku: "SS-001",
     baseTier: "none",
@@ -310,7 +310,7 @@ export const productComputeConfigs: ProductComputeConfig[] = [
     tierPricing: {},
     notes: "Ground launcher with tracking - uses paired SkyWatch for detection",
   },
-  // AeroNet - Enterprise Platform
+  // Sentinel Ring - Enterprise Platform
   {
     sku: "AN-ENT-001",
     baseTier: "jetson_agx",
@@ -592,7 +592,7 @@ export const productCameraConfigs: ProductCameraConfig[] = [
     lensRequired: true,
     notes: "Global shutter recommended for intercept timing",
   },
-  // SkySnare - no camera
+  // Kestrel Mesh - no camera
   {
     sku: "SS-001",
     baseCameraId: "none",
@@ -642,7 +642,7 @@ export const productCameraConfigs: ProductCameraConfig[] = [
     cameraPricing: {},
     notes: "Ground launcher, uses paired SkyWatch",
   },
-  // AeroNet - enterprise config
+  // Sentinel Ring - enterprise config
   {
     sku: "AN-ENT-001",
     baseCameraId: "enterprise",
@@ -904,7 +904,7 @@ export const productConnectivityConfigs: ProductConnectivityConfig[] = [
       lte_poe: { delta: 70 },
     },
   },
-  // SkySnare
+  // Kestrel Mesh
   {
     sku: "SS-001",
     baseConnectivityId: "none",
@@ -961,7 +961,7 @@ export const productConnectivityConfigs: ProductConnectivityConfig[] = [
       poe: { delta: 20 },
     },
   },
-  // AeroNet
+  // Sentinel Ring
   {
     sku: "AN-ENT-001",
     baseConnectivityId: "enterprise",
@@ -1252,7 +1252,7 @@ export const productStorageConfigs: ProductStorageConfig[] = [
     },
     nvmeSupported: true,
   },
-  // SkySnare
+  // Kestrel Mesh
   {
     sku: "SS-001",
     baseStorageId: "none",
@@ -1308,7 +1308,7 @@ export const productStorageConfigs: ProductStorageConfig[] = [
     nvmeSupported: false,
     notes: "Trigger only, no local storage",
   },
-  // AeroNet
+  // Sentinel Ring
   {
     sku: "AN-ENT-001",
     baseStorageId: "enterprise",

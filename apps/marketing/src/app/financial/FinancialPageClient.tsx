@@ -12,7 +12,7 @@ export function FinancialPage(): React.ReactElement {
   const [inputs, setInputs] = useState({
     threatFrequency: 5,
     averageResponseTime: 3000,
-    deploymentCost: 150000, // AeroNet Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
+    deploymentCost: 150000, // Sentinel Ring Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
     personnelCost: 150000,
     downtimeCost: 500000,
   });
@@ -87,7 +87,7 @@ export function FinancialPage(): React.ReactElement {
               ROI Calculator & Financial Analysis
             </h1>
             <p className={styles.subtitle}>
-              Calculate the return on investment for Phoenix Rooivalk&apos;s
+              Calculate the return on investment for NexaMesh&apos;s
               autonomous counter-drone defense system. Compare costs, savings,
               and performance against traditional solutions.
             </p>

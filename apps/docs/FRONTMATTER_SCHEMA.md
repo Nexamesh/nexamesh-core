@@ -5,7 +5,7 @@ Rooivalk documentation files.
 
 ## Overview
 
-Phoenix Rooivalk documentation supports gamification and enhanced metadata
+NexaMesh documentation supports gamification and enhanced metadata
 through frontmatter fields. These fields are validated by a remark plugin during
 the build process and can be consumed by React components.
 

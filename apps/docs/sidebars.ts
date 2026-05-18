@@ -1,7 +1,7 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 /**
- * Phoenix Rooivalk Documentation Sidebar
+ * NexaMesh Documentation Sidebar
  *
  * Navigation Structure:
  * 1. Getting Started - Entry point for all users
@@ -27,7 +27,7 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "phoenix-rooivalk-documentation",
+          id: "nexamesh-documentation",
           label: "Documentation Home",
         },
         {
@@ -72,9 +72,9 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             "executive/investor-executive-summary",
-            "executive/phoenix-rooivalk-pitch-deck",
-            "executive/phoenix-rooivalk-litepaper",
-            "executive/phoenix-rooivalk-technical-whitepaper",
+            "executive/nexamesh-pitch-deck",
+            "executive/nexamesh-litepaper",
+            "executive/nexamesh-technical-whitepaper",
           ],
         },
         {
@@ -93,7 +93,7 @@ const sidebars: SidebarsConfig = {
           label: "Presentations",
           collapsed: true,
           items: [
-            "executive/phoenix-rooivalk-pitch-deck",
+            "executive/nexamesh-pitch-deck",
             "executive/key-questions-cheatsheet",
             "executive/team-status",
           ],
@@ -257,12 +257,35 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "category",
+              label: "Phase 1 — Build Guides",
+              collapsed: true,
+              items: [
+                "technical/hardware/phase1/avoid-list",
+                "technical/hardware/phase1/buy-now-vs-later",
+                "technical/hardware/phase1/safety-boundary",
+                "technical/hardware/phase1/platform-bom-v1",
+              ],
+            },
+            {
+              type: "category",
               label: "Platform Specifications",
               collapsed: true,
               items: [
                 "technical/hardware/rkv-m-specifications",
                 "technical/hardware/net-specifications",
                 "technical/performance/performance-specifications",
+              ],
+            },
+            {
+              type: "category",
+              label: "Hardware Reference",
+              collapsed: true,
+              items: [
+                "technical/hardware/prototype-compute-tiers",
+                "technical/hardware/salvage-and-zero-budget-hardware",
+                "technical/hardware/board-bringup-and-flashing",
+                "technical/hardware/power-budgeting-and-rail-isolation",
+                "technical/hardware/servo-selection-and-calibration",
               ],
             },
             {
@@ -274,6 +297,16 @@ const sidebars: SidebarsConfig = {
                 "technical/mechanical/mechanical-design-records",
               ],
             },
+          ],
+        },
+        {
+          type: "category",
+          label: "🎮 Control System",
+          collapsed: true,
+          items: [
+            "technical/control/authority-and-safety-controller",
+            "technical/control/tracking-control-loop",
+            "technical/control/control-interface-options",
           ],
         },
         {
@@ -361,6 +394,16 @@ const sidebars: SidebarsConfig = {
                 "business/prd/features/feat-new-2-case-studies",
               ],
             },
+            {
+              type: "category",
+              label: "Strategic PRDs",
+              collapsed: true,
+              items: [
+                "business/prd/depin-network-strategy",
+                "business/prd/data-marketplace-prd",
+                "business/prd/partnership-strategy",
+              ],
+            },
           ],
         },
       ],
@@ -407,6 +450,15 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "category",
+          label: "Field Runbooks",
+          collapsed: true,
+          items: [
+            "operations/runbooks/field-test-procedures",
+            "operations/runbooks/prototype-test-procedures",
+          ],
+        },
+        {
+          type: "category",
           label: "Training",
           collapsed: true,
           items: [
@@ -424,7 +476,20 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "⚖️ Legal & Compliance",
       collapsed: true,
-      items: ["legal/compliance-framework", "legal/legal-framework"],
+      items: [
+        "legal/compliance-framework",
+        "legal/legal-framework",
+        {
+          type: "category",
+          label: "Compliance Guides",
+          collapsed: true,
+          items: [
+            "legal/compliance/operator-licensing",
+            "legal/compliance/drone-data-privacy",
+            "legal/compliance/data-marketplace-legal",
+          ],
+        },
+      ],
     },
 
     // ========================================
@@ -490,6 +555,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             "visual-elements/system-architecture-diagrams",
+            "design/brand-identity-direction",
             "design/icon-requirements",
           ],
         },

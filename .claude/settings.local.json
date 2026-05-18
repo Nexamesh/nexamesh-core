@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/smitj/repos/phoenix-rooivalk git add apps/docs/docs/technical/control/ apps/docs/docs/technical/hardware/board-bringup-and-flashing.mdx apps/docs/docs/technical/hardware/index.mdx apps/docs/docs/technical/hardware/power-budgeting-and-rail-isolation.mdx apps/docs/docs/technical/hardware/prototype-compute-tiers.mdx apps/docs/docs/technical/hardware/salvage-and-zero-budget-hardware.mdx apps/docs/docs/technical/hardware/servo-selection-and-calibration.mdx apps/docs/docs/technical/hardware/phase1/avoid-list.mdx apps/docs/docs/technical/hardware/phase1/buy-now-vs-later.mdx apps/docs/docs/technical/hardware/phase1/safety-boundary.mdx apps/docs/docs/technical/hardware/phase1/platform-bom-v1.mdx apps/docs/docs/technical/architecture/interfaces/ apps/docs/docs/technical/architecture/adr-0202-x402-data-marketplace.mdx apps/docs/docs/operations/runbooks/ apps/docs/docs/business/prd/depin-network-strategy.mdx apps/docs/docs/business/prd/data-marketplace-prd.mdx apps/docs/docs/business/prd/partnership-strategy.mdx apps/docs/docs/legal/compliance/ apps/docs/sidebars.ts __NEW_LINE_f00f39e4ca34aa14__ git status --short)",
+      "Bash(curl -s -X POST \"https://stitch.googleapis.com/mcp\" -H \"Content-Type: application/json\" -H \"X-Goog-Api-Key: AQ.Ab8RN6J2ikC8PyiV8XZjdsHIKOLtcve88czpBa1TExnc_-SZng\" -d '{\"\"\"\"jsonrpc\"\"\"\":\"\"\"\"2.0\"\"\"\",\"\"\"\"id\"\"\"\":20,\"\"\"\"method\"\"\"\":\"\"\"\"tools/list\"\"\"\",\"\"\"\"params\"\"\"\":{}}')",
+      "Bash(python3 -c \"import sys,json; tools=json.load\\(sys.stdin\\)[''''result''''][''''tools'''']; [print\\(t[''''name'''']\\) for t in tools]\")"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "stitch"
+  ],
+  "enableAllProjectMcpServers": true
+}

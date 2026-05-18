@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains the complete icon system for the Phoenix Rooivalk Threat
+This directory contains the complete icon system for the NexaMesh Threat
 Simulator, organized by category with detailed descriptions and AI generation
 prompts for each icon.
 

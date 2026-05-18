@@ -122,7 +122,7 @@ resource functionApp 'Microsoft.Web/sites@2023-01-01' = {
         }
         {
           name: 'COSMOS_DB_DATABASE'
-          value: 'phoenix-docs'
+          value: 'nexamesh-docs'
         }
         {
           name: 'KEY_VAULT_NAME'
@@ -164,9 +164,9 @@ resource functionApp 'Microsoft.Web/sites@2023-01-01' = {
           'http://localhost:3000'
           'http://localhost:3001'
           'https://*.azurestaticapps.net'
-          'https://phoenixrooivalk.com'
-          'https://docs.phoenixrooivalk.com'
-          'https://www.phoenixrooivalk.com'
+          'https://nexamesh.ai'
+          'https://docs.nexamesh.ai'
+          'https://www.nexamesh.ai'
         ]
         supportCredentials: true
       }

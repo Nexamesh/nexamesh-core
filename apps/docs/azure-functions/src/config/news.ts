@@ -59,14 +59,14 @@ export const DEFAULT_NEWS_CATEGORIES: NewsCategoryConfig[] = [
   {
     id: "product-updates",
     name: "Product Updates",
-    description: "Phoenix Rooivalk product news",
+    description: "NexaMesh product news",
     icon: "rocket",
     color: "#f97316",
   },
   {
     id: "company-news",
     name: "Company News",
-    description: "Phoenix Rooivalk company announcements",
+    description: "NexaMesh company announcements",
     icon: "building",
     color: "#0891b2",
   },

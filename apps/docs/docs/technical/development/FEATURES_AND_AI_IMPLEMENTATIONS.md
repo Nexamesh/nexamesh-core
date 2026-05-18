@@ -18,7 +18,7 @@ xpReward: 100
 # Features and AI Implementations
 
 This document provides a comprehensive overview of all platform features and
-their AI implementations in the Phoenix Rooivalk Documentation Platform.
+their AI implementations in the NexaMesh Documentation Platform.
 
 ---
 
@@ -215,7 +215,7 @@ analyzeCompetitors({ competitor: string, aspects?: string[] })
 - Multi-aspect competitor analysis
 - Market positioning insights
 - Technology stack comparison
-- RAG-enhanced with Phoenix Rooivalk context
+- RAG-enhanced with NexaMesh context
 
 ### generateSWOT
 
@@ -439,7 +439,7 @@ interface PromptTemplate {
 
 ### Context Injection
 
-All prompts include Phoenix Rooivalk context:
+All prompts include NexaMesh context:
 
 - Company description
 - Product capabilities

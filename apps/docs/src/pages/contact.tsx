@@ -9,10 +9,10 @@ const INQUIRY_TYPES = {
     label: "Technical Demonstration",
     icon: "🎯",
     description: "Live system capabilities and performance validation",
-    subject: "Technical Demonstration Request - Phoenix Rooivalk",
-    body: `Dear Phoenix Rooivalk Team,
+    subject: "Technical Demonstration Request - NexaMesh",
+    body: `Dear NexaMesh Team,
 
-I am interested in scheduling a technical demonstration of the Phoenix Rooivalk counter-UAS system.
+I am interested in scheduling a technical demonstration of the NexaMesh counter-UAS system.
 
 Organization: [Your Organization]
 Role: [Your Role]
@@ -43,10 +43,10 @@ Best regards,
     label: "Partnership Opportunity",
     icon: "🤝",
     description: "Strategic alliances and integration partnerships",
-    subject: "Partnership Inquiry - Phoenix Rooivalk",
-    body: `Dear Phoenix Rooivalk Partnership Team,
+    subject: "Partnership Inquiry - NexaMesh",
+    body: `Dear NexaMesh Partnership Team,
 
-I am reaching out to explore potential partnership opportunities with Phoenix Rooivalk.
+I am reaching out to explore potential partnership opportunities with NexaMesh.
 
 Organization: [Your Organization]
 Industry: [Defense / Aerospace / Technology / Other]
@@ -60,7 +60,7 @@ Partnership type of interest:
 - [ ] Training and support partner
 
 Our capabilities:
-[Brief description of your organization's capabilities and how they complement Phoenix Rooivalk]
+[Brief description of your organization's capabilities and how they complement NexaMesh]
 
 Target markets/regions:
 [Your geographic focus]
@@ -77,10 +77,10 @@ Best regards,
     label: "Investment Inquiry",
     icon: "📈",
     description: "Series A funding and strategic investment opportunities",
-    subject: "Investment Inquiry - Phoenix Rooivalk",
-    body: `Dear Phoenix Rooivalk Investment Relations,
+    subject: "Investment Inquiry - NexaMesh",
+    body: `Dear NexaMesh Investment Relations,
 
-I am writing to express interest in investment opportunities with Phoenix Rooivalk.
+I am writing to express interest in investment opportunities with NexaMesh.
 
 Investor Information:
 Name: [Your Name]
@@ -100,7 +100,7 @@ Request:
 - [ ] Due diligence documentation
 
 Investment thesis/interest:
-[Why you're interested in Phoenix Rooivalk]
+[Why you're interested in NexaMesh]
 
 Timeline:
 [Your investment timeline and process]
@@ -114,8 +114,8 @@ Best regards,
     label: "Government & Defense",
     icon: "🏛️",
     description: "DoD procurement and defense contractor partnerships",
-    subject: "Government/Defense Inquiry - Phoenix Rooivalk",
-    body: `Dear Phoenix Rooivalk Government Relations,
+    subject: "Government/Defense Inquiry - NexaMesh",
+    body: `Dear NexaMesh Government Relations,
 
 I am contacting you regarding potential government/defense collaboration.
 
@@ -163,7 +163,7 @@ export default function Contact(): React.ReactElement {
 
   const generateMailtoLink = (type: InquiryType): string => {
     const inquiry = INQUIRY_TYPES[type];
-    const email = "info@phoenixrooivalk.com";
+    const email = "info@nexamesh.ai";
     const subject = encodeURIComponent(inquiry.subject);
     const body = encodeURIComponent(inquiry.body);
     return `mailto:${email}?subject=${subject}&body=${body}`;
@@ -172,7 +172,7 @@ export default function Contact(): React.ReactElement {
   return (
     <Layout
       title="Contact"
-      description="Contact Phoenix Rooivalk for demonstrations, partnerships, investments, or government inquiries"
+      description="Contact NexaMesh for demonstrations, partnerships, investments, or government inquiries"
     >
       <main className={styles.contactMain}>
         <div className={styles.contactContainer}>
@@ -335,7 +335,7 @@ export default function Contact(): React.ReactElement {
                   name: "Product Demo",
                   duration: 30,
                   description:
-                    "See Phoenix Rooivalk in action - live system demonstration",
+                    "See NexaMesh in action - live system demonstration",
                   slug: "demo",
                 },
                 {
@@ -372,15 +372,15 @@ export default function Contact(): React.ReactElement {
               <div className={styles.contactCard}>
                 <span className={styles.contactCardIcon}>📧</span>
                 <h3>Email</h3>
-                <a href="mailto:info@phoenixrooivalk.com">
-                  info@phoenixrooivalk.com
+                <a href="mailto:info@nexamesh.ai">
+                  info@nexamesh.ai
                 </a>
               </div>
               <div className={styles.contactCard}>
                 <span className={styles.contactCardIcon}>🔗</span>
                 <h3>LinkedIn</h3>
                 <a
-                  href="https://linkedin.com/company/phoenix-rooivalk"
+                  href="https://linkedin.com/company/nexamesh"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -391,7 +391,7 @@ export default function Contact(): React.ReactElement {
                 <span className={styles.contactCardIcon}>💻</span>
                 <h3>GitHub</h3>
                 <a
-                  href="https://github.com/JustAGhosT/PhoenixRooivalk"
+                  href="https://github.com/JustAGhosT/Nexamesh"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

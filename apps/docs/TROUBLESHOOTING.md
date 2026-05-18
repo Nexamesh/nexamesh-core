@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-This guide helps you diagnose and fix common issues with the Phoenix Rooivalk
+This guide helps you diagnose and fix common issues with the NexaMesh
 documentation site.
 
 ## Table of Contents
@@ -28,7 +28,7 @@ check your network connection and Azure Functions configuration."
 1. Go to your repository: Settings → Secrets and variables → Actions → Variables
    tab
 2. Verify `AZURE_FUNCTIONS_BASE_URL` exists and is set correctly
-3. Example correct value: `https://phoenix-rooivalk-functions.azurewebsites.net`
+3. Example correct value: `https://nexamesh-functions.azurewebsites.net`
 
 **Fix**:
 
@@ -270,7 +270,7 @@ curl https://your-function-app.azurewebsites.net/api/health/ready
 curl -X POST https://your-function-app.azurewebsites.net/api/askDocumentation \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"question":"What is Phoenix Rooivalk?"}'
+  -d '{"question":"What is NexaMesh?"}'
 ```
 
 ---

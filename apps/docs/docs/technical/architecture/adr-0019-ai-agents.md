@@ -145,7 +145,7 @@ import { docSearchTool, webSearchTool, noteTool } from "../tools";
 const RESEARCH_AGENT_PROMPT = ChatPromptTemplate.fromMessages([
   [
     "system",
-    `You are a research analyst for Phoenix Rooivalk, a counter-drone defense company.
+    `You are a research analyst for NexaMesh, a counter-drone defense company.
 
 Your role is to conduct thorough research on topics related to:
 - Counter-drone and counter-UAS technology
@@ -194,7 +194,7 @@ export async function createResearchAgent() {
 **Capabilities**:
 
 - Research competitor products and capabilities
-- Compare against Phoenix Rooivalk offerings
+- Compare against NexaMesh offerings
 - Identify strengths, weaknesses, opportunities, threats
 - Track market movements and announcements
 
@@ -209,11 +209,11 @@ export async function createResearchAgent() {
 const COMPETITIVE_INTEL_PROMPT = ChatPromptTemplate.fromMessages([
   [
     "system",
-    `You are a competitive intelligence analyst for Phoenix Rooivalk.
+    `You are a competitive intelligence analyst for NexaMesh.
 
 Your role is to analyze competitors and market dynamics in the counter-drone defense industry.
 
-Phoenix Rooivalk Context:
+NexaMesh Context:
 - South African company developing autonomous counter-drone systems
 - Key differentiators: AI-first, cost-effective, Africa-focused
 - Products: Phoenix interceptor drone with autonomous tracking and neutralization
@@ -276,7 +276,7 @@ export async function createCompetitiveIntelAgent() {
 const ANALYST_PROMPT = ChatPromptTemplate.fromMessages([
   [
     "system",
-    `You are a strategic analyst for Phoenix Rooivalk.
+    `You are a strategic analyst for NexaMesh.
 
 Your role is to provide data-driven analysis and recommendations for business decisions.
 
@@ -724,4 +724,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

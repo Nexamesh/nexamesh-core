@@ -183,7 +183,7 @@ ${draft.body}`;
    */
   openAsGitHubIssue(draft: EmailDraft, options: GitHubIssueOptions = {}): void {
     const {
-      repo = "JustAGhosT/PhoenixRooivalk",
+      repo = "JustAGhosT/Nexamesh",
       labels = ["correspondence", "email-log"],
       template,
     } = options;

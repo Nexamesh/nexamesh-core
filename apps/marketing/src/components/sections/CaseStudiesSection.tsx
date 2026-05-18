@@ -10,7 +10,7 @@ export const CaseStudiesSection: React.FC = () => {
         <div className={styles.header}>
           <h2 className={styles.title}>Case Studies</h2>
           <p className={styles.subtitle}>
-            Explore how Phoenix Rooivalk&apos;s technology is being applied in
+            Explore how NexaMesh&apos;s technology is being applied in
             real-world scenarios.
           </p>
         </div>

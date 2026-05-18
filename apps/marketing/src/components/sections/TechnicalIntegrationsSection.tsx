@@ -62,7 +62,7 @@ export const TechnicalIntegrationsSection: React.FC = () => {
           <div className={styles.header}>
             <h2 className={styles.title}>Core Technical Integrations</h2>
             <p className={styles.description}>
-              Phoenix Rooivalk operates autonomously at the edge, with optional
+              NexaMesh operates autonomously at the edge, with optional
               blockchain and AI enhancements when network connectivity is
               available. Core functionality never depends on external services.
             </p>

@@ -17,7 +17,7 @@ prerequisites:
 
 # CUAS Sandbox 2026 - Eligibility Assessment
 
-An honest assessment of Phoenix Rooivalk's current readiness for the Canada CUAS
+An honest assessment of NexaMesh's current readiness for the Canada CUAS
 Sandbox 2026 program, including identified gaps and recommended actions.
 
 :::warning Honest Assessment
@@ -50,7 +50,7 @@ solutions must have:
 
 ---
 
-## Phoenix Rooivalk Gap Analysis
+## NexaMesh Gap Analysis
 
 Based on internal assessment (ref: Team discussion Dec 2025):
 
@@ -100,7 +100,7 @@ configuration.
 
 :::danger Current Assessment: NOT READY
 
-Based on the analysis above, Phoenix Rooivalk is **not currently ready** for the
+Based on the analysis above, NexaMesh is **not currently ready** for the
 CUAS Sandbox 2026 application.
 
 **Reasons:**
@@ -247,5 +247,5 @@ See [Calendar](/calendar) for full list with deadlines.
 
 ---
 
-_Honest eligibility assessment for Phoenix Rooivalk strategic planning. © 2025
-Phoenix Rooivalk. All rights reserved._
+_Honest eligibility assessment for NexaMesh strategic planning. © 2025
+NexaMesh. All rights reserved._

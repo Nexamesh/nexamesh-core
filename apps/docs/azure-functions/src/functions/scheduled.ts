@@ -285,7 +285,7 @@ async function generateWeeklyReportJob(
     // Default repositories to track - can be configured via environment
     const defaultRepos = process.env.WEEKLY_REPORT_REPOS?.split(",").map((r) =>
       r.trim(),
-    ) || ["JustAGhosT/PhoenixRooivalk"];
+    ) || ["JustAGhosT/Nexamesh"];
 
     const result = await weeklyReportsService.generateReport(
       {

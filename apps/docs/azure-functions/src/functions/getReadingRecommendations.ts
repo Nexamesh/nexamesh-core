@@ -41,7 +41,7 @@ async function handler(
     const body = (await request.json()) as RecommendationRequest;
     const { readHistory = [], interests = [], role = "general" } = body;
 
-    const systemPrompt = `You are a documentation guide for Phoenix Rooivalk, an autonomous counter-UAS defense platform.
+    const systemPrompt = `You are a documentation guide for NexaMesh, an autonomous counter-UAS defense platform.
 
 Available documentation categories:
 - Executive: Summaries, pitch deck, investor materials

@@ -6,7 +6,7 @@
 
 - [x] **One-Page Solution Overview** (`docs/01-Executive_Summary.md`)
   - [x] Problem statement and market gap
-  - [x] Phoenix Rooivalk unique value proposition
+  - [x] NexaMesh unique value proposition
   - [x] Key differentiators and competitive advantages
   - [ ] Implementation timeline and support structure
   - [ ] Executive summary for C-level presentations

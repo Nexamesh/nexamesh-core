@@ -32,9 +32,9 @@ import {
 import styles from "./profile-settings.module.css";
 
 // localStorage key for profile confirmation
-const PROFILE_CONFIRMED_KEY = "phoenix-docs-profile-confirmed";
-const PROFILE_DATA_KEY = "phoenix-docs-user-profile";
-const NEWS_PREFERENCES_CACHE_KEY = "phoenix-docs-news-preferences";
+const PROFILE_CONFIRMED_KEY = "nexamesh-docs-profile-confirmed";
+const PROFILE_DATA_KEY = "nexamesh-docs-user-profile";
+const NEWS_PREFERENCES_CACHE_KEY = "nexamesh-docs-news-preferences";
 const NEWS_PREFERENCES_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
 // All available news categories

@@ -40,7 +40,7 @@ export const businessMarketingTemplate: ProfileTemplate = {
       reason: "Customer application scenarios",
     },
     {
-      docId: "/docs/executive/phoenix-rooivalk-pitch-deck",
+      docId: "/docs/executive/nexamesh-pitch-deck",
       title: "Pitch Deck",
       priority: 5,
       reason: "Sales and presentation materials",

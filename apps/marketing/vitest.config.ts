@@ -28,11 +28,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "@phoenix-rooivalk/types": path.resolve(
+      "@nexamesh/types": path.resolve(
         __dirname,
         "../../packages/types/src/index.ts",
       ),
-      "@phoenix-rooivalk/utils": path.resolve(
+      "@nexamesh/ui": path.resolve(__dirname, "../../packages/ui/src/index.ts"),
+      "@nexamesh/utils": path.resolve(
         __dirname,
         "../../packages/utils/src/index.ts",
       ),

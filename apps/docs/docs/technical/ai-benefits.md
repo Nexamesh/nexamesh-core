@@ -13,7 +13,7 @@ tags:
 
 ## Executive Summary
 
-The Phoenix Rooivalk system leverages cutting-edge artificial intelligence to
+The NexaMesh system leverages cutting-edge artificial intelligence to
 deliver unprecedented performance in counter-drone defense. Our AI integration
 provides **99.5% threat detection accuracy** with **<200ms response time**,
 representing a quantum leap over traditional systems that achieve only 70-85%
@@ -347,7 +347,7 @@ accuracy.
 
 ## Conclusion
 
-The Phoenix Rooivalk AI integration provides unprecedented performance in
+The NexaMesh AI integration provides unprecedented performance in
 counter-drone defense through advanced artificial intelligence capabilities. The
 system's AI benefits include superior threat detection performance, multi-modal
 intelligence, advanced behavioral analysis, and comprehensive operational
@@ -370,5 +370,5 @@ standards of safety, security, and operational effectiveness.
 ---
 
 _This document contains confidential AI technology information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

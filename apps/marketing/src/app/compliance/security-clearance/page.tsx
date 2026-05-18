@@ -1,5 +1,11 @@
-"use client";
+import type { Metadata } from "next";
 import * as React from "react";
+
+export const metadata: Metadata = {
+  title: "Security Clearance | NexaMesh",
+  description:
+    "NexaMesh personnel security clearance framework for classified operations and sensitive defense technology access.",
+};
 import { Footer } from "../../../components/Footer";
 import { Navigation } from "../../../components/Navigation";
 import styles from "../compliance-subpage.module.css";
@@ -31,7 +37,7 @@ export default function SecurityClearancePage(): React.ReactElement {
                 Personnel Security Framework
               </h2>
               <p className={styles.sectionText}>
-                Phoenix Rooivalk maintains comprehensive security clearance
+                NexaMesh maintains comprehensive security clearance
                 protocols for all personnel involved in classified operations.
                 Our security framework ensures:
               </p>

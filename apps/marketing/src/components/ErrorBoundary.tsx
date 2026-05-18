@@ -115,7 +115,7 @@ export class ErrorBoundary extends Component<Props, State> {
               justify-content: center;
               min-height: 400px;
               padding: 2rem;
-              background: linear-gradient(135deg, #1e1e2e 0%, #0d0d15 100%);
+              background: linear-gradient(135deg, #101720 0%, #182231 100%);
               border-radius: 8px;
               color: #e0e0e0;
             }
@@ -140,7 +140,7 @@ export class ErrorBoundary extends Component<Props, State> {
             .error-boundary-details {
               margin: 1.5rem 0;
               text-align: left;
-              background: #0a0a10;
+              background: #101720;
               border: 1px solid #2a2a3a;
               border-radius: 4px;
               padding: 1rem;
@@ -148,19 +148,19 @@ export class ErrorBoundary extends Component<Props, State> {
 
             .error-boundary-details summary {
               cursor: pointer;
-              color: #7aa2f7;
+              color: #C77A1B;
               margin-bottom: 0.5rem;
               user-select: none;
             }
 
             .error-boundary-details summary:hover {
-              color: #9dc1ff;
+              color: #d4882e;
             }
 
             .error-boundary-stack {
               margin-top: 0.5rem;
               padding: 0.5rem;
-              background: #000000;
+              background: #101720;
               border-radius: 4px;
               overflow-x: auto;
               font-size: 0.875rem;
@@ -187,19 +187,19 @@ export class ErrorBoundary extends Component<Props, State> {
             }
 
             .error-boundary-reset {
-              background: #7aa2f7;
-              color: #0d0d15;
+              background: #C77A1B;
+              color: #182231;
             }
 
             .error-boundary-reset:hover {
-              background: #9dc1ff;
+              background: #d4882e;
               transform: translateY(-2px);
             }
 
             .error-boundary-reload {
               background: transparent;
-              color: #7aa2f7;
-              border: 1px solid #7aa2f7;
+              color: #C77A1B;
+              border: 1px solid #C77A1B;
             }
 
             .error-boundary-reload:hover {
@@ -249,7 +249,7 @@ export const WasmErrorFallback: React.FC = () => {
           justify-content: center;
           min-height: 600px;
           padding: 2rem;
-          background: linear-gradient(135deg, #1e1e2e 0%, #0d0d15 100%);
+          background: linear-gradient(135deg, #101720 0%, #182231 100%);
           border-radius: 8px;
         }
 
@@ -313,20 +313,20 @@ export const WasmErrorFallback: React.FC = () => {
         }
 
         .wasm-error-reload {
-          background: #7aa2f7;
-          color: #0d0d15;
+          background: #C77A1B;
+          color: #182231;
           border: none;
         }
 
         .wasm-error-reload:hover {
-          background: #9dc1ff;
+          background: #d4882e;
           transform: translateY(-2px);
         }
 
         .wasm-error-home {
           background: transparent;
-          color: #7aa2f7;
-          border: 1px solid #7aa2f7;
+          color: #C77A1B;
+          border: 1px solid #C77A1B;
         }
 
         .wasm-error-home:hover {

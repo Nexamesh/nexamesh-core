@@ -125,7 +125,7 @@ This appendix provides the detailed technical analysis supporting
 | 100K+ MAU    | $0.0015/MAU             | Volume discount  |
 | Phone Auth   | $0.01-0.06/verification | Regional pricing |
 
-**Projected for Phoenix Rooivalk**:
+**Projected for NexaMesh**:
 
 - Expected MAU: ~5,000 (documentation site)
 - 24-month cost: **$0** (within free tier)
@@ -139,7 +139,7 @@ This appendix provides the detailed technical analysis supporting
 | 100K-1M MAU  | $0.002/MAU     | Volume discount    |
 | Premium P1   | +$6/user/month | Conditional Access |
 
-**Projected for Phoenix Rooivalk**:
+**Projected for NexaMesh**:
 
 - Expected MAU: ~5,000
 - 24-month cost: **$0** (within free tier)
@@ -154,7 +154,7 @@ This appendix provides the detailed technical analysis supporting
 | Professional | $240/month   | 10,000 MAU |
 | Enterprise   | Custom       | Unlimited  |
 
-**Projected for Phoenix Rooivalk**:
+**Projected for NexaMesh**:
 
 - Expected MAU: ~5,000
 - 24-month cost: **~$840** (Free tier covers most, overflow to Essentials)
@@ -168,7 +168,7 @@ This appendix provides the detailed technical analysis supporting
 | Backup/Monitoring  | ~$10         | Azure services |
 | Operational effort | ~$200        | Engineer time  |
 
-**Projected for Phoenix Rooivalk**:
+**Projected for NexaMesh**:
 
 - 24-month cost: **~$6,600** (infrastructure + operations)
 
@@ -180,8 +180,8 @@ This appendix provides the detailed technical analysis supporting
 
 ```json
 {
-  "iss": "https://securetoken.google.com/phoenix-rooivalk",
-  "aud": "phoenix-rooivalk",
+  "iss": "https://securetoken.google.com/nexamesh",
+  "aud": "nexamesh",
   "auth_time": 1732665600,
   "user_id": "abc123",
   "sub": "abc123",
@@ -533,4 +533,4 @@ async function verifyAccess(
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

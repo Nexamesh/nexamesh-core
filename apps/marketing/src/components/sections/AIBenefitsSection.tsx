@@ -52,7 +52,7 @@ export const AIBenefitsSection: React.FC = () => {
             Revolutionary AI + Blockchain Performance
           </h2>
           <p className={styles.subtitle}>
-            PhoenixRooivalk combines cutting-edge AI with military-grade
+            NexaMesh combines cutting-edge AI with military-grade
             blockchain technology to deliver unprecedented performance.
           </p>
         </RevealSection>
@@ -112,7 +112,7 @@ export const AIBenefitsSection: React.FC = () => {
             </h3>
             <p className={styles.ctaDescription}>
               While competitors race to meet the 2027 autonomous warfare
-              deadline, PhoenixRooivalk&apos;s integrated AI-blockchain system
+              deadline, NexaMesh&apos;s integrated AI-blockchain system
               is ready for immediate deployment, providing a decisive
               technological advantage in the critical race for autonomous
               warfare dominance.
@@ -122,7 +122,7 @@ export const AIBenefitsSection: React.FC = () => {
                 Request AI + Blockchain Demo
               </Button>
               <Button
-                href="mailto:smit.jurie@gmail.com?subject=Phoenix%20Rooivalk%20-%20AI%20%2B%20Blockchain%20Capabilities%20Inquiry"
+                href="mailto:smit.jurie@gmail.com?subject=NexaMesh%20-%20AI%20%2B%20Blockchain%20Capabilities%20Inquiry"
                 variant="ghost"
                 size="lg"
               >

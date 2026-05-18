@@ -1,6 +1,6 @@
 # Documentation Staging Area
 
-This folder is a **temporary staging area** for refining PhoenixRooivalk
+This folder is a **temporary staging area** for refining NexaMesh
 documentation. The live site continues to use `docs/`; nothing here is built or
 published until content is promoted.
 

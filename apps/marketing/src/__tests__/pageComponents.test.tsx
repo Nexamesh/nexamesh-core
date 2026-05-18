@@ -72,11 +72,11 @@ describe("Page data — products", () => {
   it("should have valid product lines", async () => {
     const { products } = await import("../data/products");
     const validLines = [
-      "skysnare",
+      "kestrel",
       "netsnare",
       "skywatch",
       "netsentry",
-      "aeronet",
+      "sentinel-ring",
       "rkv",
     ];
     products.forEach((product) => {
@@ -154,8 +154,8 @@ describe("Component rendering — basic smoke tests", () => {
     expect(typeof useCart).toBe("function");
   });
 
-  it("should export formatCurrency from formatter", async () => {
-    const { formatCurrency } = await import("../utils/formatter");
+  it("should export formatCurrency from @nexamesh/utils", async () => {
+    const { formatCurrency } = await import("@nexamesh/utils");
     expect(formatCurrency).toBeDefined();
     expect(formatCurrency(1000)).toBe("$1,000");
   });
@@ -165,9 +165,9 @@ describe("Component rendering — basic smoke tests", () => {
     expect(analytics).toBeDefined();
   });
 
-  it("should export downloadWhitepaper utility", async () => {
-    const mod = await import("../utils/downloadWhitepaper");
-    expect(mod).toBeDefined();
+  it("should export downloadWhitepaper from @nexamesh/utils", async () => {
+    const { downloadWhitepaper } = await import("@nexamesh/utils");
+    expect(downloadWhitepaper).toBeDefined();
   });
 
   it("should export calendar utilities", async () => {

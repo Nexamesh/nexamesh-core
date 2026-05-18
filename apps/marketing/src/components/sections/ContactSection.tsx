@@ -35,7 +35,7 @@ export const ContactSection: React.FC = () => {
                 Preorder Now
               </Button>
               <Button
-                href="mailto:sales@phoenixrooivalk.com"
+                href="mailto:sales@nexamesh.ai"
                 variant="ghost"
                 size="lg"
                 className={styles.fullWidthButton}
@@ -66,7 +66,7 @@ export const ContactSection: React.FC = () => {
                 View Products
               </Button>
               <Button
-                href="mailto:support@phoenixrooivalk.com"
+                href="mailto:support@nexamesh.ai"
                 variant="ghost"
                 size="lg"
                 className={styles.fullWidthButton}

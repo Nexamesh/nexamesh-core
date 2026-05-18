@@ -59,7 +59,7 @@ Israel's defense tech ecosystem is experiencing unprecedented growth:
 
 ## Technology Focus Areas
 
-Israel's defense priorities align well with Phoenix Rooivalk:
+Israel's defense priorities align well with NexaMesh:
 
 | Area                        | Priority | PR Alignment |
 | --------------------------- | -------- | ------------ |
@@ -94,7 +94,7 @@ Startup accelerator backed by Unit 8200 alumni (elite cybersecurity unit).
 
 ## Eligibility
 
-| Requirement           | Phoenix Rooivalk Status |
+| Requirement           | NexaMesh Status |
 | --------------------- | ----------------------- |
 | Defense-relevant tech | Meets requirement       |
 | Dual-use potential    | Meets requirement       |
@@ -105,7 +105,7 @@ Startup accelerator backed by Unit 8200 alumni (elite cybersecurity unit).
 
 ## Application Strategy
 
-### For Phoenix Rooivalk
+### For NexaMesh
 
 **Opportunity:** Israel is highly receptive to foreign defense tech partnerships
 
@@ -135,7 +135,7 @@ Startup accelerator backed by Unit 8200 alumni (elite cybersecurity unit).
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score    | Notes                             |
 | --------------- | -------- | --------------------------------- |

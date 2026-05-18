@@ -14,7 +14,7 @@ tags:
 
 ## Executive Summary
 
-This document provides a comprehensive legal framework for the Phoenix Rooivalk
+This document provides a comprehensive legal framework for the NexaMesh
 Counter-Drone Defense System. The framework covers regulatory compliance,
 licensing requirements, legal considerations, and operational restrictions
 across multiple jurisdictions.
@@ -405,7 +405,7 @@ across multiple jurisdictions.
 
 ## Conclusion
 
-The Phoenix Rooivalk Legal Framework provides comprehensive legal guidance for
+The NexaMesh Legal Framework provides comprehensive legal guidance for
 the counter-drone defense system. The framework ensures full compliance with all
 applicable regulations while providing clear guidance for legal risk management
 and mitigation.
@@ -428,5 +428,5 @@ organization from legal risks and liabilities.
 ---
 
 _This document contains confidential legal information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

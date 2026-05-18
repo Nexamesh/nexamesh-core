@@ -62,7 +62,7 @@ detection, defeat mechanisms cannot be employed effectively.
 | **DRL-7** | Swarm Detection           | Coordinated swarm tracking          | 10+ drone swarm scenarios                |
 | **DRL-8** | Operational Detection     | Full capability, <5% false positive | Extended operational testing             |
 
-### DRL Roadmap: Phoenix Rooivalk
+### DRL Roadmap: NexaMesh
 
 ```
 Current State: DRL-4 (Field-Validated Detection)
@@ -121,7 +121,7 @@ applies to both soft-kill (jamming, cyber) and hard-kill (kinetic) solutions.
 | **KRL-7** | Swarm Defeat            | Effective against coordinated swarms | 10+ drone swarm defense           |
 | **KRL-8** | Operational Defeat      | >90% defeat rate operationally       | Extended combat testing           |
 
-### KRL Roadmap: Phoenix Rooivalk
+### KRL Roadmap: NexaMesh
 
 ```
 Current State: KRL-3 (Moving Target Defeat)
@@ -180,7 +180,7 @@ military command and control (C2) architectures.
 | **IRL-7** | Coalition Interoperability | Allied nation system compatibility | Joint exercise validation    |
 | **IRL-8** | Full Battle Management     | Theater-level BMS integration      | Operational deployment       |
 
-### IRL Roadmap: Phoenix Rooivalk
+### IRL Roadmap: NexaMesh
 
 ```
 Current State: IRL-3 (C2 Interface)
@@ -221,7 +221,7 @@ Target State:  IRL-5 (STANAG Compliance)
 
 ---
 
-## Phoenix Rooivalk CRL Assessment
+## NexaMesh CRL Assessment
 
 ### Current State Assessment
 
@@ -253,7 +253,7 @@ Based on the program requirements and TRL 5 mandate:
 | **Defeat Only**     | N/A         | KRL-3       | IRL-3       |
 | **Detect & Defeat** | DRL-4       | KRL-3       | IRL-3       |
 
-**Current Phoenix Rooivalk Status: MEETS MINIMUM REQUIREMENTS**
+**Current NexaMesh Status: MEETS MINIMUM REQUIREMENTS**
 
 However, to be competitive and demonstrate "good growth potential" for Diamond
 in the Rough prizes, targeting higher levels is recommended.
@@ -317,5 +317,5 @@ valued:
 ---
 
 _This framework is based on industry standards and adapted for Phoenix
-Rooivalk's counter-UAS development program. © 2025 Phoenix Rooivalk. All rights
+Rooivalk's counter-UAS development program. © 2026 NexaMesh. All rights
 reserved._

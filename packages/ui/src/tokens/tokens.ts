@@ -1,5 +1,5 @@
 /**
- * Phoenix Rooivalk Design Tokens (TypeScript)
+ * NexaMesh Design Tokens (TypeScript)
  *
  * Use these tokens for programmatic access to design system values.
  * For CSS, import the tokens/index.css file directly.

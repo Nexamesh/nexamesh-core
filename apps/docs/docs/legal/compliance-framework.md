@@ -14,7 +14,7 @@ tags:
 
 ## Executive Summary
 
-Phoenix Rooivalk implements a comprehensive security and compliance framework
+NexaMesh implements a comprehensive security and compliance framework
 designed to meet the most stringent defense and regulatory requirements. The
 system addresses ITAR compliance, DoD autonomous weapons policies, blockchain
 evidence admissibility, and operational resilience in contested environments.
@@ -73,7 +73,7 @@ evidence admissibility, and operational resilience in contested environments.
 **Immediate Actions (0-6 months)**
 
 - Register with DDTC for ITAR compliance
-- Classify all Phoenix Rooivalk components per USML categories
+- Classify all NexaMesh components per USML categories
 - Implement access controls limiting technical data to US persons
 - Establish comprehensive ITAR training program
 - Document all technical data generation with 5-year retention
@@ -416,7 +416,7 @@ Rooivalk operations.
 
 ## Conclusion
 
-Phoenix Rooivalk's comprehensive security and compliance framework addresses the
+NexaMesh's comprehensive security and compliance framework addresses the
 most stringent defense and regulatory requirements. The system's design ensures
 ITAR compliance, DoD autonomous weapons policy adherence, blockchain evidence
 admissibility, and operational resilience in contested environments.

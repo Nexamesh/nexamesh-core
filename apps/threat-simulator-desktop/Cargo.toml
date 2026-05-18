@@ -1,8 +1,8 @@
 [package]
 name = "threat-simulator-desktop"
 version = "0.1.0"
-description = "Phoenix Rooivalk Threat Simulator - Desktop Application"
-authors = ["Phoenix Rooivalk Team"]
+description = "NexaMesh Threat Simulator — Desktop Application"
+authors = ["NexaMesh"]
 edition.workspace = true
 
 [lib]
@@ -41,5 +41,5 @@ web-sys = { version = "0.3", features = [
 ] }
 js-sys = "0.3"
 console_error_panic_hook = "0.1"
-gloo-timers = { version = "0.3", features = ["futures"] }
+gloo-timers = { version = "0.4", features = ["futures"] }
 

@@ -1,5 +1,5 @@
 "use client";
-import { downloadWhitepaper } from "@phoenix-rooivalk/utils";
+import { downloadWhitepaper } from "@nexamesh/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import styles from "./ExitIntentModal.module.css";

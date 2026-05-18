@@ -100,7 +100,7 @@ No additional values allowed without updating this doc.
 
 | Project  | Description                             |
 | -------- | --------------------------------------- |
-| rooivalk | Counter-UAS platform (Phoenix Rooivalk) |
+| rooivalk | Counter-UAS platform (NexaMesh) |
 | autopr   | Autopr automation platform              |
 | nl-core  | Shared NL foundation services           |
 | nl-ai    | Shared NL AI services                   |

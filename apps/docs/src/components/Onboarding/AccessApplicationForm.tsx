@@ -278,7 +278,7 @@ export function AccessApplicationForm({
             name="reason"
             value={formData.reason}
             onChange={handleChange}
-            placeholder="Please explain your interest in Phoenix Rooivalk and why you need access to this documentation..."
+            placeholder="Please explain your interest in NexaMesh and why you need access to this documentation..."
             rows={4}
             className={errors.reason ? "error" : ""}
             disabled={isSubmitting}

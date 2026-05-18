@@ -1,7 +1,7 @@
 {
   "name": "threat-simulator-desktop",
   "version": "0.1.0",
-  "description": "Phoenix Rooivalk Threat Simulator - Leptos/Tauri Desktop Application",
+  "description": "NexaMesh Threat Simulator — Leptos/Tauri Desktop Application",
   "scripts": {
     "dev": "trunk serve --port 8080 --open",
     "dev:tauri": "cargo tauri dev",

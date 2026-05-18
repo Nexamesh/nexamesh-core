@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NexaMesh monogram">
+  <!-- NexaMesh N Monogram — light variant (investor decks, print) -->
+
+  <rect width="100" height="100" fill="#F1F0EA" rx="12"/>
+
+  <g stroke="#182231" stroke-width="9.5" stroke-linecap="round" fill="none">
+    <line x1="22" y1="17" x2="22" y2="83"/>
+    <line x1="22" y1="17" x2="78" y2="83"/>
+    <line x1="78" y1="17" x2="78" y2="83"/>
+  </g>
+
+  <circle cx="22" cy="83" r="5" fill="#182231"/>
+  <circle cx="78" cy="17" r="5" fill="#182231"/>
+
+  <!-- Transmission nodes: amber works on both dark and light backgrounds -->
+  <circle cx="22" cy="17" r="6.5" fill="#C77A1B"/>
+  <circle cx="78" cy="83" r="6.5" fill="#C77A1B"/>
+</svg>

@@ -1,4 +1,4 @@
-// Formation Management System - Reusable Core Logic for Phoenix Rooivalk
+// Formation Management System - Reusable Core Logic for NexaMesh
 // This system will be ported to Rust in the main application
 
 export interface Formation {

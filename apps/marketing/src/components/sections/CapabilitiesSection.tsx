@@ -25,7 +25,7 @@ export const CapabilitiesSection: React.FC = () => {
       icon: "🌐",
       title: "100% Edge Autonomy",
       description:
-        "Like a flock of birds - nodes coordinate via light signals and sound pulses. 500m-1km range between nodes.",
+        "Nodes operate as independent agents, coordinating without RF infrastructure. Each node maintains local threat detection while mesh consensus drives coordinated response. 500m–1km inter-node range.",
       proof: "No network dependency",
     },
     {

@@ -77,7 +77,7 @@ export {
   netSentryLite,
   netSentryStandard,
   netSentryPro,
-  // SkySnare line
+  // Kestrel Mesh line
   skySnare,
   // NetSnare line
   netSnareLite,
@@ -85,7 +85,7 @@ export {
   netSnareStandard,
   netSnarePro,
   responseRelayDemo,
-  // AeroNet line
+  // Sentinel Ring line
   aeroNetEnterprise,
   aeroNetCommand,
   // RKV line
@@ -98,9 +98,9 @@ export {
 export {
   skyWatchProducts,
   netSentryProducts,
-  skySnareProducts,
+  kestrelMeshProducts,
   netSnareProducts,
-  aeroNetProducts,
+  sentinelRingProducts,
   rkvProducts,
   allProducts,
   productBySku,

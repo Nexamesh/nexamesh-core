@@ -270,7 +270,7 @@ export default function PresentationMode({
       {/* Top Bar */}
       <div className="flex items-center justify-between px-6 py-3 bg-gray-800 border-b border-gray-700">
         <div className="flex items-center gap-4">
-          <img src={logoUrl} alt="Phoenix Rooivalk" className="w-8 h-8" />
+          <img src={logoUrl} alt="NexaMesh" className="w-8 h-8" />
           <h1 className="text-lg font-semibold truncate max-w-md">{title}</h1>
         </div>
 

@@ -2,7 +2,7 @@ import type { Slide, KeyPoint } from "../SlideDeckDownload";
 
 /**
  * Executive Presentation Materials Slides
- * Full investor/executive presentation covering PhoenixRooivalk
+ * Full investor/executive presentation covering Nexamesh
  *
  * Enhanced with:
  * - Rich text formatting (**bold**, *italic*)
@@ -14,7 +14,7 @@ import type { Slide, KeyPoint } from "../SlideDeckDownload";
 export const presentationMaterialsSlides: Slide[] = [
   {
     number: 1,
-    title: "PhoenixRooivalk: SAE Level 4 Autonomous Counter-UAS Defense",
+    title: "Nexamesh: SAE Level 4 Autonomous Counter-UAS Defense",
     duration: 30,
     icon: "🚁",
     layout: "title-only",
@@ -26,7 +26,7 @@ export const presentationMaterialsSlides: Slide[] = [
     speakerNotes:
       "Welcome the audience. This is a comprehensive presentation - adjust depth based on audience expertise level.",
     script:
-      "Welcome to PhoenixRooivalk - the world's first SAE Level 4 autonomous counter-UAS defense system. I'm Jurie Smit, Technical Lead. Today we'll show you how we're revolutionizing drone defense through edge AI and blockchain accountability.",
+      "Welcome to Nexamesh - the world's first SAE Level 4 autonomous counter-UAS defense system. I'm Jurie Smit, Technical Lead. Today we'll show you how we're revolutionizing drone defense through edge AI and blockchain accountability.",
   },
   {
     number: 2,
@@ -90,7 +90,7 @@ export const presentationMaterialsSlides: Slide[] = [
     speakerNotes:
       "Each bullet is a differentiator. Emphasize the 10-40x speed advantage - this is our key competitive edge.",
     script:
-      "PhoenixRooivalk delivers unprecedented protection. Our 120-195ms response time is 10-40 times faster than competitors. We achieve 99.7% detection accuracy, eliminating false positives. We detect RF-silent threats that others miss. Every engagement creates blockchain-verified evidence that's court-admissible. We operate at SAE Level 4 autonomy - completely offline without communications. And we handle 100+ concurrent threats with graceful degradation.",
+      "Nexamesh delivers unprecedented protection. Our 120-195ms response time is 10-40 times faster than competitors. We achieve 99.7% detection accuracy, eliminating false positives. We detect RF-silent threats that others miss. Every engagement creates blockchain-verified evidence that's court-admissible. We operate at SAE Level 4 autonomy - completely offline without communications. And we handle 100+ concurrent threats with graceful degradation.",
   },
   {
     number: 4,
@@ -141,7 +141,7 @@ export const presentationMaterialsSlides: Slide[] = [
     duration: 45,
     icon: "📊",
     layout: "two-column",
-    leftColumnTitle: "PhoenixRooivalk",
+    leftColumnTitle: "Nexamesh",
     leftColumn: [
       "**120-195ms** response",
       "✅ RF-Silent Detection",
@@ -359,17 +359,17 @@ export const presentationMaterialsSlides: Slide[] = [
       "**Pilot Programs:** Early customer validation",
       "**Technical Demo:** *See the system in action*",
       "",
-      "📧 **Contact:** jurie@phoenixvc.tech",
+      "📧 **Contact:** jurie@nexamesh.ai",
     ],
     speakerNotes:
       "End with clear next steps. Make it easy for them to take action. Offer the demo.",
     script:
-      "Join us in revolutionizing drone defense. Immediate opportunities include Series A investment of $15 million for MVP completion and market expansion, strategic partnerships with defense contractors and technology partners, pilot programs for early customer validation, and technical collaboration for joint development. Why now? Market timing demands better solutions as threats evolve. Technology readiness shows edge computing and blockchain are mature. We have competitive window as first-movers in autonomous systems. And regulatory support from DoD Directive 3000.09 enables autonomous defense. Next steps: technical demo to see the system in action, pilot program to deploy at your facility, partnership discussion to explore collaboration, and investment discussion to join our funding round. Contact us at jurie@phoenixvc.tech for technical demo or partnership inquiries.",
+      "Join us in revolutionizing drone defense. Immediate opportunities include Series A investment of $15 million for MVP completion and market expansion, strategic partnerships with defense contractors and technology partners, pilot programs for early customer validation, and technical collaboration for joint development. Why now? Market timing demands better solutions as threats evolve. Technology readiness shows edge computing and blockchain are mature. We have competitive window as first-movers in autonomous systems. And regulatory support from DoD Directive 3000.09 enables autonomous defense. Next steps: technical demo to see the system in action, pilot program to deploy at your facility, partnership discussion to explore collaboration, and investment discussion to join our funding round. Contact us at jurie@nexamesh.ai for technical demo or partnership inquiries.",
   },
 ];
 
 export const presentationMaterialsMeta = {
-  title: "PhoenixRooivalk Executive Presentation",
+  title: "Nexamesh Executive Presentation",
   duration: 12,
   audience: "Investors/Executives",
   date: "October 3, 2025",

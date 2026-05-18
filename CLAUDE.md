@@ -17,7 +17,7 @@ evidence anchoring, edge AI processing, and a threat simulation engine.
 | Backend        | Rust (Axum 0.8), Python 3.9+ (detector)                  |
 | Blockchain     | Solana SDK, EtherLink, x402 payment protocol             |
 | Database       | SQLite via SQLx, Azure Cosmos DB (Docs)                  |
-| Package Mgr    | pnpm 9.6.0 (enforced via corepack)                       |
+| Package Mgr    | pnpm 10.31.0 (enforced via corepack)                     |
 | Monorepo       | Turborepo 2.8                                            |
 | JS Testing     | Vitest (marketing), Jest (docs, ui)                      |
 | Rust Testing   | cargo test                                               |
@@ -345,3 +345,7 @@ directory:
 - `apps/detector/CLAUDE.md` — Python config system, hardware platforms, linting
 - `apps/threat-simulator-desktop/CLAUDE.md` — WASM/native compilation, Trunk,
   Tauri
+
+## Baton Integration
+
+Baton is the shared task graph for cross-repo work. When the `baton` MCP server is available, agents should check for existing work with `task_check` at the start of meaningful tasks, create or claim visible work with `task_notify`/`log_agent_message`, update the task when significant new information becomes available, and log completion or blockers before handing off.

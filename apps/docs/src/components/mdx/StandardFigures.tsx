@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /**
- * Standard figures for Phoenix Rooivalk documentation.
+ * Standard figures for NexaMesh documentation.
  * These values should be used consistently across all documents.
  * Update these central values when figures need to change.
  *
@@ -178,7 +178,7 @@ export const FIGURES = {
   competitorAccuracy: "70-85%",
 
   // ==========================================================================
-  // PRODUCT FIGURES (SkySnare/AeroNet)
+  // PRODUCT FIGURES (KestrelMesh/SentinelRing)
   // ==========================================================================
   skySnareTAM: "$1.68B",
   aeroNetTAM: "$4.2B",

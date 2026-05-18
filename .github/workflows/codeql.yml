@@ -1,24 +1,8 @@
 name: "CodeQL Security Analysis"
 
 on:
-  push:
-    branches: ["main"]
-    paths:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-      - "**/*.jsx"
-      - "**/*.rs"
-      - ".github/workflows/codeql.yml"
-  pull_request:
-    branches: ["main"]
-    paths:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-      - "**/*.jsx"
-      - "**/*.rs"
-      - ".github/workflows/codeql.yml"
+  # Reduced to weekly + manual to cut GitHub Actions costs
+  # Was running on every push/PR including Renovate bot
   schedule:
     - cron: "30 2 * * 1" # Weekly on Monday at 2:30 AM UTC
   workflow_dispatch:
@@ -76,7 +60,7 @@ jobs:
         if:
           ${{ steps.codeql-check.outputs.enabled == 'true' && matrix.language ==
           'rust' }}
-        uses: actions-rust-lang/setup-rust-toolchain@a0b538fa0b742a6aa35d6e2c169b4bd06d225a98 # v1
+        uses: actions-rust-lang/setup-rust-toolchain@150fca883cd4034361b621bd4e6a9d34e5143606 # v1
         with:
           toolchain: stable
           components: rustfmt, clippy
@@ -85,13 +69,13 @@ jobs:
         if:
           ${{ steps.codeql-check.outputs.enabled == 'true' && matrix.language ==
           'rust' }}
-        uses: Swatinem/rust-cache@9d47c6ad4b02e050fd481d890b2ea34778fd09d6 # v2
+        uses: Swatinem/rust-cache@779680da715d629ac1d338a641029a2f4372abb5 # v2
         with:
           shared-key: codeql-rust
 
       - name: Setup pnpm
         if: matrix.language == 'javascript-typescript'
-        uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4
 
       - name: Generate lockfile if missing
         if: matrix.language == 'javascript-typescript'
@@ -103,9 +87,9 @@ jobs:
 
       - name: Setup Node.js
         if: matrix.language == 'javascript-typescript'
-        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6
         with:
-          node-version: "20"
+          node-version: "24"
           package-manager-cache: false
 
       - name: Install dependencies

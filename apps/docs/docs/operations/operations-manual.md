@@ -14,7 +14,7 @@ tags:
 ## Executive Summary
 
 This operations manual provides comprehensive procedures for day-to-day
-operations, maintenance, and optimization of the Phoenix Rooivalk Counter-Drone
+operations, maintenance, and optimization of the NexaMesh Counter-Drone
 Defense System. The manual covers system monitoring, performance optimization,
 troubleshooting, and maintenance procedures.
 
@@ -479,7 +479,7 @@ Rooivalk operations.
 
 ## Conclusion
 
-The Phoenix Rooivalk Operations Manual provides comprehensive procedures for
+The NexaMesh Operations Manual provides comprehensive procedures for
 day-to-day operations, maintenance, and optimization of the counter-drone
 defense system. The manual emphasizes proactive maintenance, performance
 optimization, and incident response while maintaining the highest standards of
@@ -501,5 +501,5 @@ effectiveness.
 ---
 
 _This document contains confidential operational information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

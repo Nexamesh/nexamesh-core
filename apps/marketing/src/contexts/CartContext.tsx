@@ -8,10 +8,11 @@ import React, {
   useCallback,
 } from "react";
 import type { CartContextType, CartItem } from "../types/cart";
+import { safeGet, safeSet } from "@nexamesh/utils";
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-const CART_STORAGE_KEY = "phoenix-rooivalk-cart";
+const CART_STORAGE_KEY = "nexamesh-cart";
 
 /**
  * Calculate the total price of items in the cart
@@ -44,36 +45,18 @@ function calculateRecurringTotal(items: CartItem[]): number {
   );
 }
 
-/**
- * Load cart from localStorage
- */
 function loadCartFromStorage(): CartItem[] {
-  if (typeof window === "undefined") return [];
-
+  const stored = safeGet(CART_STORAGE_KEY);
+  if (!stored) return [];
   try {
-    const stored = localStorage.getItem(CART_STORAGE_KEY);
-    if (stored) {
-      return JSON.parse(stored);
-    }
+    return JSON.parse(stored);
   } catch {
-    // Silent fail - return empty cart if storage is unavailable
-    // This handles cases like private browsing or storage quota exceeded
+    return [];
   }
-  return [];
 }
 
-/**
- * Save cart to localStorage
- */
 function saveCartToStorage(items: CartItem[]): void {
-  if (typeof window === "undefined") return;
-
-  try {
-    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items));
-  } catch {
-    // Silent fail - cart will work in memory only if storage is unavailable
-    // This handles cases like private browsing or storage quota exceeded
-  }
+  safeSet(CART_STORAGE_KEY, JSON.stringify(items));
 }
 
 export function CartProvider({ children }: { children: React.ReactNode }) {

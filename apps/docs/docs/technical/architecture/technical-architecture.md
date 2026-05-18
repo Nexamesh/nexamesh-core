@@ -13,7 +13,7 @@ tags:
 
 ## System Architecture Overview
 
-Phoenix Rooivalk implements a **Comms-Independent Edge Autonomy (CIEA)**
+NexaMesh implements a **Comms-Independent Edge Autonomy (CIEA)**
 architecture that achieves sub-2ms authentication and 50–195ms end-to-end
 decision latency through edge-first processing. The system combines AI-driven
 threat detection with cryptographically anchored evidence trails to ensure both
@@ -398,5 +398,5 @@ radio via USB 3.0 **Acoustic Sensing**: I2S microphone arrays
 ---
 
 _This document contains confidential technical information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

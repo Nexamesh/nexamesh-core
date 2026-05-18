@@ -298,9 +298,9 @@ export function useCloudAnalytics(): {
 // Local Storage Helpers
 // ============================================================================
 
-const LOCAL_PROGRESS_KEY = "phoenix-docs-progress";
-const LOCAL_ACHIEVEMENTS_KEY = "phoenix-docs-achievements";
-const LOCAL_STATS_KEY = "phoenix-docs-stats";
+const LOCAL_PROGRESS_KEY = "nexamesh-docs-progress";
+const LOCAL_ACHIEVEMENTS_KEY = "nexamesh-docs-achievements";
+const LOCAL_STATS_KEY = "nexamesh-docs-stats";
 
 function getLocalProgress(): UserProgress {
   if (typeof window === "undefined") {

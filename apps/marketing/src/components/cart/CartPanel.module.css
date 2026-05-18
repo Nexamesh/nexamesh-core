@@ -69,12 +69,12 @@
 
 .closeButton:hover {
   background: rgba(var(--primary), 0.1);
-  border-color: var(--primary, #f97316);
-  color: var(--primary, #f97316);
+  border-color: var(--primary, #C77A1B);
+  color: var(--primary, #C77A1B);
 }
 
 .closeButton:focus-visible {
-  outline: 2px solid var(--primary, #f97316);
+  outline: 2px solid var(--primary, #C77A1B);
   outline-offset: 2px;
 }
 
@@ -122,7 +122,7 @@
 .footer {
   padding: 1.5rem;
   border-top: 1px solid rgba(var(--primary), 0.2);
-  background: var(--bg-secondary, #09090f);
+  background: var(--bg-secondary, #182231);
 }
 
 .summary {
@@ -164,7 +164,7 @@
 .totalValue {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent, #fbbf24);
+  color: var(--accent, #C77A1B);
   font-family: "Courier New", monospace;
 }
 
@@ -192,7 +192,7 @@
 }
 
 .checkoutButton:focus-visible {
-  outline: 2px solid var(--primary, #f97316);
+  outline: 2px solid var(--primary, #C77A1B);
   outline-offset: 2px;
 }
 
@@ -212,11 +212,11 @@
 
 .continueButton:hover {
   background: rgba(var(--primary), 0.1);
-  border-color: var(--primary, #f97316);
+  border-color: var(--primary, #C77A1B);
 }
 
 .continueButton:focus-visible {
-  outline: 2px solid var(--primary, #f97316);
+  outline: 2px solid var(--primary, #C77A1B);
   outline-offset: 2px;
 }
 

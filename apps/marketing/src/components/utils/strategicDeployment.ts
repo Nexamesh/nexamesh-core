@@ -1,4 +1,4 @@
-// Strategic Deployment System - Reusable Core Logic for Phoenix Rooivalk
+// Strategic Deployment System - Reusable Core Logic for NexaMesh
 // This system will be ported to Rust in the main application
 
 export interface DeploymentZone {

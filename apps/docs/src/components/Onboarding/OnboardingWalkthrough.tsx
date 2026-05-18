@@ -26,12 +26,12 @@ import {
 import { submitAccessApplication } from "../../services/access-applications";
 import "./OnboardingWalkthrough.css";
 
-const ONBOARDING_COMPLETED_KEY = "phoenix-docs-onboarding-completed";
-const ONBOARDING_STEP_KEY = "phoenix-docs-onboarding-step";
-const PROFILE_CONFIRMED_KEY = "phoenix-docs-profile-confirmed";
-const PROFILE_DATA_KEY = "phoenix-docs-user-profile";
-const USER_DETAILS_KEY = "phoenix-docs-user-details";
-const USER_FUN_FACTS_KEY = "phoenix-docs-user-fun-facts";
+const ONBOARDING_COMPLETED_KEY = "nexamesh-docs-onboarding-completed";
+const ONBOARDING_STEP_KEY = "nexamesh-docs-onboarding-step";
+const PROFILE_CONFIRMED_KEY = "nexamesh-docs-profile-confirmed";
+const PROFILE_DATA_KEY = "nexamesh-docs-user-profile";
+const USER_DETAILS_KEY = "nexamesh-docs-user-details";
+const USER_FUN_FACTS_KEY = "nexamesh-docs-user-fun-facts";
 
 type StepType =
   | "profile-completion"
@@ -203,7 +203,7 @@ const ONBOARDING_STEPS: OnboardingStep[] = [
     id: "apply-for-access",
     title: "Apply for Access",
     description:
-      "We'd love to have you! Please fill out the form below to request access to the Phoenix Rooivalk documentation portal.",
+      "We'd love to have you! Please fill out the form below to request access to the NexaMesh documentation portal.",
     icon: "📋",
     stepType: "apply-for-access",
   },
@@ -217,7 +217,7 @@ const ONBOARDING_STEPS: OnboardingStep[] = [
   },
   {
     id: "welcome",
-    title: "Welcome to Phoenix Rooivalk",
+    title: "Welcome to NexaMesh",
     description:
       "This documentation hub contains everything you need to know about our counter-drone technology. Let's take a quick tour of the key features.",
     icon: "🚀",

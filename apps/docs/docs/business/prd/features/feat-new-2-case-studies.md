@@ -4,7 +4,7 @@ title: "Feature PRD: Case Studies Section"
 sidebar_label: Case Studies Section
 description:
   Product requirements for a Case Studies section on the marketing homepage
-  showcasing real-world application scenarios for SkySnare™ and AeroNet™.
+  showcasing real-world application scenarios for Kestrel Mesh and Sentinel Ring.
 difficulty: beginner
 estimated_reading_time: 5
 points: 10
@@ -26,19 +26,19 @@ high-level overview of the technology, but it lacks concrete examples of how the
 technology can be applied in real-world scenarios. This makes it difficult for
 potential investors and partners to fully grasp the value proposition.
 **Solution:** Create a dedicated "Case Studies" section that showcases
-hypothetical or real-world application scenarios for both SkySnare™ and
-AeroNet™.
+hypothetical or real-world application scenarios for both Kestrel Mesh and
+Sentinel Ring.
 
 ## 2. Scope
 
 **In Scope:**
 
 - A new "Case Studies" section on the marketing homepage.
-- At least two case studies: one for SkySnare™ and one for AeroNet™.
+- At least two case studies: one for Kestrel Mesh and one for Sentinel Ring.
 - Each case study will include:
   - A clear title and summary.
   - A description of the problem or challenge.
-  - A description of the solution provided by PhoenixRooivalk.
+  - A description of the solution provided by Nexamesh.
   - A summary of the results or benefits.
 - Use of images or illustrations to make the case studies more engaging.
 

@@ -12,7 +12,7 @@ tags:
   - meeting-notes
 ---
 
-# PhoenixRooivalk: Strategic Resources & Action Tracker
+# Nexamesh: Strategic Resources & Action Tracker
 
 ## 📝 Meeting Summary
 
@@ -20,7 +20,7 @@ tags:
 
 **Participants:** Martyn Redelinghuys, Peter La Grange, Jurie Smit, Alastair Kim
 
-**Project:** PhoenixRooivalk Drone Defense System
+**Project:** Nexamesh Drone Defense System
 
 **Recording:** Fireflies.ai | Otter.ai Transcript
 
@@ -269,7 +269,7 @@ into broader defense market.
   Middle East market entry
 - Advise on pitching approach using simulators and phased incorporation strategy
 - Engage in further discussions regarding potential advisory or partnership role
-  with PhoenixRooivalk
+  with Nexamesh
 
 ---
 

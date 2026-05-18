@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import styles from "./ThreatSimulatorDemo.module.css";
 import { FilterChips } from "../components/FilterChips";
 import { InfoPopover } from "../components/InfoPopover";
 import { LegalBadge } from "../components/LegalBadge";
@@ -349,24 +350,27 @@ const ThreatSimulatorDemo: React.FC = () => {
   );
 
   return (
-    <div className="threat-simulator-demo">
-      <div className="demo-controls">
-        <h1>Phoenix Rooivalk - Threat Simulator Demo</h1>
-        <div className="demo-mode-selector">
+    <div className={styles.page}>
+      <div className={styles.controls}>
+        <span className={styles.title}>NexaMesh · Threat Simulator</span>
+        <div className={styles.tabs}>
           <button
-            className={`mode-btn ${demoMode === "full" ? "active" : ""}`}
+            type="button"
+            className={`${styles.tab} ${demoMode === "full" ? styles.active : ""}`}
             onClick={() => setDemoMode("full")}
           >
             Full Simulator
           </button>
           <button
-            className={`mode-btn ${demoMode === "components" ? "active" : ""}`}
+            type="button"
+            className={`${styles.tab} ${demoMode === "components" ? styles.active : ""}`}
             onClick={() => setDemoMode("components")}
           >
             Component Showcase
           </button>
           <button
-            className={`mode-btn ${demoMode === "systems" ? "active" : ""}`}
+            type="button"
+            className={`${styles.tab} ${demoMode === "systems" ? styles.active : ""}`}
             onClick={() => setDemoMode("systems")}
           >
             System Integration
@@ -374,9 +378,9 @@ const ThreatSimulatorDemo: React.FC = () => {
         </div>
       </div>
 
-      <div className="demo-content">
+      <div className={styles.content}>
         {!isClient ? (
-          <div className="loading">Loading demo...</div>
+          <div className={styles.loading}>Initialising simulation environment</div>
         ) : (
           <>
             {demoMode === "full" && renderFullSimulator()}

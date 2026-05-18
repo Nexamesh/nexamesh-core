@@ -4,8 +4,9 @@
     "baseUrl": ".",
     "types": ["vitest/globals"],
     "paths": {
-      "@phoenix-rooivalk/types": ["../../packages/types/src/index.ts"],
-      "@phoenix-rooivalk/utils": ["../../packages/utils/src/index.ts"],
+      "@nexamesh/types": ["../../packages/types/src/index.ts"],
+      "@nexamesh/ui": ["../../packages/ui/src/index.ts"],
+      "@nexamesh/utils": ["../../packages/utils/src/index.ts"],
       "@/*": ["./src/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],

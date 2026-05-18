@@ -6,15 +6,15 @@ slug: /overview
 hide_title: false
 ---
 
-# Phoenix Rooivalk Platform Overview
+# NexaMesh Platform Overview
 
-Phoenix Rooivalk is a revolutionary autonomous counter-UAS (Unmanned Aerial
+NexaMesh is a revolutionary autonomous counter-UAS (Unmanned Aerial
 System) defense platform that combines military-grade AI with blockchain
 technology for unparalleled airspace protection.
 
-## What is Phoenix Rooivalk?
+## What is NexaMesh?
 
-Phoenix Rooivalk provides comprehensive protection against unauthorized drone
+NexaMesh provides comprehensive protection against unauthorized drone
 threats through:
 
 - **Multi-Sensor Detection**: RF, radar, optical, acoustic, and infrared sensors

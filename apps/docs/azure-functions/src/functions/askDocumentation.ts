@@ -107,7 +107,7 @@ async function generateAnswer(
     )
     .join("\n\n");
 
-  const systemPrompt = `You are a helpful assistant for Phoenix Rooivalk documentation.
+  const systemPrompt = `You are a helpful assistant for NexaMesh documentation.
 Answer questions based on the provided context. If you're not sure or the context doesn't
 contain the answer, say so. Always cite your sources using [Source N] format.
 

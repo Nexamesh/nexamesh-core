@@ -1,7 +1,7 @@
 import type { Slide } from "../SlideDeckDownload";
 
 /**
- * Phoenix Rooivalk Comprehensive Investor Pitch Deck
+ * NexaMesh Comprehensive Investor Pitch Deck
  * Full presentation covering market, technology, business model, and traction
  *
  * Enhanced with:
@@ -82,7 +82,7 @@ export const pitchDeckSlides: Slide[] = [
     speakerNotes:
       "This is our value proposition slide. Each point is a differentiator. Emphasize the 10-150x speed advantage.",
     script:
-      "Phoenix Rooivalk is SAE Level 4 autonomous counter-drone defense. We deliver sub-200ms response times - that's 10 to 150 times faster than existing systems. We operate completely offline in RF-denied and GPS-denied environments where others fail. Every engagement generates blockchain-anchored evidence for legal defense. And our modular weapon system adapts to any threat level and regulatory environment.",
+      "NexaMesh is SAE Level 4 autonomous counter-drone defense. We deliver sub-200ms response times - that's 10 to 150 times faster than existing systems. We operate completely offline in RF-denied and GPS-denied environments where others fail. Every engagement generates blockchain-anchored evidence for legal defense. And our modular weapon system adapts to any threat level and regulatory environment.",
   },
   {
     number: 3,
@@ -102,10 +102,10 @@ export const pitchDeckSlides: Slide[] = [
       {
         text: "**6 Product Lines:** Full spectrum coverage",
         subPoints: [
-          "Consumer: **SkySnare** ($349)",
+          "Consumer: **Kestrel Mesh** ($349)",
           "Detection: **SkyWatch** ($50-$20K)",
           "Commercial: **NetSnare/NetSentry** ($150-$2K)",
-          "Enterprise: **AeroNet** ($150K + $25K/mo)",
+          "Enterprise: **Sentinel Ring** ($150K + $25K/mo)",
           "Military: **RKV Systems** ($8K-$150K)",
         ],
       },
@@ -172,7 +172,7 @@ export const pitchDeckSlides: Slide[] = [
         ],
       },
       {
-        text: "**Phoenix Rooivalk advantage:** Safe for civilian markets",
+        text: "**NexaMesh advantage:** Safe for civilian markets",
         subPoints: [
           "**MITLA**: Pyrotechnic - *may detonate drone warhead*, $90 disposable",
           "**SkyWall**: $30-50K+, 10kg, military/LE only",
@@ -619,7 +619,7 @@ export const pitchDeckSlides: Slide[] = [
 ];
 
 export const pitchDeckMeta = {
-  title: "Phoenix Rooivalk: Investor Pitch Deck",
+  title: "NexaMesh: Investor Pitch Deck",
   duration: 12,
   audience: "Investors, Strategic Partners, Enterprise Customers",
   date: "January 2026",

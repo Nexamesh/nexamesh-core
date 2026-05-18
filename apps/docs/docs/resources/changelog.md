@@ -2,7 +2,7 @@
 id: changelog
 title: Changelog & Release Notes
 sidebar_label: Changelog
-description: Track all updates, improvements, and changes to Phoenix Rooivalk
+description: Track all updates, improvements, and changes to NexaMesh
 difficulty: beginner
 estimated_reading_time: 1
 points: 10
@@ -89,11 +89,11 @@ Found an issue or want to suggest an improvement?
 
 1. Use the **"Edit this page"** link at the bottom of any document
 2. Submit a pull request on
-   [GitHub](https://github.com/JustAGhosT/PhoenixRooivalk)
+   [GitHub](https://github.com/JustAGhosT/Nexamesh)
 3. Report issues in the
-   [issue tracker](https://github.com/JustAGhosT/PhoenixRooivalk/issues)
+   [issue tracker](https://github.com/JustAGhosT/Nexamesh/issues)
 
 ---
 
 _For the latest updates, watch the
-[GitHub repository](https://github.com/JustAGhosT/PhoenixRooivalk)._
+[GitHub repository](https://github.com/JustAGhosT/Nexamesh)._

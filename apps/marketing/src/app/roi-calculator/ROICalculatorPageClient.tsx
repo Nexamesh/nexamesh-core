@@ -6,7 +6,7 @@ import { InteractiveElementsSection } from "../../components/sections/Interactiv
 import { InteractiveMesh } from "../../components/ui/InteractiveMesh";
 import { usePerformanceOptimizations } from "../../hooks/usePerformanceOptimizations";
 import { getProductById } from "../../data/products";
-import { formatCurrency } from "@/utils/formatter";
+import { formatCurrency } from "@nexamesh/utils";
 import {
   calculateROI,
   type ROIInputs,
@@ -33,8 +33,8 @@ interface DeploymentTier {
 const DEPLOYMENT_TIERS: DeploymentTier[] = [
   {
     id: "basic-home",
-    tier: "Basic Home",
-    audience: "Homeowners & hobbyists",
+    tier: "Entry Deployment",
+    audience: "Property owners & training facilities",
     products: [
       { id: "skywatch-nano", role: "Detection" },
       { id: "skysnare", role: "Countermeasure" },
@@ -97,7 +97,7 @@ export default function ROICalculatorPage(): React.ReactElement {
   const [roiInputs] = React.useState<ROIInputs>({
     threatFrequency: 5,
     averageResponseTime: 3000,
-    deploymentCost: 150000, // AeroNet Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
+    deploymentCost: 150000, // Sentinel Ring Enterprise setup ($150K, products.ts AN-ENT-001); adjust slider for your tier
     personnelCost: 150000,
   });
 
@@ -110,7 +110,7 @@ export default function ROICalculatorPage(): React.ReactElement {
     <main className={styles.main}>
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />
@@ -127,7 +127,7 @@ export default function ROICalculatorPage(): React.ReactElement {
           </div>
           <h1 className={styles.pageTitle}>ROI Calculator</h1>
           <p className={styles.pageSubtitle}>
-            Evaluate the financial return of deploying Phoenix Rooivalk
+            Evaluate the financial return of deploying NexaMesh
             counter-UAS technology at your facility. Adjust threat frequency,
             response time, and deployment cost below to model your scenario.
           </p>
@@ -171,7 +171,7 @@ export default function ROICalculatorPage(): React.ReactElement {
                 0,
               );
 
-              // Collect monthly fees (e.g. AeroNet Enterprise $25K/mo, Command $2.5K/mo)
+              // Collect monthly fees (e.g. Sentinel Ring Enterprise $25K/mo, Command $2.5K/mo)
               const totalMonthly = resolvedProducts.reduce(
                 (sum, rp) => sum + (rp.product?.monthlyFee ?? 0),
                 0,

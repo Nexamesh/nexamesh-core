@@ -1,4 +1,4 @@
-// Shared UI components for Phoenix Rooivalk
+// Shared UI components for NexaMesh
 
 export { Button } from "./components/Button";
 export { Card, CardHeader, CardBody, CardFooter } from "./components/Card";
@@ -8,6 +8,7 @@ export { ExitIntentModal } from "./components/ExitIntentModal";
 export { QuickActionsWidget } from "./components/QuickActionsWidget";
 
 // Hooks
+export { useCountUp } from "./hooks/useCountUp";
 export { useIntersectionObserver } from "./hooks/useIntersectionObserver";
 export { useKeyboardNavigation } from "./hooks/useKeyboardNavigation";
 export type { KeyboardNavigationOptions } from "./hooks/useKeyboardNavigation";

@@ -46,7 +46,7 @@ decentralized systems.
 
 ---
 
-## Relevance to Phoenix Rooivalk
+## Relevance to NexaMesh
 
 ### Blockchain Use Cases
 

@@ -289,7 +289,7 @@ class AccessApplicationsService {
 
       await sendEmail({
         to: application.email,
-        subject: `Phoenix Rooivalk Access Application - ${application.status.charAt(0).toUpperCase() + application.status.slice(1)}`,
+        subject: `NexaMesh Access Application - ${application.status.charAt(0).toUpperCase() + application.status.slice(1)}`,
         html: `
           <h2>Application Status Update</h2>
           <p>Hello ${application.firstName},</p>

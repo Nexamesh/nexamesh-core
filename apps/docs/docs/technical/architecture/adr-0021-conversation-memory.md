@@ -466,7 +466,7 @@ import { PHOENIX_CORE_CONTEXT } from "../../prompts/context";
 const CONVERSATIONAL_PROMPT = ChatPromptTemplate.fromMessages([
   [
     "system",
-    `You are Phoenix Rooivalk's AI assistant, helping users understand
+    `You are NexaMesh's AI assistant, helping users understand
 our counter-drone defense systems and related topics.
 
 ${PHOENIX_CORE_CONTEXT}
@@ -823,4 +823,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

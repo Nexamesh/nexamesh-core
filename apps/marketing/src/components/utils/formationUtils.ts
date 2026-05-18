@@ -1,4 +1,4 @@
-// Formation Control Utilities for Phoenix Rooivalk Drone System
+// Formation Control Utilities for NexaMesh Drone System
 
 import { Drone, Formation } from "./mothershipTypes";
 

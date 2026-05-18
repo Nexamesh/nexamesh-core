@@ -1,4 +1,4 @@
-# Performance Optimization Guide - Phoenix Rooivalk Marketing Site
+# Performance Optimization Guide - NexaMesh Marketing Site
 
 ## Wave 4 Implementation Guide (Phase 8)
 
@@ -296,7 +296,7 @@ For static exports, create a manual service worker:
 1. Create `public/sw.js`:
 
 ```js
-const CACHE_NAME = "phoenix-rooivalk-v1";
+const CACHE_NAME = "nexamesh-v1";
 const urlsToCache = ["/", "/products", "/contact"];
 
 self.addEventListener("install", (event) => {

@@ -24,7 +24,7 @@ prerequisites:
 
 ## Executive Summary
 
-1. **Problem**: Phoenix Rooivalk must support multiple organizations (customers)
+1. **Problem**: NexaMesh must support multiple organizations (customers)
    with data isolation, per-tenant configuration, and usage-based billing
 2. **Decision**: Implement logical multi-tenancy with shared infrastructure,
    tenant-scoped data, and feature flag-based customization
@@ -489,4 +489,4 @@ pub enum UsageType {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

@@ -10,224 +10,98 @@ tags:
   - counter-uas
 ---
 
-## Project Status Overview
+## Who Is Working on This
 
-**Despite extensive searches across GitHub and LinkedIn, the Phoenix Rooivalk
-project and associated team members appear to operate privately or are in
-stealth mode.** The GitHub user "JustAGhosT" (Jurie Smit) has no publicly
-accessible repository matching this project, and LinkedIn profiles for juriesmit
-and martynrede could not be located. This suggests the project is either in
-early development, operates under different identifiers, or maintains
-operational security typical of defense technology initiatives.
+**Nexamesh** is a two-person active team with three advisors engaged as needed.
 
 ---
 
-## Team Composition
+## Active Team (Daily Contributors)
 
-### Core Team Members
+### Jurie Smit — Co-Founder & CTO
 
-**Jurie Smit (JustAGhosT)**
+- **Day job**: Senior Developer at Sygnia Asset Management
+- **Role on project**: Everything software — Rust API, blockchain evidence anchoring, edge AI detector, threat simulator desktop app, documentation portal, architecture, CI/CD
+- **Education**: B.Eng Industrial-Electronic (Stellenbosch), B.Com Quantitative Management (UNISA)
+- **GitHub**: [JustAGhosT](https://github.com/JustAGhosT)
+- **Contact**: jurie@nexamesh.ai
 
-- **Role**: Technical Lead / Founder
-- **GitHub**: JustAGhosT (private repositories)
-- **Status**: Active development, operational security maintained
-- **Specialization**: System architecture, blockchain integration, AI/ML
-  development
+### Charl Chapman — Co-Founder & Hardware Lead
 
-**Martyn Rede**
-
-- **Role**: Co-Founder / Business Development
-- **LinkedIn**: Profile not publicly accessible
-- **Status**: Stealth mode operations
-- **Specialization**: Market development, strategic partnerships, regulatory
-  compliance
-
-### Operational Security Considerations
-
-**Defense Technology Stealth Mode**
-
-- Private repository access restricted to authorized personnel
-- LinkedIn profiles maintained under operational security protocols
-- Public information limited to prevent competitive intelligence gathering
-- Development activities conducted under non-disclosure agreements
-
-**Typical Defense Technology Practices**
-
-- Early-stage projects maintain operational security
-- Team members operate under different professional identities
-- Repository access controlled through security clearances
-- Public documentation limited to marketing materials only
+- **Background**: Vehicle systems, mechanical and electrical repair, hands-on component work
+- **Role on project**: Physical hardware prototyping — stripping salvaged components, assembling drone hardware, building and testing flight systems from budget components
+- **Current focus**: Path C hardware build (F405 FC + GPS + brushed motors on toy quadcopter frame)
+- **LinkedIn**: Pending setup
+- **Contact**: charl@nexamesh.ai
 
 ---
 
-## Development Status
+## Advisors (Not Day-to-Day)
 
-### Current Phase: Stealth Development
-
-**Project Maturity**
-
-- **Stage**: Advanced prototype development
-- **Status**: Pre-commercial launch
-- **Security Level**: Defense-grade operational security
-- **Public Disclosure**: Limited to strategic marketing materials
-
-**Development Activities**
-
-- Core technology development in private repositories
-- Team collaboration through secure communication channels
-- Regulatory compliance preparation
-- Market validation with select partners
-
-### Technology Development Status
-
-**Completed Components**
-
-- System architecture design and validation
-- Blockchain integration framework
-- AI/ML algorithm development
-- Hardware integration specifications
-- Regulatory compliance framework
-
-**In Development**
-
-- Prototype manufacturing and testing
-- Software integration and optimization
-- Market validation and customer engagement
-- Partnership development and strategic alliances
-
-**Planned Activities**
-
-- Public launch and market entry
-- Commercial product development
-- International market expansion
-- Strategic partnership announcements
+| Name | Area | Engagement |
+|------|------|------------|
+| **Martyn Redelinghuys** | Business strategy, manufacturing | Has factory. Will engage actively when funded. MBA (GIBS), B.Eng Electrical (Stellenbosch), 20+ years energy/defense/mining. |
+| **Eben Maré** | Financial strategy | Available for financial modeling and investor discussions. BSc Applied Maths (UP), BSc Hons Operations Research (UNISA), 15+ years investment banking/PE/quant finance. |
+| **Pieter La Grange** | Embedded systems, industry connections | Advisory capacity. 15+ years embedded systems (Snuza). B.Eng Electrical & Electronics (Stellenbosch). |
 
 ---
 
-## Repository and Code Management
+## What Has Been Built (Software — Real and Working)
 
-### Private Repository Structure
+| Component | Status |
+|-----------|--------|
+| Rust/Axum REST API | ✅ Complete — evidence, countermeasures, auth, x402 payment protocol |
+| Blockchain evidence anchoring | ✅ Complete — Solana + EtherLink dual-chain |
+| Edge AI drone detector | ✅ Complete — YOLOv8 on Jetson Nano / Raspberry Pi |
+| Threat simulator desktop | ✅ Complete — Leptos/WASM + Tauri 2 |
+| Documentation portal | ✅ Complete — Docusaurus 3 + Azure Functions + Cosmos DB |
+| Evidence CLI | ✅ Complete — SHA-256 hash + API submit |
+| Monorepo CI/CD | ✅ Complete — GitHub Actions, Azure Static Web Apps |
 
-**Security Protocols**
-
-- Access restricted to authorized development team
-- Code repositories maintained under defense-grade security
-- Intellectual property protection through private development
-- Version control with security audit trails
-
-**Development Workflow**
-
-- Secure development environment
-- Code review processes with security clearance requirements
-- Automated security scanning and compliance checking
-- Documentation maintained under operational security protocols
-
-### Public Information Strategy
-
-**Controlled Disclosure**
-
-- Marketing materials released strategically
-- Technical documentation limited to public-safe information
-- Competitive intelligence protection through information control
-- Market positioning without revealing technical details
-
-**Documentation Management**
-
-- Public documentation focuses on market positioning
-- Technical details maintained in private repositories
-- Regulatory compliance documentation prepared for public release
-- Strategic partnerships announced at appropriate milestones
+**440+ commits. ~9 months of development. All software is real, functional, and in this repository.**
 
 ---
 
-## Market Positioning Strategy
+## What Has NOT Been Built (Hardware — R&D Phase)
 
-### Stealth Mode Advantages
+| Component | Status |
+|-----------|--------|
+| Physical interceptor drone | ⬜ R&D — toy quadcopter as test platform |
+| Net capture system | ⬜ Concept only |
+| Pneumatic launcher | ⬜ Concept only |
+| Field-tested detection node | ⬜ Detector runs on laptop; field deployment not yet done |
+| Manufacturing-ready prototype | ⬜ Pre-prototype |
 
-**Competitive Protection**
-
-- Technology development hidden from competitors
-- Market positioning without revealing technical capabilities
-- Strategic partnerships developed confidentially
-- Regulatory compliance prepared without public scrutiny
-
-**Operational Security**
-
-- Team activities protected from intelligence gathering
-- Development timeline controlled internally
-- Market entry timing optimized for competitive advantage
-- Technology differentiation maintained through secrecy
-
-### Public Launch Strategy
-
-**Controlled Market Entry**
-
-- Technology demonstration at strategic events
-- Partnership announcements with established players
-- Regulatory compliance achieved before public launch
-- Market positioning established through controlled disclosure
-
-**Competitive Advantage**
-
-- First-mover advantage in target markets
-- Technology differentiation through stealth development
-- Strategic partnerships secured before public knowledge
-- Regulatory compliance achieved ahead of competitors
+**Current hardware: toy quadcopter + salvaged hoverboard motors + R478 Temu order (F405 FC, GPS, absorber balls). Charl is the person building this.**
 
 ---
 
-## Strategic Considerations
+## TRL Assessment (Honest)
 
-### Defense Technology Requirements
-
-**Security Clearance Requirements**
-
-- Team members may require security clearances
-- Development activities subject to export control regulations
-- International partnerships require government approval
-- Technology transfer restrictions apply to all activities
-
-**Regulatory Compliance**
-
-- ITAR compliance for all technical data
-- Export control regulations for international activities
-- Defense contractor requirements for government contracts
-- International trade compliance for global operations
-
-### Market Entry Strategy
-
-**Controlled Disclosure Timeline**
-
-- Phase 1: Stealth development and technology validation
-- Phase 2: Limited market validation with select partners
-- Phase 3: Controlled public launch with strategic partnerships
-- Phase 4: Full market entry with established competitive position
-
-**Competitive Positioning**
-
-- Technology differentiation through stealth development
-- Strategic partnerships secured before public knowledge
-- Regulatory compliance achieved ahead of competitors
-- Market positioning established through controlled disclosure
+| Dimension | Level |
+|-----------|-------|
+| Software platform | TRL 4–5 — validated in lab/dev environment |
+| Hardware integration | TRL 1–2 — concept with components on order |
+| Field detection demo | TRL 2 — algorithm validated, not field-deployed |
+| Net capture / interdiction | TRL 1 — concept only |
 
 ---
 
-## Conclusion
+## Company Status
 
-Phoenix Rooivalk operates under typical defense technology stealth mode
-protocols, maintaining operational security while developing advanced
-counter-drone defense capabilities. The team's private development approach
-protects intellectual property and competitive positioning while preparing for
-strategic market entry.
-
-The controlled disclosure strategy enables technology development without
-competitive intelligence gathering while positioning for successful market entry
-with established partnerships and regulatory compliance.
+- **US Incorporation**: 🟡 In progress — **NexaMesh Technologies Inc.** (Delaware C-Corp via Firstbase). Pending USPS Form 1583 notarization to activate mailroom address. Complete notarization to unblock incorporation.
+- **SA Incorporation**: SA Pty Ltd not yet registered. Required for TIA Seed Fund and CSD registration.
+- **CSD Registration**: Not done. Requires SA entity first. Gate for all SA government funding.
+- **Brand**: Nexamesh. GitHub: `Nexamesh/nexamesh-core`. Old name: NexaMesh.
+- **Domain**: nexamesh.ai (registered)
 
 ---
 
-_This document contains confidential team information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
-reserved._
+## What's Next
 
-_Context improved by Giga AI_
+1. CSD registration (csd.gov.za) — unlocks TIA, ARMSCOR, IDC
+2. Charl's LinkedIn profile — unlocks MS Founders Hub application
+3. NVIDIA Inception + AWS Activate — immediate free cloud/hardware resources
+4. MS Founders Hub (Charl applies under Nexamesh) — up to $150K Azure credits
+5. Detection demo video — laptop + detector + blockchain evidence log
+6. TIA Seed Fund application — R500K–R2M, non-dilutive, rolling

@@ -62,7 +62,7 @@ Access to NATO-wide testing facilities for:
 
 DIANA focuses on technologies critical to NATO's future:
 
-| Challenge        | Description                                  | Phoenix Rooivalk Relevance |
+| Challenge        | Description                                  | NexaMesh Relevance |
 | ---------------- | -------------------------------------------- | -------------------------- |
 | **Autonomy**     | Unmanned systems, swarms, AI decision-making | Direct fit                 |
 | **AI/ML**        | Computer vision, predictive systems          | Core technology            |
@@ -187,9 +187,9 @@ States
 
 ---
 
-## Phoenix Rooivalk Alignment
+## NexaMesh Alignment
 
-| DIANA Requirement     | Phoenix Rooivalk Capability   |
+| DIANA Requirement     | NexaMesh Capability   |
 | --------------------- | ----------------------------- |
 | Autonomy focus        | Autonomous interceptor drones |
 | AI/ML integration     | Computer vision, tracking     |

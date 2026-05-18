@@ -14,7 +14,7 @@ tags:
 ## Executive Summary
 
 This document provides a comprehensive training and fine-tuning strategy for all
-ML models in the Phoenix Rooivalk counter-drone system. The strategy is
+ML models in the NexaMesh counter-drone system. The strategy is
 optimized for achieving **99.7% threat detection accuracy** with **sub-200ms
 inference latency**.
 
@@ -600,6 +600,6 @@ Target        │ < 150ms total, < 4GB GPU memory
 ---
 
 _This document is the authoritative reference for ML model training in the
-Phoenix Rooivalk project. All training activities should follow these guidelines
-to ensure consistency and reproducibility. © 2025 Phoenix Rooivalk. All rights
+NexaMesh project. All training activities should follow these guidelines
+to ensure consistency and reproducibility. © 2026 NexaMesh. All rights
 reserved._

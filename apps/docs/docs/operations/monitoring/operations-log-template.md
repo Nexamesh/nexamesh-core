@@ -1,7 +1,7 @@
 ---
 id: operations-log-template
-title: Phoenix Rooivalk Operations Log Template
-sidebar_label: Phoenix Rooivalk Operations
+title: NexaMesh Operations Log Template
+sidebar_label: NexaMesh Operations
 difficulty: beginner
 estimated_reading_time: 3
 points: 10
@@ -10,12 +10,12 @@ tags:
   - deployment
 ---
 
-# Phoenix Rooivalk Operations Log Template
+# NexaMesh Operations Log Template
 
 ## Executive Summary
 
 This document provides a standardized template for recording operational metrics
-and performance data from Phoenix Rooivalk counter-drone defense system
+and performance data from NexaMesh counter-drone defense system
 operations. The template is designed to capture critical operational data for
 blockchain evidence anchoring, system performance monitoring, and operational
 analysis.
@@ -265,7 +265,7 @@ analysis, and continuous improvement.
 ## Conclusion
 
 This operations log template provides a comprehensive framework for documenting
-Phoenix Rooivalk system operations, ensuring consistent data collection,
+NexaMesh system operations, ensuring consistent data collection,
 analysis, and reporting. The template supports operational monitoring,
 performance optimization, security auditing, and compliance requirements while
 maintaining data integrity and accessibility.
@@ -277,7 +277,7 @@ operational and regulatory requirements.
 ---
 
 _This document contains confidential operational information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._
 
 _Context improved by Giga AI_

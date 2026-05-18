@@ -31,9 +31,9 @@ export function getCorsHeaders(request?: HttpRequest): Record<string, string> {
   const allowedOrigins = [
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://phoenixrooivalk.com",
-    "https://docs.phoenixrooivalk.com",
-    "https://www.phoenixrooivalk.com",
+    "https://nexamesh.com",
+    "https://docs.nexamesh.com",
+    "https://www.nexamesh.com",
   ];
 
   // Check if origin matches allowed origins or azurestaticapps.net domain

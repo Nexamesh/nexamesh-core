@@ -1519,7 +1519,7 @@ apps/pi-drone-detector/
 ```yaml
 site_name: Pi Drone Detector
 site_description: Real-time drone detection for Raspberry Pi
-repo_url: https://github.com/JustAGhosT/PhoenixRooivalk
+repo_url: https://github.com/JustAGhosT/Nexamesh
 
 theme:
   name: material

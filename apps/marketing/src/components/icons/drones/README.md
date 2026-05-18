@@ -3,7 +3,7 @@
 ## Overview
 
 This directory contains icon specifications for all deployable UAV and drone
-systems used in the Phoenix Rooivalk Threat Simulator.
+systems used in the NexaMesh Threat Simulator.
 
 ## Icon Categories
 

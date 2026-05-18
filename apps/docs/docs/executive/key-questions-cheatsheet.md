@@ -47,7 +47,7 @@ maintaining cryptographic evidence trail, and multi-site scalability.
 
 ## Cognitive Mesh Integration
 
-**Q: How does Cognitive Mesh enhance Phoenix Rooivalk beyond basic autonomy?**
+**Q: How does Cognitive Mesh enhance NexaMesh beyond basic autonomy?**
 A: Provides multi-agent orchestration allowing role specialization
 (scout/interceptor/relay), hierarchical decision confidence, temporal pattern
 recognition, and continuous learning capabilities while maintaining sub-200ms
@@ -298,11 +298,11 @@ fault tolerance assumes 33% compromise.
 
 **Q: What is the background of the team?** A: The team is led by Jurie Smit
 (LinkedIn: juriesmit, GitHub: JustAGhosT) and Martyn Redelinghuys (LinkedIn:
-martynrede). The Phoenix Rooivalk repository demonstrates strong technical
+martynrede). The NexaMesh repository demonstrates strong technical
 capabilities in Rust, blockchain integration (Solana/Etherlink), distributed
 systems, and modern DevOps practices.
 
-**Q: What is the current development status of Phoenix Rooivalk?** A: We have a
+**Q: What is the current development status of NexaMesh?** A: We have a
 monorepo with core components built: Axum API service, blockchain keeper service
 for Solana/Etherlink anchoring, custom Rust crates for evidence handling and
 sensor fusion, Next.js marketing site, and Docusaurus documentation. The
@@ -327,7 +327,7 @@ tracking (NIST AI RMF), tamper-proof evidence logging for accountability.
 **Q: Who are the main competitors or alternative solutions?** A: Competing
 counter-drone systems fall into categories: signal jammers (can be defeated),
 kinetic interceptors (expensive per engagement), and high-power lasers (weather
-limitations). Phoenix Rooivalk aims to provide multi-layer defense with AI
+limitations). NexaMesh aims to provide multi-layer defense with AI
 autonomy and blockchain accountability.
 
 **Q: What is your unique IP or defensibility?** A: Defensibility comes from
@@ -407,5 +407,5 @@ cryptographic evidence trails for military-grade counter-drone defense.
 ---
 
 _This document contains confidential technical information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

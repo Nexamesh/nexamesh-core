@@ -1,7 +1,7 @@
 ---
 id: maintenance-procedures
-title: Phoenix Rooivalk Maintenance Procedures
-sidebar_label: Phoenix Rooivalk Maintenance
+title: NexaMesh Maintenance Procedures
+sidebar_label: NexaMesh Maintenance
 difficulty: intermediate
 estimated_reading_time: 9
 points: 15
@@ -11,7 +11,7 @@ tags:
   - ai
 ---
 
-# Phoenix Rooivalk Maintenance Procedures
+# NexaMesh Maintenance Procedures
 
 ## Executive Summary
 
@@ -476,7 +476,7 @@ components.
 
 ## Conclusion
 
-The Phoenix Rooivalk Maintenance Procedures provide comprehensive maintenance
+The NexaMesh Maintenance Procedures provide comprehensive maintenance
 procedures for all system components. The procedures ensure optimal system
 performance and reliability while maintaining the highest standards of safety,
 security, and compliance.
@@ -498,5 +498,5 @@ effectiveness.
 ---
 
 _This document contains confidential maintenance information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

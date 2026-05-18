@@ -1,5 +1,5 @@
 /**
- * Comment Types for Phoenix Rooivalk Documentation
+ * Comment Types for NexaMesh Documentation
  *
  * Types for the commenting system that allows users to:
  * - Leave comments on documentation pages

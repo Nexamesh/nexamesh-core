@@ -422,6 +422,19 @@
   color: rgb(var(--status-active));
 }
 
+/* Card-level left accent stripe by scenario */
+.paybackCard:has(.paybackScenario_conservative) {
+  border-left: 3px solid rgb(var(--color-blue));
+}
+
+.paybackCard:has(.paybackScenario_median) {
+  border-left: 3px solid rgb(var(--color-amber));
+}
+
+.paybackCard:has(.paybackScenario_aggressive) {
+  border-left: 3px solid rgb(var(--status-active));
+}
+
 .paybackDesc {
   font-size: var(--text-sm);
   color: rgb(var(--text-muted));

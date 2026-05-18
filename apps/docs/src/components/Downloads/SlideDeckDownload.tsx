@@ -70,7 +70,7 @@ export interface TeamMember {
  * Color theme presets for different audiences
  */
 export type ColorTheme =
-  | "default" // Phoenix Rooivalk brand (dark blue + orange)
+  | "default" // NexaMesh brand (dark blue + orange)
   | "investor" // Professional blue tones
   | "technical" // Green/terminal inspired
   | "military" // Dark tactical theme
@@ -579,7 +579,7 @@ export default function SlideDeckDownload({
                   <div className="mb-6 flex justify-center">
                     <img
                       src={logoUrl}
-                      alt="Phoenix Rooivalk"
+                      alt="NexaMesh"
                       className="w-20 h-20 opacity-80"
                     />
                   </div>

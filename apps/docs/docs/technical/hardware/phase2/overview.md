@@ -32,8 +32,8 @@ edge AI hardware. The demo no longer just detects _motion_ — it classifies
 1. **Same peripherals, new brain** — reuse Phase 1 servos, relays, alarms, and
    wiring harnesses wherever possible
 2. **Real ML, not fake ML** — YOLOv8-nano or YOLOv9-tiny running at >=15 FPS
-3. **Two compute tiers** — Pi Zero 2W + Coral USB for SkySnare (consumer),
-   Jetson Orin Nano for AeroNet (enterprise)
+3. **Two compute tiers** — Pi Zero 2W + Coral USB for Kestrel Mesh (consumer),
+   Jetson Orin Nano for Sentinel Ring (enterprise)
 4. **Structured logging** — every detection event recorded with metadata for
    blockchain submission
 
@@ -41,7 +41,7 @@ edge AI hardware. The demo no longer just detects _motion_ — it classifies
 
 ## Compute Platform Options
 
-### Tier 1: Raspberry Pi + Coral (SkySnare Consumer)
+### Tier 1: Raspberry Pi + Coral (Kestrel Mesh Consumer)
 
 | Component                | Part                 | Specification                       | Est. Cost    |
 | ------------------------ | -------------------- | ----------------------------------- | ------------ |
@@ -54,7 +54,7 @@ edge AI hardware. The demo no longer just detects _motion_ — it classifies
 
 **Performance target:** 15–20 FPS YOLOv8-nano (320×320) on Coral with TFLite.
 
-### Tier 2: Jetson Orin Nano (AeroNet Enterprise)
+### Tier 2: Jetson Orin Nano (Sentinel Ring Enterprise)
 
 | Component                | Part                        | Specification            | Est. Cost     |
 | ------------------------ | --------------------------- | ------------------------ | ------------- |

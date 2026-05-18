@@ -407,7 +407,7 @@ resource notificationHub 'Microsoft.NotificationHubs/namespaces/notificationHubs
   properties: {
     apnsCredential: {
       properties: {
-        appName: 'PhoenixRooivalk'
+        appName: 'Nexamesh'
         appId: apnsAppId
         keyId: apnsKeyId
         token: apnsToken
@@ -455,4 +455,4 @@ resource notificationHub 'Microsoft.NotificationHubs/namespaces/notificationHubs
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

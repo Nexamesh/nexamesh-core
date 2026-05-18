@@ -47,7 +47,7 @@ developments, regulatory changes, and urban testing challenges.
 **Development**: Dutch government purchased new drone defense systems, with
 implications for Belgium and broader European deployment.
 
-**Relevance to Phoenix Rooivalk**:
+**Relevance to NexaMesh**:
 
 - European market actively procuring C-UAS solutions
 - Government contracts flowing to established players
@@ -78,7 +78,7 @@ positions.
 
 - DroneShield's RF-dependent detection is increasingly obsolete
 - Autonomous drone threat exposes their technology gap
-- Phoenix Rooivalk's multi-sensor fusion addresses this gap
+- NexaMesh's multi-sensor fusion addresses this gap
 - Opportunity to position against DroneShield's limitations
 
 **Action Items**:
@@ -99,7 +99,7 @@ populated/civilian areas. Key concerns:
 - Regulatory restrictions on kinetic approaches
 - Public perception and liability issues
 
-**Phoenix Rooivalk Advantage**:
+**NexaMesh Advantage**:
 
 - **Net-based capture** is inherently safer than kinetic intercept
 - Non-kinetic approach suitable for urban, civilian, and sensitive environments
@@ -152,7 +152,7 @@ environments due to:
 - RF interference and noise challenges
 - Limited access to realistic test environments
 
-**Phoenix Rooivalk Opportunity**:
+**NexaMesh Opportunity**:
 
 - WASM-based threat simulator enables safe virtual testing
 - Simulation capabilities reduce need for live urban tests
@@ -162,7 +162,7 @@ environments due to:
 **Competitive Advantage**:
 
 - Competitors require expensive live testing
-- Phoenix Rooivalk can demonstrate capabilities via simulation
+- NexaMesh can demonstrate capabilities via simulation
 - Lower customer evaluation costs
 - Faster procurement cycles possible
 
@@ -175,7 +175,7 @@ upcoming CUAS Sandbox 2026 program.
 
 **Direct Relevance**:
 
-- Phoenix Rooivalk has applied to CUAS Sandbox 2026
+- NexaMesh has applied to CUAS Sandbox 2026
 - Canadian government actively evaluating C-UAS technologies
 - Test results will inform procurement decisions
 - Successful validation opens Canadian market
@@ -212,7 +212,7 @@ coverage, creating public confusion about capabilities and threats.
 
 ### Strategic Insights Summary
 
-| Theme                    | Insight                                         | Phoenix Rooivalk Position                   |
+| Theme                    | Insight                                         | NexaMesh Position                   |
 | ------------------------ | ----------------------------------------------- | ------------------------------------------- |
 | **Non-Kinetic Safety**   | Kinetic C-UAS faces urban/civilian restrictions | Net-capture approach is safer alternative   |
 | **DroneShield Weakness** | Insider selling suggests vulnerability          | RF-silent detection addresses their gap     |
@@ -341,4 +341,4 @@ regulators, and drone enthusiasts interested in industry news and analysis.
 ---
 
 _This document contains market intelligence for internal strategic planning.
-Updated: November 2025. © 2025 Phoenix Rooivalk. All rights reserved._
+Updated: November 2025. © 2026 NexaMesh. All rights reserved._

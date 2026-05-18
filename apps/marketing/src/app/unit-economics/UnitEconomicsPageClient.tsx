@@ -87,7 +87,7 @@ function formatSliderValue(value: number, suffix: string): string {
 // BOM component breakdowns for representative products (FIN-003)
 const bomBreakdowns = [
   {
-    product: "SkySnare (SS-001)",
+    product: "Kestrel Mesh (SS-001)",
     totalCogs: 148,
     components: [
       { name: "CO2 launcher mechanism", cost: 42, pct: 28 },
@@ -113,7 +113,7 @@ const bomBreakdowns = [
     ],
   },
   {
-    product: "AeroNet Enterprise (AN-ENT-001)",
+    product: "Sentinel Ring Enterprise (AN-ENT-001)",
     totalCogs: 59200,
     components: [
       { name: "Multi-sensor array (radar, EO/IR, RF)", cost: 18500, pct: 31 },
@@ -176,7 +176,7 @@ export function UnitEconomicsPageClient(): React.ReactElement {
           <div className={styles.headerSection}>
             <h1 className={styles.title}>Unit Economics</h1>
             <p className={styles.subtitle}>
-              Key financial metrics behind Phoenix Rooivalk&apos;s counter-drone
+              Key financial metrics behind NexaMesh&apos;s counter-drone
               platform: customer acquisition cost, lifetime value, margins, and
               five-year revenue projections.
             </p>

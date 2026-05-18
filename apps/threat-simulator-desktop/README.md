@@ -1,4 +1,4 @@
-# Phoenix Rooivalk Threat Simulator - Desktop Application
+# NexaMesh Threat Simulator - Desktop Application
 
 A high-performance desktop application built with **Tauri** (Rust backend) and
 **Leptos** (Rust frontend/WASM) for simulating counter-drone defense scenarios
@@ -315,11 +315,11 @@ When migrating React components to Leptos:
 
 ## License
 
-Copyright © 2025 Phoenix Rooivalk. All rights reserved.
+Copyright © 2025 NexaMesh. All rights reserved.
 
 ## Support
 
 For issues specific to this desktop application, please open an issue with the
 `threat-simulator-desktop` label.
 
-For general Phoenix Rooivalk questions, see the main project README.
+For general NexaMesh questions, see the main project README.

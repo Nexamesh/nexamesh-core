@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import AboutPageClient from "./AboutPageClient";
 
 export const metadata: Metadata = {
-  title: "About - Phoenix Rooivalk",
+  title: "About - NexaMesh",
   description:
-    "Meet the Phoenix Rooivalk team and our partners. Learn about the people behind the SAE Level 4 autonomous counter-drone defense platform for SkySnare and AeroNet.",
+    "Meet the NexaMesh team and our partners. Learn about the people behind the SAE Level 4 autonomous counter-drone defense platform for Kestrel Mesh and Sentinel Ring.",
   openGraph: {
-    title: "About - Phoenix Rooivalk",
+    title: "About - NexaMesh",
     description:
-      "Meet the Phoenix Rooivalk team. Learn about the people building SAE Level 4 autonomous counter-drone defense for SkySnare and AeroNet.",
+      "Meet the NexaMesh team. Learn about the people building SAE Level 4 autonomous counter-drone defense for Kestrel Mesh and Sentinel Ring.",
   },
 };
 

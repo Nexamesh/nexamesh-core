@@ -35,7 +35,7 @@ prerequisites:
 
 ## Context
 
-The Phoenix Rooivalk runtime has service-to-service calls:
+The NexaMesh runtime has service-to-service calls:
 
 ```
 Firebase Cloud Functions
@@ -442,4 +442,4 @@ For detailed weighted analysis, threat models, and high-security roadmap, see:
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

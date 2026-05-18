@@ -22,7 +22,7 @@ export function PartnershipsPage(): React.ReactElement {
     <main className={styles.main}>
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />
@@ -38,8 +38,8 @@ export function PartnershipsPage(): React.ReactElement {
               <div className={styles.headerSection}>
                 <h1 className={styles.title}>Partnership Opportunities</h1>
                 <p className={styles.subtitle}>
-                  Explore collaboration opportunities with Phoenix
-                  Rooivalk&apos;s innovative counter-drone defense technology.
+                  Explore collaboration opportunities with NexaMesh&apos;s
+                  edge AI mesh sensor platform for counter-drone detection.
                 </p>
               </div>
 
@@ -187,18 +187,18 @@ export function PartnershipsPage(): React.ReactElement {
                 </h3>
                 <p className={styles.contactDescription}>
                   Contact us to explore collaboration opportunities and learn
-                  more about how Phoenix Rooivalk technology can be adapted for
+                  more about how NexaMesh technology can be adapted for
                   your specific needs.
                 </p>
                 <div className={styles.contactButtons}>
                   <a
-                    href="mailto:partnerships@phoenixrooivalk.com"
+                    href="mailto:partnerships@nexamesh.ai"
                     className="btn btn--primary"
                   >
                     Partnership Inquiries
                   </a>
                   <a
-                    href="mailto:demo@phoenixrooivalk.com"
+                    href="mailto:demo@nexamesh.ai"
                     className="btn btn--secondary"
                   >
                     Schedule Technical Demo

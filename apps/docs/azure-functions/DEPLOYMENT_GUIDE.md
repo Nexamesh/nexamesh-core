@@ -1,6 +1,6 @@
 # Azure Functions Deployment Guide
 
-This guide provides step-by-step instructions for deploying the Phoenix Rooivalk
+This guide provides step-by-step instructions for deploying the NexaMesh
 Azure Functions after the COOP and error handling improvements.
 
 ## Prerequisites
@@ -207,8 +207,8 @@ az functionapp cors show \
 
 ```json
 [
-  "https://docs.phoenixrooivalk.com",
-  "https://phoenixrooivalk.com",
+  "https://docs.nexamesh.com",
+  "https://nexamesh.com",
   "http://localhost:3000",
   "http://localhost:3001"
 ]
@@ -221,8 +221,8 @@ az functionapp cors add \
   --name YOUR-FUNCTION-APP-NAME \
   --resource-group YOUR-RESOURCE-GROUP \
   --allowed-origins \
-    "https://docs.phoenixrooivalk.com" \
-    "https://phoenixrooivalk.com" \
+    "https://docs.nexamesh.com" \
+    "https://nexamesh.com" \
     "http://localhost:3000" \
     "http://localhost:3001"
 
@@ -239,7 +239,7 @@ Check that the docs site has no COOP header:
 
 ```bash
 # Test from your local machine or CI
-curl -I https://docs.phoenixrooivalk.com
+curl -I https://docs.nexamesh.com
 ```
 
 **Verify**:
@@ -251,7 +251,7 @@ If COOP header is present, redeploy the docs site.
 
 ### 5. Test OAuth Login Flow
 
-1. Navigate to `https://docs.phoenixrooivalk.com`
+1. Navigate to `https://docs.nexamesh.com`
 2. Click "Sign In"
 3. Try Google or GitHub OAuth
 4. **Verify**:

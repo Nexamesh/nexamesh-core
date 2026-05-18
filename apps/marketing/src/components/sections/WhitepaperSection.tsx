@@ -1,4 +1,4 @@
-import { downloadWhitepaper } from "@phoenix-rooivalk/utils";
+import { downloadWhitepaper } from "@nexamesh/utils";
 import React from "react";
 import { RevealSection } from "../RevealSection";
 import { Section, SectionContainer } from "../layouts";

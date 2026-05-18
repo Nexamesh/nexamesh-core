@@ -93,14 +93,14 @@ export async function createAssistant() {
 
   // Create vector store
   const vectorStore = await openai.beta.vectorStores.create({
-    name: "Phoenix Rooivalk Docs",
+    name: "NexaMesh Docs",
     file_ids: files.map((f) => f.id),
   });
 
   // Create assistant with file search tool
   const assistant = await openai.beta.assistants.create({
-    name: "Phoenix Rooivalk Documentation Assistant",
-    instructions: `You are an expert on Phoenix Rooivalk's autonomous counter-drone systems.
+    name: "NexaMesh Documentation Assistant",
+    instructions: `You are an expert on NexaMesh's autonomous counter-drone systems.
     Answer questions using ONLY the provided documentation.
     Always cite the specific document when providing information.
     If the answer isn't in the docs, say so.`,
@@ -335,7 +335,7 @@ export async function queryWithRAG(
     messages: [
       {
         role: "system",
-        content: `You are Phoenix Rooivalk's documentation assistant.
+        content: `You are NexaMesh's documentation assistant.
 Answer questions using ONLY the provided context.
 If the context doesn't contain the answer, say "I don't have information about that in the documentation."
 Always cite which document you're referencing.`,
@@ -791,7 +791,7 @@ function classifyQuery(
 
 ---
 
-## Recommendation for Phoenix Rooivalk
+## Recommendation for NexaMesh
 
 Given our documentation size (~208K words, 107 files) and existing Firebase
 infrastructure:

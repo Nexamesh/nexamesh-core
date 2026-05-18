@@ -2,22 +2,33 @@
  * Roadmap & Timeline Data
  *
  * Single source of truth for all timeline and milestone information.
+ *
+ * REALITY-ALIGNED: March 2026
+ * - Software platform: Built and operational (Rust API, blockchain, AI detector, WASM simulator)
+ * - Hardware: Pre-prototype (component sourcing, flight controller experiments)
+ * - Revenue: $0 (bootstrapped R&D)
+ * - Team: 2 active founders + 3 advisors
+ * - Strategy: Europe-first, SA as R&D cost base
+ * - Brand: NexaMesh (Kestrel = consumer, Sentinel = enterprise, Horizon = military)
  */
 
 import type { TimelinePoint } from "./types";
 
 /** Current Status */
 export const currentStatus = {
-  phase: "Pre-Seed / Development",
-  week: 48,
-  year: 2025,
-  lastUpdate: "December 1, 2025",
+  phase: "Pre-Seed / Bootstrapping",
+  week: 13,
+  year: 2026,
+  lastUpdate: "March 25, 2026",
 
   highlights: {
-    hardware: "Net launcher and net designs complete - ready for prototyping",
-    software: "370+ commits, 40+ PRs, 10+ ADRs in Week 48",
-    revenue: "x402 payment protocol live",
-    validation: "International-first strategy confirmed",
+    hardware:
+      "Component sourcing and prototyping — flight controller (F405/INAV), salvaged hoverboard motors, low-cost sensors. No integrated prototype yet.",
+    software:
+      "Production-quality platform built: Rust Axum API, Solana + EtherLink blockchain evidence, Python YOLOv8/v9 AI detector, WASM threat simulator, Docusaurus docs portal. 400+ commits.",
+    revenue: "Pre-revenue — bootstrapped founder R&D for 9+ months",
+    validation:
+      "Europe-first strategy confirmed. Detection-only initial entry (signal jamming illegal in SA). Non-ITAR jurisdiction as competitive advantage.",
   },
 };
 
@@ -25,35 +36,38 @@ export const currentStatus = {
 export const developmentPhases = {
   phase1: {
     name: "Foundation",
-    timeline: "Months 1-6",
-    status: "In Progress",
+    timeline: "Months 1-12 (Q3 2025 - Q1 2026)",
+    status: "Partially Complete",
     objectives: [
-      "Core system development",
-      "Blockchain integration (Solana)",
-      "Hardware platform (NVIDIA Jetson)",
-      "Initial testing - lab and controlled environment",
+      "Software platform development — COMPLETE",
+      "Blockchain evidence chain (Solana + EtherLink) — COMPLETE",
+      "AI detection engine (YOLOv8/v9 on Python) — COMPLETE",
+      "Threat simulation engine (Leptos/WASM) — COMPLETE",
+      "Hardware prototype assembly — IN PROGRESS",
+      "Component sourcing and integration — IN PROGRESS",
     ],
   },
   phase2: {
-    name: "Enhancement",
-    timeline: "Months 7-12",
+    name: "Prototype & Validate",
+    timeline: "Months 12-24 (Q2 2026 - Q1 2027)",
     status: "Planned",
     objectives: [
-      "AI/ML integration (Morpheus Network)",
-      "Multi-sensor fusion",
-      "Swarm defense coordination",
-      "Field testing - real-world validation",
+      "Integrated detection hardware prototype (camera + compute + alert)",
+      "Field testing in controlled environment",
+      "First EU partner/customer engagement",
+      "Grant and accelerator funding secured",
+      "MS Founders Hub reapplication (NexaMesh / Charl Chapman)",
     ],
   },
   phase3: {
-    name: "Production",
-    timeline: "Months 13-18",
-    status: "Planned",
+    name: "First Deployments",
+    timeline: "Months 24-36 (2027-2028)",
+    status: "Vision",
     objectives: [
-      "Manufacturing scale-up (50+ units/month)",
-      "International deployment",
-      "Service network establishment",
-      "Technology transfer programs",
+      "First paid EU pilot deployment",
+      "EU regulatory compliance (CE marking for detection equipment)",
+      "Team expansion (3-5 people)",
+      "Seed/Series A fundraise with proven revenue",
     ],
   },
 };
@@ -63,40 +77,43 @@ export const quarterlyRoadmap: TimelinePoint[] = [
   {
     quarter: "Q1",
     year: 2026,
-    description: "Net launcher prototype complete, first EU pilot installation",
-    status: "planned",
+    description:
+      "NexaMesh brand launch. Detection demo video (AI + blockchain on laptop). MS Founders Hub application under new brand.",
+    status: "in_progress",
   },
   {
     quarter: "Q2",
     year: 2026,
     description:
-      "EU certification achieved, 3 installations operational, x402 enterprise contracts",
+      "Hardware prototype v0.1 assembled. TIA and accelerator applications submitted. EU market research and first partner conversations.",
     status: "planned",
   },
   {
     quarter: "Q3",
     year: 2026,
     description:
-      "Series A fundraise with proven revenue, 5 operational installations",
+      "Field test with detection prototype. Grant decision outcomes. First EU conference attendance.",
     status: "planned",
   },
   {
     quarter: "Q4",
     year: 2026,
     description:
-      "Canada expansion begins, manufacturing partnerships established",
+      "First customer LOI or paid pilot agreement (EU target). Pre-seed round close ($50K-$150K).",
     status: "planned",
   },
   {
     quarter: "Q1",
     year: 2027,
-    description: "10+ installations, South Africa market preparation",
+    description:
+      "First small detection deployment (EU). Initial revenue from pilot. Seed fundraise begins.",
     status: "target",
   },
   {
     quarter: "Q2",
     year: 2027,
-    description: "South African entity established, local partnerships",
+    description:
+      "1-3 detection nodes operational. Seed round close. Team expansion to 3-4 people.",
     status: "target",
   },
 ];
@@ -105,140 +122,159 @@ export const quarterlyRoadmap: TimelinePoint[] = [
 export const milestones = {
   completed: [
     {
-      date: "Week 48, 2025",
-      milestone: "Net launcher design complete",
-      category: "Hardware",
+      date: "Q3 2025 - Q1 2026",
+      milestone: "Full software platform built (API, blockchain, AI, simulator, docs)",
+      category: "Software",
     },
     {
-      date: "Week 48, 2025",
-      milestone: "x402 payment protocol live",
-      category: "Revenue",
+      date: "Q4 2025",
+      milestone: "x402 payment protocol implemented",
+      category: "Software",
     },
     {
-      date: "Week 48, 2025",
-      milestone: "10+ ADRs published",
+      date: "Q4 2025",
+      milestone: "10+ Architecture Decision Records published",
       category: "Architecture",
     },
     {
-      date: "Week 48, 2025",
-      milestone: "Full RAG integration",
-      category: "AI",
+      date: "Q1 2026",
+      milestone: "NexaMesh rebrand and reality-aligned documentation",
+      category: "Strategy",
     },
     {
-      date: "Week 48, 2025",
-      milestone: "Market validation - international-first confirmed",
+      date: "Q1 2026",
+      milestone: "Europe-first market strategy confirmed",
       category: "Strategy",
     },
   ],
 
   upcoming: [
     {
-      target: "Q1 2026",
-      milestone: "Net launcher prototype manufactured",
-      category: "Hardware",
-    },
-    {
-      target: "Q1 2026",
-      milestone: "First EU pilot installation",
-      category: "Deployment",
+      target: "Q1-Q2 2026",
+      milestone: "Working detection demo video (AI + blockchain evidence)",
+      category: "Validation",
     },
     {
       target: "Q2 2026",
-      milestone: "EU regulatory certification",
-      category: "Compliance",
+      milestone: "Hardware detection prototype v0.1 assembled",
+      category: "Hardware",
     },
     {
-      target: "Q3 2026",
-      milestone: "Series A funding closed",
+      target: "Q2-Q3 2026",
+      milestone: "Accelerator / grant applications submitted (TIA, Soonami, MS Founders Hub)",
       category: "Funding",
     },
     {
-      target: "2026",
-      milestone: "Canada CUAS Sandbox participation",
+      target: "Q3-Q4 2026",
+      milestone: "Field test with working prototype",
       category: "Validation",
+    },
+    {
+      target: "Q4 2026",
+      milestone: "First EU customer LOI or pilot agreement",
+      category: "Revenue",
+    },
+    {
+      target: "2027",
+      milestone: "First paid deployment and initial revenue",
+      category: "Revenue",
     },
   ],
 };
 
-/** Deployment Milestones */
+/** Deployment Milestones — Reality-aligned */
 export const deploymentMilestones = {
   month6: {
-    target: "First operational system deployed",
+    target: "Working detection prototype tested in controlled environment",
     status: "target",
   },
   month12: {
-    target: "25 systems in field operation",
+    target: "First detection system deployed at EU pilot site",
     status: "target",
   },
   month15: {
-    target: "International certification achieved",
+    target: "CE marking / EU compliance for detection equipment",
     status: "target",
   },
   month18: {
-    target: "100+ systems globally deployed",
+    target: "3-5 detection nodes operational across 1-2 EU sites",
     status: "target",
   },
 };
 
-/** Funding Timeline */
+/** Funding Timeline — Reality-aligned */
 export const fundingTimeline = [
   {
+    round: "Pre-Seed (Grants + Accelerators)",
+    amount: "$50K-$150K",
+    timeline: "Q2-Q4 2026",
+    status: "Active — applications in progress",
+  },
+  {
     round: "Seed",
-    amount: "$500K-$1M",
-    timeline: "Q1-Q2 2026",
-    status: "Active",
+    amount: "$500K-$2M",
+    timeline: "Q1-Q2 2027",
+    status: "Planned — requires working prototype + EU pilot",
+    preconditions: [
+      "Working detection prototype deployed",
+      "At least 1 paying EU pilot customer",
+      "Grant/accelerator validation",
+    ],
   },
   {
     round: "Series A",
-    amount: "R120M (~$6.7M)",
-    timeline: "Q3 2026",
-    status: "Planned",
-    preconditions: ["Proven revenue", "5 operational installations"],
+    amount: "$3M-$5M",
+    timeline: "2028",
+    status: "Vision",
+    preconditions: [
+      "Proven revenue from multiple EU deployments",
+      "EU certification achieved",
+      "Team of 5-10",
+    ],
   },
   {
     round: "Series B",
-    amount: "R300M",
-    timeline: "Months 12-18",
-    status: "Projected",
-  },
-  {
-    round: "Series C",
-    amount: "R500M",
-    timeline: "Months 24-30",
-    status: "Projected",
-  },
-  {
-    round: "Exit/IPO",
-    amount: "R2-5B valuation",
-    timeline: "Year 5-7",
+    amount: "$10M-$15M",
+    timeline: "2029-2030",
     status: "Vision",
+    preconditions: [
+      "Established EU customer base",
+      "Military tier development",
+      "International expansion",
+    ],
   },
 ];
 
-/** Success Metrics */
+/** Success Metrics — Reality-aligned */
 export const successMetrics = {
   technical: {
-    detectionAccuracy: "99%+",
-    responseTime: "<200ms",
+    detectionAccuracy: "95%+ (target for prototype)",
+    responseTime: "<500ms (target for prototype)",
   },
   commercial: {
-    year1Systems: 25,
-    year1Revenue: "R25M",
+    year1Systems: 0, // Year 1 is prototype building
+    year1Revenue: "$0 (building prototype)",
+    year2Systems: 1, // First pilot
+    year2Revenue: "$100K-$500K",
   },
   strategic: {
-    internationalPartnerships: 5,
-    africanMarkets: 3,
+    euPartnerConversations: 3, // Target for 2026
+    grantApplications: 5, // Target for 2026
   },
   financial: {
-    grossMargin: "65%",
-    ebitdaByYear3: "25%",
+    grossMargin: "65% (target — when producing)",
+    ebitdaByYear3: "N/A (pre-revenue through year 1-2)",
   },
 };
 
 /** Vision */
 export const vision = {
-  shortTerm: "First EU pilot installation by Q1 2026",
-  midTerm: "Global standard for counter-drone defense",
-  longTerm: "Expand beyond drones to all autonomous aerial threat defense",
-  exitTarget: "IPO candidate with $2.51B+ market and 20%+ market share path",
+  shortTerm:
+    "Working detection prototype and first EU customer conversation by end 2026",
+  midTerm:
+    "Affordable, AI-powered airspace awareness for European critical infrastructure — airports, power plants, events, wildlife reserves",
+  longTerm:
+    "Global standard for accessible counter-drone detection with blockchain evidence chain",
+  exitTarget:
+    "Long-term vision — build a sustainable business first, exit is years away",
 };

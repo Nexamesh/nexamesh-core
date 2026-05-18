@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import TimelinePageClient from "./TimelinePageClient";
 
 export const metadata: Metadata = {
-  title: "Development Timeline - Phoenix Rooivalk",
+  title: "Development Timeline - NexaMesh",
   description:
-    "Phoenix Rooivalk's five-phase development roadmap from SBIR Phase I through full production. Track milestones for SkySnare, AeroNet, and the broader counter-UAS platform.",
+    "NexaMesh's five-phase development roadmap from SBIR Phase I through full production. Track milestones for Kestrel Mesh, Sentinel Ring, and the broader counter-UAS platform.",
   openGraph: {
-    title: "Development Timeline - Phoenix Rooivalk",
+    title: "Development Timeline - NexaMesh",
     description:
-      "Five-phase development roadmap from SBIR Phase I to full production. SkySnare, AeroNet, and counter-UAS platform milestones.",
+      "Five-phase development roadmap from SBIR Phase I to full production. Kestrel Mesh, Sentinel Ring, and counter-UAS platform milestones.",
   },
 };
 

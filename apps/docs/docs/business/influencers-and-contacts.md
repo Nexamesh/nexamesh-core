@@ -15,7 +15,7 @@ prerequisites:
 ## Overview
 
 This document identifies key influencers, media outlets, researchers, and
-industry contacts relevant to Phoenix Rooivalk's market positioning. Building
+industry contacts relevant to NexaMesh's market positioning. Building
 relationships with these stakeholders can accelerate market awareness, validate
 technology, and open partnership opportunities.
 
@@ -110,7 +110,7 @@ Contact: @Dr_Gerdes on X, professorgerdesyt@gmail.com
 - Ukraine drone warfare analysis
 - Future of drone defense features
 - Technical white paper summaries
-- Reaction videos to Phoenix Rooivalk demos
+- Reaction videos to NexaMesh demos
 
 [The War Zone](https://www.twz.com/) |
 [Task & Purpose](https://taskandpurpose.com/) |

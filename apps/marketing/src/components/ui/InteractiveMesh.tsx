@@ -21,7 +21,7 @@ interface InteractiveMeshProps {
 
 export const InteractiveMesh: React.FC<InteractiveMeshProps> = ({
   gridSize = 40,
-  color = "rgba(234, 124, 28, 0.15)",
+  color = "rgba(199, 122, 27, 0.10)",
   opacity = 1,
   bendStrength = 30,
   bendRadius = 150,

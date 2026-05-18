@@ -1,8 +1,14 @@
-"use client";
+import type { Metadata } from "next";
 import * as React from "react";
 import { Footer } from "../../../components/Footer";
 import { Navigation } from "../../../components/Navigation";
 import styles from "../compliance-subpage.module.css";
+
+export const metadata: Metadata = {
+  title: "ISO 27001 Certification | NexaMesh",
+  description:
+    "NexaMesh information security management framework — ISO 27001 certification roadmap, access controls, cryptography, and risk management processes.",
+};
 
 export default function ISO27001Page(): React.ReactElement {
   return (
@@ -32,7 +38,7 @@ export default function ISO27001Page(): React.ReactElement {
                 Information Security Management
               </h2>
               <p className={styles.description}>
-                Phoenix Rooivalk maintains ISO 27001 certification ensuring
+                NexaMesh maintains ISO 27001 certification ensuring
                 comprehensive information security management across all
                 operations. Our ISMS framework provides:
               </p>
@@ -68,7 +74,7 @@ export default function ISO27001Page(): React.ReactElement {
                 </div>
                 <div className={styles.statusItem}>
                   <span className={styles.statusLabel}>Target Date</span>
-                  <span className={styles.statusBadgePlanned}>Q4 2025</span>
+                  <span className={styles.statusBadgePlanned}>Q4 2026</span>
                 </div>
                 <div className={styles.statusItem}>
                   <span className={styles.statusLabel}>Implementation</span>
@@ -76,7 +82,7 @@ export default function ISO27001Page(): React.ReactElement {
                 </div>
                 <div className={styles.statusItem}>
                   <span className={styles.statusLabel}>Next Milestone</span>
-                  <span className={styles.statusBadgePlanned}>Q2 2025</span>
+                  <span className={styles.statusBadgePlanned}>Q3 2026</span>
                 </div>
               </div>
             </div>

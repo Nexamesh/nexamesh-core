@@ -74,7 +74,7 @@ const onboardingConfig = {
 };
 
 const config: Config = {
-  title: "Phoenix Rooivalk Documentation",
+  title: "NexaMesh Documentation",
   tagline: "Autonomous Counter-UAS Defense Platform",
   favicon: "img/favicon.svg",
   url:
@@ -82,8 +82,8 @@ const config: Config = {
     process.env.NEXT_PUBLIC_DOCS_URL ||
     "https://localhost:3000",
   baseUrl: "/",
-  organizationName: "JustAGhosT",
-  projectName: "PhoenixRooivalk",
+  organizationName: "Nexamesh",
+  projectName: "nexamesh-core",
   // Custom fields exposed to client-side code via useDocusaurusContext()
   customFields: {
     azureConfig,
@@ -149,7 +149,7 @@ const config: Config = {
       tagName: "meta",
       attributes: {
         property: "og:title",
-        content: "Phoenix Rooivalk - Autonomous Counter-UAS Defense Platform",
+        content: "NexaMesh - Autonomous Counter-UAS Defense Platform",
       },
     },
     {
@@ -200,7 +200,7 @@ const config: Config = {
           sidebarPath: resolve(__dirname, "./sidebars.ts"),
           // Enable "Edit this page" links to GitHub
           editUrl:
-            "https://github.com/JustAGhosT/PhoenixRooivalk/edit/main/apps/docs/",
+            "https://github.com/Nexamesh/nexamesh-core/edit/main/apps/docs/",
           // Show last updated timestamps from git
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -215,11 +215,11 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    // Enhanced navbar with Phoenix Rooivalk branding
+    // Enhanced navbar with NexaMesh branding
     navbar: {
-      title: "Phoenix Rooivalk",
+      title: "NexaMesh",
       logo: {
-        alt: "Phoenix Rooivalk Logo",
+        alt: "NexaMesh Logo",
         src: "img/logo.svg",
         srcDark: "img/logo.svg",
         width: 40,
@@ -229,7 +229,7 @@ const config: Config = {
         // Primary navigation - Documentation home
         {
           type: "doc",
-          docId: "phoenix-rooivalk-documentation",
+          docId: "nexamesh-documentation",
           position: "left",
           label: "Documentation",
         },
@@ -249,7 +249,7 @@ const config: Config = {
             },
             {
               label: "Pitch Deck",
-              to: "/docs/executive/phoenix-rooivalk-pitch-deck",
+              to: "/docs/executive/nexamesh-pitch-deck",
             },
             {
               label: "Market Analysis",
@@ -385,7 +385,7 @@ const config: Config = {
           items: [
             {
               label: "Getting Started",
-              to: "/docs/phoenix-rooivalk-documentation",
+              to: "/docs/nexamesh-documentation",
             },
             {
               label: "API Reference",
@@ -428,7 +428,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© 2025 Phoenix Rooivalk. All rights reserved.`,
+      copyright: `© 2025 NexaMesh. All rights reserved.`,
     },
     // Color mode - Support both light and dark themes
     colorMode: {
@@ -455,9 +455,9 @@ const config: Config = {
     },
     // Enhanced announcement bar
     announcementBar: {
-      id: "phoenix-rooivalk-announcement",
+      id: "nexamesh-announcement",
       content:
-        "🚀 Phoenix Rooivalk: Revolutionary SAE Level 4 Autonomous Counter-UAS Defense Platform",
+        "🚀 NexaMesh: Revolutionary SAE Level 4 Autonomous Counter-UAS Defense Platform",
       backgroundColor: "rgb(249, 115, 22)",
       textColor: "rgb(15, 23, 42)",
       isCloseable: true,

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import type { EvidenceRecord, BlockchainAnchor } from "@phoenix-rooivalk/types";
+import type { EvidenceRecord, BlockchainAnchor } from "@nexamesh/types";
 import styles from "./EvidenceExplorer.module.css";
 
 /**

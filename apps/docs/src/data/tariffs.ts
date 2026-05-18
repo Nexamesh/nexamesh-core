@@ -141,7 +141,7 @@ export const categoryMarkups: Record<string, CategoryMarkup> = {
       { qty: 500, discount: 0.1 },
       { qty: 1000, discount: 0.15 },
     ],
-    notes: "SkySnare consumer product line",
+    notes: "Kestrel Mesh consumer product line",
   },
 
   // DIY/Maker Products
@@ -195,7 +195,7 @@ export const categoryMarkups: Record<string, CategoryMarkup> = {
       { qty: 10, discount: 0.1 },
       { qty: 20, discount: 0.15 },
     ],
-    notes: "SkyWatch Enterprise, AeroNet platform",
+    notes: "SkyWatch Enterprise, Sentinel Ring platform",
   },
 
   // Military/Defense
@@ -428,9 +428,9 @@ export const manufacturingTimes: ManufacturingTime[] = [
     notes: "Pneumatic system, pan-tilt tracking integration",
   },
 
-  // SkySnare Consumer
+  // Kestrel Mesh Consumer
   {
-    product: "SkySnare",
+    product: "Kestrel Mesh",
     sku: "SS-001",
     category: "consumer",
     assemblyHours: 0.75,
@@ -496,9 +496,9 @@ export const manufacturingTimes: ManufacturingTime[] = [
     notes: "Pneumatic system, pan-tilt tracking, multi-shot magazine",
   },
 
-  // AeroNet Enterprise Platform
+  // Sentinel Ring Enterprise Platform
   {
-    product: "AeroNet Enterprise (per site)",
+    product: "Sentinel Ring Enterprise (per site)",
     sku: "AN-ENT-001",
     category: "enterprise",
     assemblyHours: 80.0,
@@ -514,7 +514,7 @@ export const manufacturingTimes: ManufacturingTime[] = [
     notes: "Full enterprise deployment, multi-sensor integration",
   },
   {
-    product: "AeroNet Command (software)",
+    product: "Sentinel Ring Command (software)",
     sku: "AN-CMD-001",
     category: "enterprise",
     assemblyHours: 20.0, // Deployment and configuration
@@ -915,9 +915,9 @@ export const productCostSummaries: ProductCostSummary[] = [
     actualMargin: 0.44,
   },
 
-  // SkySnare Consumer
+  // Kestrel Mesh Consumer
   {
-    product: "SkySnare",
+    product: "Kestrel Mesh",
     sku: "SS-001",
     category: "consumer",
     bomCostUsd: 135.0,
@@ -930,9 +930,9 @@ export const productCostSummaries: ProductCostSummary[] = [
     actualMargin: 0.58,
   },
 
-  // AeroNet
+  // Sentinel Ring
   {
-    product: "AeroNet Enterprise (per site)",
+    product: "Sentinel Ring Enterprise (per site)",
     sku: "AN-ENT-001",
     category: "enterprise",
     bomCostUsd: 50000.0,

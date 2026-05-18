@@ -1,7 +1,7 @@
 ---
 id: mechanical-design-records
-title: Phoenix Rooivalk Mechanical Design Records
-sidebar_label: Phoenix Rooivalk Mechanical
+title: NexaMesh Mechanical Design Records
+sidebar_label: NexaMesh Mechanical
 difficulty: advanced
 estimated_reading_time: 7
 points: 25
@@ -10,7 +10,7 @@ tags:
   - hardware
 ---
 
-# Phoenix Rooivalk Mechanical Design Records
+# NexaMesh Mechanical Design Records
 
 ## Executive Summary
 
@@ -349,7 +349,7 @@ counts, and powerplant options across key performance parameters:
 
 ## Conclusion
 
-The Phoenix Rooivalk mechanical design records provide a comprehensive
+The NexaMesh mechanical design records provide a comprehensive
 foundation for the RKV-M tilt-quad system development. The modular kit-based
 approach allows for mission-specific optimization while maintaining commonality
 across configurations. The ADR process ensures that critical design decisions
@@ -365,7 +365,7 @@ system for counter-drone defense operations.
 ---
 
 _This document contains confidential technical specifications. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._
 
 _Context improved by Giga AI_

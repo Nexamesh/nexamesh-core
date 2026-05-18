@@ -1,14 +1,19 @@
 "use client";
 import * as React from "react";
 
+import { AnnouncementBar } from "../components/AnnouncementBar";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 import { ContactSection } from "../components/sections/ContactSection";
 import { FeaturesSection } from "../components/sections/FeaturesSection";
 import { HeroSection } from "../components/sections/HeroSection";
 import { ProductHighlightsSection } from "../components/sections/ProductHighlightsSection";
+import { SimulatorShowcase } from "../components/sections/SimulatorShowcase";
+import { TechStackSection } from "../components/sections/TechStackSection";
+import { ThreatRealitySection } from "../components/sections/ThreatRealitySection";
 import { InteractiveMesh } from "../components/ui/InteractiveMesh";
-import { serializeJsonLd } from "@phoenix-rooivalk/utils";
+import { MeshDivider } from "../components/ui/MeshDivider";
+import { serializeJsonLd } from "@nexamesh/utils";
 
 import { usePerformanceOptimizations } from "../hooks/usePerformanceOptimizations";
 import styles from "./home.module.css";
@@ -22,20 +27,29 @@ export default function HomePage(): React.ReactElement {
       {/* Background mesh effect - subtle with mouse interaction */}
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.07)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={25}
         bendRadius={120}
       />
 
-      {/* Global Components */}
+      {/* Announcement bar — above nav so it slides down first */}
+      <AnnouncementBar />
 
       {/* Navigation */}
       <Navigation />
 
       {/* Main Content Sections */}
       <HeroSection />
+      <TechStackSection />
+      <MeshDivider />
+      <SimulatorShowcase />
+      <MeshDivider />
+      <ThreatRealitySection />
+      <MeshDivider />
       <FeaturesSection />
+      <MeshDivider />
       <ProductHighlightsSection />
+      <MeshDivider />
       <ContactSection />
 
       {/* Footer */}
@@ -51,10 +65,10 @@ export default function HomePage(): React.ReactElement {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "How does the drone capture system work?",
+                name: "How does NexaMesh detect drones?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Our pneumatic net launcher uses compressed air to deploy a capture net that safely intercepts drones without damage. No explosives, no RF jamming, no legal complications.",
+                  text: "NexaMesh uses distributed mesh nodes running on-device AI to detect and classify drone threats in under 200ms. Each node operates independently, so the system keeps working even in RF-denied environments where comms are jammed.",
                 },
               },
               {
@@ -62,7 +76,7 @@ export default function HomePage(): React.ReactElement {
                 name: "Who uses these systems?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Training facilities, drone racing leagues, event security teams, and facility managers. SkySnare for consumer/training, AeroNet for enterprise security.",
+                  text: "Government agencies, airports, critical infrastructure operators, event security teams, and property managers. Kestrel Mesh for rapid mesh-deployable detection; Sentinel Ring for persistent enterprise coverage with 24/7 SOC integration.",
                 },
               },
               {
@@ -78,7 +92,7 @@ export default function HomePage(): React.ReactElement {
                 name: "Is it legal to use?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes. Pneumatic net capture only - no RF jamming, no GPS spoofing, no signal interference. FCC compliant.",
+                  text: "Yes. NexaMesh is a passive detection and evidence platform — no RF jamming, no GPS spoofing, no signal interference. All evidence is blockchain-anchored for legal chain of custody.",
                 },
               },
             ],

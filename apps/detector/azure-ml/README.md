@@ -1,6 +1,6 @@
 # Azure ML Training
 
-Training infrastructure for the Phoenix Rooivalk drone detection model using
+Training infrastructure for the NexaMesh drone detection model using
 Azure Machine Learning.
 
 ## Quick Start

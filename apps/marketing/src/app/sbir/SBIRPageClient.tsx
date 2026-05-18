@@ -13,7 +13,7 @@ export default function SBIRPage(): React.ReactElement {
     <main className={styles.main}>
       <InteractiveMesh
         gridSize={50}
-        color="rgba(234, 124, 28, 0.1)"
+        color="rgba(199, 122, 27, 0.07)"
         bendStrength={20}
         bendRadius={100}
       />
@@ -29,7 +29,7 @@ export default function SBIRPage(): React.ReactElement {
               <div className={styles.headerSection}>
                 <h1 className={styles.title}>SBIR Program</h1>
                 <p className={styles.subtitle}>
-                  Phoenix Rooivalk is actively pursuing Air Force SBIR Phase I
+                  NexaMesh is actively pursuing Air Force SBIR Phase I
                   funding and seeking partnerships with defense contractors for
                   market entry.
                 </p>
@@ -199,13 +199,13 @@ export default function SBIRPage(): React.ReactElement {
                 </p>
                 <div className={styles.contactButtons}>
                   <a
-                    href="mailto:sbir@phoenixrooivalk.com"
+                    href="mailto:sbir@nexamesh.ai"
                     className="btn btn--primary"
                   >
                     SBIR Collaboration
                   </a>
                   <a
-                    href="mailto:government@phoenixrooivalk.com"
+                    href="mailto:government@nexamesh.ai"
                     className="btn btn--secondary"
                   >
                     Government Contracting

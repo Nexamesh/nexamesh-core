@@ -25,7 +25,7 @@ Firestore)
 
 ## Executive Summary
 
-1. **Problem**: LLM responses lack grounding in Phoenix Rooivalk's specific
+1. **Problem**: LLM responses lack grounding in NexaMesh's specific
    documentation and context
 2. **Decision**: Hybrid RAG architecture using Azure AI Search for vector
    retrieval with Firestore fallback
@@ -36,7 +36,7 @@ Firestore)
 
 ## Context
 
-Phoenix Rooivalk's AI features need to provide accurate, contextual responses
+NexaMesh's AI features need to provide accurate, contextual responses
 about:
 
 - Company products and capabilities
@@ -297,7 +297,7 @@ async function analyzeCompetitors(
   focusAreas?: string[],
 ): Promise<Analysis> {
   // 1. Search for Phoenix context (not competitor data)
-  const searchQuery = `Phoenix Rooivalk capabilities ${focusAreas?.join(" ")}`;
+  const searchQuery = `NexaMesh capabilities ${focusAreas?.join(" ")}`;
   const results = await searchDocuments(searchQuery, { topK: 5 });
 
   // 2. Build enhanced system prompt
@@ -739,4 +739,4 @@ for full analysis.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

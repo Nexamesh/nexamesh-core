@@ -38,7 +38,7 @@ prerequisites:
 
 ### Current Blockchain Architecture
 
-Phoenix Rooivalk currently uses dual-chain anchoring for evidence management:
+NexaMesh currently uses dual-chain anchoring for evidence management:
 
 | Chain         | Role                 | Performance                              | Status     |
 | ------------- | -------------------- | ---------------------------------------- | ---------- |
@@ -256,7 +256,7 @@ Movement's dual MoveVM/EVM support creates potential synergies:
 | -------------------- | ----------------------------------------------------------------------------------- |
 | **Defense Sector**   | If Movement gains adoption in government/defense, early integration is advantageous |
 | **Compliance**       | Move's formal verification aligns with military audit requirements                  |
-| **Innovation**       | Demonstrates Phoenix Rooivalk's commitment to cutting-edge technology               |
+| **Innovation**       | Demonstrates NexaMesh's commitment to cutting-edge technology               |
 | **Ecosystem Growth** | Movement is actively growing developer community                                    |
 
 ---
@@ -457,4 +457,4 @@ provides best of both worlds.
 
 ---
 
-_© 2025 Phoenix Rooivalk. Confidential._
+_© 2026 NexaMesh. Confidential._

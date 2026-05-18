@@ -1,7 +1,7 @@
 ---
 id: training-materials
-title: Phoenix Rooivalk Training Materials
-sidebar_label: Phoenix Rooivalk Training
+title: NexaMesh Training Materials
+sidebar_label: NexaMesh Training
 difficulty: intermediate
 estimated_reading_time: 10
 points: 15
@@ -10,11 +10,11 @@ tags:
   - ai
 ---
 
-# Phoenix Rooivalk Training Materials
+# NexaMesh Training Materials
 
 ## Executive Summary
 
-This document provides comprehensive training materials for the Phoenix Rooivalk
+This document provides comprehensive training materials for the NexaMesh
 Counter-Drone Defense System. The training program covers system operation,
 maintenance, troubleshooting, and certification requirements for operators,
 technicians, and administrators.
@@ -581,7 +581,7 @@ technicians, and administrators.
 
 The **DHS Small Unmanned Aircraft System Program Documentation for Public
 Safety** (BCF-T-G-2, November 2025) provides essential supplementary training
-guidance that complements Phoenix Rooivalk operator certification:
+guidance that complements NexaMesh operator certification:
 
 **Key Training Elements**:
 
@@ -595,9 +595,9 @@ guidance that complements Phoenix Rooivalk operator certification:
 - **Role-Based Training**: RPIC, Visual Observer, and Air Coordinator
   responsibilities
 
-**Integration with Phoenix Rooivalk Training**:
+**Integration with NexaMesh Training**:
 
-| DHS Training Element   | Phoenix Rooivalk Level   |
+| DHS Training Element   | NexaMesh Level   |
 | ---------------------- | ------------------------ |
 | Part 107 Certification | Level 1 prerequisite     |
 | Safety Checklists      | Modules 3 (L1), 1-2 (L2) |
@@ -607,7 +607,7 @@ guidance that complements Phoenix Rooivalk operator certification:
 :::tip Recommended Reading
 
 See [sUAS Program Documentation](../../resources/suas-program-documentation) for
-comprehensive framework details and integration guidance with Phoenix Rooivalk
+comprehensive framework details and integration guidance with NexaMesh
 training programs.
 
 :::
@@ -616,7 +616,7 @@ training programs.
 
 ## Conclusion
 
-The Phoenix Rooivalk Training Materials provide comprehensive training programs
+The NexaMesh Training Materials provide comprehensive training programs
 for all system operators, technicians, and administrators. The training program
 ensures proper system operation, maintenance, and troubleshooting while
 maintaining the highest standards of safety, security, and compliance.
@@ -640,5 +640,5 @@ effectiveness.
 ---
 
 _This document contains confidential training information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

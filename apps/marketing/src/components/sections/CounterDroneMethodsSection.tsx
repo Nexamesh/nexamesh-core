@@ -8,62 +8,68 @@ export const CounterDroneMethodsSection: React.FC = () => {
   const methods = [
     {
       icon: "📡",
-      title: "RF Jamming",
-      description: "Disrupts drone communication and control signals",
+      title: "RF Signature Analysis",
+      description:
+        "Passive monitoring of RF spectrum detects control links, video downlinks, and telemetry signals — without transmitting or jamming.",
       metrics: [
-        { value: "85%", label: "Effectiveness" },
-        { value: "50-200ms", label: "Response" },
-        { value: "1-5km", label: "Range" },
+        { value: "Passive", label: "Mode" },
+        { value: "<50ms", label: "Detection" },
+        { value: "500m–2km", label: "Range" },
       ],
     },
     {
-      icon: "🎯",
-      title: "GPS Spoofing",
-      description: "Misleads drone navigation with false positioning",
+      icon: "👁️",
+      title: "Visual AI Detection",
+      description:
+        "On-device computer vision classifies drone type, trajectory, and intent from optical cameras — effective against RF-silent autonomous threats.",
       metrics: [
-        { value: "70%", label: "Effectiveness" },
-        { value: "100-500ms", label: "Response" },
-        { value: "500m-2km", label: "Range" },
+        { value: "Edge AI", label: "Processing" },
+        { value: "<200ms", label: "Classification" },
+        { value: "100–800m", label: "Visual Range" },
       ],
     },
     {
-      icon: "⚡",
-      title: "Electronic Warfare",
-      description: "Targets drone electronics with electromagnetic attacks",
+      icon: "🎵",
+      title: "Acoustic Detection",
+      description:
+        "Microphone arrays identify motor signatures and propeller frequencies unique to drone platforms — works in low-visibility conditions.",
       metrics: [
-        { value: "95%", label: "Effectiveness" },
-        { value: "20-100ms", label: "Response" },
-        { value: "2-10km", label: "Range" },
+        { value: "Passive", label: "Mode" },
+        { value: "Motor & Prop", label: "Signatures" },
+        { value: "50–300m", label: "Range" },
       ],
     },
     {
-      icon: "🔍",
-      title: "Kinetic Intercept",
-      description: "Physical neutralization using nets or projectiles",
+      icon: "🔀",
+      title: "Multi-Sensor Fusion",
+      description:
+        "RF, optical, and acoustic channels vote in consensus — cross-validation eliminates false positives and catches threats that fool single sensors.",
       metrics: [
-        { value: "90%", label: "Effectiveness" },
-        { value: "200-1000ms", label: "Response" },
-        { value: "100m-2km", label: "Range" },
+        { value: "<0.3%", label: "False Positive Rate" },
+        { value: "3-channel", label: "Consensus" },
+        { value: "<200ms", label: "Fused Output" },
       ],
     },
     {
       icon: "🌐",
-      title: "Cyber Takeover",
-      description: "Hacks into drone systems to gain remote control",
+      title: "Mesh Node Coordination",
+      description:
+        "Distributed nodes share detections via encrypted peer mesh — no cloud required. Tracks multi-vector incursions and swarm formations across the full perimeter.",
       metrics: [
-        { value: "60%", label: "Effectiveness" },
-        { value: "1-5s", label: "Response" },
-        { value: "Unlimited", label: "Range" },
+        { value: "RF-Denied", label: "Capable" },
+        { value: "500m–1km", label: "Node Range" },
+        { value: "Swarm-Aware", label: "Coordination" },
       ],
     },
     {
-      icon: "🛡️",
-      title: "Directed Energy",
-      description: "Disables drones with high-energy laser or microwave",
+      icon: "⛓️",
+      title: "Blockchain Evidence Chain",
+      description:
+        "Every detection event is SHA-256 hashed and anchored on-chain the moment network is available — tamper-proof chain of custody for legal proceedings.",
       metrics: [
-        { value: "80%", label: "Effectiveness" },
-        { value: "100-300ms", label: "Response" },
-        { value: "500m-3km", label: "Range" },
+        { value: "SHA-256", label: "Hash" },
+        { value: "Immutable", label: "Record" },
+        { value: "Legal-Grade", label: "Evidence" },
       ],
     },
   ];
@@ -74,10 +80,11 @@ export const CounterDroneMethodsSection: React.FC = () => {
         <div className={styles.container}>
           <div className={styles.innerContainer}>
             <div className={styles.header}>
-              <h2 className={styles.title}>Counter-Drone Defense Methods</h2>
+              <h2 className={styles.title}>How NexaMesh Detects Threats</h2>
               <p className={styles.subtitle}>
-                Phoenix Rooivalk integrates multiple defense strategies for
-                comprehensive drone threat protection.
+                Passive detection only — NexaMesh does not jam, spoof, or
+                interfere with any signal. Six sensor and intelligence layers
+                work in concert to detect, classify, and record.
               </p>
             </div>
 
@@ -89,12 +96,12 @@ export const CounterDroneMethodsSection: React.FC = () => {
 
             <div className={styles.integrationSection}>
               <Card
-                title="Integrated Defense Strategy"
-                description="Automatically selects the optimal defense method based on threat type and conditions."
+                title="Why Passive Detection Matters"
+                description="RF jamming and GPS spoofing are illegal for civilian use in most jurisdictions and carry ITAR/EAR restrictions. NexaMesh's passive-only architecture means it can be deployed by airports, utilities, and event operators without regulatory permits — detection first, response by authorized personnel."
                 metrics={[
-                  { value: "95%", label: "Combined Effectiveness" },
-                  { value: "<200ms", label: "Avg Response" },
-                  { value: "6", label: "Methods" },
+                  { value: "No RF Emissions", label: "Passive System" },
+                  { value: "<200ms", label: "Detection Latency" },
+                  { value: "3-Sensor", label: "Fusion Consensus" },
                 ]}
                 centered
               />

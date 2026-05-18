@@ -2,7 +2,7 @@
 name = "phoenix-x402"
 version = "0.1.0"
 edition = "2021"
-description = "x402 payment protocol integration for Phoenix Rooivalk evidence verification"
+description = "x402 payment protocol integration for NexaMesh evidence verification"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }

@@ -2,7 +2,7 @@
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  background: var(--bg-secondary, #09090f);
+  background: var(--bg-secondary, #182231);
   border: 1px solid rgba(var(--primary), 0.1);
   border-radius: 0.5rem;
   transition: all 0.2s ease;
@@ -48,7 +48,7 @@
 .itemPrice {
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--accent, #fbbf24);
+  color: var(--accent, #C77A1B);
   font-family: "Courier New", monospace;
 }
 
@@ -91,7 +91,7 @@
 
 .quantityButton:hover {
   background: rgba(var(--primary), 0.1);
-  color: var(--primary, #f97316);
+  color: var(--primary, #C77A1B);
 }
 
 .quantityButton:disabled {

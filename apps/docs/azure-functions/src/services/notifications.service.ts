@@ -285,7 +285,7 @@ export class NotificationsService {
         // Generic template
         return `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h1 style="color: #f97316;">Phoenix Rooivalk</h1>
+            <h1 style="color: #f97316;">NexaMesh</h1>
             <p>${JSON.stringify(data)}</p>
           </div>
         `;
@@ -327,7 +327,7 @@ export class NotificationsService {
       if (subscriber.emailEnabled && subscriber.email) {
         await this.queueEmail(
           subscriber.email,
-          `[Phoenix Rooivalk] Breaking News: ${title}`,
+          `[NexaMesh] Breaking News: ${title}`,
           "breaking_news",
           {
             title,
@@ -499,7 +499,7 @@ export class NotificationsService {
 
       await this.queueEmail(
         subscriber.email,
-        `[Phoenix Rooivalk] Your ${frequency === "daily" ? "Daily" : "Weekly"} News Digest`,
+        `[NexaMesh] Your ${frequency === "daily" ? "Daily" : "Weekly"} News Digest`,
         "news_digest",
         {
           frequency,

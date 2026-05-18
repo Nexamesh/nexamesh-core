@@ -1,0 +1,12 @@
+version: "1.0"
+scope: todo
+repo: phoenixvc/phoenix-rooivalk
+updated_at: 2026-03-18
+
+tasks:
+  - id: dns-rooivalk-rg-verify
+    title: "Verify dns-rooivalk RG in Azure (eastus) — 3 DNS zones: phoenixrooivalk.com, nexamesh.ai, neuralliquid.ai"
+    description: "Confirm these are still active / intentional before touching them in the Azure cleanup sprint."
+    priority: medium
+    status: todo
+    tags: [azure, dns, infrastructure]

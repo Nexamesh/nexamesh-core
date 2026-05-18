@@ -14,8 +14,8 @@ import { AVAILABLE_ROLES } from "../../config/userProfiles";
 import "./PhaseFilter.css";
 
 // Role filter local storage key
-const ROLE_FILTER_KEY = "phoenix-docs-role-filter";
-const CATEGORIES_COLLAPSED_KEY = "phoenix-docs-categories-collapsed";
+const ROLE_FILTER_KEY = "nexamesh-docs-role-filter";
+const CATEGORIES_COLLAPSED_KEY = "nexamesh-docs-categories-collapsed";
 
 // Role groups for easier selection
 const ROLE_GROUPS = {

@@ -1,8 +1,8 @@
 ---
-id: phoenix-rooivalk-documentation
-title: Phoenix Rooivalk Documentation
+id: nexamesh-documentation
+title: NexaMesh Documentation
 sidebar_label: "\U0001F3E0 Home"
-slug: /phoenix-rooivalk-documentation
+slug: /nexamesh-documentation
 hide_title: true
 difficulty: intermediate
 estimated_reading_time: 4
@@ -13,7 +13,7 @@ tags:
 
 <div className="docs-readme-hero">
   <h1 className="docs-readme-title">
-    Phoenix Rooivalk Documentation
+    NexaMesh Documentation
   </h1>
   <p className="docs-readme-subtitle">
     Comprehensive documentation for the world's most advanced autonomous counter-UAS defense platform. Explore technical specifications, business insights, and operational guides.
@@ -201,10 +201,10 @@ Start with: [Compliance Framework](legal/compliance-framework) →
 
 ## 📞 Contact Information
 
-**Phoenix Rooivalk**
+**NexaMesh**
 
 - **Technical Demo** | **Partnership Inquiries**:
-  [jurie@phoenixvc.tech](mailto:jurie@phoenixvc.tech)
+  [jurie@nexamesh.ai](mailto:jurie@nexamesh.ai)
 
 ---
 
@@ -217,5 +217,5 @@ Start with: [Compliance Framework](legal/compliance-framework) →
 
 ---
 
-_This documentation provides comprehensive access to all Phoenix Rooivalk
+_This documentation provides comprehensive access to all NexaMesh
 information. Last updated: November 2025_

@@ -5,10 +5,10 @@
 The Azure Functions response utilities (`successResponse()` and `Errors.*()`)
 were not receiving the `request` parameter, causing them to default to
 `http://localhost:3000` for the `Access-Control-Allow-Origin` header. This broke
-CORS for production callers like `https://docs.phoenixrooivalk.com` because:
+CORS for production callers like `https://docs.nexamesh.com` because:
 
 1. The response would set `Access-Control-Allow-Origin: http://localhost:3000`
-2. But the request came from `https://docs.phoenixrooivalk.com`
+2. But the request came from `https://docs.nexamesh.com`
 3. With `Access-Control-Allow-Credentials: true`, the origin **must** match
    exactly
 4. Result: Browser blocks the response due to CORS policy violation
@@ -59,9 +59,9 @@ The `getCorsHeaders(request)` function:
 2. Checks if it's in the allowed list:
    - `http://localhost:3000`
    - `http://localhost:3001`
-   - `https://phoenixrooivalk.com`
-   - `https://docs.phoenixrooivalk.com`
-   - `https://www.phoenixrooivalk.com`
+   - `https://nexamesh.com`
+   - `https://docs.nexamesh.com`
+   - `https://www.nexamesh.com`
    - `*.azurestaticapps.net` (wildcard)
 
 3. If allowed, returns that origin in the `Access-Control-Allow-Origin` header
@@ -75,8 +75,8 @@ All 8 comprehensive tests passed:
 
 ✓ **Test 1**: Production origin returns correct origin
 
-- Input: `https://docs.phoenixrooivalk.com`
-- Output: `Access-Control-Allow-Origin: https://docs.phoenixrooivalk.com`
+- Input: `https://docs.nexamesh.com`
+- Output: `Access-Control-Allow-Origin: https://docs.nexamesh.com`
 
 ✓ **Test 2**: Localhost origin returns correct origin
 
@@ -113,7 +113,7 @@ All 8 comprehensive tests passed:
 ## Impact
 
 - ✅ Production sites can now make authenticated API calls
-- ✅ CORS errors resolved for `https://docs.phoenixrooivalk.com`
+- ✅ CORS errors resolved for `https://docs.nexamesh.com`
 - ✅ All other allowed origins work correctly
 - ✅ Security maintained (unknown origins still blocked)
 - ✅ Backward compatible (functions without request still work via fallback)

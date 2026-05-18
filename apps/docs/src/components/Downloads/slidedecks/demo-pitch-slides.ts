@@ -1,7 +1,7 @@
 import type { Slide, KeyPoint } from "../SlideDeckDownload";
 
 /**
- * Phoenix Rooivalk Demo Pitch Deck
+ * NexaMesh Demo Pitch Deck
  * First demo presentation - focused on problem, solution, and immediate value
  *
  * Enhanced with:
@@ -16,7 +16,7 @@ export const demoPitchSlides: Slide[] = [
   // ==========================================
   {
     number: 1,
-    title: "Phoenix Rooivalk",
+    title: "NexaMesh",
     duration: 30,
     icon: "🛡️",
     layout: "title-only",
@@ -24,7 +24,7 @@ export const demoPitchSlides: Slide[] = [
       "**Capture Drones Safely. No Damage.**",
       "*Seed Round 2026*",
       "",
-      "Pneumatic net launchers for training, events, and facility security",
+      "Edge AI detection. Autonomous net capture. Blockchain evidence.",
       "**Legal. Non-destructive. Deployable today.**",
       "",
       "**6 product lines** | **$349 - $150K** | **Q3 2026 delivery**",
@@ -32,7 +32,7 @@ export const demoPitchSlides: Slide[] = [
     speakerNotes:
       "Open with the new value prop - safe capture, no damage. Emphasize legal and non-destructive. The 6 product lines shows breadth.",
     script:
-      "Welcome to Phoenix Rooivalk. We capture drones safely with no damage. Pneumatic net launchers for training, events, and facility security. Legal, non-destructive, and deployable today. We offer 6 product lines from $349 consumer devices to $150K enterprise platforms. First deliveries Q3 2026. Preorders are open now.",
+      "Welcome to NexaMesh. We capture drones safely with no damage. Pneumatic net launchers for training, events, and facility security. Legal, non-destructive, and deployable today. We offer 6 product lines from $349 consumer devices to $150K enterprise platforms. First deliveries Q3 2026. Preorders are open now.",
   },
 
   // ==========================================
@@ -154,7 +154,7 @@ export const demoPitchSlides: Slide[] = [
     speakerNotes:
       "Three clear differentiators, numbered for memory. Speed is #1 because it's the most dramatic. Evidence is #3 because it's unique and memorable. Don't mention weapons here - save for Q&A.",
     script:
-      "Phoenix Rooivalk has three unfair advantages. Number one: Speed. We respond in under 200 milliseconds - that's 10 to 150 times faster than any competitor. While they're still processing in the cloud, we've already neutralized the threat with edge AI. Number two: Autonomy. We work where others fail. True offline operation, no internet required. RF-denied, GPS-denied environments - exactly where you need counter-drone most. SAE Level 4 autonomous decision-making. Number three: Evidence. For the first time, you can actually catch the perpetrators. Blockchain-anchored chain of custody. Court-admissible documentation. No more 'never caught' headlines.",
+      "NexaMesh has three unfair advantages. Number one: Speed. We respond in under 200 milliseconds - that's 10 to 150 times faster than any competitor. While they're still processing in the cloud, we've already neutralized the threat with edge AI. Number two: Autonomy. We work where others fail. True offline operation, no internet required. RF-denied, GPS-denied environments - exactly where you need counter-drone most. SAE Level 4 autonomous decision-making. Number three: Evidence. For the first time, you can actually catch the perpetrators. Blockchain-anchored chain of custody. Court-admissible documentation. No more 'never caught' headlines.",
   },
 
   // ==========================================
@@ -179,7 +179,7 @@ export const demoPitchSlides: Slide[] = [
         subPoints: [
           "**MITLA**: Pyrotechnic (7.62mm) - *may detonate drone warhead*",
           "**SkyWall**: Compressed air - $30-50K+, 10kg weight",
-          "**Phoenix Rooivalk**: CO2/Pneumatic - $349-$2K, safe, reusable",
+          "**NexaMesh**: CO2/Pneumatic - $349-$2K, safe, reusable",
         ],
       },
       {
@@ -231,7 +231,7 @@ export const demoPitchSlides: Slide[] = [
       {
         text: "**6 Product Lines:** Consumer to Military",
         subPoints: [
-          "**SkySnare** ($349) → **RKV Systems** ($150K)",
+          "**Kestrel Mesh** ($349) → **RKV Systems** ($150K)",
           "Hardware + SaaS recurring revenue model",
         ],
       },
@@ -274,8 +274,8 @@ export const demoPitchSlides: Slide[] = [
       {
         text: "**Phased product delivery:**",
         subPoints: [
-          "**Seed (Q1-Q3 2026)**: SkySnare, SkyWatch, NetSnare, NetSentry",
-          "**Series A (Q4 2026-Q3 2027)**: AeroNet Enterprise platform",
+          "**Seed (Q1-Q3 2026)**: Kestrel Mesh, SkyWatch, NetSnare, NetSentry",
+          "**Series A (Q4 2026-Q3 2027)**: Sentinel Ring Enterprise platform",
           "**Series B+ (2028+)**: RKV military interceptors",
         ],
       },
@@ -283,7 +283,7 @@ export const demoPitchSlides: Slide[] = [
     speakerNotes:
       "Lead with platform maturity - 51 ADRs is exceptional for seed stage. Hardware status shows execution. Phased delivery shows we understand sequencing.",
     script:
-      "We've built significant platform infrastructure with zero capital raised. 215 documentation pages with AI-powered search. 51 architecture decision records published - that's enterprise-grade documentation. A working WASM threat simulator you can try in the browser. And our x402 blockchain payment protocol is live in production. On hardware: CAD designs complete, prototype 40% assembled for Q1 completion, Kevlar nets tested, patent filing in Q1. Our product delivery is phased: SkySnare and detection products in the seed phase, AeroNet enterprise platform in Series A, and RKV military interceptors in Series B and beyond.",
+      "We've built significant platform infrastructure with zero capital raised. 215 documentation pages with AI-powered search. 51 architecture decision records published - that's enterprise-grade documentation. A working WASM threat simulator you can try in the browser. And our x402 blockchain payment protocol is live in production. On hardware: CAD designs complete, prototype 40% assembled for Q1 completion, Kevlar nets tested, patent filing in Q1. Our product delivery is phased: Kestrel Mesh and detection products in the seed phase, Sentinel Ring enterprise platform in Series A, and RKV military interceptors in Series B and beyond.",
   },
 
   // ==========================================
@@ -463,7 +463,7 @@ export const demoPitchSlides: Slide[] = [
 ];
 
 export const demoPitchMeta = {
-  title: "Phoenix Rooivalk: Demo Pitch Deck",
+  title: "NexaMesh: Demo Pitch Deck",
   duration: 10,
   audience: "Investors, Strategic Partners, Demo Attendees",
   date: "January 2026",

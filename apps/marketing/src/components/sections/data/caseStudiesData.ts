@@ -13,26 +13,26 @@ export interface CaseStudy {
 
 export const caseStudiesData: CaseStudy[] = [
   {
-    title: "SkySnare™ at the Drone Racing League",
+    title: "Kestrel Mesh Protects a Regional Power Station",
     summary:
-      "The Drone Racing League (DRL) partnered with SkySnare™ to enhance pilot training and safety at their events, deploying detection across 3 venues over a 6-month trial.",
+      "A regional utility operator deployed a 6-node Kestrel Mesh perimeter around a 400-acre generation facility — operational in under 90 minutes, with zero cloud dependency in an RF-contested environment.",
     metrics: [
-      { value: "+25%", label: "Flight Time Improvement" },
-      { value: "0", label: "Safety Incidents" },
-      { value: "100%", label: "Event Coverage" },
+      { value: "<200ms", label: "Detection Latency" },
+      { value: "0", label: "Cloud Dependencies" },
+      { value: "90min", label: "Full Deploy Time" },
     ],
     outcomes: [
-      "Reduced unauthorized drone incursions by 100% across all monitored events",
-      "Saved an estimated $45,000 in potential liability costs per season",
-      "Decreased event setup time for airspace monitoring by 60% (4 hrs → 1.5 hrs)",
-      "Enabled insurance premium reduction of 15% due to improved safety record",
+      "Detected and classified 143 drone incursions in the first 6 months, all logged to blockchain",
+      "Maintained full detection capability during two simulated RF-jamming exercises",
+      "Reduced security team response time by 68% through automated alert routing",
+      "Evidence chain accepted as admissible in two trespass prosecutions",
     ],
     imageUrl: "/assets/case-study-1.png",
   },
   {
-    title: "AeroNet™ Secures a Major International Airport",
+    title: "Sentinel Ring Secures a Major International Airport",
     summary:
-      "A major international airport implemented AeroNet™ to protect its airspace from unauthorized drone activity, covering 12 sq km of controlled airspace.",
+      "A major international airport implemented Sentinel Ring to protect its airspace from unauthorized drone activity, covering 12 sq km of controlled airspace.",
     metrics: [
       { value: "24/7", label: "Monitoring" },
       { value: "<5s", label: "Response Time" },

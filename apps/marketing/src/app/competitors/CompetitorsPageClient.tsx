@@ -12,7 +12,7 @@ import styles from "./competitors.module.css";
 const comparisonRows = [
   {
     feature: "Response Time",
-    phoenix: "<200ms",
+    nexamesh: "<200ms",
     droneShield: ">5,000ms",
     dedrone: ">10,000ms",
     anduril: "~2,000ms",
@@ -20,7 +20,7 @@ const comparisonRows = [
   },
   {
     feature: "Offline Capable",
-    phoenix: "Full",
+    nexamesh: "Full",
     droneShield: "No",
     dedrone: "No",
     anduril: "Limited",
@@ -28,7 +28,7 @@ const comparisonRows = [
   },
   {
     feature: "Blockchain Evidence",
-    phoenix: "Yes",
+    nexamesh: "Yes",
     droneShield: "No",
     dedrone: "No",
     anduril: "No",
@@ -36,7 +36,7 @@ const comparisonRows = [
   },
   {
     feature: "Pre-Hardware Revenue",
-    phoenix: "x402 Live",
+    nexamesh: "x402 Live",
     droneShield: "No",
     dedrone: "No",
     anduril: "No",
@@ -44,7 +44,7 @@ const comparisonRows = [
   },
   {
     feature: "Open Architecture",
-    phoenix: "Yes",
+    nexamesh: "Yes",
     droneShield: "Proprietary",
     dedrone: "Proprietary",
     anduril: "Proprietary",
@@ -52,7 +52,7 @@ const comparisonRows = [
   },
   {
     feature: "Export Flexibility",
-    phoenix: "Non-ITAR",
+    nexamesh: "Non-ITAR",
     droneShield: "Some restrictions",
     dedrone: "US-based",
     anduril: "ITAR restricted",
@@ -243,7 +243,7 @@ export default function CompetitorsPageClient(): React.ReactElement {
           <div className={styles.headerSection}>
             <h1 className={styles.title}>Competitive Landscape</h1>
             <p className={styles.subtitle}>
-              How Phoenix Rooivalk compares to established counter-drone systems
+              How NexaMesh compares to established counter-drone systems
               on speed, autonomy, evidence integrity, pricing, and global export
               reach.
             </p>
@@ -257,7 +257,7 @@ export default function CompetitorsPageClient(): React.ReactElement {
                 <thead>
                   <tr>
                     <th>Feature</th>
-                    <th className={styles.phoenixHeader}>Phoenix Rooivalk</th>
+                    <th className={styles.nexameshHeader}>NexaMesh</th>
                     <th>DroneShield</th>
                     <th>Dedrone</th>
                     <th>Anduril</th>
@@ -268,7 +268,7 @@ export default function CompetitorsPageClient(): React.ReactElement {
                   {comparisonRows.map((row) => (
                     <tr key={row.feature}>
                       <td className={styles.featureCell}>{row.feature}</td>
-                      <td className={styles.phoenixCell}>{row.phoenix}</td>
+                      <td className={styles.nexameshCell}>{row.nexamesh}</td>
                       <td className={cellClass(row.droneShield)}>
                         {row.droneShield}
                       </td>
@@ -282,9 +282,9 @@ export default function CompetitorsPageClient(): React.ReactElement {
             </div>
           </section>
 
-          {/* Phoenix Advantages */}
+          {/* NexaMesh Advantages */}
           <section className={styles.advantagesSection}>
-            <h2 className={styles.sectionTitle}>Phoenix Rooivalk Advantages</h2>
+            <h2 className={styles.sectionTitle}>NexaMesh Advantages</h2>
             <div className={styles.advantagesGrid}>
               {advantages.map((adv) => (
                 <div key={adv.title} className={styles.advantageCard}>
@@ -379,11 +379,27 @@ export default function CompetitorsPageClient(): React.ReactElement {
             </div>
           </section>
 
+          {/* CTA */}
+          <div className={styles.ctaSection}>
+            <p className={styles.ctaText}>
+              See how NexaMesh stacks up in your environment — no deposit, no
+              commitment.
+            </p>
+            <div className={styles.ctaButtons}>
+              <a href="/preorder" className="btn btn--primary">
+                Preorder Now
+              </a>
+              <a href="/roi-calculator" className="btn btn--secondary">
+                Calculate Your ROI
+              </a>
+            </div>
+          </div>
+
           {/* Disclaimer */}
           <div className={styles.disclaimer}>
             Competitor information is based on publicly available data as of
             February 2026. Pricing figures are approximate and may vary by
-            contract scope, geography, and customization level. Phoenix Rooivalk
+            contract scope, geography, and customization level. NexaMesh
             pricing represents deployment-package estimates, not individual SKU
             prices.
           </div>

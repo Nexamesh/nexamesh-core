@@ -69,7 +69,7 @@ Implement **multi-layer mesh network** with automatic failover:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                    Phoenix Rooivalk Mesh Network                     │
+│                    NexaMesh Mesh Network                     │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                      │
 │     ┌─────┐         ┌─────┐         ┌─────┐                        │
@@ -450,4 +450,4 @@ impl DistributedFusion {
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

@@ -1,0 +1,59 @@
+.root {
+  color: rgb(var(--primary));
+  display: block;
+  /* Slightly warm the glow with the brand amber */
+  --orb-glow: rgba(var(--primary), 0.9);
+}
+
+/* ── Counter-rotating groups ──────────────────────────── */
+.groupA {
+  transform-origin: 200px 200px;
+  animation: orbRotateCW 28s linear infinite;
+}
+
+.groupB {
+  transform-origin: 200px 200px;
+  animation: orbRotateCCW 20s linear infinite;
+}
+
+/* ── Breathe — whole orb gently scales and dims ──────── */
+.root > * {
+  animation: orbBreathe 6s ease-in-out infinite;
+}
+
+/* ── Center pulse ─────────────────────────────────────── */
+.centerPulse {
+  animation: centerPing 3s ease-out infinite;
+}
+
+/* ── Keyframes ────────────────────────────────────────── */
+@keyframes orbRotateCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes orbRotateCCW {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+@keyframes orbBreathe {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.78; }
+}
+
+@keyframes centerPing {
+  0%   { r: 10; opacity: 0.3; }
+  70%  { r: 22; opacity: 0; }
+  100% { r: 10; opacity: 0; }
+}
+
+/* ── Reduced motion ───────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .groupA,
+  .groupB,
+  .root > *,
+  .centerPulse {
+    animation: none;
+  }
+}

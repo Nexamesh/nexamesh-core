@@ -67,7 +67,7 @@ export interface GameState {
   } | null;
   // Priority targeting
   priorityThreats: Record<string, "high" | "medium" | "low">;
-  // Phoenix Rooivalk Mothership System
+  // NexaMesh Mothership System
   mothership: Mothership;
   drones: Drone[];
   deploymentBays: DeploymentBay[];

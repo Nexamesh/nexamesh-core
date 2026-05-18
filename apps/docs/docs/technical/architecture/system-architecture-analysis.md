@@ -18,7 +18,7 @@ prerequisites:
 
 # System Architecture Analysis
 
-This document provides a deep analysis of the PhoenixRooivalk system
+This document provides a deep analysis of the Nexamesh system
 architecture, answering five fundamental questions about why the system exists
 in its current form.
 
@@ -828,7 +828,7 @@ COSMOS_DB_DATABASE=phoenix-docs
 
 ## Conclusion
 
-The PhoenixRooivalk architecture succeeds because it **embraces uncertainty**:
+The Nexamesh architecture succeeds because it **embraces uncertainty**:
 
 1. **Auto-detecting hardware** removes manual configuration burden
 2. **Providing sensible defaults** enables zero-config deployment

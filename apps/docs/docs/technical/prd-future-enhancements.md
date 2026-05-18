@@ -25,7 +25,7 @@ prerequisites:
 ## Executive Summary
 
 This document outlines the product requirements for four major enhancements to
-the PhoenixRooivalk detection system:
+the Nexamesh detection system:
 
 1. **Multi-Camera Fusion** - Unified situational awareness from multiple cameras
 2. **Edge-to-Cloud Track Continuity** - Real-time track synchronization across

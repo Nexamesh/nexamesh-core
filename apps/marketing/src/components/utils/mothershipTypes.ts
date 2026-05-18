@@ -1,4 +1,4 @@
-// Phoenix Rooivalk Sentinel Core and Drone System Types
+// NexaMesh Sentinel Core and Drone System Types
 
 export interface SentinelCore {
   id: string;

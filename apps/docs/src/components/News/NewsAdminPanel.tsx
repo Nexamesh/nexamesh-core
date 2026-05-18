@@ -11,7 +11,7 @@ import { newsService, NewsError } from "../../services/newsService";
 import "./NewsAdminPanel.css";
 
 // Admin email domains (same as in analytics.tsx and CommentSection.tsx)
-const ADMIN_EMAIL_DOMAINS = ["phoenixrooivalk.com", "justaghost.dev"];
+const ADMIN_EMAIL_DOMAINS = ["nexamesh.ai", "justaghost.dev"];
 
 interface IngestionStats {
   totalArticles: number;

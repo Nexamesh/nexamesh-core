@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import CapabilitiesPageClient from "./CapabilitiesPageClient";
 
 export const metadata: Metadata = {
-  title: "Capabilities - Phoenix Rooivalk",
+  title: "Capabilities - NexaMesh",
   description:
-    "Explore Phoenix Rooivalk's counter-drone capabilities: multi-sensor fusion, RF jamming, GPS spoofing countermeasures, swarm defense, and sub-200ms autonomous response.",
+    "Explore NexaMesh's counter-drone capabilities: multi-sensor fusion, RF jamming, GPS spoofing countermeasures, swarm defense, and sub-200ms autonomous response.",
   openGraph: {
-    title: "Capabilities - Phoenix Rooivalk",
+    title: "Capabilities - NexaMesh",
     description:
-      "Multi-sensor fusion, RF jamming, GPS spoofing countermeasures, swarm defense, and sub-200ms autonomous response for SkySnare and AeroNet platforms.",
+      "Multi-sensor fusion, RF jamming, GPS spoofing countermeasures, swarm defense, and sub-200ms autonomous response for Kestrel Mesh and Sentinel Ring platforms.",
   },
 };
 

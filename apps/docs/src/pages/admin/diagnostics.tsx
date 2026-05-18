@@ -138,7 +138,7 @@ export function DiagnosticsPage(): React.ReactElement {
         ? "AI features should be available"
         : "AI Functions, inline comments, and database features will not work",
       fix: !functionsConfigured
-        ? "Set AZURE_FUNCTIONS_BASE_URL in GitHub Secrets (e.g., https://func-phoenix-rooivalk.azurewebsites.net)"
+        ? "Set AZURE_FUNCTIONS_BASE_URL in GitHub Secrets (e.g., https://func-nexamesh.azurewebsites.net)"
         : undefined,
     });
 
@@ -516,17 +516,17 @@ cd infra/azure
           <h2>Related Documentation</h2>
           <ul>
             <li>
-              <a href="https://github.com/JustAGhosT/PhoenixRooivalk/blob/main/.github/AZURE_SETUP.md">
+              <a href="https://github.com/JustAGhosT/Nexamesh/blob/main/.github/AZURE_SETUP.md">
                 Azure Setup Guide (.github/AZURE_SETUP.md)
               </a>
             </li>
             <li>
-              <a href="https://github.com/JustAGhosT/PhoenixRooivalk/blob/main/.github/DEPLOYMENT_SEQUENCE.md">
+              <a href="https://github.com/JustAGhosT/Nexamesh/blob/main/.github/DEPLOYMENT_SEQUENCE.md">
                 Deployment Sequence (.github/DEPLOYMENT_SEQUENCE.md)
               </a>
             </li>
             <li>
-              <a href="https://github.com/JustAGhosT/PhoenixRooivalk/blob/main/apps/docs/CONFIGURATION.md">
+              <a href="https://github.com/JustAGhosT/Nexamesh/blob/main/apps/docs/CONFIGURATION.md">
                 Docs Configuration (apps/docs/CONFIGURATION.md)
               </a>
             </li>

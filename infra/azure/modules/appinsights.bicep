@@ -61,3 +61,10 @@ output connectionString string = appInsights.properties.ConnectionString
 
 @description('Log Analytics Workspace ID')
 output workspaceId string = workspace.id
+
+@description('Log Analytics Workspace customer ID (for Container Apps Environment)')
+output workspaceCustomerId string = workspace.properties.customerId
+
+@description('Log Analytics Workspace shared key (sensitive)')
+@secure()
+output workspaceKey string = workspace.listKeys().primarySharedKey

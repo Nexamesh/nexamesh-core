@@ -1,7 +1,7 @@
 # Applications Directory
 
 This directory contains all applications and services that make up the
-PhoenixRooivalk platform.
+NexaMesh platform.
 
 ## Overview
 

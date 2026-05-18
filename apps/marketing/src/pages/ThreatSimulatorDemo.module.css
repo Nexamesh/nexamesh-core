@@ -1,0 +1,112 @@
+/* ThreatSimulatorDemo — dark tactical theme */
+
+.page {
+  min-height: 100vh;
+  background: #080c10;
+  color: #e2e8f0;
+  font-family: var(--font-inter, 'Inter', monospace);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header bar ── */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: rgba(8, 12, 16, 0.95);
+  border-bottom: 1px solid rgba(199, 122, 27, 0.2);
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(199, 122, 27, 0.9);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22d3a1;
+  animation: blink 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+/* ── Tab selector ── */
+.tabs {
+  display: flex;
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(199, 122, 27, 0.15);
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.tab {
+  padding: 0.3rem 0.875rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(226, 232, 240, 0.5);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: rgba(226, 232, 240, 0.8);
+  background: rgba(199, 122, 27, 0.08);
+}
+
+.tab.active {
+  color: rgb(199, 122, 27);
+  background: rgba(199, 122, 27, 0.15);
+  font-weight: 600;
+}
+
+/* ── Content area ── */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(199, 122, 27, 0.6);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  font-family: monospace;
+}
+
+.loading::before {
+  content: '▸ ';
+  animation: blink 1s step-end infinite;
+}

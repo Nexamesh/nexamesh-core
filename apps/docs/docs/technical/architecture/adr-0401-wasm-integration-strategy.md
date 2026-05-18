@@ -36,7 +36,7 @@ prerequisites: []
 
 ## Context
 
-Phoenix Rooivalk's threat simulator serves dual purposes:
+NexaMesh's threat simulator serves dual purposes:
 
 1. **Desktop application**: Full-featured Tauri 2 app with native file system
    access, evidence persistence, and system tray integration

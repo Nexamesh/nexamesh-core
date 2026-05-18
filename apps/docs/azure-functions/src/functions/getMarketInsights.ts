@@ -53,7 +53,7 @@ async function handler(
 - Government procurement and contracts
 - Emerging drone threats and countermeasures
 
-Phoenix Rooivalk market context:
+NexaMesh market context:
 - Target market: $2.45-3.0B (2025) growing to $9-15B (2030)
 - Growth rate: 23-27% CAGR
 - Key segments: Military, Critical Infrastructure, Commercial
@@ -73,7 +73,7 @@ Emerging patterns and technologies
 ## Competitive Landscape
 Major players and dynamics
 
-## Opportunities for Phoenix Rooivalk
+## Opportunities for NexaMesh
 Where the platform can capture market share
 
 ## Risks and Challenges

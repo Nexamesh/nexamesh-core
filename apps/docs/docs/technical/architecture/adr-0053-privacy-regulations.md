@@ -46,7 +46,7 @@ prerequisites:
 | CCPA       | California   | Disclosure, opt-out, deletion rights              |
 | LGPD       | Brazil       | Similar to GDPR                                   |
 
-### Personal Data in Phoenix Rooivalk
+### Personal Data in NexaMesh
 
 | Data Category       | Examples                           | Source              |
 | ------------------- | ---------------------------------- | ------------------- |
@@ -485,4 +485,4 @@ pub fn validate_transfer(
 
 ---
 
-_© 2025 Phoenix Rooivalk. Architecture Decision Record._
+_© 2026 NexaMesh. Architecture Decision Record._

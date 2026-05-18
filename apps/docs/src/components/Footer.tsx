@@ -13,12 +13,12 @@ export default function Footer(): React.ReactElement {
             <div className="footer__brand">
               <img
                 src={logoUrl}
-                alt="Phoenix Rooivalk"
+                alt="NexaMesh"
                 className="phoenix-logo"
                 width="32"
                 height="32"
               />
-              <h3 className="footer__title">Phoenix Rooivalk</h3>
+              <h3 className="footer__title">NexaMesh</h3>
               <p className="footer__description">
                 Revolutionary SAE Level 4 Autonomous Counter-UAS Defense
                 Platform
@@ -62,7 +62,7 @@ export default function Footer(): React.ReactElement {
               <ul className="footer__items">
                 <li className="footer__item">
                   <Link
-                    to="https://github.com/JustAGhosT/PhoenixRooivalk"
+                    to="https://github.com/JustAGhosT/Nexamesh"
                     className="footer__link-item"
                   >
                     GitHub Repository
@@ -70,7 +70,7 @@ export default function Footer(): React.ReactElement {
                 </li>
                 <li className="footer__item">
                   <Link
-                    to="https://github.com/JustAGhosT/PhoenixRooivalk/blob/main/ACCESS.md"
+                    to="https://github.com/JustAGhosT/Nexamesh/blob/main/ACCESS.md"
                     className="footer__link-item"
                   >
                     Request Access
@@ -93,7 +93,7 @@ export default function Footer(): React.ReactElement {
                 personnel only.
               </p>
               <p className="footer__copyright">
-                © 2025 Phoenix Rooivalk. All rights reserved.
+                © 2025 NexaMesh. All rights reserved.
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Footer(): React.ReactElement {
             </p>
             <div className="footer__social-icons">
               <a
-                href="https://github.com/JustAGhosT/PhoenixRooivalk"
+                href="https://github.com/JustAGhosT/Nexamesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-icon"
@@ -122,7 +122,7 @@ export default function Footer(): React.ReactElement {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/company/phoenix-rooivalk"
+                href="https://linkedin.com/company/nexamesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__social-icon"

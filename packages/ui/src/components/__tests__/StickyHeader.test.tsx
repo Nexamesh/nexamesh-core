@@ -25,13 +25,13 @@ describe("StickyHeader", () => {
 
     render(<StickyHeader isVisible={true} />);
 
-    expect(screen.queryByText("Phoenix Rooivalk")).not.toBeInTheDocument();
+    expect(screen.queryByText("NexaMesh")).not.toBeInTheDocument();
   });
 
   it("renders header content when mounted", () => {
     render(<StickyHeader isVisible={true} />);
 
-    expect(screen.getByText("Phoenix Rooivalk")).toBeInTheDocument();
+    expect(screen.getByText("NexaMesh")).toBeInTheDocument();
     expect(screen.getByText(/Counter-UAS Defense System/)).toBeInTheDocument();
     expect(screen.getByText("Schedule Demo")).toBeInTheDocument();
   });
@@ -39,7 +39,7 @@ describe("StickyHeader", () => {
   it("applies visible classes when isVisible is true", () => {
     render(<StickyHeader isVisible={true} />);
 
-    const header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    const header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass("translate-y-0");
     expect(header).not.toHaveClass("-translate-y-full");
   });
@@ -47,7 +47,7 @@ describe("StickyHeader", () => {
   it("applies hidden classes when isVisible is false", () => {
     render(<StickyHeader isVisible={false} />);
 
-    const header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    const header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass("-translate-y-full");
     expect(header).not.toHaveClass("translate-y-0");
   });
@@ -63,7 +63,7 @@ describe("StickyHeader", () => {
   it("applies correct styling classes", () => {
     render(<StickyHeader isVisible={true} />);
 
-    const header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    const header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass(
       "fixed",
       "top-0",
@@ -85,7 +85,7 @@ describe("StickyHeader", () => {
     render(<StickyHeader isVisible={true} />);
 
     const innerContainer = screen
-      .getByText("Phoenix Rooivalk")
+      .getByText("NexaMesh")
       .closest(".max-w-\\[1400px\\]");
     expect(innerContainer).toHaveClass(
       "max-w-[1400px]",
@@ -101,9 +101,9 @@ describe("StickyHeader", () => {
   it("renders branding text correctly", () => {
     render(<StickyHeader isVisible={true} />);
 
-    const brandText = screen.getByText("Phoenix Rooivalk");
+    const brandText = screen.getByText("NexaMesh");
     expect(brandText).toHaveClass(
-      "text-[var(--primary,#f97316)]",
+      "text-[var(--primary,#C77A1B)]",
       "font-bold",
       "text-base",
     );
@@ -119,7 +119,7 @@ describe("StickyHeader", () => {
     const ctaButton = screen.getByRole("link", { name: /schedule demo/i });
     expect(ctaButton).toHaveClass(
       "bg-gradient-to-br",
-      "from-[var(--primary,#f97316)]",
+      "from-[var(--primary,#C77A1B)]",
       "to-[var(--secondary,#ea7c1c)]",
       "text-[var(--dark,#020617)]",
       "px-5",
@@ -136,12 +136,12 @@ describe("StickyHeader", () => {
   it("handles transition states correctly", () => {
     const { rerender } = render(<StickyHeader isVisible={false} />);
 
-    let header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    let header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass("-translate-y-full");
 
     rerender(<StickyHeader isVisible={true} />);
 
-    header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass("translate-y-0");
   });
 
@@ -149,7 +149,7 @@ describe("StickyHeader", () => {
     render(<StickyHeader isVisible={true} />);
 
     // Check that the layout has the expected structure
-    const brandSection = screen.getByText("Phoenix Rooivalk").parentElement;
+    const brandSection = screen.getByText("NexaMesh").parentElement;
     const ctaSection = screen.getByText("Schedule Demo").parentElement;
 
     expect(brandSection).toBeInTheDocument();
@@ -170,27 +170,27 @@ describe("StickyHeader", () => {
 
     render(<StickyHeader isVisible={true} />);
 
-    expect(screen.queryByText("Phoenix Rooivalk")).not.toBeInTheDocument();
+    expect(screen.queryByText("NexaMesh")).not.toBeInTheDocument();
 
     // Simulate component mounting
     jest.spyOn(React, "useState").mockReturnValueOnce([true, jest.fn()]);
 
     render(<StickyHeader isVisible={true} />);
 
-    expect(screen.getByText("Phoenix Rooivalk")).toBeInTheDocument();
+    expect(screen.getByText("NexaMesh")).toBeInTheDocument();
   });
 
   it("applies backdrop blur effect", () => {
     render(<StickyHeader isVisible={true} />);
 
-    const header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    const header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass("backdrop-blur-md");
   });
 
   it("has correct z-index for sticky positioning", () => {
     render(<StickyHeader isVisible={true} />);
 
-    const header = screen.getByText("Phoenix Rooivalk").closest(".fixed");
+    const header = screen.getByText("NexaMesh").closest(".fixed");
     expect(header).toHaveClass("z-50");
   });
 
@@ -198,7 +198,7 @@ describe("StickyHeader", () => {
     render(<StickyHeader isVisible={true} />);
 
     const innerContainer = screen
-      .getByText("Phoenix Rooivalk")
+      .getByText("NexaMesh")
       .closest(".max-w-\\[1400px\\]");
     expect(innerContainer).toHaveClass("max-w-[1400px]");
   });

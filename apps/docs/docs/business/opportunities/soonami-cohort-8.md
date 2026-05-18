@@ -17,7 +17,7 @@ prerequisites:
 
 :::tip Status: ACTIVE PARTICIPANT
 
-Phoenix Rooivalk is currently participating in **Soonami Cohort 8**.
+NexaMesh is currently participating in **Soonami Cohort 8**.
 
 :::
 
@@ -86,13 +86,13 @@ on-chain venture, leveraging Web3 and AI solutions.
 
 ---
 
-## Phoenix Rooivalk's Participation
+## NexaMesh's Participation
 
 ### Why Soonami?
 
 | Factor                     | Alignment                                                       |
 | -------------------------- | --------------------------------------------------------------- |
-| **Blockchain Integration** | Phoenix Rooivalk uses Hyperledger Fabric for evidence anchoring |
+| **Blockchain Integration** | NexaMesh uses Hyperledger Fabric for evidence anchoring |
 | **AI/ML Focus**            | Multi-sensor fusion, autonomous decision-making                 |
 | **Deep Tech**              | Hardware + software counter-UAS platform                        |
 | **Global Reach**           | International defense market ambitions                          |
@@ -119,7 +119,7 @@ on-chain venture, leveraging Web3 and AI solutions.
 
 ## Strategic Value
 
-### For Phoenix Rooivalk
+### For NexaMesh
 
 1. **Capital Access**: $125K funding potential
 2. **Network Effects**: Global entrepreneur community
@@ -171,7 +171,7 @@ on-chain venture, leveraging Web3 and AI solutions.
 
 ### Internal Resources
 
-- [Phoenix Rooivalk Pitch Deck](../../executive/phoenix-rooivalk-pitch-deck)
+- [NexaMesh Pitch Deck](../../executive/nexamesh-pitch-deck)
 - [Investor Executive Summary](../../executive/investor-executive-summary)
 - [12-Month Business Plan](../12-month-business-plan)
 
@@ -187,5 +187,5 @@ on-chain venture, leveraging Web3 and AI solutions.
 
 ---
 
-_This document tracks Phoenix Rooivalk's participation in Soonami Cohort 8. ©
-2025 Phoenix Rooivalk. All rights reserved._
+_This document tracks NexaMesh's participation in Soonami Cohort 8. ©
+2025 NexaMesh. All rights reserved._

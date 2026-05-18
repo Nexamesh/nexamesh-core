@@ -1,0 +1,75 @@
+.main {
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-6) var(--space-12);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: var(--space-16) var(--space-8) var(--space-12);
+  }
+}
+
+.header {
+  margin-bottom: var(--space-10);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid rgba(var(--primary), 0.2);
+}
+
+.title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: rgb(var(--text-primary));
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.meta {
+  font-size: 0.875rem;
+  color: rgb(var(--text-muted));
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(var(--text-primary));
+}
+
+.section p,
+.section li {
+  font-size: 0.9375rem;
+  color: rgb(var(--text-secondary));
+  line-height: 1.7;
+}
+
+.section ul {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.section a {
+  color: rgb(var(--primary));
+  text-decoration: underline;
+}

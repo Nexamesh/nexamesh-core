@@ -113,7 +113,7 @@ describe("OfflineSync", () => {
     });
 
     it("should handle corrupted localStorage gracefully", () => {
-      localStorageMock.setItem("phoenix-docs-offline-queue", "not-valid-json");
+      localStorageMock.setItem("nexamesh-docs-offline-queue", "not-valid-json");
       expect(getQueuedUpdates()).toEqual([]);
     });
   });

@@ -3,11 +3,11 @@
 > `.github/workflows/deploy-marketing-azure.yml` for current deployment
 > configuration.
 
-# Phoenix Rooivalk Interactive Demo Walkthrough
+# NexaMesh Interactive Demo Walkthrough
 
 ## 🎯 Overview
 
-This walkthrough guides you through the Phoenix Rooivalk Interactive Defense
+This walkthrough guides you through the NexaMesh Interactive Defense
 System Demonstration, showcasing the WASM-powered threat simulator with
 counter-drone defense capabilities.
 
@@ -21,7 +21,7 @@ counter-drone defense capabilities.
 
 1. Open your browser and go to
    https://phoenixrooivalk.netlify.app/interactive-demo
-2. You'll see the Phoenix Rooivalk branding with a loading indicator
+2. You'll see the NexaMesh branding with a loading indicator
 3. Wait for the WASM runtime to initialize (typically 2-5 seconds)
 
 **Expected**: You'll see "⚡ Loading Threat Simulator..." followed by the full

@@ -260,7 +260,7 @@ describe("useCart", () => {
         await new Promise((resolve) => setTimeout(resolve, 10));
       });
 
-      const stored = localStorage.getItem("phoenix-rooivalk-cart");
+      const stored = localStorage.getItem("nexamesh-cart");
       expect(stored).not.toBeNull();
       const parsed = JSON.parse(stored!);
       expect(parsed).toHaveLength(1);
@@ -279,7 +279,7 @@ describe("useCart", () => {
         },
       ];
       localStorage.setItem(
-        "phoenix-rooivalk-cart",
+        "nexamesh-cart",
         JSON.stringify(existingItems),
       );
 
@@ -296,7 +296,7 @@ describe("useCart", () => {
     });
 
     it("should handle corrupt localStorage gracefully", async () => {
-      localStorage.setItem("phoenix-rooivalk-cart", "not-valid-json{{{");
+      localStorage.setItem("nexamesh-cart", "not-valid-json{{{");
 
       const { result } = renderHook(() => useCart(), { wrapper });
 

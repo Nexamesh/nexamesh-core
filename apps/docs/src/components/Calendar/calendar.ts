@@ -52,7 +52,7 @@ function generateUID(event: CalendarEvent): string {
   const titleHash = event.title
     .split("")
     .reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  return `${timestamp}-${titleHash}@phoenixrooivalk.com`;
+  return `${timestamp}-${titleHash}@nexamesh.ai`;
 }
 
 /**
@@ -111,11 +111,11 @@ export function generateICS(events: CalendarEvent[]): string {
 
   lines.push("BEGIN:VCALENDAR");
   lines.push("VERSION:2.0");
-  lines.push("PRODID:-//Phoenix Rooivalk//Events//EN");
+  lines.push("PRODID:-//NexaMesh//Events//EN");
   lines.push("CALSCALE:GREGORIAN");
   lines.push("METHOD:PUBLISH");
-  lines.push("X-WR-CALNAME:Phoenix Rooivalk Events");
-  lines.push("X-WR-CALDESC:Events and milestones for Phoenix Rooivalk");
+  lines.push("X-WR-CALNAME:NexaMesh Events");
+  lines.push("X-WR-CALDESC:Events and milestones for NexaMesh");
   lines.push("X-WR-TIMEZONE:UTC");
 
   events.forEach((event) => {

@@ -144,8 +144,8 @@ export class AIService {
     sources: Array<{ title: string; section: string }>;
     ragEnabled: boolean;
   }> {
-    // Search for relevant Phoenix Rooivalk documentation
-    const searchQuery = `Phoenix Rooivalk technical capabilities specifications ${
+    // Search for relevant NexaMesh documentation
+    const searchQuery = `NexaMesh technical capabilities specifications ${
       focusAreas?.length
         ? focusAreas.join(" ")
         : "counter-UAS defense drone interceptor"
@@ -207,7 +207,7 @@ export class AIService {
 
     try {
       const ragResults = await this.searchDocuments(
-        `Phoenix Rooivalk ${options.focusArea || "capabilities technology market"}`,
+        `NexaMesh ${options.focusArea || "capabilities technology market"}`,
         { topK: 5 },
       );
       if (ragResults.length > 0) {

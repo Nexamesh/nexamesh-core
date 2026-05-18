@@ -31,11 +31,11 @@ Product economics schema per product:
 
 Product lines and categories:
 
-- **SkySnare** (consumer): Entry-level, highest volume, lowest margin
+- **Kestrel Mesh** (consumer): Entry-level, highest volume, lowest margin
 - **NetSnare** (prosumer): Mid-range, hobby/small-business
 - **SkyWatch** (prosumer): Surveillance-focused
 - **NetSentry** (enterprise): Perimeter security, recurring revenue
-- **AeroNet** (enterprise): Full AI-enabled platform, highest margin
+- **Sentinel Ring** (enterprise): Full AI-enabled platform, highest margin
 - **RKV** (military): Specialized, government contract pricing
 
 x402 API pricing tiers:

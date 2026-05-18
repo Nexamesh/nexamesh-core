@@ -12,8 +12,8 @@ Product infrastructure:
 
 - **Product catalog** (`apps/marketing/src/data/products.ts`): 24 products with
   SKU, pricing, COGS, margins, specs, phase tracking
-- **Product lines**: SkySnare (1), NetSnare (3), SkyWatch (8), NetSentry (3),
-  AeroNet (2), RKV (3) — 24 total
+- **Product lines**: KestrelMesh (1), NetSnare (3), SkyWatch (8), NetSentry (3),
+  SentinelRing (2), RKV (3) — 24 total
 - **Categories**: consumer, prosumer, enterprise, military
 - **Phases**: seed, series-a, series-b, series-c, scale
 - **Docs-side data** (`apps/docs/src/data/`): Canonical business numbers

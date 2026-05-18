@@ -3,6 +3,9 @@
  */
 
 import type { Confidence } from "../types";
+import type { ProductLine, SystemType } from "@nexamesh/types";
+
+export type { ProductLine, SystemType };
 
 // =============================================================================
 // CORE PRODUCT TYPES
@@ -44,8 +47,9 @@ export interface ProductSpecs {
 export interface Product {
   sku: string;
   name: string;
-  line: "SkyWatch" | "NetSentry" | "SkySnare" | "NetSnare" | "AeroNet" | "RKV";
-  category: "detection" | "countermeasure";
+  line: ProductLine;
+  /** Hardware system classification — what the product does. See {@link SystemType}. */
+  category: SystemType;
   targetMarket: string;
   priceRange: string;
   priceMin: number;

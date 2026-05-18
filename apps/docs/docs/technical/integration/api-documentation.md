@@ -1,7 +1,7 @@
 ---
 id: api-documentation
-title: Phoenix Rooivalk API Documentation
-sidebar_label: Phoenix Rooivalk API
+title: NexaMesh API Documentation
+sidebar_label: NexaMesh API
 difficulty: advanced
 estimated_reading_time: 8
 points: 25
@@ -11,11 +11,11 @@ tags:
 prerequisites: []
 ---
 
-# Phoenix Rooivalk API Documentation
+# NexaMesh API Documentation
 
 ## Overview
 
-The Phoenix Rooivalk API is a Rust Axum REST service that provides evidence
+The NexaMesh API is a Rust Axum REST service that provides evidence
 management, counter-drone operations tracking, authentication, and preorder
 management. The API runs on port 8080 by default.
 
@@ -352,7 +352,7 @@ Create a product preorder.
   "items": [
     {
       "sku": "AERONET-ENT-001",
-      "name": "AeroNet Enterprise",
+      "name": "Sentinel Ring Enterprise",
       "quantity": 2,
       "unit_price": 149999.99
     }
@@ -527,4 +527,4 @@ curl http://localhost:8080/auth/me \
 
 _This document reflects the actual API implementation in `apps/api/`. For the
 Rust source code, see `apps/api/src/lib.rs` and `apps/api/src/models.rs`. © 2025
-Phoenix Rooivalk. All rights reserved._
+NexaMesh. All rights reserved._

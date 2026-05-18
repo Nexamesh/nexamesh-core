@@ -1,7 +1,7 @@
 ---
 id: technical-architecture-synthesis
-title: Phoenix Rooivalk Technical Architecture Synthesis
-sidebar_label: Phoenix Rooivalk Technical
+title: NexaMesh Technical Architecture Synthesis
+sidebar_label: NexaMesh Technical
 difficulty: expert
 estimated_reading_time: 7
 points: 50
@@ -10,11 +10,11 @@ tags:
   - architecture
 ---
 
-# Phoenix Rooivalk Technical Architecture Synthesis
+# NexaMesh Technical Architecture Synthesis
 
 ## Recommended System Configuration
 
-Phoenix Rooivalk's technical architecture centers on Jetson AGX Orin 64GB (275
+NexaMesh's technical architecture centers on Jetson AGX Orin 64GB (275
 TOPS) for primary processing with distributed Orin NX 16GB nodes (157 TOPS) for
 swarm coordination, providing exceptional computational capabilities for
 real-time multi-sensor fusion and autonomous swarm operations.
@@ -344,7 +344,7 @@ real-time multi-sensor fusion and autonomous swarm operations.
 
 ## Conclusion
 
-Phoenix Rooivalk's technical architecture synthesis provides a comprehensive
+NexaMesh's technical architecture synthesis provides a comprehensive
 framework for advanced counter-drone defense systems with exceptional
 performance, reliability, and operational capabilities. The combination of
 high-performance hardware, advanced software, and robust security creates a
@@ -357,7 +357,7 @@ the highest standards of safety, security, and operational effectiveness.
 ---
 
 _This document contains confidential technical information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._
 
 _Context improved by Giga AI_

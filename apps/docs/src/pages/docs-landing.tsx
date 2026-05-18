@@ -151,12 +151,12 @@ export default function DocsLanding(): React.ReactElement {
   return (
     <Layout
       title="Documentation Home"
-      description="Phoenix Rooivalk Counter-UAS System Documentation"
+      description="NexaMesh Counter-UAS System Documentation"
     >
       <main className="docs-landing">
         <div className="docs-container">
           <div className="docs-hero">
-            <h1>Phoenix Rooivalk Documentation</h1>
+            <h1>NexaMesh Documentation</h1>
             <p>
               Comprehensive documentation for the world's most advanced
               autonomous counter-UAS defense platform. Explore technical

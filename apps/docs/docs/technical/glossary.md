@@ -13,7 +13,7 @@ tags:
 ## Executive Summary
 
 This glossary provides comprehensive definitions of technical terms, acronyms,
-and concepts used throughout the Phoenix Rooivalk Counter-Drone Defense System
+and concepts used throughout the NexaMesh Counter-Drone Defense System
 documentation. The glossary serves as a reference for technical evaluators,
 engineers, and system integrators.
 
@@ -62,7 +62,7 @@ engineers, and system integrators.
   (0-5)
 - Adapted for Counter-UAS systems: Level 0 (no automation) to Level 5 (full
   automation)
-- Phoenix Rooivalk implements SAE Level 4 (high automation) for autonomous
+- NexaMesh implements SAE Level 4 (high automation) for autonomous
   counter-drone operations
 - Provides industry-standard framework for autonomy level classification
 
@@ -505,7 +505,7 @@ engineers, and system integrators.
 ## Conclusion
 
 This glossary provides comprehensive definitions of technical terms and concepts
-used throughout the Phoenix Rooivalk system. The glossary serves as a reference
+used throughout the NexaMesh system. The glossary serves as a reference
 for technical evaluators, engineers, and system integrators, ensuring consistent
 understanding of system capabilities and requirements.
 
@@ -530,5 +530,5 @@ integrators.
 ---
 
 _This document contains confidential technical information. Distribution is
-restricted to authorized personnel only. © 2025 Phoenix Rooivalk. All rights
+restricted to authorized personnel only. © 2026 NexaMesh. All rights
 reserved._

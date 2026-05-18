@@ -94,7 +94,7 @@ DIANA operates through regional accelerator hubs:
 DIANA is restricted to companies from **NATO member states**. This includes 31
 countries but does **not** include South Africa.
 
-**Options for Phoenix Rooivalk:**
+**Options for NexaMesh:**
 
 - Establish presence in NATO member state
 - Partner with NATO-country company
@@ -143,7 +143,7 @@ NATO DIANA addresses emerging and disruptive technologies:
 
 ---
 
-## Phoenix Rooivalk Strategy
+## NexaMesh Strategy
 
 ### Path to DIANA Eligibility
 
@@ -184,7 +184,7 @@ Q4 2026: Prepare if selected
 
 ---
 
-## Phoenix Rooivalk Fit Assessment
+## NexaMesh Fit Assessment
 
 | Criteria        | Score      | Notes                       |
 | --------------- | ---------- | --------------------------- |

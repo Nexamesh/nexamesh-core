@@ -85,7 +85,7 @@ export class ParticleSystem {
         life: 1.0,
         maxLife: 2.0,
         size: 1 + Math.random() * 2,
-        color: "#f97316",
+        color: "#C77A1B",
         opacity: 1.0,
       });
     }
@@ -138,7 +138,7 @@ export class ParticleSystem {
   }
 
   private getExplosionColor(): string {
-    const colors = ["#ef4444", "#f97316", "#eab308", "#84cc16"];
+    const colors = ["#ef4444", "#C77A1B", "#eab308", "#84cc16"];
     return colors[Math.floor(Math.random() * colors.length)];
   }
 }
