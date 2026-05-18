@@ -196,37 +196,37 @@ and validate each stage before committing to the next.
 
 ### Stage 2: Path C FPV (Buy After Path C Flies)
 
-9. VTX 5.8GHz 25-200mW (AliExpress)
-10. RHCP antenna (AliExpress)
-11. FPV goggles (AliExpress/local)
+1. VTX 5.8GHz 25-200mW (AliExpress)
+2. RHCP antenna (AliExpress)
+3. FPV goggles (AliExpress/local)
 
 ### Stage 3: Path A — Brushless Conversion (Buy After Path C + FPV Works)
 
-12. 1806 2400KV brushless motors x4 (AliExpress)
-13. 4-in-1 ESC 25-35A 20x20mm (AliExpress)
-14. 9x4.5" propellers x8+ (AliExpress)
-15. 2S-3S LiPo 1300-2200mAh XT30 (AliExpress)
-16. PETG filament 1kg (local) — for 3D-printed motor mounts
-17. (Optional) 2S-3S balance charger upgrade if needed
+1. 1806 2400KV brushless motors x4 (AliExpress)
+2. 4-in-1 ESC 25-35A 20x20mm (AliExpress)
+3. 9x4.5" propellers x8+ (AliExpress)
+4. 2S-3S LiPo 1300-2200mAh XT30 (AliExpress)
+5. PETG filament 1kg (local) — for 3D-printed motor mounts
+6. (Optional) 2S-3S balance charger upgrade if needed
 
 ### Stage 4: Path B — New Frame Build (Buy After Path A Flies)
 
-18. 5" carbon fiber frame (AliExpress)
-19. 2205 2300KV brushless motors x4 (AliExpress)
-20. 4-in-1 ESC 30-35A (AliExpress) — or reuse Path A ESC if compatible
-21. 5x4.5" tri-blade propellers x8+ (AliExpress)
-22. 4S LiPo 1300-1500mAh XT60 (AliExpress)
-23. XT60 connectors x5 pairs (AliExpress)
-24. 4S balance charger (AliExpress/local)
-25. Battery straps x2 (AliExpress)
+1. 5" carbon fiber frame (AliExpress)
+2. 2205 2300KV brushless motors x4 (AliExpress)
+3. 4-in-1 ESC 30-35A (AliExpress) — or reuse Path A ESC if compatible
+4. 5x4.5" tri-blade propellers x8+ (AliExpress)
+5. 4S LiPo 1300-1500mAh XT60 (AliExpress)
+6. XT60 connectors x5 pairs (AliExpress)
+7. 4S balance charger (AliExpress/local)
+8. Battery straps x2 (AliExpress)
 
 ### Stage 5: AI Tier (Buy After Any Path Has Stable Flight)
 
-26. Raspberry Pi Zero 2W (local/AliExpress)
-27. Pi Camera Module 3 or OV2640 (local/AliExpress)
-28. 5V 2-3A BEC module (AliExpress)
-29. microSD 32GB for RPi (local)
-30. PMW3901 optical flow + VL53L1X (AliExpress)
+1. Raspberry Pi Zero 2W (local/AliExpress)
+2. Pi Camera Module 3 or OV2640 (local/AliExpress)
+3. 5V 2-3A BEC module (AliExpress)
+4. microSD 32GB for RPi (local)
+5. PMW3901 optical flow + VL53L1X (AliExpress)
 
 ---
 
