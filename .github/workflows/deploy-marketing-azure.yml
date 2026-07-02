@@ -178,10 +178,13 @@ jobs:
           app_location: ${{ env.MARKETING_APP_DIR }}/out
           skip_app_build: true
           skip_api_build: true
-          # Production deploys go to production slot, PR deploys create preview environments
+          # Leave deployment_environment unset: in this action a BLANK value
+          # targets the real production slot, while any non-empty value
+          # creates a NAMED preview environment — a literal 'production'
+          # value shipped main pushes to jolly-beach-...-production.westeurope
+          # instead of production. PR events still get auto-named previews
+          # via repo_token.
           production_branch: main
-          deployment_environment:
-            ${{ github.event_name == 'push' && 'production' || '' }}
 
       - name: Comment on PR with preview URL
         if: github.event_name == 'pull_request'
