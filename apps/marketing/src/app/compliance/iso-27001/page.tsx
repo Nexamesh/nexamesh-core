@@ -74,7 +74,7 @@ export default function ISO27001Page(): React.ReactElement {
                 </div>
                 <div className={styles.statusItem}>
                   <span className={styles.statusLabel}>Target Date</span>
-                  <span className={styles.statusBadgePlanned}>Q4 2026</span>
+                  <span className={styles.statusBadgePlanned}>Q2 2027</span>
                 </div>
                 <div className={styles.statusItem}>
                   <span className={styles.statusLabel}>Implementation</span>
@@ -82,7 +82,7 @@ export default function ISO27001Page(): React.ReactElement {
                 </div>
                 <div className={styles.statusItem}>
                   <span className={styles.statusLabel}>Next Milestone</span>
-                  <span className={styles.statusBadgePlanned}>Q3 2026</span>
+                  <span className={styles.statusBadgePlanned}>Q1 2027</span>
                 </div>
               </div>
             </div>

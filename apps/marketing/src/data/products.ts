@@ -92,7 +92,7 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
     id: "seed",
     name: "Seed: Consumer Launch",
     shortName: "Seed",
-    timeline: "Q1 2026 - Q3 2026 • Delivery Jul-Oct 2026",
+    timeline: "Q3 2026 - Q1 2027 • Delivery Jan-Apr 2027",
     funding: "$1.5M",
     color: "#22c55e", // green
     description:
@@ -102,7 +102,7 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
     id: "series-a",
     name: "Series A: Sentinel Ring & DoD",
     shortName: "Series A",
-    timeline: "Q4 2026 - Q3 2027 • Delivery Apr-Aug 2027",
+    timeline: "Q2 2027 - Q1 2028 • Delivery Oct 2027-Feb 2028",
     funding: "$8-12M",
     color: "#3b82f6", // blue
     description: "Enterprise platform launch and DoD validation",
@@ -111,7 +111,7 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
     id: "series-b",
     name: "Series B: Ground Systems",
     shortName: "Series B",
-    timeline: "Q1-Q2 2028 • Delivery Aug 2028",
+    timeline: "Q3-Q4 2028 • Delivery Feb 2029",
     funding: "$15-20M",
     color: "#8b5cf6", // purple
     description: "Ground control systems and production scaling",
@@ -120,7 +120,7 @@ export const phases: Record<ProductPhase, ProductPhaseInfo> = {
     id: "series-c",
     name: "Series C: Aerial Platform",
     shortName: "Series C",
-    timeline: "Q1-Q2 2029 • Delivery Aug 2029",
+    timeline: "Q3-Q4 2029 • Delivery Feb 2030",
     funding: "$25M+",
     color: "#f59e0b", // amber
     description: "Full aerial platform and interceptor systems",
@@ -154,7 +154,7 @@ export const products: Product[] = [
       "Consumer-grade edge AI sensor node. Sub-200ms detection, instant mobile alerts, and blockchain-logged evidence — with an optional net-response module for active neutralisation.",
     category: "consumer",
     phase: "seed",
-    phaseTimeline: "Q2 2026 Launch • Delivery Jul 2026",
+    phaseTimeline: "Q4 2026 Launch • Delivery Jan 2027",
     available: false,
     comingSoon: true,
 
@@ -215,7 +215,7 @@ export const products: Product[] = [
       "Maker-friendly mesh sensor node with integrated response module. Pairs with any SkyWatch detector for AI-triggered, automated drone neutralisation.",
     category: "diy-maker",
     phase: "seed",
-    phaseTimeline: "Q2 2026 • Delivery Jul 2026",
+    phaseTimeline: "Q4 2026 • Delivery Jan 2027",
     available: false,
     comingSoon: true,
 
@@ -265,7 +265,7 @@ export const products: Product[] = [
       "Smart ground sensor with AI-triggered response module. Faster intercept and extended detection range — integrates with SkyWatch for fully automated targeting.",
     category: "prosumer",
     phase: "series-a",
-    phaseTimeline: "Q4 2026 • Delivery Jan 2027",
+    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
     available: false,
     comingSoon: true,
 
@@ -315,7 +315,7 @@ export const products: Product[] = [
       "Precision sensor platform with pan-tilt tracking and AI-guided response. Fully autonomous operation when paired with SkyWatch Pro or Enterprise.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    phaseTimeline: "Q4 2027 • Delivery Jan 2028",
     available: false,
     comingSoon: true,
 
@@ -373,7 +373,7 @@ export const products: Product[] = [
       "Entry-level edge AI detection node. Rapid-deploy awareness for small facilities, training sites, and proof-of-concept evaluations.",
     category: "diy-maker",
     phase: "seed",
-    phaseTimeline: "Q1 2026 • Delivery Apr 2026",
+    phaseTimeline: "Q3 2026 • Delivery Oct 2026",
     available: false,
     comingSoon: true,
 
@@ -422,7 +422,7 @@ export const products: Product[] = [
       "Balanced detection system for residential use with Coral TPU acceleration and low-light capability.",
     category: "prosumer",
     phase: "seed",
-    phaseTimeline: "Q2 2026 • Delivery Jul 2026",
+    phaseTimeline: "Q4 2026 • Delivery Jan 2027",
     available: false,
     comingSoon: true,
 
@@ -471,7 +471,7 @@ export const products: Product[] = [
       "Multi-sensor detection platform with visual, RF, and audio detection. Pan-tilt tracking for professional use.",
     category: "commercial",
     phase: "seed",
-    phaseTimeline: "Q2 2026 • Delivery Jul 2026",
+    phaseTimeline: "Q4 2026 • Delivery Jan 2027",
     available: false,
     comingSoon: true,
 
@@ -520,7 +520,7 @@ export const products: Product[] = [
       "Portable detection unit for mobile operations. Battery-powered with touchscreen interface.",
     category: "prosumer",
     phase: "series-a",
-    phaseTimeline: "Q4 2026 • Delivery Jan 2027",
+    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
     available: false,
     comingSoon: true,
 
@@ -569,7 +569,7 @@ export const products: Product[] = [
       "Entry-level thermal imaging detector. FLIR Lepton 3.5 (160×120) fused with visible camera for cost-effective all-light drone detection.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q1 2027 • Delivery Apr 2027",
+    phaseTimeline: "Q3 2027 • Delivery Oct 2027",
     available: false,
     comingSoon: true,
 
@@ -617,7 +617,7 @@ export const products: Product[] = [
       "Professional thermal detector. FLIR Boson 320 (320×256, 60Hz) for demanding all-light surveillance at extended range.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q1 2027 • Delivery Apr 2027",
+    phaseTimeline: "Q3 2027 • Delivery Oct 2027",
     available: false,
     comingSoon: true,
 
@@ -666,7 +666,7 @@ export const products: Product[] = [
       "Ruggedized detection system for maritime environments. Gyro stabilization and NMEA integration.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    phaseTimeline: "Q4 2027 • Delivery Jan 2028",
     available: false,
     comingSoon: true,
 
@@ -714,7 +714,7 @@ export const products: Product[] = [
       "PoE-powered mesh sensor node. Deploy multiple nodes across a wide perimeter; each node reports to the central aggregator.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    phaseTimeline: "Q4 2027 • Delivery Jan 2028",
     available: false,
     comingSoon: true,
 
@@ -763,7 +763,7 @@ export const products: Product[] = [
       "Central aggregation server for SkyWatch Mesh deployments. Fuses detections from all nodes, runs the dashboard, and connects to SOC/VMS.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    phaseTimeline: "Q4 2027 • Delivery Jan 2028",
     available: false,
     comingSoon: true,
 
@@ -812,7 +812,7 @@ export const products: Product[] = [
       "Full-scale enterprise deployment with multi-sensor integration, SOC connectivity, and compliance logging.",
     category: "enterprise",
     phase: "series-a",
-    phaseTimeline: "Q3 2027 • Delivery Aug 2027",
+    phaseTimeline: "Q1 2028 • Delivery Feb 2028",
     available: false,
     comingSoon: true,
 
@@ -865,7 +865,7 @@ export const products: Product[] = [
       "Entry-level detect-and-respond system for testing and proof-of-concept. Validates the full AI detect-to-intercept stack at maker cost.",
     category: "diy-maker",
     phase: "seed",
-    phaseTimeline: "Q3 2026 • Delivery Oct 2026",
+    phaseTimeline: "Q1 2027 • Delivery Apr 2027",
     available: false,
     comingSoon: true,
 
@@ -913,7 +913,7 @@ export const products: Product[] = [
       "AI-triggered detect-and-respond system with Coral TPU acceleration. Faster intercept, longer detection range, fully integrated in one unit.",
     category: "prosumer",
     phase: "series-a",
-    phaseTimeline: "Q1 2027 • Delivery Apr 2027",
+    phaseTimeline: "Q3 2027 • Delivery Oct 2027",
     available: false,
     comingSoon: true,
 
@@ -961,7 +961,7 @@ export const products: Product[] = [
       "Professional AI detect-and-respond platform with pan-tilt tracking, global shutter camera, and predictive targeting for high-value facilities.",
     category: "commercial",
     phase: "series-a",
-    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    phaseTimeline: "Q4 2027 • Delivery Jan 2028",
     available: false,
     comingSoon: true,
 
@@ -1014,7 +1014,7 @@ export const products: Product[] = [
       "Full-scale enterprise drone detection and response platform with multi-sensor integration and 24/7 operations.",
     category: "enterprise",
     phase: "series-a",
-    phaseTimeline: "Q2 2027 • Delivery Jul 2027",
+    phaseTimeline: "Q4 2027 • Delivery Jan 2028",
     available: false,
     comingSoon: true,
 
@@ -1074,7 +1074,7 @@ export const products: Product[] = [
       "Centralized command and control software for multi-site drone defense coordination. Includes threat simulator for operator training.",
     category: "enterprise",
     phase: "series-a",
-    phaseTimeline: "Q1 2027 • Delivery Apr 2027",
+    phaseTimeline: "Q3 2027 • Delivery Oct 2027",
     available: false,
     comingSoon: true,
 
@@ -1138,7 +1138,7 @@ export const products: Product[] = [
       "Aerial VTOL platform serving as picket, relay, and interceptor launch platform with ducted fan design.",
     category: "military",
     phase: "series-c",
-    phaseTimeline: "Q2 2029 • Delivery Aug 2029",
+    phaseTimeline: "Q4 2029 • Delivery Feb 2030",
     available: false,
     comingSoon: true,
 
@@ -1188,7 +1188,7 @@ export const products: Product[] = [
       "Expendable/recoverable mini interceptor drone launched from RKV-M or ground station.",
     category: "military",
     phase: "series-c",
-    phaseTimeline: "Q2 2029 • Delivery Aug 2029",
+    phaseTimeline: "Q4 2029 • Delivery Feb 2030",
     available: false,
     comingSoon: true,
 
@@ -1236,7 +1236,7 @@ export const products: Product[] = [
       "Mobile ground control station and rover platform for RKV-M and RKV-I command and control.",
     category: "military",
     phase: "series-b",
-    phaseTimeline: "Q2 2028 • Delivery Aug 2028",
+    phaseTimeline: "Q4 2028 • Delivery Feb 2029",
     available: false,
     comingSoon: true,
 
@@ -1296,7 +1296,7 @@ export const products: Product[] = [
       "and 12 months of firmware updates.",
     category: "commercial" as MarketTier,
     phase: "series-a" as ProductPhase,
-    phaseTimeline: "Q1 2027",
+    phaseTimeline: "Q3 2027",
     available: false,
     comingSoon: true,
     priceRange: { min: 12000, max: 28000 },
@@ -1353,7 +1353,7 @@ export const products: Product[] = [
       "CLI for forensic export, and integration with common RMS platforms.",
     category: "enterprise" as MarketTier,
     phase: "series-a" as ProductPhase,
-    phaseTimeline: "Q2 2027",
+    phaseTimeline: "Q4 2027",
     available: false,
     comingSoon: true,
     priceRange: { min: 45000, max: 95000 },
@@ -1410,7 +1410,7 @@ export const products: Product[] = [
       "coalition operations. STANAG-compatible data formats.",
     category: "military" as MarketTier,
     phase: "series-b" as ProductPhase,
-    phaseTimeline: "Q1 2028",
+    phaseTimeline: "Q3 2028",
     available: false,
     comingSoon: true,
     priceRange: { min: 120000, max: 350000 },
@@ -1466,7 +1466,7 @@ export const products: Product[] = [
       "delivery attempts by 90%+ in pilot deployments.",
     category: "enterprise" as MarketTier,
     phase: "series-a" as ProductPhase,
-    phaseTimeline: "Q3 2027",
+    phaseTimeline: "Q1 2028",
     available: false,
     comingSoon: true,
     priceRange: { min: 55000, max: 150000 },
@@ -1522,7 +1522,7 @@ export const products: Product[] = [
       "alerts via SMS and email.",
     category: "commercial" as MarketTier,
     phase: "series-a" as ProductPhase,
-    phaseTimeline: "Q2 2027",
+    phaseTimeline: "Q4 2027",
     available: false,
     comingSoon: true,
     priceRange: { min: 3500, max: 8000 },
@@ -1578,7 +1578,7 @@ export const products: Product[] = [
       "security reports for venue compliance.",
     category: "commercial" as MarketTier,
     phase: "series-a" as ProductPhase,
-    phaseTimeline: "Q4 2027",
+    phaseTimeline: "Q2 2028",
     available: false,
     comingSoon: true,
     priceRange: { min: 2500, max: 15000 },
@@ -1634,7 +1634,7 @@ export const products: Product[] = [
       "existing bridge radar and AIS systems.",
     category: "enterprise" as MarketTier,
     phase: "series-b" as ProductPhase,
-    phaseTimeline: "Q2 2028",
+    phaseTimeline: "Q4 2028",
     available: false,
     comingSoon: true,
     priceRange: { min: 75000, max: 200000 },

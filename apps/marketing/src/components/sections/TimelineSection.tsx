@@ -14,7 +14,7 @@ export const TimelineSection: React.FC = () => {
       description:
         "Complete mechanical prototype, achieve certification, launch Kestrel Mesh D2C",
       milestones: [
-        "Complete mechanical prototype (May 2026)",
+        "Complete mechanical prototype (Nov 2026)",
         "Achieve CPSC certification",
         "Launch Kestrel Mesh D2C, target 4,500+ units",
         "Integrate initial AI detection into Sentinel Ring prototype",
@@ -29,8 +29,8 @@ export const TimelineSection: React.FC = () => {
       description:
         "FAA waiver approved, first Sentinel Ring pilot, AI detection deployment",
       milestones: [
-        "FAA waiver approved (June 2026)",
-        "First Sentinel Ring pilot live (Q2 2027)",
+        "FAA waiver approved (Dec 2026)",
+        "First Sentinel Ring pilot live (Q4 2027)",
         "Deploy AI-based detection and tracking",
         "Kestrel Mesh expands to 15,000 units",
         "FY27 Revenue Target: $5M / R83M",
@@ -92,7 +92,7 @@ export const TimelineSection: React.FC = () => {
 
       if (dateMatch) {
         const dateStr = dateMatch[1];
-        // Parse dates like "May 2026", "June 2026", "Q2 2027"
+        // Parse dates like "Nov 2026", "Dec 2026", "Q4 2027"
         if (dateStr.includes("Q1")) {
           eventDate = new Date(dateStr.replace("Q1", "March"));
         } else if (dateStr.includes("Q2")) {
@@ -193,7 +193,7 @@ export const TimelineSection: React.FC = () => {
           <RevealSection>
             <div className={styles.timelineCta}>
               <p className={styles.timelineCtaText}>
-                First deliveries Q3 2026. Reserve your place in the queue —
+                First deliveries Q1 2027. Reserve your place in the queue —
                 no deposit required.
               </p>
               <div className={styles.timelineCtaButtons}>

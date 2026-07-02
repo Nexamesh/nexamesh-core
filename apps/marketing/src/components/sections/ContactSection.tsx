@@ -21,7 +21,7 @@ export const ContactSection: React.FC = () => {
             <h3 className={styles.cardTitle}>Preorder & Sales</h3>
             <p className={styles.cardDescription}>
               Training facilities, event organizers, and security teams —
-              preorder your system today. No deposit, delivery Q3 2026.
+              preorder your system today. No deposit, delivery Q1 2027.
             </p>
             <div className={styles.buttonGroup}>
               <Button

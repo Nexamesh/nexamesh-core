@@ -142,7 +142,7 @@ const funding = {
   seriesA: {
     stage: "Series A",
     amount: "R120M (~$6.7M)",
-    timeline: "Q3 2026",
+    timeline: "Q1 2027",
     milestones: ["Proven revenue", "5 operational installations"],
   },
   exit: {

@@ -11,7 +11,7 @@ export const HeroSection: React.FC = () => {
         {/* Status indicator with live dot */}
         <p className={styles.statusLine}>
           <span className={styles.statusDot} aria-hidden="true" />
-          Early access open · Kestrel Mesh ships Q3 2026
+          Early access open · Kestrel Mesh ships Q1 2027
         </p>
 
         {/* Clear headline - what you get */}

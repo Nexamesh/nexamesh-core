@@ -149,7 +149,7 @@ export default function SBIRPage(): React.ReactElement {
                         <span
                           className={`${styles.detailValue} ${styles.detailValueWarning}`}
                         >
-                          Q4 2026
+                          Q2 2027
                         </span>
                       </div>
                       <div className={styles.detailRow}>
@@ -159,7 +159,7 @@ export default function SBIRPage(): React.ReactElement {
                         <span
                           className={`${styles.detailValue} ${styles.detailValueWarning}`}
                         >
-                          Q2 2026
+                          Q4 2026
                         </span>
                       </div>
                       <div className={styles.detailRow}>
@@ -179,7 +179,7 @@ export default function SBIRPage(): React.ReactElement {
                         <span
                           className={`${styles.detailValue} ${styles.detailValueWarning}`}
                         >
-                          Q1 2027
+                          Q3 2027
                         </span>
                       </div>
                     </div>
