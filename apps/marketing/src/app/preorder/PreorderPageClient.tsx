@@ -657,8 +657,8 @@ export default function PreorderPage(): React.ReactElement {
               <h3 className={styles.faqQuestion}>When will I receive it?</h3>
               <p className={styles.faqAnswer}>
                 Each product card shows its delivery phase. Kestrel Mesh first
-                deliveries are planned for Q3 2026. Sentinel Ring enterprise
-                deployments begin Q4 2026. We&apos;ll email you as your date
+                deliveries are planned for Q1 2027. Sentinel Ring enterprise
+                deployments begin Q2 2027. We&apos;ll email you as your date
                 approaches.
               </p>
             </div>

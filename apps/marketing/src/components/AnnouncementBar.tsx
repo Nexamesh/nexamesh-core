@@ -29,7 +29,7 @@ export const AnnouncementBar: React.FC = () => {
     <div className={styles.bar} role="banner">
       <span className={styles.dot} aria-hidden="true" />
       <span className={styles.message}>
-        Early access open &middot; Kestrel Mesh ships Q3 2026
+        Early access open &middot; Kestrel Mesh ships Q1 2027
       </span>
       <a href="/preorder" className={styles.cta}>
         Preorder <span aria-hidden="true">→</span>

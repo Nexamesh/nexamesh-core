@@ -637,9 +637,10 @@ section {
   padding: clamp(3.5rem, 8vw, 6.5rem) 0;
 }
 
-section:first-of-type {
-  padding-top: clamp(5.5rem, 12vw, 8.5rem);
-}
+/* No first-of-type top-padding bump: the nav is sticky (in-flow), so first
+   sections need no extra clearance — and the (0,1,1) specificity of
+   section:first-of-type silently beat CSS-module section classes like the
+   hero's, adding ~136px of dead space above every page's first section. */
 
 .section-tight {
   padding: clamp(2rem, 5vw, 4rem) 0;

@@ -84,7 +84,7 @@ export default function HomePage(): React.ReactElement {
                 name: "When can I get one?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Preorders open now with no deposit required. First deliveries Q3 2026.",
+                  text: "Preorders open now with no deposit required. First deliveries Q1 2027.",
                 },
               },
               {
